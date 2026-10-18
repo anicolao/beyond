@@ -1,0 +1,226 @@
+# Beyond the Sun — E2E guide
+
+**Testing and delivery contract.** This guide is the plan of record for browser verification. Deliver the required gameplay tests, TestStepHelper, screenshot baselines, and application CI through the slices below.
+
+Browser stories prove people can play the real game. Each story's actions, semantic assertions, screenshots, and generated walkthrough describe the same sequence. A final board image cannot prove the choices that led to it.
+
+## Foundation
+
+Use the production SvelteKit interface with isolated Firebase Auth and Firestore emulators. Each player has a separate authenticated browser context. The shared display has its own controller context. Use the pinned Nix environment for dependencies, browser execution, builds, and repository tooling once it is created.
+
+Ordinary E2E journeys create rooms, join, configure, select factions, play, and finish through visible controls. Do not install ready-made state through URLs, injected page objects, direct reducer calls, mocked services, or direct Firestore gameplay writes. Emulator reset before a story is allowed. Read-only event checks may corroborate visible behavior and replay; they must not read future cards to choose a move.
+
+Focused integration tests can replay a deliberately constructed history for rare effects, exhaustion, or conflict cases. Label those tests as integration coverage. They do not replace an illustrated journey showing how a real player reaches that behavior. A development gallery or animation lab is a review aid, not a substitute game implementation.
+
+## Determinism and exact visual evidence
+
+Fix seed, visible code, player names, initial clock where needed, and an explicit sequence of player decisions before running. Separate versioned random streams for setup and later effects prevent an unrelated shuffle from changing every future draw. Persist reveal results or sufficient versioned random inputs so reload never rerolls them.
+
+Adopt Pantheon's strict visual contract:
+
+- `maxDiffPixels: 0`, `threshold: 0`, test retries `0`.
+- Lossless PNGs, DPR 1, pinned Chromium/software rendering, bundled fonts, locale `en-CA`, timezone `America/Toronto`, and a fixed test origin.
+- One browser worker for capture workloads. Additional player contexts remain bounded by the story's declared participants.
+- A 2,000 ms deadline per interaction, navigation, or assertion. Readiness, font/art decoding, finite animation completion, clipping audit, screenshot capture, and comparison share one 2,000 ms capture deadline.
+- No arbitrary sleeps, `waitForTimeout`, `networkidle`, retries, pixel masks, screenshot normalization, or relaxed comparison to hide nondeterminism.
+- Story and infrastructure startup budgets are separate from individual operation deadlines. Longer complete games may need longer whole-story budgets; no operation inherits that allowance.
+
+Pin the actual browser image and architecture when the scaffold is built; do not copy a stale sibling version into a new lockfile. Keep reviewed macOS and Linux baselines separately. Linux CI and Linux baseline generation use the same immutable image and architecture. A runtime/image update needs reviewed fresh baselines and a complete comparison run.
+
+Capture finite motion only after it settles. Reduced-motion tests still prove the actual state transitions. Never substitute an animation lab state or skip rules effects for a screenshot.
+
+## Viewport contract
+
+| Project | Viewport | Required evidence |
+| --- | --- | --- |
+| Phone | 393 × 852 | Every core journey and readable focused components. |
+| Desktop | 1440 × 1000 | Every core journey and both-board context. |
+| Tabletop-size personal view | 3840 × 2160 | Core journeys at large resolution; does not prove shared control. |
+| Phone landscape | 852 × 393 | Complete representative turn, inspection, recovery, and scoring. |
+| Tablet | 820 × 1180 | Complete representative turn, board switching, and required choices. |
+| Shared tabletop | 3840 × 2160 plus joining phones | Separate table-owned-room, physical seating, public controls, and recovery stories. |
+
+The gameplay shell fits without page scrolling or overlapping controls. Validate focused text, touch targets, safe areas, zoom controls, and tray content. Intentional board pan has explicit bounds and Fit recovery; it is not an excuse for clipped buttons or truncated inspectors. Rules and gallery pages intentionally scroll and need document-specific checks.
+
+## One illustrated story per journey
+
+Use this structure:
+
+```text
+tests/e2e/
+  helpers/
+    fixtures.ts
+    test-step-helper.ts
+  004-research-and-discovery/
+    research.spec.ts
+    research.integration.spec.ts
+    README.md
+    FIDELITY.md
+    stories/<story>/README.md
+    screenshots/<story>/<platform-and-viewport>/
+```
+
+The feature README indexes generated stories. Each test owns its output directory; parallel variants must never overwrite another walkthrough or image. Import `test` and `expect` from `helpers/fixtures`, not directly from Playwright. Every illustrated E2E story **must use `TestStepHelper` for every meaningful player-visible step**, including opening states, inspection, cancellation, observer views, recovery, and final results. This also applies to illustrated integration scenarios, whose injected setup must remain explicitly labelled.
+
+Every meaningful step contains the named action, actor/viewpoint, exact visible assertions, readiness/layout checks, and a screenshot of that result. Capture the opening state, new decision surfaces, commitments, public consequences, and turn handoffs. Opening, reading, cancelling, and committing are distinct steps when they change what the player understands.
+
+Generate walkthroughs only after the story passes. Include title, goal, setup/seed, participants, ordered captions, assertions, and linked full-resolution images. Show phone and desktop captures together and provide an expandable 4K view. Captions must describe the image actually captured. Do not hand-maintain a separate narrative that drifts from the test.
+
+Every changed feature also records human visual review in `FIDELITY.md`: reference the reviewed UX composition, captures, component scale, materials, legibility, interaction placement, and intentional differences. Exact equality with yesterday's screenshot does not establish fidelity to the design.
+
+## Mandatory `TestStepHelper` contract
+
+Implement `tests/e2e/helpers/test-step-helper.ts` and its shared fixture in slice 001, before accepting the first browser story. The helper is required infrastructure, not an optional convenience. It centralizes behavioral verification, capture guards, exact comparison, and the metadata used to generate walkthroughs. Tests must not maintain their own screenshot counters, image filenames, Markdown image links, capture routines, or alternative story writers.
+
+Implement the following public API:
+
+```ts
+import type { Page, TestInfo } from '@playwright/test';
+
+export interface Verification {
+  spec: string;                    // Human-readable claim shown in the story.
+  check: () => Promise<void>;       // Assertions proving that claim.
+}
+
+export interface StepView {
+  page?: Page;                     // Defaults to the helper's page.
+  player?: string;                 // Named viewpoint, e.g. 'Bora (observer)'.
+  status?: 'synced' | 'offline' | 'reconnecting' | 'incompatible';
+  document?: boolean;              // Scrolling rules/gallery page; default false.
+}
+
+export declare class TestStepHelper {
+  constructor(page: Page, testInfo: TestInfo, title: string);
+  step(
+    id: string,
+    description: string,
+    verifications: readonly Verification[],
+    view?: StepView,
+  ): Promise<void>;
+}
+```
+
+Perform the player action through the real UI immediately before `step()`. The opening-state step may follow navigation, and an observer step may follow the actor's committed action without another gameplay input. Each call documents one coherent visible result; do not hide several decisions inside a verification callback. Callbacks assert behavior and must not click controls, submit commands, or mutate state to make the assertion pass.
+
+For each `step()`, the helper must:
+
+1. Register the stable, unique kebab-case ID, caption, viewpoint, viewport/platform, and the test's shared sequence number. Reject duplicate IDs, empty captions, and empty verification arrays or labels.
+2. Run each named verification inside a labelled Playwright step. A failed assertion fails the story; it cannot be caught and converted into documentation of a passing result.
+3. Check the specified application connection status (`synced` by default) and step-specific readiness. Tests still assert the exact result of the preceding action; generic readiness cannot replace behavioral checks.
+4. Under one shared 2,000 ms capture deadline, complete readiness, font and image decoding, finite-animation settling, layout/clipping checks, lossless capture, and exact baseline comparison. Individual verification callbacks retain the assertion deadline defined above.
+5. Enforce the viewport/layout contract, including visible focused text, nonoverlapping controls, safe-area clearance, and touch targets. `document: true` selects document-specific scrolling checks; it does not disable layout auditing.
+6. Compare every captured pixel with the reviewed baseline, using zero tolerance and no masking or normalization. Explicit baseline-generation mode writes candidate images and is reported as generation, never as a successful comparison.
+7. Add the caption, viewpoint, verification labels, and image reference to the shared story record only after that step succeeds. On failure, retain available diagnostics and expected/actual/diff evidence without publishing a completed walkthrough.
+
+The shared fixture owns one story record per test, shared by every helper and player view in that test. It validates declared participants and setup metadata, finalizes the ordered walkthrough only after the entire test and its cleanup pass, and verifies that every recorded image exists. Viewport runs own distinct captures and merge only matching stable step IDs into the documented side-by-side presentation. Missing viewport evidence must fail finalization rather than silently omit a screen.
+
+For example, after the story has joined Ada and Bora through already documented UI steps, the lobby readiness interaction uses this pattern. The accessible names below define the intended UI contract for that interaction:
+
+```ts
+import { test, expect } from '../helpers/fixtures';
+import { TestStepHelper } from '../helpers/test-step-helper';
+
+// Inside the story: ada and bora are isolated authenticated pages.
+const steps = new TestStepHelper(ada, testInfo, 'Ready a two-player table');
+
+await bora.getByRole('button', { name: 'Ready', exact: true }).click();
+await steps.step('bora-ready', 'Bora is ready to begin', [
+  {
+    spec: 'Bora sees readiness acknowledged and can withdraw it.',
+    check: async () => {
+      await expect(bora.getByRole('button', {
+        name: 'Not ready', exact: true,
+      })).toBeEnabled();
+    },
+  },
+], { page: bora, player: 'Bora' });
+
+await steps.step('ada-sees-bora-ready', 'Ada can begin with both players ready', [
+  {
+    spec: 'The host can begin after both configured seats are ready.',
+    check: async () => {
+      // Ada's own Ready action was photographed earlier in this story.
+      await expect(ada.getByRole('button', {
+        name: 'Begin', exact: true,
+      })).toBeEnabled();
+    },
+  },
+], { player: 'Ada (host)' });
+```
+
+The helper must not create seats, inject game state, choose moves, accept dialogs, retry failures, or loosen capture settings. Direct screenshot or walkthrough-generation calls outside the shared infrastructure are prohibited. Policy hooks and required CI must reject helper bypasses and weakened guards; changes to the helper or its policy checks require focused regression coverage proving that violations fail. A story that bypasses this contract is incomplete even if its gameplay assertions pass.
+
+## Example storyboard: discover a technology
+
+Use a preselected seed and a written legal play sequence. Substitute reviewed card identities and values when manifests exist; do not invent a fixture card to simplify the story.
+
+| Step | Required visible proof |
+| --- | --- |
+| 1 | Open arrival, choose Play, create a two-player table, and show the code and host seat. |
+| 2 | A second context joins by that code; show settings, both seats, and readiness. |
+| 3 | Begin and select legal factions; show exact seeded setup, active player, and both clients' public agreement. |
+| 4 | Select Level I research; show eligible slots, cost, and permanent cube destination. |
+| 5 | Inspect a candidate and return; prove inspection adds no event and preserves the plan. |
+| 6 | Commit research; show the research marker, remaining Population, immediate bonus, and observer view. |
+| 7 | Choose production; show exact yield by column or Ore symbols and the next faction's active controls. |
+| 8 | Play each intervening turn through documented controls until Level II research is legal and affordable. |
+| 9 | Select an undiscovered eligible slot; show its prerequisite path and full payment before commitment. |
+| 10 | Commit; show the revealed Event and every resulting decision in the required order. |
+| 11 | Select a permitted research type if needed; show both revealed matching candidates and the observer's public view. |
+| 12 | Inspect each option and choose; show the chosen shared card, committed cube, bonus, and correct resumed phase. |
+| 13 | Reload during a pending choice in a separate recovery variant; show the same reveal and exactly one final application. |
+| 14 | Demonstrate another faction can research the discovered technology, but cannot use its action before doing so. |
+
+No helper may silently accept whichever dialog appears or fast-forward unrecorded turns. A long legal journey is acceptable; shortened integration setup must be labelled honestly.
+
+## Multiplayer, information, and recovery
+
+For each consequential action, assert both the acting client's exact result and the observer's public result. Include observer screenshots where comprehension matters. An observer's inspector and history reading position survive unrelated turns. Inactive identities cannot send ordinary active-turn commands.
+
+Reveal candidates and personal technologies are public under the base rules. Unrevealed events, future deck contents, and future random outcomes must be absent from rendered text, accessible names, tooltips, and component props delivered to a public presentation. This verifies ordinary presentation boundaries, not cryptographic secrecy from trusted clients.
+
+Recovery stories must cover disconnect before commit, after acceptance but before acknowledgement, during a mandatory choice, and during animation. Prove unchanged command identity prevents duplicate costs, effects, and visual flights. Compare replay from scratch with reconnect/cached-prefix state and prove all clients converge on revision, pending choice, resources, and result.
+
+Conflict tests cover simultaneous claims on a seat, stale action plans, two submissions for one revision, duplicate command IDs, unauthorized configuration, incompatible manifests, and malformed events. Use emulator policy tests for immutable attributed writes as well as pure rules tests for legality. Firestore shape checks alone do not validate game rules.
+
+Shared-table stories explicitly prove the controller's authorized public-command role and attributed acting faction. A phone cannot take over another seat merely by changing a UI selection. Reloading the display retains control and seating without duplicating either.
+
+## Delivery and story map
+
+Each numbered slice delivers its rules, accessible production UI, emulator-backed synchronization, illustrated E2E evidence, and recovery behavior together. Keep these identifiers stable throughout implementation.
+
+| Slice | Browser-visible outcome |
+| --- | --- |
+| 001 — Shell and visual foundation | Required `TestStepHelper` and shared fixture with capture/policy guards; arrival, Learn, original component studies/gallery, anonymous emulator connection, static build and base-path navigation. Review visual composition before accepting baselines. |
+| 002 — Rooms and seating | Create/join/code/QR, readiness, owner settings, full/missing room recovery, retained seats and collision handling. |
+| 003 — Seeded Basic setup | Two-, three-, and four-player boards, overlays, faction uniqueness, starting resources, achievement slots, first player, and conserved cubes/discs. |
+| 004 — Research and discovery | Legal action movement, prerequisites, permanent cubes, event resolution, public candidates, type choice, immediate bonuses, guild unlocking, and research ownership. |
+| 005 — Economy and automation | Population by column, Ore, repeated trade exchanges, empty columns, returning/overworking cubes, automation and information-safe undo. |
+| 006 — Fleets and control | Build/upgrade, multi-ship jump plans, simultaneous movement, ties, empty outposts, control bonuses, disc choices, and observer comprehension. |
+| 007 — Colonization and Systems | Settler selection, overpayment, exile, replacement reveal, second disc, ordered bonuses, personal technologies, and chained decisions. |
+| 008 — Remaining base content | All technology/event/guild effects, persistent scoring, copied actions, special destinations, and manifest coverage review. Use integration fixtures for rare boundaries alongside real playable stories. |
+| 009 — Achievements and complete games | Mandatory claims, player-count thresholds, current-round completion plus final round, complete scoring/ties, final inspection, and rematch. |
+| 010 — Advanced factions | Reverse-order selection after shared setup, every innovation, threshold loss/reactivation, unique tracks, and an Advanced complete-game journey. |
+| 011 — Shared tabletop | Table-owned room, physical positions/clockwise order, QR phones, all public actions on the table, seat readers, out-of-turn responders, and retained controller recovery. |
+| 012 — Recovery and compatibility | Lost acknowledgements, concurrent submissions, offline/catch-up behavior, immutable undo boundaries, and explicit version failures across gameplay. |
+| 013 — Accessibility and release review | Complete responsive journeys, keyboard-only and touch play, focus/announcements, reduced motion, gallery completeness, and reviewed platform screenshots. |
+
+Recovery and accessibility start in the first slice; their named slices consolidate coverage rather than postpone them. Core interactions are not complete until they work in the personal and shared-table projections.
+
+At least one full two-player game, one full three-player game, and one full four-player game must run through ordinary controls without state injection, automated strategic move selection, or skipped turns. Exact endgame sequencing must also have deterministic fixtures triggering at every seat position. The shared-table release story finishes a full game with the display as public controller.
+
+## Complementary rules and data checks
+
+Use deterministic unit/model tests where exhaustive browser play would obscure the rule being tested. Verify cube conservation across Supply, Population, research, fleets, and removed-from-game effects; disc identity and placement; random-stream reproducibility; legal phase transitions; control tie tables; and scoring arithmetic.
+
+Check every manifest's IDs, counts, deck membership, prerequisites, board edges, overlays, mat tracks, effect definitions, and source references. Expected outcomes must be independently written, not computed by the reducer under test. Unsupported or unreviewed effects block complete-game release.
+
+## Verification and publication
+
+The scaffold must provide documented commands for frozen installation, static/type checks, rules tests, Firestore policy tests, E2E comparison, explicit snapshot generation, production build, and one complete verification entry point. Those commands must run inside the locked Nix shell and be documented only when implemented.
+
+Follow Pantheon's fast policy hooks and required full CI: local hooks check the relevant staged/pushed trees for weakened testing guards; CI runs complete static, rules, security, browser, and build verification. Keep traces and expected/actual/diff evidence on failure. Baseline generation is a separate explicit workflow and never counts as a comparison pass.
+
+When deployment is implemented, verify both root production and repository/PR base paths, retain previous previews, and prevent fork code from receiving deployment credentials. Application provisioning and deployment belong to the implementation slices.
+
+A change is ready for review when its legal player journey passes, every meaningful decision/result has accurate illustrated evidence, changed captures have been visually reviewed against the UX, and the complete comparison suite passes without relaxed guards. Commit source, tests, generated walkthroughs, fidelity notes, and reviewed platform baselines together.
