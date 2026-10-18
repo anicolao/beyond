@@ -92,6 +92,10 @@ test('the installed pre-commit hook blocks commits without a staged prompt', (t)
   mkdirSync(join(cwd, 'scripts'));
   cpSync(resolve(import.meta.dirname, '../.githooks/pre-commit'), join(cwd, '.githooks/pre-commit'));
   cpSync(checker, join(cwd, 'scripts/check-prompts.mjs'));
+  cpSync(resolve(import.meta.dirname, 'check-staged-policy.mjs'), join(cwd, 'scripts/check-staged-policy.mjs'));
+  cpSync(resolve(import.meta.dirname, 'check-e2e-policy.mjs'), join(cwd, 'scripts/check-e2e-policy.mjs'));
+  cpSync(resolve(import.meta.dirname, '../playwright.config.ts'), join(cwd, 'playwright.config.ts'));
+  cpSync(resolve(import.meta.dirname, '../tests/e2e'), join(cwd, 'tests/e2e'), { recursive: true, filter: path => !path.includes('/screenshots/') && !path.includes('/stories/') });
   chmodSync(join(cwd, '.githooks/pre-commit'), 0o755);
   f.git('config', 'core.hooksPath', '.githooks');
   f.git('add', '.');

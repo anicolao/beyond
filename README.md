@@ -4,7 +4,7 @@ Lead a faction beyond Earth. Help shape humanity's shared technology tree, build
 
 This repository defines a browser implementation of **Beyond the Sun**, designed by Dennis K. Chan and published by Rio Grande Games. Two to four players research technologies, develop production, build and move fleets, colonize systems, and claim achievements. The winner has the most victory points after the final round.
 
-**Status: documentation phase.** The documents below are the plan of record for implementation. The repository includes the illustrated UX design, rules and testing contracts, prompt-history policy, and GPLv3 license. Gameplay, application dependencies, Firebase resources, deployments, and browser tests have not been implemented.
+**Status: first tracer implemented.** Enter the observatory, read Learn, and join directly at a physical position on the shared table. Up to four local players can edit names, leave, choose Player 1, reload, and recover the same game across PR and production paths. Full gameplay follows the implementation plan.
 
 ## Project documents
 
@@ -14,6 +14,7 @@ This repository defines a browser implementation of **Beyond the Sun**, designed
 | [RULES_SUMMARY.md](RULES_SUMMARY.md) | Rules authority, turn structure, important exceptions, and content verification requirements. |
 | [UX_DESIGN.md](UX_DESIGN.md) | Original visual direction, screen compositions, interactions, and shared-table play. |
 | [E2E_GUIDE.md](E2E_GUIDE.md) | Real multiplayer journeys, exact screenshots, illustrated evidence, and delivery sequence. |
+| [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) | Commit-sized tracer stories, hosted preview contract, and milestone acceptance. |
 
 Read the vision first, then the rules and UX together. The E2E guide defines how each required behavior is demonstrated. [AGENTS.md](AGENTS.md) records project instructions, and [PROMPTS.md](PROMPTS.md) preserves the user requests verbatim.
 
@@ -39,7 +40,7 @@ The technical foundation consists of:
 - Firebase anonymous Authentication and Cloud Firestore, with an append-only room event stream.
 - Pure deterministic rules, versioned component manifests and seeded randomness, and separate personal/shared-display projections of one game state.
 - Vitest for rules and replay, Firebase emulators for authentication and write-policy checks, and Playwright for real multi-browser journeys.
-- A pinned Nix development environment, exact screenshot comparisons, generated walkthroughs, and retained GitHub Pages PR previews.
+- A pinned Nix development environment, exact screenshot comparisons, generated walkthroughs, and retained GitHub Pages PR previews with automatically posted live-link comments.
 
 This is a trusted-client design. Authentication and Firestore rules enforce access boundaries, attribution, immutability, and permitted write shapes. They do not establish server-side rules authority or conceal future seeded draws from a modified client. The ordinary UI must conceal unrevealed information. No competitive-security claim is intended.
 
@@ -58,6 +59,32 @@ The base game has no player-secret information. Research choices, faction resour
 Build small, complete browser-visible slices in the sequence in [E2E_GUIDE.md](E2E_GUIDE.md#delivery-and-story-map). A slice includes its rules, interface, synchronization, recovery behavior, accessible interaction, and illustrated browser proof. An untested backend or a static mockup alone is not a completed gameplay slice.
 
 Implementation starts with the pinned environment and static application shell, followed by rooms and reviewed setup manifests. Document development and verification commands as their scripts are implemented. Never copy sibling credentials.
+
+The [illustrated walkthroughs](tests/e2e/001-foundation/README.md) demonstrate arrival, physical-seat joining and configuration, and recovery between two built deployment paths. Tabletop stories use desktop and 4K shared displays; arrival also covers phone. Remote PvP receives its own production host/join stories in milestone 002.
+
+## Run and verify
+
+Use the locked Nix shell:
+
+```sh
+nix develop --command bun install --frozen-lockfile
+nix develop --command bun run emulators
+```
+
+In another terminal, run `PUBLIC_FIREBASE_EMULATORS=true nix develop --command bun run dev` and open `http://127.0.0.1:5197/`. No production credentials are needed for emulator play.
+
+```sh
+nix develop --command bunx playwright install chromium
+nix develop --command bun run verify
+```
+
+`verify` runs source-policy checks, policy regression tests, static/type checks, Firestore rules tests, and the illustrated E2E comparison against real PR and production builds served on one origin. For intentional capture changes, run `nix develop --command bun run test:e2e:update`, review the images, then rerun comparison. CI uses a pinned ARM64 Playwright Linux image; macOS has separate reviewed baselines.
+
+## Hosted PR previews
+
+Each same-repository PR gets `https://anicolao.github.io/beyond/pr<NUMBER>/` with manual steps in its description and an automatically posted live-link comment naming the deployed SHA. Preview publishing runs independently of E2E, deploys the revision's Firestore rules and Auth configuration first, and checks real physical-seat joining and reload against the hosted database. Merge verification runs in parallel.
+
+Firebase project `beyond-20261018` has anonymous Auth and a production Firestore database in `northamerica-northeast2`. Production and every PR use the same `games/<id>` documents and immutable event stream. Recovery options switches deployment URLs without changing the game or controller identity. Only E2E uses a separate emulator database. Deployment credentials and client config are repository secrets; only public browser config enters the bundle. See the [preview contract](IMPLEMENTATION_PLAN.md#preview-first-verification-in-parallel) for deployment and compatibility requirements.
 
 ## Rules and visual assets
 

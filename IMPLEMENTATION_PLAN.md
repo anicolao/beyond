@@ -1,0 +1,94 @@
+# Beyond the Sun — Implementation plan
+
+The plan of record is [README.md](README.md), [VISION.md](VISION.md), [RULES_SUMMARY.md](RULES_SUMMARY.md), [UX_DESIGN.md](UX_DESIGN.md), and [E2E_GUIDE.md](E2E_GUIDE.md). This plan turns their requirements into logical, independently reviewable commits.
+
+## The unit of delivery
+
+Each implementation commit delivers **one coherent production user goal, demonstrated by one or more user-story E2E tests**. Use separate tests where desktop web PvP, phone web PvP, and shared tabletop have different interaction flows; one-test-per-commit is not a limit. The test clicks the production UI, asserts the exact visible consequence, and photographs every meaningful state change through the mandatory TestStepHelper. Opening a decision, selecting a target, changing a name, cancelling, committing, seeing the consequence, and handing over the turn are separate illustrated steps when each changes the player's understanding.
+
+The commit includes everything necessary for that story: production components and original artwork, reviewed rules/content, pure reducer changes, immutable events and attribution, emulator-backed security tests, recovery, keyboard/touch support, exact screenshot baselines, generated walkthrough, fidelity notes, and manual preview instructions. Additional unit, policy, and integration tests support the story; they do not replace it. After remote hosting/joining arrives in 002, every gameplay milestone supplies desktop web PvP, phone web PvP, and shared-table stories wherever their interactions differ. Deliver a working capability in each supported mode with that capability’s commit; do not postpone the shared-table implementation until the complete-game milestone. Every step must be the intended production interaction and survive subsequent milestones. Never substitute a temporary wizard, save-confirmation journey, fake game action, or test-only navigation for the real flow. Extend the same components, commands, event stream, and storage contract as gameplay grows. Do not split a backend from its UI into separate milestones or accept a screenshot-only mockup as a tracer.
+
+A story begins through normal navigation and real setup. Test entropy is fixed before play; no seeded room injection, database-written outcome, test-only control, or automated strategic player chooses the moves. Show every intervening turn and every actor/observer view required to understand multiplayer play. Each test uses isolated Auth and Firestore emulators, and production uses the same command and projection code against hosted Firestore.
+
+Each logical commit must have a passing local comparison run and reviewed images. Keep commits small enough for one coherent user goal. If an effect family needs more work than one story can demonstrate, split it into additional commits with their own stories and source-reviewed manifests. Use PROMPT_WORK.md continuation records for subsequent commits under the same user request; never duplicate a prompt.
+
+## Preview first, verification in parallel
+
+Every same-repository PR automatically publishes a retained preview at `https://anicolao.github.io/beyond/pr<NUMBER>/`. As soon as Pages serves the requested revision, the preview job posts or updates a persistent comment on that PR with the clickable URL and deployed SHA. Its PR description also documents the supported stories and manual steps. Keep both current. Posting the live link happens before hosted smoke and independently of E2E completion. A screenshot artifact or local emulator URL is not a manual preview.
+
+The preview workflow and merge-verification workflow run independently on the same head revision:
+
+```text
+PR revision
+  ├─ Preview: install → build → deploy hosted Firestore rules/auth → publish → hosted smoke
+  └─ Merge gates: policy + types + rules tests + emulator E2E comparison + build
+```
+
+Preview must have **no `needs` dependency on E2E or the aggregate verification job**. A failing or slow E2E run must leave the preview available and its PR comment discoverable for manual diagnosis. Snapshot-generation runs do not replace comparison gates. Preview deployment is itself a required check so a green test suite cannot merge a broken hosted experience.
+
+The live Firebase project is `beyond-20261018`; its `(default)` production Firestore database is in `northamerica-northeast2`. Anonymous Authentication is enabled. PR previews use the real hosted database, never emulators. Preview and production use the **same canonical `games/<game-id>` documents and immutable `games/<game-id>/events/<command-id>` stream**. There is no deployment-channel namespace, copy, preview database, or PR-specific identity. Anonymous Firebase Auth persists across same-origin deployment paths; the retained game key is also deployment-independent. A table URL preserves its game ID when switching between `/beyond/` and `/beyond/prN/`. The table's Recovery options exposes both destinations. E2E uses the same paths and contract in the isolated `demo-beyond` Auth/Firestore emulators, never the hosted database.
+
+Recovery tests build both production and PR clients, serve both paths on one origin, and navigate between them through the actual UI. A change made through either client must be visible when reopening through the other. A different browser is not the same controller; possession of the URL alone never grants tabletop control. Version event contracts and preserve readable old histories. Deploy additive, backward-compatible rules before the client so retained production and preview clients can recover the same game. An incompatible newer history must produce an explicit recovery error rather than reset or fork the game.
+
+Every PR preview deployment publishes **that revision's `firestore.rules`** before publishing its client, even when the rules file did not change. Keep default-deny, ownership, immutable event, schema/version, and supported-command restrictions. Security tests run against those same rules in the emulator. The preview deploy job uses repository secrets containing project-scoped deployment credentials; browser Firebase config is public client configuration. Never expose service-account keys to the browser, commit them, run untrusted fork code with deploy credentials, or use `pull_request_target` to execute PR code.
+
+Serialize deployments to the shared rules/database and Pages branch. Before publishing, reject a superseded PR revision; record the published SHA in `revision.json` and in the workflow summary. Preserve other PR directories. If rules or publication fails, expose the failure and preserve the previous client. A smoke failure after publication leaves the served revision and PR link available for diagnosis; repair the backend rather than claiming an emulator-only story is complete.
+
+## First tracer: join and recover the actual shared table
+
+**Commit 001 — Gather directly at physical seats and recover the same table across deployments.** The arrival, Learn, and Play navigation leads directly to the shared table. Eight physical positions surround its center. A player taps Join here at their own position, enters a name there, and joins. Two to four local players can join, edit their names, leave, and choose Player 1 on that same surface. Remaining players are ordered clockwise. These are the gathering controls that lead into faction selection and Begin as those game capabilities arrive; no separate naming wizard or Save table/result page is introduced.
+
+The scope ends at a real persisted gathering. It does not claim that gameplay is implemented. Subsequent milestones add game decisions to this table and turn its occupied seats into faction mats. The production scene uses original art and semantic controls; concept plates remain visual references.
+
+The commit contains multiple illustrated stories:
+
+- Arrival and Learn on phone, desktop, and 4K screens.
+- Tabletop players joining physical positions, editing, leaving, choosing Player 1, enforcing four-player capacity, and reloading at the same seats; desktop and 4K shared-display views, one controller context.
+- Recovery from a PR path to the production path, changing a seat there, then opening the PR path again and observing the same game and change; desktop and 4K. Both built clients use the same emulator database and browser identity.
+
+Each opening of a seat editor, name entry, join, edit, removal, Player 1 change, recovery-option expansion, and deployment switch has its own screenshot and explicit UI assertions. Tests begin through real arrival and ordinary joins, with no injected state. Atomic command IDs, expected revisions, immutable history, capacity and seat ownership rules, stale-tab rejection, and idempotent retries support the UI.
+
+The pinned Nix/Bun environment, mandatory TestStepHelper, exact screenshots, generated mode-specific walkthroughs, production Firebase setup, independent previews, PR link comment, and hosted table-join/reload smoke are part of this milestone. Remote PvP is delivered as its own complete host/join interaction in milestone 002, with desktop and phone participant stories. It is not simulated by shrinking a shared table to a phone viewport.
+
+## Commit sequence
+
+| Commit/story | User goal and illustrated path | Rules and backend obligations |
+| --- | --- | --- |
+| 001 — Physical table and recovery | Read Learn; join/edit/leave at eight physical positions; choose Player 1; reload and switch between PR and production with the same game. Multiple arrival, table, and recovery stories. | Canonical game stream, controller identity shared across deployments, atomic immutable events, revision checks, idempotency, owner-only reads, 2–4 seat configuration, independent preview with PR comment. |
+| 002 — Invite a remote friend | Create a remote room, share code, join from a second identity, ready both seats, and restore a retained seat. | Separate remote room mode, atomic claims/collision handling, owner settings, readiness tied to configuration; remote joining cannot claim tabletop seats. |
+| 003 — Set up a Basic game | Inspect settings, select legal unique Basic factions, Begin, and inspect exact starting mats/boards at two, three, and four-player setup variants. | Reviewed board, overlay, faction, Supply, technology, Event, and achievement setup manifests; seeded setup, correct exclusions and Ore; immutable Begin. |
+| 004 — Research the first technology | Choose Level I research, inspect prerequisites/payment, commit, see the permanent cube and immediate bonus, then choose production and pass. | Legal pawn relocation/occupancy, separate research ownership, full resource accounting; one complete ordinary turn. |
+| 005 — Discover humanity's next technology | Play legal preparatory turns, select Level II, reveal/resolve its Event, choose type/candidate, and resume the interrupted effect. | Seeded two-match discovery, rejected cards to randomized deck bottom, public candidates, once-only bonuses, persisted choice queue; reveal locks undo. |
+| 006 — Learn from a rival's discovery | Another faction researches the discovered card, receives its own immediate bonus, and later uses its action; inspect the blocked action before research. | Shared card identity, personal research access, copied immediate bonus exactly once, action-slot occupancy and costs. |
+| 007 — Manage Population and Ore | Use a legal action, inspect column yields, grow Population, then later produce Ore with actual changed tracks. | Exposed-letter production, empty-column behavior, full yield, Supply/Population/research/ship conservation. |
+| 008 — Trade and decommission | Select Trade, perform multiple exchanges, inspect a ship to decommission, finish trading, and pass. | Three exact rates, left-to-right Supply draw, right-to-left returns/overflow, immediate control recalculation; no ordinary production added. |
+| 009 — Automate production | Research/use an automation effect, move the disc, inspect the newly exposed yield and cumulative scoring. | Permanent automation distinct from outposts; placeholders and levels beyond seven tested deterministically. |
+| 010 — Build and upgrade a fleet | Select a build action, source cube and allowed shipyard, build, then upgrade and inspect explicit levels/power. | Sol/controlled-shipyard restrictions, source-cube types, level cap, control recalculation after upgrades. |
+| 011 — Plan simultaneous jumps | Split one jump budget across ships, clear a leg, inspect final power, and commit the final plan. | Graph adjacency, budget conservation, simultaneous control resolution, no pass-through bonuses, no saved unused jumps. |
+| 012 — Contest an outpost | Arrive at an incumbent's system, see a tie preserve control, exceed power on a later turn, and inspect both mats' production changes. | Source-reviewed control decision table, empty retained outposts, withdrawal ties, gain-control effects, responder-owned specialty/bonus-order choices. |
+| 013 — Establish a colony | Select settling ships, inspect overpayment/exile, commit, see replacement, choose production disc, and resolve the bonus. | Ordered settlement/returns/exile/refill/disc/bonus; both decks' exhaustion, permanent colony, no double gain-control bonus. |
+| 014 — Use a personal technology | Acquire the relevant colony bonus, inspect its personal technology, receive the immediate benefit, and use its exclusive action. | No research cube, public card identity, personal-only action/copy restrictions, level-based scoring. |
+| 015 — Unlock advanced research | Discover a fixed Event, unlock a guild, research Level III and then Level IIII through legal prerequisites, and inspect the result. | Reviewed guild effects, research-level permission, discovered-only research, two-of-three exceptions, scoring effects. |
+| 016 — Resolve a chained or copied effect | Play the reviewed technology combination, choose its target and required responses, see the effect order and return to the correct actor. | Expand this group into one additional story/commit per distinct unresolved effect family. Track all 46 technologies, 20 Events, 24 Systems and ten achievements in a source-linked coverage manifest; no unsupported content enters random setup. |
+| 017 — Claim a required achievement | Meet the condition through ordinary play, inspect eligible rewards, choose one claim when several qualify, and hand off. | One claim per turn, mandatory qualification, one claim per faction/card, exact slots/rewards, no placeholder counting. |
+| 018 — Finish a two-player game | Play the whole game, trigger the third total claim, finish the current plus final round, inspect arithmetic, and open rematch. | Exact equal-turn scheduling, continued final claims, all scoring categories, tie-break sequence/shared winners, retained finished record. |
+| 019 — Finish three- and four-player games | Add one new complete-game story in each of two logical commits, recording every decision and handoff. | Three versus four claim threshold, overlays and achievement-slot restrictions, convergence across isolated remote clients. |
+| 020 — Choose Advanced factions | Inspect the shared setup, draft in reverse turn order, and reach an innovation through real actions. | All players use Advanced mats; unique setup/tracks and source-reviewed innovations. Separate stories/commits cover each materially distinct innovation and threshold loss/reactivation. |
+| 021 — Exercise the complete physical table | Extend the existing complete-game coverage to corner seats and 4K reach/orientation: configure, finish, resolve out-of-turn choices, score, and rematch. | Exactly one controller identity/context; full seat-facing controls, no remote readiness, no QR/phones/sign-ins; same reducer as remote play. |
+| 022 — Recover an interrupted decision | Disconnect around an accepted command/reveal, reload, resume its actual pending choice, and see one consequence. | Stable command identity, atomic revision acceptance, deterministic replay/catch-up, no duplicate costs or animation backlog. |
+| 023 — Revise a reversible turn | Commit reversible steps, undo their suffix from history, replay a different choice, and see a reveal boundary stop undo. | Append-only attributed rollback, canonical reconstruction, no crossing another actor, turn handoff, or information reveal. |
+| 024 — Play accessibly across screens | Finish a representative turn with keyboard only and touch alternatives, inspect crowded/long components, and repeat with reduced motion. | Focus restoration, announcements, all target sizes and viewport containment; production gallery of every shipped renderer/state; comprehensive release fidelity review. |
+
+Accessibility, recovery, production art, and real hosted persistence begin with 001 and continue in every commit. Their later stories exercise cross-feature boundaries rather than postponing working behavior. The later shared-display release story extends the integrated mode coverage; it does not introduce table controls or retrofit gameplay. The complete Basic game, complete Advanced factions, and all reviewed base content are required; the Expert Technology Tableau and expansion remain deferred.
+
+## Acceptance for each commit and PR
+
+- Read the generated walkthrough end-to-end. Every caption shows its actual state and player viewpoint; every changed decision surface has a screenshot and exact assertions.
+- Review macOS and pinned Linux captures against the UX compositions and record concrete fidelity findings, including deliberate scope differences.
+- Run static checks, source-policy negative tests, pure rules/model tests, Firestore rules tests, and emulator-backed E2E comparison. Snapshot generation alone is not a pass.
+- Open the retained PR preview and manually perform its documented story against hosted Firestore. Verify `revision.json` names the PR head, the backend is live, and reload reads the saved result.
+- Keep preview publishing independent of E2E. Require the final comparison and hosted-preview checks before merge, and report any failure without disguising it as a completed milestone.
+
+## Initial scaffold data conversion
+
+The superseded PR2 scaffold created five two-seat tables under its old deployment namespace. The owner-run, dry-run-first `scripts/migrate-initial-tables.cjs` converted these to canonical games with the original IDs, controller UIDs, names, South/North positions and first player. Conversion is atomic per game and refuses to overwrite an existing canonical game. Original legacy records remain read-only audit evidence and are inaccessible to active clients; all live reads/writes target canonical games. The client recognizes the old retained-table key once, then stores its deployment-independent key.

@@ -1,0 +1,83 @@
+name: Publish live preview
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hosted-firestore-and-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+      pages: write
+      pull-requests: write
+    env:
+      FIREBASE_WEB_CONFIG: ${{ secrets.FIREBASE_WEB_CONFIG }}
+      DEPLOY_REVISION: ${{ github.event.pull_request.head.sha || github.sha }}
+      PR_NUMBER: ${{ github.event.pull_request.number }}
+      PUBLIC_BASE_PATH: ${{ github.event_name == 'pull_request' && format('/beyond/pr{0}', github.event.pull_request.number) || '/beyond' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: cachix/install-nix-action@v31
+      - run: nix develop --command bun install --frozen-lockfile
+      - name: Configure live client and build
+        run: |
+          nix develop --command node scripts/configure-backend.mjs
+          nix develop --command bun run build
+          nix develop --command node --input-type=module -e 'import {writeFileSync} from "node:fs"; writeFileSync("build/revision.json", JSON.stringify({revision:process.env.DEPLOY_REVISION, base:process.env.PUBLIC_BASE_PATH})); writeFileSync("build/.nojekyll", "");'
+      - name: Reject a superseded PR deployment
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          current=$(nix develop --command gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --json headRefOid --jq .headRefOid)
+          test "$current" = "$DEPLOY_REVISION"
+      - name: Deploy this revision's Firestore rules and anonymous authentication
+        env:
+          FIREBASE_DEPLOY_CREDENTIALS: ${{ secrets.FIREBASE_DEPLOY_CREDENTIALS }}
+        run: |
+          credentials="$RUNNER_TEMP/beyond-firebase.json"
+          umask 077
+          printenv FIREBASE_DEPLOY_CREDENTIALS > "$credentials"
+          export GOOGLE_APPLICATION_CREDENTIALS="$credentials"
+          nix develop --command bunx firebase deploy --only firestore:rules,auth --project beyond-20261018 --non-interactive
+          rm "$credentials"
+      - uses: peaceiris/actions-gh-pages@v4.1.0
+        with:
+          github_token: ${{ github.token }}
+          publish_dir: build
+          destination_dir: ${{ github.event_name == 'pull_request' && format('pr{0}', github.event.pull_request.number) || '' }}
+          keep_files: true
+      - name: Build Pages and wait for the deployed revision
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: nix develop --command node scripts/wait-pages.mjs
+      - name: Post the live preview link on the PR
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: nix develop --command node scripts/post-preview-comment.mjs
+      - name: Check the hosted browser flow
+        env:
+          PREVIEW_URL: https://anicolao.github.io${{ env.PUBLIC_BASE_PATH }}/
+          EXPECTED_REVISION: ${{ env.DEPLOY_REVISION }}
+        run: |
+          nix develop --command bunx playwright install --with-deps chromium
+          nix develop --command node scripts/preview-smoke.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hosted-preview-evidence
+          path: preview-smoke.json

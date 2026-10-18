@@ -1,0 +1,43 @@
+import { test, expect } from '../helpers/fixtures';
+import { TestStepHelper } from '../helpers/test-step-helper';
+test('Recover one game between PR and production clients', async ({ page }, info) => {
+  info.annotations.push({ type: 'viewports', description: 'desktop,tabletop-4k' }, { type: 'setup', description: 'Two real static client builds served at PR and production paths on one origin, one browser controller, one canonical emulator game. No copied or injected data.' });
+  const steps = new TestStepHelper(page, info, info.title);
+  const shot = (id: string, description: string, spec: string, check: () => Promise<unknown>) => steps.step(id, description, [{ spec, check }]);
+  await page.goto('./');
+  await shot('arrival', 'Arrive through the PR client', 'Play connects through real anonymous Auth.', async () => { await expect(page.getByRole('button', { name: 'Play', exact: true })).toBeEnabled(); });
+  await page.getByRole('button', { name: 'Play', exact: true }).click();
+  await shot('mode', 'Choose the shared table', 'The actual shared-table entry is available.', async () => { await expect(page.getByRole('button', { name: /Shared table/ })).toBeEnabled(); });
+  await page.getByRole('button', { name: /Shared table/ }).click();
+  await shot('table', 'Create the table through the PR client', 'All eight physical seats are empty.', async () => { await expect(page.getByRole('button', { name: /^Join at / })).toHaveCount(8); });
+  await page.getByRole('button', { name: 'Join at South', exact: true }).click();
+  await shot('editor', 'Open the South position', 'The name entry belongs to the South seat.', async () => { await expect(page.getByLabel('South player name')).toHaveValue(''); });
+  await page.getByLabel('South player name').fill('Ada');
+  await shot('name', 'Ada enters a name at the table', 'Ada can join directly at South.', async () => { await expect(page.getByLabel('South player name')).toHaveValue('Ada'); });
+  await page.getByRole('button', { name: 'Join table', exact: true }).click();
+  await shot('joined', 'Persist Ada’s seat in the shared game', 'Ada occupies South after the server commits the join.', async () => { await expect(page.getByRole('heading', { name: 'Ada', exact: true })).toBeVisible(); });
+  const id = new URL(page.url()).searchParams.get('table');
+  await page.getByText('Recovery options', { exact: true }).click();
+  await shot('options', 'Choose another client for recovery', 'The production link preserves this game ID.', async () => { await expect(page.getByRole('link', { name: 'Open in production' })).toHaveAttribute('href', `/beyond/?table=${id}`); });
+  await page.getByRole('link', { name: 'Open in production' }).click();
+  await shot('production', 'Recover the same game through production', 'The production build replays Ada’s PR-created seat at the same game ID.', async () => {
+    await expect(page).toHaveURL(`http://127.0.0.1:4197/beyond/?table=${id}`);
+    await expect(page.getByRole('heading', { name: 'Ada', exact: true })).toBeVisible();
+  });
+  await page.getByRole('button', { name: 'Edit Ada', exact: true }).click();
+  await shot('edit', 'Edit the same seat through production', 'The occupied South editor retains Ada.', async () => { await expect(page.getByLabel('South player name')).toHaveValue('Ada'); });
+  await page.getByLabel('South player name').fill('Ada Lovelace');
+  await shot('updated-name', 'Enter a change through production', 'The new name is visible before committing.', async () => { await expect(page.getByLabel('South player name')).toHaveValue('Ada Lovelace'); });
+  await page.getByRole('button', { name: 'Keep name', exact: true }).click();
+  await shot('committed', 'Commit through the production client', 'The same South position shows the accepted change.', async () => { await expect(page.getByRole('heading', { name: 'Ada Lovelace', exact: true })).toBeVisible(); });
+  await page.getByText('Recovery options', { exact: true }).click();
+  await shot('return-options', 'Choose the PR client again', 'Opening a PR requires a positive PR number.', async () => { await expect(page.getByRole('button', { name: 'Open PR preview' })).toBeDisabled(); });
+  await page.getByLabel('PR number').fill('2');
+  await shot('pr-number', 'Select PR 2 for recovery', 'The ordinary recovery control opens PR 2 for this same game.', async () => { await expect(page.getByRole('button', { name: 'Open PR preview' })).toBeEnabled(); });
+  await page.getByRole('button', { name: 'Open PR preview' }).click();
+  await shot('recovered', 'Recover production’s change in the PR client', 'The original PR build reads the updated seat from the same canonical game, without another identity or copy.', async () => {
+    await expect(page).toHaveURL(`http://127.0.0.1:4197/beyond/pr2/?table=${id}`);
+    await expect(page.getByRole('heading', { name: 'Ada Lovelace', exact: true })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Join at South', exact: true })).toHaveCount(0);
+  });
+});

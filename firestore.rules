@@ -1,0 +1,65 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    match /games/{game} {
+      function owned(data) { return signedIn() && data.ownerUid == request.auth.uid; }
+      function shape(data) {
+        return data.keys().hasOnly(['ownerUid','schema','mode','revision','lastCommand','seats','firstPlayer'])
+          && data.schema == 1 && data.mode == 'tabletop' && data.revision is int
+          && data.seats is map && data.seats.size() <= 4
+          && data.seats.keys().hasOnly(['north','north-east','east','south-east','south','south-west','west','north-west'])
+          && (data.firstPlayer in data.seats || (data.firstPlayer == '' && data.seats.size() == 0));
+      }
+      function linked(data) {
+        let event = getAfter(/databases/$(database)/documents/games/$(game)/events/$(data.lastCommand)).data;
+        return event.revision == data.revision && event.commandId == data.lastCommand;
+      }
+      allow get: if signedIn() && (!exists(/databases/$(database)/documents/games/$(game)) || owned(resource.data));
+      allow list: if false;
+      allow create: if owned(request.resource.data) && shape(request.resource.data)
+        && request.resource.data.revision == 0 && request.resource.data.seats.size() == 0 && linked(request.resource.data);
+      allow update: if owned(resource.data) && owned(request.resource.data) && shape(request.resource.data)
+        && request.resource.data.revision == resource.data.revision + 1 && linked(request.resource.data);
+      allow delete: if false;
+      match /events/{event} {
+        function root() { return /databases/$(database)/documents/games/$(game); }
+        function owner() { return signedIn() && getAfter(root()).data.ownerUid == request.auth.uid; }
+        function first(seats) {
+          return 'north' in seats ? 'north' : 'north-east' in seats ? 'north-east' : 'east' in seats ? 'east' : 'south-east' in seats ? 'south-east' : 'south' in seats ? 'south' : 'south-west' in seats ? 'south-west' : 'west' in seats ? 'west' : 'north-west' in seats ? 'north-west' : '';
+        }
+        function change(e, before, after) {
+          let p = e.position;
+          let onlySeat = after.seats.diff(before.seats).affectedKeys().hasOnly([p]);
+          let keptFirst = after.firstPlayer == (before.firstPlayer == '' ? p : before.firstPlayer);
+          let validName = e.name is string && e.name.size() > 0 && e.name.size() <= 24 && e.name.matches('^\\S(.*\\S)?$');
+          return e.revision == before.revision + 1 && (
+            (e.type == 'seat-joined' && !(p in before.seats) && validName && onlySeat
+              && after.seats.size() == before.seats.size() + 1 && after.seats[p] == e.name && keptFirst)
+            || (e.type == 'seat-renamed' && p in before.seats && validName && onlySeat
+              && after.seats.size() == before.seats.size() && after.seats[p] == e.name && keptFirst)
+            || (e.type == 'seat-left' && p in before.seats && e.name == '' && onlySeat
+              && !(p in after.seats) && after.seats.size() == before.seats.size() - 1
+              && after.firstPlayer == (before.firstPlayer == p ? first(after.seats) : before.firstPlayer))
+            || (e.type == 'first-player-chosen' && p in before.seats && e.name == ''
+              && after.seats == before.seats && after.firstPlayer == p)
+          );
+        }
+        function valid() {
+          let e = request.resource.data;
+          let after = getAfter(root()).data;
+          return e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name'])
+            && e.schema == 1 && e.actorUid == request.auth.uid && e.commandId == event
+            && after.lastCommand == event && after.revision == e.revision
+            && ((!exists(root()) && e.type == 'table-created' && e.revision == 0 && e.position == '' && e.name == '')
+              || (exists(root()) && change(e, get(root()).data, after)));
+        }
+        allow read: if signedIn() && get(root()).data.ownerUid == request.auth.uid;
+        allow get: if signedIn() && !exists(root());
+        allow create: if owner() && valid();
+        allow update, delete: if false;
+      }
+    }
+    match /{document=**} { allow read, write: if false; }
+  }
+}
