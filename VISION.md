@@ -42,9 +42,9 @@ The board is the interface. Players reach toward a technology, ship, system, or 
 
 ### One game across personal screens and the table
 
-Remote players use their own phones, tablets, or computers. A shared-table group uses a large display for all public decisions, with seats aligned to physical positions. Phones can join and inspect; base-game public play must not depend on everyone holding a second screen.
+Remote players use their own phones, tablets, or computers. A shared-table group uses one large display for setup and every decision, with seats aligned to physical positions. Players enter names, choose positions, inspect components, and play directly on that display. There are no tabletop QR invitations, companion devices, or individual sign-ins.
 
-Base play has no conventional private hand. Revealed research candidates are public information. Future deck order, unrevealed events, and not-yet-revealed cards stay concealed in the ordinary presentation. Do not introduce hidden choices merely to give a phone controller something to do.
+Base play has no player-secret information. Revealed research candidates and personal technologies are public information. Future deck order, unrevealed events, and not-yet-revealed cards stay concealed from everyone in the ordinary presentation. A technology's exclusive use by one faction does not make its identity secret.
 
 ### Recovery belongs to ordinary play
 
@@ -62,12 +62,12 @@ The architecture is intentionally trusted-client multiplayer, consistent with th
 
 ## Measures of success
 
-- A player can create a room and a friend can join from a code or QR link without coaching.
+- Remote players can create a room and join from a code or invitation without coaching; a tabletop group configures every seat directly on the shared display.
 - Players can distinguish an available technology from one their faction has researched, and explain why an action is blocked.
 - A production choice shows its exact result, including empty supply columns, before commitment.
 - A fleet plan shows jump expenditure, final power, and control consequences without changing state while planning.
 - Two, three, and four isolated clients finish legal games and agree on the complete result.
-- A shared tabletop completes a game with public actions on the display and readable mats at occupied seats.
+- A shared tabletop configures and completes a game in one browser, with every action on the display and readable mats at occupied seats, without QR codes or personal devices.
 - Reload and interrupted commands preserve pending choices and apply each accepted decision exactly once.
 - Core play fits the tested viewports with readable focused components, 44 px targets, keyboard access, and reduced motion.
 - Every shipped content effect has reviewed rules data and deterministic coverage; every gameplay slice has an illustrated real-browser journey.

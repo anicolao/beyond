@@ -4,6 +4,8 @@ README.md, VISION.md, RULES_SUMMARY.md, UX_DESIGN.md, and E2E_GUIDE.md are the p
 
 Follow E2E_GUIDE.md: use the shared fixture and required TestStepHelper for every meaningful illustrated step. Do not weaken exact screenshot comparisons, capture guards, timing limits, real-player setup, or generated walkthrough requirements.
 
+Tabletop play is self-contained on one shared display: configure named local seats and perform every action there. Do not add QR joining, companion devices, per-player sign-in, or remote seat claiming to tabletop mode. The base game has no player-secret information; unrevealed decks and events are concealed from everyone. Remote personal-screen play retains its separate invitation and identity model.
+
 Record every user prompt concerning this project verbatim in PROMPTS.md, including corrections and follow-up requests. Append each prompt once, in conversation order, under the next `## Prompt N: Summary` heading. Give each new prompt a 2–3 word summary. Follow the heading with a blank line and the verbatim prompt, preserving spelling, punctuation, capitalization, and line breaks. Do not include assistant messages or automatically supplied environment context.
 
 Update the log before doing other project work for each new prompt. Never rewrite or remove existing entries, and never invent or duplicate a prompt to satisfy a hook. Stage the new entries with the related work when committing.
