@@ -21,3 +21,7 @@ Prompt N | SHA256 | Description of this continuation
 `N` is the latest logged prompt number. `SHA256` is the lowercase SHA-256 of the exact staged PROMPTS.md bytes. The description is 10–200 characters on one line and identifies a distinct step. Preserve existing continuation records. A new user request always requires a new prompt entry, not a continuation.
 
 Commit and push requested changes to the active PR before reporting them complete. Never merge a review PR unless the user asks. Keep the public repository licensed under GPL-3.0-only and retain original artwork provenance.
+
+A tracer bullet demonstrates intended production behavior, not disposable functionality. Each logical commit may need multiple E2E stories for desktop web PvP, phone web PvP, and tabletop. Shared-table players join directly at physical positions on the table surface. Do not add temporary naming/save wizards that later milestones must replace.
+
+Production and all PR previews use the same canonical games/<id> storage and event history, the same Firebase project and controller identity, and deployment-independent retention. Recovery changes the client URL, never the data namespace. Preview jobs deploy compatible rules for every revision and post/update a live link on the PR as soon as that revision is served. Never gate preview publication or its link on E2E completion.

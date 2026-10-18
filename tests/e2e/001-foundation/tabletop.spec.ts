@@ -1,0 +1,65 @@
+import { test, expect } from '../helpers/fixtures';
+import { TestStepHelper } from '../helpers/test-step-helper';
+test('Join physical seats and arrange the shared table', async ({ page }, info) => {
+  info.annotations.push({ type: 'viewports', description: 'desktop,tabletop-4k' }, { type: 'setup', description: 'One shared-display controller, four local players. Real Auth and Firestore emulators, ordinary UI joins, no injected room or event history.' });
+  const steps = new TestStepHelper(page, info, info.title);
+  const shot = (id: string, description: string, spec: string, check: () => Promise<unknown>) => steps.step(id, description, [{ spec, check }]);
+  await page.goto('./');
+  await shot('arrival', 'Arrive at the observatory', 'Play is connected and ready.', async () => { await expect(page.getByRole('button', { name: 'Play', exact: true })).toBeEnabled(); });
+  await page.getByRole('button', { name: 'Play', exact: true }).click();
+  await shot('mode', 'Choose one shared display', 'The shared table supports two to four local players.', async () => { await expect(page.getByRole('button', { name: /Shared table/ })).toContainText('2–4 players'); });
+  await page.getByRole('button', { name: /Shared table/ }).click();
+  await shot('empty-table', 'Join directly where you sit', 'Eight physical Join here controls surround the table, without invitation or save wizard.', async () => {
+    await expect(page.getByRole('button', { name: /^Join at / })).toHaveCount(8);
+    await expect(page.locator('main')).not.toContainText(/QR|scan|Save table|Your table is saved/i);
+  });
+  for (const [position, name] of [['South', 'Ada'], ['North', 'Bora'], ['East', 'Cleo'], ['West', 'Dara']]) {
+    const key = position.toLowerCase();
+    await page.getByRole('button', { name: `Join at ${position}`, exact: true }).click();
+    await shot(`${key}-editor`, `${name} opens the ${position} seat`, 'The name editor is at the chosen physical seat; joining needs a name.', async () => {
+      await expect(page.getByLabel(`${position} player name`)).toHaveValue('');
+      await expect(page.getByRole('button', { name: 'Join table', exact: true })).toBeDisabled();
+    });
+    await page.getByLabel(`${position} player name`).fill(name);
+    await shot(`${key}-name`, `${name} enters a local name`, 'The name appears inline and Join table becomes available.', async () => {
+      await expect(page.getByLabel(`${position} player name`)).toHaveValue(name);
+      await expect(page.getByRole('button', { name: 'Join table', exact: true })).toBeEnabled();
+    });
+    await page.getByRole('button', { name: 'Join table', exact: true }).click();
+    await shot(`${key}-joined`, `${name} joins the physical seat`, 'The committed name replaces that position’s Join here control.', async () => {
+      await expect(page.getByRole('region', { name: `${position} seat`, exact: true }).getByRole('heading', { name, exact: true })).toBeVisible();
+    });
+  }
+  await shot('capacity', 'Four players fill the table', 'Every remaining empty position rejects a fifth local player.', async () => {
+    for (const button of await page.getByRole('button', { name: /^Join at / }).all()) await expect(button).toBeDisabled();
+  });
+  await page.getByRole('button', { name: 'Make Bora Player 1', exact: true }).click();
+  await shot('first-player', 'Choose Bora as Player 1', 'The turn order begins at North then proceeds clockwise.', async () => {
+    await expect(page.getByRole('list', { name: 'Clockwise turn order' }).getByRole('listitem')).toHaveText(['Bora · Player 1', 'Cleo', 'Ada', 'Dara']);
+  });
+  await page.getByRole('button', { name: 'Edit Ada', exact: true }).click();
+  await shot('edit', 'Ada edits the occupied South seat', 'The editor retains the current name at that seat.', async () => { await expect(page.getByLabel('South player name')).toHaveValue('Ada'); });
+  await page.getByLabel('South player name').fill('Ada Lovelace');
+  await shot('renamed-entry', 'Enter the updated player name', 'The edited name is visible before committing.', async () => { await expect(page.getByLabel('South player name')).toHaveValue('Ada Lovelace'); });
+  await page.getByRole('button', { name: 'Keep name', exact: true }).click();
+  await shot('renamed', 'Keep Ada’s new name', 'The same occupied seat and order show the committed name.', async () => { await expect(page.getByRole('heading', { name: 'Ada Lovelace', exact: true })).toBeVisible(); });
+  await page.getByRole('button', { name: 'Dara leaves table', exact: true }).click();
+  await shot('leave', 'Dara leaves before setup begins', 'The West position becomes joinable and three seats remain.', async () => {
+    await expect(page.getByRole('button', { name: 'Join at West', exact: true })).toBeEnabled();
+    await expect(page.getByRole('heading', { name: 'Dara', exact: true })).toHaveCount(0);
+  });
+  const url = page.url();
+  await page.reload();
+  await shot('reload', 'Recover the same physical table', 'Server replay preserves names, positions, first player, removal, and table URL.', async () => {
+    await expect(page).toHaveURL(url);
+    await expect(page.getByRole('list', { name: 'Clockwise turn order' }).getByRole('listitem')).toHaveText(['Bora · Player 1', 'Cleo', 'Ada Lovelace']);
+    await expect(page.getByRole('button', { name: 'Join at West', exact: true })).toBeEnabled();
+  });
+  await page.getByRole('button', { name: 'Back to observatory' }).click();
+  await shot('continue', 'Find the table from the observatory', 'Continue is ready for the retained game.', async () => { await expect(page.getByRole('button', { name: 'Continue', exact: true })).toBeEnabled(); });
+  await page.getByRole('button', { name: 'Continue', exact: true }).click();
+  await shot('continued', 'Continue at the same seats', 'Continue reopens the same table URL and Player 1.', async () => {
+    await expect(page).toHaveURL(url);
+    await expect(page.getByRole('list', { name: 'Clockwise turn order' }).getByRole('listitem').first()).toHaveText('Bora · Player 1');
+  });
+});

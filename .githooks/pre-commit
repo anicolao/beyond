@@ -1,3 +1,4 @@
 #!/bin/sh
 set -eu
 node scripts/check-prompts.mjs
+node scripts/check-staged-policy.mjs

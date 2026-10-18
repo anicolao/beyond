@@ -64,7 +64,7 @@ The feature README indexes generated stories. Each test owns its output director
 
 Every meaningful step contains the named action, actor/viewpoint, exact visible assertions, readiness/layout checks, and a screenshot of that result. Capture the opening state, new decision surfaces, commitments, public consequences, and turn handoffs. Opening, reading, cancelling, and committing are distinct steps when they change what the player understands.
 
-Generate walkthroughs only after the story passes. Include title, goal, setup/seed, participants, ordered captions, assertions, and linked full-resolution images. Remote-play stories show phone and desktop captures together and provide an expandable 4K view. Tabletop stories show the shared display's 4K captures throughout local setup and play; they do not require phone views or additional contexts. Captions must describe the image actually captured. Do not hand-maintain a separate narrative that drifts from the test.
+Generate walkthroughs only after the story passes. Include title, goal, setup/seed, participants, ordered captions, assertions, and linked full-resolution images. Remote-play stories show phone and desktop captures together; include a 4K personal-screen view where the story requires it. Declare required viewports per story and fail finalization if any are missing. Tabletop stories show the shared display's 4K captures throughout local setup and play; they do not require phone views or additional contexts. Captions must describe the image actually captured. Do not hand-maintain a separate narrative that drifts from the test.
 
 Every changed feature also records human visual review in `FIDELITY.md`: reference the reviewed UX composition, captures, component scale, materials, legibility, interaction placement, and intentional differences. Exact equality with yesterday's screenshot does not establish fidelity to the design.
 
@@ -193,7 +193,7 @@ Each numbered slice delivers its rules, accessible production UI, emulator-backe
 
 | Slice | Browser-visible outcome |
 | --- | --- |
-| 001 — Shell and visual foundation | Required `TestStepHelper` and shared fixture with capture/policy guards; arrival, Learn, original component studies/gallery, anonymous emulator connection, static build and base-path navigation. Review visual composition before accepting baselines. |
+| 001 — Shell and visual foundation | Required `TestStepHelper` and shared fixture with capture/policy guards; illustrated arrival and Learn; direct physical-position joining for 2–4 local players, editing/leaving/Player 1 on the actual table, immutable commands, and recovery across built PR/production paths sharing one game. Multiple mode-specific E2E stories per commit are allowed and required where flows differ. Live preview posts its link on the PR independently of E2E. Review visual composition before accepting baselines. |
 | 002 — Rooms and seating | Remote create/join/code/QR, readiness, owner settings, full/missing room recovery, retained seats and collision handling; keep remote joining separate from tabletop local seats. |
 | 003 — Seeded Basic setup | Two-, three-, and four-player boards, overlays, faction uniqueness, starting resources, achievement slots, first player, and conserved cubes/discs. |
 | 004 — Research and discovery | Legal action movement, prerequisites, permanent cubes, event resolution, public candidates, type choice, immediate bonuses, guild unlocking, and research ownership. |
@@ -208,6 +208,8 @@ Each numbered slice delivers its rules, accessible production UI, emulator-backe
 | 013 — Accessibility and release review | Complete responsive journeys, keyboard-only and touch play, focus/announcements, reduced motion, gallery completeness, and reviewed platform screenshots. |
 
 Recovery and accessibility start in the first slice; their named slices consolidate coverage rather than postpone them. Core interactions are not complete until they work in the personal and shared-table projections.
+
+[IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) breaks these broad coverage categories into commit-sized primary E2E stories. Every implementation commit includes one such user journey and its complete illustrated proof.
 
 At least one full two-player game, one full three-player game, and one full four-player game must run through ordinary controls without state injection, automated strategic move selection, or skipped turns. Exact endgame sequencing must also have deterministic fixtures triggering at every seat position. The shared-table release story configures and finishes a full game in one browser context, using only the display from initial naming through rematch.
 
@@ -225,4 +227,12 @@ Follow Pantheon's fast policy hooks and required full CI: local hooks check the 
 
 When deployment is implemented, verify both root production and repository/PR base paths, retain previous previews, and prevent fork code from receiving deployment credentials. Application provisioning and deployment belong to the implementation slices.
 
+Preview publication must run independently of E2E merge gates. Every preview deploys that revision's production Firestore rules before its client, uses hosted anonymous Auth and Firestore, publishes a revision-linked URL in the PR, and runs a hosted browser smoke check. A slow or failing E2E comparison must not prevent manual testing. Require both final verification and a working hosted preview before merge.
+
 A change is ready for review when its legal player journey passes, every meaningful decision/result has accurate illustrated evidence, changed captures have been visually reviewed against the UX, and the complete comparison suite passes without relaxed guards. Commit source, tests, generated walkthroughs, fidelity notes, and reviewed platform baselines together.
+
+## Durable production slices
+
+Every illustrated step must demonstrate the intended production flow. Do not build temporary setup/save/result pages merely to obtain an end-to-end pass. A logical commit delivers one coherent user goal through as many stories as needed for desktop web PvP, phone web PvP, and tabletop. Tabletop joining occurs at physical positions on the actual table surface, in one controller context.
+
+PR and production clients share canonical `games/<id>` data and deployment-independent identity/retention. Recovery E2E builds both clients and uses actual UI navigation between their paths on one origin against the same emulator store. Change a seat through one client and verify the other replays it. No game injection, database copying, or test-only switch is allowed. Hosted preview publication deploys this revision's compatible rules and posts its live URL to the PR without waiting for E2E.

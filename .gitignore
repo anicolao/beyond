@@ -1,0 +1,16 @@
+node_modules/
+.svelte-kit/
+build/
+.firebase/
+*-debug.log
+.env
+.env.*
+!.env.example
+playwright-report/
+test-results/
+preview-smoke.json
+tmp/
+.DS_Store
+
+build-e2e-preview/
+build-e2e-production/

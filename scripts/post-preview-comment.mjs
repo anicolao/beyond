@@ -1,0 +1,11 @@
+import { execFileSync } from 'node:child_process';
+const { GITHUB_REPOSITORY: repo, PR_NUMBER: number, PUBLIC_BASE_PATH: base, DEPLOY_REVISION: revision } = process.env;
+if (!number) process.exit(0);
+const api = (args, input) => execFileSync('gh', ['api', ...args], { input, encoding: 'utf8' });
+const marker = '<!-- beyond-live-preview -->';
+const url = `https://anicolao.github.io${base}/`;
+const pages = JSON.parse(api(['--paginate', '--slurp', `repos/${repo}/issues/${number}/comments`]));
+const comment = pages.flat().find(c => c.user.type === 'Bot' && c.body.includes(marker));
+const body = `${marker}\nLive preview: [Open Beyond the Sun](${url})\n\nDeployed revision: \`${revision}\`.\n\nPlay → Shared table → Join here at a physical seat. Join 2–4 local players, edit/leave, choose Player 1, and reload. Recovery options keeps this same game when switching between PR and production. Production becomes available after the scaffold is merged and deployed.\n\nThis link is posted as soon as the revision is served. Hosted smoke and emulator E2E checks may still be running; see PR checks for their results.`;
+api(['--method', comment ? 'PATCH' : 'POST', comment ? `repos/${repo}/issues/comments/${comment.id}` : `repos/${repo}/issues/${number}/comments`, '--input', '-'], JSON.stringify({ body }));
+console.log(`Posted live preview to PR #${number}: ${url}`);

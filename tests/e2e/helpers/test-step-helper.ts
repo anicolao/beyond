@@ -1,0 +1,75 @@
+import { expect, test, type Page, type TestInfo } from '@playwright/test';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { dirname } from 'node:path';
+import { identicalPixels, preparePixels } from './exact-pixels';
+import { assertScreenFit } from './screen-fit';
+
+export const OPERATION_BUDGET = 2_000;
+export interface Verification { spec: string; check: () => Promise<unknown> }
+export interface StepView { page?: Page; player?: string; status?: 'synced' | 'offline' | 'reconnecting' | 'incompatible'; document?: boolean }
+type RecordedStep = { id: string; description: string; player: string; verifications: string[]; image: string };
+export type StoryRecord = { title: string; slug: string; project: string; platform: string; setup: string; viewports: string[]; steps: RecordedStep[] };
+const records = new WeakMap<TestInfo, StoryRecord>();
+
+export class TestStepHelper {
+  constructor(private page: Page, private info: TestInfo, title: string) {
+    if (!title.trim()) throw new Error('Stories need a title');
+    if (!records.has(info)) records.set(info, { title, slug: title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''), project: info.project.name, platform: process.platform, viewports: info.annotations.find(a => a.type === 'viewports')?.description?.split(',') ?? [], setup: info.annotations.filter(a => a.type === 'setup').map(a => a.description).join('\n\n'), steps: [] });
+  }
+  async step(id: string, description: string, verifications: readonly Verification[], view: StepView = {}) {
+    const record = records.get(this.info)!, page = view.page ?? this.page;
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id) || record.steps.some(s => s.id === id)) throw new Error(`Invalid or duplicate step ID: ${id}`);
+    if (!description.trim() || !verifications.length || verifications.some(v => !v.spec.trim())) throw new Error('Every step needs a caption and named assertions');
+    const stem = `${String(record.steps.length).padStart(3, '0')}-${id}-${this.info.project.name}-${process.platform}.png`;
+    await test.step(description, async () => {
+      for (const verification of verifications) await test.step(verification.spec, verification.check, { timeout: OPERATION_BUDGET });
+      await test.step('Ready, unclipped, photographed, and compared within 2,000 ms', async () => {
+        const start = performance.now(), remaining = () => Math.max(1, OPERATION_BUDGET - Math.ceil(performance.now() - start));
+        const path = this.info.snapshotPath(record.slug, stem);
+        const updating = ['all', 'changed'].includes(this.info.config.updateSnapshots);
+        const reference = !updating && existsSync(path) ? preparePixels(readFileSync(path)) : undefined;
+        await page.bringToFront(); await page.mouse.move(0, 0);
+        const ready = await page.waitForFunction(({ status }) => document.querySelector('[data-backend-status]')?.getAttribute('data-backend-status') === status, { status: view.status ?? 'synced' }, { timeout: remaining(), polling: 20 });
+        await ready.dispose();
+        await page.evaluate(async () => {
+          await document.fonts.ready;
+          await Promise.all([...document.images].filter(i => i.checkVisibility({ visibilityProperty: true })).map(i => i.decode()));
+          await Promise.all(document.getAnimations().filter(a => a.playState !== 'finished').map(a => a.finished));
+          const transitions = (window as Window & { __beyondTransitions?: Map<Element, string> }).__beyondTransitions;
+          if (!transitions || transitions.size) throw new Error('A Svelte transition is still active');
+        });
+        await page.evaluate(assertScreenFit, { document: view.document });
+        await page.evaluate(() => {
+          for (const element of document.querySelectorAll<HTMLElement>('button,input,select')) {
+            if (!element.checkVisibility({ visibilityProperty: true })) continue;
+            const r = element.getBoundingClientRect();
+            if (r.width < 44 || r.height < 44) throw new Error(`Touch target too small: ${element.textContent || element.getAttribute('aria-label')}`);
+          }
+        });
+        const camera = await page.context().newCDPSession(page);
+        let image: Buffer;
+        try { image = Buffer.from((await camera.send('Page.captureScreenshot', { format: 'png', fromSurface: true, captureBeyondViewport: false, optimizeForSpeed: true })).data, 'base64'); }
+        finally { await camera.detach(); }
+        if (updating) { mkdirSync(dirname(path), { recursive: true }); writeFileSync(path, image); }
+        else {
+          const same = reference !== undefined && await identicalPixels(image, reference);
+          if (!same) {
+            await this.info.attach('actual', { body: image, contentType: 'image/png' });
+            expect(image).toMatchSnapshot([record.slug, stem], { maxDiffPixels: 0, threshold: 0 });
+            expect(same, 'Every RGBA byte must match the baseline').toBe(true);
+          }
+        }
+        expect(performance.now() - start, 'Shared capture deadline').toBeLessThanOrEqual(OPERATION_BUDGET);
+      }, { timeout: OPERATION_BUDGET });
+    });
+    record.steps.push({ id, description, player: view.player ?? 'Shared display', verifications: verifications.map(v => v.spec), image: `${record.slug}/${stem}` });
+  }
+}
+
+export function saveStoryRecord(info: TestInfo) {
+  const story = records.get(info);
+  if (!story) return;
+  const path = info.outputPath('story.json');
+  writeFileSync(path, JSON.stringify({ ...story, generating: info.config.updateSnapshots !== 'none' }, null, 2));
+  return path;
+}

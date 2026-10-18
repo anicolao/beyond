@@ -1,0 +1,88 @@
+name: Verify implementation
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, labeled]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  static-and-rules:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v31
+      - run: nix develop --command bun install --frozen-lockfile
+      - run: nix develop --command bun run check
+      - run: nix develop --command bun run test:policy
+      - run: nix develop --command bun run test:tooling
+      - run: nix develop --command bun run test:rules
+
+  browser-comparison:
+    runs-on: ubuntu-24.04-arm
+    container:
+      image: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:5b8f294aff9041b7191c34a4bab3ac270157a28774d4b0660e9743297b697e48
+      options: --ipc=host
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - run: apt-get update && apt-get install -y --no-install-recommends sudo xz-utils
+      - uses: cachix/install-nix-action@v31
+        with:
+          enable_kvm: false
+          install_options: --no-daemon
+          extra_nix_config: sandbox = false
+      - name: Expose the root-installed Nix profile
+        run: |
+          printf '%s\n' /root/.nix-profile/bin >> "$GITHUB_PATH"
+          git config --system --add safe.directory "$GITHUB_WORKSPACE"
+      - run: nix develop --command bun install --frozen-lockfile
+      - run: nix develop --command bun run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-comparison-evidence
+          path: |
+            playwright-report/
+            test-results/
+
+  generate-candidates:
+    if: github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'generate-baselines')
+    runs-on: ubuntu-24.04-arm
+    container:
+      image: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:5b8f294aff9041b7191c34a4bab3ac270157a28774d4b0660e9743297b697e48
+      options: --ipc=host
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - run: apt-get update && apt-get install -y --no-install-recommends sudo xz-utils
+      - uses: cachix/install-nix-action@v31
+        with:
+          enable_kvm: false
+          install_options: --no-daemon
+          extra_nix_config: sandbox = false
+      - name: Expose the root-installed Nix profile
+        run: |
+          printf '%s\n' /root/.nix-profile/bin >> "$GITHUB_PATH"
+          git config --system --add safe.directory "$GITHUB_WORKSPACE"
+      - run: nix develop --command bun install --frozen-lockfile
+      - run: nix develop --command bun run test:e2e:update
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: linux-candidate-baselines
+          path: tests/e2e/**/screenshots/**/*-linux.png
