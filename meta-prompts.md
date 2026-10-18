@@ -133,3 +133,7 @@ Implementation logging correction: re-read the supervising-conversation section 
 ## Final macOS validation
 
 Implementation findings: all eleven ordinary browser runs pass exact comparison after the accepted design was finalized, including the seven existing arrival/table/recovery runs and four gallery viewports. The gallery walkthrough contains 26 illustrated steps and 104 macOS captures. Focus wrap, details scrolling, source-focus restoration, example public states and player-count restriction are covered. All twenty-six capture-audit regressions, static/types, policy/tooling and Firestore tests pass in the locked toolchain. Linux candidate review and its separate exact comparison follow on the new stacked PR; generation alone will not be treated as a comparison pass.
+
+## Linux gallery candidate review
+
+Implementation findings: pinned Linux run 39153519184 passed all eleven generated stories and twenty-six guard regressions. Its 104 gallery captures and 24 changed arrival/Continue captures were accepted after visual inspection of representative compact, phone, desktop and 4K states against the accepted local design and concepts. The remaining 78 foundation Linux captures are byte-identical to their existing baselines. Native platform scrollbar geometry is retained without masking or normalization. The independent comparison follows this evidence commit. PR #3 is based on `feat/foundation-tracer`; its preview and hosted smoke have already passed at application revision `cd4c51b`. No merge is authorized.
