@@ -22,8 +22,8 @@ Read the vision first, then the rules and UX together. The E2E guide defines how
 - Complete two-, three-, and four-player base-game play using the second-printing English rules and official clarifications.
 - Basic faction mats first, followed by all Advanced faction mats and their innovations before declaring base-game coverage complete.
 - Shared technology discovery and personal research, all four technology levels, events and guilds, production and resource trades, automation, shipbuilding, jumps, control, colonization, achievements, and complete scoring.
-- Private invitation rooms with anonymous sign-in, named seats, a visible five-letter code, invitation links, and QR joining.
-- Personal-screen play on phone, tablet, and desktop; a dedicated shared tabletop that owns public play and supports physical seating.
+- Remote invitation rooms with anonymous sign-in, named seats, a visible five-letter code, invitation links, and QR joining.
+- Personal-screen remote play on phone, tablet, and desktop; a self-contained shared tabletop where players add names, configure seats, and play entirely on one display. Tabletop mode has no QR joining, companion devices, or per-player sign-in.
 - Reconnect, deterministic replay, readable history, and undo within an explicitly defined information boundary.
 - A production component gallery, original artwork, keyboard and touch controls, reduced motion, and readable rules throughout play.
 
@@ -49,7 +49,9 @@ Each room pins a rules edition, content manifest, reducer version, and random-st
 
 Commands carry a stable identity and expected revision. A transaction or equivalent atomic append mechanism must accept at most one successor to a revision and make resubmission idempotent. A pending mandatory choice survives reload and blocks unrelated actions. Rejected or incompatible history produces an explicit recovery state rather than a partially applied game. Undo appends an attributed event and preserves the original history.
 
-Personal rooms accept gameplay from the active seat's identity, with explicitly assigned responders for out-of-turn effects. Shared-table rooms additionally authorize their table controller to operate public decisions for named seats; both the operator and acting faction remain attributable. These write paths require separate policy tests.
+Remote rooms accept gameplay from the active seat's identity, with explicitly assigned responders for out-of-turn effects. A tabletop room uses one authenticated table controller for all locally configured faction seats; those seats require no individual identities or remote joining. Events attribute both the controller and the acting faction. These write paths require separate policy tests, and remote seat-claim commands cannot join a tabletop room.
+
+The base game has no player-secret information. Research choices, faction resources, and personal technologies are public; only unrevealed cards, events, and future deck order remain hidden from everyone. Tabletop setup, inspection, choices, and recovery all run on the shared display.
 
 ## Delivery approach
 

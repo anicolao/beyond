@@ -70,6 +70,10 @@ Receive the researched card's immediate bonus, including when another faction di
 
 Private Technologies from particular System bonuses are personal tableau cards: they require no research cube, grant their immediate bonus, allow only their owner's actions, score for their level, and cannot be researched or copied by others. Their name does not make them hidden cards. Their exact acquisition procedure must follow the System effect. See p. 23.
 
+### Information visibility
+
+The base game has no player-secret hands, resources, or decisions. Faction mats, researched and personal technologies, revealed discovery candidates, ships, colonies, achievements, and resolved effects are public. Unrevealed cards, events, and future deck order remain unknown to everyone until the relevant reveal. This distinction requires no personal screen: tabletop setup and all play can take place on one shared display.
+
 ## Automation
 
 An automation effect moves the leftmost disc of the indicated production track onto the next Automation position. It improves production by exposing track symbols. Automation is permanent; outposts can be lost. Use a placeholder when no matching production disc remains. Score the track's printed cumulative points; each level beyond seven adds one point. A later returned production disc does not replace an existing placeholder. See p. 17 and clarifications.

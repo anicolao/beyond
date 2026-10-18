@@ -6,7 +6,7 @@ Browser stories prove people can play the real game. Each story's actions, seman
 
 ## Foundation
 
-Use the production SvelteKit interface with isolated Firebase Auth and Firestore emulators. Each player has a separate authenticated browser context. The shared display has its own controller context. Use the pinned Nix environment for dependencies, browser execution, builds, and repository tooling once it is created.
+Use the production SvelteKit interface with isolated Firebase Auth and Firestore emulators. In remote play, each player has a separate authenticated browser context. Tabletop stories use exactly one browser context and one authenticated controller for every locally configured faction; no player contexts, phones, or companion devices participate. Use the pinned Nix environment for dependencies, browser execution, builds, and repository tooling once it is created.
 
 Ordinary E2E journeys create rooms, join, configure, select factions, play, and finish through visible controls. Do not install ready-made state through URLs, injected page objects, direct reducer calls, mocked services, or direct Firestore gameplay writes. Emulator reset before a story is allowed. Read-only event checks may corroborate visible behavior and replay; they must not read future cards to choose a move.
 
@@ -33,12 +33,12 @@ Capture finite motion only after it settles. Reduced-motion tests still prove th
 
 | Project | Viewport | Required evidence |
 | --- | --- | --- |
-| Phone | 393 × 852 | Every core journey and readable focused components. |
-| Desktop | 1440 × 1000 | Every core journey and both-board context. |
+| Phone | 393 × 852 | Every core remote-play journey and readable focused components. |
+| Desktop | 1440 × 1000 | Every core remote-play journey and both-board context. |
 | Tabletop-size personal view | 3840 × 2160 | Core journeys at large resolution; does not prove shared control. |
 | Phone landscape | 852 × 393 | Complete representative turn, inspection, recovery, and scoring. |
 | Tablet | 820 × 1180 | Complete representative turn, board switching, and required choices. |
-| Shared tabletop | 3840 × 2160 plus joining phones | Separate table-owned-room, physical seating, public controls, and recovery stories. |
+| Shared tabletop | 3840 × 2160 in one browser context | Direct local seating, every control on the display, and recovery without QR joining or personal devices. |
 
 The gameplay shell fits without page scrolling or overlapping controls. Validate focused text, touch targets, safe areas, zoom controls, and tray content. Intentional board pan has explicit bounds and Fit recovery; it is not an excuse for clipped buttons or truncated inspectors. Rules and gallery pages intentionally scroll and need document-specific checks.
 
@@ -64,7 +64,7 @@ The feature README indexes generated stories. Each test owns its output director
 
 Every meaningful step contains the named action, actor/viewpoint, exact visible assertions, readiness/layout checks, and a screenshot of that result. Capture the opening state, new decision surfaces, commitments, public consequences, and turn handoffs. Opening, reading, cancelling, and committing are distinct steps when they change what the player understands.
 
-Generate walkthroughs only after the story passes. Include title, goal, setup/seed, participants, ordered captions, assertions, and linked full-resolution images. Show phone and desktop captures together and provide an expandable 4K view. Captions must describe the image actually captured. Do not hand-maintain a separate narrative that drifts from the test.
+Generate walkthroughs only after the story passes. Include title, goal, setup/seed, participants, ordered captions, assertions, and linked full-resolution images. Remote-play stories show phone and desktop captures together and provide an expandable 4K view. Tabletop stories show the shared display's 4K captures throughout local setup and play; they do not require phone views or additional contexts. Captions must describe the image actually captured. Do not hand-maintain a separate narrative that drifts from the test.
 
 Every changed feature also records human visual review in `FIDELITY.md`: reference the reviewed UX composition, captures, component scale, materials, legibility, interaction placement, and intentional differences. Exact equality with yesterday's screenshot does not establish fidelity to the design.
 
@@ -112,7 +112,7 @@ For each `step()`, the helper must:
 6. Compare every captured pixel with the reviewed baseline, using zero tolerance and no masking or normalization. Explicit baseline-generation mode writes candidate images and is reported as generation, never as a successful comparison.
 7. Add the caption, viewpoint, verification labels, and image reference to the shared story record only after that step succeeds. On failure, retain available diagnostics and expected/actual/diff evidence without publishing a completed walkthrough.
 
-The shared fixture owns one story record per test, shared by every helper and player view in that test. It validates declared participants and setup metadata, finalizes the ordered walkthrough only after the entire test and its cleanup pass, and verifies that every recorded image exists. Viewport runs own distinct captures and merge only matching stable step IDs into the documented side-by-side presentation. Missing viewport evidence must fail finalization rather than silently omit a screen.
+The shared fixture owns one story record per test, shared by every helper and player view in that test. It validates declared participants, play mode, required viewports, and setup metadata, finalizes the ordered walkthrough only after the entire test and its cleanup pass, and verifies that every recorded image exists. Viewport runs own distinct captures and merge only matching stable step IDs into the documented side-by-side presentation. Missing required viewport evidence must fail finalization rather than silently omit a screen. A tabletop story requires the shared-display viewport and a single controller context; the fixture must not demand remote phone/player views for that mode.
 
 For example, after the story has joined Ada and Bora through already documented UI steps, the lobby readiness interaction uses this pattern. The accessible names below define the intended UI contract for that interaction:
 
@@ -175,7 +175,7 @@ No helper may silently accept whichever dialog appears or fast-forward unrecorde
 
 ## Multiplayer, information, and recovery
 
-For each consequential action, assert both the acting client's exact result and the observer's public result. Include observer screenshots where comprehension matters. An observer's inspector and history reading position survive unrelated turns. Inactive identities cannot send ordinary active-turn commands.
+For each consequential remote-play action, assert both the acting client's exact result and the observer's public result. Include observer screenshots where comprehension matters. An observer's inspector and history reading position survive unrelated turns. Inactive remote identities cannot send ordinary active-turn commands. Tabletop stories document the acting faction and any seat-facing view on the same display, with TestStepHelper owning the shared sequence; they must not introduce separate player browsers to satisfy an observer requirement.
 
 Reveal candidates and personal technologies are public under the base rules. Unrevealed events, future deck contents, and future random outcomes must be absent from rendered text, accessible names, tooltips, and component props delivered to a public presentation. This verifies ordinary presentation boundaries, not cryptographic secrecy from trusted clients.
 
@@ -183,7 +183,9 @@ Recovery stories must cover disconnect before commit, after acceptance but befor
 
 Conflict tests cover simultaneous claims on a seat, stale action plans, two submissions for one revision, duplicate command IDs, unauthorized configuration, incompatible manifests, and malformed events. Use emulator policy tests for immutable attributed writes as well as pure rules tests for legality. Firestore shape checks alone do not validate game rules.
 
-Shared-table stories explicitly prove the controller's authorized public-command role and attributed acting faction. A phone cannot take over another seat merely by changing a UI selection. Reloading the display retains control and seating without duplicating either.
+Shared-table stories explicitly prove the single controller's authorized role and attributed acting faction for every local seat. Setup adds, names, edits, and removes players at physical positions through display controls, selects Player 1 and clockwise order, configures factions/achievements, and begins without any remote readiness barrier. Assert that tabletop setup contains no QR, invitation code, scan instruction, companion-device link, or per-player sign-in.
+
+Carry the same single context through required event responses, personal-technology inspection, complete play, scoring, and rematch. Reload during setup and a pending decision, proving names, physical seats, controller authority, and the exact choice restore without a second login. Policy/integration coverage must reject remote seat-claim commands against tabletop rooms. Do not create additional player identities or use another device as a prerequisite for any tabletop step.
 
 ## Delivery and story map
 
@@ -192,7 +194,7 @@ Each numbered slice delivers its rules, accessible production UI, emulator-backe
 | Slice | Browser-visible outcome |
 | --- | --- |
 | 001 — Shell and visual foundation | Required `TestStepHelper` and shared fixture with capture/policy guards; arrival, Learn, original component studies/gallery, anonymous emulator connection, static build and base-path navigation. Review visual composition before accepting baselines. |
-| 002 — Rooms and seating | Create/join/code/QR, readiness, owner settings, full/missing room recovery, retained seats and collision handling. |
+| 002 — Rooms and seating | Remote create/join/code/QR, readiness, owner settings, full/missing room recovery, retained seats and collision handling; keep remote joining separate from tabletop local seats. |
 | 003 — Seeded Basic setup | Two-, three-, and four-player boards, overlays, faction uniqueness, starting resources, achievement slots, first player, and conserved cubes/discs. |
 | 004 — Research and discovery | Legal action movement, prerequisites, permanent cubes, event resolution, public candidates, type choice, immediate bonuses, guild unlocking, and research ownership. |
 | 005 — Economy and automation | Population by column, Ore, repeated trade exchanges, empty columns, returning/overworking cubes, automation and information-safe undo. |
@@ -201,13 +203,13 @@ Each numbered slice delivers its rules, accessible production UI, emulator-backe
 | 008 — Remaining base content | All technology/event/guild effects, persistent scoring, copied actions, special destinations, and manifest coverage review. Use integration fixtures for rare boundaries alongside real playable stories. |
 | 009 — Achievements and complete games | Mandatory claims, player-count thresholds, current-round completion plus final round, complete scoring/ties, final inspection, and rematch. |
 | 010 — Advanced factions | Reverse-order selection after shared setup, every innovation, threshold loss/reactivation, unique tracks, and an Advanced complete-game journey. |
-| 011 — Shared tabletop | Table-owned room, physical positions/clockwise order, QR phones, all public actions on the table, seat readers, out-of-turn responders, and retained controller recovery. |
+| 011 — Shared tabletop | One browser and controller; direct local names/physical positions, Player 1/clockwise order, setup edits, all actions and out-of-turn responses on the display, no QR/personal devices, and retained controller recovery. |
 | 012 — Recovery and compatibility | Lost acknowledgements, concurrent submissions, offline/catch-up behavior, immutable undo boundaries, and explicit version failures across gameplay. |
 | 013 — Accessibility and release review | Complete responsive journeys, keyboard-only and touch play, focus/announcements, reduced motion, gallery completeness, and reviewed platform screenshots. |
 
 Recovery and accessibility start in the first slice; their named slices consolidate coverage rather than postpone them. Core interactions are not complete until they work in the personal and shared-table projections.
 
-At least one full two-player game, one full three-player game, and one full four-player game must run through ordinary controls without state injection, automated strategic move selection, or skipped turns. Exact endgame sequencing must also have deterministic fixtures triggering at every seat position. The shared-table release story finishes a full game with the display as public controller.
+At least one full two-player game, one full three-player game, and one full four-player game must run through ordinary controls without state injection, automated strategic move selection, or skipped turns. Exact endgame sequencing must also have deterministic fixtures triggering at every seat position. The shared-table release story configures and finishes a full game in one browser context, using only the display from initial naming through rematch.
 
 ## Complementary rules and data checks
 

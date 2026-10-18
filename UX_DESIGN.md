@@ -20,6 +20,8 @@ Technology categories preserve their rules meaning and receive distinct icons an
 
 ## Composition by screen
 
+Personal-screen compositions serve remote play. Shared tabletop uses one display throughout setup and play; portrait-phone examples are not companion interfaces for that mode.
+
 | Surface | Composition and navigation |
 | --- | --- |
 | Desktop, 1440 × 1000 | Tree across the upper-left/central field; exploration at the right; achievements along the far edge; own mat and phase controls near the bottom. Other factions have compact public mats. Selecting a region enlarges its useful detail while preserving orientation and the other board's summary. |
@@ -46,15 +48,23 @@ There is no login form for anonymous play. Connection problems preserve the inte
 
 ### 2. Gather and configure
 
+#### Remote gathering
+
 [![Gather players: desktop table and portrait-mobile lobby](docs/ux/concepts/02-gather.png)](docs/ux/concepts/02-gather.png)
 
-**Visual review:** named seats, a central invitation object, readable setup, readiness, and a disabled Begin control that explains who is missing. The pictured QR is illustrative; the implementation generates a real room link.
+**Visual review:** this plate depicts the remote invitation lobby, with named seats, a central invitation object, readable setup, readiness, and a disabled Begin control that explains who is missing. Its QR and code apply only to remote play. Tabletop setup uses the local seating flow below and contains no invitation or QR controls.
 
-The host chooses a name, two to four seats, Basic or Advanced factions, and introductory or randomized achievements. The lobby exposes a five-letter code, copyable invitation, and QR link. Joining by code shows the found table before claiming a seat. Full, missing, and already-started rooms explain what can be done next.
+For remote play, the host chooses a name, two to four seats, Basic or Advanced factions, and introductory or randomized achievements. The lobby exposes a five-letter code, copyable invitation, and QR link. Joining by code shows the found table before claiming a seat. Full, missing, and already-started rooms explain what can be done next.
 
 Occupied seats show names and faction emblems. Only the owner can change setup; changing it clears readiness. Capacity cannot remove occupied seats. Each player sees the settings before becoming ready; Begin requires the configured seats and readiness. The first-player marker and turn order are public.
 
 Basic faction selection enforces uniqueness and the two-player exclusion. Advanced factions are chosen in reverse turn order after the shared setup is visible. Do not reuse Pantheon's leader draft as an unexamined rules assumption. Once choices are complete, pieces settle into their exact starting places.
+
+#### Tabletop gathering
+
+Choose Shared table to configure two to four local players on the display itself. Tap an available physical position, enter the player's name, and repeat for the remaining seats. Edit or remove local seats before starting; choose Player 1 and use clockwise order for the other occupied positions. Set faction mode and achievements on the same display, then choose Begin when the local configuration is complete. There is no remote-arrival or individual-readiness barrier.
+
+Tabletop setup has no invitation code, QR, scan instruction, phone join route, or per-player sign-in. Its single controller owns the locally configured seats and presents faction selection and every later choice on this display. See Shared-table mode for the complete control and recovery contract.
 
 ### 3. The active table
 
@@ -156,13 +166,13 @@ Victory shows every faction, the winner or shared winners, all scoring categorie
 
 **Visual review:** public boards stay central, faction mats belong to physical edges, and Ada's public Research action is on the display. This study establishes the four-seat composition. Seat names turn toward their players, but some generated mat labels remain upright to the viewer; the final renderer must rotate each complete mat and reader toward its seat, preserve safe margins, and use the real faction track layouts. Verify seat legibility against these requirements in the rendered interface.
 
-Opening the `/tabletop/` entry creates or restores a table-owned room without claiming a player seat. Offer eight physical join positions, at corners and edge middles, with at most four occupied. QR links claim a position on the player's phone. Choose one occupied position as Player 1 and order the rest clockwise. Empty positions disappear from the playing surface after setup.
+Opening the `/tabletop/` entry creates or restores a table-owned room with one authenticated controller. Offer eight selectable physical positions, at corners and edge middles, and configure two to four named local players directly on the display. Select a position, enter its name, and edit or remove seats before Begin. Choose one occupied position as Player 1 and order the rest clockwise. Empty positions disappear from the playing surface after setup. No QR code, room invitation, phone, companion screen, separate player account, or remote seat-claim flow is part of tabletop mode.
 
-All public gameplay remains operable on the display: research, event choices, fleet planning, production, achievements, and undo. A visible acting-faction label and seat-oriented decision area prevent ambiguity. Base-game discovery candidates and personal technologies remain public. Phones support joining and inspection; public actions are not forced onto phones.
+Every interaction takes place on the display: setup, faction selection, inspection, research, event choices, fleet planning, production, achievements, undo, scoring, and rematch. A visible acting-faction label and seat-oriented decision area prevent ambiguity. Base-game discovery candidates and personal technologies remain public. Unrevealed decks and events stay concealed from everyone; nothing requires a player-private screen.
 
-The table controller is an explicitly authorized room role. Its commands name the faction being operated; attribution does not pretend the player authored a command on their phone. Out-of-turn effects focus the responder's area and then return to the interrupted actor. Keep the global tree/map topology stable rather than rotating the whole board each turn. Seat readers and local decision controls can face their player.
+The table controller is the room's authorized operator for all local seats. Its commands record the controller identity and faction being operated; faction seats do not require separate authenticated identities. Out-of-turn effects focus the responder's area on the same display and then return to the interrupted actor. Keep the global tree/map topology stable rather than rotating the whole board each turn. Seat readers and local decision controls can face their player.
 
-The retained table URL restores the same room and pending choice. Controller reconnect and player reconnect must not claim a second seat or authorize another controller accidentally. Personal-screen and shared-table modes use the same rules and component renderers.
+The retained table URL and controller authentication restore the same local names, physical positions, factions, turn order, and pending choice after reload or interruption. Opening a URL in another browser does not grant control or create a player seat. Remote joining cannot claim tabletop seats. Personal-screen remote play and shared-table play use the same rules and component renderers, with separate seating and command-authorization contracts.
 
 ## Motion, accessibility, and recovery
 
