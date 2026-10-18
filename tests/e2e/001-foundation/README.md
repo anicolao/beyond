@@ -1,4 +1,4 @@
-# Production foundation walkthroughs
+# Illustrated production walkthroughs
 
 - [Enter the observatory and learn the turn](stories/enter-the-observatory-and-learn-the-turn/README.md)
 - [Recover one game between PR and production clients](stories/recover-one-game-between-pr-and-production-clients/README.md)

@@ -79,3 +79,57 @@ Reviewer delegation under Prompt 9, not a new verbatim human prompt:
 > Reviewer checkpoint for 3c30b6f: independently inspected updated desktop/phone arrival, 4K and desktop full seating, Learn phone, recovery desktop, corner editor desktop, phone Play and retained three-disc portrait entry. The material, layout and orientation issues are now satisfactorily addressed for milestone 001 in these local captures. Provisional visual acceptance only: continue your Linux candidate review and independent exact comparison, then verify hosted preview revision and final checks. No further cosmetic changes requested at this point. Do not merge; I will verify final evidence separately.
 
 The Linux visual review and subsequent exact comparison are complete. At revision `98c0cce994d4ee9b2a5f455224afe4d4edd7c306`, [browser comparison and static/rules checks](https://github.com/anicolao/beyond/actions/runs/39148551287), [documentation checks](https://github.com/anicolao/beyond/actions/runs/39148551311), and [preview publication with hosted smoke verification](https://github.com/anicolao/beyond/actions/runs/39148551302) passed. The hosted revision and persistent PR preview comment matched that commit. This checkpoint changes no application code or accepted visuals. PR #2 remains open for the reviewer's independent final verification; provisional visual acceptance is not merge authorization.
+
+## Card gallery request
+
+via voice So given the difficulty we had getting the graphical UI correct and for that PR, I wanna build deck cards on top of it starting with a gallery that shows how the cards are gonna be built, similar to the gallery for plans, you know. Have the agent do that as a PR on top of PR2 with the goal of eventually having a series of stacked PRs that I can review when I'm back at a computer. Do you understand what I want? And if you do, get the other agent to start working on it and monitor it as before
+
+Reviewer interpretation: build the next reviewable increment as a card-component gallery stacked on PR #2. Use Pantheon’s gallery as the likely reference for the voice transcription “gallery for plans”; inspect the sibling implementation and follow Beyond’s own approved art direction. Keep PR #2 and its successor independently reviewable and unmerged.
+
+
+## Local review cadence
+
+So just to be clear, for the card gallery, it should make a local dev server that you can look at, and not keep updating screenshots on the PR, because that'll go faster, and you might want to monitor it every two or three minutes because this process should go pretty quick. Maybe start with five minute intervals and see how that goes
+
+
+## Prompt log separation
+
+Also, just checking, do we have a rule in place that'll cause you to record this conversation in meta prompts, while the underlying agent records its work in prompt
+
+## Gallery progress
+
+How’s the gallery coming
+
+## Local gallery implementation checkpoint
+
+Implementation report, not a human quotation: `feat/card-gallery` branches from PR #2 head `9b7c806`; Prompt 10 and subsequent supervisor log updates remain on the new branch. Persistent local review is at `http://127.0.0.1:5197/gallery/` (`beyond-gallery-dev` tmux session), with separate demo Auth/Firestore emulators in `beyond-gallery-emulators`. The first candidate run finished before the local-review steering was applied. All seven foundation runs completed; the new gallery exposed an offscreen-document hit-region issue in the capture audit and a select-label issue, so no passing gallery walkthrough or baseline acceptance is claimed. Further baseline cycles and pushes are deferred until local visuals settle. The original illustrations and first desktop/phone composed renderings have been visually inspected; local iteration continues without modifying PR #2.
+
+## Local review workflow applied
+
+Implementation record: verified `http://localhost:5197/gallery/` responds with HTTP 200. The persistent Vite server runs in `beyond-gallery-dev`; demo Auth/Firestore emulators run in `beyond-gallery-emulators`. Human voice wording above is now also preserved in PROMPTS.md with the literal contraction “that'll”. Iterate from direct browser feedback; do not regenerate or push baseline screenshots or wait for PR CI during design iteration. Final validation, reviewed evidence and the separate PR stacked on PR #2 remain required after the design settles. Initial reviewer check-ins are every five minutes.
+
+## Gallery refinement review
+
+Local review at http://127.0.0.1:5197/gallery/ now works in my in-app browser. First card faces look good: readable semantic sections and ivory/brass materials. Concrete refinements before acceptance: at 1280x720 the header/filter stack consumes roughly 540px, leaving only card titles and a sliver of art on initial arrival; compact the intro and controls so cards lead the composition, retaining a concise fixture note. Full-size Hypercomputing inspector has Previous/Next below the bottom of the visible 720px viewport; keep close and previous/next in persistent reachable inspector chrome and let card/details scroll internally without hiding navigation. Advanced Robotics shares exactly the Hypercomputing illustration: give these two distinct, relevant original illustrations so the gallery proves individual card identity, not just family templates. Phone card face itself is readable and fits width. Continue local iteration and report ready; do not regenerate/push baseline suites until review settles.
+
+## Reviewer checkpoint — gallery refinements
+
+Reviewer-authored:
+
+> Reviewer checkpoint: desktop and phone refinements independently verified and accepted. My 4K browser image is cropped despite correct DOM dimensions and no horizontal overflow. Please provide full local 3840x2160 PNG paths for gallery and inspector, without baseline regeneration or PR uploads. Finish accessibility checks and report ready for final review. Log this as reviewer-authored.
+
+## Local gallery readiness evidence
+
+Implementation findings, not human quotations: independently rendered local PNGs are `tmp/local-gallery-review/gallery-3840x2160.png` and `tmp/local-gallery-review/inspector-3840x2160.png`. Both PNG headers verify 3840×2160; both complete images were visually inspected. These are ignored local review artifacts, not regenerated baseline suites or PR uploads. Local checks at 1280×720, 393×852 and 3840×2160 verified no horizontal overflow, 44px minimum visible controls/links, keyboard inspection, bounded scrolling with reachable navigation, focus containment, Escape/source-focus restoration, and the three-player achievement restriction. A detected last-control keyboard escape was corrected. `bun run check` reports zero errors and warnings; `git diff --check` passes. Final illustrated E2E/baseline comparison and stacked PR publication remain deferred until visual review settles.
+
+## Reviewer local visual acceptance
+
+Reviewer-authored:
+
+> Reviewer local visual acceptance: independently inspected both full 4K PNGs in tmp/local-gallery-review and live System colony example with internal scroll, plus prior desktop/phone/all-family reviews. Materials, hierarchy, readable rules and persistent controls are satisfactory for this increment. Proceed with required final E2E evidence and exact comparisons, accessibility regressions including the focus escape fix, required checks, commit/push and NEW PR based on feat/foundation-tracer. Verify hosted preview matches final revision, report PR and evidence. Do not merge or start further gameplay. Log this as reviewer-authored.
+
+Implementation logging correction: re-read the supervising-conversation section of AGENTS.md. Existing entries remain intact; future delegated instructions are labelled reviewer-authored in PROMPTS.md, supervisor human voice requests remain in this file, and logical work continuations belong in PROMPT_WORK.md. AGENTS.md and this file will be included in the gallery PR.
+
+## Final macOS validation
+
+Implementation findings: all eleven ordinary browser runs pass exact comparison after the accepted design was finalized, including the seven existing arrival/table/recovery runs and four gallery viewports. The gallery walkthrough contains 26 illustrated steps and 104 macOS captures. Focus wrap, details scrolling, source-focus restoration, example public states and player-count restriction are covered. All twenty-six capture-audit regressions, static/types, policy/tooling and Firestore tests pass in the locked toolchain. Linux candidate review and its separate exact comparison follow on the new stacked PR; generation alone will not be treated as a comparison pass.

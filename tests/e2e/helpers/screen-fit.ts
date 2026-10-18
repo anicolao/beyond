@@ -12,9 +12,24 @@ export function assertScreenFit(options: {document?:boolean} = {}) {
   const viewport = {left:0, top:0, right:innerWidth, bottom:innerHeight};
   const outside = (rect:DOMRect, box:{left:number;top:number;right:number;bottom:number}, x=true,y=true) =>
     (x && (rect.left<box.left || rect.right>box.right)) || (y && (rect.top<box.top || rect.bottom>box.bottom));
+  // Only explicitly named, keyboard-reachable vertical scroll regions permit
+  // content to extend beyond their visible window. Hidden overflow still fails.
+  const scrollRegion = (element: HTMLElement) => {
+    for (let ancestor = element.parentElement; ancestor; ancestor = ancestor.parentElement) {
+      if (ancestor.getAttribute('role') === 'region' && ancestor.tabIndex === 0 &&
+          (ancestor.getAttribute('aria-label') || ancestor.getAttribute('aria-labelledby')) &&
+          /^(auto|scroll)$/.test(style(ancestor).overflowY)) return ancestor;
+    }
+    return undefined;
+  };
   const inspect = (element:HTMLElement, rect:DOMRect, text=false) => {
     if (!rect.width || !rect.height) return;
-    if (outside(rect,viewport,true,!options.document || !!modal)) throw new Error(`${text?'Text':'Component'} clipped by viewport: ${label(element)}`);
+    const focused = document.activeElement === element || (!!document.activeElement?.matches('button,a,input,select,textarea') && document.activeElement.contains(element));
+    const region = options.document && !focused ? scrollRegion(element) : undefined;
+    const window = region?.getBoundingClientRect();
+    const visible = window ? {left:rect.left,right:rect.right,top:Math.max(rect.top,window.top),bottom:Math.min(rect.bottom,window.bottom)} : rect;
+    const verticalArea = visible.bottom > visible.top;
+    if (outside(visible as DOMRect,viewport,true,verticalArea && (!options.document || !!modal))) throw new Error(`${text?'Text':'Component'} clipped by viewport: ${label(element)}`);
     for(let ancestor:HTMLElement|null=text?element:element.parentElement;ancestor;ancestor=ancestor.parentElement){
       const css=style(ancestor), x=/^(hidden|clip|auto|scroll)$/.test(css.overflowX), y=/^(hidden|clip|auto|scroll)$/.test(css.overflowY);
       if(!x&&!y)continue;
@@ -31,7 +46,10 @@ export function assertScreenFit(options: {document?:boolean} = {}) {
       const left=parseFloat(css.borderLeftWidth)||0,right=parseFloat(css.borderRightWidth)||0,top=parseFloat(css.borderTopWidth)||0,bottom=parseFloat(css.borderBottomWidth)||0;
       const scrollbarX=Math.max(0,ancestor.offsetWidth-ancestor.clientWidth-left-right),scrollbarY=Math.max(0,ancestor.offsetHeight-ancestor.clientHeight-top-bottom);
       const clip={left:box.left+left*sx,top:box.top+top*sy,right:box.right-(right+scrollbarX)*sx,bottom:box.bottom-(bottom+scrollbarY)*sy};
-      if(outside(rect,clip,x,y))throw new Error(`${text?'Text':'Component'} clipped by ${label(ancestor)}: ${label(element)}`);
+      const beyondRegion = region && (ancestor === region || ancestor.contains(region));
+      const current = beyondRegion ? visible : rect;
+      const inspectY = y && !(ancestor === region) && (!beyondRegion || verticalArea);
+      if(outside(current as DOMRect,clip,x,inspectY))throw new Error(`${text?'Text':'Component'} clipped by ${label(ancestor)}: ${label(element)}`);
     }
   };
   if(document.documentElement.scrollWidth>innerWidth||(!options.document&&(document.documentElement.scrollHeight>innerHeight||scrollX||scrollY)))throw new Error('Game screen must fit without page scrolling');
@@ -52,9 +70,10 @@ export function assertScreenFit(options: {document?:boolean} = {}) {
   const pinned=options.document?[...document.querySelectorAll<HTMLElement>('.sticky-nav')].filter(node=>node.checkVisibility({visibilityProperty:true})&&/^(sticky|fixed)$/.test(style(node).position)).map(node=>node.getBoundingClientRect()).filter(rect=>rect.top<=0&&rect.bottom>0):[];
   const hitRegion=(element:HTMLElement)=>{
     const rect=element.getBoundingClientRect();
-    if(!options.document || modal)return rect;
+    if(!options.document)return rect;
     const top=Math.max(0,rect.top,...(element.closest('.sticky-nav')?[]:pinned.map(header=>header.bottom)));
-    return {left:Math.max(0,rect.left),right:Math.min(innerWidth,rect.right),top,bottom:Math.min(innerHeight,rect.bottom)};
+    const region = scrollRegion(element)?.getBoundingClientRect();
+    return {left:Math.max(0,rect.left),right:Math.min(innerWidth,rect.right),top:Math.max(top,region?.top ?? 0),bottom:Math.min(innerHeight,rect.bottom,region?.bottom ?? innerHeight)};
   };
   type Point = {x:number;y:number};
   const rectangle=(r:{left:number;right:number;top:number;bottom:number}):Point[]=>[
@@ -63,7 +82,10 @@ export function assertScreenFit(options: {document?:boolean} = {}) {
   const hitPolygon=(element:HTMLElement):Point[]=>{
     // Preserve the document's clipped hit regions. Game controls use their
     // actual transformed border-box, rather than overlapping bounding boxes.
-    if(options.document&&!modal)return rectangle(hitRegion(element));
+    if(options.document) {
+      const region = hitRegion(element);
+      return region.right > region.left && region.bottom > region.top ? rectangle(region) : [];
+    }
     const rect=element.getBoundingClientRect();
     let matrix=new DOMMatrix();
     for(let parent:HTMLElement|null=element;parent;parent=parent.parentElement){
@@ -87,6 +109,7 @@ export function assertScreenFit(options: {document?:boolean} = {}) {
     }));
   };
   const overlaps=(a:Point[],b:Point[])=>{
+    if (!a.length || !b.length) return false;
     // Separating-axis theorem: no tolerance, masking or excluded controls.
     for(const polygon of [a,b])for(let i=0;i<polygon.length;i++){
       const p=polygon[i],q=polygon[(i+1)%polygon.length];

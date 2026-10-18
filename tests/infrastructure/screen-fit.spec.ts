@@ -25,3 +25,45 @@ test('text clipped by an ancestor still fails', async ({ page }) => {
   await page.setContent('<main data-e2e-layout><div style="width:30px;overflow:hidden;white-space:nowrap"><span>Read the complete player name</span></div></main>');
   await expect(page.evaluate(assertScreenFit, {})).rejects.toThrow('clipped by div');
 });
+test('offscreen document controls have no inverted hit region', async ({ page }) => {
+  await page.setContent('<button style="position:absolute;top:900px;width:100px;height:50px">First</button><button style="position:absolute;top:1100px;width:100px;height:50px">Second</button>');
+  await page.evaluate(assertScreenFit, { document: true });
+});
+test('real on-screen document overlap still fails', async ({ page }) => {
+  await page.setContent('<button style="position:absolute;top:100px;width:100px;height:50px">First</button><button style="position:absolute;top:120px;width:100px;height:50px">Second</button>');
+  await expect(page.evaluate(assertScreenFit, { document: true })).rejects.toThrow('Controls overlap');
+});
+const scrollingDialog = (overflow = 'auto', named = true) => `<style>*{box-sizing:border-box}body{margin:0}dialog{width:600px;height:600px;padding:20px;overflow:hidden}.scroll{height:400px;overflow-y:${overflow}}button{height:48px;min-width:100px}.long{height:700px}</style><dialog><button>Close</button><div class="scroll" ${named ? 'role="region" tabindex="0" aria-label="Card details"' : ''}><div class="long">Readable card face and long source notes</div><button>Source</button></div><button>Next</button></dialog>`;
+test('named keyboard scroll region permits intentional internal overflow', async ({ page }) => {
+  await page.setContent(scrollingDialog());
+  await page.locator('dialog').evaluate((element: HTMLDialogElement) => element.showModal());
+  await page.evaluate(assertScreenFit, { document: true });
+});
+test('scrolling content does not excuse hidden clipping', async ({ page }) => {
+  await page.setContent(scrollingDialog('hidden'));
+  await page.locator('dialog').evaluate((element: HTMLDialogElement) => element.showModal());
+  await expect(page.evaluate(assertScreenFit, { document: true })).rejects.toThrow('clipped');
+});
+test('unnamed unreachable overflow is not a scroll region', async ({ page }) => {
+  await page.setContent(scrollingDialog('auto', false));
+  await page.locator('dialog').evaluate((element: HTMLDialogElement) => element.showModal());
+  await expect(page.evaluate(assertScreenFit, { document: true })).rejects.toThrow('clipped');
+});
+test('focused content clipped inside a scroll region still fails', async ({ page }) => {
+  await page.setContent(scrollingDialog());
+  await page.locator('dialog').evaluate((element: HTMLDialogElement) => element.showModal());
+  await page.getByRole('button', { name: 'Source' }).focus();
+  await page.locator('.scroll').evaluate(element => { element.scrollTop = 0; });
+  await expect(page.evaluate(assertScreenFit, { document: true })).rejects.toThrow('clipped');
+});
+test('focusing a scroll region does not require its entire contents on screen', async ({ page }) => {
+  await page.setContent(scrollingDialog());
+  await page.locator('dialog').evaluate((element: HTMLDialogElement) => element.showModal());
+  await page.getByRole('region', { name: 'Card details' }).focus();
+  await page.evaluate(assertScreenFit, { document: true });
+});
+test('modal navigation outside its window still fails', async ({ page }) => {
+  await page.setContent(scrollingDialog().replace('<button>Next</button>', '<button style="position:fixed;top:790px">Next</button>'));
+  await page.locator('dialog').evaluate((element: HTMLDialogElement) => element.showModal());
+  await expect(page.evaluate(assertScreenFit, { document: true })).rejects.toThrow('clipped');
+});

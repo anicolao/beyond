@@ -2,7 +2,7 @@ name: Verify implementation
 
 on:
   pull_request:
-    branches: [main]
+    branches: [main, feat/foundation-tracer]
     types: [opened, synchronize, reopened, labeled]
   push:
     branches: [main]

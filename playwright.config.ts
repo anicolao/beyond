@@ -25,7 +25,8 @@ export default defineConfig({
   },
   expect: { timeout: 2_000, toHaveScreenshot: { timeout: 2_000, maxDiffPixels: 0, threshold: 0 } },
   projects: [
-    { name: 'phone', testMatch: '**/arrival.spec.ts', use: { viewport: { width: 393, height: 852 } } },
+    { name: 'phone', testMatch: ['**/arrival.spec.ts', '**/gallery.spec.ts'], use: { viewport: { width: 393, height: 852 } } },
+    { name: 'desktop-compact', testMatch: '**/gallery.spec.ts', use: { viewport: { width: 1280, height: 720 } } },
     { name: 'desktop', use: { viewport: { width: 1440, height: 1000 } } },
     { name: 'tabletop-4k', use: { viewport: { width: 3840, height: 2160 } } }
   ],

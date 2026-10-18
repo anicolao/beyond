@@ -11,3 +11,27 @@ The selected output was visually inspected for a quiet control area, legible for
 ## Semantic instrument components
 
 `src/lib/EntryDisc.svelte`, `src/lib/InstrumentIcon.svelte`, and `src/app.css` define original hand-authored SVG line art, layered brass rims, graphite instrument faces, ivory mat faces, and the shared table inlay. All actionable labels and player data remain semantic HTML. The approved arrival and shared-table concept plates inform their materials; their shapes are reusable native UI, not flattened concept-image crops. No new gameplay art, card, resource, faction emblem, or state is invented for gathering. The existing original observatory raster remains the environmental backdrop.
+
+## Card collection illustrations
+
+The four originals in `static/art/cards/` were generated with the built-in `image_gen` tool on 2026-10-18 for this project and visually inspected before use. They contain illustration only: no publisher faces, text, frames, logos or game symbols. `src/lib/cards/CardFace.svelte` and `CardSymbol.svelte` supply original semantic HTML/CSS and hand-authored SVG. The gallery renders that same production component with separately defined visual fixtures.
+
+Every illustration used this common prompt wrapper:
+
+> Use case: stylized-concept. Asset type: original production illustration for Beyond the Sun digital card component, art only. [Scene below] Refined painterly realistic science fiction, physically convincing intricate materials, cinematic composition, muted midnight graphite, ivory and restrained brass, teal accents. Wide landscape illustration 3:2, subject centered with detail across the frame. No text, lettering, symbols, logos, watermark, card frame, borders, UI or game pieces. Not a card mockup.
+
+| Asset | Scene inserted in the wrapper | Original generation ID |
+| --- | --- | --- |
+| `technology.png` | An enormous quantum computing observatory in orbit above a blue planet, intricate concentric brass cooling rings and softly glowing teal crystal computing core, distant sun. No people. | `exec-d3760ba4-20b6-4be2-afec-0cf874d76bf7` |
+| `event.png` | An original elegant android governor seen in profile inside a vaulted orbital council chamber, graphite ceramic face and delicate brass joints, blue planetary horizon through tall windows, thoughtful and dignified. No writing. | `exec-92318bad-f16e-4a31-9f68-263d1a129a23` |
+| `system.png` | A lush habitable exoplanet beneath a small warm red star, mountain ridges and silvery lakes, wisps of cloud, viewed from a near orbit with its curved horizon. Quiet emerald teal and warm ivory light. | `exec-1dc5a526-ff3b-4883-863d-93d1e87618a7` |
+| `achievement.png` | A magnificent human colony beside a lake on an alien world, slender domed towers and monumental brass astronomical ring, lush terraces, distant mountains, warm morning light, no people. | `exec-de0ca0fc-01c2-4728-bb7a-20a99871aeab` |
+
+The originals remain in the generation library. Achievement examples share the family illustration in this review subset; Hypercomputing and Advanced Robotics have distinct illustrations. They are not attempts to reproduce publisher artwork or portray exact locations/effects. Original project assets are covered by the repository license.
+
+
+### Advanced Robotics identity refinement
+
+`static/art/cards/robotics.png` was generated with the built-in `image_gen` tool on 2026-10-18, generation ID `exec-d9affb02-4c4a-42ce-abb5-5d41b800ff6e`. Prompt:
+
+> Use case: stylized-concept. Asset type: original production illustration for the Advanced Robotics technology card in Beyond the Sun, art only. A precise robotic manufacturing laboratory inside an orbital station: two sophisticated articulated graphite and brass robotic arms assembling a small mechanical gripper on an ivory ceramic workbench, intricate tools and cables, a restrained teal diagnostic glow, distant blue planetary crescent through a broad dark window. No humanoid android, no computing rings. Refined painterly realistic science fiction, physically convincing materials, calm cinematic light, midnight graphite, warm ivory, restrained brass and teal. Wide landscape 3:2 composition, robot arms and workbench clearly legible at small card-art scale. No text, lettering, symbols, logos, watermark, card frame, borders, UI or game pieces. Not a card mockup.

@@ -37,3 +37,41 @@ Compare this result to the ui mockups.
 ## Prompt 9: Iterate UI Fidelity
 
 Ok record the prompts that led up to this in meta-prompts.md in the project — then tell the other agent what to do until the ui is satisfactory — keep checking on it and iterating till it is good.
+
+## Prompt 10: Stacked Card Gallery
+
+via voice So given the difficulty we had getting the graphical UI correct and for that PR, I wanna build deck cards on top of it starting with a gallery that shows how the cards are gonna be built, similar to the gallery for plans, you know. Have the agent do that as a PR on top of PR2 with the goal of eventually having a series of stacked PRs that I can review when I'm back at a computer. Do you understand what I want? And if you do, get the other agent to start working on it and monitor it as before
+
+## Prompt 11: Local Review
+
+Delegated reviewer instruction; the human wording is recorded in `meta-prompts.md` under “Local review cadence”:
+
+Please apply the queued user steering now at your next safe boundary: prioritize a persistent local dev server for direct reviewer feedback, and report its URL. The user explicitly asked to defer repeated baseline generation and PR pushes until local visuals settle. Your queued human wording is already recorded in meta-prompts.md. Do not stop an in-flight command destructively, but switch to local review before starting further test/baseline cycles.
+
+## Prompt 12: Local Design Cadence
+
+Verbatim human voice steering; also recorded in `meta-prompts.md` under “Local review cadence”:
+
+So just to be clear, for the card gallery, it should make a local dev server that you can look at, and not keep updating screenshots on the PR, because that'll go faster, and you might want to monitor it every two or three minutes because this process should go pretty quick. Maybe start with five minute intervals and see how that goes
+
+## Prompt 13: Refine Gallery Composition
+
+Local review at http://127.0.0.1:5197/gallery/ now works in my in-app browser. First card faces look good: readable semantic sections and ivory/brass materials. Concrete refinements before acceptance: at 1280x720 the header/filter stack consumes roughly 540px, leaving only card titles and a sliver of art on initial arrival; compact the intro and controls so cards lead the composition, retaining a concise fixture note. Full-size Hypercomputing inspector has Previous/Next below the bottom of the visible 720px viewport; keep close and previous/next in persistent reachable inspector chrome and let card/details scroll internally without hiding navigation. Advanced Robotics shares exactly the Hypercomputing illustration: give these two distinct, relevant original illustrations so the gallery proves individual card identity, not just family templates. Phone card face itself is readable and fits width. Continue local iteration and report ready; do not regenerate/push baseline suites until review settles.
+
+## Prompt 14: Full Tabletop Captures
+
+Reviewer-authored checkpoint:
+
+Reviewer checkpoint: desktop and phone refinements independently verified and accepted. My 4K browser image is cropped despite correct DOM dimensions and no horizontal overflow. Please provide full local 3840x2160 PNG paths for gallery and inspector, without baseline regeneration or PR uploads. Finish accessibility checks and report ready for final review. Log this as reviewer-authored.
+
+## Prompt 15: Correct Logging Routing
+
+Reviewer-authored instruction:
+
+Reviewer logging correction: re-read the new Supervising conversation and implementation log section in AGENTS.md. Our human voice requests belong in meta-prompts.md; I have recorded the local-server cadence request and logging clarification there. Your received delegated instructions belong in PROMPTS.md labelled as reviewer instructions, with logical work continuations in PROMPT_WORK.md. Do not duplicate these human voice requests into PROMPTS.md. Preserve historical entries. Include AGENTS.md and meta-prompts.md edits in the new gallery PR. Continue local-server-first iteration with five-minute review; no intermediate PR baseline churn.
+
+## Prompt 16: Finalize Gallery Increment
+
+Reviewer-authored instruction:
+
+Reviewer local visual acceptance: independently inspected both full 4K PNGs in tmp/local-gallery-review and live System colony example with internal scroll, plus prior desktop/phone/all-family reviews. Materials, hierarchy, readable rules and persistent controls are satisfactory for this increment. Proceed with required final E2E evidence and exact comparisons, accessibility regressions including the focus escape fix, required checks, commit/push and NEW PR based on feat/foundation-tracer. Verify hosted preview matches final revision, report PR and evidence. Do not merge or start further gameplay. Log this as reviewer-authored.
