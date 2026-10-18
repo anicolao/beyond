@@ -12,3 +12,5 @@ Prompt 16 | 45ee0b8d5e4cd7cbe3b5a2cd283d19e8bd3703b2ee1ac693baf4ba4454d31bc4 | R
 Prompt 26 | 99af23167ecd860ff0178a8cbe27e87caa9323f4779cb5537fa6a1f4f6725228 | Record restored local acceptance, overlapping phase gates and current remote capability status.
 
 Prompt 26 | 99af23167ecd860ff0178a8cbe27e87caa9323f4779cb5537fa6a1f4f6725228 | Remove redundant room creation replay after Linux latency failure; preserve exact guards and record separate phase gates.
+
+Prompt 26 | 99af23167ecd860ff0178a8cbe27e87caa9323f4779cb5537fa6a1f4f6725228 | Review and import the complete passing Linux candidate set; retain independent exact comparison as the remaining gate.

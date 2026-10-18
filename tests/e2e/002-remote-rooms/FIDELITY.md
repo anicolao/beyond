@@ -42,3 +42,7 @@ Reviewer checkpoint26 restores phase002 LOCAL ACCEPTANCE after independent inspe
 ## Linux acknowledgement follow-up
 
 The initial Linux candidate run on `4524932` completed 15 journeys but the first phone host creation exceeded the unchanged 2-second visible-state budget. Creation now displays the projection returned by its successful transaction directly, then subscribes; reopening still replays history. This removes two redundant reads after acknowledged creation without speculative state. The pinned local `bun run verify` passes all 16 exact journeys and 26 capture guards with no baseline edits (`tmp/remote-round26-verify.log`). Candidate failures now retain traces for diagnosis. Linux generation, independent image review/comparison, and final-head hosted verification remain open gates.
+
+## Reviewed Linux candidate import
+
+Run `39164658076`, head `f9b8215`, passes all 16 candidate journeys. Reviewed all 155 changed/new Linux PNGs in eight contact sheets, then inspected full-size phone recovery/everyone-ready and desktop long-name states against the accepted local captures and concept02. Materials, balanced navigation, seat containment, compact portrait, QR contrast and bounded recovery match the accepted composition. Imported 148 new remote/mode images and seven intentionally changed foundation mode-choice images. No source or capture guards changed. The independent comparison job on this imported revision remains the final Linux gate.
