@@ -1,4 +1,6 @@
 <script lang="ts">
+  import EntryDisc from './EntryDisc.svelte';
+  import InstrumentIcon from './InstrumentIcon.svelte';
   import { positions, clockwise, type Position, type Table, type Command } from './table';
   let { table, busy, commit, home, id }: { table: Table; busy: boolean; commit: (command: Command) => Promise<void>; home: () => void; id: string } = $props();
   let editing = $state<Position | ''>(''), name = $state(''), preview = $state('');
@@ -12,10 +14,11 @@
 </script>
 <section class="table-surface" aria-label="Shared table">
   <div class="table-center">
+    <div class="gathering-crest"><InstrumentIcon kind="compass" /></div>
     <p class="eyebrow">BEYOND THE SUN</p>
     <h1>Take your places</h1>
-    <p>Join where you sit.<br />Everything stays on this display.</p>
-    <p class="seat-count">{order.length} of 4 factions seated</p>
+    <p>Join where you sit. Everything stays on this display.</p>
+    <p class="seat-count">{order.length} of 4 players seated</p>
     {#if order.length}<ol aria-label="Clockwise turn order">{#each order as p}<li>{table.seats[p]}{table.firstPlayer === p ? ' · Player 1' : ''}</li>{/each}</ol>{/if}
     <button class="secondary" onclick={home} disabled={busy}>Back to observatory</button>
     <details class="recovery"><summary>Recovery options</summary>
@@ -29,7 +32,7 @@
     </details>
   </div>
   {#each positions as p, index}
-    <section class="physical-seat" class:occupied={!!table.seats[p]} style={`--seat-index:${index}`} data-position={p} aria-label={`${label(p)} seat`}>
+    <section class="physical-seat" class:occupied={!!table.seats[p]} class:editing={editing === p} class:unavailable={!table.seats[p] && order.length >= 4} style={`--seat-index:${index}`} data-position={p} aria-label={`${label(p)} seat`}>
       <p class="seat-direction">{label(p)}</p>
       {#if editing === p}
         <form onsubmit={(event) => { event.preventDefault(); void join(p).catch(() => undefined); }}>
@@ -37,6 +40,7 @@
           <div class="seat-actions"><button class="primary" disabled={busy || !name.trim()}>{table.seats[p] ? 'Keep name' : 'Join table'}</button><button onclick={() => { editing = ''; name = ''; }} type="button" disabled={busy}>Cancel</button></div>
         </form>
       {:else if table.seats[p]}
+        <span class="seat-seal" aria-hidden="true">{table.seats[p]?.slice(0,1).toUpperCase()}</span>
         <h2>{table.seats[p]}</h2><p class="player-order">Player {order.indexOf(p) + 1}</p>
         <div class="seat-actions">
           <button aria-label={`Edit ${table.seats[p]}`} disabled={busy} onclick={() => { name = table.seats[p] ?? ''; editing = p; }}>Edit</button>
@@ -44,7 +48,8 @@
           {#if table.firstPlayer !== p}<button aria-label={`Make ${table.seats[p]} Player 1`} disabled={busy} onclick={() => { void commit({ type: 'first-player-chosen', position: p, name: '' }).catch(() => undefined); }}>Player 1</button>{/if}
         </div>
       {:else}
-        <button class="join-seat" aria-label={`Join at ${label(p)}`} disabled={busy || order.length >= 4} onclick={() => { editing = p; name = ''; }}>✧<span>Join here</span></button>
+        <EntryDisc compact label={order.length >= 4 ? 'Table full' : 'Join here'} accessibleName={`Join at ${label(p)}`} disabled={busy || order.length >= 4} onclick={() => { editing = p; name = ''; }} />
+        <p class="seat-hint">{order.length >= 4 ? 'Four players seated' : 'Choose this position'}</p>
       {/if}
     </section>
   {/each}

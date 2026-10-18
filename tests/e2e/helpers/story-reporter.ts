@@ -1,7 +1,15 @@
 import type { Reporter, TestCase, TestResult, FullResult } from '@playwright/test/reporter';
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, openSync, readSync, closeSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import type { StoryRecord } from './test-step-helper';
+// Read actual capture dimensions so deliberate browser-resize steps are labelled
+// truthfully rather than inheriting the project's starting viewport.
+function captureLabel(path: string, project: string) {
+  const file = openSync(path, 'r'), header = Buffer.alloc(24);
+  try { readSync(file, header, 0, header.length, 0); } finally { closeSync(file); }
+  if (!header.subarray(0, 8).equals(Buffer.from([137,80,78,71,13,10,26,10]))) throw new Error('Story evidence must be PNG');
+  return `${project} · ${header.readUInt32BE(16)} × ${header.readUInt32BE(20)}`;
+}
 export default class StoryReporter implements Reporter {
   private stories: { record: StoryRecord & { generating: boolean }; file: string }[] = [];
   private failed = false;
@@ -31,9 +39,10 @@ export default class StoryReporter implements Reporter {
       mkdirSync(folder, { recursive: true });
       const narrative = source.record.steps.map((step, index) => {
         const image = (name: string) => `../../screenshots/${group.find(g => g.record.project === name)!.record.steps[index].image}`;
+        const label = (name: string) => captureLabel(join(baseline, group.find(g => g.record.project === name)!.record.steps[index].image), name);
         const compact = names.filter(name => name !== 'tabletop-4k');
-        const panels = compact.length ? `| ${compact.join(' | ')} |\n| ${compact.map(() => '---').join(' | ')} |\n| ${compact.map(name => `[![${name}](${image(name)})](${image(name)})`).join(' | ')} |` : '';
-        const large = names.includes('tabletop-4k') ? `<details><summary>Shared display at 4K</summary>\n\n[![4K](${image('tabletop-4k')})](${image('tabletop-4k')})\n\n</details>` : '';
+        const panels = compact.length ? `| ${compact.map(label).join(' | ')} |\n| ${compact.map(() => '---').join(' | ')} |\n| ${compact.map(name => `[![${name}](${image(name)})](${image(name)})`).join(' | ')} |` : '';
+        const large = names.includes('tabletop-4k') ? `<details><summary>${label('tabletop-4k')}</summary>\n\n[![4K](${image('tabletop-4k')})](${image('tabletop-4k')})\n\n</details>` : '';
         return `## ${index + 1}. ${step.description}\n\nViewpoint: **${step.player}**.\n\n${panels}\n\n${large}\n\n${step.verifications.map(v => `- [x] ${v}`).join('\n')}`;
       }).join('\n\n');
       writeFileSync(join(folder, 'README.md'), `# ${source.record.title}\n\n${source.record.setup}\n\n${source.record.generating ? '**Candidate captures: generated, not a comparison pass.**\n\n' : ''}${narrative}\n`);

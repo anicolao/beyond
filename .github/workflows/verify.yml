@@ -48,6 +48,7 @@ jobs:
           printf '%s\n' /root/.nix-profile/bin >> "$GITHUB_PATH"
           git config --system --add safe.directory "$GITHUB_WORKSPACE"
       - run: nix develop --command bun install --frozen-lockfile
+      - run: nix develop --command bun run test:capture
       - run: nix develop --command bun run test:e2e
       - uses: actions/upload-artifact@v4
         if: always()
@@ -80,6 +81,7 @@ jobs:
           printf '%s\n' /root/.nix-profile/bin >> "$GITHUB_PATH"
           git config --system --add safe.directory "$GITHUB_WORKSPACE"
       - run: nix develop --command bun install --frozen-lockfile
+      - run: nix develop --command bun run test:capture
       - run: nix develop --command bun run test:e2e:update
       - uses: actions/upload-artifact@v4
         if: always()

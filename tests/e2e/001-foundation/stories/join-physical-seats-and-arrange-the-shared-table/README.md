@@ -1,16 +1,16 @@
 # Join physical seats and arrange the shared table
 
-One shared-display controller, four local players. Real Auth and Firestore emulators, ordinary UI joins, no injected room or event history.
+One shared-display controller, four local players. Real Auth and Firestore emulators, ordinary UI joins, no injected room or event history. The same browser later narrows only at the retained entry to review its phone layout; all physical-table interaction remains at the original desktop/4K size.
 
 ## 1. Arrive at the observatory
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/000-arrival-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/000-arrival-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/000-arrival-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/000-arrival-tabletop-4k-darwin.png)
 
@@ -22,11 +22,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/001-mode-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/001-mode-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/001-mode-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/001-mode-tabletop-4k-darwin.png)
 
@@ -38,11 +38,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/002-empty-table-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/002-empty-table-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/002-empty-table-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/002-empty-table-tabletop-4k-darwin.png)
 
@@ -54,11 +54,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/003-south-editor-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/003-south-editor-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/003-south-editor-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/003-south-editor-tabletop-4k-darwin.png)
 
@@ -70,11 +70,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/004-south-name-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/004-south-name-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/004-south-name-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/004-south-name-tabletop-4k-darwin.png)
 
@@ -86,11 +86,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/005-south-joined-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/005-south-joined-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/005-south-joined-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/005-south-joined-tabletop-4k-darwin.png)
 
@@ -102,11 +102,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/006-north-editor-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/006-north-editor-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/006-north-editor-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/006-north-editor-tabletop-4k-darwin.png)
 
@@ -118,11 +118,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/007-north-name-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/007-north-name-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/007-north-name-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/007-north-name-tabletop-4k-darwin.png)
 
@@ -134,11 +134,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/008-north-joined-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/008-north-joined-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/008-north-joined-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/008-north-joined-tabletop-4k-darwin.png)
 
@@ -150,11 +150,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/009-east-editor-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/009-east-editor-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/009-east-editor-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/009-east-editor-tabletop-4k-darwin.png)
 
@@ -166,11 +166,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/010-east-name-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/010-east-name-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/010-east-name-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/010-east-name-tabletop-4k-darwin.png)
 
@@ -182,11 +182,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/011-east-joined-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/011-east-joined-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/011-east-joined-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/011-east-joined-tabletop-4k-darwin.png)
 
@@ -194,17 +194,17 @@ Viewpoint: **Shared display**.
 
 - [x] The committed name replaces that position’s Join here control.
 
-## 13. Dara opens the West seat
+## 13. Dara opens the North West seat
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/012-west-editor-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/012-west-editor-desktop-darwin.png) |
+| [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/012-north-west-editor-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/012-north-west-editor-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/012-west-editor-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/012-west-editor-tabletop-4k-darwin.png)
+[![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/012-north-west-editor-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/012-north-west-editor-tabletop-4k-darwin.png)
 
 </details>
 
@@ -214,13 +214,13 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/013-west-name-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/013-west-name-desktop-darwin.png) |
+| [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/013-north-west-name-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/013-north-west-name-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/013-west-name-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/013-west-name-tabletop-4k-darwin.png)
+[![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/013-north-west-name-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/013-north-west-name-tabletop-4k-darwin.png)
 
 </details>
 
@@ -230,13 +230,13 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/014-west-joined-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/014-west-joined-desktop-darwin.png) |
+| [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/014-north-west-joined-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/014-north-west-joined-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/014-west-joined-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/014-west-joined-tabletop-4k-darwin.png)
+[![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/014-north-west-joined-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/014-north-west-joined-tabletop-4k-darwin.png)
 
 </details>
 
@@ -246,11 +246,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/015-capacity-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/015-capacity-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/015-capacity-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/015-capacity-tabletop-4k-darwin.png)
 
@@ -262,11 +262,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/016-first-player-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/016-first-player-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/016-first-player-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/016-first-player-tabletop-4k-darwin.png)
 
@@ -278,11 +278,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/017-edit-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/017-edit-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/017-edit-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/017-edit-tabletop-4k-darwin.png)
 
@@ -294,11 +294,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/018-renamed-entry-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/018-renamed-entry-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/018-renamed-entry-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/018-renamed-entry-tabletop-4k-darwin.png)
 
@@ -310,11 +310,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/019-renamed-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/019-renamed-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/019-renamed-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/019-renamed-tabletop-4k-darwin.png)
 
@@ -326,27 +326,27 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/020-leave-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/020-leave-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/020-leave-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/020-leave-tabletop-4k-darwin.png)
 
 </details>
 
-- [x] The West position becomes joinable and three seats remain.
+- [x] The North West position becomes joinable and three seats remain.
 
 ## 22. Recover the same physical table
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/021-reload-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/021-reload-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/021-reload-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/021-reload-tabletop-4k-darwin.png)
 
@@ -358,11 +358,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/022-continue-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/022-continue-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/022-continue-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/022-continue-tabletop-4k-darwin.png)
 
@@ -374,14 +374,78 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/023-continued-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/023-continued-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/023-continued-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/023-continued-tabletop-4k-darwin.png)
 
 </details>
 
 - [x] Continue reopens the same table URL and Player 1.
+
+## 25. Return to the retained entry before resizing
+
+Viewpoint: **Shared display**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/024-resize-ready-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/024-resize-ready-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/024-resize-ready-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/024-resize-ready-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] All three entry objects remain available for this existing table.
+
+## 26. Keep Continue when the same browser narrows to phone width
+
+Viewpoint: **Shared display**.
+
+| desktop · 393 × 852 |
+| --- |
+| [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/025-narrow-retained-entry-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/025-narrow-retained-entry-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 393 × 852</summary>
+
+[![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/025-narrow-retained-entry-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/025-narrow-retained-entry-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] The three entry discs stack without clipping at 393 × 852; resizing adds no device or player.
+
+## 27. Widen the same retained browser again
+
+Viewpoint: **Shared display**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/026-wide-retained-entry-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/026-wide-retained-entry-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/026-wide-retained-entry-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/026-wide-retained-entry-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Continue stays available at the original shared-display size.
+
+## 28. Reopen the same table after resizing
+
+Viewpoint: **Shared display**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/join-physical-seats-and-arrange-the-shared-table/027-responsive-continued-desktop-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/027-responsive-continued-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/join-physical-seats-and-arrange-the-shared-table/027-responsive-continued-tabletop-4k-darwin.png)](../../screenshots/join-physical-seats-and-arrange-the-shared-table/027-responsive-continued-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] The same URL, names and Player 1 survive the entry layout change.

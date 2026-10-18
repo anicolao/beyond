@@ -3,6 +3,8 @@
   import { base } from '$app/paths';
   import { backend, commitTable, restoreTable, retainedKey } from '$lib/backend';
   import TableSurface from '$lib/TableSurface.svelte';
+  import EntryDisc from '$lib/EntryDisc.svelte';
+  import InstrumentIcon from '$lib/InstrumentIcon.svelte';
   import type { Table, Command } from '$lib/table';
   type Screen = 'home' | 'learn' | 'play' | 'table';
   let screen = $state<Screen>('home');
@@ -55,23 +57,26 @@
 
 <svelte:head><title>Beyond the Sun</title><meta name="description" content="Gather at an orbital table and build humanity's future among the stars." /></svelte:head>
 
-<main class:at-table={screen === 'table'} data-e2e-layout data-backend-status={status} data-room-state={screen === 'table' ? 'gathering' : 'none'}>
+<main data-screen={screen} class:at-table={screen === 'table'} data-e2e-layout data-backend-status={status} data-room-state={screen === 'table' ? 'gathering' : 'none'}>
   <img class="environment" src={`${base}/art/observatory.png`} alt="" />
   <div class="shade"></div>
   {#if screen === 'table'}
     <TableSurface {table} {busy} {commit} id={retained} home={() => { history.replaceState(null, '', `${base}/`); show('home'); }} />
   {:else}
   <div class="content" class:arrival={screen === 'home'}>
-    <p class="eyebrow">HUMANITY'S NEXT CHAPTER</p>
     {#if screen === 'home'}
+      <div class="arrival-copy">
+      <p class="eyebrow">HUMANITY'S NEXT CHAPTER</p>
       <h1 bind:this={heading} tabindex="-1" class="wordmark">BEYOND<span>THE</span>SUN</h1>
       <p class="intro">One shared future.<br />A universe of possibilities.</p>
+      </div>
       <nav class="arrival-actions" aria-label="Enter the observatory">
-        <button class="primary orbital" onclick={() => show('play')} disabled={status !== 'synced'}><span aria-hidden="true">✧</span> Play</button>
-        <button class="orbital gold" onclick={() => show('learn')}><span aria-hidden="true">☷</span> Learn</button>
-        {#if retained}<button class="orbital" onclick={() => { void recover(retained); }} disabled={busy}><span aria-hidden="true">↗</span> Continue</button>{/if}
+        <EntryDisc label="Play" disabled={status !== 'synced'} onclick={() => show('play')} />
+        <EntryDisc label="Learn" icon="book" tone="gold" onclick={() => show('learn')} />
+        {#if retained}<EntryDisc label="Continue" icon="return" tone="violet" disabled={busy} onclick={() => { void recover(retained); }} />{/if}
       </nav>
     {:else if screen === 'learn'}
+      <p class="eyebrow">HUMANITY'S NEXT CHAPTER</p>
       <h1 bind:this={heading} tabindex="-1">A future beyond Earth</h1>
       <p class="intro">Shape humanity's discoveries.<br />Build the faction that leads the way.</p>
       <section class="phases" aria-label="The three phases of a turn">
@@ -82,13 +87,14 @@
       <p class="note">Discoveries are shared. Each faction researches them to use their actions.</p>
       <button class="secondary" onclick={() => show('home')}>Back to observatory</button>
     {:else if screen === 'play'}
+      <p class="eyebrow">A PLACE AMONG THE STARS</p>
       <h1 bind:this={heading} tabindex="-1">Gather your players</h1>
       <p class="intro">Sit together. Reach for the same stars.</p>
-      <button class="mode-card" onclick={() => { void create().catch(() => undefined); }} disabled={busy}><span class="mode-icon" aria-hidden="true">✦</span><strong>Shared table</strong><span>2–4 players · One shared display</span><span class="mode-arrow" aria-hidden="true">↗</span></button>
+      <button class="mode-card" onclick={() => { void create().catch(() => undefined); }} disabled={busy}><span class="mode-icon"><InstrumentIcon kind="table" /></span><strong>Shared table</strong><span>2–4 players · One shared display</span><span class="mode-arrow" aria-hidden="true">↗</span></button>
       <button class="secondary" onclick={() => show('home')}>Back to observatory</button>
     {/if}
   </div>
   {/if}
-    {#if error}<div class="error" role="alert"><p>{error}</p><button onclick={() => { void (pending ? sendPending() : recover(retained)).catch(() => undefined); }}>Retry change</button><button onclick={() => { pending = undefined; void recover(retained); }}>Reopen table</button></div>{/if}
+    {#if error}<div class="error" role="alert"><p>{error}</p><button onclick={() => { if (!pending && !retained) location.reload(); else void (pending ? sendPending() : recover(retained)).catch(() => undefined); }}>Retry change</button><button onclick={() => { pending = undefined; void recover(retained); }}>Reopen table</button></div>{/if}
   <footer><span class:connected={status === 'synced'} class="connection" aria-live="polite">{status === 'synced' ? 'Connected' : busy ? 'Saving your place…' : status === 'offline' ? 'Connection interrupted' : 'Connecting…'}</span><span class="footer-title">BEYOND THE SUN</span></footer>
 </main>

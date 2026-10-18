@@ -15,8 +15,9 @@
     "test:e2e": "firebase emulators:exec --project demo-beyond --only auth,firestore 'playwright test'",
     "test:e2e:update": "firebase emulators:exec --project demo-beyond --only auth,firestore 'playwright test --update-snapshots'",
     "emulators": "firebase emulators:start --project demo-beyond --only auth,firestore",
-    "verify": "bun run test:policy && bun run test:tooling && bun run check && bun run test:rules && bun run test:e2e",
-    "test:policy": "node scripts/check-e2e-policy.mjs"
+    "verify": "bun run test:policy && bun run test:tooling && bun run check && bun run test:rules && bun run test:capture && bun run test:e2e",
+    "test:policy": "node scripts/check-e2e-policy.mjs",
+    "test:capture": "playwright test --config playwright.infrastructure.config.ts"
   },
   "dependencies": {
     "@fontsource/atkinson-hyperlegible": "5.2.8",

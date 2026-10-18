@@ -6,11 +6,11 @@ Two real static client builds served at PR and production paths on one origin, o
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/recover-one-game-between-pr-and-production-clients/000-arrival-desktop-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/000-arrival-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/recover-one-game-between-pr-and-production-clients/000-arrival-tabletop-4k-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/000-arrival-tabletop-4k-darwin.png)
 
@@ -22,11 +22,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/recover-one-game-between-pr-and-production-clients/001-mode-desktop-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/001-mode-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/recover-one-game-between-pr-and-production-clients/001-mode-tabletop-4k-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/001-mode-tabletop-4k-darwin.png)
 
@@ -38,11 +38,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/recover-one-game-between-pr-and-production-clients/002-table-desktop-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/002-table-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/recover-one-game-between-pr-and-production-clients/002-table-tabletop-4k-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/002-table-tabletop-4k-darwin.png)
 
@@ -54,11 +54,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/recover-one-game-between-pr-and-production-clients/003-editor-desktop-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/003-editor-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/recover-one-game-between-pr-and-production-clients/003-editor-tabletop-4k-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/003-editor-tabletop-4k-darwin.png)
 
@@ -70,11 +70,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/recover-one-game-between-pr-and-production-clients/004-name-desktop-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/004-name-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/recover-one-game-between-pr-and-production-clients/004-name-tabletop-4k-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/004-name-tabletop-4k-darwin.png)
 
@@ -86,11 +86,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/recover-one-game-between-pr-and-production-clients/005-joined-desktop-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/005-joined-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/recover-one-game-between-pr-and-production-clients/005-joined-tabletop-4k-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/005-joined-tabletop-4k-darwin.png)
 
@@ -102,11 +102,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/recover-one-game-between-pr-and-production-clients/006-options-desktop-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/006-options-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/recover-one-game-between-pr-and-production-clients/006-options-tabletop-4k-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/006-options-tabletop-4k-darwin.png)
 
@@ -118,11 +118,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/recover-one-game-between-pr-and-production-clients/007-production-desktop-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/007-production-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/recover-one-game-between-pr-and-production-clients/007-production-tabletop-4k-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/007-production-tabletop-4k-darwin.png)
 
@@ -134,11 +134,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/recover-one-game-between-pr-and-production-clients/008-edit-desktop-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/008-edit-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/recover-one-game-between-pr-and-production-clients/008-edit-tabletop-4k-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/008-edit-tabletop-4k-darwin.png)
 
@@ -150,11 +150,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/recover-one-game-between-pr-and-production-clients/009-updated-name-desktop-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/009-updated-name-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/recover-one-game-between-pr-and-production-clients/009-updated-name-tabletop-4k-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/009-updated-name-tabletop-4k-darwin.png)
 
@@ -166,11 +166,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/recover-one-game-between-pr-and-production-clients/010-committed-desktop-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/010-committed-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/recover-one-game-between-pr-and-production-clients/010-committed-tabletop-4k-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/010-committed-tabletop-4k-darwin.png)
 
@@ -182,11 +182,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/recover-one-game-between-pr-and-production-clients/011-return-options-desktop-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/011-return-options-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/recover-one-game-between-pr-and-production-clients/011-return-options-tabletop-4k-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/011-return-options-tabletop-4k-darwin.png)
 
@@ -198,11 +198,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/recover-one-game-between-pr-and-production-clients/012-pr-number-desktop-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/012-pr-number-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/recover-one-game-between-pr-and-production-clients/012-pr-number-tabletop-4k-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/012-pr-number-tabletop-4k-darwin.png)
 
@@ -214,11 +214,11 @@ Viewpoint: **Shared display**.
 
 Viewpoint: **Shared display**.
 
-| desktop |
+| desktop · 1440 × 1000 |
 | --- |
 | [![desktop](../../screenshots/recover-one-game-between-pr-and-production-clients/013-recovered-desktop-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/013-recovered-desktop-darwin.png) |
 
-<details><summary>Shared display at 4K</summary>
+<details><summary>tabletop-4k · 3840 × 2160</summary>
 
 [![4K](../../screenshots/recover-one-game-between-pr-and-production-clients/013-recovered-tabletop-4k-darwin.png)](../../screenshots/recover-one-game-between-pr-and-production-clients/013-recovered-tabletop-4k-darwin.png)
 

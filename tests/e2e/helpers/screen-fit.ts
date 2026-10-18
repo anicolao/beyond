@@ -56,8 +56,48 @@ export function assertScreenFit(options: {document?:boolean} = {}) {
     const top=Math.max(0,rect.top,...(element.closest('.sticky-nav')?[]:pinned.map(header=>header.bottom)));
     return {left:Math.max(0,rect.left),right:Math.min(innerWidth,rect.right),top,bottom:Math.min(innerHeight,rect.bottom)};
   };
+  type Point = {x:number;y:number};
+  const rectangle=(r:{left:number;right:number;top:number;bottom:number}):Point[]=>[
+    {x:r.left,y:r.top},{x:r.right,y:r.top},{x:r.right,y:r.bottom},{x:r.left,y:r.bottom}
+  ];
+  const hitPolygon=(element:HTMLElement):Point[]=>{
+    // Preserve the document's clipped hit regions. Game controls use their
+    // actual transformed border-box, rather than overlapping bounding boxes.
+    if(options.document&&!modal)return rectangle(hitRegion(element));
+    const rect=element.getBoundingClientRect();
+    let matrix=new DOMMatrix();
+    for(let parent:HTMLElement|null=element;parent;parent=parent.parentElement){
+      const css=style(parent);
+      // Unknown/perspective geometry remains conservatively axis-aligned.
+      if(css.perspective!=='none'||css.rotate!=='none'||css.scale!=='none'||!['1','normal'].includes(css.zoom))return rectangle(rect);
+      if(css.transform!=='none')matrix=new DOMMatrix(css.transform).multiply(matrix);
+    }
+    if(!matrix.is2D)return rectangle(rect);
+    const css=style(element);
+    let width=parseFloat(css.width),height=parseFloat(css.height);
+    if(!Number.isFinite(width)||!Number.isFinite(height))return rectangle(rect);
+    if(css.boxSizing!=='border-box'){
+      width+=parseFloat(css.paddingLeft)+parseFloat(css.paddingRight)+parseFloat(css.borderLeftWidth)+parseFloat(css.borderRightWidth);
+      height+=parseFloat(css.paddingTop)+parseFloat(css.paddingBottom)+parseFloat(css.borderTopWidth)+parseFloat(css.borderBottomWidth);
+    }
+    const cx=(rect.left+rect.right)/2,cy=(rect.top+rect.bottom)/2;
+    return [[-1,-1],[1,-1],[1,1],[-1,1]].map(([x,y])=>({
+      x:cx+matrix.a*x*width/2+matrix.c*y*height/2,
+      y:cy+matrix.b*x*width/2+matrix.d*y*height/2
+    }));
+  };
+  const overlaps=(a:Point[],b:Point[])=>{
+    // Separating-axis theorem: no tolerance, masking or excluded controls.
+    for(const polygon of [a,b])for(let i=0;i<polygon.length;i++){
+      const p=polygon[i],q=polygon[(i+1)%polygon.length];
+      const axis={x:p.y-q.y,y:q.x-p.x};
+      const pa=a.map(v=>v.x*axis.x+v.y*axis.y),pb=b.map(v=>v.x*axis.x+v.y*axis.y);
+      if(Math.max(...pa)<=Math.min(...pb)||Math.max(...pb)<=Math.min(...pa))return false;
+    }
+    return true;
+  };
+  const polygons=controls.map(hitPolygon);
   for(let i=0;i<controls.length;i++)for(let j=i+1;j<controls.length;j++){
-    const a=hitRegion(controls[i]),b=hitRegion(controls[j]);
-    if(Math.min(a.right,b.right)>Math.max(a.left,b.left)&&Math.min(a.bottom,b.bottom)>Math.max(a.top,b.top))throw new Error(`Controls overlap: ${label(controls[i])} / ${label(controls[j])}`);
+    if(overlaps(polygons[i],polygons[j]))throw new Error(`Controls overlap: ${label(controls[i])} / ${label(controls[j])}`);
   }
 }
