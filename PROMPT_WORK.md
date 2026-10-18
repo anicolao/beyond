@@ -8,3 +8,5 @@ Prompt 9 | 5de0a19f2192e77ae607fb6af0523dcb6b9c6acd571e30bd840b1a910d751965 | Re
 Prompt 9 | 5de0a19f2192e77ae607fb6af0523dcb6b9c6acd571e30bd840b1a910d751965 | Record provisional reviewer acceptance and completed Linux comparison evidence
 Prompt 16 | 45ee0b8d5e4cd7cbe3b5a2cd283d19e8bd3703b2ee1ac693baf4ba4454d31bc4 | Package the reviewed original illustrations with the gallery tracer and its macOS evidence
 Prompt 16 | 45ee0b8d5e4cd7cbe3b5a2cd283d19e8bd3703b2ee1ac693baf4ba4454d31bc4 | Review Linux card-gallery captures and finalize platform-specific exact comparison evidence
+
+Prompt 26 | 99af23167ecd860ff0178a8cbe27e87caa9323f4779cb5537fa6a1f4f6725228 | Record restored local acceptance, overlapping phase gates and current remote capability status.

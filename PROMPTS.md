@@ -75,3 +75,63 @@ Reviewer logging correction: re-read the new Supervising conversation and implem
 Reviewer-authored instruction:
 
 Reviewer local visual acceptance: independently inspected both full 4K PNGs in tmp/local-gallery-review and live System colony example with internal scroll, plus prior desktop/phone/all-family reviews. Materials, hierarchy, readable rules and persistent controls are satisfactory for this increment. Proceed with required final E2E evidence and exact comparisons, accessibility regressions including the focus escape fix, required checks, commit/push and NEW PR based on feat/foundation-tracer. Verify hosted preview matches final revision, report PR and evidence. Do not merge or start further gameplay. Log this as reviewer-authored.
+
+## Prompt 17: Remote Room Milestone
+
+Reviewer-authored instruction; the new human authorization is recorded in `meta-prompts.md`:
+
+Reviewer delegation under new human authorization recorded in meta-prompts.md, Continue through implementation plan: proceed sequentially through IMPLEMENTATION_PLAN.md with independent supervisor acceptance between phases. Start milestone 002 now on a NEW branch from accepted PR3 head 9f3e7dd, with a NEW PR based on feat/card-gallery. Implement real remote host/code invite/join using separate identities, ready state tied to configuration, retained-seat restoration, atomic seat claims and strict separation from tabletop seats. Follow full plan and UX contract; preserve existing flows and canonical persistence. Keep persistent local dev preview and report URL for direct review. Iterate locally first, then final illustrated desktop/phone stories, security/rules checks, exact comparisons and hosted preview verification. Include new meta-prompts entry on new branch; mark this instruction reviewer-authored in PROMPTS and continuations in PROMPT_WORK. After phase 002 is ready, await my review before starting 003; I will authorize each subsequent phase after independent acceptance. Keep all PRs stacked and unmerged, no merge. Update plan scope to reflect new human authorization replacing stop-after-gallery. Begin now.
+
+## Prompt 18: Overlap Phase Gates
+
+Reviewer-authored instruction:
+
+Reviewer workflow update from explicit human steering, recorded in meta-prompts.md under Overlap implementation with CI: after independent local visual/functional acceptance and passing local checks, you may begin the next planned phase on a new stacked branch while the preceding phase finishes CI and hosted verification. Do not idle solely waiting for CI. Keep a per-phase ledger of pending gates and PR dependencies, promptly fix CI failures and propagate necessary fixes through dependent branches. Final phase acceptance still requires all checks and matching hosted preview. Keep all PRs unmerged. This supersedes my earlier wait-for-all-gates instruction. Continue 002 now and report local review readiness; include logging/plan clarification in its PR. Log this as reviewer-authored.
+
+## Prompt 19: Contain Seat Controls
+
+Reviewer-authored checkpoint:
+
+First independent local remote review: created Review Host room a78a3a84-4893-4f33-9f97-aff9ccec339b, code LIGCU, via normal UI. Desktop/393px phone overall materials and invitation/setup hierarchy look coherent. Concrete desktop issue at 1280x720: Edit your name button protrudes below the occupied ivory seat mat and its bottom frame (phone fits). Keep that control contained with enough seat padding/height at desktop, including long names/edit state. Continue your in-flight functional/security work; full separate-identity join/readiness/recovery review and local checks remain before acceptance. No baseline cycle requested yet.
+
+## Prompt 20: Finalize Remote Rooms
+
+Reviewer-authored checkpoint:
+
+Independent review checkpoint: seat containment fix accepted including long-name editor PNGs. Joined LIGCU as separate Review Guest through code/preview/seat UI, marked ready and confirmed acknowledged state survives reload. Host sees guest ready; host Ready reaches Everyone is ready; changing Achievements to Randomized correctly clears both. Setup editor looks good. One concrete remaining visual defect: QR invitation dialog anchor is pale gold on ivory and nearly invisible at 1280x720; give the URL clear dark contrast and underline/focus treatment, also verify phone wrapping. Then proceed with final illustrated E2E/local exact verification and stacked PR on feat/card-gallery. Cover separate identities, missing/full room, readiness invalidation, retained restoration, keyboard dialogs, persistence and tabletop separation. Once local E2E passes and this narrow contrast fix is verified, report local-ready so I can authorize 003 while CI runs. Do not merge.
+
+## Prompt 21: Overlap Basic Setup
+
+Reviewer-authored acceptance and instruction:
+
+Phase002 local visual/functional acceptance: independently reviewed qr-1280.png and qr-393.png; URL contrast/wrapping fix passes. Also reviewed generated everyone-ready phone and preview-observes-production capture, plus prior live separate host/guest flows. No further visual changes requested. I confirmed full candidate run 13 passed; finish independent local exact comparison and required checks, commit/push and open phase002 PR based on feat/card-gallery. Once those LOCAL checks pass, you are explicitly authorized to start milestone003 Basic setup on a NEW branch based on your phase002 branch while phase002 Linux CI and hosted gates finish. Track both phases separately, fix/propagate CI issues, and keep PRs unmerged. Milestone003 must implement reviewed exact 2/3/4-player Basic setup, legal unique factions, Begin and starting mats/boards in remote desktop/phone and shared tabletop modes, with rules manifests and ordinary setup stories. Keep local preview for review before final baselines. Report phase002 PR/head and local exact result when available. Log this as reviewer-authored.
+
+## Prompt 22: Recompose Gathering Table
+
+Reviewer-authored delegation following the human visual correction recorded by the supervisor in `meta-prompts.md`. The human wording is intentionally not duplicated here.
+
+I re-opened docs/ux/concepts/02-gather.png and agree. Withdraw phase002 visual acceptance and authorization to start003 until this composition is corrected. Preserve work and let in-flight checks finish safely. Current UI is large rectangular web panels over wallpaper; concept calls for a composed physical gathering table, seat-facing player objects, central substantial illuminated invitation instrument, secondary setup object, and portrait stacked compact player rows. Re-read UX_DESIGN.md visual promise and concept directly. Redesign supported remote gathering/navigation with actual depth/material/lighting/spatial relationships and compact portrait composition. Keep all text/actions semantic and accessible. Do not copy concept invented dice/ships/gameplay or claim faction choices before003. Existing functional tests remain valuable; iterate LOCAL only until fresh independent visual acceptance. Report revised composition ready, no further baseline churn or phase003 advancement. Log human wording only in meta-prompts (supervisor handles it); this delegation reviewer-authored in PROMPTS.
+
+## Prompt 23: Balance Mode Instruments
+
+Reviewer-authored checkpoint:
+
+Reviewer checkpoint: independently compared composition-occupied-1280.png and phone capture against docs/ux/concepts/02-gather.png. Gathering composition is substantially closer: player objects around a table, central invitation instrument, secondary setup plaque and stacked portrait rows. Not final acceptance yet. Concrete remaining issue in composition-navigation-1280.png: oversized ivory Shared table rectangle dominates above two small remote discs, still reads as a web CTA panel on wallpaper. Make all three mode choices a coherent set of physical navigation instruments, with balanced scale/material and intentional placement on the table; retain clear Shared table versus remote Create/Join labels and semantic keyboard/touch controls. Preserve existing functions. Please provide revised desktop/phone navigation and gathering empty/2-player plus long-name/dialog states for local review, along with usable room URL. No new baseline cycle or publication yet; 003 remains on hold. Log as reviewer-authored.
+
+## Prompt 24: Verify Gathering Composition
+
+Reviewer-authored acceptance and checkpoint:
+
+Reviewer round23: independently viewed navigation desktop/phone, long-name phone, name/setup dialogs, empty host setup, and live QSYKS visitor gathering at 1280. Revised navigation and desktop/phone gathering now meet the scoped composition direction in UX_DESIGN and concepts01/02: physical instruments, seat objects, central illuminated invite, secondary setup, stacked portrait. These inspected views are accepted. Before final local acceptance provide full 4K mode-navigation capture (changed shared-table entry), then refresh required local checks/exact illustrated regression coverage without weakening guards. Report results for reviewer verification; 003 stays on hold until that final local checkpoint. After acceptance, publish stacked phase002 PR based on feat/card-gallery; CI may overlap003 only once explicitly released. No merge. Preserve source-reviewed rules and accessible semantic controls; do not add concept-only gameplay.
+
+## Prompt 25: Review Recovery Evidence
+
+Reviewer-authored checkpoint:
+
+Reviewer: independently inspected full navigation-3840.png; 4K mode entry accepted, with balanced tactile choices and intact margins. Saw your recovery-over-Ready failure and planned bounded dialog fix; continue that correction and existing validation, no duplicate work requested. Please include corrected phone recovery dialog/focus return evidence for my final review before releasing003. Final local acceptance still pending corrected recovery review and passing independent exact/local checks.
+
+## Prompt 26: Publish Remote Foundation
+
+Reviewer-authored acceptance and instruction:
+
+Final local checkpoint: phase002 LOCAL ACCEPTANCE restored. Independently reviewed corrected 038 recovery phone and039 keyboard state; bounded dialog is readable and properly separates background controls. Prior desktop/phone/live gathering, navigation and full4K reviews stand. Verified remote-round24-verify.log completes bun run verify successfully including16 exact browser journeys and26 guards. Commit/push phase002 and open new PR based on feat/card-gallery, report URL/head. You are explicitly authorized to start003 Basic setup on a NEW branch based on this locally accepted phase002 branch while Linux CI/hosted verification finish. Track outstanding002 gates separately and propagate fixes. Implement source-reviewed exact2/3/4-player Basic setup across remote desktop/phone and shared tabletop, legal unique factions and immutable Begin; compare every rendered surface against approved UX/concepts before baselines. Keep local preview available, no fake gameplay, all PRs unmerged. Update ledger with restored local acceptance; final002 acceptance still needs Linux exact plus matching hosted preview.

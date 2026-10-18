@@ -60,6 +60,96 @@ service cloud.firestore {
         allow update, delete: if false;
       }
     }
+    // Remote rooms share the canonical game stream, with participant authority.
+    // The existing tabletop match above remains controller-only.
+    match /games/{game} {
+      function path() { return /databases/$(database)/documents/games/$(game); }
+      function isRemote(data) { return data.mode == 'remote' && data.schema == 1 && data.phase == 'gathering'; }
+      function named(name) { return name is string && name.size() > 0 && name.size() <= 24 && name.matches('^\\S(.*\\S)?$'); }
+      function settingShape(s) { return s.keys().hasOnly(['capacity','factions','achievements']) && s.capacity in [2,3,4] && s.factions in ['basic','advanced'] && s.achievements in ['introductory','randomized']; }
+      function seatShape(data, p) {
+        return !(p in data.seats) || (data.seats[p].keys().hasOnly(['uid','name','ready'])
+          && data.seats[p].uid is string && named(data.seats[p].name) && data.seats[p].ready is bool
+          && data.members[data.seats[p].uid] == p);
+      }
+      function remoteShape(d) {
+        return d.keys().hasOnly(['schema','mode','phase','ownerUid','code','settings','seats','members','configVersion','revision','lastCommand'])
+          && isRemote(d) && d.ownerUid is string && d.code.matches('^[A-Z]{5}$') && settingShape(d.settings)
+          && d.configVersion is int && d.configVersion >= 0 && d.revision is int && d.revision >= 0
+          && d.lastCommand is string && d.seats is map && d.members is map
+          && d.seats.size() == d.members.size() && d.seats.size() <= d.settings.capacity
+          && d.seats.keys().hasOnly(['p1','p2','p3','p4']) && d.members[d.ownerUid] == 'p1' && d.seats.p1.uid == d.ownerUid
+          && (d.settings.capacity >= 3 || !('p3' in d.seats)) && (d.settings.capacity == 4 || !('p4' in d.seats))
+          && seatShape(d,'p1') && seatShape(d,'p2') && seatShape(d,'p3') && seatShape(d,'p4');
+      }
+      function link(d) {
+        let event = getAfter(/databases/$(database)/documents/games/$(game)/events/$(d.lastCommand)).data;
+        return event.commandId == d.lastCommand && event.revision == d.revision;
+      }
+      allow get: if signedIn() && resource.data.mode == 'remote' && resource.data.schema == 1;
+      allow create: if signedIn() && remoteShape(request.resource.data) && request.resource.data.ownerUid == request.auth.uid
+        && request.resource.data.revision == 0 && link(request.resource.data)
+        && getAfter(/databases/$(database)/documents/invites/$(request.resource.data.code)).data.gameId == game;
+      allow update: if signedIn() && isRemote(resource.data) && remoteShape(request.resource.data)
+        && request.resource.data.ownerUid == resource.data.ownerUid && request.resource.data.code == resource.data.code
+        && request.resource.data.revision == resource.data.revision + 1 && link(request.resource.data);
+      match /events/{event} {
+        function sameSeat(p, except, b, a, clear) {
+          return p == except || (!(p in b.seats) && !(p in a.seats)) || (p in b.seats && p in a.seats
+            && a.seats[p].uid == b.seats[p].uid && a.seats[p].name == b.seats[p].name
+            && a.seats[p].ready == (clear ? false : b.seats[p].ready));
+        }
+        function otherSeats(p, b, a, clear) { return sameSeat('p1',p,b,a,clear) && sameSeat('p2',p,b,a,clear) && sameSeat('p3',p,b,a,clear) && sameSeat('p4',p,b,a,clear); }
+        function changed(e,b,a) {
+          let uid = request.auth.uid;
+          let p = e.position;
+          let self = uid in b.members && b.members[uid] == p;
+          let settingsSame = a.settings == b.settings;
+          let membersSame = a.members == b.members;
+          let reset = a.configVersion == b.configVersion + 1 && !e.ready;
+          return e.revision == b.revision + 1 && (
+            (e.type == 'remote-seat-claimed' && !(uid in b.members) && p in ['p2','p3','p4'] && !(p in b.seats) && named(e.name)
+              && settingsSame && reset && otherSeats(p,b,a,true) && a.seats.size() == b.seats.size() + 1
+              && a.seats[p] == {'uid':uid,'name':e.name,'ready':false}
+              && a.members.size() == b.members.size() + 1 && a.members.diff(b.members).affectedKeys().hasOnly([uid]) && a.members[uid] == p)
+            || (e.type == 'remote-seat-renamed' && self && named(e.name) && e.name != b.seats[p].name && settingsSame && membersSame
+              && reset && otherSeats(p,b,a,true) && a.seats.size() == b.seats.size() && a.seats[p] == {'uid':uid,'name':e.name,'ready':false})
+            || (e.type == 'remote-seat-left' && self && uid != b.ownerUid && e.name == '' && settingsSame && reset
+              && otherSeats(p,b,a,true) && !(p in a.seats) && a.seats.size() == b.seats.size() - 1
+              && !(uid in a.members) && a.members.size() == b.members.size() - 1 && a.members.diff(b.members).affectedKeys().hasOnly([uid]))
+            || (e.type == 'remote-ready-changed' && self && e.name == '' && settingsSame && membersSame
+              && a.configVersion == b.configVersion && e.ready != b.seats[p].ready && otherSeats(p,b,a,false)
+              && a.seats.size() == b.seats.size() && a.seats[p] == {'uid':uid,'name':b.seats[p].name,'ready':e.ready})
+            || (e.type == 'remote-settings-changed' && uid == b.ownerUid && p == '' && e.name == '' && !settingsSame && membersSame
+              && reset && otherSeats('',b,a,true) && a.seats.size() == b.seats.size())
+          );
+        }
+        function validRemoteEvent() {
+          let e = request.resource.data;
+          let a = getAfter(path()).data;
+          return e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','ready','configVersion','settings','code'])
+            && e.schema == 1 && e.actorUid == request.auth.uid && e.commandId == event && e.ready is bool
+            && isRemote(a) && a.lastCommand == event && a.revision == e.revision && a.configVersion == e.configVersion
+            && a.settings == e.settings && a.code == e.code
+            && ((!exists(path()) && e.type == 'remote-created' && e.position == 'p1' && named(e.name) && !e.ready && e.revision == 0
+                && a.configVersion == 0 && a.seats == {'p1':{'uid':request.auth.uid,'name':e.name,'ready':false}} && a.members.size() == 1 && a.members[request.auth.uid] == 'p1')
+              || (exists(path()) && isRemote(get(path()).data) && changed(e,get(path()).data,a)));
+        }
+        allow list: if signedIn() && isRemote(get(path()).data) && request.auth.uid in get(path()).data.members;
+        allow get: if signedIn() && isRemote(get(path()).data)
+          && (!exists(/databases/$(database)/documents/games/$(game)/events/$(event)) || request.auth.uid in get(path()).data.members || resource.data.actorUid == request.auth.uid);
+        allow create: if signedIn() && validRemoteEvent();
+      }
+    }
+    match /invites/{code} {
+      allow get: if signedIn();
+      allow create: if signedIn() && code.matches('^[A-Z]{5}$') && request.resource.data.keys().hasOnly(['gameId','ownerUid'])
+        && request.resource.data.ownerUid == request.auth.uid
+        && getAfter(/databases/$(database)/documents/games/$(request.resource.data.gameId)).data.mode == 'remote'
+        && getAfter(/databases/$(database)/documents/games/$(request.resource.data.gameId)).data.code == code
+        && getAfter(/databases/$(database)/documents/games/$(request.resource.data.gameId)).data.ownerUid == request.auth.uid
+        && getAfter(/databases/$(database)/documents/games/$(request.resource.data.gameId)).data.revision == 0;
+    }
     match /{document=**} { allow read, write: if false; }
   }
 }

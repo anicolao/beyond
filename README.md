@@ -4,7 +4,7 @@ Lead a faction beyond Earth. Help shape humanity's shared technology tree, build
 
 This repository defines a browser implementation of **Beyond the Sun**, designed by Dennis K. Chan and published by Rio Grande Games. Two to four players research technologies, develop production, build and move fleets, colonize systems, and claim achievements. The winner has the most victory points after the final round.
 
-**Status: first tracer implemented.** Enter the observatory, read Learn, and join directly at a physical position on the shared table. Up to four local players can edit names, leave, choose Player 1, reload, and recover the same game across PR and production paths. Full gameplay follows the implementation plan.
+**Status: gathering and card collection implemented.** Browse source-reviewed card examples, gather up to four local players directly at shared-table positions, or host/join a remote room using separate identities and a public invitation. Remote players review configuration, confirm readiness, and restore their retained seats across client versions. Basic faction selection, Begin and playable boards follow in milestone003.
 
 ## Project documents
 
@@ -39,7 +39,7 @@ The technical foundation consists of:
 - SvelteKit, Svelte 5, TypeScript, Bun, Vite, and the static adapter.
 - Firebase anonymous Authentication and Cloud Firestore, with an append-only room event stream.
 - Pure deterministic rules, versioned component manifests and seeded randomness, and separate personal/shared-display projections of one game state.
-- Vitest for rules and replay, Firebase emulators for authentication and write-policy checks, and Playwright for real multi-browser journeys.
+- Bun tests for rules and replay, Firebase emulators for authentication and write-policy checks, and Playwright for real multi-browser journeys.
 - A pinned Nix development environment, exact screenshot comparisons, generated walkthroughs, and retained GitHub Pages PR previews with automatically posted live-link comments.
 
 This is a trusted-client design. Authentication and Firestore rules enforce access boundaries, attribution, immutability, and permitted write shapes. They do not establish server-side rules authority or conceal future seeded draws from a modified client. The ordinary UI must conceal unrevealed information. No competitive-security claim is intended.
@@ -60,7 +60,7 @@ Build small, complete browser-visible slices in the sequence in [E2E_GUIDE.md](E
 
 Implementation starts with the pinned environment and static application shell, followed by rooms and reviewed setup manifests. Document development and verification commands as their scripts are implemented. Never copy sibling credentials.
 
-The [illustrated walkthroughs](tests/e2e/001-foundation/README.md) demonstrate arrival, physical-seat joining and configuration, and recovery between two built deployment paths. Tabletop stories use desktop and 4K shared displays; arrival also covers phone. Remote PvP receives its own production host/join stories in milestone 002.
+The [illustrated walkthroughs](tests/e2e/001-foundation/README.md) demonstrate arrival, physical-seat joining and configuration, and recovery between two built deployment paths. Tabletop stories use desktop and 4K shared displays; arrival also covers phone. The [remote gathering stories](tests/e2e/002-remote-rooms/README.md) cover separate identities, missing/full room recovery, readiness invalidation, keyboard dialogs and shared canonical persistence.
 
 ## Card collection
 

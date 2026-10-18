@@ -22,7 +22,8 @@
   "dependencies": {
     "@fontsource/atkinson-hyperlegible": "5.2.8",
     "@fontsource/cormorant-garamond": "5.2.11",
-    "firebase": "12.16.0"
+    "firebase": "12.16.0",
+    "qrcode-generator": "2.0.4"
   },
   "devDependencies": {
     "@firebase/rules-unit-testing": "5.0.1",
