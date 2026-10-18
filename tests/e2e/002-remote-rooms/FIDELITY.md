@@ -38,3 +38,7 @@ Reviewer checkpoint25 independently accepted the full 4K navigation. Corrected p
 ## Restored local acceptance
 
 Reviewer checkpoint26 restores phase002 LOCAL ACCEPTANCE after independent inspection of corrected phone recovery and keyboard state, all prior desktop/phone/live gathering and navigation views, full 4K navigation, and the successful local verify log. Publication is authorized against `feat/card-gallery`, and003 may start on a new branch from this accepted-local head while Linux/hosted gates finish. Final phase002 acceptance still requires reviewed Linux candidates, independent Linux exact comparison and a revision-matching hosted preview. No PR may be merged.
+
+## Linux acknowledgement follow-up
+
+The initial Linux candidate run on `4524932` completed 15 journeys but the first phone host creation exceeded the unchanged 2-second visible-state budget. Creation now displays the projection returned by its successful transaction directly, then subscribes; reopening still replays history. This removes two redundant reads after acknowledged creation without speculative state. The pinned local `bun run verify` passes all 16 exact journeys and 26 capture guards with no baseline edits (`tmp/remote-round26-verify.log`). Candidate failures now retain traces for diagnosis. Linux generation, independent image review/comparison, and final-head hosted verification remain open gates.

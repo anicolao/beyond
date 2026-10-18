@@ -84,6 +84,13 @@ jobs:
       - run: nix develop --command bun run test:capture
       - run: nix develop --command bun run test:e2e:update
       - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: candidate-failure-evidence
+          path: |
+            playwright-report/
+            test-results/
+      - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: linux-candidate-baselines

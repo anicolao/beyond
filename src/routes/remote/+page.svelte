@@ -63,8 +63,16 @@
   }
   async function create() {
     busy = true; error = ''; status = 'saving';
-    try { const created = await createRemote(hostName, settings); await openRoom(created.id, true); }
+    try {
+      // The transaction already acknowledged this exact projection. Display it
+      // immediately; history replay remains mandatory when reopening a room.
+      const created = await createRemote(hostName, settings);
+      unsubscribe?.(); roomId = created.id; receive(created.room); screen = 'room';
+      replaceState(`${base}/remote/?room=${roomId}`, {});
+      unsubscribe = watchRemote(roomId, receive, message => { error = message; status = 'offline'; });
+    }
     catch (cause) { fail(cause); }
+    finally { busy = false; }
   }
   async function act(intent: RemoteIntent, retry = false) {
     if (!room || busy) return;
