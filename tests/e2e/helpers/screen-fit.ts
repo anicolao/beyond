@@ -1,5 +1,12 @@
 /** Runs inside the page: audit components, text lines and every clipping ancestor. */
-export function assertScreenFit(options: {document?:boolean;touchTargets?:boolean} = {}) {
+export async function assertScreenFit(options: {document?:boolean;touchTargets?:boolean;prepare?:boolean} = {}) {
+  if(options.prepare){
+    await document.fonts.ready;
+    await Promise.all([...document.images].filter(i=>i.checkVisibility({visibilityProperty:true})).map(i=>i.decode()));
+    await Promise.all(document.getAnimations().filter(a=>a.playState!=='finished').map(a=>a.finished));
+    const transitions=(window as Window&{__beyondTransitions?:Map<Element,string>}).__beyondTransitions;
+    if(!transitions||transitions.size)throw new Error('A Svelte transition is still active');
+  }
   const modal = [...document.querySelectorAll<HTMLElement>('dialog:modal')].at(-1);
   // Native modality makes the document behind a popup inert. Audit its active
   // surface, including vertical viewport fit, even on a scrolling document page.
@@ -8,6 +15,31 @@ export function assertScreenFit(options: {document?:boolean;touchTargets?:boolea
   const elements = [...new Set(roots.flatMap(root => [root, ...root.querySelectorAll<HTMLElement>('*')]))];
   const styles = new Map<Element, CSSStyleDeclaration>();
   const style = (element: Element) => { if (!styles.has(element)) styles.set(element, getComputedStyle(element)); return styles.get(element)!; };
+  // This audit is read-only. Cache immutable geometry within this one call,
+  // preserving the original transform multiplication order and exact bounds.
+  const matrices=new Map<HTMLElement,DOMMatrix>();
+  const matrixFor=(element:HTMLElement)=>{
+    if(!matrices.has(element)){
+      let matrix=new DOMMatrix();
+      for(let parent:HTMLElement|null=element;parent;parent=parent.parentElement){
+        const transform=style(parent).transform;
+        if(transform!=='none')matrix=new DOMMatrix(transform).multiply(matrix);
+      }
+      matrices.set(element,matrix);
+    }
+    return matrices.get(element)!;
+  };
+  const clips=new Map<HTMLElement,{left:number;top:number;right:number;bottom:number}>();
+  const clipFor=(ancestor:HTMLElement)=>{
+    if(!clips.has(ancestor)){
+      const css=style(ancestor),box=ancestor.getBoundingClientRect(),matrix=matrixFor(ancestor);
+      const sx=Math.hypot(matrix.a,matrix.b),sy=Math.hypot(matrix.c,matrix.d);
+      const left=parseFloat(css.borderLeftWidth)||0,right=parseFloat(css.borderRightWidth)||0,top=parseFloat(css.borderTopWidth)||0,bottom=parseFloat(css.borderBottomWidth)||0;
+      const scrollbarX=Math.max(0,ancestor.offsetWidth-ancestor.clientWidth-left-right),scrollbarY=Math.max(0,ancestor.offsetHeight-ancestor.clientHeight-top-bottom);
+      clips.set(ancestor,{left:box.left+left*sx,top:box.top+top*sy,right:box.right-(right+scrollbarX)*sx,bottom:box.bottom-(bottom+scrollbarY)*sy});
+    }
+    return clips.get(ancestor)!;
+  };
   const label = (element: Element) => `${element.tagName.toLowerCase()}.${element.className} (${element.getAttribute('aria-label') ?? element.textContent?.trim().slice(0,60) ?? ''})`;
   const viewport = {left:0, top:0, right:innerWidth, bottom:innerHeight};
   const outside = (rect:DOMRect, box:{left:number;top:number;right:number;bottom:number}, x=true,y=true) =>
@@ -33,19 +65,7 @@ export function assertScreenFit(options: {document?:boolean;touchTargets?:boolea
     for(let ancestor:HTMLElement|null=text?element:element.parentElement;ancestor;ancestor=ancestor.parentElement){
       const css=style(ancestor), x=/^(hidden|clip|auto|scroll)$/.test(css.overflowX), y=/^(hidden|clip|auto|scroll)$/.test(css.overflowY);
       if(!x&&!y)continue;
-      const box=ancestor.getBoundingClientRect();
-      // Only transforms scale borders; rounded offset dimensions must not.
-      let matrix=new DOMMatrix();
-      for(let parent:HTMLElement|null=ancestor;parent;parent=parent.parentElement){
-        const transform=style(parent).transform;
-        if(transform!=='none')matrix=new DOMMatrix(transform).multiply(matrix);
-      }
-      const sx=Math.hypot(matrix.a,matrix.b),sy=Math.hypot(matrix.c,matrix.d);
-      // clientWidth/clientHeight round fractional CSS pixels. Use the actual
-      // border edges so a fitting fractional-width child isn't called clipped.
-      const left=parseFloat(css.borderLeftWidth)||0,right=parseFloat(css.borderRightWidth)||0,top=parseFloat(css.borderTopWidth)||0,bottom=parseFloat(css.borderBottomWidth)||0;
-      const scrollbarX=Math.max(0,ancestor.offsetWidth-ancestor.clientWidth-left-right),scrollbarY=Math.max(0,ancestor.offsetHeight-ancestor.clientHeight-top-bottom);
-      const clip={left:box.left+left*sx,top:box.top+top*sy,right:box.right-(right+scrollbarX)*sx,bottom:box.bottom-(bottom+scrollbarY)*sy};
+      const clip=clipFor(ancestor);
       const beyondRegion = region && (ancestor === region || ancestor.contains(region));
       const current = beyondRegion ? visible : rect;
       const inspectY = y && !(ancestor === region) && (!beyondRegion || verticalArea);

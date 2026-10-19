@@ -78,3 +78,17 @@ test('batched target audit still checks visible background controls behind a mod
  await page.locator('dialog').evaluate((element:HTMLDialogElement)=>element.showModal());
  await expect(page.evaluate(assertScreenFit,{touchTargets:true})).rejects.toThrow('Touch target too small');
 });
+
+// Combined preparation retains the same capture contract before the geometry pass.
+for(const state of ['missing','active','settled','small'] as const)test(`combined preparation ${state}`,async({page})=>{
+ await page.setContent(`<main data-e2e-layout><button style="width:${state==='small'?43:80}px;height:44px;padding:0">Go</button></main>`);
+ if(state!=='missing')await page.evaluate(active=>{(window as Window&{__beyondTransitions?:Map<Element,string>}).__beyondTransitions=active?new Map([[document.querySelector('button')!,'intro']]):new Map();},state==='active');
+ const result=page.evaluate(assertScreenFit,{prepare:true,touchTargets:true});
+ if(state==='settled')await result;
+ else await expect(result).rejects.toThrow(state==='small'?'Touch target too small':'Svelte transition');
+});
+for(const width of [60,220])test(`nested transformed clipping ${width===60?'fits':'fails'}`,async({page})=>{
+ await page.setContent(`<style>*{box-sizing:border-box}body{margin:0}main{position:absolute;left:200px;top:100px;transform:scale(.9) rotate(15deg);width:300px;height:300px}.clip{width:160px;height:130px;overflow:hidden;border:1px solid;transform:scale(.8)}span{display:block;margin:20px;width:${width}px;height:40px;background:ivory}</style><main data-e2e-layout><div class="clip"><span>Source</span></div></main>`);
+ const result=page.evaluate(assertScreenFit,{});
+ if(width===60)await result;else await expect(result).rejects.toThrow('clipped by div');
+});

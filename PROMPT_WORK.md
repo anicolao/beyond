@@ -36,3 +36,5 @@ Prompt 35 | 0eadbfdfa68e2890852eabf5ef4423f283c3efe06de84a5b318e902c81c8161e | I
 Prompt 35 | 0eadbfdfa68e2890852eabf5ef4423f283c3efe06de84a5b318e902c81c8161e | Batch unchanged capture audits, add target regressions, and import visually reviewed successful Linux phone evidence.
 
 Prompt 37 | de161ef6b3a6962e476dd223fafe375224f4688d697c534f4ab19d1283670196 | Diagnose cold emulator startup and require read-only service/rules readiness before timed browser journeys; retain all guards.
+
+Prompt 37 | de161ef6b3a6962e476dd223fafe375224f4688d697c534f4ab19d1283670196 | Reduce 4K capture overhead with combined preparation and per-audit geometry caches, preserving every guard and exact deadline.

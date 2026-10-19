@@ -31,14 +31,7 @@ export class TestStepHelper {
         await page.bringToFront(); await page.mouse.move(0, 0);
         const ready = await page.waitForFunction(({ status }) => document.querySelector('[data-backend-status]')?.getAttribute('data-backend-status') === status, { status: view.status ?? 'synced' }, { timeout: remaining(), polling: 20 });
         await ready.dispose();
-        await page.evaluate(async () => {
-          await document.fonts.ready;
-          await Promise.all([...document.images].filter(i => i.checkVisibility({ visibilityProperty: true })).map(i => i.decode()));
-          await Promise.all(document.getAnimations().filter(a => a.playState !== 'finished').map(a => a.finished));
-          const transitions = (window as Window & { __beyondTransitions?: Map<Element, string> }).__beyondTransitions;
-          if (!transitions || transitions.size) throw new Error('A Svelte transition is still active');
-        });
-        await page.evaluate(assertScreenFit, { document: view.document, touchTargets: true });
+        await page.evaluate(assertScreenFit, { document: view.document, touchTargets: true, prepare: true });
         const camera = await page.context().newCDPSession(page);
         let image: Buffer;
         try { image = Buffer.from((await camera.send('Page.captureScreenshot', { format: 'png', fromSurface: true, captureBeyondViewport: false, optimizeForSpeed: true })).data, 'base64'); }

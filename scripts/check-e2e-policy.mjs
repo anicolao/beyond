@@ -35,9 +35,11 @@ export function checkPolicy(root = '.') {
     }
   }
   const helper = readFileSync(`${root}/tests/e2e/helpers/test-step-helper.ts`, 'utf8');
-  for (const guard of ['OPERATION_BUDGET = 2_000', 'document.fonts.ready', 'i.decode()', 'assertScreenFit', 'identicalPixels', 'threshold: 0', 'maxDiffPixels: 0', 'toBeLessThanOrEqual(OPERATION_BUDGET)', 'verifications.length', 'data-backend-status', 'touchTargets: true']) {
+  for (const guard of ['OPERATION_BUDGET = 2_000', 'prepare: true', 'assertScreenFit', 'identicalPixels', 'threshold: 0', 'maxDiffPixels: 0', 'toBeLessThanOrEqual(OPERATION_BUDGET)', 'verifications.length', 'data-backend-status', 'touchTargets: true']) {
     if (!helper.includes(guard)) errors.push(`Missing capture guard: ${guard}`);
   }
+  const audit=readFileSync(`${root}/tests/e2e/helpers/screen-fit.ts`,'utf8');
+  for(const guard of ['options.prepare','document.fonts.ready','i.decode()','document.getAnimations()','a.finished','__beyondTransitions','transitions.size','Touch target too small','Controls overlap'])if(!audit.includes(guard))errors.push(`Missing preparation/audit guard: ${guard}`);
   const config = readFileSync(`${root}/playwright.config.ts`, 'utf8');
   for (const guard of ['retries: 0', 'forbidOnly: true', "updateSnapshots: 'none'", 'workers: 1', 'actionTimeout: 2_000', 'navigationTimeout: 2_000', 'maxDiffPixels: 0', 'threshold: 0']) if (!config.includes(guard)) errors.push(`Missing config guard: ${guard}`);
   return errors;
