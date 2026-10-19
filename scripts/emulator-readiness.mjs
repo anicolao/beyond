@@ -1,13 +1,14 @@
 /** Infrastructure startup, before the browser journey's operation clock begins.
  * No credentials, identities, gameplay writes, retries or timed UI waits. */
-export async function requireEmulatorReadiness(projectId, request = fetch) {
+export async function requireEmulatorReadiness(projectId, request = fetch, ports = {auth:9297,firestore:8197}) {
   if (!/^demo-[a-z0-9-]+$/.test(projectId ?? '')) throw new Error('E2E readiness requires an isolated demo project.');
+  if (![ports.auth,ports.firestore].every(port=>Number.isInteger(port)&&port>1023&&port<=65535)) throw new Error('Invalid local emulator port.');
   const project = encodeURIComponent(projectId);
   const [auth, database] = await Promise.all([
-    request(`http://127.0.0.1:9297/emulator/v1/projects/${project}/config`, { signal: AbortSignal.timeout(10_000) }),
+    request(`http://127.0.0.1:${ports.auth}/emulator/v1/projects/${project}/config`, { signal: AbortSignal.timeout(10_000) }),
     // A denial proves this project's database and authenticated-get rules can
     // answer, rather than merely that the emulator TCP port is listening.
-    request(`http://127.0.0.1:8197/v1/projects/${project}/databases/(default)/documents/invites/_connection`, { signal: AbortSignal.timeout(10_000) })
+    request(`http://127.0.0.1:${ports.firestore}/v1/projects/${project}/databases/(default)/documents/invites/_connection`, { signal: AbortSignal.timeout(10_000) })
   ]);
   if (auth.status !== 200) throw new Error(`Auth emulator is not ready (${auth.status}).`);
   await auth.json();

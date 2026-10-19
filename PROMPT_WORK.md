@@ -80,3 +80,5 @@ Prompt 45 | 461674d93d44dc844e4c89097965c6c6e013a608431158db8e0e26ee102cb1c8 | E
 Prompt 45 | 461674d93d44dc844e4c89097965c6c6e013a608431158db8e0e26ee102cb1c8 | Carry gallery and compatible rules into PR4; pass24 backend tests and16 exact journeys while preserving accepted remote-room functions.
 
 Prompt 45 | 461674d93d44dc844e4c89097965c6c6e013a608431158db8e0e26ee102cb1c8 | Align PR4 with the published PR3 dependency hygiene fix, retaining canonical append-only review history and unchanged tested application bytes.
+
+Prompt 45 | 461674d93d44dc844e4c89097965c6c6e013a608431158db8e0e26ee102cb1c8 | Accept300 visually inspected pinned Linux references; preserve reviewer games with isolated emulator ports and fix CI client reuse and multi-commit log validation.

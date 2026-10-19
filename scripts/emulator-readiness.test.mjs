@@ -19,3 +19,9 @@ test('startup fails closed for unavailable services, permissive rules or unexpec
     await assert.rejects(requireEmulatorReadiness('demo-beyond', async url => url.includes(':9297') ? response(authStatus,{}) : response(status,body)), /not ready/);
   }
 });
+
+test('isolated browser services use configured loopback ports without changing project or guard semantics', async()=>{
+ const urls=[];await requireEmulatorReadiness('demo-beyond',async url=>{urls.push(url);return url.includes(':9397')?response(200,{}):response(403,{error:{status:'PERMISSION_DENIED'}});},{auth:9397,firestore:8297});
+ assert.deepEqual(urls,['http://127.0.0.1:9397/emulator/v1/projects/demo-beyond/config','http://127.0.0.1:8297/v1/projects/demo-beyond/databases/(default)/documents/invites/_connection']);
+ for(const port of [0,1023,65536,NaN])await assert.rejects(requireEmulatorReadiness('demo-beyond',()=>{throw new Error('must not request');},{auth:port,firestore:8297}),/Invalid local emulator port/);
+});
