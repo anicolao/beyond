@@ -41,7 +41,16 @@ try {
   await page.getByRole('heading', { name: 'Preview Ada', exact: true }).waitFor();
   await page.getByRole('heading', { name: 'Preview Bora', exact: true }).waitFor();
   const tabletopId = new URL(page.url()).searchParams.get('table');
-  await page.getByRole('button', { name: 'Back to observatory', exact: true }).click();
+  for (const [name, faction] of [['Preview Ada','Nishida-Østergaard Corporation'],['Preview Bora','United Nations of Sol']]) {
+    await page.getByRole('button', { name: `Choose faction for ${name}`, exact: true }).click();
+    await page.getByRole('button', { name: `Select ${faction}`, exact: true }).click();
+    await expect(page.getByRole('dialog', { name: `Basic faction for ${name}`, exact: true })).not.toBeVisible();
+  }
+  await page.getByRole('button', { name: 'Begin', exact: true }).click();
+  await page.getByRole('region', { name: 'Basic game starting position', exact: true }).waitFor();
+  await page.reload();
+  await page.getByRole('button', { name: 'Inspect Preview Ada faction mat', exact: true }).waitFor();
+  await page.getByRole('button', { name: 'Observatory', exact: true }).click();
   await page.getByRole('button', { name: 'Play', exact: true }).click();
   await page.getByRole('link', { name: 'Create a remote room', exact: true }).click();
   await page.getByRole('textbox', { name: 'Your name', exact: true }).fill('Preview Host');
@@ -57,6 +66,12 @@ try {
   await guest.getByRole('textbox', { name: 'Your name', exact: true }).fill('Preview Guest');
   await guest.getByRole('button', { name: 'Join room', exact: true }).click();
   await page.getByRole('heading', { name: 'Preview Guest', exact: true }).waitFor();
+  for (const [actor, name, faction] of [[page,'Preview Host','Nishida-Østergaard Corporation'],[guest,'Preview Guest','United Nations of Sol']]) {
+    await actor.getByRole('button', { name: `Choose faction for ${name}`, exact: true }).click();
+    await actor.getByRole('button', { name: `Select ${faction}`, exact: true }).click();
+    await expect(actor.getByRole('dialog', { name: `Basic faction for ${name}`, exact: true })).not.toBeVisible();
+  }
+  await expect(page.locator('.seat-faction').filter({ hasText:'United Nations' })).toBeVisible();
   await guest.getByRole('button', { name: 'Ready', exact: true }).click();
   await expect(page.getByRole('status')).toHaveText('1 of 2 players ready');
   await page.getByRole('button', { name: 'Ready', exact: true }).click();
@@ -67,6 +82,17 @@ try {
   await guest.reload();
   await guest.getByRole('heading', { name: 'Preview Guest', exact: true }).waitFor();
   await expect(guest.locator('.room-setup dd').last()).toHaveText('Randomized');
-  writeFileSync('preview-smoke.json', JSON.stringify({ url, revision: revision.revision, table: tabletopId, remote: new URL(page.url()).searchParams.get('room'), gallery: 'Family filtering, original card inspection, keyboard return and colony fixture passed', result: 'Hosted anonymous Auth and production Firestore: physical seating/reload and separate-identity remote code/claim/readiness/reset/restoration passed' }, null, 2));
+  await page.keyboard.press('Escape');
+  await guest.getByRole('button', { name: 'Ready', exact: true }).click();
+  await expect(page.getByRole('status')).toHaveText('1 of 2 players ready');
+  await page.getByRole('button', { name: 'Ready', exact: true }).click();
+  await expect(page.getByRole('status')).toHaveText('Everyone is ready');
+  await page.getByRole('button', { name: 'Begin', exact: true }).click();
+  await page.getByRole('region', { name: 'Basic game starting position', exact: true }).waitFor();
+  await guest.getByRole('region', { name: 'Basic game starting position', exact: true }).waitFor();
+  await guest.reload();
+  await guest.getByRole('region', { name: 'Basic game starting position', exact: true }).waitFor();
+  await expect(guest.getByRole('button', { name: 'Full faction mat', exact: true })).toBeEnabled();
+  writeFileSync('preview-smoke.json', JSON.stringify({ url, revision: revision.revision, table: tabletopId, remote: new URL(page.url()).searchParams.get('room'), gallery: 'Family filtering, original card inspection, keyboard return and colony fixture passed', result: 'Hosted anonymous Auth and production Firestore: physical seating/factions/Begin/reload and separate-identity remote code/claim/factions/readiness/reset/Begin/restoration passed' }, null, 2));
   console.log('Hosted preview tabletop and separate-identity remote flows passed against production Firestore.');
 } finally { await browser.close(); }

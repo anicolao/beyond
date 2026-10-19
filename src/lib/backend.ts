@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { connectAuthEmulator, getAuth, signInAnonymously } from 'firebase/auth';
-import { connectFirestoreEmulator, collection, doc, getDocsFromServer, getFirestore, orderBy, query, runTransaction } from 'firebase/firestore';
+import { connectFirestoreEmulator, collection, doc, getDocFromServer, getDocsFromServer, getFirestore, orderBy, query, runTransaction } from 'firebase/firestore';
 import { env } from '$env/dynamic/public';
 import { apply, projectTable, type Command, type Table, type TableEvent } from './table';
 let session: ReturnType<typeof connect> | undefined;
@@ -8,7 +8,14 @@ function connect() {
   const app = initializeApp({ apiKey: env.PUBLIC_FIREBASE_API_KEY || 'demo-key', authDomain: env.PUBLIC_FIREBASE_AUTH_DOMAIN || 'demo-beyond.firebaseapp.com', projectId: env.PUBLIC_FIREBASE_PROJECT_ID || 'demo-beyond', appId: env.PUBLIC_FIREBASE_APP_ID || 'demo-beyond' });
   const auth = getAuth(app), db = getFirestore(app);
   if (env.PUBLIC_FIREBASE_EMULATORS === 'true') { connectAuthEmulator(auth, `http://127.0.0.1:${Number(env.PUBLIC_AUTH_EMULATOR_PORT || 9297)}`, { disableWarnings: true }); connectFirestoreEmulator(db, '127.0.0.1', Number(env.PUBLIC_FIRESTORE_EMULATOR_PORT || 8197)); }
-  const ready = auth.authStateReady().then(async () => auth.currentUser ?? (await signInAnonymously(auth)).user);
+  const ready = auth.authStateReady().then(async () => {
+    const user=auth.currentUser ?? (await signInAnonymously(auth)).user;
+    // Establish the real server connection before reporting Connected. This
+    // reserved id cannot be an invitation (writes require five A–Z letters).
+    // Reading it creates no game, invitation, seat or other persistent data.
+    await getDocFromServer(doc(db,'invites','_connection'));
+    return user;
+  });
   return { auth, db, ready };
 }
 export function backend() { return session ??= connect(); }
@@ -20,7 +27,7 @@ export async function commitTable(id: string, command: Command, expectedRevision
     const [existing, duplicate] = await Promise.all([transaction.get(root), transaction.get(eventRef)]);
     if (duplicate.exists()) {
       const previous = duplicate.data() as TableEvent;
-      if (previous.type !== command.type || previous.position !== command.position || previous.name !== command.name) throw new Error('Command identity was already used.');
+      if (previous.type !== command.type || previous.position !== command.position || previous.name !== command.name || JSON.stringify(previous.settings) !== JSON.stringify(command.settings) || previous.faction !== command.faction || JSON.stringify(previous.start) !== JSON.stringify(command.start)) throw new Error('Command identity was already used.');
       return existing.data() as Table;
     }
     const before = existing.exists() ? existing.data() as Table : undefined;

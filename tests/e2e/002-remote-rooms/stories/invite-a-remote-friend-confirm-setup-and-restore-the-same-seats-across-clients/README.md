@@ -340,429 +340,481 @@ Viewpoint: **Cleo · unseated visitor**.
 - [x] A full room keeps occupied seats intact and explains the result
 - [x] The remote shell fits the viewport without page overflow.
 
-## 27. Bora receives an acknowledged readiness state
+## 27. Ada reviews the Basic faction setup before confirming readiness
+
+Viewpoint: **Ada · host**.
+
+| phone · 393 × 852 | desktop · 1440 × 1000 |
+| --- | --- |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/026-host-faction-open-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/026-host-faction-open-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/026-host-faction-open-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/026-host-faction-open-desktop-darwin.png) |
+
+
+
+- [x] Ada reviews the Basic faction setup before confirming readiness
+- [x] The remote shell fits the viewport without page overflow.
+
+## 28. Ada confirms Nishida-Østergaard as her faction
+
+Viewpoint: **Ada · host**.
+
+| phone · 393 × 852 | desktop · 1440 × 1000 |
+| --- | --- |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/027-host-faction-chosen-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/027-host-faction-chosen-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/027-host-faction-chosen-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/027-host-faction-chosen-desktop-darwin.png) |
+
+
+
+- [x] Ada confirms Nishida-Østergaard as her faction
+- [x] The remote shell fits the viewport without page overflow.
+
+## 29. Bora sees the host’s faction unavailable to another identity
 
 Viewpoint: **Bora · separate identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/026-guest-ready-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/026-guest-ready-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/026-guest-ready-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/026-guest-ready-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/028-guest-faction-open-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/028-guest-faction-open-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/028-guest-faction-open-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/028-guest-faction-open-desktop-darwin.png) |
+
+
+
+- [x] Bora sees the host’s faction unavailable to another identity
+- [x] The remote shell fits the viewport without page overflow.
+
+## 30. Bora chooses her own different Basic faction
+
+Viewpoint: **Bora · separate identity**.
+
+| phone · 1440 × 1000 | desktop · 393 × 852 |
+| --- | --- |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/029-guest-faction-chosen-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/029-guest-faction-chosen-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/029-guest-faction-chosen-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/029-guest-faction-chosen-desktop-darwin.png) |
+
+
+
+- [x] Bora chooses her own different Basic faction
+- [x] The remote shell fits the viewport without page overflow.
+
+## 31. Bora receives an acknowledged readiness state
+
+Viewpoint: **Bora · separate identity**.
+
+| phone · 1440 × 1000 | desktop · 393 × 852 |
+| --- | --- |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/030-guest-ready-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/030-guest-ready-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/030-guest-ready-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/030-guest-ready-desktop-darwin.png) |
 
 
 
 - [x] Bora receives an acknowledged readiness state
 - [x] The remote shell fits the viewport without page overflow.
 
-## 28. Ada sees Bora’s readiness
+## 32. Ada sees Bora’s readiness
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/027-host-observes-ready-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/027-host-observes-ready-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/027-host-observes-ready-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/027-host-observes-ready-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/031-host-observes-ready-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/031-host-observes-ready-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/031-host-observes-ready-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/031-host-observes-ready-desktop-darwin.png) |
 
 
 
 - [x] Ada sees Bora’s readiness
 - [x] The remote shell fits the viewport without page overflow.
 
-## 29. Both configured players have confirmed this setup
+## 33. Both configured players have confirmed this setup
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/028-everyone-ready-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/028-everyone-ready-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/028-everyone-ready-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/028-everyone-ready-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/032-everyone-ready-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/032-everyone-ready-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/032-everyone-ready-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/032-everyone-ready-desktop-darwin.png) |
 
 
 
 - [x] Both configured players have confirmed this setup
 - [x] The remote shell fits the viewport without page overflow.
 
-## 30. Bora’s identity, seat and readiness survive reload
+## 34. Bora’s identity, seat and readiness survive reload
 
 Viewpoint: **Bora · separate identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/029-ready-reload-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/029-ready-reload-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/029-ready-reload-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/029-ready-reload-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/033-ready-reload-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/033-ready-reload-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/033-ready-reload-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/033-ready-reload-desktop-darwin.png) |
 
 
 
 - [x] Bora’s identity, seat and readiness survive reload
 - [x] The remote shell fits the viewport without page overflow.
 
-## 31. Only the host opens the shared setup editor
+## 35. Only the host opens the shared setup editor
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/030-setup-dialog-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/030-setup-dialog-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/030-setup-dialog-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/030-setup-dialog-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/034-setup-dialog-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/034-setup-dialog-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/034-setup-dialog-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/034-setup-dialog-desktop-darwin.png) |
 
 
 
 - [x] Only the host opens the shared setup editor
 - [x] The remote shell fits the viewport without page overflow.
 
-## 32. Reverse keyboard navigation wraps to the final setup control
+## 36. Reverse keyboard navigation wraps to the final setup control
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/031-setup-keyboard-back-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/031-setup-keyboard-back-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/031-setup-keyboard-back-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/031-setup-keyboard-back-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/035-setup-keyboard-back-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/035-setup-keyboard-back-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/035-setup-keyboard-back-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/035-setup-keyboard-back-desktop-darwin.png) |
 
 
 
 - [x] Reverse keyboard navigation wraps to the final setup control
 - [x] The remote shell fits the viewport without page overflow.
 
-## 33. Forward keyboard navigation wraps to Close setup
+## 37. Forward keyboard navigation wraps to Close setup
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/032-setup-keyboard-forward-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/032-setup-keyboard-forward-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/032-setup-keyboard-forward-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/032-setup-keyboard-forward-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/036-setup-keyboard-forward-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/036-setup-keyboard-forward-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/036-setup-keyboard-forward-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/036-setup-keyboard-forward-desktop-darwin.png) |
 
 
 
 - [x] Forward keyboard navigation wraps to Close setup
 - [x] The remote shell fits the viewport without page overflow.
 
-## 34. A committed achievement configuration invalidates previous confirmations
+## 38. A committed achievement configuration invalidates previous confirmations
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/033-changed-setup-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/033-changed-setup-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/033-changed-setup-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/033-changed-setup-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/037-changed-setup-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/037-changed-setup-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/037-changed-setup-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/037-changed-setup-desktop-darwin.png) |
 
 
 
 - [x] A committed achievement configuration invalidates previous confirmations
 - [x] The remote shell fits the viewport without page overflow.
 
-## 35. Bora sees the new setup and must confirm again
+## 39. Bora sees the new setup and must confirm again
 
 Viewpoint: **Bora · separate identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/034-guest-observes-change-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/034-guest-observes-change-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/034-guest-observes-change-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/034-guest-observes-change-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/038-guest-observes-change-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/038-guest-observes-change-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/038-guest-observes-change-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/038-guest-observes-change-desktop-darwin.png) |
 
 
 
 - [x] Bora sees the new setup and must confirm again
 - [x] The remote shell fits the viewport without page overflow.
 
-## 36. Escape restores focus to Edit setup
+## 40. Escape restores focus to Edit setup
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/035-setup-closed-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/035-setup-closed-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/035-setup-closed-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/035-setup-closed-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/039-setup-closed-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/039-setup-closed-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/039-setup-closed-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/039-setup-closed-desktop-darwin.png) |
 
 
 
 - [x] Escape restores focus to Edit setup
 - [x] The remote shell fits the viewport without page overflow.
 
-## 37. The guest’s Continue action retains her remote room
+## 41. The guest’s Continue action retains her remote room
 
 Viewpoint: **Bora · separate identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/036-retained-arrival-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/036-retained-arrival-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/036-retained-arrival-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/036-retained-arrival-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/040-retained-arrival-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/040-retained-arrival-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/040-retained-arrival-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/040-retained-arrival-desktop-darwin.png) |
 
 
 
 - [x] The guest’s Continue action retains her remote room
 - [x] The remote shell fits the viewport without page overflow.
 
-## 38. Continue restores Bora’s own seat and current configuration
+## 42. Continue restores Bora’s own seat and current configuration
 
 Viewpoint: **Bora · separate identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/037-retained-seat-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/037-retained-seat-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/037-retained-seat-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/037-retained-seat-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/041-retained-seat-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/041-retained-seat-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/041-retained-seat-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/041-retained-seat-desktop-darwin.png) |
 
 
 
 - [x] Continue restores Bora’s own seat and current configuration
 - [x] The remote shell fits the viewport without page overflow.
 
-## 39. Recovery switches client URLs while keeping the same room
+## 43. Recovery switches client URLs while keeping the same room
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/038-recovery-options-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/038-recovery-options-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/038-recovery-options-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/038-recovery-options-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/042-recovery-options-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/042-recovery-options-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/042-recovery-options-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/042-recovery-options-desktop-darwin.png) |
 
 
 
 - [x] Recovery switches client URLs while keeping the same room
 - [x] The remote shell fits the viewport without page overflow.
 
-## 40. Reverse navigation reaches the PR field inside recovery
+## 44. Reverse navigation reaches the PR field inside recovery
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/039-recovery-keyboard-back-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/039-recovery-keyboard-back-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/039-recovery-keyboard-back-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/039-recovery-keyboard-back-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/043-recovery-keyboard-back-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/043-recovery-keyboard-back-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/043-recovery-keyboard-back-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/043-recovery-keyboard-back-desktop-darwin.png) |
 
 
 
 - [x] Reverse navigation reaches the PR field inside recovery
 - [x] The remote shell fits the viewport without page overflow.
 
-## 41. Forward navigation wraps to Close recovery
+## 45. Forward navigation wraps to Close recovery
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/040-recovery-keyboard-forward-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/040-recovery-keyboard-forward-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/040-recovery-keyboard-forward-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/040-recovery-keyboard-forward-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/044-recovery-keyboard-forward-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/044-recovery-keyboard-forward-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/044-recovery-keyboard-forward-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/044-recovery-keyboard-forward-desktop-darwin.png) |
 
 
 
 - [x] Forward navigation wraps to Close recovery
 - [x] The remote shell fits the viewport without page overflow.
 
-## 42. Escape returns to Recovery options without changing the room
+## 46. Escape returns to Recovery options without changing the room
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/041-recovery-closed-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/041-recovery-closed-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/041-recovery-closed-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/041-recovery-closed-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/045-recovery-closed-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/045-recovery-closed-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/045-recovery-closed-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/045-recovery-closed-desktop-darwin.png) |
 
 
 
 - [x] Escape returns to Recovery options without changing the room
 - [x] The remote shell fits the viewport without page overflow.
 
-## 43. Reopen the bounded recovery instrument before switching clients
+## 47. Reopen the bounded recovery instrument before switching clients
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/042-recovery-reopened-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/042-recovery-reopened-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/042-recovery-reopened-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/042-recovery-reopened-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/046-recovery-reopened-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/046-recovery-reopened-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/046-recovery-reopened-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/046-recovery-reopened-desktop-darwin.png) |
 
 
 
 - [x] Reopen the bounded recovery instrument before switching clients
 - [x] The remote shell fits the viewport without page overflow.
 
-## 44. The real production build restores the same owner and guest
+## 48. The real production build restores the same owner and guest
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/043-production-room-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/043-production-room-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/043-production-room-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/043-production-room-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/047-production-room-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/047-production-room-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/047-production-room-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/047-production-room-desktop-darwin.png) |
 
 
 
 - [x] The real production build restores the same owner and guest
 - [x] The remote shell fits the viewport without page overflow.
 
-## 45. The production client writes to the existing canonical room
+## 49. The production client writes to the existing canonical room
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/044-production-ready-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/044-production-ready-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/044-production-ready-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/044-production-ready-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/048-production-ready-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/048-production-ready-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/048-production-ready-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/048-production-ready-desktop-darwin.png) |
 
 
 
 - [x] The production client writes to the existing canonical room
 - [x] The remote shell fits the viewport without page overflow.
 
-## 46. The preview guest observes the production client’s command live
+## 50. The preview guest observes the production client’s command live
 
 Viewpoint: **Bora · separate identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/045-preview-observes-production-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/045-preview-observes-production-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/045-preview-observes-production-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/045-preview-observes-production-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/049-preview-observes-production-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/049-preview-observes-production-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/049-preview-observes-production-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/049-preview-observes-production-desktop-darwin.png) |
 
 
 
 - [x] The preview guest observes the production client’s command live
 - [x] The remote shell fits the viewport without page overflow.
 
-## 47. Production exposes the PR recovery selector
+## 51. Production exposes the PR recovery selector
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/046-production-recovery-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/046-production-recovery-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/046-production-recovery-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/046-production-recovery-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/050-production-recovery-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/050-production-recovery-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/050-production-recovery-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/050-production-recovery-desktop-darwin.png) |
 
 
 
 - [x] Production exposes the PR recovery selector
 - [x] The remote shell fits the viewport without page overflow.
 
-## 48. Choose the separately built preview client
+## 52. Choose the separately built preview client
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/047-choose-preview-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/047-choose-preview-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/047-choose-preview-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/047-choose-preview-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/051-choose-preview-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/051-choose-preview-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/051-choose-preview-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/051-choose-preview-desktop-darwin.png) |
 
 
 
 - [x] Choose the separately built preview client
 - [x] The remote shell fits the viewport without page overflow.
 
-## 49. Preview restores the same room, readiness and identity
+## 53. Preview restores the same room, readiness and identity
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/048-preview-restored-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/048-preview-restored-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/048-preview-restored-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/048-preview-restored-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/052-preview-restored-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/052-preview-restored-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/052-preview-restored-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/052-preview-restored-desktop-darwin.png) |
 
 
 
 - [x] Preview restores the same room, readiness and identity
 - [x] The remote shell fits the viewport without page overflow.
 
-## 50. A guest can release only her own seat
+## 54. A guest can release only her own seat
 
 Viewpoint: **Bora · separate identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/049-guest-left-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/049-guest-left-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/049-guest-left-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/049-guest-left-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/053-guest-left-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/053-guest-left-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/053-guest-left-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/053-guest-left-desktop-darwin.png) |
 
 
 
 - [x] A guest can release only her own seat
 - [x] The remote shell fits the viewport without page overflow.
 
-## 51. Seat release clears the host’s previous confirmation
+## 55. Seat release clears the host’s previous confirmation
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/050-host-observes-leave-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/050-host-observes-leave-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/050-host-observes-leave-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/050-host-observes-leave-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/054-host-observes-leave-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/054-host-observes-leave-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/054-host-observes-leave-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/054-host-observes-leave-desktop-darwin.png) |
 
 
 
 - [x] Seat release clears the host’s previous confirmation
 - [x] The remote shell fits the viewport without page overflow.
 
-## 52. The host lifts the bounded ivory name plaque
+## 56. The host lifts the bounded ivory name plaque
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/051-name-editor-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/051-name-editor-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/051-name-editor-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/051-name-editor-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/055-name-editor-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/055-name-editor-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/055-name-editor-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/055-name-editor-desktop-darwin.png) |
 
 
 
 - [x] The host lifts the bounded ivory name plaque
 - [x] The remote shell fits the viewport without page overflow.
 
-## 53. Reverse keyboard navigation reaches Cancel name edit
+## 57. Reverse keyboard navigation reaches Cancel name edit
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/052-name-keyboard-back-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/052-name-keyboard-back-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/052-name-keyboard-back-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/052-name-keyboard-back-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/056-name-keyboard-back-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/056-name-keyboard-back-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/056-name-keyboard-back-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/056-name-keyboard-back-desktop-darwin.png) |
 
 
 
 - [x] Reverse keyboard navigation reaches Cancel name edit
 - [x] The remote shell fits the viewport without page overflow.
 
-## 54. Forward keyboard navigation stays in the name plaque
+## 58. Forward keyboard navigation stays in the name plaque
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/053-name-keyboard-forward-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/053-name-keyboard-forward-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/053-name-keyboard-forward-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/053-name-keyboard-forward-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/057-name-keyboard-forward-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/057-name-keyboard-forward-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/057-name-keyboard-forward-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/057-name-keyboard-forward-desktop-darwin.png) |
 
 
 
 - [x] Forward keyboard navigation stays in the name plaque
 - [x] The remote shell fits the viewport without page overflow.
 
-## 55. A long name remains readable in its focused name plaque
+## 59. A long name remains readable in its focused name plaque
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/054-long-name-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/054-long-name-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/054-long-name-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/054-long-name-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/058-long-name-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/058-long-name-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/058-long-name-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/058-long-name-desktop-darwin.png) |
 
 
 
 - [x] A long name remains readable in its focused name plaque
 - [x] The remote shell fits the viewport without page overflow.
 
-## 56. Escape leaves the saved name unchanged and restores the seat control
+## 60. Escape leaves the saved name unchanged and restores the seat control
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/055-name-edit-cancel-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/055-name-edit-cancel-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/055-name-edit-cancel-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/055-name-edit-cancel-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/059-name-edit-cancel-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/059-name-edit-cancel-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/059-name-edit-cancel-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/059-name-edit-cancel-desktop-darwin.png) |
 
 
 
 - [x] Escape leaves the saved name unchanged and restores the seat control
 - [x] The remote shell fits the viewport without page overflow.
 
-## 57. Reopen name editing from the same seat object
+## 61. Reopen name editing from the same seat object
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/056-name-edit-reopen-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/056-name-edit-reopen-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/056-name-edit-reopen-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/056-name-edit-reopen-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/060-name-edit-reopen-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/060-name-edit-reopen-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/060-name-edit-reopen-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/060-name-edit-reopen-desktop-darwin.png) |
 
 
 
 - [x] Reopen name editing from the same seat object
 - [x] The remote shell fits the viewport without page overflow.
 
-## 58. Enter the intended public long name after cancelling the first draft
+## 62. Enter the intended public long name after cancelling the first draft
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/057-name-edit-reenter-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/057-name-edit-reenter-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/057-name-edit-reenter-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/057-name-edit-reenter-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/061-name-edit-reenter-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/061-name-edit-reenter-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/061-name-edit-reenter-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/061-name-edit-reenter-desktop-darwin.png) |
 
 
 
 - [x] Enter the intended public long name after cancelling the first draft
 - [x] The remote shell fits the viewport without page overflow.
 
-## 59. The committed long name returns to the player’s seat object
+## 63. The committed long name returns to the player’s seat object
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/058-renamed-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/058-renamed-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/058-renamed-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/058-renamed-desktop-darwin.png) |
+| [![phone](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/062-renamed-phone-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/062-renamed-phone-darwin.png) | [![desktop](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/062-renamed-desktop-darwin.png)](../../screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/062-renamed-desktop-darwin.png) |
 
 
 

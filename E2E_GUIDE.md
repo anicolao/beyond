@@ -18,12 +18,12 @@ Fix seed, visible code, player names, initial clock where needed, and an explici
 
 Adopt Pantheon's strict visual contract:
 
-- `maxDiffPixels: 0`, `threshold: 0`, test retries `0`.
+- `maxDiffPixels: 0`, `threshold: 0`, test retries `0`. The exact comparator fully decodes/validates the reference. A byte-identical PNG encoding is then necessarily the same valid pixel image; different encodings still decode and compare every RGBA byte, dimension and channel. Malformed identical inputs must fail validation.
 - Lossless PNGs, DPR 1, pinned Chromium/software rendering, bundled fonts, locale `en-CA`, timezone `America/Toronto`, and a fixed test origin.
 - One browser worker for capture workloads. Additional player contexts remain bounded by the story's declared participants.
 - A 2,000 ms deadline per interaction, navigation, or assertion. Readiness, font/art decoding, finite animation completion, clipping audit, screenshot capture, and comparison share one 2,000 ms capture deadline.
 - No arbitrary sleeps, `waitForTimeout`, `networkidle`, retries, pixel masks, screenshot normalization, or relaxed comparison to hide nondeterminism.
-- Story and infrastructure startup budgets are separate from individual operation deadlines. Longer complete games may need longer whole-story budgets; no operation inherits that allowance.
+- Story and infrastructure startup budgets are separate from individual operation deadlines. Longer complete games may need longer whole-story budgets; no operation inherits that allowance. Before opening the static test server, read-only emulator probes require an Auth configuration response and a Firestore permission denial for the unsigned reserved connection-document read. This verifies actual service/database/rules readiness rather than an open TCP port; it creates no users, games or fixtures. A missing service or unexpectedly permissive rule fails startup. Browser assertions and captures retain their own 2,000 ms limits.
 
 Pin the actual browser image and architecture when the scaffold is built; do not copy a stale sibling version into a new lockfile. Keep reviewed macOS and Linux baselines separately. Linux CI and Linux baseline generation use the same immutable image and architecture. A runtime/image update needs reviewed fresh baselines and a complete comparison run.
 
@@ -237,6 +237,8 @@ A change is ready for review when its legal player journey passes, every meaning
 Every illustrated step must demonstrate the intended production flow. Do not build temporary setup/save/result pages merely to obtain an end-to-end pass. A logical commit delivers one coherent user goal through as many stories as needed for desktop web PvP, phone web PvP, and tabletop. Tabletop joining occurs at physical positions on the actual table surface, in one controller context.
 
 PR and production clients share canonical `games/<id>` data and deployment-independent identity/retention. Recovery E2E builds both clients and uses actual UI navigation between their paths on one origin against the same emulator store. Change a seat through one client and verify the other replays it. No game injection, database copying, or test-only switch is allowed. Hosted preview publication deploys this revision's compatible rules and posts its live URL to the PR without waiting for E2E.
+
+Compact shared-display regression stories supplement the complete desktop/4K setup stories at their actual supported viewport (for example 1280 × 720). They configure the same real table through ordinary controls and illustrate overview/focus, branch navigation, full-card inspection and keyboard return. Declare their viewport explicitly; these supplementary captures do not replace the required full 4K shared-table journeys or introduce another controller.
 
 A responsive-entry review may resize the same browser after real UI setup, with a separate illustrated step before and after each resize. Label every image with its actual pixel dimensions, preserve the same controller/game, and return to the original shared-display viewport before table interaction. This demonstrates responsive entry controls; it does not demonstrate phone PvP or add a companion device to tabletop play.
 

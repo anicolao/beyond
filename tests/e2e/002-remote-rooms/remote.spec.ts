@@ -81,6 +81,14 @@ test('Invite a remote friend, confirm setup and restore the same seats across cl
     await photo('full-code','Cleo enters the now full room’s invitation',visitor,'Cleo · unseated visitor',async()=>expect(visitor.getByRole('textbox',{name:'Invitation code',exact:true})).toHaveValue(code));
     await visitor.getByRole('button',{name:'Find room',exact:true}).click();
     await photo('full-room','A full room keeps occupied seats intact and explains the result',visitor,'Cleo · unseated visitor',async()=>{ await expect(visitor.getByText('This room is full. Ask your host for another invitation.',{exact:true})).toBeVisible(); await expect(visitor.getByRole('button',{name:/Take seat/})).toHaveCount(0); });
+    await page.getByRole('button',{name:'Choose faction for Ada',exact:true}).click();
+    await hostView('host-faction-open','Ada reviews the Basic faction setup before confirming readiness',async()=>expect(page.getByRole('dialog',{name:'Basic faction for Ada',exact:true})).toBeVisible());
+    await page.getByRole('button',{name:'Select Nishida-Østergaard Corporation',exact:true}).click();
+    await hostView('host-faction-chosen','Ada confirms Nishida-Østergaard as her faction',async()=>expect(page.getByRole('button',{name:'Choose faction for Ada',exact:true})).toContainText('Nishida-Østergaard'));
+    await guest.getByRole('button',{name:'Choose faction for Bora',exact:true}).click();
+    await guestView('guest-faction-open','Bora sees the host’s faction unavailable to another identity',async()=>expect(guest.getByRole('button',{name:'Select Nishida-Østergaard Corporation',exact:true})).toBeDisabled());
+    await guest.getByRole('button',{name:'Select United Nations of Sol',exact:true}).click();
+    await guestView('guest-faction-chosen','Bora chooses her own different Basic faction',async()=>expect(guest.getByRole('button',{name:'Choose faction for Bora',exact:true})).toContainText('United Nations'));
     await guest.getByRole('button',{name:'Ready',exact:true}).click();
     await guestView('guest-ready','Bora receives an acknowledged readiness state',async()=>expect(guest.getByRole('button',{name:'Not ready',exact:true})).toBeEnabled());
     await hostView('host-observes-ready','Ada sees Bora’s readiness',async()=>expect(page.getByRole('status')).toHaveText('1 of 2 players ready'));

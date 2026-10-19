@@ -1,9 +1,11 @@
+import { legalFaction, setupVersion, type FactionId } from '../game/manifest';
+import { validSeed, validatePlayers, type BasicStart } from '../game/setup';
 export const remotePositions = ['p1', 'p2', 'p3', 'p4'] as const;
 export type RemotePosition = typeof remotePositions[number];
 export type RemoteSettings = { capacity: 2 | 3 | 4; factions: 'basic' | 'advanced'; achievements: 'introductory' | 'randomized' };
 export type RemoteSeat = { uid: string; name: string; ready: boolean };
-export type RemoteRoom = { schema: 1; mode: 'remote'; phase: 'gathering'; ownerUid: string; code: string; settings: RemoteSettings; seats: Partial<Record<RemotePosition, RemoteSeat>>; members: Record<string, RemotePosition>; configVersion: number; revision: number; lastCommand: string };
-export type RemoteCommand = { type: 'remote-created' | 'remote-seat-claimed' | 'remote-seat-renamed' | 'remote-seat-left' | 'remote-ready-changed' | 'remote-settings-changed'; position: RemotePosition | ''; name: string; ready: boolean; configVersion: number; settings: RemoteSettings; code: string };
+export type RemoteRoom = { schema: 1; mode: 'remote'; phase: 'gathering' | 'started'; factions?: Partial<Record<RemotePosition,FactionId>>; start?: BasicStart; ownerUid: string; code: string; settings: RemoteSettings; seats: Partial<Record<RemotePosition, RemoteSeat>>; members: Record<string, RemotePosition>; configVersion: number; revision: number; lastCommand: string };
+export type RemoteCommand = { type: 'remote-created' | 'remote-seat-claimed' | 'remote-seat-renamed' | 'remote-seat-left' | 'remote-ready-changed' | 'remote-settings-changed' | 'remote-faction-selected' | 'remote-begun'; faction?: FactionId; start?: BasicStart; position: RemotePosition | ''; name: string; ready: boolean; configVersion: number; settings: RemoteSettings; code: string };
 export type RemoteEvent = RemoteCommand & { schema: 1; actorUid: string; revision: number; commandId: string };
 export const defaultSettings: RemoteSettings = { capacity: 2, factions: 'basic', achievements: 'introductory' };
 export function sameSettings(a: RemoteSettings, b: RemoteSettings) { return a.capacity === b.capacity && a.factions === b.factions && a.achievements === b.achievements; }
@@ -18,11 +20,21 @@ export function applyRemote(before: RemoteRoom | undefined, e: RemoteEvent): Rem
     return { schema: 1, mode: 'remote', phase: 'gathering', ownerUid: e.actorUid, code: e.code, settings: e.settings, seats: { p1: { uid: e.actorUid, name: e.name, ready: false } }, members: { [e.actorUid]: 'p1' }, configVersion: 0, revision: 0, lastCommand: e.commandId };
   }
   if (before.mode !== 'remote' || before.phase !== 'gathering' || e.code !== before.code) throw new Error('This room has already started or needs a newer client.');
+  if (e.type === 'remote-begun') {
+    if (e.actorUid !== before.ownerUid || e.position || e.name || e.ready || e.faction || !sameSettings(e.settings,before.settings) || e.configVersion !== before.configVersion || !e.start || e.start.version !== setupVersion || !validSeed(e.start.seed) || Object.keys(before.seats).length !== before.settings.capacity || Object.values(before.seats).some(seat=>!seat?.ready)) throw new Error('Everyone must confirm the complete Basic setup before the host begins.');
+    validatePlayers(remotePositions.filter(p=>before.seats[p]).map(p=>({position:p,name:before.seats[p]!.name,faction:before.factions?.[p]!})),before.settings);
+    return {...before,phase:'started',start:{...e.start},revision:e.revision,lastCommand:e.commandId};
+  }
+  if (e.start || (e.faction && e.type !== 'remote-faction-selected')) throw new Error('Unsupported setup payload.');
   const seats = structuredClone(before.seats), members = { ...before.members };
+  const choices = {...before.factions};
   const owned = before.members[e.actorUid];
   const unchangedSettings = sameSettings(e.settings, before.settings);
   let changedConfiguration = false;
-  if (e.type === 'remote-seat-claimed') {
+  if (e.type === 'remote-faction-selected') {
+    if (!owned || owned !== e.position || e.name || e.ready || !unchangedSettings || before.settings.factions !== 'basic' || !e.faction || !legalFaction(e.faction,before.settings.capacity) || choices[owned] === e.faction || Object.entries(choices).some(([p,f])=>p!==owned && f===e.faction)) throw new Error('Choose an available legal Basic faction for your seat.');
+    choices[owned]=e.faction; changedConfiguration=true;
+  } else if (e.type === 'remote-seat-claimed') {
     const index = remotePositions.indexOf(e.position as RemotePosition);
     if (owned || index < 0 || index >= before.settings.capacity || seats[e.position as RemotePosition] || !validName || !unchangedSettings || e.ready) throw new Error('This seat is unavailable. Choose another open seat.');
     seats[e.position as RemotePosition] = { uid: e.actorUid, name: e.name, ready: false };
@@ -33,9 +45,10 @@ export function applyRemote(before: RemoteRoom | undefined, e: RemoteEvent): Rem
     seats[owned]!.name = e.name; changedConfiguration = true;
   } else if (e.type === 'remote-seat-left') {
     if (!owned || owned !== e.position || e.actorUid === before.ownerUid || e.name || e.ready || !unchangedSettings) throw new Error('Only a guest can release their own seat.');
-    delete seats[owned]; delete members[e.actorUid]; changedConfiguration = true;
+    delete seats[owned]; delete members[e.actorUid]; delete choices[owned]; changedConfiguration = true;
   } else if (e.type === 'remote-settings-changed') {
     if (e.actorUid !== before.ownerUid || e.position || e.name || e.ready || unchangedSettings || remotePositions.some((p, i) => i >= e.settings.capacity && seats[p])) throw new Error('Only the host can change setup; occupied seats must remain.');
+    for (const p of remotePositions) if (choices[p] && (e.settings.factions !== 'basic' || !legalFaction(choices[p]!,e.settings.capacity))) delete choices[p];
     changedConfiguration = true;
   } else if (e.type === 'remote-ready-changed') {
     if (!owned || owned !== e.position || e.name || !unchangedSettings || seats[owned]!.ready === e.ready) throw new Error('Only your own readiness can be changed.');
@@ -44,7 +57,7 @@ export function applyRemote(before: RemoteRoom | undefined, e: RemoteEvent): Rem
   const configVersion = before.configVersion + Number(changedConfiguration);
   if (e.configVersion !== configVersion) throw new Error('Room setup changed. Review the current settings before continuing.');
   if (changedConfiguration) for (const seat of Object.values(seats)) seat!.ready = false;
-  return { ...before, seats, members, settings: e.settings, configVersion, revision: e.revision, lastCommand: e.commandId };
+  return { ...before, ...(before.factions || Object.keys(choices).length ? {factions:choices}:{}), seats, members, settings: e.settings, configVersion, revision: e.revision, lastCommand: e.commandId };
 }
 export function projectRemote(events: RemoteEvent[]): RemoteRoom {
   let room: RemoteRoom | undefined;

@@ -62,7 +62,7 @@
 
 <svelte:head><title>Beyond the Sun</title><meta name="description" content="Gather at an orbital table and build humanity's future among the stars." /></svelte:head>
 
-<main data-screen={screen} class:at-table={screen === 'table'} data-e2e-layout data-backend-status={status} data-room-state={screen === 'table' ? 'gathering' : 'none'}>
+<main data-screen={screen} class:at-table={screen === 'table'} data-e2e-layout data-backend-status={status} data-room-state={screen === 'table' ? table.start?'started':'gathering' : 'none'}>
   <img class="environment" src={`${base}/art/observatory.png`} alt="" />
   <div class="shade"></div>
   {#if screen === 'table'}
