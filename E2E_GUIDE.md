@@ -18,7 +18,7 @@ Fix seed, visible code, player names, initial clock where needed, and an explici
 
 Adopt Pantheon's strict visual contract:
 
-- `maxDiffPixels: 0`, `threshold: 0`, test retries `0`.
+- `maxDiffPixels: 0`, `threshold: 0`, test retries `0`. The exact comparator fully decodes/validates the reference. A byte-identical PNG encoding is then necessarily the same valid pixel image; different encodings still decode and compare every RGBA byte, dimension and channel. Malformed identical inputs must fail validation.
 - Lossless PNGs, DPR 1, pinned Chromium/software rendering, bundled fonts, locale `en-CA`, timezone `America/Toronto`, and a fixed test origin.
 - One browser worker for capture workloads. Additional player contexts remain bounded by the story's declared participants.
 - A 2,000 ms deadline per interaction, navigation, or assertion. Readiness, font/art decoding, finite animation completion, clipping audit, screenshot capture, and comparison share one 2,000 ms capture deadline.
