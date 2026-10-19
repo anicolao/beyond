@@ -42,7 +42,7 @@ jobs:
           REVIEW_PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
           python3 scripts/download-reviewed-linux.py
-          nix develop --command bun scripts/validate-staged-linux.ts
+          nix develop --command node scripts/validate-staged-linux.ts
       - name: Stage a review branch; leave the PR head and merge state unchanged
         env:
           REVIEW_PR_NUMBER: ${{ github.event.pull_request.number }}

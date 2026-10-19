@@ -1,7 +1,7 @@
 /** Fully decode native candidates using the production exact comparator, without rewriting pixels. */
 import {readFileSync} from 'node:fs';
 import sharp from 'sharp';
-import {identicalPixels} from '../tests/e2e/helpers/exact-pixels';
+import {identicalPixels} from '../tests/e2e/helpers/exact-pixels.ts';
 const report=JSON.parse(readFileSync('tmp/linux-reference-stage/manifest.json','utf8')) as {frames:{path:string;mac:string}[]};
 for(const frame of report.frames){
  const native=readFileSync(frame.path),mac=readFileSync(frame.mac);
