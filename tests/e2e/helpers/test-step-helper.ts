@@ -38,14 +38,7 @@ export class TestStepHelper {
           const transitions = (window as Window & { __beyondTransitions?: Map<Element, string> }).__beyondTransitions;
           if (!transitions || transitions.size) throw new Error('A Svelte transition is still active');
         });
-        await page.evaluate(assertScreenFit, { document: view.document });
-        await page.evaluate(() => {
-          for (const element of document.querySelectorAll<HTMLElement>('button,input,select')) {
-            if (!element.checkVisibility({ visibilityProperty: true })) continue;
-            const r = element.getBoundingClientRect();
-            if (r.width < 44 || r.height < 44) throw new Error(`Touch target too small: ${element.textContent || element.getAttribute('aria-label')}`);
-          }
-        });
+        await page.evaluate(assertScreenFit, { document: view.document, touchTargets: true });
         const camera = await page.context().newCDPSession(page);
         let image: Buffer;
         try { image = Buffer.from((await camera.send('Page.captureScreenshot', { format: 'png', fromSurface: true, captureBeyondViewport: false, optimizeForSpeed: true })).data, 'base64'); }

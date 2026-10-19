@@ -35,7 +35,7 @@ export function checkPolicy(root = '.') {
     }
   }
   const helper = readFileSync(`${root}/tests/e2e/helpers/test-step-helper.ts`, 'utf8');
-  for (const guard of ['OPERATION_BUDGET = 2_000', 'document.fonts.ready', 'i.decode()', 'assertScreenFit', 'identicalPixels', 'threshold: 0', 'maxDiffPixels: 0', 'toBeLessThanOrEqual(OPERATION_BUDGET)', 'verifications.length', 'data-backend-status']) {
+  for (const guard of ['OPERATION_BUDGET = 2_000', 'document.fonts.ready', 'i.decode()', 'assertScreenFit', 'identicalPixels', 'threshold: 0', 'maxDiffPixels: 0', 'toBeLessThanOrEqual(OPERATION_BUDGET)', 'verifications.length', 'data-backend-status', 'touchTargets: true']) {
     if (!helper.includes(guard)) errors.push(`Missing capture guard: ${guard}`);
   }
   const config = readFileSync(`${root}/playwright.config.ts`, 'utf8');

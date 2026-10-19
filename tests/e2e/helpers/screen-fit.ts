@@ -1,5 +1,5 @@
 /** Runs inside the page: audit components, text lines and every clipping ancestor. */
-export function assertScreenFit(options: {document?:boolean} = {}) {
+export function assertScreenFit(options: {document?:boolean;touchTargets?:boolean} = {}) {
   const modal = [...document.querySelectorAll<HTMLElement>('dialog:modal')].at(-1);
   // Native modality makes the document behind a popup inert. Audit its active
   // surface, including vertical viewport fit, even on a scrolling document page.
@@ -119,6 +119,15 @@ export function assertScreenFit(options: {document?:boolean} = {}) {
     }
     return true;
   };
+  if(options.touchTargets){
+    // Keep the capture contract's original document-wide target audit, including
+    // controls behind native modality; batching removes only a browser trip.
+    for(const element of document.querySelectorAll<HTMLElement>('button,input,select')){
+      if(!element.checkVisibility({visibilityProperty:true}))continue;
+      const r=element.getBoundingClientRect();
+      if(r.width<44||r.height<44)throw new Error(`Touch target too small: ${element.textContent||element.getAttribute('aria-label')}`);
+    }
+  }
   const polygons=controls.map(hitPolygon);
   for(let i=0;i<controls.length;i++)for(let j=i+1;j<controls.length;j++){
     if(overlaps(polygons[i],polygons[j]))throw new Error(`Controls overlap: ${label(controls[i])} / ${label(controls[j])}`);

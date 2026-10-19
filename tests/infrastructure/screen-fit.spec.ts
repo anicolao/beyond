@@ -67,3 +67,14 @@ test('modal navigation outside its window still fails', async ({ page }) => {
   await page.locator('dialog').evaluate((element: HTMLDialogElement) => element.showModal());
   await expect(page.evaluate(assertScreenFit, { document: true })).rejects.toThrow('clipped');
 });
+
+for(const size of [43,44])test(`batched capture target audit ${size}px ${size===44?'passes':'fails'}`,async({page})=>{
+ await page.setContent(`<main data-e2e-layout><button style="width:${size}px;height:44px;padding:0">Go</button></main>`);
+ if(size===44)await page.evaluate(assertScreenFit,{touchTargets:true});
+ else await expect(page.evaluate(assertScreenFit,{touchTargets:true})).rejects.toThrow('Touch target too small');
+});
+test('batched target audit still checks visible background controls behind a modal',async({page})=>{
+ await page.setContent('<button style="width:20px;height:20px;padding:0" aria-label="Background">X</button><dialog data-e2e-layout><button style="width:80px;height:44px">Close</button></dialog>');
+ await page.locator('dialog').evaluate((element:HTMLDialogElement)=>element.showModal());
+ await expect(page.evaluate(assertScreenFit,{touchTargets:true})).rejects.toThrow('Touch target too small');
+});

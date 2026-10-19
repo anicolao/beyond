@@ -32,3 +32,5 @@ Prompt 35 | 0eadbfdfa68e2890852eabf5ef4423f283c3efe06de84a5b318e902c81c8161e | U
 Prompt 35 | 0eadbfdfa68e2890852eabf5ef4423f283c3efe06de84a5b318e902c81c8161e | Establish Firestore readiness during normal arrival after Linux first-create timeout; preserve all operation budgets and exact guards.
 
 Prompt 35 | 0eadbfdfa68e2890852eabf5ef4423f283c3efe06de84a5b318e902c81c8161e | Inspect 28 Linux contact sheets and critical native captures; import only successful stories, excluding the failed phone journey.
+
+Prompt 35 | 0eadbfdfa68e2890852eabf5ef4423f283c3efe06de84a5b318e902c81c8161e | Batch unchanged capture audits, add target regressions, and import visually reviewed successful Linux phone evidence.
