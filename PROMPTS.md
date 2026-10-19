@@ -189,3 +189,15 @@ Reviewer 04:11: independently inspected round33 shared-2p-focus-1280.png, shared
 Reviewer-authored delegation:
 
 Reviewer 05:22: phase003 LOCAL ACCEPTANCE granted. Independently reviewed refreshed compact overview, rotated1280 mat reader, removed footer, portrait navigation and final4K 025-begun tabletop capture against prior concept review; final verify log now31/31 exact journeys, guards and required checks pass. Commit/push003 and open new stacked PR based on feat/remote-rooms; report PR/head. Then explicitly proceed with milestone004 on a NEW branch stacked on003 while Linux CI and hosted verification finish. Preserve full existing functions and approved UX fidelity; iterate004 locally and await independent local review before005. Track003 final CI/Linux exact/hosted revision gates separately, propagate fixes if needed. All PRs remain unmerged. Record delegation in PROMPTS and work in PROMPT_WORK.
+
+## Prompt 36: Restore Rotated Cards
+
+Reviewer-authored checkpoint:
+
+Reviewer 06:11: PR5 now head32bdfdb; final Linux/hosted gates still pending. Independently inspected tmp/local-research-review/corner-1280-plan.png: rotated orientation is preserved, but selected card is reduced to a thin title strip above a large empty dark area, losing the tactile illustrated card presentation. Before004 readiness, give compact rotated planning a deliberate readable card/bonus composition (full-card inspection can remain), with visible required ship-choice controls and complete commit affordance. Do not accept geometry pass alone. If this PNG predates your current fix, provide refreshed evidence instead. Continue current fixes; no005 release.
+
+## Prompt 37: Complete Research Review
+
+Reviewer-authored continuation:
+
+Reviewer 11:28: independently inspected round36 1280-card-and-bonus and1280-ready-to-commit. Substantial illustrated card, legible bonus, ship selection and contained payment/commit resolve the thin-card correction; scoped visual acceptance for these views. Continue now: finish PR5 cold-arrival readiness diagnosis/fix with unchanged guards and propagate into004; complete004 functional review evidence across remote/phone/shared4K including trades, reload and handoff, and provide current live URLs plus final captures for independent review. No005 release or final004 acceptance yet. PR5 head75d228c still Linux30/31; hosted/static pass. Do not wait for another human prompt, never merge.

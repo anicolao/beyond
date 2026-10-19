@@ -23,7 +23,7 @@ Adopt Pantheon's strict visual contract:
 - One browser worker for capture workloads. Additional player contexts remain bounded by the story's declared participants.
 - A 2,000 ms deadline per interaction, navigation, or assertion. Readiness, font/art decoding, finite animation completion, clipping audit, screenshot capture, and comparison share one 2,000 ms capture deadline.
 - No arbitrary sleeps, `waitForTimeout`, `networkidle`, retries, pixel masks, screenshot normalization, or relaxed comparison to hide nondeterminism.
-- Story and infrastructure startup budgets are separate from individual operation deadlines. Longer complete games may need longer whole-story budgets; no operation inherits that allowance.
+- Story and infrastructure startup budgets are separate from individual operation deadlines. Longer complete games may need longer whole-story budgets; no operation inherits that allowance. Before opening the static test server, read-only emulator probes require an Auth configuration response and a Firestore permission denial for the unsigned reserved connection-document read. This verifies actual service/database/rules readiness rather than an open TCP port; it creates no users, games or fixtures. A missing service or unexpectedly permissive rule fails startup. Browser assertions and captures retain their own 2,000 ms limits.
 
 Pin the actual browser image and architecture when the scaffold is built; do not copy a stale sibling version into a new lockfile. Keep reviewed macOS and Linux baselines separately. Linux CI and Linux baseline generation use the same immutable image and architecture. A runtime/image update needs reviewed fresh baselines and a complete comparison run.
 
