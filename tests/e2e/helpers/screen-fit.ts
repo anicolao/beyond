@@ -1,5 +1,12 @@
 /** Runs inside the page: audit components, text lines and every clipping ancestor. */
-export function assertScreenFit(options: {document?:boolean} = {}) {
+export async function assertScreenFit(options: {document?:boolean;touchTargets?:boolean;prepare?:boolean} = {}) {
+  if(options.prepare){
+    await document.fonts.ready;
+    await Promise.all([...document.images].filter(i=>i.checkVisibility({visibilityProperty:true})).map(i=>i.decode()));
+    await Promise.all(document.getAnimations().filter(a=>a.playState!=='finished').map(a=>a.finished));
+    const transitions=(window as Window&{__beyondTransitions?:Map<Element,string>}).__beyondTransitions;
+    if(!transitions||transitions.size)throw new Error('A Svelte transition is still active');
+  }
   const modal = [...document.querySelectorAll<HTMLElement>('dialog:modal')].at(-1);
   // Native modality makes the document behind a popup inert. Audit its active
   // surface, including vertical viewport fit, even on a scrolling document page.
@@ -8,30 +15,61 @@ export function assertScreenFit(options: {document?:boolean} = {}) {
   const elements = [...new Set(roots.flatMap(root => [root, ...root.querySelectorAll<HTMLElement>('*')]))];
   const styles = new Map<Element, CSSStyleDeclaration>();
   const style = (element: Element) => { if (!styles.has(element)) styles.set(element, getComputedStyle(element)); return styles.get(element)!; };
+  // This audit is read-only. Cache immutable geometry within this one call,
+  // preserving the original transform multiplication order and exact bounds.
+  const matrices=new Map<HTMLElement,DOMMatrix>();
+  const matrixFor=(element:HTMLElement)=>{
+    if(!matrices.has(element)){
+      let matrix=new DOMMatrix();
+      for(let parent:HTMLElement|null=element;parent;parent=parent.parentElement){
+        const transform=style(parent).transform;
+        if(transform!=='none')matrix=new DOMMatrix(transform).multiply(matrix);
+      }
+      matrices.set(element,matrix);
+    }
+    return matrices.get(element)!;
+  };
+  const clips=new Map<HTMLElement,{left:number;top:number;right:number;bottom:number}>();
+  const clipFor=(ancestor:HTMLElement)=>{
+    if(!clips.has(ancestor)){
+      const css=style(ancestor),box=ancestor.getBoundingClientRect(),matrix=matrixFor(ancestor);
+      const sx=Math.hypot(matrix.a,matrix.b),sy=Math.hypot(matrix.c,matrix.d);
+      const left=parseFloat(css.borderLeftWidth)||0,right=parseFloat(css.borderRightWidth)||0,top=parseFloat(css.borderTopWidth)||0,bottom=parseFloat(css.borderBottomWidth)||0;
+      const scrollbarX=Math.max(0,ancestor.offsetWidth-ancestor.clientWidth-left-right),scrollbarY=Math.max(0,ancestor.offsetHeight-ancestor.clientHeight-top-bottom);
+      clips.set(ancestor,{left:box.left+left*sx,top:box.top+top*sy,right:box.right-(right+scrollbarX)*sx,bottom:box.bottom-(bottom+scrollbarY)*sy});
+    }
+    return clips.get(ancestor)!;
+  };
   const label = (element: Element) => `${element.tagName.toLowerCase()}.${element.className} (${element.getAttribute('aria-label') ?? element.textContent?.trim().slice(0,60) ?? ''})`;
   const viewport = {left:0, top:0, right:innerWidth, bottom:innerHeight};
   const outside = (rect:DOMRect, box:{left:number;top:number;right:number;bottom:number}, x=true,y=true) =>
     (x && (rect.left<box.left || rect.right>box.right)) || (y && (rect.top<box.top || rect.bottom>box.bottom));
+  // Only explicitly named, keyboard-reachable vertical scroll regions permit
+  // content to extend beyond their visible window. Hidden overflow still fails.
+  const scrollRegion = (element: HTMLElement) => {
+    for (let ancestor = element.parentElement; ancestor; ancestor = ancestor.parentElement) {
+      if (ancestor.getAttribute('role') === 'region' && ancestor.tabIndex === 0 &&
+          (ancestor.getAttribute('aria-label') || ancestor.getAttribute('aria-labelledby')) &&
+          /^(auto|scroll)$/.test(style(ancestor).overflowY)) return ancestor;
+    }
+    return undefined;
+  };
   const inspect = (element:HTMLElement, rect:DOMRect, text=false) => {
     if (!rect.width || !rect.height) return;
-    if (outside(rect,viewport,true,!options.document || !!modal)) throw new Error(`${text?'Text':'Component'} clipped by viewport: ${label(element)}`);
+    const focused = document.activeElement === element || (!!document.activeElement?.matches('button,a,input,select,textarea') && document.activeElement.contains(element));
+    const region = options.document && !focused ? scrollRegion(element) : undefined;
+    const window = region?.getBoundingClientRect();
+    const visible = window ? {left:rect.left,right:rect.right,top:Math.max(rect.top,window.top),bottom:Math.min(rect.bottom,window.bottom)} : rect;
+    const verticalArea = visible.bottom > visible.top;
+    if (outside(visible as DOMRect,viewport,true,verticalArea && (!options.document || !!modal))) throw new Error(`${text?'Text':'Component'} clipped by viewport: ${label(element)}`);
     for(let ancestor:HTMLElement|null=text?element:element.parentElement;ancestor;ancestor=ancestor.parentElement){
       const css=style(ancestor), x=/^(hidden|clip|auto|scroll)$/.test(css.overflowX), y=/^(hidden|clip|auto|scroll)$/.test(css.overflowY);
       if(!x&&!y)continue;
-      const box=ancestor.getBoundingClientRect();
-      // Only transforms scale borders; rounded offset dimensions must not.
-      let matrix=new DOMMatrix();
-      for(let parent:HTMLElement|null=ancestor;parent;parent=parent.parentElement){
-        const transform=style(parent).transform;
-        if(transform!=='none')matrix=new DOMMatrix(transform).multiply(matrix);
-      }
-      const sx=Math.hypot(matrix.a,matrix.b),sy=Math.hypot(matrix.c,matrix.d);
-      // clientWidth/clientHeight round fractional CSS pixels. Use the actual
-      // border edges so a fitting fractional-width child isn't called clipped.
-      const left=parseFloat(css.borderLeftWidth)||0,right=parseFloat(css.borderRightWidth)||0,top=parseFloat(css.borderTopWidth)||0,bottom=parseFloat(css.borderBottomWidth)||0;
-      const scrollbarX=Math.max(0,ancestor.offsetWidth-ancestor.clientWidth-left-right),scrollbarY=Math.max(0,ancestor.offsetHeight-ancestor.clientHeight-top-bottom);
-      const clip={left:box.left+left*sx,top:box.top+top*sy,right:box.right-(right+scrollbarX)*sx,bottom:box.bottom-(bottom+scrollbarY)*sy};
-      if(outside(rect,clip,x,y))throw new Error(`${text?'Text':'Component'} clipped by ${label(ancestor)}: ${label(element)}`);
+      const clip=clipFor(ancestor);
+      const beyondRegion = region && (ancestor === region || ancestor.contains(region));
+      const current = beyondRegion ? visible : rect;
+      const inspectY = y && !(ancestor === region) && (!beyondRegion || verticalArea);
+      if(outside(current as DOMRect,clip,x,inspectY))throw new Error(`${text?'Text':'Component'} clipped by ${label(ancestor)}: ${label(element)}`);
     }
   };
   if(document.documentElement.scrollWidth>innerWidth||(!options.document&&(document.documentElement.scrollHeight>innerHeight||scrollX||scrollY)))throw new Error('Game screen must fit without page scrolling');
@@ -52,9 +90,10 @@ export function assertScreenFit(options: {document?:boolean} = {}) {
   const pinned=options.document?[...document.querySelectorAll<HTMLElement>('.sticky-nav')].filter(node=>node.checkVisibility({visibilityProperty:true})&&/^(sticky|fixed)$/.test(style(node).position)).map(node=>node.getBoundingClientRect()).filter(rect=>rect.top<=0&&rect.bottom>0):[];
   const hitRegion=(element:HTMLElement)=>{
     const rect=element.getBoundingClientRect();
-    if(!options.document || modal)return rect;
+    if(!options.document)return rect;
     const top=Math.max(0,rect.top,...(element.closest('.sticky-nav')?[]:pinned.map(header=>header.bottom)));
-    return {left:Math.max(0,rect.left),right:Math.min(innerWidth,rect.right),top,bottom:Math.min(innerHeight,rect.bottom)};
+    const region = scrollRegion(element)?.getBoundingClientRect();
+    return {left:Math.max(0,rect.left),right:Math.min(innerWidth,rect.right),top:Math.max(top,region?.top ?? 0),bottom:Math.min(innerHeight,rect.bottom,region?.bottom ?? innerHeight)};
   };
   type Point = {x:number;y:number};
   const rectangle=(r:{left:number;right:number;top:number;bottom:number}):Point[]=>[
@@ -63,7 +102,10 @@ export function assertScreenFit(options: {document?:boolean} = {}) {
   const hitPolygon=(element:HTMLElement):Point[]=>{
     // Preserve the document's clipped hit regions. Game controls use their
     // actual transformed border-box, rather than overlapping bounding boxes.
-    if(options.document&&!modal)return rectangle(hitRegion(element));
+    if(options.document) {
+      const region = hitRegion(element);
+      return region.right > region.left && region.bottom > region.top ? rectangle(region) : [];
+    }
     const rect=element.getBoundingClientRect();
     let matrix=new DOMMatrix();
     for(let parent:HTMLElement|null=element;parent;parent=parent.parentElement){
@@ -87,6 +129,7 @@ export function assertScreenFit(options: {document?:boolean} = {}) {
     }));
   };
   const overlaps=(a:Point[],b:Point[])=>{
+    if (!a.length || !b.length) return false;
     // Separating-axis theorem: no tolerance, masking or excluded controls.
     for(const polygon of [a,b])for(let i=0;i<polygon.length;i++){
       const p=polygon[i],q=polygon[(i+1)%polygon.length];
@@ -96,6 +139,15 @@ export function assertScreenFit(options: {document?:boolean} = {}) {
     }
     return true;
   };
+  if(options.touchTargets){
+    // Keep the capture contract's original document-wide target audit, including
+    // controls behind native modality; batching removes only a browser trip.
+    for(const element of document.querySelectorAll<HTMLElement>('button,input,select')){
+      if(!element.checkVisibility({visibilityProperty:true}))continue;
+      const r=element.getBoundingClientRect();
+      if(r.width<44||r.height<44)throw new Error(`Touch target too small: ${element.textContent||element.getAttribute('aria-label')}`);
+    }
+  }
   const polygons=controls.map(hitPolygon);
   for(let i=0;i<controls.length;i++)for(let j=i+1;j<controls.length;j++){
     if(overlaps(polygons[i],polygons[j]))throw new Error(`Controls overlap: ${label(controls[i])} / ${label(controls[j])}`);

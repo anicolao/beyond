@@ -4,7 +4,7 @@ Lead a faction beyond Earth. Help shape humanity's shared technology tree, build
 
 This repository defines a browser implementation of **Beyond the Sun**, designed by Dennis K. Chan and published by Rio Grande Games. Two to four players research technologies, develop production, build and move fleets, colonize systems, and claim achievements. The winner has the most victory points after the final round.
 
-**Status: first tracer implemented.** Enter the observatory, read Learn, and join directly at a physical position on the shared table. Up to four local players can edit names, leave, choose Player 1, reload, and recover the same game across PR and production paths. Full gameplay follows the implementation plan.
+**Status: shared-table foundation and complete card gallery implemented.** Enter the observatory, read Learn, and join directly at a physical position on the shared table. Up to four local players can edit names, leave, choose Player 1, reload, and recover the same game across PR and production paths. Arrival also opens a complete100-design/100-copy base-card gallery using reusable semantic production renderers and original project art. Full gameplay follows the implementation plan.
 
 ## Project documents
 
@@ -61,6 +61,12 @@ Build small, complete browser-visible slices in the sequence in [E2E_GUIDE.md](E
 Implementation starts with the pinned environment and static application shell, followed by rooms and reviewed setup manifests. Document development and verification commands as their scripts are implemented. Never copy sibling credentials.
 
 The [illustrated walkthroughs](tests/e2e/001-foundation/README.md) demonstrate arrival, physical-seat joining and configuration, and recovery between two built deployment paths. Tabletop stories use desktop and 4K shared displays; arrival also covers phone. Remote PvP receives its own production host/join stories in milestone 002.
+
+## Card collection
+
+Open `/gallery/` from the Card gallery link on arrival. Inspect six reviewed Technology, Event, System and Achievement examples, filter/search, compare clean faces with labelled example markers, and change player count to review restricted claim slots. Inspection keeps navigation reachable while rules/source details scroll internally; Escape restores focus. This reference collection uses the reusable production card renderer. Effects are descriptive and not yet playable; fixtures never enter game state.
+
+See the [illustrated gallery story](tests/e2e/001a-card-gallery/README.md), [fidelity review](tests/e2e/001a-card-gallery/FIDELITY.md), and [reviewed card definitions](src/lib/cards/README.md). Local visual iteration precedes final baseline generation and PR validation, as recorded in the implementation plan.
 
 ## Run and verify
 

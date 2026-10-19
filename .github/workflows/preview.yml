@@ -2,7 +2,7 @@ name: Publish live preview
 
 on:
   pull_request:
-    branches: [main]
+    branches: [main, feat/foundation-tracer]
   push:
     branches: [main]
 

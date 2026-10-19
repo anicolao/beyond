@@ -50,7 +50,7 @@ export default class StoryReporter implements Reporter {
     const folders = Map.groupBy(this.stories, item => dirname(item.file));
     for (const [folder, stories] of folders) {
       const unique = [...new Map(stories.map(item => [item.record.slug, item.record])).values()];
-      writeFileSync(join(folder, 'README.md'), `# Production foundation walkthroughs\n\n${unique.map(record => `- [${record.title}](stories/${record.slug}/README.md)`).join('\n')}\n`);
+      writeFileSync(join(folder, 'README.md'), `# Illustrated production walkthroughs\n\n${unique.map(record => `- [${record.title}](stories/${record.slug}/README.md)`).join('\n')}\n`);
     }
     } catch (error) { console.error(error); return { status: 'failed' as const }; }
   }

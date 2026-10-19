@@ -96,5 +96,11 @@
   </div>
   {/if}
     {#if error}<div class="error" role="alert"><p>{error}</p><button onclick={() => { if (!pending && !retained) location.reload(); else void (pending ? sendPending() : recover(retained)).catch(() => undefined); }}>Retry change</button><button onclick={() => { pending = undefined; void recover(retained); }}>Reopen table</button></div>{/if}
-  <footer><span class:connected={status === 'synced'} class="connection" aria-live="polite">{status === 'synced' ? 'Connected' : busy ? 'Saving your place…' : status === 'offline' ? 'Connection interrupted' : 'Connecting…'}</span><span class="footer-title">BEYOND THE SUN</span></footer>
+  <footer><span class:connected={status === 'synced'} class="connection" aria-live="polite">{status === 'synced' ? 'Connected' : busy ? 'Saving your place…' : status === 'offline' ? 'Connection interrupted' : 'Connecting…'}</span>{#if screen === 'home'}<a class="gallery-entry" href={`${base}/gallery/`}>Card gallery ↗</a>{/if}<span class="footer-title">BEYOND THE SUN</span></footer>
 </main>
+
+<style>
+.gallery-entry { color:#e3cc96; display:inline-flex; align-items:center; min-height:44px; font-size:13px; text-underline-offset:4px; }
+@media(min-width:2200px) { .gallery-entry { font-size:22px; min-height:58px; } }
+@media(max-width:650px) { .gallery-entry { font-size:12px; } }
+</style>

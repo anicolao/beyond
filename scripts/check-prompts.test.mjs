@@ -106,3 +106,30 @@ test('the installed pre-commit hook blocks commits without a staged prompt', (t)
   f.write(initial + next);
   assert.notEqual(commit(), 0);
 });
+
+
+test('explicit PR-base validation accepts multiple valid commits while the local hook requires one step',t=>{
+ const f=fixture(t);f.seed();const base=f.git('rev-parse','HEAD').trim();
+ const digest=createHash('sha256').update(initial).digest('hex');
+ f.write(`Prompt 1 | ${digest} | First distinct logical continuation\n\nPrompt 1 | ${digest} | Second distinct logical continuation\n`,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');
+ assert.notEqual(f.check(),0);assert.equal(f.check('--base',base),0);
+});
+test('PR-base continuation validation rejects a bad or duplicate later entry',t=>{
+ const f=fixture(t);f.seed();const base=f.git('rev-parse','HEAD').trim();const digest=createHash('sha256').update(initial).digest('hex');
+ const first=`Prompt 1 | ${digest} | First distinct logical continuation`;
+ for(const bad of [first,`Prompt 1 | ${'0'.repeat(64)} | Incorrect digest continuation`,`Prompt 2 | ${digest} | Incorrect latest prompt continuation`]){
+  f.write(`${first}\n\n${bad}\n`,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check('--base',base),0);
+ }
+});
+
+test('stacked PR-base comparison preserves both append-only branch histories without weakening local commit checks',t=>{
+ const f=fixture(t);f.seed();const digest=createHash('sha256').update(initial).digest('hex');
+ const first=`Prompt 1 | ${digest} | Common logical continuation\n`;
+ const parent=`Prompt 1 | ${digest} | Parent logical continuation\n`;
+ const child=`Prompt 1 | ${digest} | Child logical continuation\n`;
+ f.write(first,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Common step');const common=f.git('rev-parse','HEAD').trim();
+ f.write(first+parent,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Parent step');const base=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',common);f.write(first+child,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Child step');
+ f.write(first+child+parent,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.equal(f.check(),0);assert.equal(f.check('--base',base),0);
+ for(const invalid of [first+child,child+parent,first+child+parent+child]){f.write(invalid,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check('--base',base),0);}
+});

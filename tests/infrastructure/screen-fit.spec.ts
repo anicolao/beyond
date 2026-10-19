@@ -25,3 +25,70 @@ test('text clipped by an ancestor still fails', async ({ page }) => {
   await page.setContent('<main data-e2e-layout><div style="width:30px;overflow:hidden;white-space:nowrap"><span>Read the complete player name</span></div></main>');
   await expect(page.evaluate(assertScreenFit, {})).rejects.toThrow('clipped by div');
 });
+test('offscreen document controls have no inverted hit region', async ({ page }) => {
+  await page.setContent('<button style="position:absolute;top:900px;width:100px;height:50px">First</button><button style="position:absolute;top:1100px;width:100px;height:50px">Second</button>');
+  await page.evaluate(assertScreenFit, { document: true });
+});
+test('real on-screen document overlap still fails', async ({ page }) => {
+  await page.setContent('<button style="position:absolute;top:100px;width:100px;height:50px">First</button><button style="position:absolute;top:120px;width:100px;height:50px">Second</button>');
+  await expect(page.evaluate(assertScreenFit, { document: true })).rejects.toThrow('Controls overlap');
+});
+const scrollingDialog = (overflow = 'auto', named = true) => `<style>*{box-sizing:border-box}body{margin:0}dialog{width:600px;height:600px;padding:20px;overflow:hidden}.scroll{height:400px;overflow-y:${overflow}}button{height:48px;min-width:100px}.long{height:700px}</style><dialog><button>Close</button><div class="scroll" ${named ? 'role="region" tabindex="0" aria-label="Card details"' : ''}><div class="long">Readable card face and long source notes</div><button>Source</button></div><button>Next</button></dialog>`;
+test('named keyboard scroll region permits intentional internal overflow', async ({ page }) => {
+  await page.setContent(scrollingDialog());
+  await page.locator('dialog').evaluate((element: HTMLDialogElement) => element.showModal());
+  await page.evaluate(assertScreenFit, { document: true });
+});
+test('scrolling content does not excuse hidden clipping', async ({ page }) => {
+  await page.setContent(scrollingDialog('hidden'));
+  await page.locator('dialog').evaluate((element: HTMLDialogElement) => element.showModal());
+  await expect(page.evaluate(assertScreenFit, { document: true })).rejects.toThrow('clipped');
+});
+test('unnamed unreachable overflow is not a scroll region', async ({ page }) => {
+  await page.setContent(scrollingDialog('auto', false));
+  await page.locator('dialog').evaluate((element: HTMLDialogElement) => element.showModal());
+  await expect(page.evaluate(assertScreenFit, { document: true })).rejects.toThrow('clipped');
+});
+test('focused content clipped inside a scroll region still fails', async ({ page }) => {
+  await page.setContent(scrollingDialog());
+  await page.locator('dialog').evaluate((element: HTMLDialogElement) => element.showModal());
+  await page.getByRole('button', { name: 'Source' }).focus();
+  await page.locator('.scroll').evaluate(element => { element.scrollTop = 0; });
+  await expect(page.evaluate(assertScreenFit, { document: true })).rejects.toThrow('clipped');
+});
+test('focusing a scroll region does not require its entire contents on screen', async ({ page }) => {
+  await page.setContent(scrollingDialog());
+  await page.locator('dialog').evaluate((element: HTMLDialogElement) => element.showModal());
+  await page.getByRole('region', { name: 'Card details' }).focus();
+  await page.evaluate(assertScreenFit, { document: true });
+});
+test('modal navigation outside its window still fails', async ({ page }) => {
+  await page.setContent(scrollingDialog().replace('<button>Next</button>', '<button style="position:fixed;top:790px">Next</button>'));
+  await page.locator('dialog').evaluate((element: HTMLDialogElement) => element.showModal());
+  await expect(page.evaluate(assertScreenFit, { document: true })).rejects.toThrow('clipped');
+});
+
+for(const size of [43,44])test(`batched capture target audit ${size}px ${size===44?'passes':'fails'}`,async({page})=>{
+ await page.setContent(`<main data-e2e-layout><button style="width:${size}px;height:44px;padding:0">Go</button></main>`);
+ if(size===44)await page.evaluate(assertScreenFit,{touchTargets:true});
+ else await expect(page.evaluate(assertScreenFit,{touchTargets:true})).rejects.toThrow('Touch target too small');
+});
+test('batched target audit still checks visible background controls behind a modal',async({page})=>{
+ await page.setContent('<button style="width:20px;height:20px;padding:0" aria-label="Background">X</button><dialog data-e2e-layout><button style="width:80px;height:44px">Close</button></dialog>');
+ await page.locator('dialog').evaluate((element:HTMLDialogElement)=>element.showModal());
+ await expect(page.evaluate(assertScreenFit,{touchTargets:true})).rejects.toThrow('Touch target too small');
+});
+
+// Combined preparation retains the same capture contract before the geometry pass.
+for(const state of ['missing','active','settled','small'] as const)test(`combined preparation ${state}`,async({page})=>{
+ await page.setContent(`<main data-e2e-layout><button style="width:${state==='small'?43:80}px;height:44px;padding:0">Go</button></main>`);
+ if(state!=='missing')await page.evaluate(active=>{(window as Window&{__beyondTransitions?:Map<Element,string>}).__beyondTransitions=active?new Map([[document.querySelector('button')!,'intro']]):new Map();},state==='active');
+ const result=page.evaluate(assertScreenFit,{prepare:true,touchTargets:true});
+ if(state==='settled')await result;
+ else await expect(result).rejects.toThrow(state==='small'?'Touch target too small':'Svelte transition');
+});
+for(const width of [60,220])test(`nested transformed clipping ${width===60?'fits':'fails'}`,async({page})=>{
+ await page.setContent(`<style>*{box-sizing:border-box}body{margin:0}main{position:absolute;left:200px;top:100px;transform:scale(.9) rotate(15deg);width:300px;height:300px}.clip{width:160px;height:130px;overflow:hidden;border:1px solid;transform:scale(.8)}span{display:block;margin:20px;width:${width}px;height:40px;background:ivory}</style><main data-e2e-layout><div class="clip"><span>Source</span></div></main>`);
+ const result=page.evaluate(assertScreenFit,{});
+ if(width===60)await result;else await expect(result).rejects.toThrow('clipped by div');
+});

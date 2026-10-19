@@ -12,6 +12,14 @@ A story begins through normal navigation and real setup. Test entropy is fixed b
 
 Each logical commit must have a passing local comparison run and reviewed images. Keep commits small enough for one coherent user goal. If an effect family needs more work than one story can demonstrate, split it into additional commits with their own stories and source-reviewed manifests. Use PROMPT_WORK.md continuation records for subsequent commits under the same user request; never duplicate a prompt.
 
+## Early card-component review
+
+Commit 001a is an intentional increment immediately after 001, before remote rooms or seeded setup. Players can open `/gallery/` from arrival without creating a game, inspect Technology, Event, System and Achievement families at useful scale, filter/search, and compare clearly labelled visual fixtures. The gallery and future live boards use the same semantic card renderer and typed public presentation props; fixture markers never enter persisted game state. Source references accompany each reviewed definition. Unsupported effects remain descriptive rules, with no action controls or implication of playability. Review materials, readable rules, costs, symbols, occupancy, player-count restrictions, long text and full-size inspection across all three surfaces with the complete base-card inventory.
+
+During card design review, keep a persistent local dev server available and report its exact localhost URL. Iterate locally from reviewer feedback, initially at five-minute check-ins. Defer repeated baseline generation, screenshot pushes and PR CI waits until the design settles; then perform final required validation and evidence review.
+
+Ship this as a separate PR based on the latest `feat/foundation-tracer` head while PR #2 remains open. Its preview uses its own actual PR number; production and PR data contracts remain unchanged. Do not start later gameplay increments automatically after this review slice.
+
 ## Preview first, verification in parallel
 
 Every same-repository PR automatically publishes a retained preview at `https://anicolao.github.io/beyond/pr<NUMBER>/`. As soon as Pages serves the requested revision, the preview job posts or updates a persistent comment on that PR with the clickable URL and deployed SHA. Its PR description also documents the supported stories and manual steps. Keep both current. Posting the live link happens before hosted smoke and independently of E2E completion. A screenshot artifact or local emulator URL is not a manual preview.
@@ -55,6 +63,7 @@ The pinned Nix/Bun environment, mandatory TestStepHelper, exact screenshots, gen
 | Commit/story | User goal and illustrated path | Rules and backend obligations |
 | --- | --- | --- |
 | 001 — Physical table and recovery | Read Learn; join/edit/leave at eight physical positions; choose Player 1; reload and switch between PR and production with the same game. Multiple arrival, table, and recovery stories. | Canonical game stream, controller identity shared across deployments, atomic immutable events, revision checks, idempotency, owner-only reads, 2–4 seat configuration, independent preview with PR comment. |
+| 001a — Inspect the card collection | From arrival, browse/filter/search all100 source-reviewed base designs with explicit physical quantities, inspect full faces, return with focus restored, and compare example markers and player-count restrictions on desktop, phone, and tabletop. | Shared production CardFace/CardSymbol components; typed public projections separated from gallery fixtures; original provenanced art; no deck order, command, or gameplay simulation. Exact illustrated stories and independent stacked PR preview. |
 | 002 — Invite a remote friend | Create a remote room, share code, join from a second identity, ready both seats, and restore a retained seat. | Separate remote room mode, atomic claims/collision handling, owner settings, readiness tied to configuration; remote joining cannot claim tabletop seats. |
 | 003 — Set up a Basic game | Inspect settings, select legal unique Basic factions, Begin, and inspect exact starting mats/boards at two, three, and four-player setup variants. | Reviewed board, overlay, faction, Supply, technology, Event, and achievement setup manifests; seeded setup, correct exclusions and Ore; immutable Begin. |
 | 004 — Research the first technology | Choose Level I research, inspect prerequisites/payment, commit, see the permanent cube and immediate bonus, then choose production and pass. | Legal pawn relocation/occupancy, separate research ownership, full resource accounting; one complete ordinary turn. |
@@ -92,3 +101,5 @@ Accessibility, recovery, production art, and real hosted persistence begin with 
 ## Initial scaffold data conversion
 
 The superseded PR2 scaffold created five two-seat tables under its old deployment namespace. The owner-run, dry-run-first `scripts/migrate-initial-tables.cjs` converted these to canonical games with the original IDs, controller UIDs, names, South/North positions and first player. Conversion is atomic per game and refuses to overwrite an existing canonical game. Original legacy records remain read-only audit evidence and are inaccessible to active clients; all live reads/writes target canonical games. The client recognizes the old retained-table key once, then stores its deployment-independent key.
+
+Reviewer44 accepts the revised shared CardFace locally and authorizes final illustrated validation, preserving the WISE limitation. The final story has75 states per viewport and complete100-identity/quantity equality. Publish only after outcomes and docs/content/GALLERY_PROPAGATION_PLAN.md have been reported. Linux/hosted gates remain pending;005 stays held and no merge is authorized.
