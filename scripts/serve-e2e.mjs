@@ -3,8 +3,11 @@ import { execFileSync } from 'node:child_process';
 import { createServer } from 'node:http';
 import { existsSync, readFileSync, statSync } from 'node:fs';
 import { resolve, extname } from 'node:path';
+import { requireEmulatorReadiness } from './emulator-readiness.mjs';
 const clients = [['/beyond/pr2', 'build-e2e-preview'], ['/beyond', 'build-e2e-production']];
 for (const [base, directory] of clients) execFileSync('bun', ['run', 'build'], { stdio: 'inherit', env: { ...process.env, PUBLIC_BASE_PATH: base, BUILD_DIRECTORY: directory } });
+// The existing web-server startup budget includes actual emulator readiness.
+await requireEmulatorReadiness(process.env.PUBLIC_FIREBASE_PROJECT_ID);
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.png': 'image/png', '.woff2': 'font/woff2', '.json': 'application/json' };
 createServer((request, response) => {
   const path = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);

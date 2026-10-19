@@ -1,0 +1,16 @@
+/** Infrastructure startup, before the browser journey's operation clock begins.
+ * No credentials, identities, gameplay writes, retries or timed UI waits. */
+export async function requireEmulatorReadiness(projectId, request = fetch) {
+  if (!/^demo-[a-z0-9-]+$/.test(projectId ?? '')) throw new Error('E2E readiness requires an isolated demo project.');
+  const project = encodeURIComponent(projectId);
+  const [auth, database] = await Promise.all([
+    request(`http://127.0.0.1:9297/emulator/v1/projects/${project}/config`, { signal: AbortSignal.timeout(10_000) }),
+    // A denial proves this project's database and authenticated-get rules can
+    // answer, rather than merely that the emulator TCP port is listening.
+    request(`http://127.0.0.1:8197/v1/projects/${project}/databases/(default)/documents/invites/_connection`, { signal: AbortSignal.timeout(10_000) })
+  ]);
+  if (auth.status !== 200) throw new Error(`Auth emulator is not ready (${auth.status}).`);
+  await auth.json();
+  const result = await database.json();
+  if (database.status !== 403 || result.error?.status !== 'PERMISSION_DENIED') throw new Error(`Firestore emulator or authenticated-get rules are not ready (${database.status}).`);
+}

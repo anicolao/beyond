@@ -2,12 +2,14 @@
   import { base } from '$app/paths';
   import { tick } from 'svelte';
   import CardFace from '$lib/cards/CardFace.svelte';
-  import { representativeCards, rulebookURL } from '$lib/cards/definitions';
+  import { baseCards, physicalCardCount, inventoryCounts, originalArtGaps, rulebookURL } from '$lib/cards/catalog';
   import { examplePresentation } from '$lib/gallery/fixtures';
   import type { CardDefinition, CardFamily } from '$lib/cards/types';
   let family = $state<CardFamily | 'All'>('All');
   let query = $state('');
-  let marked = $state(false);
+  let pageIndex=$state(0);
+  const pageSize=6;
+  let marked = $state<boolean|'full'>(false);
   let players = $state<2 | 3 | 4>(4);
   let selected = $state<CardDefinition | null>(null);
   let inspector: HTMLDialogElement;
@@ -15,13 +17,16 @@
   let inspectionScroll = $state<HTMLDivElement>();
   function changeCard(offset: number) { selected = visible[index + offset]; inspectionScroll?.scrollTo({ top: 0 }); }
   const families = ['All', 'Technology', 'Event', 'System', 'Achievement'] as const;
-  const visible = $derived(representativeCards.filter(card => (family === 'All' || card.family === family) && `${card.title} ${card.subtitle} ${card.sections.map(s => s.text).join(' ')}`.toLowerCase().includes(query.trim().toLowerCase())));
+  const visible = $derived(baseCards.filter(card => (family === 'All' || card.family === family) && `${card.id} ${card.title} ${card.subtitle} ${card.technology?.incoming.join(' ')} ${card.technology?.outgoing.join(' ')} ${card.sections.map(s => `${s.label} ${s.cost ?? ''} ${s.text}`).join(' ')}`.toLowerCase().includes(query.trim().toLowerCase())));
+  const pageCount=$derived(Math.max(1,Math.ceil(visible.length/pageSize)));
+  const pageCards=$derived(visible.slice(pageIndex*pageSize,(pageIndex+1)*pageSize));
   const index = $derived(selected ? visible.findIndex(c => c.id === selected?.id) : -1);
   async function inspect(card: CardDefinition) {
     origin = document.activeElement as HTMLElement;
     selected = card;
     await tick();
     inspector.showModal();
+    inspectionScroll?.scrollTo({top:0});
   }
   function trapFocus(event: KeyboardEvent) {
     if (event.key !== 'Tab') return;
@@ -31,7 +36,7 @@
     else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
   }
   function close() { inspector.close(); origin?.focus(); }
-  function reset() { family = 'All'; query = ''; }
+  function reset() { family = 'All'; query = ''; pageIndex=0; }
 </script>
 <svelte:head><title>Card gallery — Beyond the Sun</title><meta name="description" content="Inspect the reusable Technology, Event, System and Achievement components of Beyond the Sun." /></svelte:head>
 <div class="gallery-shell" data-backend-status="synced">
@@ -39,18 +44,18 @@
   <header class="gallery-header"><a href={`${base}/`} class="home">← Observatory</a><span>BEYOND THE SUN <span aria-hidden="true">/</span> COMPONENT COLLECTION</span></header>
   <main class="gallery-main" data-e2e-layout>
     <div class="gallery-heading"><div><p class="eyebrow">THE SHAPE OF DISCOVERY</p><h1>Card gallery</h1></div></div>
-    <p class="fixture-note"><strong>Visual reference collection.</strong> Six reviewed examples; fictional markers, no live game state. Effects not yet playable.</p>
-    <nav class="filters" aria-label="Card family">{#each families as item}<button aria-pressed={family === item} onclick={() => { family = item; }}>{item === 'All' ? 'All cards' : item}</button>{/each}</nav>
-    <div class="tools"><label>Search cards<input type="search" placeholder="Name or rules…" bind:value={query}/></label><label for="presentation">Presentation<select id="presentation" bind:value={marked}><option value={false}>Clean faces</option><option value={true}>Example markers</option></select></label><label for="players">Players<select id="players" bind:value={players}><option value={4}>4 players</option><option value={3}>3 players</option><option value={2}>2 players</option></select></label><button class="reset" onclick={reset}>Reset filters</button></div>
-    <div class="collection-line"><p role="status" aria-live="polite">{visible.length} of {representativeCards.length} cards</p><span>{marked ? 'Example markers · Ada / Bora' : 'Clean faces'} · Select Inspect for full size</span></div>
+    <p class="fixture-note"><strong>Visual reference collection.</strong> Second-printing base game: {baseCards.length} designs · {physicalCardCount} physical cards. Optional fictional markers; no live game state.</p>
+    <nav class="filters" aria-label="Card family">{#each families as item}<button aria-pressed={family === item} onclick={() => { family = item; pageIndex=0; }}>{item === 'All' ? 'All cards' : item}</button>{/each}</nav>
+    <div class="tools"><label>Search cards<input type="search" placeholder="Name or rules…" bind:value={query} oninput={()=>pageIndex=0}/></label><label for="presentation">Presentation<select id="presentation" bind:value={marked}><option value={false}>Clean faces</option><option value={true}>Example markers</option><option value="full">Full markers</option></select></label><label for="players">Players<select id="players" bind:value={players}><option value={4}>4 players</option><option value={3}>3 players</option><option value={2}>2 players</option></select></label><button class="reset" onclick={reset}>Reset filters</button></div>
+    <div class="collection-line"><p role="status" aria-live="polite">{visible.length} of {baseCards.length} designs · {visible.reduce((n,c)=>n+c.copies,0)} copies</p><nav class="page-controls" aria-label="Collection pages"><button disabled={pageIndex===0} onclick={()=>pageIndex--}>← Previous page</button><span>Page {pageIndex+1} of {pageCount}</span><button disabled={pageIndex>=pageCount-1} onclick={()=>pageIndex++}>Next page →</button></nav></div>
     <section id="collection" class="collection" aria-label="Card collection" tabindex="-1">
-      {#each visible as card (card.id)}<div class="specimen" id={card.id}>
-        <CardFace {card} presentation={marked ? examplePresentation(card, players) : { players }}/>
-        <div class="specimen-caption"><span>{card.family}<small>{card.id}</small></span><button aria-haspopup="dialog" aria-label={`Inspect ${card.title}`} onclick={() => inspect(card)}>Inspect <span aria-hidden="true">↗</span></button></div>
+      {#each pageCards as card (card.id)}<div class="specimen" id={card.id}>
+        <CardFace {card} presentation={marked ? examplePresentation(card, players, marked==='full') : { players }}/>
+        <div class="specimen-caption"><span>{card.family} · {card.copies} physical {card.copies===1?'copy':'copies'}<small>{card.id}</small>{#if card.art===null}<small>Original art pending</small>{/if}</span><button aria-haspopup="dialog" aria-label={`Inspect ${card.title}`} onclick={() => inspect(card)}>Inspect <span aria-hidden="true">↗</span></button></div>
       </div>{/each}
       {#if !visible.length}<p class="empty">No cards match. Change your search or reset the filters.</p>{/if}
     </section>
-    <aside class="source-note"><h2>From the rulebook to the table</h2><p>Rules and numbers are live text, with labelled symbols and distinct costs. These same card faces accept public presentation state for future board views. Artwork illustrates each family; it carries no rules.</p><a href={rulebookURL} target="_blank" rel="noreferrer">Publisher’s second-printing rules ↗</a></aside>
+    <aside class="source-note"><h2>Complete base-card inventory</h2><p>{#each inventoryCounts as count,i}{i?' · ':''}{count.family}: {count.designs} designs / {count.copies} copies{/each}. Every design has one physical copy. Backs, player aids, mats, overlays, guild tiles, promos and expansion/replacement faces are not extra base cards.</p><p>{#if originalArtGaps.length}{originalArtGaps.length} original illustrations remain pending and are explicitly marked.{:else}Every card has original project artwork.{/if} Card rules are audited mechanical paraphrases of printed faces; flavour writing and publisher artwork are not reproduced.</p><h2>From the rulebook to the table</h2><p>Rules and numbers are live text, with labelled symbols and distinct costs. These same card faces render public board inspection and production planning. Artwork illustrates each family; it carries no rules.</p><a href={rulebookURL} target="_blank" rel="noreferrer">Publisher’s second-printing rules ↗</a></aside>
   </main>
 </div>
 <dialog bind:this={inspector} onkeydown={trapFocus} aria-label="Card inspection" onclose={() => origin?.focus()}>
@@ -59,10 +64,10 @@
       <div class="inspection-nav"><button onclick={close}>Close inspection <span aria-hidden="true">×</span></button><span>{index + 1} / {visible.length}</span></div>
       <!-- svelte-ignore a11y_no_noninteractive_tabindex (The labelled scroll region must be reachable by keyboard.) -->
       <div class="inspection-scroll" bind:this={inspectionScroll} tabindex="0" role="region" aria-label="Card face and source details">
-      <div class="inspected-card"><CardFace card={selected} presentation={marked ? examplePresentation(selected, players) : { players }}/></div>
+      <div class="inspected-card"><CardFace card={selected} presentation={marked ? examplePresentation(selected, players, marked==='full') : { players }}/></div>
 
-      <p class="inspection-context">{marked ? 'Visual fixture · example markers' : 'Visual fixture · clean face'} · Effects not yet playable</p>
-      <p class="source"><a href={`${rulebookURL}#page=${selected.source.page + 2}`} target="_blank" rel="noreferrer">Rules source · printed p. {selected.source.page} ↗</a><span>{selected.source.note}</span></p>
+      <p class="inspection-context">{marked==='full'?'Visual fixture · full markers':marked ? 'Visual fixture · example markers' : 'Visual fixture · clean face'} · No live game state</p>
+      <p class="source"><a href={`${rulebookURL}#page=${selected.source.page + 2}`} target="_blank" rel="noreferrer">Rules source · printed p. {selected.source.page} ↗</a><span>{selected.source.location} · {selected.source.note}</span></p>
       </div>
       <div class="inspector-pagination"><button disabled={index <= 0} onclick={() => changeCard(-1)}>← Previous card</button><button disabled={index >= visible.length - 1} onclick={() => changeCard(1)}>Next card →</button></div>
     </div>
@@ -93,6 +98,8 @@ h1 { font-size:44px; margin:0; }
 .tools input { width:100%; }
 .tools button { min-height:46px; font-size:14px; padding:10px 20px; }
 .collection-line { display:flex; justify-content:space-between; align-items:center; gap:20px; margin:10px 0 18px; font-size:13px; color:#b9c5b9; }
+.page-controls { display:flex; gap:10px; align-items:center; }.page-controls button { min-height:44px; padding:8px 12px; font-size:13px; }.page-controls span { white-space:nowrap; }
+@media(min-width:2200px){.page-controls button{font-size:24px;padding:14px 22px;}}
 .collection-line p { margin:0; color:#eddfbd; }
 .collection { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:42px 44px; outline:none; align-items:start; }
 .specimen { min-width:0; }
@@ -131,4 +138,20 @@ dialog::backdrop { background:#020c13de; }
 }
 @media(min-width:2200px) { .gallery-header { padding:30px max(64px,calc((100vw - 2600px)/2)); }.gallery-header > span { font-size:20px; }.home { font-size:26px; }.gallery-main { max-width:2700px; padding:60px 50px 100px; }h1 { font-size:110px; }.eyebrow { font-size:21px; }.fixture-note { font-size:24px; max-width:1900px; margin:32px 0; }.filters { gap:22px; padding:28px 0; }.filters button { font-size:25px; padding:16px 40px; }.tools { gap:30px; padding:32px 0 20px; }.tools label { font-size:22px; gap:12px; }.tools label:first-child { max-width:800px; }.tools input,.tools select,.tools button { font-size:26px; height:66px; }.collection-line { font-size:23px; margin:20px 0 40px; }.collection { gap:70px 80px; }.specimen-caption { font-size:23px; padding-top:28px; }.specimen-caption small { font-size:20px; }.specimen-caption button { font-size:24px; padding:14px 30px; }.source-note { font-size:25px; max-width:1800px; }.source-note h2 { font-size:52px; }dialog { width:1000px; height:min(1750px,calc(100svh - 64px)); max-height:calc(100svh - 64px); }.inspection { padding:26px; gap:22px; }.inspected-card { max-width:850px; }.inspection-nav,.inspection-nav button,.inspector-pagination button { font-size:25px; }.inspection-context,.source { font-size:22px; } }
 @media(max-width:650px) { .gallery-header { padding:12px 20px; }.gallery-header > span { max-width:130px; font-size:8px; line-height:1.6; }.gallery-header > span > span { display:none; }.home { font-size:14px; }.gallery-main { padding:26px 24px 40px; }.gallery-heading { display:block; }.gallery-heading > div { display:block; }.gallery-heading .eyebrow { margin-bottom:8px; }h1 { font-size:44px; }.fixture-note { font-size:13px; margin:18px 0; }.filters { gap:10px; padding:16px 0; }.filters button { padding:10px 16px; font-size:14px; }.tools { flex-wrap:wrap; gap:14px; padding-top:18px; }.tools label:first-child { flex-basis:100%; max-width:none; }.tools label { flex:1; }.tools input,.tools select { font-size:14px; }.tools button { flex-basis:100%; }.collection-line { align-items:start; font-size:12px; gap:16px; margin:20px 0 28px; }.collection-line span { max-width:190px; text-align:right; }.collection { grid-template-columns:1fr; gap:32px; }.source-note { font-size:14px; }.source-note h2 { font-size:29px; }dialog { width:calc(100vw - 16px); max-width:calc(100vw - 16px); padding:0; }.inspection { padding:12px; gap:10px; }.inspection-nav { margin:0; }.inspection-scroll { padding:4px 6px 12px; }.inspected-card { max-width:none; }.inspector-pagination { margin:0; gap:10px; }.inspector-pagination button { font-size:12px; padding:8px; }.inspection-context,.source { font-size:11px; }.source span { display:none; } }
+/* Keep the collection visible on arrival without hiding any filter controls. */
+@media(max-width:650px) {
+.gallery-header { padding:5px 20px; }
+.gallery-main { padding-top:14px; }
+.gallery-heading .eyebrow { display:none; }
+h1 { font-size:36px; }
+.fixture-note { margin:8px 0; font-size:12px; }
+.filters { gap:6px; padding:8px 0; }
+.filters button { padding:8px 12px; }
+.tools { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,.8fr) auto; gap:8px; padding-top:10px; }
+.tools label:first-child { grid-column:1/-1; }
+.tools label { min-width:0; font-size:11px; }
+.tools input,.tools select { width:100%; padding:8px; font-size:13px; }
+.tools button { padding:8px; font-size:12px; }
+.collection-line { margin:12px 0 16px; flex-wrap:wrap; gap:8px; }.page-controls { width:100%; justify-content:space-between; }.page-controls span { max-width:none; }.page-controls button { font-size:12px; }
+}
 </style>

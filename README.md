@@ -4,7 +4,7 @@ Lead a faction beyond Earth. Help shape humanity's shared technology tree, build
 
 This repository defines a browser implementation of **Beyond the Sun**, designed by Dennis K. Chan and published by Rio Grande Games. Two to four players research technologies, develop production, build and move fleets, colonize systems, and claim achievements. The winner has the most victory points after the final round.
 
-**Status: first tracer implemented.** Enter the observatory, read Learn, and join directly at a physical position on the shared table. Up to four local players can edit names, leave, choose Player 1, reload, and recover the same game across PR and production paths. Full gameplay follows the implementation plan.
+**Status: shared-table foundation and complete card gallery implemented.** Enter the observatory, read Learn, and join directly at a physical position on the shared table. Up to four local players can edit names, leave, choose Player 1, reload, and recover the same game across PR and production paths. Arrival also opens a complete100-design/100-copy base-card gallery using reusable semantic production renderers and original project art. Full gameplay follows the implementation plan.
 
 ## Project documents
 

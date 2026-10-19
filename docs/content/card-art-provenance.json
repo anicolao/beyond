@@ -1,0 +1,1585 @@
+{
+  "version": 1,
+  "scope": "68 additional original illustrations complete:41 Technologies,19 Events,8 Achievements; existing32 illustrated designs retained. Independent visual acceptance pending.",
+  "assets": [
+    {
+      "id": "human-experiments",
+      "title": "Human Experiments",
+      "family": "Technology",
+      "destination": "static/art/cards/human-experiments-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Human Experiments. Subject: A humane futuristic research laboratory with a volunteer seated upright in a transparent diagnostic chamber, scientists observing a luminous neural scan; precision instrumentation, no distress or injury. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-36bbafad-215c-4d7e-b497-de9b3c1833cf.png",
+      "sha256": "16951143567b9d2acd38e699338692dab28c16a744c20ffde3ff9ecc6677b886",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/inspect-human-experiments-393.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/human-experiments.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      },
+      "artPosition": "center 35%"
+    },
+    {
+      "id": "psionics-research",
+      "title": "Psionics Research",
+      "family": "Technology",
+      "destination": "static/art/cards/psionics-research-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Psionics Research. Subject: A researcher in a quiet orbital laboratory facing a suspended luminous field sphere, delicate concentric instrumentation testing neural signals. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-a65c84fd-0788-445a-9bd8-cc25b9835de2.png",
+      "sha256": "76553402bab0f9a47f568fd691345c6419d60f6d1c600026b7e666a73bbe057a",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/psionics-research.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "multi-colony-symposium",
+      "title": "Multi-Colony Symposium",
+      "family": "Technology",
+      "destination": "static/art/cards/multi-colony-symposium-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Multi-Colony Symposium. Subject: Delegates in an intimate circular orbital conference chamber with several distinct inhabited worlds visible through panoramic windows. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-0771a449-c83e-48d3-a96e-affb6791b7ea.png",
+      "sha256": "16e95651cfd36366edc5f2bcd9b88c2963064fa73f8bb2c3542931d405c3878a",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/multi-colony-symposium.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "exo-alloy-refinement",
+      "title": "Exo-Alloy Refinement",
+      "family": "Technology",
+      "destination": "static/art/cards/exo-alloy-refinement-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Exo-Alloy Refinement. Subject: An asteroid refinery pouring brilliant molten alloy into a precision magnetic crucible, dark industrial arms and cooling metal. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-82b8cce1-14f6-4bf8-ad88-899130e469c4.png",
+      "sha256": "bb096bd399ff7caa5f211931dbd877e7ea69bc0a540d997b1074b1ec5c01f235",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/exo-alloy-refinement.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "plasma-cannon",
+      "title": "Plasma Cannon",
+      "family": "Technology",
+      "destination": "static/art/cards/plasma-cannon-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Plasma Cannon. Subject: A single heavy spacecraft plasma emitter with an intensely luminous contained blue energy core, mounted on an orbital gun platform. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-76c5e3e6-bf64-439a-83fa-649c68241123.png",
+      "sha256": "8466c00fad757bb966549725ef4de3a28db5b89f59477ef17cd844a8969d4cf1",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/plasma-cannon.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "android-destroyers",
+      "title": "Android Destroyers",
+      "family": "Technology",
+      "destination": "static/art/cards/android-destroyers-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Android Destroyers. Subject: Angular autonomous destroyer spacecraft in a close formation above a clouded planet, unmanned precision engineering. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-a5f7188c-9723-430b-bb71-9ee0013537ab.png",
+      "sha256": "c65d72c435741a2b3b0935201fa4ff86c0f54f34a2187e4505a17db169107668",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/android-destroyers.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "modular-fleet",
+      "title": "Modular Fleet",
+      "family": "Technology",
+      "destination": "static/art/cards/modular-fleet-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Modular Fleet. Subject: Modular spacecraft hull sections joined by service tugs in an orbital construction dock, visibly interchangeable modules. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-528e2374-ab55-4197-adec-47e2d1c430c9.png",
+      "sha256": "09b21b205b1ef1c1a677ec8798c92a8ace101bf76524c755e2136e29c5e730cc",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-b.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/modular-fleet.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "bio-synaptic-network",
+      "title": "Bio-Synaptic Network",
+      "family": "Technology",
+      "destination": "static/art/cards/bio-synaptic-network-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Bio-Synaptic Network. Subject: A living neural lattice linked to copper circuitry in a glass laboratory sphere, branching organic fibers with restrained teal light. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-98d48932-4ac3-4ce8-98dd-c9d99403b551.png",
+      "sha256": "7a0e7c2cf0a0f3368ca1b82a6d8658e6edf414b0d21fdc9e082ba239ac1b519b",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-b.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/bio-synaptic-network.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "outer-sector-militia",
+      "title": "Outer Sector Militia",
+      "family": "Technology",
+      "destination": "static/art/cards/outer-sector-militia-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Outer Sector Militia. Subject: Small rugged civilian defense spacecraft departing a frontier orbital outpost above a remote rust-colored world. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-d58b3c84-ac35-41c8-b9b6-57baebb316fd.png",
+      "sha256": "e6a933c625fc2dddc68294dfb95f110f547b5cd5599e3c2be6c8d340e3d59e73",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-b.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/outer-sector-militia.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "mass-cloning",
+      "title": "Mass Cloning",
+      "family": "Technology",
+      "destination": "static/art/cards/mass-cloning-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Mass Cloning. Subject: Orderly rows of sealed opaque cell-culture bioreactors inside a spacious automated biotechnology facility, tubing, nutrient reservoirs and tiny illuminated tissue-culture sample trays. No people, humanoid figures or bodies; machinery and microscopic cultures only. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationAttempts": [
+        {
+          "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Mass Cloning. Subject: Orderly rows of softly lit transparent biotechnological growth chambers inside a spacious research facility; distant human silhouettes, no horror. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+          "result": "Image service rejected generated output; no asset retained. Request 3bc99498-d726-4396-b746-1b00987ff170."
+        }
+      ],
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-4302161c-655d-4820-a48f-a70d6c71afec.png",
+      "sha256": "022ec2167aa245fdf6ffc821a4cdefdeb7333f1bf314f9c0db0a4c0e7547f372",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-e.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/mass-cloning.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "android-surveyors",
+      "title": "Android Surveyors",
+      "family": "Technology",
+      "destination": "static/art/cards/android-surveyors-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Android Surveyors. Subject: Two practical humanoid survey robots studying mineral and soil samples on a wind-swept alien plateau, survey lander nearby. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-9be2fbe1-e9ce-48b2-967c-7206fb5e197c.png",
+      "sha256": "70a9173d7c170882dc29d54e70b249fe70cf2dafca971f3301983ee2e7dabc8f",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-b.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/android-surveyors.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "spacetime-anomaly-studies",
+      "title": "Spacetime Anomaly Studies",
+      "family": "Technology",
+      "destination": "static/art/cards/spacetime-anomaly-studies-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Spacetime Anomaly Studies. Subject: A scientific observation station measuring a luminous gravitational distortion that bends the star field and a thin planetary crescent. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-ca705ff1-cc69-4f1a-9792-3bf3d4ab69a8.png",
+      "sha256": "cb86beaee91fc2a25d09b3f5c92f83608339653a71176979429fa639a50e988f",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-c.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/spacetime-anomaly-studies.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "terranova-cruisers",
+      "title": "Terranova Cruisers",
+      "family": "Technology",
+      "destination": "static/art/cards/terranova-cruisers-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Terranova Cruisers. Subject: A substantial colony cruiser carrying greenhouse habitat modules as it approaches a pristine blue-green alien world. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-6a0fce5b-efa6-4c45-b0f2-fa022844f1ec.png",
+      "sha256": "6066ce99ea7c7ae5996027c14eb58dc5cb8e1254de5959c9c9acfcf015ba48bc",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-c.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/terranova-cruisers.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "supply-outpost",
+      "title": "Supply Outpost",
+      "family": "Technology",
+      "destination": "static/art/cards/supply-outpost-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Supply Outpost. Subject: A compact frontier depot with stacked cargo containers and a small tender docked beside a rocky moon. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-d4e41421-2f73-4874-ae3a-9846813afcb7.png",
+      "sha256": "2bb84dccb99e97890e51d25400e71b69636a0a37c25d6d950a2321916adc5b2e",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-c.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/supply-outpost.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "intersystem-diplomacy",
+      "title": "Intersystem Diplomacy",
+      "family": "Technology",
+      "destination": "static/art/cards/intersystem-diplomacy-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Intersystem Diplomacy. Subject: Two diverse human delegates exchanging a sealed brass diplomatic instrument in a quiet space-station room overlooking two distant worlds. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-f11a1b2b-aeac-4ffd-90c1-da1b3f3b498d.png",
+      "sha256": "af4d5e610dba41c496cbe995d0613a71f12f5642b69398b0cb77a9d4df50dd6e",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-c.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/intersystem-diplomacy.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "transdimensional-ai",
+      "title": "Transdimensional AI",
+      "family": "Technology",
+      "destination": "static/art/cards/transdimensional-ai-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Transdimensional AI. Subject: A sophisticated artificial intelligence represented by nested crystalline computational geometries suspended within an orbital laboratory. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-d8d255da-c6a8-4222-b482-185e1a2363d6.png",
+      "sha256": "41c8aa5c85df31ecba42c07609f4e7469a8c298ecb3b8c55e1751a411d1639f7",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-e.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/transdimensional-ai.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "planetary-scale-research",
+      "title": "Planetary-scale Research",
+      "family": "Technology",
+      "destination": "static/art/cards/planetary-scale-research-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Planetary-scale Research. Subject: A vast distributed scientific array covering a planet horizon, enormous dishes and linked research towers under a luminous sky. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-168ba403-4056-447e-9b88-2f26f7fa8332.png",
+      "sha256": "a45e8913a384ab3c37189e64d48a241b15b241ef7fa5ab4caf1793743ef3668f",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-e.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/planetary-scale-research.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "metahuman-chambers",
+      "title": "Metahuman Chambers",
+      "family": "Technology",
+      "destination": "static/art/cards/metahuman-chambers-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Metahuman Chambers. Subject: An unoccupied sealed advanced biotechnology chamber surrounded by intricate brass diagnostic rings and precision neural-research instruments in a serene orbital laboratory. Empty machinery only, no people, humanoid silhouettes or bodies. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationAttempts": [
+        {
+          "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Metahuman Chambers. Subject: A serene advanced research chamber with a standing human silhouette inside a luminous transparent cocoon surrounded by careful brass diagnostic rings. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+          "result": "Image service rejected generated output; no asset retained. Request aaf9cae2-f2f3-441e-b4aa-8b857e9b0bd1."
+        }
+      ],
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-55342f51-231a-460d-9f41-2bc1a20ad4d9.png",
+      "sha256": "88913241858a98977a1b6e5e1c6aca80b37390cd9464e5fb07b9d14797dcc40b",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/final-batch.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/metahuman-chambers.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "hivemind-computing",
+      "title": "Hivemind Computing",
+      "family": "Technology",
+      "destination": "static/art/cards/hivemind-computing-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Hivemind Computing. Subject: Many suspended computational cores linked by fine luminous optical fibers in a dark monumental data hall. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-9768a9eb-cb7e-4c11-9dd4-48981ccfeb7a.png",
+      "sha256": "c9a3e8980c6f4069622fa6458a8a2c6b70d6c85039808455c7cb53cbab2bae3a",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-e.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/hivemind-computing.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "deep-space-megastructures",
+      "title": "Deep Space Megastructures",
+      "family": "Technology",
+      "destination": "static/art/cards/deep-space-megastructures-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Deep Space Megastructures. Subject: An immense partially constructed ring habitat around a distant planet, tiny construction vessels conveying scale. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-4bf1b5cb-25e9-43c8-9d0d-5c0f4cf8b850.png",
+      "sha256": "45d44bbbaf601c6df3fa63d7d285658bed4ff6eaa9118d7899a185dd73ce6870",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-b.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/deep-space-megastructures.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "capital-ship",
+      "title": "Capital Ship",
+      "family": "Technology",
+      "destination": "static/art/cards/capital-ship-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Capital Ship. Subject: One monumental graphite-and-ivory capital spacecraft with brass structural details, viewed three-quarter front above a planet limb. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-7317745d-e9de-4e17-b59a-a1c00e7cd5de.png",
+      "sha256": "dd5f26c594f5ab116ec5b0d5bbff7aa0b232f09509eb86818534e5e82eea8655",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-b.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/capital-ship.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "android-armada",
+      "title": "Android Armada",
+      "family": "Technology",
+      "destination": "static/art/cards/android-armada-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Android Armada. Subject: A large disciplined formation of autonomous spacecraft emerging from orbital fabrication bays, perspective conveying industrial scale. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-2a0e8749-8336-44a8-806e-13acd059d06c.png",
+      "sha256": "7626c2dca980b052e79bbb0a910c50859c8c97c72d4ffb7b244ad93939f5d686",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-e.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/android-armada.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "mercenary-fleet",
+      "title": "Mercenary Fleet",
+      "family": "Technology",
+      "destination": "static/art/cards/mercenary-fleet-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Mercenary Fleet. Subject: A varied small fleet of rugged independent spacecraft gathering at a neutral orbital station, different hull silhouettes. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-78cad56c-06bf-4862-85b0-a29f8c447cc7.png",
+      "sha256": "f3027d526a0a6743a95556cc2313c0b57ae079718949d23b8497e30c6c5ba105",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-c.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/mercenary-fleet.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "cerebral-implants",
+      "title": "Cerebral Implants",
+      "family": "Technology",
+      "destination": "static/art/cards/cerebral-implants-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Cerebral Implants. Subject: Close portrait of a calm adult researcher with a delicate external neural interface at the temple, layered transparent circuitry, orbital laboratory background. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-17b6f1d4-ef3c-4c02-942b-a68d7d7ac70c.png",
+      "sha256": "c0b07ad784c701afa4df145e77ee37c15f3d9190cb3c438549f0e4ef79c3a590",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-c.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/cerebral-implants.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "manufacturing-orbitals",
+      "title": "Manufacturing Orbitals",
+      "family": "Technology",
+      "destination": "static/art/cards/manufacturing-orbitals-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Manufacturing Orbitals. Subject: Large orbital factory rings producing spacecraft components above a blue planet, cranes, docking arms and warm furnace light. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-4c2b6f19-e1e1-42b2-b9fa-289878d2efca.png",
+      "sha256": "e76f549a07055ec46590f316afbce9ffb382c70e9166b1618ad2799d8fe6e189",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-d.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/manufacturing-orbitals.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "android-rights-movement",
+      "title": "Android Rights Movement",
+      "family": "Technology",
+      "destination": "static/art/cards/android-rights-movement-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Android Rights Movement. Subject: A dignified android representative standing beside human colleagues in a sunlit civic rotunda, peaceful equal participation, no signs or slogans. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-bb90362a-bd03-467a-b35d-de45bcb3e47a.png",
+      "sha256": "4d6006f730ec938440ba4f236e0ffa29c1e0a7c1118e9139f72f99b3101932d1",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-d.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/android-rights-movement.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "subatomic-fabrication",
+      "title": "Subatomic Fabrication",
+      "family": "Technology",
+      "destination": "static/art/cards/subatomic-fabrication-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Subatomic Fabrication. Subject: A precision fabrication chamber assembling a delicate metallic lattice from a luminous microscopic particle beam, macro view of scientific machinery. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-79d756e0-84d5-4092-bb62-fe079f0dc361.png",
+      "sha256": "c74ce615102c0a4754746ffaa94e2ca3bab9cbeecc49c4e575592837b8d1fc60",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-d.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/subatomic-fabrication.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "quantum-data-exchange",
+      "title": "Quantum Data Exchange",
+      "family": "Technology",
+      "destination": "static/art/cards/quantum-data-exchange-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Quantum Data Exchange. Subject: Two distant orbital research nodes linked visually through a luminous entangled optical lattice, fine gold and teal data-like light without text. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-275ddb31-01e5-46cf-a608-52422a2c784d.png",
+      "sha256": "4de8c65d99591ae8c73e979453bdb91707213ef475c6230c4bf62c4504d02388",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-d.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/quantum-data-exchange.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "hyperdrive-boosters",
+      "title": "Hyperdrive Boosters",
+      "family": "Technology",
+      "destination": "static/art/cards/hyperdrive-boosters-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Hyperdrive Boosters. Subject: A spacecraft engine assembly with concentric field coils igniting a restrained teal-white drive plume over a star field. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-3e55a883-6ec4-44e6-a8f5-11a38bff495c.png",
+      "sha256": "374b84a5a134da41ead0f241eba2bf1b90c72867420a1091bd22e54115654666",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-d.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/hyperdrive-boosters.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "wormhole-technology",
+      "title": "Wormhole Technology",
+      "family": "Technology",
+      "destination": "static/art/cards/wormhole-technology-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Wormhole Technology. Subject: A carefully stabilized circular wormhole framed by orbital field generators, a small research vessel approaching its luminous dark aperture. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-a7760960-003d-4ea1-9477-794789ef73c0.png",
+      "sha256": "dd74af06c81cfe22d630c0ec1f778e29aed84f8b3f0bef7c76595cbd419d5e7c",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-d.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/wormhole-technology.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "stealth-terraformers",
+      "title": "Stealth Terraformers",
+      "family": "Technology",
+      "destination": "static/art/cards/stealth-terraformers-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Stealth Terraformers. Subject: A quiet low-profile terraforming vessel deploying environmental towers on a misty uninhabited alien coast, muted atmosphere and delicate greenhouse modules. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-d01d8bff-dbc2-4554-9606-9b43d833f545.png",
+      "sha256": "f513db92ffdcc3ed0f0c2b29d1d766e4f2bc5bc66b64a5779aa52606dc0c0257",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-e.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/stealth-terraformers.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "technological-singularity",
+      "title": "Technological Singularity",
+      "family": "Technology",
+      "destination": "static/art/cards/technological-singularity-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Technological Singularity. Subject: An immense luminous geometric computational intelligence suspended over a futuristic research city, subtle light radiating into the night. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-c34d0a7d-fefd-4abe-8c89-916f1beed5aa.png",
+      "sha256": "9ad3ba4c6ff767a75568f51a7e2d38d9dbb972304613b3299ba375a42ae30589",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-f.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/technological-singularity.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "giga-corporations",
+      "title": "Giga-Corporations",
+      "family": "Technology",
+      "destination": "static/art/cards/giga-corporations-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Giga-Corporations. Subject: A monumental interstellar commercial headquarters with layered orbital towers and cargo traffic above a prosperous planet. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-1f4593f7-56ea-4947-9fa7-c0d25fc7b909.png",
+      "sha256": "5b39aaceb1c93c9a16d12cf3592909660e87a41d261d68177afa5631e37c3c28",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-f.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/giga-corporations.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "parallel-universe-generator",
+      "title": "Parallel Universe Generator",
+      "family": "Technology",
+      "destination": "static/art/cards/parallel-universe-generator-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Parallel Universe Generator. Subject: Twin circular scientific apertures showing subtly different versions of the same planet, precise brass field machinery in a dark laboratory. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-1ffb0a04-6062-4ad3-ad88-ab162912e271.png",
+      "sha256": "8687721ec686eafb8de4406782111374293cd7286374bca0e821c927972d3e88",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-f.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/parallel-universe-generator.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "neo-industrial-revolution",
+      "title": "Neo-Industrial Revolution",
+      "family": "Technology",
+      "destination": "static/art/cards/neo-industrial-revolution-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Neo-Industrial Revolution. Subject: A vast clean automated industrial landscape of orbital elevators, fabrication yards and warm furnaces at dawn. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-209d3e9e-4e00-43a7-bd77-7c9d5ee2d4c8.png",
+      "sha256": "f5134c0ad8b07cfc568fbc7e18f6396e7ac569190b76083ce63fbb711acf6cb8",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-f.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/neo-industrial-revolution.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "megafleet-construction",
+      "title": "Megafleet Construction",
+      "family": "Technology",
+      "destination": "static/art/cards/megafleet-construction-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Megafleet Construction. Subject: An enormous orbital shipyard simultaneously assembling multiple large spacecraft in parallel dry docks. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-ddccf3c6-7cd0-4e27-8b2d-d5c681608185.png",
+      "sha256": "01c9106acb104199adc9e0235c3e2685bc250ffc64c5eb899f1fc2df819945dd",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-f.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/megafleet-construction.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "mind-machine-assimilation",
+      "title": "Mind/Machine Assimilation",
+      "family": "Technology",
+      "destination": "static/art/cards/mind-machine-assimilation-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Mind/Machine Assimilation. Subject: A thoughtful human silhouette and a sophisticated robotic form joined by an elegant luminous neural interface in a serene laboratory, no violence. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-296329ad-c716-472f-ab67-1d308f722e98.png",
+      "sha256": "5963ebe9b72f9d5f8ff225d87d61e06433048ae28c4c4bff6e0e85b8d4525e3c",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-f.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/mind-machine-assimilation.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "new-golden-age",
+      "title": "New Golden Age",
+      "family": "Technology",
+      "destination": "static/art/cards/new-golden-age-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card New Golden Age. Subject: A flourishing futuristic city with green terraces, civic observatories and elegant transport under warm golden dawn light. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-ff01a71e-0cdb-496c-9af9-1098ef42e795.png",
+      "sha256": "2840be20bc3e16e12216d53017366c20780f50dc676da75a0bb3726333534995",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-g.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/new-golden-age.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "galactic-empire",
+      "title": "Galactic Empire",
+      "family": "Technology",
+      "destination": "static/art/cards/galactic-empire-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Galactic Empire. Subject: An imposing but peaceful orbital capital encircling a blue planet, distant fleets and monumental civic architecture. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-9cecba1a-ef8f-4867-912a-5308905eb724.png",
+      "sha256": "3abfb434b875c9f99feeed502b170d59fea42f007ff8b1c2c482989360012f9f",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-g.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/galactic-empire.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "android-independence",
+      "title": "Android Independence",
+      "family": "Technology",
+      "destination": "static/art/cards/android-independence-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Android Independence. Subject: A diverse small group of dignified autonomous androids stepping into a sunlit frontier city, a sense of self-determined new beginnings. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-abae2281-d2e4-4f5e-a8b4-0a48c93ddd5b.png",
+      "sha256": "ce263dc4854ff5849291f39026f4ff39cea149b8543b4d19b297e7a9d1a875f5",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-g.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/android-independence.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "ministry-of-colonies",
+      "title": "Ministry of Colonies",
+      "family": "Technology",
+      "destination": "static/art/cards/ministry-of-colonies-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Technology card Ministry of Colonies. Subject: A grand but practical colonial administration observatory overlooking several departing settlement ships and a habitable planet. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-df0f0163-afac-4c6d-a393-c408b021fb86.png",
+      "sha256": "f6f8a86ab6f50211efba8e236015dae1c60ac6373ed35e89dec9bfa45e3a8eeb",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/technology-batch-g.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/ministry-of-colonies.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "maya-chaturvedi",
+      "title": "Maya Chaturvedi",
+      "family": "Event",
+      "destination": "static/art/cards/maya-chaturvedi-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Maya Chaturvedi. Subject: Original portrait of a South Asian woman visionary scientist in an ivory and graphite space-age jacket, warm thoughtful expression, Tier-one research guild observatory behind her. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-8b151322-c345-446f-8ef1-3aad14204617.png",
+      "sha256": "86051f2aa50b682e4e09c672e9f2372bc6be768423de051602fc8f025e917dc1",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/maya-chaturvedi.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "tyler-lee",
+      "title": "Tyler Lee",
+      "family": "Event",
+      "destination": "static/art/cards/tyler-lee-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Tyler Lee. Subject: Original portrait of an East Asian young adult entrepreneur in a graphite space-age suit with brass clasp, overlooking a busy orbital industrial guild. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-2398df44-bc48-441d-ae14-d107a2aa7cf1.png",
+      "sha256": "d647c2b2239b200a89a875098554b31655cb833eaa9a11102e122e19b32b1aef",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/tyler-lee.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "experimental-prototypes",
+      "title": "Experimental Prototypes",
+      "family": "Event",
+      "destination": "static/art/cards/experimental-prototypes-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Experimental Prototypes. Subject: Three distinct experimental spacecraft engine prototypes on laboratory test stands, technicians examining their contrasting configurations. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-ff9828e0-ad8d-4557-acaa-d5ee81f01314.png",
+      "sha256": "321f2d66b6fb3f5889a03280f795c8454378c250187c792ddb1a99215eb5e9fb",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/experimental-prototypes.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "march-of-progress",
+      "title": "March of Progress",
+      "family": "Event",
+      "destination": "static/art/cards/march-of-progress-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card March of Progress. Subject: A progression of increasingly sophisticated research laboratories along an orbital city terrace at dawn, scholars moving toward a bright observatory. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-3b197e6c-b68e-46de-b43f-59c1583d348f.png",
+      "sha256": "2ec580aa649be8602d215ba1d9db05a65f24765ea3a48fa5661a39cb214720c4",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/march-of-progress.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "economic-boom",
+      "title": "Economic Boom",
+      "family": "Event",
+      "destination": "static/art/cards/economic-boom-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Economic Boom. Subject: A thriving orbital trade harbor with many cargo craft and busy loading gantries, sunlit commerce and restrained brass reflections. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-e9c7f7a6-0236-4302-aaab-dd86d8c50c2c.png",
+      "sha256": "aeb87375db89e08ad43fae440cd84c929e763be3ddc288c4b5cdab924563a74e",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/economic-boom.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "covert-arms-deal",
+      "title": "Covert Arms Deal",
+      "family": "Event",
+      "destination": "static/art/cards/covert-arms-deal-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Covert Arms Deal. Subject: Two anonymous figures beside a compact unmarked spacecraft in a dim orbital hangar, exchanging a sealed equipment case. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-6b226a2b-49a5-4174-a4a0-6e01976d8f96.png",
+      "sha256": "6e792687a561c2c0569268ba1bdbbdf985ea397a3a1098800a782b5297d56471",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/covert-arms-deal.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "dimensional-rift",
+      "title": "Dimensional Rift",
+      "family": "Event",
+      "destination": "static/art/cards/dimensional-rift-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Dimensional Rift. Subject: A luminous tear in space revealing a distant habitable world through its aperture, adjacent normal stars distorted around the edge. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-2e1b93bf-6148-4f4e-84f9-f0a407173fdb.png",
+      "sha256": "10237138d789d73c3c9cebf21ced81fb81d7ab7230f793b5e3b8dc2e239cba16",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-b.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/dimensional-rift.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "research-tariffs",
+      "title": "Research Tariffs",
+      "family": "Event",
+      "destination": "static/art/cards/research-tariffs-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Research Tariffs. Subject: A scientific cargo pod paused at a customs checkpoint inside an orbital port, inspector and laboratory freight, no signs or text. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-ae87762b-02d1-4291-8ed0-eaa81a177b64.png",
+      "sha256": "22d18c611aeecad5bb7a2e4361b7a2b7b3fe03979401a75eb79f5c10476349a1",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-b.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/research-tariffs.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "black-market-industries",
+      "title": "Black Market Industries",
+      "family": "Event",
+      "destination": "static/art/cards/black-market-industries-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Black Market Industries. Subject: A concealed industrial workshop tucked into an asteroid cavern, discreet cargo crates, warm furnaces and a small transport. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-fd4913c1-c798-4d0e-aede-b6455c0cfbab.png",
+      "sha256": "c67e2fbe5af92ff4c6ecf2525d433445f03163f3a50ba3ea7c46de5703924405",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-b.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/black-market-industries.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "erratic-solar-activity",
+      "title": "Erratic Solar Activity",
+      "family": "Event",
+      "destination": "static/art/cards/erratic-solar-activity-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Erratic Solar Activity. Subject: A restless star ejecting a sweeping solar prominence toward a nearby planet, tiny spacecraft rerouting in the foreground. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-a28a6944-c2b6-409f-acf2-b05f4f19df39.png",
+      "sha256": "639c6da7ba8bf8a6387530787a17c073b1c7111c7cd8d369c8ab0748e3ea0530",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-b.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/erratic-solar-activity.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "onu",
+      "title": "Onu",
+      "family": "Event",
+      "destination": "static/art/cards/onu-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Onu. Subject: Original portrait of a thoughtful androgynous human colony representative in a weathered ivory diplomatic coat, a diverse settlement and planetary vista behind them. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-fbfb8a3d-8372-431c-9404-6f265e6e2e9d.png",
+      "sha256": "725377627b34871b262925c2129cca26184909503c81c2a95a8d4f0a956d73d4",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-b.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/onu.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "monolith-construction",
+      "title": "Monolith Construction",
+      "family": "Event",
+      "destination": "static/art/cards/monolith-construction-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Monolith Construction. Subject: A vast dark geometric monolith being erected by tiny construction cranes on an alien plain under warm low sunlight. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-19aba659-fc58-4465-af3a-73d0b4fa6ad5.png",
+      "sha256": "120232b60fc9a9a510e0cbebb10d7144c8f894b3822332a694cc2245ed8bbd17",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-b.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/monolith-construction.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "galactic-census",
+      "title": "Galactic Census",
+      "family": "Event",
+      "destination": "static/art/cards/galactic-census-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Galactic Census. Subject: A human civil servant and android assistant studying luminous unlabeled population maps in a busy orbital civic hall. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-e5387598-a8c4-4d45-919c-b80d6660724d.png",
+      "sha256": "e5fc3f8e6bed7b447dde2b9183d748f007ddf5c20e3e8157b40434ab06efe3a8",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-c.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/galactic-census.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "interstellar-arms-race",
+      "title": "Interstellar Arms Race",
+      "family": "Event",
+      "destination": "static/art/cards/interstellar-arms-race-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Interstellar Arms Race. Subject: Two distant fleets assembling on opposite sides of a planetary orbital shipyard, tense but without combat or explosions. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-2db90c8c-1827-444e-907e-3bcde5728139.png",
+      "sha256": "9cfa7754ef9842d72511c1e3bb721fe949e9dcb8c90fe632ac80acdb1a183238",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-c.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/interstellar-arms-race.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "research-grant",
+      "title": "Research Grant",
+      "family": "Event",
+      "destination": "static/art/cards/research-grant-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Research Grant. Subject: A scientist receiving a compact sealed research instrument from a civic patron in a sunlit observatory laboratory, no currency or writing. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-2115fc0f-714c-4d5e-8aea-f4f813ea9cf8.png",
+      "sha256": "52ba91c50c53f418d7d86d0350787f453a56bc85187d84eb0d71c3860cc67a4a",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-c.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/research-grant.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "museum-of-retired-spacecraft",
+      "title": "Museum of Retired Spacecraft",
+      "family": "Event",
+      "destination": "static/art/cards/museum-of-retired-spacecraft-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Museum of Retired Spacecraft. Subject: Several historic spacecraft displayed in a monumental orbital museum hangar, small visitors walking beneath preserved hulls. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-a862df85-9fa1-4242-bc6e-f40f02013426.png",
+      "sha256": "f046067dd3b9eb8972c44f3fc7378cfdad8593bc7192d00b7262b2dd184bcf2d",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-c.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/museum-of-retired-spacecraft.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "mass-enlightenment",
+      "title": "Mass Enlightenment",
+      "family": "Event",
+      "destination": "static/art/cards/mass-enlightenment-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Mass Enlightenment. Subject: Many human and android scholars beneath a monumental orbital observatory dome watching a luminous celestial discovery together. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-4e7615e3-7adc-46d9-aab0-a287f74cbca7.png",
+      "sha256": "75636b81c0de4f92321315119624e786c9e579f2468b099d8b88254436358a42",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/inspect-mass-enlightenment-393.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/mass-enlightenment.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "galactic-hq",
+      "title": "Galactic HQ",
+      "family": "Event",
+      "destination": "static/art/cards/galactic-hq-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Galactic HQ. Subject: A monumental orbital command headquarters with a radiating docking ring and a nearby shipyard, blue planet beneath. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-a56e198a-17f4-4ea2-b604-ea939732f266.png",
+      "sha256": "f5878a78105f03671cac99158773885d07cfa493a3b383c8d85a253c4af4a4c9",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-c.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/galactic-hq.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "dyson-sphere-mk-i",
+      "title": "Dyson Sphere, Mk. I",
+      "family": "Event",
+      "destination": "static/art/cards/dyson-sphere-mk-i-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Event card Dyson Sphere, Mk. I. Subject: An incomplete stellar energy collector, a wide segmented ring of metallic panels surrounding a bright small star, unfinished construction visible. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-aa4d5ff8-eb27-4ec4-bd89-33e122f04ecf.png",
+      "sha256": "9ab554d84a9218e3f78917aa1cc3ff9f480fed8cb0417257fd59f0661c42435c",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/event-batch-c.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/dyson-sphere-mk-i.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "transcendence",
+      "title": "Transcendence",
+      "family": "Achievement",
+      "destination": "static/art/cards/transcendence-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Achievement card Transcendence. Subject: A graceful monumental scientific gateway on a remote plateau opening toward a luminous planetary horizon, an advanced research vessel passing through; aspirational discovery. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-d2b5cc06-3478-4e8b-9494-12111df69769.png",
+      "sha256": "08e77276ac9d36cf83389c2d29698e32b2325558e4f7ad455af84eb21459abf3",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/inspect-transcendence-393.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/transcendence.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "efficiency",
+      "title": "Efficiency",
+      "family": "Achievement",
+      "destination": "static/art/cards/efficiency-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Achievement card Efficiency. Subject: An elegantly ordered automated production line with precise synchronized robotic arms and neatly finished components, no clutter. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-2a63343c-7d86-472c-beed-73b477274d74.png",
+      "sha256": "1a89f2dfe9e3f6fe4bfe62bb3aeaa1f39c91cb1b6968b2047594a97b9c24c79c",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/achievement-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/efficiency.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "prosperity",
+      "title": "Prosperity",
+      "family": "Achievement",
+      "destination": "static/art/cards/prosperity-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Achievement card Prosperity. Subject: A flourishing colony valley with terraced farms, a compact research city and orbital transport rising over a blue lake. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-14e90f18-4780-4013-8082-c45037783312.png",
+      "sha256": "3d2929112d182db3c80a20011a358d9d79a50987d923c35bbd96fd0794524838",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/achievement-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/prosperity.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "agility",
+      "title": "Agility",
+      "family": "Achievement",
+      "destination": "static/art/cards/agility-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Achievement card Agility. Subject: A nimble research spacecraft weaving among elegant orbital service rings, a clear curved path conveyed through composition rather than drawn arrows. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-e86e48bd-53bd-406a-8a4d-956ab4c283d0.png",
+      "sha256": "86b37c48f9a980f7d3600cd8082fd38161f1839baed979afaae5d1af7410663d",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/achievement-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/agility.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "posthumanist",
+      "title": "Posthumanist",
+      "family": "Achievement",
+      "destination": "static/art/cards/posthumanist-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Achievement card Posthumanist. Subject: A small diverse group of serene augmented humans and androids in an airy futuristic habitat garden, thoughtful posthuman society. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-900b8131-e130-4f81-821a-96fa3482c01d.png",
+      "sha256": "a5fb0a91f65e4eb7405edb36696a973f5862fc932a79a86c403df0386cbc88fd",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/achievement-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "artPosition": "center 20%",
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/posthumanist.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "strategist",
+      "title": "Strategist",
+      "family": "Achievement",
+      "destination": "static/art/cards/strategist-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Achievement card Strategist. Subject: An orbital planning room with a commander contemplating an unlabeled three-dimensional arrangement of actual distant ships and planet projections, no board game pieces. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-c54149dc-4e81-462a-a207-2493aa03273b.png",
+      "sha256": "a318c9536cf941bc44c3847f796f7c505b798549e6bfda99879e19247bcf56ba",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/achievement-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "artPosition": "center 15%",
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/strategist.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "warlord",
+      "title": "Warlord",
+      "family": "Achievement",
+      "destination": "static/art/cards/warlord-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Achievement card Warlord. Subject: A disciplined fleet of substantial graphite spacecraft above three distant illuminated planetary outposts, dramatic but no battle. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-e17c9609-b90b-4dad-b588-33119a82f62e.png",
+      "sha256": "e332df31939b245bbcd95fd6fbb0d311497c59d64ca1b96d191eaa8aa6f7dc29",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/achievement-batch-a.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/warlord.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    },
+    {
+      "id": "specialization",
+      "title": "Specialization",
+      "family": "Achievement",
+      "destination": "static/art/cards/specialization-v1.png",
+      "prompt": "Use case: stylized-concept. Asset type: original science-fiction card illustration for Achievement card Specialization. Subject: A series of related orbital industrial stations with visibly shared modular design, coordinated over a mineral-rich planet. Style: sophisticated painterly realism, finely observed physical materials, ivory ceramic, graphite metal and restrained aged brass, subtle teal accents; cohesive premium tactile space-exploration board-game art. Composition: landscape 3:2 painting, strong instantly recognizable central subject, primary identity concentrated within central 45 percent of image height so a wide card-art window remains meaningful; no decorative border. Lighting: cinematic natural illumination, deep but readable shadows, controlled warm highlights. Constraints: illustration only, no card frame, typography, letters, numbers, symbols, logos, watermark, UI, dice or board-game pieces. Original composition, do not reproduce published artwork. Art conveys subject identity, not an implementation of gameplay effects.",
+      "status": "generated",
+      "created": "2026-10-19",
+      "method": "built-in image_gen",
+      "source": "Original generated illustration; no licensed source artwork used.",
+      "generationPath": "/Users/anicolao/.codex/generated_images/01a14efc-5e81-7d50-9b14-63d8566a9f01/exec-6b3ef8f7-63cc-49f4-b512-c60bea02163b.png",
+      "sha256": "d2c13c2d57495ffb574ce05595eb64c1a596e7bf92e70e0a45f932596af6bee7",
+      "derivative": "Unmodified native PNG; card renderer uses object-fit cover.",
+      "implementationArtReview": {
+        "date": "2026-10-19",
+        "evidence": "tmp/local-gallery-review/round41/final-batch.png",
+        "finding": "Distinct relevant subject, cohesive materials and lighting; independent visual acceptance pending."
+      },
+      "renderedArtReview": {
+        "evidence": "tmp/local-gallery-review/round41-final/rendered-art-crops/specialization.png",
+        "finding": "Actual shared-renderer art window inspected locally; portraits retain face identity through focal metadata. Independent acceptance pending."
+      }
+    }
+  ]
+}
