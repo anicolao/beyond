@@ -69,3 +69,7 @@ A fresh independent ordinary3-player desktop/4K run passes2/2 journeys/126 exact
 The fresh native4K PNG is byte-identical to the current committed reference (SHA-256 d9b502e653746a556c76c0c74ed00e82aa8085e4e4b4dbb53fbc176876b3ecd6), which already contains the physical header-clearance fix made before PR6 publication. No further production/style or baseline change is warranted by this reproduction. Earlier candidates and all48 final journeys/2219 references are preserved. Fresh local PNGs, geometry and exact log are indexed in `tmp/local-research-review/round53/README.md`.005 remains held.
 
 ![Verified native3-player4K handoff](screenshots/research-and-recover-a-3-player-shared-cardinal-first-round/057-turn-1-handoff-tabletop-4k-darwin.png)
+
+## Reviewer54 — scoped acceptance and fresh full exact
+
+Reviewer19:33 independently accepts the refreshed native3-player4K Level I/Four discoveries separation and retained topology/cards, resolving the queued19:17 finding. After this acceptance, a fresh full macOS non-updating run passes48/48 journeys/2219 exact frames; all48 records report generation=false. Every one of the2219 reference SHA-256 values matches the preserved round52 manifest. The affected fresh desktop/4K run remains2/2 journeys/126 exact frames. No UI, reference, capture deadline or comparison/geometry guard changed for this revalidation. Evidence: `tmp/local-research-review/round54/README.md`. Linux/hosted gates remain separate;005 still requires explicit reviewer release.

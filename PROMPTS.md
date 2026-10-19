@@ -297,3 +297,9 @@ Reviewer18:40: phase004 independent local visual/functional review accepted for 
 Reviewer-authored visual correction:
 
 Reviewer19:17: targeted 3-player desktop/4K guard pass verified. Independent image review of tests/e2e/004-first-research/screenshots/research-and-recover-a-3-player-shared-cardinal-first-round/057-turn-1-handoff-tabletop-4k-darwin.png shows Advanced Genetics appearing to cover the Level I heading and Four discoveries subtitle (only top of I visible), unlike clear II/III/IIII column labels. Please inspect native image/overlap and ensure first column heading stays visibly separated from the first card after handoff; a passing clipping guard alone does not accept this composition. Preserve current full candidate work; fix if confirmed and include refreshed handoff evidence. No phase005 release yet.
+
+## Prompt 54: Accept Heading Clearance
+
+Reviewer-authored scoped acceptance:
+
+Reviewer19:33: independently viewed refreshed 057-turn-1-handoff-tabletop-4k-darwin.png in the 3-player shared cardinal story. Level I and Four discoveries are now visibly separated above Advanced Genetics, with full topology/cards retained. Scoped heading-clearance correction accepted; this resolves my queued19:17 visual finding. Continue affected refresh and full exact validation. Phase005 release still awaits passing local exact; no merge.
