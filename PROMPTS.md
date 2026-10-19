@@ -135,3 +135,117 @@ Reviewer: independently inspected full navigation-3840.png; 4K mode entry accept
 Reviewer-authored acceptance and instruction:
 
 Final local checkpoint: phase002 LOCAL ACCEPTANCE restored. Independently reviewed corrected 038 recovery phone and039 keyboard state; bounded dialog is readable and properly separates background controls. Prior desktop/phone/live gathering, navigation and full4K reviews stand. Verified remote-round24-verify.log completes bun run verify successfully including16 exact browser journeys and26 guards. Commit/push phase002 and open new PR based on feat/card-gallery, report URL/head. You are explicitly authorized to start003 Basic setup on a NEW branch based on this locally accepted phase002 branch while Linux CI/hosted verification finish. Track outstanding002 gates separately and propagate fixes. Implement source-reviewed exact2/3/4-player Basic setup across remote desktop/phone and shared tabletop, legal unique factions and immutable Begin; compare every rendered surface against approved UX/concepts before baselines. Keep local preview available, no fake gameplay, all PRs unmerged. Update ledger with restored local acceptance; final002 acceptance still needs Linux exact plus matching hosted preview.
+
+## Prompt 27: Recompose Starting Boards
+
+Reviewer-authored checkpoint:
+
+Phase003 first independent concept review: viewed audit-1280.png and audit-393.png beside approved03-table-desktop. NOT locally accepted. Desktop player mat is a tiny unreadable thumbnail while Inspect faction select/button occupies a separate web panel; tech faces are narrow title strips and Exploration is squeezed into a narrow sidebar. Match the actual composition: readable active faction supply/resources integrated across bottom, compact opponents, substantial semantic technology card objects and proportionate exploration board, preserving reviewed real topology and concealed decks. Phone needs compact opponent/status strip, board-focused center and persistent readable own-resource/decision rail; currently tall header/button rows plus huge empty framed region and generic select dominate. Do not copy invented concept rules or add turn actions before004. Use current setup/inspect functions in tactile components. Keep original/provenanced artwork (reference scans only as rules sources). Iterate locally, provide refreshed desktop/phone/full4K and live review URLs before baselines. PR4 checks now all pass; supervisor still owes final Linux/hosted visual verification. Log as reviewer-authored.
+
+## Prompt 28: Focus Compact Desktop
+
+Reviewer-authored checkpoint:
+
+Round27 independent review: viewed4p-technology-1280/393/3840 and4p-exploration-393. Improved substantial cards, readable bottom economy and balanced Exploration; phone direction substantially closer. NOT accepted yet: at1280x720 Technology clips Advanced Genetics text and completely hides fourth starting Robotics card and lower prerequisite nodes; Full faction mat button also overlaps mat footer production text. Provide a deliberate compact-desktop overview/focus treatment preserving complete public topology/card availability, with clear visible scrolling/focus affordance if needed and readable full card inspection. Keep mat footer/control nonoverlapping. Do not simply shrink all text or weaken clipping checks. Inspect1280x720 and short desktop alongside4K; use native semantic controls and approved concept03 hierarchy. Then provide fresh compact desktop plus live URL. Continue no phase003 baselines/004 until reviewed. PR4 is independently finally accepted at656f04d: Linux evidence/checks, matching revision.json and hosted create/reload verified; update ledger accordingly. Log reviewer-authored.
+
+## Prompt 29: Verify Compact Focus
+
+Reviewer-authored continuation:
+
+Continue the authorized round28 compact-desktop correction after the transient model-capacity error. Reviewer inspected updated audit-1280.png: all starting cards/slots now visible and mat footer no longer overlaps, promising. Finish focus/return keyboard and short-desktop checks, provide focused Technology screenshot plus4-player compact state and live URL for independent review. No baseline/004 release yet. Log as reviewer continuation.
+
+## Prompt 30: Validate Basic Setup
+
+Reviewer-authored visual checkpoint:
+
+Round28 visual checkpoint: revised phase003 composition accepted for final local validation. Independently opened live4player room, used Focus Technology and Lower branches; full public overview and readable scroll/focus treatment work. Reviewed tabletop-4-start and corner-mat-reader full4K, plus prior phone and compact640 screenshots; seat orientation and current setup/inspection scope are sound. Focus log now passes720/640/600/1440/4K. Proceed illustrated setup baseline generation then independent exact/full required checks for all2/3/4-player remote and shared-table variants, immutable Begin, unique factions, reload/recovery and keyboard. Report result/evidence/head for final local acceptance. Do not start004 yet; after checks pass I will release next phase with CI overlap. No merge. Log reviewer-authored.
+
+## Prompt 31: Resume Setup Validation
+
+Reviewer-authored continuation:
+
+Continue the already-authorized phase003 final validation after the capacity interruption. Visual acceptance at round28 stands; resume illustrated captures and independent full checks. Preserve user files if disk cleanup is needed; report concrete storage blockers. Phase004 remains held until successful local verification. Reviewer continuation, no new scope.
+
+## Prompt 32: Correct Capture Defects
+
+Reviewer-authored continuation:
+
+Reviewer continuation after capacity interruption: basic-final-candidates.log completed23 passed/5 failed. Fix concrete guards without weakening them: phone3/4player Take seat2 touch target too small; desktop3/4player Choose faction for Cleo clipped by remote-roster; desktop2player shared Technology prerequisites clipped by technology-layout. Inspect these intermediate setup views at actual viewport, then rerun affected journeys and full independent comparison. Prior game-board visual acceptance does not cover these new failed gathering states; provide corrected captures.004 remains held.
+
+## Prompt 33: Clarify Shared Navigation
+
+Reviewer-authored final-capture review:
+
+Reviewer final-capture review after capacity interruption: confirmed basic-final-verify.log28 exact journeys pass, but NOT final visual acceptance. Inspected003 screenshots 2player shared015-begun-desktop: center board clips lower technology cards/branches with no visible focus/upper-lower controls, huge surrounding empty space; apply deliberate overview/focus navigation to compact shared mode too, preserving seat-facing controls/topology and full-card access. 4player remote026-faction-chosen-2-desktop is actually portrait guest view: roster cuts off Ada at top and Dara below without clear scroll cue. Add visible accessible roster navigation/scroll affordance while keeping current player controls reachable; do not shrink touch targets. Review actual dimensions, not filename suffix. Preserve passing guards, provide corrected compact-shared and portrait roster PNGs before final evidence update.004 remains held. Resume same task; no merge.
+
+## Prompt 34: Finalize Shared Status
+
+Reviewer-authored checkpoint:
+
+Reviewer 04:11: independently inspected round33 shared-2p-focus-1280.png, shared-4p-lower-1280.png and 4p-roster-Your-seat-393.png. Shared focus/branch navigation and portrait roster affordances resolve prior blockers; shared log now passes 2/3/4 at 1280/1440. One visible residual: Starting position: setup is complete... footer overlays the top of Ada mat in both shared focus PNGs, low contrast and colliding with mat header. Move that status into a contained readable location or omit redundant status. Finish current corner audit (latest log screenshot timeout), then refresh full checks before publication/004. No duplicate redesign requested; these reviewed controls look good.
+
+## Prompt 35: Publish Basic Setup
+
+Reviewer-authored delegation:
+
+Reviewer 05:22: phase003 LOCAL ACCEPTANCE granted. Independently reviewed refreshed compact overview, rotated1280 mat reader, removed footer, portrait navigation and final4K 025-begun tabletop capture against prior concept review; final verify log now31/31 exact journeys, guards and required checks pass. Commit/push003 and open new stacked PR based on feat/remote-rooms; report PR/head. Then explicitly proceed with milestone004 on a NEW branch stacked on003 while Linux CI and hosted verification finish. Preserve full existing functions and approved UX fidelity; iterate004 locally and await independent local review before005. Track003 final CI/Linux exact/hosted revision gates separately, propagate fixes if needed. All PRs remain unmerged. Record delegation in PROMPTS and work in PROMPT_WORK.
+
+## Prompt 36: Restore Rotated Cards
+
+Reviewer-authored checkpoint:
+
+Reviewer 06:11: PR5 now head32bdfdb; final Linux/hosted gates still pending. Independently inspected tmp/local-research-review/corner-1280-plan.png: rotated orientation is preserved, but selected card is reduced to a thin title strip above a large empty dark area, losing the tactile illustrated card presentation. Before004 readiness, give compact rotated planning a deliberate readable card/bonus composition (full-card inspection can remain), with visible required ship-choice controls and complete commit affordance. Do not accept geometry pass alone. If this PNG predates your current fix, provide refreshed evidence instead. Continue current fixes; no005 release.
+
+## Prompt 37: Complete Research Review
+
+Reviewer-authored continuation:
+
+Reviewer 11:28: independently inspected round36 1280-card-and-bonus and1280-ready-to-commit. Substantial illustrated card, legible bonus, ship selection and contained payment/commit resolve the thin-card correction; scoped visual acceptance for these views. Continue now: finish PR5 cold-arrival readiness diagnosis/fix with unchanged guards and propagate into004; complete004 functional review evidence across remote/phone/shared4K including trades, reload and handoff, and provide current live URLs plus final captures for independent review. No005 release or final004 acceptance yet. PR5 head75d228c still Linux30/31; hosted/static pass. Do not wait for another human prompt, never merge.
+
+## Prompt 38: Verify Capture Fixes
+
+Reviewer-authored continuation:
+
+Reviewer 11:54: PR5 Linux run39246644493 finished29/31; independently read failed log. Cold phone arrival now passes. Failures are tabletop-4k foundation recovery Persist Ada seat (recovery.spec.ts18) and003 two-player shared setup (setup-tabletop.spec.ts20), shared capture deadline2017.997ms versus2000ms. Inspect traces/capture cost and resolve without weakening budgets, comparisons or guards; propagate any003 fix into004. Hosted publish/static/docs pass3d09db1; supervisor verified exact hosted revision and retained AIPFK host recovery. Agree with removing empty achievement acknowledgement per UX contract; finish that correction and refreshed flow evidence, then provide review-ready live URLs.004 local acceptance and005 release remain pending.
+
+## Prompt 39: Correct Card Composition
+
+Reviewer-authored delegation:
+
+Overriding human correction: user rejected PR3 gallery appearance and inconsistent card sizes; exact human message logged in meta-prompts.md Gallery quality rejection. Supervisor independently reopened hosted PR3 and docs/ux/concepts/04-research.png and WITHDRAWS gallery visual acceptance. Same-family cards have content-driven heights (no aspect ratio), oversized headers and weaker art/icon/rule hierarchy versus concept. Hold005 and further phase advancement. Prioritize local shared CardFace/gallery correction against04-research,06-colonization,08-achievements-v2 with deliberate consistent dimensions per family and composed art/rules; preserve semantic source-reviewed rules/accessibility, no cropping rules to force fit. No baseline churn until independent visual acceptance. Existing003 CI repair may finish; preserve work and propagate eventual card fix through dependent branches. Do not merge. This is reviewer-authored delegation; do not duplicate human text into PROMPTS.
+
+## Prompt 40: Complete Card Inventory
+
+Reviewer-authored delegation:
+
+Additional overriding human requirement: gallery must have exactly all cards for the game, no more and no less. Verbatim logged in meta-prompts.md Complete card inventory. Replace six-example scope with complete source-verified inventory for documented Beyond the Sun second-printing base game; preserve documented expansion/variant exclusions. Audit every card family, canonical identity, printed text, level/type, and physical duplicate quantities against authoritative sources. Distinguish unique designs from physical copies explicitly; no invented filler or extra fixture-only cards in collection. Use canonical production content, keep optional presentation markers separate, verify manifest equality and quantities to detect missing/extra/duplicate IDs. Do not guess unavailable card text/art; report precise source gaps. Update gallery counts/docs and completeness evidence. Combine with queued visual correction, no advancement/baselines before independent acceptance. Reviewer-authored delegation; human text remains in meta-prompts.
+
+## Prompt 41: Complete Original Illustrations
+
+Reviewer-authored delegation:
+
+Reviewer checkpoint: inventory report and six catalog checks inspected; internal consistency is useful progress, not final source/visual acceptance. Once current integration/type and two long-face overflow fixes pass, proceed directly to completing the 68 missing original illustrations in coherent reviewed batches with provenance. Do not stop at pending-art placeholders or wait for another human prompt. Show a small representative batch against the approved concepts before scaling the artwork, then complete all families. Keep local-first, no baseline churn or phase005; preserve source limitations explicitly. Human useful-progress request is logged in meta-prompts.md.
+
+## Prompt 42: Scope Artwork Approval
+
+Reviewer-authored checkpoint:
+
+Scoped art-batch review: independently inspected round41 phone Human Experiments, Mass Enlightenment and Transcendence and reopened04-research. The three distinct illustrations crop coherently and fit the intended painterly material palette; proceed with remaining65 original illustrations using this direction and provenance. This approves the representative artwork direction only, not full card visual acceptance: final review still needs stronger readable icon/cost hierarchy against concepts, complete-art collection, source fidelity and desktop/shared contexts. Keep all baselines and phase advancement held.
+
+## Prompt 43: Resolve Edition Discrepancy
+
+Reviewer-authored checkpoint:
+
+Reviewer checkpoint: round42 phone hierarchy and enlarged shared4K inspector independently viewed; these scoped corrections look satisfactory. I also verified the three pinned source hashes and ten Achievement entries; publisher clarification confirms Specialization includes shipyards. Full acceptance is still pending source review. While I review remaining faces, investigate the documented WISE edition-name discrepancy using publisher/authoritative second-printing evidence, and report any precise mechanical-text uncertainty still unresolved. Preserve current visuals; do not generate baselines, push, advance005 or redo passing checks absent changes. Log as reviewer-authored.
+
+## Prompt 44: Verify Gallery Correction
+
+Reviewer-authored checkpoint:
+
+Reviewer checkpoint: independently compared all 46 Technology definitions against all ten readable pinned source crops, plus all 20 Events against four readable Event crops and publisher Museum/Dyson/Quantum/Ministry clarifications. No mechanical mismatch identified. WISE investigation is complete to available evidence; preserve the documented unresolved physical second-print name/verbatim-wording limitation, do not guess or claim definitive edition equality. Round42 shared CardFace visual correction is locally accepted based on reviewed phone dense faces, desktop collection/live search/focus and shared/corner/4K contexts. You may now prepare final illustrated gallery E2E evidence and run independent macOS/Linux exact comparisons with unchanged guards. Cover all100 identity/quantity equality and original-art completeness, full markers and long faces. Prepare a concrete propagation plan to update PR3 and carry correction through PR4/PR5/current004 without mixing future gameplay into earlier branches. Keep005 held; do not merge. Report exact outcomes and propagation plan before publishing changes; full final acceptance remains pending these checks and hosted revision review. Log this as reviewer-authored.
+
+## Prompt 45: Publish Linux Candidates
+
+Reviewer-authored response:
+
+Reviewer response to Linux runner question: no additional local endpoint is known. Do not pursue sudo credentials or install a new runtime. Complete macOS exact evidence and the propagation plan first; report Linux as pending, then use the existing GitHub pinned Linux workflow after the reviewed stack update is published. Linux is a final acceptance gate, not a prerequisite for that publication. The earlier request to report before publishing remains for the propagation plan/macOS results; no need to stall useful local work. Keep005 held and preserve all review evidence given low disk space. Log as reviewer-authored.

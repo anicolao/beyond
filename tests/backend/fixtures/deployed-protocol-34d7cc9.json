@@ -1,0 +1,4583 @@
+{
+  "sourceRevision": "34d7cc973bbc9af355f589c146ef30b0f890a13d",
+  "fixtures": [
+    {
+      "name": "remote-2",
+      "mode": "remote",
+      "commands": [
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-created",
+            "actorUid": "compat-host",
+            "revision": 0,
+            "commandId": "070ae603-2033-49fa-b6f6-9ccc11a70610",
+            "position": "p1",
+            "name": "Ada",
+            "ready": false,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 0,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1"
+            },
+            "configVersion": 0,
+            "revision": 0,
+            "lastCommand": "070ae603-2033-49fa-b6f6-9ccc11a70610"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-seat-claimed",
+            "actorUid": "compat-guest2",
+            "revision": 1,
+            "commandId": "46f4306c-bba6-4bd2-8f24-338b756761a0",
+            "position": "p2",
+            "name": "Bora",
+            "ready": false,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 1,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 1,
+            "revision": 1,
+            "lastCommand": "46f4306c-bba6-4bd2-8f24-338b756761a0"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-host",
+            "revision": 2,
+            "commandId": "ec42d103-534f-43b3-8483-2b1934fc8aba",
+            "position": "p1",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 1,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 1,
+            "revision": 2,
+            "lastCommand": "ec42d103-534f-43b3-8483-2b1934fc8aba"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest2",
+            "revision": 3,
+            "commandId": "ee093ce0-9513-4fb2-bf86-4523e108939a",
+            "position": "p2",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 1,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 1,
+            "revision": 3,
+            "lastCommand": "ee093ce0-9513-4fb2-bf86-4523e108939a"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-settings-changed",
+            "actorUid": "compat-host",
+            "revision": 4,
+            "commandId": "e427ac1a-0124-4281-94a7-c06d8cd46942",
+            "position": "",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 2,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 2,
+            "revision": 4,
+            "lastCommand": "e427ac1a-0124-4281-94a7-c06d8cd46942"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-seat-renamed",
+            "actorUid": "compat-guest2",
+            "revision": 5,
+            "commandId": "b49da55e-ede8-4ad8-a52f-260f7b426fe7",
+            "position": "p2",
+            "name": "Bora Reader",
+            "ready": false,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 3,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 3,
+            "revision": 5,
+            "lastCommand": "b49da55e-ede8-4ad8-a52f-260f7b426fe7"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-seat-left",
+            "actorUid": "compat-guest2",
+            "revision": 6,
+            "commandId": "705533ed-e866-4dba-9c30-cea40a6b5292",
+            "position": "p2",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 4,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1"
+            },
+            "configVersion": 4,
+            "revision": 6,
+            "lastCommand": "705533ed-e866-4dba-9c30-cea40a6b5292"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-seat-claimed",
+            "actorUid": "compat-guest2",
+            "revision": 7,
+            "commandId": "e99d907e-286a-499c-ac1e-f6080797ef77",
+            "position": "p2",
+            "name": "Bora Reader",
+            "ready": false,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 5,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 5,
+            "revision": 7,
+            "lastCommand": "e99d907e-286a-499c-ac1e-f6080797ef77"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-faction-selected",
+            "actorUid": "compat-host",
+            "revision": 8,
+            "commandId": "741f26c4-64ce-4eac-9b05-3fdc678c516e",
+            "position": "p1",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 6,
+            "code": "FIXAA",
+            "faction": "nishida"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 6,
+            "revision": 8,
+            "lastCommand": "741f26c4-64ce-4eac-9b05-3fdc678c516e",
+            "factions": {
+              "p1": "nishida"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-faction-selected",
+            "actorUid": "compat-guest2",
+            "revision": 9,
+            "commandId": "70412c39-54ba-4dbe-95b4-b9669e2fae5a",
+            "position": "p2",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 7,
+            "code": "FIXAA",
+            "faction": "zheng"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 7,
+            "revision": 9,
+            "lastCommand": "70412c39-54ba-4dbe-95b4-b9669e2fae5a",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-host",
+            "revision": 10,
+            "commandId": "25850c1f-b29d-4c97-9899-258328708ed0",
+            "position": "p1",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 7,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 7,
+            "revision": 10,
+            "lastCommand": "25850c1f-b29d-4c97-9899-258328708ed0",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest2",
+            "revision": 11,
+            "commandId": "ffffc579-6cd8-4636-a536-6071d8d58f96",
+            "position": "p2",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 7,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 7,
+            "revision": 11,
+            "lastCommand": "ffffc579-6cd8-4636-a536-6071d8d58f96",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-settings-changed",
+            "actorUid": "compat-host",
+            "revision": 12,
+            "commandId": "ca021195-403e-42f3-a008-e6061b4f1981",
+            "position": "",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 8,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 8,
+            "revision": 12,
+            "lastCommand": "ca021195-403e-42f3-a008-e6061b4f1981",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-host",
+            "revision": 13,
+            "commandId": "871bdc3a-878c-4398-ba41-87c5d6bd6ba6",
+            "position": "p1",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 8,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 8,
+            "revision": 13,
+            "lastCommand": "871bdc3a-878c-4398-ba41-87c5d6bd6ba6",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest2",
+            "revision": 14,
+            "commandId": "6ff97863-af1a-4a91-8826-7420b2493b5a",
+            "position": "p2",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 8,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 8,
+            "revision": 14,
+            "lastCommand": "6ff97863-af1a-4a91-8826-7420b2493b5a",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-begun",
+            "actorUid": "compat-host",
+            "revision": 15,
+            "commandId": "fe230f09-5964-4a64-ac0a-5cf79e188c44",
+            "position": "",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 8,
+            "code": "FIXAA",
+            "start": {
+              "version": "basic-2020-v1",
+              "seed": "12345678-1234-4567-89ab-123456789abc"
+            }
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "started",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 2,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 8,
+            "revision": 15,
+            "lastCommand": "fe230f09-5964-4a64-ac0a-5cf79e188c44",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng"
+            },
+            "start": {
+              "version": "basic-2020-v1",
+              "seed": "12345678-1234-4567-89ab-123456789abc"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tabletop-2",
+      "mode": "tabletop",
+      "commands": [
+        {
+          "event": {
+            "schema": 1,
+            "type": "table-created",
+            "actorUid": "compat-table",
+            "revision": 0,
+            "commandId": "2e201226-7ccd-41ab-8002-e7026c6b8661",
+            "position": "",
+            "name": ""
+          },
+          "after": {
+            "seats": {},
+            "firstPlayer": "",
+            "revision": 0,
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "2e201226-7ccd-41ab-8002-e7026c6b8661"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "seat-joined",
+            "actorUid": "compat-table",
+            "revision": 1,
+            "commandId": "4961b310-8d9f-47e1-aaf9-968851860b84",
+            "position": "south",
+            "name": "Ada"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada"
+            },
+            "firstPlayer": "south",
+            "revision": 1,
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "4961b310-8d9f-47e1-aaf9-968851860b84"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "seat-joined",
+            "actorUid": "compat-table",
+            "revision": 2,
+            "commandId": "46f8600c-fb6d-416b-b06e-be9a7f99a83d",
+            "position": "north",
+            "name": "Bora"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora"
+            },
+            "firstPlayer": "south",
+            "revision": 2,
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "46f8600c-fb6d-416b-b06e-be9a7f99a83d"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "first-player-chosen",
+            "actorUid": "compat-table",
+            "revision": 3,
+            "commandId": "a65852b8-2f72-4dd9-ac93-c98560817874",
+            "position": "north",
+            "name": ""
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora"
+            },
+            "firstPlayer": "north",
+            "revision": 3,
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "a65852b8-2f72-4dd9-ac93-c98560817874"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "table-faction-selected",
+            "actorUid": "compat-table",
+            "revision": 4,
+            "commandId": "61789085-482f-4dfa-9cab-9739be65da3e",
+            "position": "south",
+            "name": "",
+            "faction": "nishida"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora"
+            },
+            "firstPlayer": "north",
+            "revision": 4,
+            "factions": {
+              "south": "nishida"
+            },
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "61789085-482f-4dfa-9cab-9739be65da3e"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "table-faction-selected",
+            "actorUid": "compat-table",
+            "revision": 5,
+            "commandId": "6e8c1399-de5f-4021-838e-d3c1bf1ba81e",
+            "position": "north",
+            "name": "",
+            "faction": "zheng"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora"
+            },
+            "firstPlayer": "north",
+            "revision": 5,
+            "factions": {
+              "south": "nishida",
+              "north": "zheng"
+            },
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "6e8c1399-de5f-4021-838e-d3c1bf1ba81e"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "table-settings-changed",
+            "actorUid": "compat-table",
+            "revision": 6,
+            "commandId": "9aa2ad5a-bda1-47ea-8e8d-65c4a43da51d",
+            "position": "",
+            "name": "",
+            "settings": {
+              "factions": "basic",
+              "achievements": "randomized"
+            }
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora"
+            },
+            "firstPlayer": "north",
+            "revision": 6,
+            "factions": {
+              "south": "nishida",
+              "north": "zheng"
+            },
+            "settings": {
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "9aa2ad5a-bda1-47ea-8e8d-65c4a43da51d"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "game-begun",
+            "actorUid": "compat-table",
+            "revision": 7,
+            "commandId": "b8296253-9e67-40ef-98f3-5508ab9b2028",
+            "position": "",
+            "name": "",
+            "start": {
+              "version": "basic-2020-v1",
+              "seed": "12345678-1234-4567-89ab-123456789abc"
+            }
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora"
+            },
+            "firstPlayer": "north",
+            "revision": 7,
+            "factions": {
+              "south": "nishida",
+              "north": "zheng"
+            },
+            "settings": {
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "start": {
+              "version": "basic-2020-v1",
+              "seed": "12345678-1234-4567-89ab-123456789abc"
+            },
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "b8296253-9e67-40ef-98f3-5508ab9b2028"
+          }
+        }
+      ]
+    },
+    {
+      "name": "remote-3",
+      "mode": "remote",
+      "commands": [
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-created",
+            "actorUid": "compat-host",
+            "revision": 0,
+            "commandId": "0fa3764e-850f-41a0-b475-7203509ce758",
+            "position": "p1",
+            "name": "Ada",
+            "ready": false,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 0,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1"
+            },
+            "configVersion": 0,
+            "revision": 0,
+            "lastCommand": "0fa3764e-850f-41a0-b475-7203509ce758"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-seat-claimed",
+            "actorUid": "compat-guest2",
+            "revision": 1,
+            "commandId": "33de7531-79d3-441a-a511-5943444217d2",
+            "position": "p2",
+            "name": "Bora",
+            "ready": false,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 1,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 1,
+            "revision": 1,
+            "lastCommand": "33de7531-79d3-441a-a511-5943444217d2"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-seat-claimed",
+            "actorUid": "compat-guest3",
+            "revision": 2,
+            "commandId": "ad3c2434-e663-44dc-ae84-d81d98211166",
+            "position": "p3",
+            "name": "Cleo",
+            "ready": false,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 2,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2",
+              "compat-guest3": "p3"
+            },
+            "configVersion": 2,
+            "revision": 2,
+            "lastCommand": "ad3c2434-e663-44dc-ae84-d81d98211166"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-host",
+            "revision": 3,
+            "commandId": "6271f6a3-8ddb-4790-a8eb-8ec2741ab1cd",
+            "position": "p1",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 2,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2",
+              "compat-guest3": "p3"
+            },
+            "configVersion": 2,
+            "revision": 3,
+            "lastCommand": "6271f6a3-8ddb-4790-a8eb-8ec2741ab1cd"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest2",
+            "revision": 4,
+            "commandId": "2fc7c66d-d8d4-44e8-a86b-75524bdab59f",
+            "position": "p2",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 2,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2",
+              "compat-guest3": "p3"
+            },
+            "configVersion": 2,
+            "revision": 4,
+            "lastCommand": "2fc7c66d-d8d4-44e8-a86b-75524bdab59f"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest3",
+            "revision": 5,
+            "commandId": "f2c1ce97-117c-4100-aff4-ee80f82c935a",
+            "position": "p3",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 2,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2",
+              "compat-guest3": "p3"
+            },
+            "configVersion": 2,
+            "revision": 5,
+            "lastCommand": "f2c1ce97-117c-4100-aff4-ee80f82c935a"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-settings-changed",
+            "actorUid": "compat-host",
+            "revision": 6,
+            "commandId": "8514a84a-2155-48b1-9fb6-295a2fc2b4b7",
+            "position": "",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 3,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2",
+              "compat-guest3": "p3"
+            },
+            "configVersion": 3,
+            "revision": 6,
+            "lastCommand": "8514a84a-2155-48b1-9fb6-295a2fc2b4b7"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-seat-renamed",
+            "actorUid": "compat-guest2",
+            "revision": 7,
+            "commandId": "ee5635c6-f2d8-4e4e-b6f5-70ba2cdb1e2e",
+            "position": "p2",
+            "name": "Bora Reader",
+            "ready": false,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 4,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2",
+              "compat-guest3": "p3"
+            },
+            "configVersion": 4,
+            "revision": 7,
+            "lastCommand": "ee5635c6-f2d8-4e4e-b6f5-70ba2cdb1e2e"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-seat-left",
+            "actorUid": "compat-guest2",
+            "revision": 8,
+            "commandId": "2494ed40-0f5d-4e70-af50-449eaeac9719",
+            "position": "p2",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 5,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3"
+            },
+            "configVersion": 5,
+            "revision": 8,
+            "lastCommand": "2494ed40-0f5d-4e70-af50-449eaeac9719"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-seat-claimed",
+            "actorUid": "compat-guest2",
+            "revision": 9,
+            "commandId": "197e9e29-8935-4e4d-a81a-211981cda5fa",
+            "position": "p2",
+            "name": "Bora Reader",
+            "ready": false,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 6,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 6,
+            "revision": 9,
+            "lastCommand": "197e9e29-8935-4e4d-a81a-211981cda5fa"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-faction-selected",
+            "actorUid": "compat-host",
+            "revision": 10,
+            "commandId": "6b738fb0-3157-482c-a75d-b1f572e94c05",
+            "position": "p1",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 7,
+            "code": "FIXAA",
+            "faction": "nishida"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 7,
+            "revision": 10,
+            "lastCommand": "6b738fb0-3157-482c-a75d-b1f572e94c05",
+            "factions": {
+              "p1": "nishida"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-faction-selected",
+            "actorUid": "compat-guest2",
+            "revision": 11,
+            "commandId": "98730e7e-3eaa-42e2-999b-a7541882c969",
+            "position": "p2",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 8,
+            "code": "FIXAA",
+            "faction": "zheng"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 8,
+            "revision": 11,
+            "lastCommand": "98730e7e-3eaa-42e2-999b-a7541882c969",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-faction-selected",
+            "actorUid": "compat-guest3",
+            "revision": 12,
+            "commandId": "fe57f748-9ea0-4fdd-a9ec-ce7bfca417a6",
+            "position": "p3",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 9,
+            "code": "FIXAA",
+            "faction": "united-nations"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 9,
+            "revision": 12,
+            "lastCommand": "fe57f748-9ea0-4fdd-a9ec-ce7bfca417a6",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-host",
+            "revision": 13,
+            "commandId": "b881b04e-6145-4309-b2c1-63ce0a72f4bb",
+            "position": "p1",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 9,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 9,
+            "revision": 13,
+            "lastCommand": "b881b04e-6145-4309-b2c1-63ce0a72f4bb",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest2",
+            "revision": 14,
+            "commandId": "5ee97877-fa44-434b-b675-bc920ba611c2",
+            "position": "p2",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 9,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 9,
+            "revision": 14,
+            "lastCommand": "5ee97877-fa44-434b-b675-bc920ba611c2",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest3",
+            "revision": 15,
+            "commandId": "1c9e4013-1d3a-4558-9664-35c3218e224d",
+            "position": "p3",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 9,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 9,
+            "revision": 15,
+            "lastCommand": "1c9e4013-1d3a-4558-9664-35c3218e224d",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-settings-changed",
+            "actorUid": "compat-host",
+            "revision": 16,
+            "commandId": "38d6886e-91ce-4f23-b1ca-fde120f5148c",
+            "position": "",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 10,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 10,
+            "revision": 16,
+            "lastCommand": "38d6886e-91ce-4f23-b1ca-fde120f5148c",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-host",
+            "revision": 17,
+            "commandId": "1617a34c-bbe6-4e48-9886-5ba34ac7c4ff",
+            "position": "p1",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 10,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 10,
+            "revision": 17,
+            "lastCommand": "1617a34c-bbe6-4e48-9886-5ba34ac7c4ff",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest2",
+            "revision": 18,
+            "commandId": "0853f2c2-eecf-457d-a528-523fb3eeeaad",
+            "position": "p2",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 10,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 10,
+            "revision": 18,
+            "lastCommand": "0853f2c2-eecf-457d-a528-523fb3eeeaad",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest3",
+            "revision": 19,
+            "commandId": "9072be7d-1c12-4fa9-a56c-d9986dc84387",
+            "position": "p3",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 10,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 10,
+            "revision": 19,
+            "lastCommand": "9072be7d-1c12-4fa9-a56c-d9986dc84387",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-begun",
+            "actorUid": "compat-host",
+            "revision": 20,
+            "commandId": "33335737-e9e7-4ed2-befc-54d5742c37b6",
+            "position": "",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 10,
+            "code": "FIXAA",
+            "start": {
+              "version": "basic-2020-v1",
+              "seed": "12345678-1234-4567-89ab-123456789abc"
+            }
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "started",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 3,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 10,
+            "revision": 20,
+            "lastCommand": "33335737-e9e7-4ed2-befc-54d5742c37b6",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations"
+            },
+            "start": {
+              "version": "basic-2020-v1",
+              "seed": "12345678-1234-4567-89ab-123456789abc"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tabletop-3",
+      "mode": "tabletop",
+      "commands": [
+        {
+          "event": {
+            "schema": 1,
+            "type": "table-created",
+            "actorUid": "compat-table",
+            "revision": 0,
+            "commandId": "1d61d8ab-823d-4456-8ca9-00551231f8c0",
+            "position": "",
+            "name": ""
+          },
+          "after": {
+            "seats": {},
+            "firstPlayer": "",
+            "revision": 0,
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "1d61d8ab-823d-4456-8ca9-00551231f8c0"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "seat-joined",
+            "actorUid": "compat-table",
+            "revision": 1,
+            "commandId": "79c79309-cce8-4f21-9861-ec6b958fa256",
+            "position": "south",
+            "name": "Ada"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada"
+            },
+            "firstPlayer": "south",
+            "revision": 1,
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "79c79309-cce8-4f21-9861-ec6b958fa256"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "seat-joined",
+            "actorUid": "compat-table",
+            "revision": 2,
+            "commandId": "13a5e337-a5a9-40a5-a97e-eb028aaca8d7",
+            "position": "north",
+            "name": "Bora"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora"
+            },
+            "firstPlayer": "south",
+            "revision": 2,
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "13a5e337-a5a9-40a5-a97e-eb028aaca8d7"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "seat-joined",
+            "actorUid": "compat-table",
+            "revision": 3,
+            "commandId": "339a6796-cac2-414a-a92d-3740f29d0d55",
+            "position": "east",
+            "name": "Cleo"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo"
+            },
+            "firstPlayer": "south",
+            "revision": 3,
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "339a6796-cac2-414a-a92d-3740f29d0d55"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "first-player-chosen",
+            "actorUid": "compat-table",
+            "revision": 4,
+            "commandId": "995d9692-c8ed-4b0a-a6c4-5ffc5701c80f",
+            "position": "north",
+            "name": ""
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo"
+            },
+            "firstPlayer": "north",
+            "revision": 4,
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "995d9692-c8ed-4b0a-a6c4-5ffc5701c80f"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "table-faction-selected",
+            "actorUid": "compat-table",
+            "revision": 5,
+            "commandId": "79dbf937-4401-41a4-89e2-52a223d29574",
+            "position": "south",
+            "name": "",
+            "faction": "nishida"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo"
+            },
+            "firstPlayer": "north",
+            "revision": 5,
+            "factions": {
+              "south": "nishida"
+            },
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "79dbf937-4401-41a4-89e2-52a223d29574"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "table-faction-selected",
+            "actorUid": "compat-table",
+            "revision": 6,
+            "commandId": "6a968622-5412-4404-aa3b-3ee466c70df4",
+            "position": "north",
+            "name": "",
+            "faction": "zheng"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo"
+            },
+            "firstPlayer": "north",
+            "revision": 6,
+            "factions": {
+              "south": "nishida",
+              "north": "zheng"
+            },
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "6a968622-5412-4404-aa3b-3ee466c70df4"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "table-faction-selected",
+            "actorUid": "compat-table",
+            "revision": 7,
+            "commandId": "b7b979a1-58b7-48d5-9ce6-5afb4eed70db",
+            "position": "east",
+            "name": "",
+            "faction": "united-nations"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo"
+            },
+            "firstPlayer": "north",
+            "revision": 7,
+            "factions": {
+              "south": "nishida",
+              "north": "zheng",
+              "east": "united-nations"
+            },
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "b7b979a1-58b7-48d5-9ce6-5afb4eed70db"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "table-settings-changed",
+            "actorUid": "compat-table",
+            "revision": 8,
+            "commandId": "78dec9cf-7d8f-4230-b8f1-4da25816da6f",
+            "position": "",
+            "name": "",
+            "settings": {
+              "factions": "basic",
+              "achievements": "randomized"
+            }
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo"
+            },
+            "firstPlayer": "north",
+            "revision": 8,
+            "factions": {
+              "south": "nishida",
+              "north": "zheng",
+              "east": "united-nations"
+            },
+            "settings": {
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "78dec9cf-7d8f-4230-b8f1-4da25816da6f"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "game-begun",
+            "actorUid": "compat-table",
+            "revision": 9,
+            "commandId": "2e7ba6fc-ccff-4419-ac5d-2b1faadc12ff",
+            "position": "",
+            "name": "",
+            "start": {
+              "version": "basic-2020-v1",
+              "seed": "12345678-1234-4567-89ab-123456789abc"
+            }
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo"
+            },
+            "firstPlayer": "north",
+            "revision": 9,
+            "factions": {
+              "south": "nishida",
+              "north": "zheng",
+              "east": "united-nations"
+            },
+            "settings": {
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "start": {
+              "version": "basic-2020-v1",
+              "seed": "12345678-1234-4567-89ab-123456789abc"
+            },
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "2e7ba6fc-ccff-4419-ac5d-2b1faadc12ff"
+          }
+        }
+      ]
+    },
+    {
+      "name": "remote-4",
+      "mode": "remote",
+      "commands": [
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-created",
+            "actorUid": "compat-host",
+            "revision": 0,
+            "commandId": "78824f59-d08f-44d0-b126-14562d1c5872",
+            "position": "p1",
+            "name": "Ada",
+            "ready": false,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 0,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1"
+            },
+            "configVersion": 0,
+            "revision": 0,
+            "lastCommand": "78824f59-d08f-44d0-b126-14562d1c5872"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-seat-claimed",
+            "actorUid": "compat-guest2",
+            "revision": 1,
+            "commandId": "2cb3e7d3-2061-4182-81a9-3d6f5b3beb94",
+            "position": "p2",
+            "name": "Bora",
+            "ready": false,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 1,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 1,
+            "revision": 1,
+            "lastCommand": "2cb3e7d3-2061-4182-81a9-3d6f5b3beb94"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-seat-claimed",
+            "actorUid": "compat-guest3",
+            "revision": 2,
+            "commandId": "68db822d-e415-4703-96d4-f702e53bb9ba",
+            "position": "p3",
+            "name": "Cleo",
+            "ready": false,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 2,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2",
+              "compat-guest3": "p3"
+            },
+            "configVersion": 2,
+            "revision": 2,
+            "lastCommand": "68db822d-e415-4703-96d4-f702e53bb9ba"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-seat-claimed",
+            "actorUid": "compat-guest4",
+            "revision": 3,
+            "commandId": "45c6b936-4601-4fc5-b1ca-fb7d0b69032c",
+            "position": "p4",
+            "name": "Dara",
+            "ready": false,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 3,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4"
+            },
+            "configVersion": 3,
+            "revision": 3,
+            "lastCommand": "45c6b936-4601-4fc5-b1ca-fb7d0b69032c"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-host",
+            "revision": 4,
+            "commandId": "55649950-9b1a-4841-9279-b052b4fdf188",
+            "position": "p1",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 3,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4"
+            },
+            "configVersion": 3,
+            "revision": 4,
+            "lastCommand": "55649950-9b1a-4841-9279-b052b4fdf188"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest2",
+            "revision": 5,
+            "commandId": "38a01a3f-8805-4803-8488-cc9c9783e917",
+            "position": "p2",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 3,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4"
+            },
+            "configVersion": 3,
+            "revision": 5,
+            "lastCommand": "38a01a3f-8805-4803-8488-cc9c9783e917"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest3",
+            "revision": 6,
+            "commandId": "553528cf-f1db-46e0-a723-04960a646c35",
+            "position": "p3",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 3,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": true
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4"
+            },
+            "configVersion": 3,
+            "revision": 6,
+            "lastCommand": "553528cf-f1db-46e0-a723-04960a646c35"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest4",
+            "revision": 7,
+            "commandId": "bbbc79b9-f06b-4b42-b5b2-817c0d71d042",
+            "position": "p4",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 3,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": true
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4"
+            },
+            "configVersion": 3,
+            "revision": 7,
+            "lastCommand": "bbbc79b9-f06b-4b42-b5b2-817c0d71d042"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-settings-changed",
+            "actorUid": "compat-host",
+            "revision": 8,
+            "commandId": "84aa0718-1ab6-4455-8571-f9aedbfc569f",
+            "position": "",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 4,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4"
+            },
+            "configVersion": 4,
+            "revision": 8,
+            "lastCommand": "84aa0718-1ab6-4455-8571-f9aedbfc569f"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-seat-renamed",
+            "actorUid": "compat-guest2",
+            "revision": 9,
+            "commandId": "4083ae56-f442-4a11-a0c3-a030279e823c",
+            "position": "p2",
+            "name": "Bora Reader",
+            "ready": false,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 5,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest2": "p2",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4"
+            },
+            "configVersion": 5,
+            "revision": 9,
+            "lastCommand": "4083ae56-f442-4a11-a0c3-a030279e823c"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-seat-left",
+            "actorUid": "compat-guest2",
+            "revision": 10,
+            "commandId": "34becf25-9301-40e0-bb5a-89fa31260cd9",
+            "position": "p2",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 6,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4"
+            },
+            "configVersion": 6,
+            "revision": 10,
+            "lastCommand": "34becf25-9301-40e0-bb5a-89fa31260cd9"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-seat-claimed",
+            "actorUid": "compat-guest2",
+            "revision": 11,
+            "commandId": "2460004c-bea1-4d90-ad2b-746312394ea9",
+            "position": "p2",
+            "name": "Bora Reader",
+            "ready": false,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 7,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 7,
+            "revision": 11,
+            "lastCommand": "2460004c-bea1-4d90-ad2b-746312394ea9"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-faction-selected",
+            "actorUid": "compat-host",
+            "revision": 12,
+            "commandId": "8d5e6f0a-7c8d-4d91-b13f-a2d0946a039d",
+            "position": "p1",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 8,
+            "code": "FIXAA",
+            "faction": "nishida"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 8,
+            "revision": 12,
+            "lastCommand": "8d5e6f0a-7c8d-4d91-b13f-a2d0946a039d",
+            "factions": {
+              "p1": "nishida"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-faction-selected",
+            "actorUid": "compat-guest2",
+            "revision": 13,
+            "commandId": "d57668f4-5a32-4789-8f7c-0968da02b238",
+            "position": "p2",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 9,
+            "code": "FIXAA",
+            "faction": "zheng"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 9,
+            "revision": 13,
+            "lastCommand": "d57668f4-5a32-4789-8f7c-0968da02b238",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-faction-selected",
+            "actorUid": "compat-guest3",
+            "revision": 14,
+            "commandId": "d8d27270-d88e-4288-b342-5a6a2993b1cf",
+            "position": "p3",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 10,
+            "code": "FIXAA",
+            "faction": "united-nations"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 10,
+            "revision": 14,
+            "lastCommand": "d8d27270-d88e-4288-b342-5a6a2993b1cf",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-faction-selected",
+            "actorUid": "compat-guest4",
+            "revision": 15,
+            "commandId": "82775546-d626-4f86-b735-7a9401946e8c",
+            "position": "p4",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 11,
+            "code": "FIXAA",
+            "faction": "disciples"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 11,
+            "revision": 15,
+            "lastCommand": "82775546-d626-4f86-b735-7a9401946e8c",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations",
+              "p4": "disciples"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-host",
+            "revision": 16,
+            "commandId": "9668567f-ee31-44c0-b9f4-edb27ac036c7",
+            "position": "p1",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 11,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 11,
+            "revision": 16,
+            "lastCommand": "9668567f-ee31-44c0-b9f4-edb27ac036c7",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations",
+              "p4": "disciples"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest2",
+            "revision": 17,
+            "commandId": "96fdc1a3-6381-419c-bbd0-b26d40dd986c",
+            "position": "p2",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 11,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 11,
+            "revision": 17,
+            "lastCommand": "96fdc1a3-6381-419c-bbd0-b26d40dd986c",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations",
+              "p4": "disciples"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest3",
+            "revision": 18,
+            "commandId": "a28909d2-a122-4cba-b0ed-5dd880d83e44",
+            "position": "p3",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 11,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": true
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 11,
+            "revision": 18,
+            "lastCommand": "a28909d2-a122-4cba-b0ed-5dd880d83e44",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations",
+              "p4": "disciples"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest4",
+            "revision": 19,
+            "commandId": "b0dd968d-7fa8-4291-89a0-812c0a7b9ea4",
+            "position": "p4",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "configVersion": 11,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": true
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 11,
+            "revision": 19,
+            "lastCommand": "b0dd968d-7fa8-4291-89a0-812c0a7b9ea4",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations",
+              "p4": "disciples"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-settings-changed",
+            "actorUid": "compat-host",
+            "revision": 20,
+            "commandId": "27a28beb-1b71-4ba5-ae41-8ffc0ac4566d",
+            "position": "",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 12,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": false
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 12,
+            "revision": 20,
+            "lastCommand": "27a28beb-1b71-4ba5-ae41-8ffc0ac4566d",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations",
+              "p4": "disciples"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-host",
+            "revision": 21,
+            "commandId": "9d8cb4b4-770c-4f4b-b1ae-7c45b1382043",
+            "position": "p1",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 12,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": false
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 12,
+            "revision": 21,
+            "lastCommand": "9d8cb4b4-770c-4f4b-b1ae-7c45b1382043",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations",
+              "p4": "disciples"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest2",
+            "revision": 22,
+            "commandId": "096d744b-fcf1-4338-9255-74b5026587da",
+            "position": "p2",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 12,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": false
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 12,
+            "revision": 22,
+            "lastCommand": "096d744b-fcf1-4338-9255-74b5026587da",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations",
+              "p4": "disciples"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest3",
+            "revision": 23,
+            "commandId": "be7615e6-db65-4315-9bb4-49a97d68002b",
+            "position": "p3",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 12,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": true
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": false
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 12,
+            "revision": 23,
+            "lastCommand": "be7615e6-db65-4315-9bb4-49a97d68002b",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations",
+              "p4": "disciples"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-ready-changed",
+            "actorUid": "compat-guest4",
+            "revision": 24,
+            "commandId": "74fc6e17-b2c0-4bd3-bccf-0912b31f4786",
+            "position": "p4",
+            "name": "",
+            "ready": true,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 12,
+            "code": "FIXAA"
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "gathering",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": true
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 12,
+            "revision": 24,
+            "lastCommand": "74fc6e17-b2c0-4bd3-bccf-0912b31f4786",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations",
+              "p4": "disciples"
+            }
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "remote-begun",
+            "actorUid": "compat-host",
+            "revision": 25,
+            "commandId": "deea1a73-7785-4dbc-af5b-5fff2dacb7ae",
+            "position": "",
+            "name": "",
+            "ready": false,
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "configVersion": 12,
+            "code": "FIXAA",
+            "start": {
+              "version": "basic-2020-v1",
+              "seed": "12345678-1234-4567-89ab-123456789abc"
+            }
+          },
+          "after": {
+            "schema": 1,
+            "mode": "remote",
+            "phase": "started",
+            "ownerUid": "compat-host",
+            "code": "FIXAA",
+            "settings": {
+              "capacity": 4,
+              "factions": "basic",
+              "achievements": "introductory"
+            },
+            "seats": {
+              "p1": {
+                "uid": "compat-host",
+                "name": "Ada",
+                "ready": true
+              },
+              "p3": {
+                "uid": "compat-guest3",
+                "name": "Cleo",
+                "ready": true
+              },
+              "p4": {
+                "uid": "compat-guest4",
+                "name": "Dara",
+                "ready": true
+              },
+              "p2": {
+                "uid": "compat-guest2",
+                "name": "Bora Reader",
+                "ready": true
+              }
+            },
+            "members": {
+              "compat-host": "p1",
+              "compat-guest3": "p3",
+              "compat-guest4": "p4",
+              "compat-guest2": "p2"
+            },
+            "configVersion": 12,
+            "revision": 25,
+            "lastCommand": "deea1a73-7785-4dbc-af5b-5fff2dacb7ae",
+            "factions": {
+              "p1": "nishida",
+              "p2": "zheng",
+              "p3": "united-nations",
+              "p4": "disciples"
+            },
+            "start": {
+              "version": "basic-2020-v1",
+              "seed": "12345678-1234-4567-89ab-123456789abc"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "tabletop-4",
+      "mode": "tabletop",
+      "commands": [
+        {
+          "event": {
+            "schema": 1,
+            "type": "table-created",
+            "actorUid": "compat-table",
+            "revision": 0,
+            "commandId": "bbbd8a12-b6fb-45df-a03a-1dac1d0b7be6",
+            "position": "",
+            "name": ""
+          },
+          "after": {
+            "seats": {},
+            "firstPlayer": "",
+            "revision": 0,
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "bbbd8a12-b6fb-45df-a03a-1dac1d0b7be6"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "seat-joined",
+            "actorUid": "compat-table",
+            "revision": 1,
+            "commandId": "9c143b9d-47a4-402a-bafd-c57a763002d3",
+            "position": "south",
+            "name": "Ada"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada"
+            },
+            "firstPlayer": "south",
+            "revision": 1,
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "9c143b9d-47a4-402a-bafd-c57a763002d3"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "seat-joined",
+            "actorUid": "compat-table",
+            "revision": 2,
+            "commandId": "9d075e5d-0b8c-48b9-a8ab-009542ad2bac",
+            "position": "north",
+            "name": "Bora"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora"
+            },
+            "firstPlayer": "south",
+            "revision": 2,
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "9d075e5d-0b8c-48b9-a8ab-009542ad2bac"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "seat-joined",
+            "actorUid": "compat-table",
+            "revision": 3,
+            "commandId": "6c97f4b3-6fd7-4f33-b3fb-a4f8106c3c12",
+            "position": "east",
+            "name": "Cleo"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo"
+            },
+            "firstPlayer": "south",
+            "revision": 3,
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "6c97f4b3-6fd7-4f33-b3fb-a4f8106c3c12"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "seat-joined",
+            "actorUid": "compat-table",
+            "revision": 4,
+            "commandId": "de48a700-180e-4f4a-860c-90d680599977",
+            "position": "west",
+            "name": "Dara"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo",
+              "west": "Dara"
+            },
+            "firstPlayer": "south",
+            "revision": 4,
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "de48a700-180e-4f4a-860c-90d680599977"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "first-player-chosen",
+            "actorUid": "compat-table",
+            "revision": 5,
+            "commandId": "32c92b11-7974-4379-87ad-34fca0639443",
+            "position": "north",
+            "name": ""
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo",
+              "west": "Dara"
+            },
+            "firstPlayer": "north",
+            "revision": 5,
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "32c92b11-7974-4379-87ad-34fca0639443"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "table-faction-selected",
+            "actorUid": "compat-table",
+            "revision": 6,
+            "commandId": "3efbbaf2-efe7-4365-b834-d7e3c67af7d4",
+            "position": "south",
+            "name": "",
+            "faction": "nishida"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo",
+              "west": "Dara"
+            },
+            "firstPlayer": "north",
+            "revision": 6,
+            "factions": {
+              "south": "nishida"
+            },
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "3efbbaf2-efe7-4365-b834-d7e3c67af7d4"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "table-faction-selected",
+            "actorUid": "compat-table",
+            "revision": 7,
+            "commandId": "fcb5271d-5272-44aa-ac09-31346041f253",
+            "position": "north",
+            "name": "",
+            "faction": "zheng"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo",
+              "west": "Dara"
+            },
+            "firstPlayer": "north",
+            "revision": 7,
+            "factions": {
+              "south": "nishida",
+              "north": "zheng"
+            },
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "fcb5271d-5272-44aa-ac09-31346041f253"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "table-faction-selected",
+            "actorUid": "compat-table",
+            "revision": 8,
+            "commandId": "f2f77256-262f-4019-b35c-f74bf5a13c49",
+            "position": "east",
+            "name": "",
+            "faction": "united-nations"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo",
+              "west": "Dara"
+            },
+            "firstPlayer": "north",
+            "revision": 8,
+            "factions": {
+              "south": "nishida",
+              "north": "zheng",
+              "east": "united-nations"
+            },
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "f2f77256-262f-4019-b35c-f74bf5a13c49"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "table-faction-selected",
+            "actorUid": "compat-table",
+            "revision": 9,
+            "commandId": "da073707-3531-4d74-9520-9a7bcdaacd97",
+            "position": "west",
+            "name": "",
+            "faction": "disciples"
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo",
+              "west": "Dara"
+            },
+            "firstPlayer": "north",
+            "revision": 9,
+            "factions": {
+              "south": "nishida",
+              "north": "zheng",
+              "east": "united-nations",
+              "west": "disciples"
+            },
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "da073707-3531-4d74-9520-9a7bcdaacd97"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "table-settings-changed",
+            "actorUid": "compat-table",
+            "revision": 10,
+            "commandId": "dc17be58-0644-4f34-878f-38277086f178",
+            "position": "",
+            "name": "",
+            "settings": {
+              "factions": "basic",
+              "achievements": "randomized"
+            }
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo",
+              "west": "Dara"
+            },
+            "firstPlayer": "north",
+            "revision": 10,
+            "factions": {
+              "south": "nishida",
+              "north": "zheng",
+              "east": "united-nations",
+              "west": "disciples"
+            },
+            "settings": {
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "dc17be58-0644-4f34-878f-38277086f178"
+          }
+        },
+        {
+          "event": {
+            "schema": 1,
+            "type": "game-begun",
+            "actorUid": "compat-table",
+            "revision": 11,
+            "commandId": "46c6d6ce-7c96-4520-a542-daaf6e3ea0be",
+            "position": "",
+            "name": "",
+            "start": {
+              "version": "basic-2020-v1",
+              "seed": "12345678-1234-4567-89ab-123456789abc"
+            }
+          },
+          "after": {
+            "seats": {
+              "south": "Ada",
+              "north": "Bora",
+              "east": "Cleo",
+              "west": "Dara"
+            },
+            "firstPlayer": "north",
+            "revision": 11,
+            "factions": {
+              "south": "nishida",
+              "north": "zheng",
+              "east": "united-nations",
+              "west": "disciples"
+            },
+            "settings": {
+              "factions": "basic",
+              "achievements": "randomized"
+            },
+            "start": {
+              "version": "basic-2020-v1",
+              "seed": "12345678-1234-4567-89ab-123456789abc"
+            },
+            "schema": 1,
+            "mode": "tabletop",
+            "ownerUid": "compat-table",
+            "lastCommand": "46c6d6ce-7c96-4520-a542-daaf6e3ea0be"
+          }
+        }
+      ]
+    }
+  ]
+}

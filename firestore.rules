@@ -2,15 +2,26 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     function signedIn() { return request.auth != null; }
+    function setupSettings(s) { return s.keys().hasOnly(['factions','achievements']) && s.factions in ['basic','advanced'] && s.achievements in ['introductory','randomized']; }
+    function basicStart(s) { return s is map && s.keys().hasOnly(['version','seed']) && s.version == 'basic-2020-v1' && s.seed is string && s.seed.matches('^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$'); }
+    function legalChoices(c, seats, values, count) { return c is map && c.keys().hasOnly(seats.keys()) && values.toSet().size() == values.size() && values.hasOnly(['nishida','disciples','zheng','united-nations']) && (count != 2 || !values.hasAny(['disciples'])); }
     match /games/{game} {
       function owned(data) { return signedIn() && data.ownerUid == request.auth.uid; }
       function shape(data) {
-        return data.keys().hasOnly(['ownerUid','schema','mode','revision','lastCommand','seats','firstPlayer'])
+        return data.keys().hasOnly(['ownerUid','schema','mode','revision','lastCommand','seats','firstPlayer','settings','factions','start'])
           && data.schema == 1 && data.mode == 'tabletop' && data.revision is int
           && data.seats is map && data.seats.size() <= 4
           && data.seats.keys().hasOnly(['north','north-east','east','south-east','south','south-west','west','north-west'])
-          && (data.firstPlayer in data.seats || (data.firstPlayer == '' && data.seats.size() == 0));
+          && (data.firstPlayer in data.seats || (data.firstPlayer == '' && data.seats.size() == 0))
+          && setupSettings(data.get('settings',{'factions':'basic','achievements':'introductory'}))
+          && tableChoices(data)
+          && (!('start' in data) || (basicStart(data.start) && data.seats.size() in [2,3,4] && data.get('settings',{'factions':'basic'}).factions == 'basic' && data.factions.size() == data.seats.size()));
       }
+      function tableChoiceValues(d) {
+        let c=d.get('factions',{});
+        return [c.get('north',''),c.get('north-east',''),c.get('east',''),c.get('south-east',''),c.get('south',''),c.get('south-west',''),c.get('west',''),c.get('north-west','')].removeAll(['']);
+      }
+      function tableChoices(d) { return legalChoices(d.get('factions',{}),d.seats,tableChoiceValues(d),d.seats.size()); }
       function linked(data) {
         let event = getAfter(/databases/$(database)/documents/games/$(game)/events/$(data.lastCommand)).data;
         return event.revision == data.revision && event.commandId == data.lastCommand;
@@ -18,8 +29,8 @@ service cloud.firestore {
       allow get: if signedIn() && (!exists(/databases/$(database)/documents/games/$(game)) || owned(resource.data));
       allow list: if false;
       allow create: if owned(request.resource.data) && shape(request.resource.data)
-        && request.resource.data.revision == 0 && request.resource.data.seats.size() == 0 && linked(request.resource.data);
-      allow update: if owned(resource.data) && owned(request.resource.data) && shape(request.resource.data)
+        && request.resource.data.revision == 0 && request.resource.data.seats.size() == 0 && !request.resource.data.keys().hasAny(['settings','factions','start']) && linked(request.resource.data);
+      allow update: if !('start' in resource.data) && owned(resource.data) && owned(request.resource.data) && shape(request.resource.data)
         && request.resource.data.revision == resource.data.revision + 1 && linked(request.resource.data);
       allow delete: if false;
       match /events/{event} {
@@ -31,9 +42,14 @@ service cloud.firestore {
         function change(e, before, after) {
           let p = e.position;
           let onlySeat = after.seats.diff(before.seats).affectedKeys().hasOnly([p]);
+          let noSetupPayload = !e.keys().hasAny(['settings','faction','start']);
           let keptFirst = after.firstPlayer == (before.firstPlayer == '' ? p : before.firstPlayer);
           let validName = e.name is string && e.name.size() > 0 && e.name.size() <= 24 && e.name.matches('^\\S(.*\\S)?$');
           return e.revision == before.revision + 1 && (
+            (e.type == 'game-begun' && e.position == '' && e.name == '' && e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','start']) && after.diff(before).affectedKeys().hasOnly(['start','revision','lastCommand']) && basicStart(e.start) && after.start == e.start)
+            || (e.type == 'table-settings-changed' && p == '' && e.name == '' && e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','settings']) && setupSettings(e.settings) && e.settings != before.get('settings',{'factions':'basic','achievements':'introductory'}) && after.settings == e.settings && after.diff(before).affectedKeys().hasOnly(['settings','factions','revision','lastCommand']) && after.get('factions',{}) == (e.settings.factions == 'basic' ? before.get('factions',{}) : {}))
+            || (e.type == 'table-faction-selected' && p in before.seats && e.name == '' && e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','faction']) && before.get('settings',{'factions':'basic'}).factions == 'basic' && after.factions[p] == e.faction && e.faction != before.get('factions',{}).get(p,'') && after.diff(before).affectedKeys().hasOnly(['factions','revision','lastCommand']) && after.factions.diff(before.get('factions',{})).affectedKeys().hasOnly([p]))
+            || (noSetupPayload && !('start' in after) && after.get('settings',{}) == before.get('settings',{}) && tableLegacyChoices(e,before,after) && (
             (e.type == 'seat-joined' && !(p in before.seats) && validName && onlySeat
               && after.seats.size() == before.seats.size() + 1 && after.seats[p] == e.name && keptFirst)
             || (e.type == 'seat-renamed' && p in before.seats && validName && onlySeat
@@ -43,15 +59,26 @@ service cloud.firestore {
               && after.firstPlayer == (before.firstPlayer == p ? first(after.seats) : before.firstPlayer))
             || (e.type == 'first-player-chosen' && p in before.seats && e.name == ''
               && after.seats == before.seats && after.firstPlayer == p)
-          );
+          )));
+        }
+        function tableLegacyChoices(e,b,a) {
+          let bc=b.get('factions',{}); let ac=a.get('factions',{});
+          // Joining/leaving can make Disciples illegal at exactly two players.
+          return (e.type in ['seat-renamed','first-player-chosen'] && ac == bc)
+            || (e.type in ['seat-joined','seat-left'] && ac.diff(bc).affectedKeys().hasOnly([e.position,'north','north-east','east','south-east','south','south-west','west','north-west'])
+              && preservedChoice('north',e,b,a) && preservedChoice('north-east',e,b,a) && preservedChoice('east',e,b,a) && preservedChoice('south-east',e,b,a) && preservedChoice('south',e,b,a) && preservedChoice('south-west',e,b,a) && preservedChoice('west',e,b,a) && preservedChoice('north-west',e,b,a));
+        }
+        function preservedChoice(p,e,b,a) {
+          let expected=e.type == 'seat-left' && e.position == p ? '' : (a.seats.size() == 2 && b.get('factions',{}).get(p,'') == 'disciples' ? '' : b.get('factions',{}).get(p,''));
+          return a.get('factions',{}).get(p,'') == expected;
         }
         function valid() {
           let e = request.resource.data;
           let after = getAfter(root()).data;
-          return e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name'])
+          return e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','settings','faction','start'])
             && e.schema == 1 && e.actorUid == request.auth.uid && e.commandId == event
             && after.lastCommand == event && after.revision == e.revision
-            && ((!exists(root()) && e.type == 'table-created' && e.revision == 0 && e.position == '' && e.name == '')
+            && ((!exists(root()) && e.type == 'table-created' && !e.keys().hasAny(['settings','faction','start']) && e.revision == 0 && e.position == '' && e.name == '')
               || (exists(root()) && change(e, get(root()).data, after)));
         }
         allow read: if signedIn() && get(root()).data.ownerUid == request.auth.uid;
@@ -64,7 +91,7 @@ service cloud.firestore {
     // The existing tabletop match above remains controller-only.
     match /games/{game} {
       function path() { return /databases/$(database)/documents/games/$(game); }
-      function isRemote(data) { return data.mode == 'remote' && data.schema == 1 && data.phase == 'gathering'; }
+      function isRemote(data) { return data.mode == 'remote' && data.schema == 1 && data.phase in ['gathering','started']; }
       function named(name) { return name is string && name.size() > 0 && name.size() <= 24 && name.matches('^\\S(.*\\S)?$'); }
       function settingShape(s) { return s.keys().hasOnly(['capacity','factions','achievements']) && s.capacity in [2,3,4] && s.factions in ['basic','advanced'] && s.achievements in ['introductory','randomized']; }
       function seatShape(data, p) {
@@ -73,15 +100,21 @@ service cloud.firestore {
           && data.members[data.seats[p].uid] == p);
       }
       function remoteShape(d) {
-        return d.keys().hasOnly(['schema','mode','phase','ownerUid','code','settings','seats','members','configVersion','revision','lastCommand'])
+        return d.keys().hasOnly(['schema','mode','phase','ownerUid','code','settings','seats','members','configVersion','revision','lastCommand','factions','start'])
           && isRemote(d) && d.ownerUid is string && d.code.matches('^[A-Z]{5}$') && settingShape(d.settings)
           && d.configVersion is int && d.configVersion >= 0 && d.revision is int && d.revision >= 0
           && d.lastCommand is string && d.seats is map && d.members is map
           && d.seats.size() == d.members.size() && d.seats.size() <= d.settings.capacity
           && d.seats.keys().hasOnly(['p1','p2','p3','p4']) && d.members[d.ownerUid] == 'p1' && d.seats.p1.uid == d.ownerUid
           && (d.settings.capacity >= 3 || !('p3' in d.seats)) && (d.settings.capacity == 4 || !('p4' in d.seats))
+          && remoteChoices(d) && (d.phase == 'gathering' ? !('start' in d) : (basicStart(d.start) && d.settings.factions == 'basic' && d.factions.size() == d.settings.capacity && d.seats.size() == d.settings.capacity && allReady(d)))
           && seatShape(d,'p1') && seatShape(d,'p2') && seatShape(d,'p3') && seatShape(d,'p4');
       }
+      function remoteChoices(d) {
+        let c=d.get('factions',{});
+        return legalChoices(c,d.seats,[c.get('p1',''),c.get('p2',''),c.get('p3',''),c.get('p4','')].removeAll(['']),d.settings.capacity);
+      }
+      function allReady(d) { return d.seats.p1.ready && d.seats.p2.ready && (d.settings.capacity < 3 || d.seats.p3.ready) && (d.settings.capacity < 4 || d.seats.p4.ready); }
       function link(d) {
         let event = getAfter(/databases/$(database)/documents/games/$(game)/events/$(d.lastCommand)).data;
         return event.commandId == d.lastCommand && event.revision == d.revision;
@@ -90,7 +123,7 @@ service cloud.firestore {
       allow create: if signedIn() && remoteShape(request.resource.data) && request.resource.data.ownerUid == request.auth.uid
         && request.resource.data.revision == 0 && link(request.resource.data)
         && getAfter(/databases/$(database)/documents/invites/$(request.resource.data.code)).data.gameId == game;
-      allow update: if signedIn() && isRemote(resource.data) && remoteShape(request.resource.data)
+      allow update: if signedIn() && isRemote(resource.data) && resource.data.phase == 'gathering' && remoteShape(request.resource.data)
         && request.resource.data.ownerUid == resource.data.ownerUid && request.resource.data.code == resource.data.code
         && request.resource.data.revision == resource.data.revision + 1 && link(request.resource.data);
       match /events/{event} {
@@ -108,6 +141,10 @@ service cloud.firestore {
           let membersSame = a.members == b.members;
           let reset = a.configVersion == b.configVersion + 1 && !e.ready;
           return e.revision == b.revision + 1 && (
+            (e.type == 'remote-begun' && uid == b.ownerUid && p == '' && e.name == '' && !e.ready && !('faction' in e) && a.phase == 'started' && a.start == e.start && basicStart(e.start) && a.configVersion == b.configVersion && a.diff(b).affectedKeys().hasOnly(['phase','start','revision','lastCommand']))
+            || (a.phase == 'gathering' && !('start' in e) && (e.type == 'remote-faction-selected' || !('faction' in e)) && remoteLegacyChoices(e,b,a) && (
+              (e.type == 'remote-faction-selected' && self && e.name == '' && !e.ready && settingsSame && membersSame && b.settings.factions == 'basic' && a.factions[p] == e.faction && e.faction != b.get('factions',{}).get(p,'') && reset && otherSeats('',b,a,true) && a.seats.size() == b.seats.size())
+            ||
             (e.type == 'remote-seat-claimed' && !(uid in b.members) && p in ['p2','p3','p4'] && !(p in b.seats) && named(e.name)
               && settingsSame && reset && otherSeats(p,b,a,true) && a.seats.size() == b.seats.size() + 1
               && a.seats[p] == {'uid':uid,'name':e.name,'ready':false}
@@ -122,18 +159,33 @@ service cloud.firestore {
               && a.seats.size() == b.seats.size() && a.seats[p] == {'uid':uid,'name':b.seats[p].name,'ready':e.ready})
             || (e.type == 'remote-settings-changed' && uid == b.ownerUid && p == '' && e.name == '' && !settingsSame && membersSame
               && reset && otherSeats('',b,a,true) && a.seats.size() == b.seats.size())
-          );
+          )));
+        }
+        function remoteLegacyChoices(e,b,a) {
+          let bc=b.get('factions',{}); let ac=a.get('factions',{});
+          // Unchanged maps avoid four repeated per-seat lookups within Firestore's expression budget.
+          // Only leave/settings can remove choices; every other legacy event preserves the exact map.
+          return e.type == 'remote-faction-selected' ? ac.diff(bc).affectedKeys().hasOnly([e.position])
+            : (bc.size() == 0 && ac.size() == 0) ? true
+            : e.type in ['remote-seat-claimed','remote-seat-renamed','remote-ready-changed'] ? ac == bc
+            : (e.type == 'remote-settings-changed' && a.settings.factions == 'basic' && (a.settings.capacity != 2 || !bc.values().hasAny(['disciples']))) ? ac == bc
+            : remoteChoiceKept('p1',e,b,a) && remoteChoiceKept('p2',e,b,a) && remoteChoiceKept('p3',e,b,a) && remoteChoiceKept('p4',e,b,a);
+        }
+        function remoteChoiceKept(p,e,b,a) {
+          let prior=b.get('factions',{}).get(p,'');
+          let remove=(e.type == 'remote-seat-left' && e.position == p) || (e.type == 'remote-settings-changed' && (a.settings.factions != 'basic' || (a.settings.capacity == 2 && prior == 'disciples')));
+          return a.get('factions',{}).get(p,'') == (remove ? '' : prior);
         }
         function validRemoteEvent() {
           let e = request.resource.data;
           let a = getAfter(path()).data;
-          return e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','ready','configVersion','settings','code'])
+          return e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','ready','configVersion','settings','code','faction','start'])
             && e.schema == 1 && e.actorUid == request.auth.uid && e.commandId == event && e.ready is bool
             && isRemote(a) && a.lastCommand == event && a.revision == e.revision && a.configVersion == e.configVersion
             && a.settings == e.settings && a.code == e.code
-            && ((!exists(path()) && e.type == 'remote-created' && e.position == 'p1' && named(e.name) && !e.ready && e.revision == 0
+            && ((!exists(path()) && e.type == 'remote-created' && !e.keys().hasAny(['faction','start']) && !a.keys().hasAny(['factions','start']) && e.position == 'p1' && named(e.name) && !e.ready && e.revision == 0
                 && a.configVersion == 0 && a.seats == {'p1':{'uid':request.auth.uid,'name':e.name,'ready':false}} && a.members.size() == 1 && a.members[request.auth.uid] == 'p1')
-              || (exists(path()) && isRemote(get(path()).data) && changed(e,get(path()).data,a)));
+              || (exists(path()) && isRemote(get(path()).data) && get(path()).data.phase == 'gathering' && changed(e,get(path()).data,a)));
         }
         allow list: if signedIn() && isRemote(get(path()).data) && request.auth.uid in get(path()).data.members;
         allow get: if signedIn() && isRemote(get(path()).data)

@@ -244,3 +244,5 @@ Run `bun run test:capture` for focused capture-guard regressions. Its synthetic 
 
 
 The gallery's bounded inspector uses a named, keyboard-reachable scroll region for its card and source notes, with Close and Previous/Next outside that scroll area. Capture auditing permits intentional vertical content scrolling only inside such regions. Focused controls and text, horizontal clipping, hidden overflow, real overlap and offscreen inspector chrome remain errors. Focused guard regressions cover these boundaries, including empty offscreen document hit regions; no screenshot tolerance, masking or deadline changes accompany this support.
+
+The complete gallery story traverses all100 source-verified identities and quantities, verifies original-art completeness and inspects dense full-marker faces in75 illustrated steps per viewport. Candidate generation and independent comparison are separate runs; both platforms must be independently reviewed. Historical six-example Linux references do not accept the revised collection.
