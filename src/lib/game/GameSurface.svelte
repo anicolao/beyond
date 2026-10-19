@@ -69,7 +69,7 @@
   {:else}{#each game.players as p,i}<div class="shared-mat" data-position={p.position}><FactionMat player={p} order={i+1} rim/><button onclick={()=>{selectedPlayer=p.position;void openTray('mat');}} aria-label={`Inspect ${p.name} faction mat`}>Inspect mat</button></div>{/each}{/if}
 </section>
 <!-- svelte-ignore a11y_no_noninteractive_tabindex (Named region provides keyboard access to the independently scrolling card.) -->
-<dialog data-e2e-layout class="card-inspector" bind:this={dialog} aria-label="Game card inspection" onkeydown={e=>trap(e,dialog)} onclose={()=>origin?.focus()}><header><button onclick={()=>dialog.close()}>Close card</button><span>Public card · starting position</span></header><div class="inspection-scroll" tabindex="0" role="region" aria-label="Full card face">{#if inspected}<div class="full-card"><CardFace card={cardById(inspected)} presentation={{players:game.count}}/></div>{/if}</div><nav aria-label="Card inspection"><button onclick={()=>adjacent(-1)}>Previous card</button><button onclick={()=>adjacent(1)}>Next card</button></nav></dialog>
+<dialog data-e2e-layout class="card-inspector" bind:this={dialog} aria-label="Game card inspection" onkeydown={e=>trap(e,dialog)} onclose={()=>origin?.focus({preventScroll:true})}><header><button onclick={()=>dialog.close()}>Close card</button><span>Public card · starting position</span></header><div class="inspection-scroll" tabindex="0" role="region" aria-label="Full card face">{#if inspected}<div class="full-card"><CardFace card={cardById(inspected)} presentation={{players:game.count}}/></div>{/if}</div><nav aria-label="Card inspection"><button onclick={()=>adjacent(-1)}>Previous card</button><button onclick={()=>adjacent(1)}>Next card</button></nav></dialog>
 <!-- svelte-ignore a11y_no_noninteractive_tabindex (Named region provides keyboard access to independently scrolling inspection details.) -->
 <dialog data-e2e-layout class="record-tray" class:seat-reader={mode==='tabletop'&&trayKind==='mat'} style={`--reader-angle:${seatAngle}deg`} bind:this={tray} aria-label={trayKind==='mat'?'Faction mat inspection':trayKind==='achievements'?'Game achievements':trayKind==='slot'?'Technology prerequisites':'Setup record'} onkeydown={e=>trap(e,tray)} onclose={()=>trayOrigin?.focus()}><header><h2>{trayKind==='mat'?focused.name:trayKind==='achievements'?'Humanity’s milestones':trayKind==='slot'?`Technology ${inspectedSlot}`:'A beginning, preserved'}</h2><button onclick={()=>tray.close()}>Close tray</button></header><div class="tray-scroll" tabindex="0" role="region" aria-label="Inspection details">
   {#if trayKind==='mat'}<FactionMat player={focused} order={game.players.indexOf(focused)+1} expanded/><p>Supply is stored capacity; Population and Ore above are the available resources. Production discs remain on both tracks. The Action pawn is a separate piece, off-board.</p>
@@ -306,5 +306,19 @@ dialog{padding:0;background:#162c30;color:#e5d7af;border:2px solid #baa069;borde
  .record-tray.seat-reader .tray-scroll{padding:10px}
  .record-tray.seat-reader .tray-scroll>p{display:none}
  .record-tray.seat-reader .tray-scroll :global(.faction-mat){margin-bottom:0}
+}
+/* Full card inspection must remain readable across a shared 4K table. */
+@media(min-width:2200px){
+ .card-inspector{width:1000px;height:min(1750px,90dvh)}
+ .card-inspector .full-card{width:min(100%,850px)}
+ .card-inspector>header{padding:22px 28px;gap:28px}
+ .card-inspector>header button,.card-inspector nav button{font-size:25px;min-height:66px}
+ .card-inspector>header span{font-size:21px}
+ .card-inspector .inspection-scroll{padding:28px 36px 36px}
+ .card-inspector nav{padding:22px 28px;gap:28px}
+}
+/* Keep the complete shared4K topology inside its board, including focusable edge cards. */
+@media(min-width:2200px){
+ .shared:not(.diagonal):not(.technology-focus) .technology-tree{min-height:0;grid-template-rows:repeat(7,minmax(0,1fr))}
 }
 </style>

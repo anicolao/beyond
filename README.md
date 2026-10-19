@@ -4,7 +4,7 @@ Lead a faction beyond Earth. Help shape humanity's shared technology tree, build
 
 This repository defines a browser implementation of **Beyond the Sun**, designed by Dennis K. Chan and published by Rio Grande Games. Two to four players research technologies, develop production, build and move fleets, colonize systems, and claim achievements. The winner has the most victory points after the final round.
 
-**Status: gathering and card collection shipped for review; Basic setup in local review.** Browse source-reviewed card examples, gather local players directly at shared-table positions, or host/join with separate remote identities. Milestone003 adds legal unique Basic factions, immutable Begin and exact 2/3/4-player starting boards/mats in both modes. Setup, inspection and recovery are implemented locally; turn actions follow in later increments. Local verification passes 31 exact illustrated journeys and 26 capture guards. The stacked phase003 PR follows the final independent review.
+**Status: gathering, complete card gallery and Basic setup implemented.** Browse all100 source-reviewed designs/100 physical copies, gather local players at shared-table positions, or host/join with separate remote identities. Choose legal unique Basic factions, Begin once and inspect exact2/3/4-player starting boards/mats. Recovery preserves the same canonical game. Turn actions follow in later increments; this branch includes no004 research/production implementation. The card correction has local visual acceptance; its final Linux/hosted gates remain pending.
 
 ## Project documents
 
@@ -115,3 +115,5 @@ The checker reads the staged index; stage the prompt together with its related c
 ## License
 
 Copyright (C) 2026 Alex Nicolaou. Licensed under the GNU General Public License, version 3 only (SPDX: `GPL-3.0-only`). See [LICENSE](LICENSE).
+
+The shared production card renderer and complete source inventory are reviewed in [the card correction record](tests/e2e/001a-card-gallery/FIDELITY.md). The WISE physical second-print name/verbatim-wording limitation remains explicit.005 stays held; final correction acceptance requires pinned Linux and matching hosted revision.

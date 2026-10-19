@@ -163,7 +163,12 @@ service cloud.firestore {
         }
         function remoteLegacyChoices(e,b,a) {
           let bc=b.get('factions',{}); let ac=a.get('factions',{});
+          // Unchanged maps avoid four repeated per-seat lookups within Firestore's expression budget.
+          // Only leave/settings can remove choices; every other legacy event preserves the exact map.
           return e.type == 'remote-faction-selected' ? ac.diff(bc).affectedKeys().hasOnly([e.position])
+            : (bc.size() == 0 && ac.size() == 0) ? true
+            : e.type in ['remote-seat-claimed','remote-seat-renamed','remote-ready-changed'] ? ac == bc
+            : (e.type == 'remote-settings-changed' && a.settings.factions == 'basic' && (a.settings.capacity != 2 || !bc.values().hasAny(['disciples']))) ? ac == bc
             : remoteChoiceKept('p1',e,b,a) && remoteChoiceKept('p2',e,b,a) && remoteChoiceKept('p3',e,b,a) && remoteChoiceKept('p4',e,b,a);
         }
         function remoteChoiceKept(p,e,b,a) {

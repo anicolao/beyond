@@ -201,3 +201,51 @@ Reviewer 06:11: PR5 now head32bdfdb; final Linux/hosted gates still pending. Ind
 Reviewer-authored continuation:
 
 Reviewer 11:28: independently inspected round36 1280-card-and-bonus and1280-ready-to-commit. Substantial illustrated card, legible bonus, ship selection and contained payment/commit resolve the thin-card correction; scoped visual acceptance for these views. Continue now: finish PR5 cold-arrival readiness diagnosis/fix with unchanged guards and propagate into004; complete004 functional review evidence across remote/phone/shared4K including trades, reload and handoff, and provide current live URLs plus final captures for independent review. No005 release or final004 acceptance yet. PR5 head75d228c still Linux30/31; hosted/static pass. Do not wait for another human prompt, never merge.
+
+## Prompt 38: Verify Capture Fixes
+
+Reviewer-authored continuation:
+
+Reviewer 11:54: PR5 Linux run39246644493 finished29/31; independently read failed log. Cold phone arrival now passes. Failures are tabletop-4k foundation recovery Persist Ada seat (recovery.spec.ts18) and003 two-player shared setup (setup-tabletop.spec.ts20), shared capture deadline2017.997ms versus2000ms. Inspect traces/capture cost and resolve without weakening budgets, comparisons or guards; propagate any003 fix into004. Hosted publish/static/docs pass3d09db1; supervisor verified exact hosted revision and retained AIPFK host recovery. Agree with removing empty achievement acknowledgement per UX contract; finish that correction and refreshed flow evidence, then provide review-ready live URLs.004 local acceptance and005 release remain pending.
+
+## Prompt 39: Correct Card Composition
+
+Reviewer-authored delegation:
+
+Overriding human correction: user rejected PR3 gallery appearance and inconsistent card sizes; exact human message logged in meta-prompts.md Gallery quality rejection. Supervisor independently reopened hosted PR3 and docs/ux/concepts/04-research.png and WITHDRAWS gallery visual acceptance. Same-family cards have content-driven heights (no aspect ratio), oversized headers and weaker art/icon/rule hierarchy versus concept. Hold005 and further phase advancement. Prioritize local shared CardFace/gallery correction against04-research,06-colonization,08-achievements-v2 with deliberate consistent dimensions per family and composed art/rules; preserve semantic source-reviewed rules/accessibility, no cropping rules to force fit. No baseline churn until independent visual acceptance. Existing003 CI repair may finish; preserve work and propagate eventual card fix through dependent branches. Do not merge. This is reviewer-authored delegation; do not duplicate human text into PROMPTS.
+
+## Prompt 40: Complete Card Inventory
+
+Reviewer-authored delegation:
+
+Additional overriding human requirement: gallery must have exactly all cards for the game, no more and no less. Verbatim logged in meta-prompts.md Complete card inventory. Replace six-example scope with complete source-verified inventory for documented Beyond the Sun second-printing base game; preserve documented expansion/variant exclusions. Audit every card family, canonical identity, printed text, level/type, and physical duplicate quantities against authoritative sources. Distinguish unique designs from physical copies explicitly; no invented filler or extra fixture-only cards in collection. Use canonical production content, keep optional presentation markers separate, verify manifest equality and quantities to detect missing/extra/duplicate IDs. Do not guess unavailable card text/art; report precise source gaps. Update gallery counts/docs and completeness evidence. Combine with queued visual correction, no advancement/baselines before independent acceptance. Reviewer-authored delegation; human text remains in meta-prompts.
+
+## Prompt 41: Complete Original Illustrations
+
+Reviewer-authored delegation:
+
+Reviewer checkpoint: inventory report and six catalog checks inspected; internal consistency is useful progress, not final source/visual acceptance. Once current integration/type and two long-face overflow fixes pass, proceed directly to completing the 68 missing original illustrations in coherent reviewed batches with provenance. Do not stop at pending-art placeholders or wait for another human prompt. Show a small representative batch against the approved concepts before scaling the artwork, then complete all families. Keep local-first, no baseline churn or phase005; preserve source limitations explicitly. Human useful-progress request is logged in meta-prompts.md.
+
+## Prompt 42: Scope Artwork Approval
+
+Reviewer-authored checkpoint:
+
+Scoped art-batch review: independently inspected round41 phone Human Experiments, Mass Enlightenment and Transcendence and reopened04-research. The three distinct illustrations crop coherently and fit the intended painterly material palette; proceed with remaining65 original illustrations using this direction and provenance. This approves the representative artwork direction only, not full card visual acceptance: final review still needs stronger readable icon/cost hierarchy against concepts, complete-art collection, source fidelity and desktop/shared contexts. Keep all baselines and phase advancement held.
+
+## Prompt 43: Resolve Edition Discrepancy
+
+Reviewer-authored checkpoint:
+
+Reviewer checkpoint: round42 phone hierarchy and enlarged shared4K inspector independently viewed; these scoped corrections look satisfactory. I also verified the three pinned source hashes and ten Achievement entries; publisher clarification confirms Specialization includes shipyards. Full acceptance is still pending source review. While I review remaining faces, investigate the documented WISE edition-name discrepancy using publisher/authoritative second-printing evidence, and report any precise mechanical-text uncertainty still unresolved. Preserve current visuals; do not generate baselines, push, advance005 or redo passing checks absent changes. Log as reviewer-authored.
+
+## Prompt 44: Verify Gallery Correction
+
+Reviewer-authored checkpoint:
+
+Reviewer checkpoint: independently compared all 46 Technology definitions against all ten readable pinned source crops, plus all 20 Events against four readable Event crops and publisher Museum/Dyson/Quantum/Ministry clarifications. No mechanical mismatch identified. WISE investigation is complete to available evidence; preserve the documented unresolved physical second-print name/verbatim-wording limitation, do not guess or claim definitive edition equality. Round42 shared CardFace visual correction is locally accepted based on reviewed phone dense faces, desktop collection/live search/focus and shared/corner/4K contexts. You may now prepare final illustrated gallery E2E evidence and run independent macOS/Linux exact comparisons with unchanged guards. Cover all100 identity/quantity equality and original-art completeness, full markers and long faces. Prepare a concrete propagation plan to update PR3 and carry correction through PR4/PR5/current004 without mixing future gameplay into earlier branches. Keep005 held; do not merge. Report exact outcomes and propagation plan before publishing changes; full final acceptance remains pending these checks and hosted revision review. Log this as reviewer-authored.
+
+## Prompt 45: Publish Linux Candidates
+
+Reviewer-authored response:
+
+Reviewer response to Linux runner question: no additional local endpoint is known. Do not pursue sudo credentials or install a new runtime. Complete macOS exact evidence and the propagation plan first; report Linux as pending, then use the existing GitHub pinned Linux workflow after the reviewed stack update is published. Linux is a final acceptance gate, not a prerequisite for that publication. The earlier request to report before publishing remains for the propagation plan/macOS results; no need to stall useful local work. Keep005 held and preserve all review evidence given low disk space. Log as reviewer-authored.

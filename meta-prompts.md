@@ -192,3 +192,19 @@ All right, not ready for worrying about that yet. So tell me again, where are we
 ## Fidelity review reminder
 
 Okay, and you have a note to yourself to always check each phase against the actual approved UX design, looking for fidelity issues
+
+## Gallery preview request
+
+while we're waiting for progress on that, what's a PR preview URL I can use to review the card gallery
+
+## Gallery quality rejection
+
+these cards don't look good. what mockups are they meant to match? Why are they all different sizes? How did they get approved?
+
+## Complete card inventory
+
+aside from looking bad the card gallery also seems to be incomplete, it should have exactly all the cards for the game, no more, no less.
+
+## Useful progress check
+
+let's check that we are making useful progress.

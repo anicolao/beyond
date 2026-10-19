@@ -27,7 +27,7 @@ Every illustration used this common prompt wrapper:
 | `system.png` | A lush habitable exoplanet beneath a small warm red star, mountain ridges and silvery lakes, wisps of cloud, viewed from a near orbit with its curved horizon. Quiet emerald teal and warm ivory light. | `exec-1dc5a526-ff3b-4883-863d-93d1e87618a7` |
 | `achievement.png` | A magnificent human colony beside a lake on an alien world, slender domed towers and monumental brass astronomical ring, lush terraces, distant mountains, warm morning light, no people. | `exec-de0ca0fc-01c2-4728-bb7a-20a99871aeab` |
 
-The originals remain in the generation library. Achievement examples share the family illustration in this review subset; Hypercomputing and Advanced Robotics have distinct illustrations. They are not attempts to reproduce publisher artwork or portray exact locations/effects. Original project assets are covered by the repository license.
+The originals remain in the generation library. These initial illustrations are retained alongside the complete canonical collection documented below; Hypercomputing and Advanced Robotics have distinct illustrations. They are not attempts to reproduce publisher artwork or portray exact locations/effects. Original project assets are covered by the repository license.
 
 
 ### Advanced Robotics identity refinement
@@ -44,7 +44,7 @@ The remote gathering surface reuses the original observatory painting. Its graph
 
 Remote invitation QR codes are computed locally from the public invitation URL with the pinned MIT-licensed `qrcode-generator` 2.0.4 package by Kazuhiko Arase. They contain no secret/player identity and are never used in tabletop seating. Attribution and the MIT license ship in [static/licenses/qrcode-generator.txt](../static/licenses/qrcode-generator.txt). The URL remains an accessible, underlined semantic link beside the generated QR image.
 
-## Basic setup illustrations
+## Starting Technology illustrations used by the canonical gallery
 
 The following original artwork was generated with the built-in imagegen tool on 2026-10-18, visually inspected and copied into this workspace. No publisher or BGA art is shipped. Semantic rules, symbols, costs and controls remain live HTML/SVG.
 
@@ -71,3 +71,25 @@ Narrow Beam Lasers:
 > A precision narrow-beam laser research installation in orbit: a long graphite and brass optical array with multiple carefully aligned lenses and articulated focusing mirrors, one thin coherent teal beam aimed into empty deep space, blue planet curvature below, distant stars and warm sunlight catching machined metal. No missiles, explosions or firing at planets.
 
 `src/lib/cards/OriginalCardArt.svelte` draws deterministic original System planets and star fields in SVG. Geometry and palettes were authored in this repository; stable card IDs select the composition. Existing Advanced Robotics retains its distinct original gallery artwork. Board/mat/piece renderers and SVG art ship as GPL-3.0-only source. Publisher-authorized component sheets were inspected solely to transcribe mechanical facts; research copies in `/tmp` are not product assets or repository files.
+
+## Technologist card identity — local gallery correction39
+
+`static/art/cards/technologist-v1.png` is an original1536×1024 illustration generated with the built-in image_gen tool on2026-10-19, generation ID `exec-996d73b4-d4d7-4118-aa4d-cce4c0d3822c`. The native output was visually inspected and copied into the workspace without replacing the original Empire artwork. Both gallery and live card definitions select it; no rules or publisher artwork are embedded. Prompt:
+
+> Use case: stylized-concept. Asset type: original text-free illustration for the Technologist achievement card in a science-fiction board game. Create one polished painterly realistic illustration, landscape 1536x1024. Main subject: a large elegant graphite and brushed brass astronomical radio dish and connected research observatory on a remote rocky plateau, measuring the stars at dusk. Intricate credible mechanical struts and a small warmly lit laboratory; distant mountains, atmospheric depth, restrained teal instrument glows, soft ivory cloudlight and a starry blue-black sky. Luxurious restrained science-fiction board-game art; clear central silhouette that remains meaningful in a wide horizontal card-art window. Balanced composition with the entire main dish inside the central 70% of image width and central 50% of image height so a wide crop preserves its identity. Original architecture and composition. No lettering, numbers, symbols, titles, frame, UI, playing cards, dice, or watermark. This is standalone artwork; all rules and icons are rendered separately in HTML.
+
+The full-face research symbol is an original outlined flask authored in CardSymbol.svelte. It supplements explicit rule labels and carries no effect by itself.
+
+## Complete canonical card art — local correction41
+
+All68 remaining base-card illustrations were generated individually with the built-in `image_gen` tool on2026-10-19:41 Technologies,19 Events and8 Achievements. Native1536×1024 PNG outputs are retained unmodified in `static/art/cards/<canonical-id>-v1.png`. Existing32 illustrations remain. Each new design has distinct subject matter; all share painterly physical science-fiction materials, restrained graphite/ivory/brass and teal illumination. The art contains no playable interface or rules.
+
+[card-art-provenance.json](content/card-art-provenance.json) records every exact prompt, generation path/ID, destination, content hash, retry history and implementation inspection evidence. Prompts were recorded before generation; two rejected outputs were retried as unoccupied biotechnology machinery. No rejected output is a shipped asset. No publisher or BGA artwork was used as generation input. The three-card initial batch was inspected inside the shared production renderer against concepts04/08 before scaling; the subsequent batches were visually inspected as labelled contacts, with rendered crop review and phone/desktop/4K checks. Independent visual acceptance remains pending.
+
+All images are art only. Titles, costs, rules, source notes, action-space symbols and optional public-state markers remain semantic HTML/SVG. Family die cuts stay fixed; Technology/Event/Achievement art flexes within its window to preserve complete long rules and public markers without clipping or shrinking text. Exact printed-wording and WISE identity limitations remain documented in the inventory audit.
+
+## Card rule keys — local correction42
+
+Immediate lightning, circled action arrow and Supply cube are original semantic SVG shapes in CardSymbol.svelte. Cost strips retain complete canonical text and add decorative resource keys on graphite; they never parse or execute gameplay. Source costs and rule wording are unchanged. Full game inspection scales its card and persistent controls at4K for shared-table legibility. Representative illustration-direction approval covers only the three reviewed originals; full-card acceptance and baselines remain held.
+
+Reviewer44 locally accepts the complete shared-card correction and original-art presentation. This supersedes the earlier pending local-review status above; independent exact Linux and hosted revision gates remain pending.

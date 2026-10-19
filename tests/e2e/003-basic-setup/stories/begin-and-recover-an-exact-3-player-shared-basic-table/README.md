@@ -460,3 +460,54 @@ Viewpoint: **Shared table · one controller**.
 
 - [x] Reload recovers the same saved shared starting position
 - [x] The shared display fits without page scrolling.
+
+## 28. Inspect an illustrated starting Technology at desktop and full shared4K scale
+
+Viewpoint: **Shared table · one controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/begin-and-recover-an-exact-3-player-shared-basic-table/027-starting-card-desktop-darwin.png)](../../screenshots/begin-and-recover-an-exact-3-player-shared-basic-table/027-starting-card-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/begin-and-recover-an-exact-3-player-shared-basic-table/027-starting-card-tabletop-4k-darwin.png)](../../screenshots/begin-and-recover-an-exact-3-player-shared-basic-table/027-starting-card-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Inspect an illustrated starting Technology at desktop and full shared4K scale
+- [x] The shared display fits without page scrolling.
+
+## 29. Read the complete printed action cost and rules with persistent inspection navigation
+
+Viewpoint: **Shared table · one controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/begin-and-recover-an-exact-3-player-shared-basic-table/028-starting-card-rules-desktop-darwin.png)](../../screenshots/begin-and-recover-an-exact-3-player-shared-basic-table/028-starting-card-rules-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/begin-and-recover-an-exact-3-player-shared-basic-table/028-starting-card-rules-tabletop-4k-darwin.png)](../../screenshots/begin-and-recover-an-exact-3-player-shared-basic-table/028-starting-card-rules-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Read the complete printed action cost and rules with persistent inspection navigation
+- [x] The shared display fits without page scrolling.
+
+## 30. Return keyboard focus to the original public starting card
+
+Viewpoint: **Shared table · one controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/begin-and-recover-an-exact-3-player-shared-basic-table/029-starting-card-return-desktop-darwin.png)](../../screenshots/begin-and-recover-an-exact-3-player-shared-basic-table/029-starting-card-return-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/begin-and-recover-an-exact-3-player-shared-basic-table/029-starting-card-return-tabletop-4k-darwin.png)](../../screenshots/begin-and-recover-an-exact-3-player-shared-basic-table/029-starting-card-return-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Return keyboard focus to the original public starting card
+- [x] The shared display fits without page scrolling.

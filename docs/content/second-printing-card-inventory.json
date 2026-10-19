@@ -1,0 +1,1320 @@
+{
+  "edition": "English base game, second printing",
+  "counts": {
+    "Technology": 46,
+    "Event": 20,
+    "System": 24,
+    "Achievement": 10
+  },
+  "physicalCopies": 100,
+  "referenceRelease": "BGA250418-1337, base/unrevised faces only",
+  "references": [
+    {
+      "file": "techs.jpg",
+      "sha256": "eeb39d18a40276a80cf4b1a37e64e6969939089069587c3c77b09dc6f11fc2a9"
+    },
+    {
+      "file": "eventsAchievements.jpg",
+      "sha256": "584558252cbc85c9afccc5dd61b8eee9242b895628362a1d52e5d45d823b8336"
+    },
+    {
+      "file": "planetCards.jpg",
+      "sha256": "c2f1210bc8537baedb8b3f24da82bf605dc5027d591cdfeb698dd2b2a5721135"
+    }
+  ],
+  "cards": [
+    {
+      "id": "terraforming",
+      "printedTitle": "Terraforming",
+      "family": "Technology",
+      "copies": 1,
+      "level": "I",
+      "incoming": [],
+      "outgoing": [
+        "Commercial"
+      ],
+      "sourceCell": "techs.jpg:1:5"
+    },
+    {
+      "id": "advanced-genetics",
+      "printedTitle": "Advanced Genetics",
+      "family": "Technology",
+      "copies": 1,
+      "level": "I",
+      "incoming": [],
+      "outgoing": [
+        "Economic"
+      ],
+      "sourceCell": "techs.jpg:1:6"
+    },
+    {
+      "id": "narrow-beam-lasers",
+      "printedTitle": "Narrow Beam Lasers",
+      "family": "Technology",
+      "copies": 1,
+      "level": "I",
+      "incoming": [],
+      "outgoing": [
+        "Military"
+      ],
+      "sourceCell": "techs.jpg:1:7"
+    },
+    {
+      "id": "advanced-robotics",
+      "printedTitle": "Advanced Robotics",
+      "family": "Technology",
+      "copies": 1,
+      "level": "I",
+      "incoming": [],
+      "outgoing": [
+        "Scientific"
+      ],
+      "sourceCell": "techs.jpg:1:8"
+    },
+    {
+      "id": "hypercomputing",
+      "printedTitle": "Hypercomputing",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Scientific"
+      ],
+      "outgoing": [
+        "Scientific"
+      ],
+      "sourceCell": "techs.jpg:1:9"
+    },
+    {
+      "id": "human-experiments",
+      "printedTitle": "Human Experiments",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Scientific"
+      ],
+      "outgoing": [
+        "Scientific",
+        "Military"
+      ],
+      "sourceCell": "techs.jpg:1:10"
+    },
+    {
+      "id": "psionics-research",
+      "printedTitle": "Psionics Research",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Scientific"
+      ],
+      "outgoing": [
+        "Scientific",
+        "Economic"
+      ],
+      "sourceCell": "techs.jpg:2:1"
+    },
+    {
+      "id": "multi-colony-symposium",
+      "printedTitle": "Multi-Colony Symposium",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Scientific"
+      ],
+      "outgoing": [
+        "Scientific",
+        "Commercial"
+      ],
+      "sourceCell": "techs.jpg:2:2"
+    },
+    {
+      "id": "exo-alloy-refinement",
+      "printedTitle": "Exo-Alloy Refinement",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Military"
+      ],
+      "outgoing": [
+        "Scientific",
+        "Military"
+      ],
+      "sourceCell": "techs.jpg:2:3"
+    },
+    {
+      "id": "plasma-cannon",
+      "printedTitle": "Plasma Cannon",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Military"
+      ],
+      "outgoing": [
+        "Military"
+      ],
+      "sourceCell": "techs.jpg:2:4"
+    },
+    {
+      "id": "android-destroyers",
+      "printedTitle": "Android Destroyers",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Military"
+      ],
+      "outgoing": [
+        "Military",
+        "Economic"
+      ],
+      "sourceCell": "techs.jpg:2:5"
+    },
+    {
+      "id": "modular-fleet",
+      "printedTitle": "Modular Fleet",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Military"
+      ],
+      "outgoing": [
+        "Military",
+        "Commercial"
+      ],
+      "sourceCell": "techs.jpg:2:6"
+    },
+    {
+      "id": "bio-synaptic-network",
+      "printedTitle": "Bio-Synaptic Network",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Economic"
+      ],
+      "outgoing": [
+        "Economic",
+        "Scientific"
+      ],
+      "sourceCell": "techs.jpg:2:7"
+    },
+    {
+      "id": "outer-sector-militia",
+      "printedTitle": "Outer Sector Militia",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Economic"
+      ],
+      "outgoing": [
+        "Military",
+        "Economic"
+      ],
+      "sourceCell": "techs.jpg:2:8"
+    },
+    {
+      "id": "mass-cloning",
+      "printedTitle": "Mass Cloning",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Economic"
+      ],
+      "outgoing": [
+        "Economic"
+      ],
+      "sourceCell": "techs.jpg:2:9"
+    },
+    {
+      "id": "android-surveyors",
+      "printedTitle": "Android Surveyors",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Economic"
+      ],
+      "outgoing": [
+        "Economic",
+        "Commercial"
+      ],
+      "sourceCell": "techs.jpg:2:10"
+    },
+    {
+      "id": "spacetime-anomaly-studies",
+      "printedTitle": "Spacetime Anomaly Studies",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Commercial"
+      ],
+      "outgoing": [
+        "Commercial",
+        "Scientific"
+      ],
+      "sourceCell": "techs.jpg:3:1"
+    },
+    {
+      "id": "terranova-cruisers",
+      "printedTitle": "Terranova Cruisers",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Commercial"
+      ],
+      "outgoing": [
+        "Commercial",
+        "Military"
+      ],
+      "sourceCell": "techs.jpg:3:2"
+    },
+    {
+      "id": "supply-outpost",
+      "printedTitle": "Supply Outpost",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Commercial"
+      ],
+      "outgoing": [
+        "Commercial",
+        "Economic"
+      ],
+      "sourceCell": "techs.jpg:3:3"
+    },
+    {
+      "id": "intersystem-diplomacy",
+      "printedTitle": "Intersystem Diplomacy",
+      "family": "Technology",
+      "copies": 1,
+      "level": "II",
+      "incoming": [
+        "Commercial"
+      ],
+      "outgoing": [
+        "Commercial"
+      ],
+      "sourceCell": "techs.jpg:3:4"
+    },
+    {
+      "id": "transdimensional-ai",
+      "printedTitle": "Transdimensional AI",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Scientific"
+      ],
+      "outgoing": [
+        "Scientific"
+      ],
+      "sourceCell": "techs.jpg:3:5"
+    },
+    {
+      "id": "planetary-scale-research",
+      "printedTitle": "Planetary-scale Research",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Scientific"
+      ],
+      "outgoing": [
+        "Scientific",
+        "Military"
+      ],
+      "sourceCell": "techs.jpg:3:6"
+    },
+    {
+      "id": "metahuman-chambers",
+      "printedTitle": "Metahuman Chambers",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Scientific"
+      ],
+      "outgoing": [
+        "Scientific",
+        "Economic"
+      ],
+      "sourceCell": "techs.jpg:3:7"
+    },
+    {
+      "id": "hivemind-computing",
+      "printedTitle": "Hivemind Computing",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Scientific"
+      ],
+      "outgoing": [
+        "Scientific",
+        "Commercial"
+      ],
+      "sourceCell": "techs.jpg:3:8"
+    },
+    {
+      "id": "deep-space-megastructures",
+      "printedTitle": "Deep Space Megastructures",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Military"
+      ],
+      "outgoing": [
+        "Scientific",
+        "Military"
+      ],
+      "sourceCell": "techs.jpg:3:9"
+    },
+    {
+      "id": "capital-ship",
+      "printedTitle": "Capital Ship",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Military"
+      ],
+      "outgoing": [
+        "Military"
+      ],
+      "sourceCell": "techs.jpg:3:10"
+    },
+    {
+      "id": "android-armada",
+      "printedTitle": "Android Armada",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Military"
+      ],
+      "outgoing": [
+        "Military",
+        "Economic"
+      ],
+      "sourceCell": "techs.jpg:4:1"
+    },
+    {
+      "id": "mercenary-fleet",
+      "printedTitle": "Mercenary Fleet",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Military"
+      ],
+      "outgoing": [
+        "Military",
+        "Commercial"
+      ],
+      "sourceCell": "techs.jpg:4:2"
+    },
+    {
+      "id": "cerebral-implants",
+      "printedTitle": "Cerebral Implants",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Economic"
+      ],
+      "outgoing": [
+        "Economic",
+        "Scientific"
+      ],
+      "sourceCell": "techs.jpg:4:3"
+    },
+    {
+      "id": "manufacturing-orbitals",
+      "printedTitle": "Manufacturing Orbitals",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Economic"
+      ],
+      "outgoing": [
+        "Economic",
+        "Military"
+      ],
+      "sourceCell": "techs.jpg:4:4"
+    },
+    {
+      "id": "android-rights-movement",
+      "printedTitle": "Android Rights Movement",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Economic"
+      ],
+      "outgoing": [
+        "Economic"
+      ],
+      "sourceCell": "techs.jpg:4:5"
+    },
+    {
+      "id": "subatomic-fabrication",
+      "printedTitle": "Subatomic Fabrication",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Economic"
+      ],
+      "outgoing": [
+        "Economic",
+        "Commercial"
+      ],
+      "sourceCell": "techs.jpg:4:6"
+    },
+    {
+      "id": "quantum-data-exchange",
+      "printedTitle": "Quantum Data Exchange",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Commercial"
+      ],
+      "outgoing": [
+        "Commercial",
+        "Scientific"
+      ],
+      "sourceCell": "techs.jpg:4:7"
+    },
+    {
+      "id": "hyperdrive-boosters",
+      "printedTitle": "Hyperdrive Boosters",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Commercial"
+      ],
+      "outgoing": [
+        "Commercial",
+        "Military"
+      ],
+      "sourceCell": "techs.jpg:4:8"
+    },
+    {
+      "id": "wormhole-technology",
+      "printedTitle": "Wormhole Technology",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Commercial"
+      ],
+      "outgoing": [
+        "Commercial",
+        "Economic"
+      ],
+      "sourceCell": "techs.jpg:4:9"
+    },
+    {
+      "id": "stealth-terraformers",
+      "printedTitle": "Stealth Terraformers",
+      "family": "Technology",
+      "copies": 1,
+      "level": "III",
+      "incoming": [
+        "Commercial"
+      ],
+      "outgoing": [
+        "Commercial"
+      ],
+      "sourceCell": "techs.jpg:4:10"
+    },
+    {
+      "id": "technological-singularity",
+      "printedTitle": "Technological Singularity",
+      "family": "Technology",
+      "copies": 1,
+      "level": "IIII",
+      "incoming": [
+        "Scientific"
+      ],
+      "outgoing": [],
+      "sourceCell": "techs.jpg:5:1"
+    },
+    {
+      "id": "giga-corporations",
+      "printedTitle": "Giga-Corporations",
+      "family": "Technology",
+      "copies": 1,
+      "level": "IIII",
+      "incoming": [
+        "Scientific",
+        "Economic"
+      ],
+      "outgoing": [],
+      "sourceCell": "techs.jpg:5:2"
+    },
+    {
+      "id": "parallel-universe-generator",
+      "printedTitle": "Parallel Universe Generator",
+      "family": "Technology",
+      "copies": 1,
+      "level": "IIII",
+      "incoming": [
+        "Scientific",
+        "Commercial"
+      ],
+      "outgoing": [],
+      "sourceCell": "techs.jpg:5:3"
+    },
+    {
+      "id": "neo-industrial-revolution",
+      "printedTitle": "Neo-Industrial Revolution",
+      "family": "Technology",
+      "copies": 1,
+      "level": "IIII",
+      "incoming": [
+        "Scientific",
+        "Military"
+      ],
+      "outgoing": [],
+      "sourceCell": "techs.jpg:5:4"
+    },
+    {
+      "id": "megafleet-construction",
+      "printedTitle": "Megafleet Construction",
+      "family": "Technology",
+      "copies": 1,
+      "level": "IIII",
+      "incoming": [
+        "Military"
+      ],
+      "outgoing": [],
+      "sourceCell": "techs.jpg:5:5"
+    },
+    {
+      "id": "mind-machine-assimilation",
+      "printedTitle": "Mind/Machine Assimilation",
+      "family": "Technology",
+      "copies": 1,
+      "level": "IIII",
+      "incoming": [
+        "Military",
+        "Economic"
+      ],
+      "outgoing": [],
+      "sourceCell": "techs.jpg:5:6"
+    },
+    {
+      "id": "new-golden-age",
+      "printedTitle": "New Golden Age",
+      "family": "Technology",
+      "copies": 1,
+      "level": "IIII",
+      "incoming": [
+        "Economic"
+      ],
+      "outgoing": [],
+      "sourceCell": "techs.jpg:5:7"
+    },
+    {
+      "id": "galactic-empire",
+      "printedTitle": "Galactic Empire",
+      "family": "Technology",
+      "copies": 1,
+      "level": "IIII",
+      "incoming": [
+        "Commercial",
+        "Military"
+      ],
+      "outgoing": [],
+      "sourceCell": "techs.jpg:5:8"
+    },
+    {
+      "id": "android-independence",
+      "printedTitle": "Android Independence",
+      "family": "Technology",
+      "copies": 1,
+      "level": "IIII",
+      "incoming": [
+        "Commercial",
+        "Economic"
+      ],
+      "outgoing": [],
+      "sourceCell": "techs.jpg:5:9"
+    },
+    {
+      "id": "ministry-of-colonies",
+      "printedTitle": "Ministry of Colonies",
+      "family": "Technology",
+      "copies": 1,
+      "level": "IIII",
+      "incoming": [
+        "Commercial"
+      ],
+      "outgoing": [],
+      "sourceCell": "techs.jpg:5:10"
+    },
+    {
+      "id": "maya-chaturvedi",
+      "printedTitle": "Maya Chaturvedi, Visionary",
+      "family": "Event",
+      "copies": 1,
+      "level": "II",
+      "fixed": true,
+      "sourceCell": "eventsAchievements.jpg:3:1"
+    },
+    {
+      "id": "tyler-lee",
+      "printedTitle": "Tyler Lee, Entrepreneur Prodigy",
+      "family": "Event",
+      "copies": 1,
+      "level": "II",
+      "fixed": true,
+      "sourceCell": "eventsAchievements.jpg:3:2"
+    },
+    {
+      "id": "experimental-prototypes",
+      "printedTitle": "Experimental Prototypes",
+      "family": "Event",
+      "copies": 1,
+      "level": "II",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:3:3"
+    },
+    {
+      "id": "march-of-progress",
+      "printedTitle": "March of Progress",
+      "family": "Event",
+      "copies": 1,
+      "level": "II",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:3:4"
+    },
+    {
+      "id": "economic-boom",
+      "printedTitle": "Economic Boom",
+      "family": "Event",
+      "copies": 1,
+      "level": "II",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:3:5"
+    },
+    {
+      "id": "covert-arms-deal",
+      "printedTitle": "Covert Arms Deal",
+      "family": "Event",
+      "copies": 1,
+      "level": "II",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:3:6"
+    },
+    {
+      "id": "dimensional-rift",
+      "printedTitle": "Dimensional Rift",
+      "family": "Event",
+      "copies": 1,
+      "level": "II",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:3:7"
+    },
+    {
+      "id": "research-tariffs",
+      "printedTitle": "Research Tariffs",
+      "family": "Event",
+      "copies": 1,
+      "level": "II",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:3:8"
+    },
+    {
+      "id": "black-market-industries",
+      "printedTitle": "Black Market Industries",
+      "family": "Event",
+      "copies": 1,
+      "level": "II",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:3:9"
+    },
+    {
+      "id": "erratic-solar-activity",
+      "printedTitle": "Erratic Solar Activity",
+      "family": "Event",
+      "copies": 1,
+      "level": "II",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:3:10"
+    },
+    {
+      "id": "kc-24x",
+      "printedTitle": "KC-24X, First Android Governor",
+      "family": "Event",
+      "copies": 1,
+      "level": "III",
+      "fixed": true,
+      "sourceCell": "eventsAchievements.jpg:5:1"
+    },
+    {
+      "id": "onu",
+      "printedTitle": "Onu, Speaker for the Colonies",
+      "family": "Event",
+      "copies": 1,
+      "level": "III",
+      "fixed": true,
+      "sourceCell": "eventsAchievements.jpg:5:2"
+    },
+    {
+      "id": "monolith-construction",
+      "printedTitle": "Monolith Construction",
+      "family": "Event",
+      "copies": 1,
+      "level": "III",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:5:3"
+    },
+    {
+      "id": "galactic-census",
+      "printedTitle": "Galactic Census",
+      "family": "Event",
+      "copies": 1,
+      "level": "III",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:5:4"
+    },
+    {
+      "id": "interstellar-arms-race",
+      "printedTitle": "Interstellar Arms Race",
+      "family": "Event",
+      "copies": 1,
+      "level": "III",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:5:5"
+    },
+    {
+      "id": "research-grant",
+      "printedTitle": "Research Grant",
+      "family": "Event",
+      "copies": 1,
+      "level": "III",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:5:6"
+    },
+    {
+      "id": "museum-of-retired-spacecraft",
+      "printedTitle": "Museum of Retired Spacecraft",
+      "family": "Event",
+      "copies": 1,
+      "level": "III",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:5:7"
+    },
+    {
+      "id": "mass-enlightenment",
+      "printedTitle": "Mass Enlightenment",
+      "family": "Event",
+      "copies": 1,
+      "level": "III",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:5:8"
+    },
+    {
+      "id": "galactic-hq",
+      "printedTitle": "Galactic HQ",
+      "family": "Event",
+      "copies": 1,
+      "level": "III",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:5:9"
+    },
+    {
+      "id": "dyson-sphere-mk-i",
+      "printedTitle": "Dyson Sphere, Mk. I",
+      "family": "Event",
+      "copies": 1,
+      "level": "III",
+      "fixed": false,
+      "sourceCell": "eventsAchievements.jpg:5:10"
+    },
+    {
+      "id": "alpha-centauri",
+      "printedTitle": "Alpha Centauri",
+      "family": "System",
+      "copies": 1,
+      "deck": "A",
+      "power": 3,
+      "points": 5,
+      "specialties": [
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:1:2"
+    },
+    {
+      "id": "barnards-star",
+      "printedTitle": "Barnard's Star",
+      "family": "System",
+      "copies": 1,
+      "deck": "A",
+      "power": 3,
+      "points": 5,
+      "specialties": [
+        "Food"
+      ],
+      "sourceCell": "planetCards.jpg:1:3"
+    },
+    {
+      "id": "61-cygni",
+      "printedTitle": "61 Cygni",
+      "family": "System",
+      "copies": 1,
+      "deck": "A",
+      "power": 3,
+      "points": 5,
+      "specialties": [
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:1:4"
+    },
+    {
+      "id": "epsilon-indi",
+      "printedTitle": "Epsilon Indi",
+      "family": "System",
+      "copies": 1,
+      "deck": "A",
+      "power": 3,
+      "points": 5,
+      "specialties": [
+        "Food"
+      ],
+      "sourceCell": "planetCards.jpg:1:5"
+    },
+    {
+      "id": "gj-1061",
+      "printedTitle": "GJ 1061",
+      "family": "System",
+      "copies": 1,
+      "deck": "A",
+      "power": 4,
+      "points": 5,
+      "specialties": [
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:1:6"
+    },
+    {
+      "id": "groombridge-34",
+      "printedTitle": "Groombridge 34",
+      "family": "System",
+      "copies": 1,
+      "deck": "A",
+      "power": 4,
+      "points": 5,
+      "specialties": [
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:1:7"
+    },
+    {
+      "id": "lalande-21185",
+      "printedTitle": "Lalande 21185",
+      "family": "System",
+      "copies": 1,
+      "deck": "A",
+      "power": 3,
+      "points": 5,
+      "specialties": [
+        "Food",
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:1:8"
+    },
+    {
+      "id": "procyon",
+      "printedTitle": "Procyon",
+      "family": "System",
+      "copies": 1,
+      "deck": "A",
+      "power": 4,
+      "points": 3,
+      "specialties": [
+        "Food",
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:1:9"
+    },
+    {
+      "id": "sirius",
+      "printedTitle": "Sirius",
+      "family": "System",
+      "copies": 1,
+      "deck": "A",
+      "power": 3,
+      "points": 5,
+      "specialties": [
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:1:10"
+    },
+    {
+      "id": "struve-2398",
+      "printedTitle": "Struve 2398",
+      "family": "System",
+      "copies": 1,
+      "deck": "A",
+      "power": 3,
+      "points": 4,
+      "specialties": [
+        "Food",
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:1:11"
+    },
+    {
+      "id": "teegardens-star",
+      "printedTitle": "Teegarden's Star",
+      "family": "System",
+      "copies": 1,
+      "deck": "A",
+      "power": 3,
+      "points": 5,
+      "specialties": [
+        "Food"
+      ],
+      "sourceCell": "planetCards.jpg:1:12"
+    },
+    {
+      "id": "wolf-359",
+      "printedTitle": "Wolf 359",
+      "family": "System",
+      "copies": 1,
+      "deck": "A",
+      "power": 3,
+      "points": 5,
+      "specialties": [
+        "Food",
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:1:13"
+    },
+    {
+      "id": "ad-leonis",
+      "printedTitle": "AD Leonis",
+      "family": "System",
+      "copies": 1,
+      "deck": "B",
+      "power": 4,
+      "points": 6,
+      "specialties": [
+        "Food"
+      ],
+      "sourceCell": "planetCards.jpg:2:2"
+    },
+    {
+      "id": "den-0255-4700",
+      "printedTitle": "DEN 0255-4700",
+      "family": "System",
+      "copies": 1,
+      "deck": "B",
+      "power": 4,
+      "points": 5,
+      "specialties": [
+        "Food"
+      ],
+      "sourceCell": "planetCards.jpg:2:3"
+    },
+    {
+      "id": "dx-cancri",
+      "printedTitle": "DX Cancri",
+      "family": "System",
+      "copies": 1,
+      "deck": "B",
+      "power": 4,
+      "points": 6,
+      "specialties": [
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:2:4"
+    },
+    {
+      "id": "ez-aquarii",
+      "printedTitle": "EZ Aquarii",
+      "family": "System",
+      "copies": 1,
+      "deck": "B",
+      "power": 5,
+      "points": 4,
+      "specialties": [
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:2:5"
+    },
+    {
+      "id": "kapteyns-star",
+      "printedTitle": "Kapteyn's Star",
+      "family": "System",
+      "copies": 1,
+      "deck": "B",
+      "power": 4,
+      "points": 6,
+      "specialties": [
+        "Food",
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:2:6"
+    },
+    {
+      "id": "kruger-60",
+      "printedTitle": "Kruger 60",
+      "family": "System",
+      "copies": 1,
+      "deck": "B",
+      "power": 4,
+      "points": 6,
+      "specialties": [
+        "Food"
+      ],
+      "sourceCell": "planetCards.jpg:2:7"
+    },
+    {
+      "id": "lacaille-9352",
+      "printedTitle": "Lacaille 9352",
+      "family": "System",
+      "copies": 1,
+      "deck": "B",
+      "power": 5,
+      "points": 4,
+      "specialties": [
+        "Food"
+      ],
+      "sourceCell": "planetCards.jpg:2:8"
+    },
+    {
+      "id": "luytens-star",
+      "printedTitle": "Luyten's Star",
+      "family": "System",
+      "copies": 1,
+      "deck": "B",
+      "power": 5,
+      "points": 7,
+      "specialties": [
+        "Food",
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:2:9"
+    },
+    {
+      "id": "ross-154",
+      "printedTitle": "Ross 154",
+      "family": "System",
+      "copies": 1,
+      "deck": "B",
+      "power": 4,
+      "points": 6,
+      "specialties": [
+        "Food",
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:2:10"
+    },
+    {
+      "id": "tau-ceti",
+      "printedTitle": "Tau Ceti",
+      "family": "System",
+      "copies": 1,
+      "deck": "B",
+      "power": 3,
+      "points": "?",
+      "specialties": [
+        "Food",
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:2:11"
+    },
+    {
+      "id": "tz-arietis",
+      "printedTitle": "TZ Arietis",
+      "family": "System",
+      "copies": 1,
+      "deck": "B",
+      "power": 3,
+      "points": "?",
+      "specialties": [
+        "Ore"
+      ],
+      "sourceCell": "planetCards.jpg:2:12"
+    },
+    {
+      "id": "wise-1541-2250",
+      "printedTitle": "WISE 1541-2250",
+      "family": "System",
+      "copies": 1,
+      "deck": "B",
+      "power": 5,
+      "points": 2,
+      "specialties": [
+        "Food"
+      ],
+      "sourceCell": "planetCards.jpg:2:13"
+    },
+    {
+      "id": "transcendence",
+      "printedTitle": "Transcendence",
+      "family": "Achievement",
+      "copies": 1,
+      "deck": "Basic",
+      "rewards": [
+        4,
+        3,
+        2,
+        1
+      ],
+      "sourceCell": "eventsAchievements.jpg:1:4"
+    },
+    {
+      "id": "empire",
+      "printedTitle": "Empire",
+      "family": "Achievement",
+      "copies": 1,
+      "deck": "Basic",
+      "rewards": [
+        4,
+        3,
+        2,
+        1
+      ],
+      "sourceCell": "eventsAchievements.jpg:1:5"
+    },
+    {
+      "id": "technologist",
+      "printedTitle": "Technologist",
+      "family": "Achievement",
+      "copies": 1,
+      "deck": "A",
+      "rewards": [
+        3,
+        2
+      ],
+      "sourceCell": "eventsAchievements.jpg:1:6"
+    },
+    {
+      "id": "efficiency",
+      "printedTitle": "Efficiency",
+      "family": "Achievement",
+      "copies": 1,
+      "deck": "A",
+      "rewards": [
+        3,
+        2
+      ],
+      "sourceCell": "eventsAchievements.jpg:1:7"
+    },
+    {
+      "id": "prosperity",
+      "printedTitle": "Prosperity",
+      "family": "Achievement",
+      "copies": 1,
+      "deck": "A",
+      "rewards": [
+        3,
+        2
+      ],
+      "sourceCell": "eventsAchievements.jpg:1:8"
+    },
+    {
+      "id": "agility",
+      "printedTitle": "Agility",
+      "family": "Achievement",
+      "copies": 1,
+      "deck": "A",
+      "rewards": [
+        3,
+        2
+      ],
+      "sourceCell": "eventsAchievements.jpg:1:9"
+    },
+    {
+      "id": "posthumanist",
+      "printedTitle": "Posthumanist",
+      "family": "Achievement",
+      "copies": 1,
+      "deck": "B",
+      "rewards": [
+        3
+      ],
+      "sourceCell": "eventsAchievements.jpg:1:10"
+    },
+    {
+      "id": "strategist",
+      "printedTitle": "Strategist",
+      "family": "Achievement",
+      "copies": 1,
+      "deck": "B",
+      "rewards": [
+        3
+      ],
+      "sourceCell": "eventsAchievements.jpg:2:1"
+    },
+    {
+      "id": "warlord",
+      "printedTitle": "Warlord",
+      "family": "Achievement",
+      "copies": 1,
+      "deck": "B",
+      "rewards": [
+        3
+      ],
+      "sourceCell": "eventsAchievements.jpg:2:2"
+    },
+    {
+      "id": "specialization",
+      "printedTitle": "Specialization",
+      "family": "Achievement",
+      "copies": 1,
+      "deck": "B",
+      "rewards": [
+        3
+      ],
+      "sourceCell": "eventsAchievements.jpg:2:3"
+    }
+  ],
+  "separateComponents": [
+    {
+      "id": "two-sided-player-aid",
+      "designs": 1,
+      "physicalCopies": 4,
+      "sides": 2,
+      "kind": "reference component, outside the four gameplay-card families"
+    },
+    {
+      "id": "base-faction-mats",
+      "designs": 8,
+      "physicalCopies": 8,
+      "kind": "4 Basic and 4 Advanced mats"
+    },
+    {
+      "id": "guild-cover-tiles",
+      "designs": 4,
+      "physicalCopies": 4,
+      "kind": "tiles"
+    },
+    {
+      "id": "basic-spacefaring-overlays",
+      "designs": 2,
+      "physicalCopies": 2,
+      "kind": "player-count replacement tiles"
+    }
+  ]
+}

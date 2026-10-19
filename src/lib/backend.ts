@@ -7,7 +7,7 @@ let session: ReturnType<typeof connect> | undefined;
 function connect() {
   const app = initializeApp({ apiKey: env.PUBLIC_FIREBASE_API_KEY || 'demo-key', authDomain: env.PUBLIC_FIREBASE_AUTH_DOMAIN || 'demo-beyond.firebaseapp.com', projectId: env.PUBLIC_FIREBASE_PROJECT_ID || 'demo-beyond', appId: env.PUBLIC_FIREBASE_APP_ID || 'demo-beyond' });
   const auth = getAuth(app), db = getFirestore(app);
-  if (env.PUBLIC_FIREBASE_EMULATORS === 'true') { connectAuthEmulator(auth, 'http://127.0.0.1:9297', { disableWarnings: true }); connectFirestoreEmulator(db, '127.0.0.1', 8197); }
+  if (env.PUBLIC_FIREBASE_EMULATORS === 'true') { connectAuthEmulator(auth, `http://127.0.0.1:${Number(env.PUBLIC_AUTH_EMULATOR_PORT || 9297)}`, { disableWarnings: true }); connectFirestoreEmulator(db, '127.0.0.1', Number(env.PUBLIC_FIRESTORE_EMULATOR_PORT || 8197)); }
   const ready = auth.authStateReady().then(async () => {
     const user=auth.currentUser ?? (await signInAnonymously(auth)).user;
     // Establish the real server connection before reporting Connected. This

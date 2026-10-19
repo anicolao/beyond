@@ -56,13 +56,30 @@ try {
   } else {
     const work = git(['show', ':PROMPT_WORK.md']);
     const oldWork = base ? trackedAt(base, 'PROMPT_WORK.md') : '';
-    if (!work.startsWith(oldWork)) fail('Preserve existing continuation history.');
-    const line = work.slice(oldWork.length).trim();
-    const parts = line.split(' | ');
+    let lines;
+    if (!args.length) {
+      if (!work.startsWith(oldWork)) fail('Preserve existing continuation history.');
+      lines = work.slice(oldWork.length).trim().split('\n').filter(Boolean);
+    } else {
+      // A stacked merge keeps each parent's records verbatim and in order,
+      // while its other branch can contribute intervening continuation entries.
+      const prior=oldWork.split('\n').filter(Boolean);let cursor=0;lines=[];
+      for(const line of work.split('\n').filter(Boolean)) {
+        if(line===prior[cursor])cursor++;else lines.push(line);
+      }
+      if(cursor!==prior.length)fail('Preserve existing continuation history.');
+    }
+    // A commit appends one step; CI's explicit PR base can span several commits.
+    if (!lines.length || (!args.length && lines.length !== 1)) fail('Append one unique continuation per commit.');
     const digest = createHash('sha256').update(staged).digest('hex');
-    if (parts.length !== 3 || parts[0] !== `Prompt ${latest}` || parts[1] !== digest
-        || !/^[^\r\n]{10,200}$/.test(parts[2]) || oldWork.split('\n').includes(line)) {
-      fail('Append a unique continuation for the latest prompt and exact staged log SHA-256.');
+    const seen = new Set(oldWork.split('\n'));
+    for (const line of lines) {
+      const parts = line.split(' | ');
+      if (parts.length !== 3 || parts[0] !== `Prompt ${latest}` || parts[1] !== digest
+          || !/^[^\r\n]{10,200}$/.test(parts[2]) || seen.has(line)) {
+        fail('Append a unique continuation for the latest prompt and exact staged log SHA-256.');
+      }
+      seen.add(line);
     }
     console.log('Prompt continuation check passed.');
   }

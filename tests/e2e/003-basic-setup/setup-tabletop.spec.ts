@@ -32,4 +32,12 @@ for(const count of [2,3,4] as const)test(`Begin and recover an exact ${count}-pl
  await page.getByRole('button',{name:'Setup record',exact:true}).click();await photograph('setup-record','Confirm the exact board face and covered guilds',async()=>expect(page.getByRole('dialog',{name:'Setup record',exact:true})).toContainText(count===2?'Two-player face · 1 starting A, 2 B':'Standard face · 2 starting A, 2 B'));
  await page.keyboard.press('Escape');await photograph('record-closed','The board controls remain reachable after inspection',async()=>expect(page.getByRole('button',{name:'Setup record',exact:true})).toBeFocused());
  await page.reload();await photograph('restored','Reload recovers the same saved shared starting position',async()=>{await expect(page.getByRole('region',{name:'Basic game starting position',exact:true})).toBeVisible();await expect(page.getByRole('button',{name:'Inspect Ada faction mat',exact:true})).toBeVisible();});
+ // The shared public board uses the same production card face as the gallery.
+ await page.getByRole('button',{name:'Inspect Narrow Beam Lasers',exact:true}).click();
+ const card=page.getByRole('dialog',{name:'Game card inspection',exact:true});
+ await photograph('starting-card','Inspect an illustrated starting Technology at desktop and full shared4K scale',async()=>{await expect(card.getByRole('heading',{name:'Narrow Beam Lasers',exact:true})).toBeVisible();await expect(card.getByRole('button',{name:'Close card',exact:true})).toBeVisible();});
+ await card.getByRole('region',{name:'Full card face',exact:true}).focus();await page.keyboard.press('End');
+ await photograph('starting-card-rules','Read the complete printed action cost and rules with persistent inspection navigation',async()=>{await expect(card.locator('.cost')).toHaveText('Cost 1 Ore + 1 Population');await expect(card.locator('.cost')).toBeInViewport();await expect(card.getByText('Build a level-2 ship. Then jump up to 3.',{exact:true})).toBeVisible();await expect(card.getByRole('button',{name:'Next card',exact:true})).toBeVisible();});
+ await page.keyboard.press('Escape');await photograph('starting-card-return','Return keyboard focus to the original public starting card',async()=>expect(page.getByRole('button',{name:'Inspect Narrow Beam Lasers',exact:true})).toBeFocused());
+
 });
