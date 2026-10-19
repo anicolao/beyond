@@ -36,6 +36,14 @@ The originals remain in the generation library. These initial illustrations are 
 
 > Use case: stylized-concept. Asset type: original production illustration for the Advanced Robotics technology card in Beyond the Sun, art only. A precise robotic manufacturing laboratory inside an orbital station: two sophisticated articulated graphite and brass robotic arms assembling a small mechanical gripper on an ivory ceramic workbench, intricate tools and cables, a restrained teal diagnostic glow, distant blue planetary crescent through a broad dark window. No humanoid android, no computing rings. Refined painterly realistic science fiction, physically convincing materials, calm cinematic light, midnight graphite, warm ivory, restrained brass and teal. Wide landscape 3:2 composition, robot arms and workbench clearly legible at small card-art scale. No text, lettering, symbols, logos, watermark, card frame, borders, UI or game pieces. Not a card mockup.
 
+## Remote room instruments and invitations
+
+The remote gathering surface reuses the original observatory painting. Its graphite standing seat readers, illuminated invitation instrument, engraved table surface, brass rims, public initial seals and lifted ivory name plaque are original semantic HTML/CSS; the initials are player names, not invented faction emblems. No new publisher artwork or flattened concept plate is embedded.
+
+`src/lib/ModeInstrument.svelte` renders the three mode choices with the same original brass rims, recessed graphite faces and explicit semantic labels; the existing table/orbit/return SVG icons distinguish local seating, remote hosting and code entry. No raster interface is substituted.
+
+Remote invitation QR codes are computed locally from the public invitation URL with the pinned MIT-licensed `qrcode-generator` 2.0.4 package by Kazuhiko Arase. They contain no secret/player identity and are never used in tabletop seating. Attribution and the MIT license ship in [static/licenses/qrcode-generator.txt](../static/licenses/qrcode-generator.txt). The URL remains an accessible, underlined semantic link beside the generated QR image.
+
 ## Starting Technology illustrations used by the canonical gallery
 
 The following original artwork was generated with the built-in imagegen tool on 2026-10-18, visually inspected and copied into this workspace. No publisher or BGA art is shipped. Semantic rules, symbols, costs and controls remain live HTML/SVG.

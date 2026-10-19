@@ -18,7 +18,18 @@ Commit 001a is an intentional increment immediately after 001, before remote roo
 
 During card design review, keep a persistent local dev server available and report its exact localhost URL. Iterate locally from reviewer feedback, initially at five-minute check-ins. Defer repeated baseline generation, screenshot pushes and PR CI waits until the design settles; then perform final required validation and evidence review.
 
-Ship this as a separate PR based on the latest `feat/foundation-tracer` head while PR #2 remains open. Its preview uses its own actual PR number; production and PR data contracts remain unchanged. Do not start later gameplay increments automatically after this review slice.
+Ship this as a separate PR based on the latest `feat/foundation-tracer` head while PR #2 remains open. Its preview uses its own actual PR number; production and PR data contracts remain unchanged. The subsequent human authorization continues the plan sequentially, with independent supervisor acceptance between phases. Begin 002 on a new branch from accepted PR #3, with its PR based on `feat/card-gallery`. After independent local visual/functional acceptance and passing local checks, the next planned phase may begin on another stacked branch while the preceding phase finishes CI and hosted verification. Final acceptance still requires every gate and a matching preview. Fix failures promptly and propagate fixes to dependent branches. All PRs remain unmerged.
+
+## Phase ledger and review boundaries
+
+| Phase | Dependency / PR | Local acceptance and checks | Pending final gates | Next phase |
+| --- | --- | --- | --- | --- |
+| 001 | PR #2 · `feat/foundation-tracer` · `9b7c806` | Independent visual acceptance; checks passed | None; remains unmerged | 001a accepted |
+| 001a | PR #3 based on PR #2 · `feat/card-gallery` · `9f3e7dd` | Independent desktop/phone/4K acceptance; local exact comparison passed | None; Linux comparison and matching hosted preview passed; remains unmerged | 002 authorized |
+| 002 | PR #4 · `feat/remote-rooms` from PR #3 `9f3e7dd`; base `feat/card-gallery` | LOCAL ACCEPTANCE restored at reviewer checkpoint26. Pinned-Nix verify passes: 16 exact illustrated journeys, 26 guards, 10 backend/model and 10 tooling tests, policy/type checks. Desktop/phone/live gathering, recovery and full 4K navigation independently accepted | PR #4 published. Initial `4524932` hosted preview and rules passed. Linux candidate run found first room acknowledgement exceeded 2 seconds: eliminate redundant post-commit replay reads, retain the guard, and rerun. Candidate run `39164658076` passes all 16 journeys; 155 changed/new Linux PNGs visually reviewed and imported. Independent Linux exact comparison on the import revision remains pending. Hosted preview for `f9b8215` passed; verify the final import revision as well | 003 explicitly released on a new branch from this locally accepted 002 head; overlap CI and hosted gates |
+| 003 | `feat/basic-setup` from locally accepted 002 `4524932`; PR base `feat/remote-rooms` | Explicitly authorized at reviewer checkpoint26; source/manifest review started after publishing PR #4; propagate the 002 acknowledgement fix | Source-reviewed exact 2/3/4-player Basic setup, legal unique factions, immutable Begin and remote/tabletop stories; local concept review before baselines | Await independent local review; all PRs unmerged |
+
+Update this ledger as phase gates change. Keep dependency heads explicit, and do not interpret a generation run or a pending hosted preview as final acceptance. Human requests remain in meta-prompts.md in supervised work; reviewer delegations and logical work continuations follow AGENTS.md.
 
 ## Preview first, verification in parallel
 

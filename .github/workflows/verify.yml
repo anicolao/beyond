@@ -2,7 +2,7 @@ name: Verify implementation
 
 on:
   pull_request:
-    branches: [main, feat/foundation-tracer]
+    branches: [main, 'feat/**']
     types: [opened, synchronize, reopened, labeled]
   push:
     branches: [main]
@@ -83,6 +83,13 @@ jobs:
       - run: nix develop --command bun install --frozen-lockfile
       - run: nix develop --command bun run test:capture
       - run: nix develop --command bun run test:e2e:update
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: candidate-failure-evidence
+          path: |
+            playwright-report/
+            test-results/
       - uses: actions/upload-artifact@v4
         if: always()
         with:
