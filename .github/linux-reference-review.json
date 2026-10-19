@@ -1,0 +1,95 @@
+{
+  "repository": "anicolao/beyond",
+  "pullRequest": 6,
+  "sourceHead": "cebeb4ec5691de1c2e2db4fce9dc6297eaffff4c",
+  "runId": 39331726896,
+  "artifactId": 12225602640,
+  "digest": "sha256:f913ec367113e9431472b8132c61f3d5720debeb52626d71a82983534aa5ed12",
+  "expectedFrames": 2219,
+  "reviewedSamples": [
+    {
+      "path": "004-first-research/screenshots/finish-a-compact-2-player-shared-cardinal-research-round/014-turn-0-plan-desktop-linux.png",
+      "sha256": "67b972c927c89a4e204c46627f76a4673757983ee6da9cc7edcaada027695676"
+    },
+    {
+      "path": "004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/024-turn-0-plan-desktop-linux.png",
+      "sha256": "bae11500592c2eec151e787519153bdc36afebaae3045bd93fa2b1c0a3dcbd14"
+    },
+    {
+      "path": "004-first-research/screenshots/finish-research-from-the-compact-desktop-decision-overview/016-turn-0-plan-desktop-linux.png",
+      "sha256": "9b0e4dfd4d72b0d899f332af0db1569d0d0ff97bd8ba174d8715b2293b12fa21"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-2-player-shared-cardinal-first-round/014-turn-0-plan-tabletop-4k-linux.png",
+      "sha256": "fc3773cf73f6ee540507d475da8ebf79210a7df01e5ef774a484b7ea705bbd08"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-2-player-shared-cardinal-first-round/014-turn-0-plan-desktop-linux.png",
+      "sha256": "3f05677128765ef26639d4274cc57f1554b4eec7a588ef64e5d3711477012cf4"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-3-player-shared-cardinal-first-round/019-turn-0-plan-desktop-linux.png",
+      "sha256": "3cd4c9cfe9d7870b2ef747cd1a91b7d84c69ad88664d03086f3973523f140085"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-3-player-shared-cardinal-first-round/019-turn-0-plan-tabletop-4k-linux.png",
+      "sha256": "db20fc780f2a1801319f285c28afb43f6ad2b596b9a097000134e5a1467e872b"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-3-player-shared-cardinal-first-round/057-turn-1-handoff-tabletop-4k-linux.png",
+      "sha256": "cf52213b406b33006ed02a19025009d2d56f3ccba44b0cde6884d3a6619042c5"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-3-player-shared-cardinal-first-round/056-restored-trade-tabletop-4k-linux.png",
+      "sha256": "442dc5c6ac0e0cd8db263a9558376e0756c63693a5645f8cb74afb00f0a4c9b3"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-4-player-shared-cardinal-first-round/024-turn-0-plan-desktop-linux.png",
+      "sha256": "b8852b2ccac2d506abb05f7b3eabb59f92a9d9d78bfd8b4b094df0f27611a3ff"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-4-player-shared-cardinal-first-round/024-turn-0-plan-tabletop-4k-linux.png",
+      "sha256": "a951f29ed70a236a193b8ce364110f268e66841ebc4d107b7d6132fa827f288d"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-4-player-shared-corner-first-round/024-turn-0-plan-desktop-linux.png",
+      "sha256": "9ecde152051540a5c7865d640f8d311d2b9cf063b040d5654e278941a473af3f"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-4-player-shared-corner-first-round/024-turn-0-plan-tabletop-4k-linux.png",
+      "sha256": "f22091d065765f8418bdf15b2c060cc8aa23194ca9d813666d203a70eeadb18a"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-4-player-shared-corner-first-round/064-restored-trade-tabletop-4k-linux.png",
+      "sha256": "c97acb904851f173f1149d756a26e99e60e7c6f9da4194e993db83133d1dfb7f"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-complete-2-player-remote-first-round/016-turn-0-plan-desktop-linux.png",
+      "sha256": "49da66eea64288062e2a56429427a104f39be523d8dcfa7c92237a4999010fe7"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-complete-2-player-remote-first-round/048-restored-trade-desktop-linux.png",
+      "sha256": "e9c72a70f38aa3e2b161c3089e1d0520ef938107adba7d80d9c8deb3d2b33857"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-complete-2-player-remote-first-round/016-turn-0-plan-phone-linux.png",
+      "sha256": "ddc7b20aebf50d0daae7d03ec57f508fa85c640a31a897510f1838db245a3382"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-complete-3-player-remote-first-round/024-turn-0-plan-desktop-linux.png",
+      "sha256": "acd1b32f3465fc7d0074e74813a2a4ea3d9807af790871d4642f44b3135c18ad"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-complete-3-player-remote-first-round/024-turn-0-plan-phone-linux.png",
+      "sha256": "96561a28047c473a8038850445f31ba53f521c3e1d0a6964b6251dccaac971f2"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-complete-4-player-remote-first-round/031-turn-0-plan-desktop-linux.png",
+      "sha256": "add8285916c275cdbed84d615abfbff1781f66c41f64d166383815741d453583"
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-complete-4-player-remote-first-round/031-turn-0-plan-phone-linux.png",
+      "sha256": "393056b9c76005fc5647a1c84380180f670e52b91feeebd5d26997dcb8854ed2"
+    }
+  ]
+}

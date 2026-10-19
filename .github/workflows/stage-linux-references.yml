@@ -1,0 +1,64 @@
+name: Stage reviewed Linux references
+on:
+  pull_request:
+    types: [labeled]
+permissions:
+  contents: read
+concurrency:
+  group: stage-linux-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  stage:
+    if: github.event.label.name == 'stage-reviewed-linux' && github.event.pull_request.head.repo.full_name == github.repository
+    permissions:
+      contents: write
+      actions: read
+    runs-on: ubuntu-24.04-arm
+    container:
+      image: mcr.microsoft.com/playwright:v1.61.1-noble@sha256:5b8f294aff9041b7191c34a4bab3ac270157a28774d4b0660e9743297b697e48
+      options: --ipc=host
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - run: apt-get update && apt-get install -y --no-install-recommends sudo xz-utils
+      - uses: cachix/install-nix-action@v31
+        with:
+          enable_kvm: false
+          install_options: --no-daemon
+          extra_nix_config: sandbox = false
+      - run: |
+          printf '%s\n' /root/.nix-profile/bin >> "$GITHUB_PATH"
+          git config --system --add safe.directory "$GITHUB_WORKSPACE"
+      - run: nix develop --command bun install --frozen-lockfile
+      - name: Validate pinned archive and native image inventory
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          REVIEW_PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          python3 scripts/download-reviewed-linux.py
+          nix develop --command bun scripts/validate-staged-linux.ts
+      - name: Stage a review branch; leave the PR head and merge state unchanged
+        env:
+          REVIEW_PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python3 scripts/record-linux-reference-stage.py
+          git add tests/e2e PROMPT_WORK.md IMPLEMENTATION_PLAN.md
+          git -c maintenance.auto=false -c gc.auto=0 commit -m "test: import reviewed phase004 native Linux references"
+          git -c maintenance.auto=false push origin "HEAD:refs/heads/review/linux-phase004-cebeb4e"
+          git rev-parse HEAD > tmp/linux-reference-stage/staged-head.txt
+          printf 'Staged review commit: `%s`. Independent Linux exact and hosted revision gates remain pending.\n' "$(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: linux-reference-stage-ledger
+          path: |
+            tmp/linux-reference-stage/manifest.json
+            tmp/linux-reference-stage/staged-head.txt
