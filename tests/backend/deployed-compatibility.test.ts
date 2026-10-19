@@ -10,7 +10,8 @@ type Command={event:Record<string,any>;after:Record<string,any>};
 let environment:RulesTestEnvironment;
 beforeAll(async()=>{environment=await initializeTestEnvironment({projectId:'demo-beyond',firestore:{host:'127.0.0.1',port:8197,rules:readFileSync('firestore.rules','utf8')}});});
 afterAll(async()=>{await environment.cleanup();});
-const database=(uid:string)=>environment.authenticatedContext(uid).firestore();
+const clients=new Map<string,ReturnType<RulesTestEnvironment['authenticatedContext']>>();
+const database=(uid:string)=>{if(!clients.has(uid))clients.set(uid,environment.authenticatedContext(uid));return clients.get(uid)!.firestore();};
 function newCommands(commands:Command[]){
  const code=Array.from(crypto.getRandomValues(new Uint8Array(5)),n=>String.fromCharCode(65+n%26)).join('');
  return commands.map(command=>{const copy=structuredClone(command);if(copy.event.code){copy.event.code=code;copy.after.code=code;}return copy;});

@@ -76,3 +76,5 @@ Prompt 44 | 9a436a80f764233f69ab30c25c1c0cc6a9b561b6eb3f8f5c3cb5f703320ca8d0 | I
 Prompt 45 | 461674d93d44dc844e4c89097965c6c6e013a608431158db8e0e26ee102cb1c8 | Publish isolated gallery correction with deployed-protocol compatibility and pinned Linux candidates; keep later gameplay out of PR3.
 
 Prompt 45 | 461674d93d44dc844e4c89097965c6c6e013a608431158db8e0e26ee102cb1c8 | Exclude the local node_modules worktree symlink from published source and preserve runtime/evidence files locally.
+
+Prompt 45 | 461674d93d44dc844e4c89097965c6c6e013a608431158db8e0e26ee102cb1c8 | Accept300 visually inspected pinned Linux references; preserve reviewer games with isolated emulator ports and fix CI client reuse and multi-commit log validation.
