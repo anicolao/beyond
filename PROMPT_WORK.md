@@ -28,3 +28,5 @@ Prompt 34 | 934274d50189548905316ab18591724940a1054a1fe832d9bf36804f22cae0f8 | R
 Prompt 35 | 0eadbfdfa68e2890852eabf5ef4423f283c3efe06de84a5b318e902c81c8161e | Record phase003 local acceptance, publish its stacked PR, and begin authorized milestone004 on a dependent branch.
 
 Prompt 35 | 0eadbfdfa68e2890852eabf5ef4423f283c3efe06de84a5b318e902c81c8161e | Update hosted smoke for required Basic faction selection and immutable Begin in both modes after PR5 publication.
+
+Prompt 35 | 0eadbfdfa68e2890852eabf5ef4423f283c3efe06de84a5b318e902c81c8161e | Establish Firestore readiness during normal arrival after Linux first-create timeout; preserve all operation budgets and exact guards.
