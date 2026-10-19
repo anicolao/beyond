@@ -90,3 +90,33 @@ Prompt 45 | 461674d93d44dc844e4c89097965c6c6e013a608431158db8e0e26ee102cb1c8 | I
 Prompt 45 | 461674d93d44dc844e4c89097965c6c6e013a608431158db8e0e26ee102cb1c8 | Align Basic setup with final corrected remote-room ancestry, retaining its setup-aware backend and complete reviewed card evidence.
 
 Prompt 45 | 461674d93d44dc844e4c89097965c6c6e013a608431158db8e0e26ee102cb1c8 | Accept reviewed pinned Linux setup references after31 candidate journeys; preserve all inherited references and request independent exact comparison.
+
+Prompt 45 | 461674d93d44dc844e4c89097965c6c6e013a608431158db8e0e26ee102cb1c8 | Reconcile preserved004 WIP onto af76265 with40 backend tests and clean types; retain original reviewer server and hold005 after green stacked gates.
+
+Prompt 46 | 9989ac0453e9f8476f6b29d699098f084d52740b02fa90483b8e747b085aee8b | Record superseded Linux checkpoint; confirm fixed client reuse and final exact/hosted evidence while holding005.
+
+Prompt 47 | 91b801041b897151cac866e1476baae18a4b1d60ab09b3b02608cda67f84f28e | Record gallery acceptance, verify final remote/setup gates, and resume preserved004 local review without releasing005.
+
+Prompt 47 | 91b801041b897151cac866e1476baae18a4b1d60ab09b3b02608cda67f84f28e | Refresh004 local identity/shared/reload/trade and keyboard evidence; fix bounded selected-face reading without changing baselines.
+
+Prompt 48 | f1ebf031ea1e24c5db640cc41abe4c8007a18aff456a36acb09d2137c1f874a4 | Record independent final PR4 acceptance; retain green PR5 gates and004 local review with005 held.
+
+Prompt 49 | 86824345f3cf0e7a62da9fbd465e061a560eaf5e8633eea8683effaa5fb3bc45 | Record final PR5 acceptance and replace undefined unjoined-seat faction labels during004 local review.
+
+Prompt 49 | 86824345f3cf0e7a62da9fbd465e061a560eaf5e8633eea8683effaa5fb3bc45 | Verify unjoined/occupied seat accessibility through normal UI; retain joined player labels and clean source types.
+
+Prompt 49 | 86824345f3cf0e7a62da9fbd465e061a560eaf5e8633eea8683effaa5fb3bc45 | Keep the active East seat editor above adjacent entry plates; verify pointer access and preserve local review evidence.
+
+Prompt 50 | d8eeb1fcfad54c98bccb3a726a49c5f8b2afd1ec7ac487394e418a40ab4fcd46 | Compose complete compact desktop research choices and persistent selected ship consequences for local review.
+
+Prompt 50 | d8eeb1fcfad54c98bccb3a726a49c5f8b2afd1ec7ac487394e418a40ab4fcd46 | Inspect final composed first-pair and ship-target captures; pass short-desktop bounds, focus, remote/shared flow and type checks locally.
+
+Prompt 51 | 7ab680ae7721649c8b75784e52307bb876cbe4b02e9cc3f6ceaa99ece8b4134b | Record scoped planner acceptance, finish remaining local checks and prepare concise independent live-review entrypoints.
+
+Prompt 51 | 7ab680ae7721649c8b75784e52307bb876cbe4b02e9cc3f6ceaa99ece8b4134b | Complete40 security tests,17 tooling tests,41 guards and both builds; verify compact shared recovery and publish local review entrypoints.
+
+Prompt 52 | aed53386f1e614be973ea5b174b3c1eedb8b0da39d7e4940b737a85175223f9d | Record004 local acceptance; implement illustrated ordinary turn stories and independent exact checks before stacked publication.
+
+Prompt 52 | aed53386f1e614be973ea5b174b3c1eedb8b0da39d7e4940b737a85175223f9d | Validate17 illustrated first-round variants; fix real guard defects and await complete reader scrolling before exact capture.
+
+Prompt 52 | aed53386f1e614be973ea5b174b3c1eedb8b0da39d7e4940b737a85175223f9d | Pass48 macOS exact journeys and2219 frames with40 security tests and41 guards; publish004 stacked on accepted PR5.

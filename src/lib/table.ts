@@ -1,9 +1,10 @@
 import { legalFaction, setupVersion, type FactionId } from './game/manifest';
-import { validSeed, validatePlayers, type SetupSettings, type BasicStart } from './game/setup';
+import { applyTurn, type PlayState, type TurnMove } from './game/turn';
+import { startingSetup, validSeed, validatePlayers, type SetupSettings, type BasicStart } from './game/setup';
 export const positions = ['north', 'north-east', 'east', 'south-east', 'south', 'south-west', 'west', 'north-west'] as const;
 export type Position = typeof positions[number];
-export type Table = { seats: Partial<Record<Position, string>>; firstPlayer: Position | ''; revision: number; settings?: SetupSettings; factions?: Partial<Record<Position,FactionId>>; start?: BasicStart };
-export type Command = { type: 'table-created' | 'seat-joined' | 'seat-renamed' | 'seat-left' | 'first-player-chosen' | 'table-settings-changed' | 'table-faction-selected' | 'game-begun'; settings?: SetupSettings; faction?: FactionId; start?: BasicStart; position: Position | ''; name: string };
+export type Table = { seats: Partial<Record<Position, string>>; firstPlayer: Position | ''; revision: number; settings?: SetupSettings; factions?: Partial<Record<Position,FactionId>>; start?: BasicStart; play?: PlayState };
+export type Command = { type: 'game-move' | 'table-created' | 'seat-joined' | 'seat-renamed' | 'seat-left' | 'first-player-chosen' | 'table-settings-changed' | 'table-faction-selected' | 'game-begun'; settings?: SetupSettings; faction?: FactionId; start?: BasicStart; move?:TurnMove; position: Position | ''; name: string };
 export type TableEvent = Command & { schema: 1; actorUid: string; revision: number; commandId: string };
 export function apply(table: Table | undefined, event: TableEvent): Table {
   if (event.schema !== 1 || event.revision !== (table ? table.revision + 1 : 0)) throw new Error('This table history is incompatible.');
@@ -11,6 +12,12 @@ export function apply(table: Table | undefined, event: TableEvent): Table {
     if (event.type !== 'table-created' || event.position || event.name) throw new Error('Invalid table creation.');
     return { seats: {}, firstPlayer: '', revision: 0 };
   }
+  if(event.type==='game-move') {
+    if(!table.start||!event.move||event.name||event.settings||event.faction||event.start)throw new Error('Choose a legal move in a begun game.');
+    const initial=startingSetup(table.start,clockwise(table).map(p=>({position:p,name:table.seats[p]!,faction:table.factions![p]!})),table.settings??{factions:'basic',achievements:'introductory'});
+    return {...table,play:applyTurn(initial,table.play,event.position,event.move),revision:event.revision};
+  }
+  if(event.move)throw new Error('Unsupported turn payload.');
   if(table.start) throw new Error('This game has begun. Its setup is permanent.');
   const { position, name, type } = event;
   if(type === 'game-begun') {

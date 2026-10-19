@@ -1,11 +1,12 @@
 import { legalFaction, setupVersion, type FactionId } from '../game/manifest';
-import { validSeed, validatePlayers, type BasicStart } from '../game/setup';
+import { applyTurn, type PlayState, type TurnMove } from '../game/turn';
+import { startingSetup, validSeed, validatePlayers, type BasicStart } from '../game/setup';
 export const remotePositions = ['p1', 'p2', 'p3', 'p4'] as const;
 export type RemotePosition = typeof remotePositions[number];
 export type RemoteSettings = { capacity: 2 | 3 | 4; factions: 'basic' | 'advanced'; achievements: 'introductory' | 'randomized' };
 export type RemoteSeat = { uid: string; name: string; ready: boolean };
-export type RemoteRoom = { schema: 1; mode: 'remote'; phase: 'gathering' | 'started'; factions?: Partial<Record<RemotePosition,FactionId>>; start?: BasicStart; ownerUid: string; code: string; settings: RemoteSettings; seats: Partial<Record<RemotePosition, RemoteSeat>>; members: Record<string, RemotePosition>; configVersion: number; revision: number; lastCommand: string };
-export type RemoteCommand = { type: 'remote-created' | 'remote-seat-claimed' | 'remote-seat-renamed' | 'remote-seat-left' | 'remote-ready-changed' | 'remote-settings-changed' | 'remote-faction-selected' | 'remote-begun'; faction?: FactionId; start?: BasicStart; position: RemotePosition | ''; name: string; ready: boolean; configVersion: number; settings: RemoteSettings; code: string };
+export type RemoteRoom = { schema: 1; mode: 'remote'; phase: 'gathering' | 'started'; factions?: Partial<Record<RemotePosition,FactionId>>; start?: BasicStart; play?:PlayState; ownerUid: string; code: string; settings: RemoteSettings; seats: Partial<Record<RemotePosition, RemoteSeat>>; members: Record<string, RemotePosition>; configVersion: number; revision: number; lastCommand: string };
+export type RemoteCommand = { type: 'game-move' | 'remote-created' | 'remote-seat-claimed' | 'remote-seat-renamed' | 'remote-seat-left' | 'remote-ready-changed' | 'remote-settings-changed' | 'remote-faction-selected' | 'remote-begun'; faction?: FactionId; start?: BasicStart; move?:TurnMove; position: RemotePosition | ''; name: string; ready: boolean; configVersion: number; settings: RemoteSettings; code: string };
 export type RemoteEvent = RemoteCommand & { schema: 1; actorUid: string; revision: number; commandId: string };
 export const defaultSettings: RemoteSettings = { capacity: 2, factions: 'basic', achievements: 'introductory' };
 export function sameSettings(a: RemoteSettings, b: RemoteSettings) { return a.capacity === b.capacity && a.factions === b.factions && a.achievements === b.achievements; }
@@ -19,6 +20,12 @@ export function applyRemote(before: RemoteRoom | undefined, e: RemoteEvent): Rem
     if (e.type !== 'remote-created' || e.position !== 'p1' || !validName || e.ready || e.configVersion !== 0) throw new Error('Invalid room creation.');
     return { schema: 1, mode: 'remote', phase: 'gathering', ownerUid: e.actorUid, code: e.code, settings: e.settings, seats: { p1: { uid: e.actorUid, name: e.name, ready: false } }, members: { [e.actorUid]: 'p1' }, configVersion: 0, revision: 0, lastCommand: e.commandId };
   }
+  if(e.type==='game-move') {
+    if(before.phase!=='started'||!before.start||!e.move||!e.position||before.members[e.actorUid]!==e.position||e.name||e.ready||e.faction||e.start||!sameSettings(e.settings,before.settings)||e.code!==before.code||e.configVersion!==before.configVersion)throw new Error('Only the active faction may make this move.');
+    const initial=startingSetup(before.start,remotePositions.filter(p=>before.seats[p]).map(p=>({position:p,name:before.seats[p]!.name,faction:before.factions![p]!})),before.settings);
+    return {...before,play:applyTurn(initial,before.play,e.position,e.move),revision:e.revision,lastCommand:e.commandId};
+  }
+  if(e.move)throw new Error('Unsupported turn payload.');
   if (before.mode !== 'remote' || before.phase !== 'gathering' || e.code !== before.code) throw new Error('This room has already started or needs a newer client.');
   if (e.type === 'remote-begun') {
     if (e.actorUid !== before.ownerUid || e.position || e.name || e.ready || e.faction || !sameSettings(e.settings,before.settings) || e.configVersion !== before.configVersion || !e.start || e.start.version !== setupVersion || !validSeed(e.start.seed) || Object.keys(before.seats).length !== before.settings.capacity || Object.values(before.seats).some(seat=>!seat?.ready)) throw new Error('Everyone must confirm the complete Basic setup before the host begins.');

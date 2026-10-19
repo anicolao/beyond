@@ -1,0 +1,104 @@
+import { foodColumns, levelOne, oreYields, supplyCapacity } from './manifest';
+import type { PlayerState, PublicSetup } from './setup';
+
+/** Durable public turn state; unrevealed decks never enter this projection. */
+export type TurnPlayer = Omit<PlayerState, 'position' | 'name' | 'faction'>;
+export type PlayState = { turn:number; activePosition:string; phase:PublicSetup['phase']; players:Record<string,TurnPlayer> };
+export type TurnMove =
+  | { kind:'research-I'; space:number; card:typeof levelOne[number]; ship?:string; supplyFallback?:'population'|'skip' }
+  | { kind:'grow'|'ore'|'trade'|'buy-population'|'sell-population'|'finish-trading'|'end-turn' }
+  | { kind:'decommission'; ship:string };
+export const initialPlay = (game:PublicSetup):PlayState => ({turn:0,activePosition:game.players[0].position,phase:'action',players:{}});
+export function economy(p:PlayerState):TurnPlayer {
+  const {position:_, name:__, faction:___,...result}=p;
+  return structuredClone(result);
+}
+export function projectGame(initial:PublicSetup, play?:PlayState):PublicSetup {
+  if(!play)return initial;
+  return {...initial,phase:play.phase,activePosition:play.activePosition,players:initial.players.map(p=>({...p,...play.players[p.position]}))};
+}
+export function growthColumns(p:TurnPlayer) {
+  return foodColumns.slice(0,9-p.foodDiscs).flatMap((letter)=>letter?[{letter,index:letter.charCodeAt(0)-65,available:p.supply[letter.charCodeAt(0)-65]>0}]:[]);
+}
+export function oreProduction(p:TurnPlayer) { return oreYields.slice(0,9-p.oreDiscs).reduce((a,b)=>a+b,0); }
+export function researchBlocker(game:PublicSetup,space:number,card?:string):string {
+  const actor=game.players.find(p=>p.position===game.activePosition)!;
+  if(game.phase!=='action')return 'Finish the current phase first';
+  if(!Number.isInteger(space)||space<0||space>=game.count)return 'Choose a printed Level I action space';
+  const location=`research-I:${space}`, occupant=game.players.find(p=>p.actionLocation===location);
+  if(occupant)return occupant.position===actor.position?'Move to another action space':`Occupied by ${occupant.name}`;
+  if(actor.population<1)return 'Need 1 more Population';
+  if(card&&!levelOne.includes(card as typeof levelOne[number]))return 'Choose a revealed Level I technology';
+  if(card&&actor.research.includes(card))return 'Already researched by your faction';
+  if(!card&&levelOne.every(id=>actor.research.includes(id)))return 'All Level I technologies already researched';
+  return '';
+}
+function takeSupply(p:TurnPlayer) {
+  const column=p.supply.findIndex(n=>n>0);
+  if(column<0)return false;
+  p.supply[column]--;return true;
+}
+function returnSupply(p:TurnPlayer) {
+  let column=p.supply.findLastIndex((n,i)=>n<supplyCapacity[i]);
+  if(column<0)column=0;
+  p.supply[column]++;
+}
+function validPayload(move:TurnMove) {
+  if(!move || typeof move!=='object')throw new Error('Choose a supported turn command.');
+  const keys=move.kind==='research-I'?['kind','space','card','ship','supplyFallback']:move.kind==='decommission'?['kind','ship']:['kind'];
+  if(Object.keys(move).some(key=>!keys.includes(key)))throw new Error('Unsupported turn payload.');
+}
+export function applyTurn(initial:PublicSetup,before:PlayState|undefined,position:string,move:TurnMove):PlayState {
+  validPayload(move);
+  const state=structuredClone(before??initialPlay(initial)),game=projectGame(initial,state), actor=game.players.find(p=>p.position===game.activePosition)!;
+  if(position!==actor.position)throw new Error(`It is ${actor.name}’s turn.`);
+  const p=economy(actor);
+  if(move.kind==='research-I') {
+    const blocker=researchBlocker(game,move.space,move.card);if(blocker)throw new Error(blocker);
+    if(move.card!=='narrow-beam-lasers'&&move.ship)throw new Error('This bonus does not upgrade a ship.');
+    if(move.card!=='terraforming'&&move.supplyFallback)throw new Error('This bonus has no Supply fallback.');
+    p.population--;p.research.push(move.card);p.actionLocation=`research-I:${move.space}`;
+    if(move.card==='terraforming') {
+      const exhausted=!p.supply.some(n=>n>0);
+      if(!exhausted&&move.supplyFallback)throw new Error('Use the leftmost Supply cube.');
+      if(exhausted&&!['population','skip'].includes(move.supplyFallback??''))throw new Error('Choose whether to use Population for the exhausted Supply bonus.');
+      if(!exhausted||move.supplyFallback==='population') {
+        if(exhausted) {if(p.population<1)throw new Error('No Population is available for this bonus.');p.population--;}
+        else takeSupply(p);
+        p.ships.push({id:`${position}-terraforming`,level:1,location:'deep-space'});
+      }
+    } else if(move.card==='advanced-genetics') {
+      p.foodDiscs=Math.max(0,p.foodDiscs-1);p.automation++;
+      if(takeSupply(p))p.population++;
+    } else if(move.card==='advanced-robotics') {
+      p.oreDiscs=Math.max(0,p.oreDiscs-1);p.automation++;p.ore++;
+    } else if(move.card==='narrow-beam-lasers') {
+      p.ore++;
+      const eligible=p.ships.filter(s=>s.level<4),ship=p.ships.find(s=>s.id===move.ship);
+      if(eligible.length) {if(!ship||ship.level===4)throw new Error('Choose one of your ships below level 4.');ship.level=(ship.level+1) as 2|3|4;}
+      else if(move.ship)throw new Error('No ship can be upgraded.');
+    }
+    state.phase='production';
+  } else if(move.kind==='grow'||move.kind==='ore'||move.kind==='trade') {
+    if(state.phase!=='production')throw new Error('Choose exactly one production branch.');
+    if(move.kind==='grow')for(const column of growthColumns(p))if(column.available){p.supply[column.index]--;p.population++;}
+    if(move.kind==='ore')p.ore+=oreProduction(p);
+    state.phase=move.kind==='trade'?'trade':'achievement';
+  } else if(['buy-population','sell-population','decommission','finish-trading'].includes(move.kind)) {
+    if(state.phase!=='trade')throw new Error('Choose Trade resources before making exchanges.');
+    if(move.kind==='buy-population') {if(p.ore<3||!p.supply.some(n=>n>0))throw new Error('Need 3 Ore and an available Supply cube.');p.ore-=3;takeSupply(p);p.population++;}
+    else if(move.kind==='sell-population') {if(p.population<1)throw new Error('Need 1 available Population.');p.population--;returnSupply(p);p.ore++;}
+    else if(move.kind==='decommission') {const index=p.ships.findIndex(s=>s.id===move.ship);if(p.ore<1||index<0)throw new Error('Choose your ship and pay 1 Ore.');p.ore--;p.ships.splice(index,1);p.population++;}
+    else state.phase='achievement';
+  } else if(move.kind==='end-turn') {
+    if(state.phase!=='achievement')throw new Error('Finish production before passing the turn.');
+    // Level-I-only play cannot meet any base achievement. Later increments add
+    // eligibility/mandatory claims alongside the mechanics that can meet them.
+    // The UI schedules this empty-phase event automatically, including on reload.
+    state.turn++;state.activePosition=initial.players[state.turn%initial.count].position;state.phase='action';
+  } else throw new Error('Choose a supported turn command.');
+  const total=p.supply.reduce((a,b)=>a+b,0)+p.population+p.ships.length+p.research.length;
+  if(total!==20||p.population<0||p.ore<0)throw new Error('Resource accounting is inconsistent.');
+  state.players[position]=p;
+  return state;
+}

@@ -64,7 +64,7 @@ The [illustrated walkthroughs](tests/e2e/001-foundation/README.md) demonstrate a
 
 ## Card collection
 
-Open `/gallery/` from the Card gallery link on arrival. Inspect six reviewed Technology, Event, System and Achievement examples, filter/search, compare clean faces with labelled example markers, and change player count to review restricted claim slots. Inspection keeps navigation reachable while rules/source details scroll internally; Escape restores focus. This reference collection uses the reusable production card renderer. Effects are descriptive and not yet playable; fixtures never enter game state.
+Open `/gallery/` from the Card gallery link on arrival. Browse the complete second-printing base inventory: 100 designs and 100 physical copies (46 Technology, 20 Event, 24 System, 10 Achievement). Filter/search all cards, page through the collection, compare clean faces with labelled example markers, and change player count to review restricted claim slots. Inspection keeps navigation reachable while rules/source details scroll internally; Escape restores focus. This reference collection uses the reusable production card renderer. The collection describes rules without dispatching gameplay effects; markers never enter game state. All100 designs have distinct original illustrations with recorded provenance. See the [inventory audit and source gaps](docs/content/CARD_INVENTORY.md).
 
 See the [illustrated gallery story](tests/e2e/001a-card-gallery/README.md), [fidelity review](tests/e2e/001a-card-gallery/FIDELITY.md), and [reviewed card definitions](src/lib/cards/README.md). Local visual iteration precedes final baseline generation and PR validation, as recorded in the implementation plan.
 
@@ -117,3 +117,7 @@ The checker reads the staged index; stage the prompt together with its related c
 Copyright (C) 2026 Alex Nicolaou. Licensed under the GNU General Public License, version 3 only (SPDX: `GPL-3.0-only`). See [LICENSE](LICENSE).
 
 The shared production card renderer and complete source inventory are reviewed in [the card correction record](tests/e2e/001a-card-gallery/FIDELITY.md). The WISE physical second-print name/verbatim-wording limitation remains explicit.005 stays held; final correction acceptance requires pinned Linux and matching hosted revision.
+
+## First research turn
+
+After ordinary Basic setup, play the four public Level I technologies with permanent Population payment, once-only immediate bonuses and explicit ship selection where required. Choose Growth, Ore or Trade, execute the three printed exchanges, and hand off automatically. Pending production/trading and public research survive reload. Remote identities and the single-controller shared table use the same canonical history. Discovery, movement and colonization remain later milestones. See the [illustrated first-round stories](tests/e2e/004-first-research/README.md).

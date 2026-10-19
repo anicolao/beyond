@@ -12,7 +12,7 @@
     {#each technologySlots as slot}
       {@const revealed=game.technologies.find(t=>t.slot===slot.id)}
       <div class="overview-node" class:known={!!revealed} style={`--column:${['I','II','III','IIII'].indexOf(slot.level)};--row:${slot.row}`}>
-        {#if revealed}<button aria-label={`Inspect ${cardById(revealed.card).title}`} onclick={()=>inspect(revealed.card)}><CardFace card={cardById(revealed.card)} compact overview/></button>
+        {#if revealed}<button aria-label={`Inspect ${cardById(revealed.card).title}`} onclick={()=>inspect(revealed.card)}><CardFace card={cardById(revealed.card)} compact overview/></button><div class="research-markers" aria-label="Permanent research cubes">{#each game.players.filter(p=>p.research.includes(revealed.card)) as p}<span role="img" style={`--cube-tone:${[170,38,8,275][game.players.indexOf(p)]}`} aria-label={`${p.name} researched ${cardById(revealed.card).title}`}></span>{/each}</div>
         {:else}<span class="overview-cover" aria-label={`${slot.id}: ${slot.level==='IIII'?'Undiscovered technology':'Unrevealed Event'}, requires ${slot.required} of ${slot.prerequisites.join(', ')}`}><strong>{slot.id}</strong><span aria-hidden="true">{slot.required} / {slot.prerequisites.length} ◇</span></span>{/if}
       </div>
     {/each}
@@ -20,6 +20,7 @@
   <p>All 19 spaces · Select a public card to inspect. Focus Technology for every space’s prerequisites.</p>
 </section>
 <style>
+.research-markers{position:absolute;bottom:2px;left:3px;display:flex;gap:2px;color:#91e2ca;pointer-events:none;text-shadow:1px 2px #173d35}.research-markers span{font-size:17px}
 .technology-overview{display:flex;flex-direction:column;flex:1;min-height:0}
 .overview-levels{display:grid;grid-template-columns:repeat(4,1fr);font:600 20px/1 'Cormorant Garamond',serif;text-align:center;color:#dec58b;padding:0 0 3px}
 .overview-map{position:relative;flex:1;min-height:188px;margin:0 6px}
@@ -39,4 +40,5 @@ p{margin:6px 0 0;font-size:10px;line-height:1.3;color:#bfccb4;text-align:center}
 .known{height:44px;max-height:44px}
 .overview-cover{height:20px}
 }
+.research-markers{left:100%;top:2px;bottom:auto;flex-direction:column;gap:2px}.research-markers span{width:9px;height:9px;border:1px solid hsl(var(--cube-tone) 35% 75%);background:linear-gradient(135deg,hsl(var(--cube-tone) 50% 68%),hsl(var(--cube-tone) 45% 32%));box-shadow:1px 1px hsl(var(--cube-tone) 35% 20%)}
 </style>

@@ -193,6 +193,93 @@ service cloud.firestore {
         allow create: if signedIn() && validRemoteEvent();
       }
     }
+    // Ordinary turns extend the same immutable setup/event stream. The actor's
+    // sparse economy is initialized from its reviewed Basic mat on first use.
+    match /games/{game} {
+      function gamePath() { return /databases/$(database)/documents/games/$(game); }
+      function firstPosition(b) { return b.mode == 'remote' ? 'p1' : b.firstPlayer; }
+      function physicalIndex(p) { return p == 'north' ? 0 : p == 'north-east' ? 1 : p == 'east' ? 2 : p == 'south-east' ? 3 : p == 'south' ? 4 : p == 'south-west' ? 5 : p == 'west' ? 6 : 7; }
+      function nextPosition(b,p) {
+        let positions=['north','north-east','east','south-east','south','south-west','west','north-west']; let i=physicalIndex(p);
+        return b.mode == 'remote' ? (p == 'p1' ? 'p2' : p == 'p2' && b.settings.capacity>=3 ? 'p3' : p == 'p3' && b.settings.capacity == 4 ? 'p4' : 'p1')
+          : positions[(i+1)%8] in b.seats ? positions[(i+1)%8] : positions[(i+2)%8] in b.seats ? positions[(i+2)%8] : positions[(i+3)%8] in b.seats ? positions[(i+3)%8] : positions[(i+4)%8] in b.seats ? positions[(i+4)%8] : positions[(i+5)%8] in b.seats ? positions[(i+5)%8] : positions[(i+6)%8] in b.seats ? positions[(i+6)%8] : positions[(i+7)%8];
+      }
+      function blankPlay(b) { return {'turn':0,'activePosition':firstPosition(b),'phase':'action','players':{}}; }
+      function initialEconomy(b,p) {
+        // An absent player economy is first initialized on its first turn.
+        // Sequential handoff makes turn 0/1 the two 1-Ore starting seats.
+        let f=b.factions[p];
+        return {'ore':(b.get('play',blankPlay(b)).turn<2 ? 1 : 2)+(f == 'nishida' ? 2 : f == 'disciples' ? 1 : 0), 'population':f == 'united-nations' ? 3 : 2,
+          'supply':f == 'zheng' ? [4,4,3,3,2] : f == 'united-nations' ? [5,4,2,3,2] : [5,4,3,3,2],
+          'foodDiscs':8,'oreDiscs':8,'automation':0,'actionLocation':null,'research':[],
+          'ships':f == 'zheng' ? [{'id':p+'-ship-1','level':1,'location':'sol'},{'id':p+'-ship-2','level':1,'location':'sol'}] : [{'id':p+'-ship-1','level':1,'location':f == 'disciples' ? 'deep-space' : 'sol'}]};
+      }
+      function initialOrCurrent(b,p) { return 'play' in b && p in b.play.players ? b.play.players[p] : initialEconomy(b,p); }
+      function actorAllowed(b,p) { return signedIn() && 'start' in b && p == b.get('play',blankPlay(b)).activePosition && (b.mode == 'tabletop' ? b.ownerUid == request.auth.uid : b.phase == 'started' && b.members.get(request.auth.uid,'') == p); }
+      function sameTurnRoot(b,a) { return a.diff(b).affectedKeys().hasOnly(['play','revision','lastCommand']) && a.revision == b.revision+1; }
+      function leftSupply(s) { return s[0]>0 ? 0 : s[1]>0 ? 1 : s[2]>0 ? 2 : s[3]>0 ? 3 : s[4]>0 ? 4 : -1; }
+      function rightSupply(s) { return s[4]<2 ? 4 : s[3]<3 ? 3 : s[2]<3 ? 2 : s[1]<4 ? 1 : 0; }
+      function supplyDelta(b,a,column,delta) { return a == [b[0]+(column == 0 ? delta : 0),b[1]+(column == 1 ? delta : 0),b[2]+(column == 2 ? delta : 0),b[3]+(column == 3 ? delta : 0),b[4]+(column == 4 ? delta : 0)]; }
+      function pawnClear(players,i,location) { return i>=players.size() || players[i].actionLocation != location; }
+      function spaceOpen(s,location) { let players=s.players.values(); return pawnClear(players,0,location) && pawnClear(players,1,location) && pawnClear(players,2,location) && pawnClear(players,3,location); }
+      function upgradeAt(b,a,id,i) { return i<b.size() && b[i].id == id && b[i].level<4 && a.size() == b.size() && a[i] == {'id':b[i].id,'level':b[i].level+1,'location':b[i].location} && a.removeAll([a[i]]) == b.removeAll([b[i]]); }
+      function upgrade(b,a,id) { return upgradeAt(b,a,id,0) || upgradeAt(b,a,id,1) || upgradeAt(b,a,id,2); }
+      function researchBonus(m,b,a,p) {
+        let supply=leftSupply(b.supply);
+        return (m.card == 'terraforming' && !('ship' in m) && a.diff(b).affectedKeys().hasOnly(['population','research','actionLocation','supply','ships']) && (
+          (supply>=0 && !('supplyFallback' in m) && a.population == b.population-1 && supplyDelta(b.supply,a.supply,supply,-1) && a.ships == b.ships.concat([{'id':p+'-terraforming','level':1,'location':'deep-space'}]))
+          || (supply<0 && m.supplyFallback == 'skip' && a.population == b.population-1 && a.supply == b.supply && a.ships == b.ships)
+          || (supply<0 && m.supplyFallback == 'population' && b.population>=2 && a.population == b.population-2 && a.supply == b.supply && a.ships == b.ships.concat([{'id':p+'-terraforming','level':1,'location':'deep-space'}]))))
+        || (m.card == 'advanced-genetics' && !m.keys().hasAny(['ship','supplyFallback']) && a.diff(b).affectedKeys().hasOnly(['population','research','actionLocation','supply','foodDiscs','automation']) && a.population == b.population-1+(supply>=0 ? 1 : 0) && supplyDelta(b.supply,a.supply,supply,-1) && a.foodDiscs == (b.foodDiscs>0 ? b.foodDiscs-1 : 0) && a.automation == b.automation+1)
+        || (m.card == 'advanced-robotics' && !m.keys().hasAny(['ship','supplyFallback']) && a.diff(b).affectedKeys().hasOnly(['population','research','actionLocation','ore','oreDiscs','automation']) && a.population == b.population-1 && a.ore == b.ore+1 && a.oreDiscs == (b.oreDiscs>0 ? b.oreDiscs-1 : 0) && a.automation == b.automation+1)
+        || (m.card == 'narrow-beam-lasers' && !('supplyFallback' in m) && a.diff(b).affectedKeys().hasOnly(['population','research','actionLocation','ore','ships']) && a.population == b.population-1 && a.ore == b.ore+1 && ((b.ships.size() == 0 && !('ship' in m) && a.ships == b.ships) || upgrade(b.ships,a.ships,m.ship)));
+      }
+      function researchMove(m,s,t,b,a,p,count) {
+        let location='research-I:'+string(m.space);
+        return m.keys().hasOnly(['kind','space','card','ship','supplyFallback']) && s.phase == 'action' && t.phase == 'production' && m.space is int && m.space>=0 && m.space<count && spaceOpen(s,location) && b.population>=1 && m.card in ['terraforming','advanced-genetics','narrow-beam-lasers','advanced-robotics'] && !(m.card in b.research) && a.actionLocation == location && a.research == b.research.concat([m.card]) && researchBonus(m,b,a,p);
+      }
+      function growDelta(b,a) {
+        let removed=8-b.foodDiscs;
+        let ca=b.supply[0]>0 ? 1 : 0; let cb=removed>=2 && b.supply[1]>0 ? 1 : 0;
+        let cc=removed>=4 && b.supply[2]>0 ? 1 : 0; let cd=removed>=6 && b.supply[3]>0 ? 1 : 0; let ce=removed>=8 && b.supply[4]>0 ? 1 : 0;
+        return a.diff(b).affectedKeys().hasOnly(['supply','population']) && a.supply == [b.supply[0]-ca,b.supply[1]-cb,b.supply[2]-cc,b.supply[3]-cd,b.supply[4]-ce] && a.population == b.population+ca+cb+cc+cd+ce;
+      }
+      function removeShipAt(b,a,id,i) { return i<b.size() && b[i].id == id && a == b.removeAll([b[i]]); }
+      function tradeMove(m,b,a) {
+        return (m.kind == 'buy-population' && m.keys().hasOnly(['kind']) && b.ore>=3 && leftSupply(b.supply)>=0 && a.diff(b).affectedKeys().hasOnly(['ore','population','supply']) && a.ore == b.ore-3 && a.population == b.population+1 && supplyDelta(b.supply,a.supply,leftSupply(b.supply),-1))
+        || (m.kind == 'sell-population' && m.keys().hasOnly(['kind']) && b.population>=1 && a.diff(b).affectedKeys().hasOnly(['ore','population','supply']) && a.ore == b.ore+1 && a.population == b.population-1 && supplyDelta(b.supply,a.supply,rightSupply(b.supply),1))
+        || (m.kind == 'decommission' && m.keys().hasOnly(['kind','ship']) && b.ore>=1 && a.diff(b).affectedKeys().hasOnly(['ore','population','ships']) && a.ore == b.ore-1 && a.population == b.population+1 && (removeShipAt(b.ships,a.ships,m.ship,0) || removeShipAt(b.ships,a.ships,m.ship,1) || removeShipAt(b.ships,a.ships,m.ship,2)));
+      }
+      function turnEffect(m,s,t,b,a,p,count) {
+        return (m.kind == 'research-I' && t.turn == s.turn && researchMove(m,s,t,b,a,p,count))
+        || (m.keys().hasOnly(['kind']) && s.phase == 'production' && t.turn == s.turn && (
+          (m.kind == 'grow' && t.phase == 'achievement' && growDelta(b,a))
+          || (m.kind == 'ore' && t.phase == 'achievement' && a.diff(b).affectedKeys().hasOnly(['ore']) && a.ore == b.ore+9-b.oreDiscs)
+          || (m.kind == 'trade' && t.phase == 'trade' && a == b)))
+        || (s.phase == 'trade' && t.turn == s.turn && ((t.phase == 'trade' && tradeMove(m,b,a)) || (m.kind == 'finish-trading' && m.keys().hasOnly(['kind']) && t.phase == 'achievement' && a == b)))
+        || (m.kind == 'end-turn' && m.keys().hasOnly(['kind']) && s.phase == 'achievement' && t.phase == 'action' && t.turn == s.turn+1 && a == b);
+      }
+      function turnTransition(b,a,e) {
+        let p=e.position; let s=b.get('play',blankPlay(b)); let t=a.play;
+        let before=initialOrCurrent(b,p); let after=t.players[p];
+        return actorAllowed(b,p) && sameTurnRoot(b,a) && t.keys().hasOnly(['turn','activePosition','phase','players']) && t.turn is int && t.players is map && t.players.diff(s.players).affectedKeys().hasOnly([p])
+          && t.activePosition == (e.move.kind == 'end-turn' ? nextPosition(b,p) : s.activePosition)
+          && turnEffect(e.move,s,t,before,after,p,b.seats.size());
+      }
+      allow update: if signedIn() && ('play' in request.resource.data) && sameTurnRoot(resource.data,request.resource.data)
+        && getAfter(/databases/$(database)/documents/games/$(game)/events/$(request.resource.data.lastCommand)).data.type == 'game-move'
+        && getAfter(/databases/$(database)/documents/games/$(game)/events/$(request.resource.data.lastCommand)).data.actorUid == request.auth.uid
+        && getAfter(/databases/$(database)/documents/games/$(game)/events/$(request.resource.data.lastCommand)).data.revision == request.resource.data.revision;
+      match /events/{event} {
+        function turnEvent() {
+          let e=request.resource.data; let b=get(gamePath()).data; let a=getAfter(gamePath()).data;
+          return e.type == 'game-move' && e.schema == 1 && e.actorUid == request.auth.uid && e.commandId == event && e.revision == a.revision && a.lastCommand == event && e.name == ''
+            && (b.mode == 'tabletop' ? e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','move']) : e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','move','ready','configVersion','settings','code']) && !e.ready && e.configVersion == b.configVersion && e.settings == b.settings && e.code == b.code)
+            && turnTransition(b,a,e);
+        }
+        allow create: if signedIn() && request.resource.data.type == 'game-move' && turnEvent();
+      }
+    }
     match /invites/{code} {
       allow get: if signedIn();
       allow create: if signedIn() && code.matches('^[A-Z]{5}$') && request.resource.data.keys().hasOnly(['gameId','ownerUid'])
