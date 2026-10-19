@@ -26,3 +26,5 @@ Prompt 33 | f56d32976081c3a282d3605d3153bf46f2d44a343a1e17f8e6d134bf8789260f | A
 Prompt 34 | 934274d50189548905316ab18591724940a1054a1fe832d9bf36804f22cae0f8 | Remove redundant shared status, finish corner focus audit, and refresh illustrated shared/roster regression evidence.
 
 Prompt 35 | 0eadbfdfa68e2890852eabf5ef4423f283c3efe06de84a5b318e902c81c8161e | Record phase003 local acceptance, publish its stacked PR, and begin authorized milestone004 on a dependent branch.
+
+Prompt 35 | 0eadbfdfa68e2890852eabf5ef4423f283c3efe06de84a5b318e902c81c8161e | Update hosted smoke for required Basic faction selection and immutable Begin in both modes after PR5 publication.
