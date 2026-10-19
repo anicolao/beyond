@@ -120,3 +120,5 @@ Prompt 52 | aed53386f1e614be973ea5b174b3c1eedb8b0da39d7e4940b737a85175223f9d | R
 Prompt 52 | aed53386f1e614be973ea5b174b3c1eedb8b0da39d7e4940b737a85175223f9d | Validate17 illustrated first-round variants; fix real guard defects and await complete reader scrolling before exact capture.
 
 Prompt 52 | aed53386f1e614be973ea5b174b3c1eedb8b0da39d7e4940b737a85175223f9d | Pass48 macOS exact journeys and2219 frames with40 security tests and41 guards; publish004 stacked on accepted PR5.
+
+Prompt 53 | 99563f44292ce0e63a3b75ffd8ead5cb563ca6a60115bac111d329e73e80435f | Reproduce3-player native handoff; pass126 exact frames and verify visible heading/card paint separation without changing references.

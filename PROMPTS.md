@@ -291,3 +291,9 @@ Reviewer18:28: independently inspected round50 overview-initial/selected1280x720
 Reviewer-authored local acceptance:
 
 Reviewer18:40: phase004 independent local visual/functional review accepted for final illustrated validation. Fresh ordinary shared setup3b69ddba-d33f-4bfc-b78b-400bc8be5981: Genetics permanent payment/bonus, reload pending production, Growth auto-handoff; Luna Lasers disabled until explicit second-ship choice, correct level1to2/Ore gain, Produce Ore auto-handoff. Prior live trade room exercised all3rates and occupied-space blocking. Cumulative phone/desktop/4K/cardinal/corner/observer reviews and round50 correction accepted. Proceed required TestStepHelper illustrated stories and final local exact checks with unchanged guards, then publish004 stacked on accepted PR5. Report exact pass; I will release005 after that local gate while004 CI/hosted finish. No merge.
+
+## Prompt 53: Inspect Heading Clearance
+
+Reviewer-authored visual correction:
+
+Reviewer19:17: targeted 3-player desktop/4K guard pass verified. Independent image review of tests/e2e/004-first-research/screenshots/research-and-recover-a-3-player-shared-cardinal-first-round/057-turn-1-handoff-tabletop-4k-darwin.png shows Advanced Genetics appearing to cover the Level I heading and Four discoveries subtitle (only top of I visible), unlike clear II/III/IIII column labels. Please inspect native image/overlap and ensure first column heading stays visibly separated from the first card after handoff; a passing clipping guard alone does not accept this composition. Preserve current full candidate work; fix if confirmed and include refreshed handoff evidence. No phase005 release yet.

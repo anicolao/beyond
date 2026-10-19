@@ -61,3 +61,11 @@ Review evidence and final results: `tmp/local-research-review/round52/README.md`
 ## Final macOS comparison52
 
 Independent non-updating run passes48/48 journeys and2219 exact frames; all48 story records explicitly report generation=false. The17 new004 viewport variants contribute1091 frames and preserve all31 prior variants. Native End-key scrolling is verified at the actual reader bottom with complete rule visibility before capture; the three corrected compact references were visually inspected.40 backend/security tests/2422 assertions,17 tooling tests,41 capture guards, policy, zero Svelte diagnostics and both client builds pass. The retained reviewer emulators and root work are preserved; isolated8297/9397 emulators serve the independent browser run. Linux exact and matching hosted004 production smoke remain pending final gates.005 remains held; no PR is merged.
+
+## Reviewer53 — verify native handoff heading
+
+A fresh independent ordinary3-player desktop/4K run passes2/2 journeys/126 exact frames with generation=false. Native4K visual review confirms complete Level I and Four discoveries text above Advanced Genetics after Bora hands off to Cleo. The heading block ends at775.984375px, subtitle at772.984375px and card starts at781.078125px; heading/card clearance is5.09375px and subtitle/card clearance8.09375px. Paint-stack inspection selects the actual heading/subtitle, not a covering card.
+
+The fresh native4K PNG is byte-identical to the current committed reference (SHA-256 d9b502e653746a556c76c0c74ed00e82aa8085e4e4b4dbb53fbc176876b3ecd6), which already contains the physical header-clearance fix made before PR6 publication. No further production/style or baseline change is warranted by this reproduction. Earlier candidates and all48 final journeys/2219 references are preserved. Fresh local PNGs, geometry and exact log are indexed in `tmp/local-research-review/round53/README.md`.005 remains held.
+
+![Verified native3-player4K handoff](screenshots/research-and-recover-a-3-player-shared-cardinal-first-round/057-turn-1-handoff-tabletop-4k-darwin.png)
