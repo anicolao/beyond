@@ -132,3 +132,5 @@ Prompt 55 | e34fe9835252e47482d389b80708a58ef060a72260647b3ae00ae2ea7ac4dd2a | C
 Prompt 55 | e34fe9835252e47482d389b80708a58ef060a72260647b3ae00ae2ea7ac4dd2a | Stage pinned reviewed Linux evidence on the existing runner without deleting local files or changing capture/comparison guards.
 
 Prompt 55 | e34fe9835252e47482d389b80708a58ef060a72260647b3ae00ae2ea7ac4dd2a | Use pinned Node for native Sharp decoding after validating all2219 archive entries; preserve Linux source hashes and exact gates.
+
+Prompt 55 | e34fe9835252e47482d389b80708a58ef060a72260647b3ae00ae2ea7ac4dd2a | Import reviewed phase004 Linux references from pinned run 39331726896; retain separate independent exact and hosted gates.
