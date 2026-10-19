@@ -7,7 +7,9 @@ export default defineConfig({
   retries: 0,
   workers: 1,
   updateSnapshots: 'none',
-  timeout: 60_000,
+  // Complete illustrated rounds have independent operation/capture deadlines.
+  // Linux traces need >60s for 58+ native frames; no operation inherits this allowance.
+  timeout: 120_000,
   reporter: [['list'], ['html', { open: 'never' }], ['./tests/e2e/helpers/story-reporter.ts']],
   snapshotPathTemplate: '{testDir}/{testFileDir}/screenshots/{arg}{ext}',
   use: {

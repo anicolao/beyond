@@ -124,3 +124,5 @@ Prompt 52 | aed53386f1e614be973ea5b174b3c1eedb8b0da39d7e4940b737a85175223f9d | P
 Prompt 53 | 99563f44292ce0e63a3b75ffd8ead5cb563ca6a60115bac111d329e73e80435f | Reproduce3-player native handoff; pass126 exact frames and verify visible heading/card paint separation without changing references.
 
 Prompt 54 | d0fb0b5694120f2f4f3ce27970de1aed0822c315cf632f04fc45f9d26c02aba2 | Record independent heading acceptance; pass fresh48-journey exact comparison with all2219 preserved reference hashes unchanged.
+
+Prompt 55 | e34fe9835252e47482d389b80708a58ef060a72260647b3ae00ae2ea7ac4dd2a | Diagnose Linux whole-journey timeouts; retain every2s capture/operation guard and allow120s for complete illustrated rounds.
