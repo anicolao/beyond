@@ -30,3 +30,5 @@ Prompt 35 | 0eadbfdfa68e2890852eabf5ef4423f283c3efe06de84a5b318e902c81c8161e | R
 Prompt 35 | 0eadbfdfa68e2890852eabf5ef4423f283c3efe06de84a5b318e902c81c8161e | Update hosted smoke for required Basic faction selection and immutable Begin in both modes after PR5 publication.
 
 Prompt 35 | 0eadbfdfa68e2890852eabf5ef4423f283c3efe06de84a5b318e902c81c8161e | Establish Firestore readiness during normal arrival after Linux first-create timeout; preserve all operation budgets and exact guards.
+
+Prompt 35 | 0eadbfdfa68e2890852eabf5ef4423f283c3efe06de84a5b318e902c81c8161e | Inspect 28 Linux contact sheets and critical native captures; import only successful stories, excluding the failed phone journey.
