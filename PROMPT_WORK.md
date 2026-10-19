@@ -88,3 +88,5 @@ Prompt 45 | 461674d93d44dc844e4c89097965c6c6e013a608431158db8e0e26ee102cb1c8 | U
 Prompt 45 | 461674d93d44dc844e4c89097965c6c6e013a608431158db8e0e26ee102cb1c8 | Integrate canonical cards and shared4K readers into Basic setup; pass31 exact journeys and1128 images with unchanged guards and immutable Begin.
 
 Prompt 45 | 461674d93d44dc844e4c89097965c6c6e013a608431158db8e0e26ee102cb1c8 | Align Basic setup with final corrected remote-room ancestry, retaining its setup-aware backend and complete reviewed card evidence.
+
+Prompt 45 | 461674d93d44dc844e4c89097965c6c6e013a608431158db8e0e26ee102cb1c8 | Accept reviewed pinned Linux setup references after31 candidate journeys; preserve all inherited references and request independent exact comparison.
