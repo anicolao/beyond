@@ -1,16 +1,17 @@
 <script lang="ts">
   import { base } from '$app/paths';
   import CardSymbol from './CardSymbol.svelte';
+  import OriginalCardArt from './OriginalCardArt.svelte';
   import type { CardDefinition, CardPresentation } from './types';
-  let { card, presentation = {} }: { card: CardDefinition; presentation?: CardPresentation } = $props();
+  let { card, presentation = {}, compact = false, overview = false }: { card: CardDefinition; presentation?: CardPresentation; compact?: boolean; overview?: boolean } = $props();
 </script>
-<article class="card-face" data-family={card.family} aria-label={`${card.family}: ${card.title}`}>
+<article class="card-face" class:board-face={compact} class:overview-face={overview} data-family={card.family} aria-label={`${card.family}: ${card.title}`}>
   <div class="face-inner">
     <header><span class="card-family">{card.family}</span><span class="level" aria-label={`${card.family === 'Technology' || card.family === 'Event' ? 'Level ' : ''}${card.badge}`}>{card.badge}</span><h2>{card.title}</h2><p>{card.subtitle}</p></header>
-    <div class="illustration"><img src={`${base}/art/cards/${card.art}.png`} alt="" /><span class="art-seal" aria-hidden="true"><CardSymbol kind={card.family === 'System' ? 'food' : card.family === 'Achievement' ? 'star' : 'research'} /></span></div>
+    <div class="illustration">{#if card.art === 'astronomy'}<OriginalCardArt id={card.id}/>{:else}<img src={`${base}/art/cards/${card.art}.png`} alt="" />{/if}<span class="art-seal" aria-hidden="true"><CardSymbol kind={card.family === 'System' ? (card.sections[0]?.secondarySymbol ? 'star' : card.sections[0]?.symbol ?? 'food') : card.family === 'Achievement' ? 'star' : 'research'} /></span></div>
     <div class="card-rules">
       {#each card.sections as section}
-        <section><div class="rule-heading">{#if section.symbol}<CardSymbol kind={section.symbol}/>{/if}<h3>{section.label}</h3></div>{#if section.cost}<p class="cost"><span>Cost</span> {section.cost}</p>{/if}<p>{section.text}</p></section>
+        <section><div class="rule-heading">{#if section.symbol}<CardSymbol kind={section.symbol}/>{/if}{#if section.secondarySymbol}<CardSymbol kind={section.secondarySymbol}/>{/if}<h3>{section.label}</h3></div>{#if section.cost}<p class="cost"><span>Cost</span> {section.cost}</p>{/if}<p>{section.text}</p></section>
       {/each}
     </div>
     {#if card.rewards}
@@ -59,4 +60,44 @@ i.gold { background:linear-gradient(135deg,#f5d680,#b8852b); border-color:#b18b3
 .occupied, .colony { display:flex; gap:2cqw; align-items:center; padding:2cqw 5cqw; margin:0; font-size:3.5cqw; }
 .pawn { width:4cqw; height:7cqw; background:#217b7b; border:1px solid #205959; clip-path:polygon(25% 0,75% 0,100% 25%,100% 100%,0 100%,0 25%); }
 .production-disc { display:inline-flex; align-items:center; justify-content:center; border-radius:50%; width:7cqw; height:7cqw; }
+.board-face {padding:3px;border-radius:7px;box-shadow:0 2px #645133,0 4px #142226,3px 5px 8px #0007;}
+.board-face .face-inner{display:grid;grid-template-columns:1fr 34%;grid-template-rows:minmax(0,1fr);height:100%;min-height:0;border-radius:4px;}
+.board-face header{padding:1.5cqw 5cqw;min-width:0;min-height:0;display:flex;align-items:center;}
+.board-face .card-family{display:none;}
+.board-face h2{font-size:8.5cqw;line-height:.94;margin:0;}
+.board-face .level{display:none;}
+.board-face header p{display:none;}
+.board-face .illustration{min-height:0;height:100%;margin:0;border:0;border-left:1px solid #a58c58;}
+.board-face .art-seal,.board-face .card-rules,.board-face .scoring,.board-face .reward-slots{display:none;}
+
+.board-face .face-inner{display:grid;grid-template-columns:1fr;grid-template-rows:auto minmax(24px,1fr) auto}
+.board-face header{padding:3cqw 4cqw;display:block}
+.board-face h2{font-size:10cqw;line-height:.96}
+.board-face .illustration{height:100%;min-height:24px;margin:0 3cqw;border:1px solid #a58c58}
+.board-face .card-rules{display:block;padding:2cqw 4cqw}
+.board-face .card-rules section{padding:0;border:0}
+.board-face .card-rules section:not(:first-child){display:none}
+.board-face .rule-heading{font-size:5cqw;gap:2cqw}.board-face h3{font-size:5cqw;letter-spacing:.05em}
+.board-face section p{font-size:6cqw;line-height:1.15;margin:1cqw 0}
+.board-face section .cost{font-size:5cqw;padding:1cqw}
+
+.board-face header{min-height:min-content}
+.board-face .face-inner{grid-template-rows:minmax(min-content,auto) minmax(24px,1fr) minmax(min-content,auto)}
+
+.board-face header{padding:2cqw 4cqw}
+.board-face h2{font-size:max(14px,7cqw);line-height:1}
+.board-face .rule-heading{font-size:max(8px,3.5cqw)}.board-face h3{font-size:max(8px,3.5cqw)}
+.board-face section p{font-size:max(9px,4cqw);line-height:1.18}
+.board-face section .cost{font-size:max(9px,4cqw)}
+
+.overview-face .face-inner{grid-template-rows:minmax(min-content,auto) minmax(16px,1fr)}
+.overview-face .card-rules{display:none}.overview-face .illustration{min-height:16px}
+.overview-face h2{font-size:14px}.overview-face header{padding:3px 5px}
+
+.overview-face{container-type:size}
+@container(max-height:52px) or (max-width:110px){
+.overview-face .face-inner{grid-template-rows:1fr}
+.overview-face .illustration{display:none}
+.overview-face header{display:flex;align-items:center;padding:3px 5px}
+}
 </style>

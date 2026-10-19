@@ -1,0 +1,35 @@
+import { test, expect } from '../helpers/fixtures';
+import { TestStepHelper } from '../helpers/test-step-helper';
+const names=['Ada','Bora','Cleo','Dara'];
+const factions=['Nishida-Østergaard Corporation','United Nations of Sol','Disciples of the Cosmic Tabernacle','The Zheng-Yi Brotherhood'];
+for(const count of [2,3,4] as const)test(`Begin and recover an exact ${count}-player shared Basic table`,async({page,context},info)=>{
+ info.annotations.push({type:'viewports',description:'desktop,tabletop-4k'},{type:'setup',description:`One shared display and one controller configure ${count} named physical seats directly on the table. Factions, settings, starting-player order and Begin use ordinary production controls. No remote identities or companion devices. Command entropy is fixed before play, without injecting any game state. The story stops at the real immutable starting position.`});
+ await context.addInitScript(prefix=>{Object.defineProperty(crypto,'randomUUID',{value:()=>{const n=Number(sessionStorage.getItem('table-setup-command')??'0')+1;sessionStorage.setItem('table-setup-command',String(n));return `${prefix.toString(16).padStart(8,'0')}-0203-4405-8607-${n.toString(16).padStart(12,'0')}`;}});},0x0d000000+count*65536+(info.project.name==='desktop'?256:512));
+ const positions=count===2?['North East','South West']:['South','North','East','West'];
+ const steps=new TestStepHelper(page,info,info.title);
+ // Use the existing game-view polygon audit for diagonal choice readers.
+ // Document-view hit rectangles intentionally describe scrolling content instead.
+ let began=false;
+ const photograph=(id:string,caption:string,check:()=>Promise<unknown>,diagonalChoice=false)=>steps.step(id,caption,[{spec:caption,check},{spec:'The shared display fits without page scrolling.',check:async()=>expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth&&document.documentElement.scrollHeight<=innerHeight&&!scrollX&&!scrollY)).toBe(true)}],{player:'Shared table · one controller',document:(count!==2||began)&&!diagonalChoice});
+ await page.goto('./');await photograph('arrival','The shared controller arrives at the observatory',async()=>expect(page.getByRole('button',{name:'Play',exact:true})).toBeEnabled());
+ await page.getByRole('button',{name:'Play',exact:true}).click();await photograph('play','Choose the shared physical table',async()=>expect(page.getByRole('button',{name:/Shared table/})).toBeVisible());
+ await page.getByRole('button',{name:/Shared table/}).click();await photograph('physical-table','An empty shared surface offers eight physical positions',async()=>expect(page.getByRole('button',{name:'Join at South',exact:true})).toBeVisible());
+ for(let i=0;i<count;i++){
+  await page.getByRole('button',{name:`Join at ${positions[i]}`,exact:true}).click();await photograph(`join-editor-${i}`,`Open ${positions[i]}’s seat-facing editor`,async()=>expect(page.getByRole('textbox',{name:`${positions[i]} player name`,exact:true})).toBeVisible());
+  await page.getByRole('textbox',{name:`${positions[i]} player name`,exact:true}).fill(names[i]);await photograph(`join-name-${i}`,`Enter ${names[i]} at ${positions[i]}`,async()=>expect(page.getByRole('button',{name:'Join table',exact:true})).toBeEnabled());
+  await page.getByRole('button',{name:'Join table',exact:true}).click();await photograph(`joined-${i}`,`${names[i]} joins the real physical seat`,async()=>expect(page.getByRole('heading',{name:names[i],exact:true})).toBeVisible());
+ }
+ if(count===3){await page.getByRole('button',{name:'Make Bora Player 1',exact:true}).click();await photograph('starting-player','Choose Bora as the permanent starting player; order remains clockwise',async()=>expect(page.getByRole('list',{name:'Clockwise turn order',exact:true}).getByRole('listitem').first()).toHaveText('Bora · Player 1'));}
+ await page.getByRole('button',{name:'Expedition setup',exact:true}).click();await photograph('configuration','Inspect the actual Basic and achievement configuration',async()=>expect(page.getByRole('combobox',{name:'Achievements',exact:true})).toHaveValue('introductory'));
+ await page.getByRole('button',{name:'Expedition setup',exact:true}).click();await photograph('configuration-closed','Return to the composed gathering surface',async()=>expect(page.getByRole('combobox',{name:'Achievements',exact:true})).toHaveCount(0));
+ for(let i=0;i<count;i++){
+  await page.getByRole('button',{name:`Choose faction for ${names[i]}`,exact:true}).click();await photograph(`faction-open-${i}`,`${names[i]} reads legal Basic faction setup`,async()=>{await expect(page.getByRole('dialog',{name:`Basic faction for ${names[i]}`,exact:true})).toBeVisible();if(count===2)await expect(page.getByRole('button',{name:'Select Disciples of the Cosmic Tabernacle',exact:true})).toBeDisabled();},count===2);
+  await page.getByRole('button',{name:`Select ${factions[i]}`,exact:true}).click();await photograph(`faction-chosen-${i}`,`Commit ${names[i]}’s unique Basic faction`,async()=>expect(page.getByRole('dialog',{name:`Basic faction for ${names[i]}`,exact:true})).not.toBeVisible());
+ }
+ await page.getByRole('button',{name:'Begin',exact:true}).click();began=true;await photograph('begun','Begin applies the reviewed starting position on this shared display',async()=>{await expect(page.getByRole('region',{name:'Basic game starting position',exact:true})).toBeVisible();await expect(page.getByRole('button',{name:'Begin',exact:true})).toHaveCount(0);await expect(page.getByRole('button',{name:'Show QR invitation',exact:true})).toHaveCount(0);});
+ await page.getByRole('button',{name:'Inspect Ada faction mat',exact:true}).click();await photograph('ada-mat','Ada’s complete mat shows Ore by actual turn order and the Basic bonus',async()=>{const mat=page.getByRole('dialog',{name:'Faction mat inspection',exact:true});await expect(mat.getByRole('region',{name:'Available resources',exact:true})).toContainText(count===3?'4':'3');await expect(mat.getByLabel('Column A: 5 Supply of 5',{exact:true})).toBeVisible();});
+ await page.keyboard.press('Escape');await photograph('mat-closed','Close the inspection and restore the physical mat’s control focus',async()=>expect(page.getByRole('button',{name:'Inspect Ada faction mat',exact:true})).toBeFocused());
+ await page.getByRole('button',{name:'Setup record',exact:true}).click();await photograph('setup-record','Confirm the exact board face and covered guilds',async()=>expect(page.getByRole('dialog',{name:'Setup record',exact:true})).toContainText(count===2?'Two-player face · 1 starting A, 2 B':'Standard face · 2 starting A, 2 B'));
+ await page.keyboard.press('Escape');await photograph('record-closed','The board controls remain reachable after inspection',async()=>expect(page.getByRole('button',{name:'Setup record',exact:true})).toBeFocused());
+ await page.reload();await photograph('restored','Reload recovers the same saved shared starting position',async()=>{await expect(page.getByRole('region',{name:'Basic game starting position',exact:true})).toBeVisible();await expect(page.getByRole('button',{name:'Inspect Ada faction mat',exact:true})).toBeVisible();});
+});

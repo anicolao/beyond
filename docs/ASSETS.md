@@ -43,3 +43,31 @@ The remote gathering surface reuses the original observatory painting. Its graph
 `src/lib/ModeInstrument.svelte` renders the three mode choices with the same original brass rims, recessed graphite faces and explicit semantic labels; the existing table/orbit/return SVG icons distinguish local seating, remote hosting and code entry. No raster interface is substituted.
 
 Remote invitation QR codes are computed locally from the public invitation URL with the pinned MIT-licensed `qrcode-generator` 2.0.4 package by Kazuhiko Arase. They contain no secret/player identity and are never used in tabletop seating. Attribution and the MIT license ship in [static/licenses/qrcode-generator.txt](../static/licenses/qrcode-generator.txt). The URL remains an accessible, underlined semantic link beside the generated QR image.
+
+## Basic setup illustrations
+
+The following original artwork was generated with the built-in imagegen tool on 2026-10-18, visually inspected and copied into this workspace. No publisher or BGA art is shipped. Semantic rules, symbols, costs and controls remain live HTML/SVG.
+
+| Workspace file | Subject | Generation ID |
+| --- | --- | --- |
+| `static/art/cards/genetics-v1.png` | Orbital genetics laboratory and suspended molecular double helix | `exec-202a3f02-5cb9-4f5c-bf7d-dee85405ea29` |
+| `static/art/cards/terraforming-v1.png` | Glass greenhouse settlement and atmospheric infrastructure on an alien world | `exec-49b362ec-05a5-46c4-8882-2fa70ef5da30` |
+| `static/art/cards/lasers-v1.png` | Precision orbital laser array, focusing mirrors and a narrow beam into empty space | `exec-1eb078b1-4e3e-4fd7-ad19-b8cef0a0296e` |
+
+Common prompt (followed by the respective subject prompt below):
+
+> Use case: stylized-concept. Asset type: original landscape illustration used inside an ivory and brass science-fiction board-game card, art only, no frame. Detailed cinematic science-fiction concept painting with believable precision engineering, warm brass highlights, deep graphite, midnight blue and restrained teal illumination, tactile material detail and atmospheric depth. Landscape 3:2 composition with a distinct central subject readable in a small card crop. No text, letters, numbers, logos, icons, card frame or watermark. No copying existing published board game art.
+
+Genetics:
+
+> An advanced orbital genetics laboratory: a luminous three-dimensional double helix of molecular particles suspended inside a tall transparent bioreactor, fine brass scientific instruments, living green research cultures and quiet ivory laboratory architecture, curved observation window showing a blue planet and distant sun. Optimistic, rigorous, richly detailed, not a diagram.
+
+Terraforming:
+
+> A pioneering terraforming settlement on a rugged alien world: substantial geodesic glass greenhouse domes enclosing verdant forests and crops, brass and ivory atmospheric-processing towers and irrigation infrastructure, barren ochre mountains beyond and a small pale moon, warm low sunlight and cool teal habitat lights. No people, no combat.
+
+Narrow Beam Lasers:
+
+> A precision narrow-beam laser research installation in orbit: a long graphite and brass optical array with multiple carefully aligned lenses and articulated focusing mirrors, one thin coherent teal beam aimed into empty deep space, blue planet curvature below, distant stars and warm sunlight catching machined metal. No missiles, explosions or firing at planets.
+
+`src/lib/cards/OriginalCardArt.svelte` draws deterministic original System planets and star fields in SVG. Geometry and palettes were authored in this repository; stable card IDs select the composition. Existing Advanced Robotics retains its distinct original gallery artwork. Board/mat/piece renderers and SVG art ship as GPL-3.0-only source. Publisher-authorized component sheets were inspected solely to transcribe mechanical facts; research copies in `/tmp` are not product assets or repository files.

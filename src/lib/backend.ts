@@ -20,7 +20,7 @@ export async function commitTable(id: string, command: Command, expectedRevision
     const [existing, duplicate] = await Promise.all([transaction.get(root), transaction.get(eventRef)]);
     if (duplicate.exists()) {
       const previous = duplicate.data() as TableEvent;
-      if (previous.type !== command.type || previous.position !== command.position || previous.name !== command.name) throw new Error('Command identity was already used.');
+      if (previous.type !== command.type || previous.position !== command.position || previous.name !== command.name || JSON.stringify(previous.settings) !== JSON.stringify(command.settings) || previous.faction !== command.faction || JSON.stringify(previous.start) !== JSON.stringify(command.start)) throw new Error('Command identity was already used.');
       return existing.data() as Table;
     }
     const before = existing.exists() ? existing.data() as Table : undefined;

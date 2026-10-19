@@ -324,3 +324,9 @@ main.at-table { padding: 0; min-height: 720px; }
   footer { bottom: 12px; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
+
+/* Keep rotated corner seat objects inside a short shared display. */
+@media (min-width: 761px) and (max-width: 2199px) and (max-height: 850px) {
+  .physical-seat[data-position='north-east'], .physical-seat[data-position='north-west'] { --y: 28%; }
+  .physical-seat[data-position='south-east'], .physical-seat[data-position='south-west'] { --y: 72%; }
+}

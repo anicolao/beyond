@@ -1,0 +1,22 @@
+# Basic setup manifest — transcription audit
+
+Authority: Rio Grande Games, **Beyond the Sun, second printing**, [combined rulebook and setup sheets](https://www.riograndegames.com/wp-content/uploads/2020/08/Beyond-the-Sun-2nd-Print-Rules-Combined.pdf). PDF pages 1–2 are the setup sheets; printed p. N is PDF page N+2. Consult the appended publisher clarifications. Base game only: no Expert Tableau, expansion, solo, or expansion replacement technologies.
+
+The printed component faces were also visually inspected in the [publisher-authorized Board Game Arena adaptation](https://boardgamearena.com/gamepanel?game=beyondthesun), release `250418-1337`. Its public component sheets (`img/board.jpg`, `exploration-2p.jpg`, `exploration-3p.jpg`, `basicSpacefaring2p.jpg`, `basicSpacefaring3p.jpg`, `guilds.jpg`, `techs.jpg`, `planetCards.jpg`, `eventsAchievements.jpg`, beneath its versioned game asset directory) corroborate graph edges, slots, titles, printed costs and specialties. These copyrighted source images are research references only; they are **not shipped**. Renderers use original artwork and semantic paraphrases. BGA-specific mechanical changes listed on its game page are not this implementation's rules authority.
+
+## Reviewed setup facts
+
+- Four Level I technologies: Terraforming, Advanced Genetics, Narrow Beam Lasers, Advanced Robotics; shuffle into four slots. Technology deck counts II/III/IIII: 16/16/10. The 46 identities are inventoried; later effects require their own source-reviewed implementation before actions become available.
+- Six face-down Events per II/III level: its two fixed guild Events plus four randomly selected from eight others, shuffled. Fixed II: Maya Chaturvedi and Tyler Lee. Fixed III: KC-24X and Onu. Unselected Events are out of the game.
+- Nineteen technology slots: 4 I, 6 II, 6 III, 3 IIII. The printed direct edge from I-3 to III-5 is intentional. Top/middle IIII slots require 2 of 3 prerequisites; bottom requires both. This is not the invented graph in the concept illustration.
+- Basic Spacefaring has 2/3/4 Level I research spaces and 2/3/4 Level II spaces. The last 1/1/2 Level II spaces respectively cost an extra Ore. Build/jump has two spaces; the second costs an extra Ore only at two players. The last action is repeatable. Action pawns begin off-board.
+- All four Guilds are covered. Terraforming and Professors’ are Tier 1; Technocrats’ and Meta-Science are Tier 2. Cover counts 1/2/1/2 action spaces.
+- Standard Exploration board: two A, two B, three controllable shipyards, Sol, Deep Space. Two-player face: one A, two B, one controllable shipyard, Sol, Deep Space. Sol and Deep Space have no control disc. Both exact route graphs are in the manifest.
+- Starting A identities: Barnard’s Star, Lalande 21185, Sirius, Wolf 359. Reveal 1 at two players, otherwise 2; shuffle other Starting cards into remaining A. Shuffle B and reveal 2. Both System decks contain 12 cards.
+- Always Transcendence + Empire; Introductory adds Technologist (A) + Warlord (B). Randomized selects one of four A and one of four B. Disable the second A reward with 2–3 players. Endgame threshold 3/3/4 total claims.
+- All Basic mats: Supply capacities A–E = 5/4/3/3/2; two Population; one level-1 ship at Sol; eight Food and eight Ore discs covering their tracks; automation zero. Food exposure sequence A/blank/B/blank/C/blank/D/blank/E; each Ore position yields one Ore. Ore by order 1/1/2/2 before faction bonuses. Resource cubes are never rolled during setup.
+- Nishida-Østergaard: +2 Ore. Disciples: +1 Ore, starting ship in Deep Space; excluded at two players under the plan's publisher setup sheet. Zheng-Yi: convert one Supply from A into an additional level-1 ship at Sol. United Nations: convert one Supply from C into an additional Population. The special columns matter; ordinary leftmost Supply conversion is not used for these exceptions.
+
+## Persistence and disclosure
+
+`basic-2020-v1` identifies the setup algorithm and manifests. Begin records one immutable seed and the accepted faction/configuration choices in the canonical history. Named random streams prevent unrelated additions from shifting existing decks. Projection derives exactly the same public board after reload or a client-path switch. Future order and face-down Event identities never enter renderer props, tooltips, accessible names, or ordinary setup details. Inventory is not an implemented-effect claim. The increment enables setup and inspection only; later action milestones extend these same boards and commands.

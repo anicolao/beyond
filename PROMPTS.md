@@ -135,3 +135,57 @@ Reviewer: independently inspected full navigation-3840.png; 4K mode entry accept
 Reviewer-authored acceptance and instruction:
 
 Final local checkpoint: phase002 LOCAL ACCEPTANCE restored. Independently reviewed corrected 038 recovery phone and039 keyboard state; bounded dialog is readable and properly separates background controls. Prior desktop/phone/live gathering, navigation and full4K reviews stand. Verified remote-round24-verify.log completes bun run verify successfully including16 exact browser journeys and26 guards. Commit/push phase002 and open new PR based on feat/card-gallery, report URL/head. You are explicitly authorized to start003 Basic setup on a NEW branch based on this locally accepted phase002 branch while Linux CI/hosted verification finish. Track outstanding002 gates separately and propagate fixes. Implement source-reviewed exact2/3/4-player Basic setup across remote desktop/phone and shared tabletop, legal unique factions and immutable Begin; compare every rendered surface against approved UX/concepts before baselines. Keep local preview available, no fake gameplay, all PRs unmerged. Update ledger with restored local acceptance; final002 acceptance still needs Linux exact plus matching hosted preview.
+
+## Prompt 27: Recompose Starting Boards
+
+Reviewer-authored checkpoint:
+
+Phase003 first independent concept review: viewed audit-1280.png and audit-393.png beside approved03-table-desktop. NOT locally accepted. Desktop player mat is a tiny unreadable thumbnail while Inspect faction select/button occupies a separate web panel; tech faces are narrow title strips and Exploration is squeezed into a narrow sidebar. Match the actual composition: readable active faction supply/resources integrated across bottom, compact opponents, substantial semantic technology card objects and proportionate exploration board, preserving reviewed real topology and concealed decks. Phone needs compact opponent/status strip, board-focused center and persistent readable own-resource/decision rail; currently tall header/button rows plus huge empty framed region and generic select dominate. Do not copy invented concept rules or add turn actions before004. Use current setup/inspect functions in tactile components. Keep original/provenanced artwork (reference scans only as rules sources). Iterate locally, provide refreshed desktop/phone/full4K and live review URLs before baselines. PR4 checks now all pass; supervisor still owes final Linux/hosted visual verification. Log as reviewer-authored.
+
+## Prompt 28: Focus Compact Desktop
+
+Reviewer-authored checkpoint:
+
+Round27 independent review: viewed4p-technology-1280/393/3840 and4p-exploration-393. Improved substantial cards, readable bottom economy and balanced Exploration; phone direction substantially closer. NOT accepted yet: at1280x720 Technology clips Advanced Genetics text and completely hides fourth starting Robotics card and lower prerequisite nodes; Full faction mat button also overlaps mat footer production text. Provide a deliberate compact-desktop overview/focus treatment preserving complete public topology/card availability, with clear visible scrolling/focus affordance if needed and readable full card inspection. Keep mat footer/control nonoverlapping. Do not simply shrink all text or weaken clipping checks. Inspect1280x720 and short desktop alongside4K; use native semantic controls and approved concept03 hierarchy. Then provide fresh compact desktop plus live URL. Continue no phase003 baselines/004 until reviewed. PR4 is independently finally accepted at656f04d: Linux evidence/checks, matching revision.json and hosted create/reload verified; update ledger accordingly. Log reviewer-authored.
+
+## Prompt 29: Verify Compact Focus
+
+Reviewer-authored continuation:
+
+Continue the authorized round28 compact-desktop correction after the transient model-capacity error. Reviewer inspected updated audit-1280.png: all starting cards/slots now visible and mat footer no longer overlaps, promising. Finish focus/return keyboard and short-desktop checks, provide focused Technology screenshot plus4-player compact state and live URL for independent review. No baseline/004 release yet. Log as reviewer continuation.
+
+## Prompt 30: Validate Basic Setup
+
+Reviewer-authored visual checkpoint:
+
+Round28 visual checkpoint: revised phase003 composition accepted for final local validation. Independently opened live4player room, used Focus Technology and Lower branches; full public overview and readable scroll/focus treatment work. Reviewed tabletop-4-start and corner-mat-reader full4K, plus prior phone and compact640 screenshots; seat orientation and current setup/inspection scope are sound. Focus log now passes720/640/600/1440/4K. Proceed illustrated setup baseline generation then independent exact/full required checks for all2/3/4-player remote and shared-table variants, immutable Begin, unique factions, reload/recovery and keyboard. Report result/evidence/head for final local acceptance. Do not start004 yet; after checks pass I will release next phase with CI overlap. No merge. Log reviewer-authored.
+
+## Prompt 31: Resume Setup Validation
+
+Reviewer-authored continuation:
+
+Continue the already-authorized phase003 final validation after the capacity interruption. Visual acceptance at round28 stands; resume illustrated captures and independent full checks. Preserve user files if disk cleanup is needed; report concrete storage blockers. Phase004 remains held until successful local verification. Reviewer continuation, no new scope.
+
+## Prompt 32: Correct Capture Defects
+
+Reviewer-authored continuation:
+
+Reviewer continuation after capacity interruption: basic-final-candidates.log completed23 passed/5 failed. Fix concrete guards without weakening them: phone3/4player Take seat2 touch target too small; desktop3/4player Choose faction for Cleo clipped by remote-roster; desktop2player shared Technology prerequisites clipped by technology-layout. Inspect these intermediate setup views at actual viewport, then rerun affected journeys and full independent comparison. Prior game-board visual acceptance does not cover these new failed gathering states; provide corrected captures.004 remains held.
+
+## Prompt 33: Clarify Shared Navigation
+
+Reviewer-authored final-capture review:
+
+Reviewer final-capture review after capacity interruption: confirmed basic-final-verify.log28 exact journeys pass, but NOT final visual acceptance. Inspected003 screenshots 2player shared015-begun-desktop: center board clips lower technology cards/branches with no visible focus/upper-lower controls, huge surrounding empty space; apply deliberate overview/focus navigation to compact shared mode too, preserving seat-facing controls/topology and full-card access. 4player remote026-faction-chosen-2-desktop is actually portrait guest view: roster cuts off Ada at top and Dara below without clear scroll cue. Add visible accessible roster navigation/scroll affordance while keeping current player controls reachable; do not shrink touch targets. Review actual dimensions, not filename suffix. Preserve passing guards, provide corrected compact-shared and portrait roster PNGs before final evidence update.004 remains held. Resume same task; no merge.
+
+## Prompt 34: Finalize Shared Status
+
+Reviewer-authored checkpoint:
+
+Reviewer 04:11: independently inspected round33 shared-2p-focus-1280.png, shared-4p-lower-1280.png and 4p-roster-Your-seat-393.png. Shared focus/branch navigation and portrait roster affordances resolve prior blockers; shared log now passes 2/3/4 at 1280/1440. One visible residual: Starting position: setup is complete... footer overlays the top of Ada mat in both shared focus PNGs, low contrast and colliding with mat header. Move that status into a contained readable location or omit redundant status. Finish current corner audit (latest log screenshot timeout), then refresh full checks before publication/004. No duplicate redesign requested; these reviewed controls look good.
+
+## Prompt 35: Publish Basic Setup
+
+Reviewer-authored delegation:
+
+Reviewer 05:22: phase003 LOCAL ACCEPTANCE granted. Independently reviewed refreshed compact overview, rotated1280 mat reader, removed footer, portrait navigation and final4K 025-begun tabletop capture against prior concept review; final verify log now31/31 exact journeys, guards and required checks pass. Commit/push003 and open new stacked PR based on feat/remote-rooms; report PR/head. Then explicitly proceed with milestone004 on a NEW branch stacked on003 while Linux CI and hosted verification finish. Preserve full existing functions and approved UX fidelity; iterate004 locally and await independent local review before005. Track003 final CI/Linux exact/hosted revision gates separately, propagate fixes if needed. All PRs remain unmerged. Record delegation in PROMPTS and work in PROMPT_WORK.

@@ -1,3 +1,5 @@
+import type { FactionId } from '$lib/game/manifest';
+import type { BasicStart } from '$lib/game/setup';
 import { doc, collection, getDocFromServer, getDocsFromServer, onSnapshot, orderBy, query, runTransaction } from 'firebase/firestore';
 import { backend } from '$lib/backend';
 import { applyRemote, projectRemote, sameSettings, type RemoteCommand, type RemoteEvent, type RemoteRoom, type RemoteSettings, type RemotePosition, remoteRetainedKey, lastGameKey } from './model';
@@ -14,7 +16,7 @@ export async function readRemote(id: string) {
   if (!current.exists()) throw new Error('This room could not be found. Check your invitation.');
   const room = current.data() as RemoteRoom;
   if (room.mode !== 'remote') throw new Error('Shared tables are joined at the physical display.');
-  if (room.phase !== 'gathering') throw new Error('This game has already started. Use a client that supports its current phase.');
+  if (!['gathering','started'].includes(room.phase)) throw new Error('This game has already started. Use a client that supports its current phase.');
   if (room.members[user.uid]) {
     const history = await getDocsFromServer(query(collection(db, 'games', id, 'events'), orderBy('revision')));
     const replayed = projectRemote(history.docs.map(item => item.data() as RemoteEvent));
@@ -28,7 +30,7 @@ export function watchRemote(id: string, receive: (room: RemoteRoom) => void, fai
     if (snapshot.metadata.hasPendingWrites || snapshot.metadata.fromCache) return;
     if (!snapshot.exists()) { fail('This room could not be found.'); return; }
     const value = snapshot.data() as RemoteRoom;
-    if (value.mode !== 'remote' || value.phase !== 'gathering') { fail('This game has already started or needs a newer client.'); return; }
+    if (value.mode !== 'remote' || !['gathering','started'].includes(value.phase)) { fail('This game has already started or needs a newer client.'); return; }
     receive(value);
   }, () => fail('Connection interrupted. Your seat is retained. Retry to reconnect.'));
 }
@@ -52,7 +54,7 @@ export async function createRemote(name: string, settings: RemoteSettings) {
   }
   throw new Error('We could not reserve an invitation code. Please try again.');
 }
-export type RemoteIntent = { type: RemoteCommand['type']; position?: RemotePosition; name?: string; ready?: boolean; settings?: RemoteSettings };
+export type RemoteIntent = { type: RemoteCommand['type']; position?: RemotePosition; name?: string; ready?: boolean; settings?: RemoteSettings; faction?: FactionId; start?: BasicStart };
 export async function sendRemote(id: string, intent: RemoteIntent, configVersion: number, commandId: string) {
   const { db, ready } = backend(), user = await ready;
   let next: RemoteRoom | undefined;
@@ -67,12 +69,12 @@ export async function sendRemote(id: string, intent: RemoteIntent, configVersion
     observedRevision = before.revision;
     if (duplicate.exists()) {
       const prior = duplicate.data() as RemoteEvent;
-      if (prior.actorUid !== user.uid || prior.type !== intent.type || prior.name !== (intent.name?.trim() ?? '') || prior.position !== (intent.position ?? '') || prior.ready !== (intent.ready ?? false) || (intent.settings && !sameSettings(prior.settings, intent.settings))) throw new Error('Command identity was already used.');
+      if (prior.actorUid !== user.uid || prior.type !== intent.type || prior.name !== (intent.name?.trim() ?? '') || prior.position !== (intent.position ?? '') || prior.ready !== (intent.ready ?? false) || (intent.settings && !sameSettings(prior.settings, intent.settings)) || prior.faction !== intent.faction || JSON.stringify(prior.start) !== JSON.stringify(intent.start)) throw new Error('Command identity was already used.');
       return before;
     }
     if (configVersion !== before.configVersion) throw new Error('Room setup changed. Review the current settings before continuing.');
-    const changed = intent.type !== 'remote-ready-changed';
-    const event: RemoteEvent = { schema: 1, actorUid: user.uid, revision: before.revision + 1, commandId, type: intent.type, position: intent.position ?? '', name: intent.name?.trim() ?? '', ready: intent.ready ?? false, settings: intent.settings ?? before.settings, code: before.code, configVersion: before.configVersion + Number(changed) };
+    const changed = !['remote-ready-changed','remote-begun'].includes(intent.type);
+    const event: RemoteEvent = { ...(intent.faction ? {faction:intent.faction}:{}), ...(intent.start ? {start:intent.start}:{}), schema: 1, actorUid: user.uid, revision: before.revision + 1, commandId, type: intent.type, position: intent.position ?? '', name: intent.name?.trim() ?? '', ready: intent.ready ?? false, settings: intent.settings ?? before.settings, code: before.code, configVersion: before.configVersion + Number(changed) };
     const after = applyRemote(before, event);
     transaction.set(root, after); transaction.set(eventRef, event);
     return after;
