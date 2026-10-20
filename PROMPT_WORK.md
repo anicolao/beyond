@@ -1,12 +1,19 @@
 Prompt 6 | f1b7f3f3a3193213ba87b9b044a67b1386420c80c29fafb1071305399623b5b8 | Repair preview provisioning permissions and Linux Nix bootstrap
+
 Prompt 6 | f1b7f3f3a3193213ba87b9b044a67b1386420c80c29fafb1071305399623b5b8 | Include the Nix installer xz dependency in the pinned browser container
+
 Prompt 6 | f1b7f3f3a3193213ba87b9b044a67b1386420c80c29fafb1071305399623b5b8 | Expose the root Nix profile in the immutable Linux browser image
+
 Prompt 6 | f1b7f3f3a3193213ba87b9b044a67b1386420c80c29fafb1071305399623b5b8 | Use the pinned browser operating system loader for dependency inspection
+
 Prompt 6 | f1b7f3f3a3193213ba87b9b044a67b1386420c80c29fafb1071305399623b5b8 | Review and commit Linux captures and finalize the first logical tracer
 
 Prompt 9 | 5de0a19f2192e77ae607fb6af0523dcb6b9c6acd571e30bd840b1a910d751965 | Review pinned Linux fidelity captures and finalize exact visual comparison evidence
+
 Prompt 9 | 5de0a19f2192e77ae607fb6af0523dcb6b9c6acd571e30bd840b1a910d751965 | Record provisional reviewer acceptance and completed Linux comparison evidence
+
 Prompt 16 | 45ee0b8d5e4cd7cbe3b5a2cd283d19e8bd3703b2ee1ac693baf4ba4454d31bc4 | Package the reviewed original illustrations with the gallery tracer and its macOS evidence
+
 Prompt 16 | 45ee0b8d5e4cd7cbe3b5a2cd283d19e8bd3703b2ee1ac693baf4ba4454d31bc4 | Review Linux card-gallery captures and finalize platform-specific exact comparison evidence
 
 Prompt 26 | 99af23167ecd860ff0178a8cbe27e87caa9323f4779cb5537fa6a1f4f6725228 | Record restored local acceptance, overlapping phase gates and current remote capability status.
@@ -243,6 +250,8 @@ Prompt 87 | 21eccc1c113a101190c7a30801f60e2b0db9d5c6a83e0497b756b5c89c1b9961 | P
 
 Prompt 88 | edf136be17b0678cd2ffce956445223d18032b68e3f61cfcf5679015cab450cd | Preserve Linux join timing trace, overlap native decode with acknowledgement under unchanged guards, prove late-image rejection, and isolate source-sensitive cloud compilation without fallback.
 
+Prompt 89 | df474916631ef11ce50fd2df878e3cc5fd580d89699e134e4edb9f6d4ae0461f | Preserve remote4 deadline failure and successful exact-source hosted publish; overlap only independent post-commit denial/read requests before the next frozen command, retaining every assertion and5000ms.
+
 Prompt 89 | df474916631ef11ce50fd2df878e3cc5fd580d89699e134e4edb9f6d4ae0461f | Record independent006 local acceptance, publish the reviewed stacked increment and begin007 separately while tracking exact-source deployment and Linux gates.
 
 Prompt 89 | df474916631ef11ce50fd2df878e3cc5fd580d89699e134e4edb9f6d4ae0461f | Restrict staged policy enumeration to its existing TypeScript/JavaScript inputs so native PNG path volume cannot overflow the Git subprocess buffer; retain every policy check.
@@ -262,3 +271,29 @@ Prompt 97 | c68aa2d1aefbd6cb040fe8572e6ba627eb9c6db07d2b107c44624e2aea5dc1ee | R
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Preserve six corrected discovery variants and inherited byte-identical overviews, continue80-journey independent exact, and carry infrastructure-only repairs into007 without advancing008.
 
 Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Publish independently accepted007 with80 exact journeys/5067 frames and separate pending Linux/hosted gates; begin008 on a new stacked branch.
+
+Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Reject mismatched linked actors before full remote seat validation; preserve all156 security tests and deadlines, successful d81 publish, new Linux faction-capture trace and exact-source503 evidence.
+
+Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Merge PR7 attribution repair ancestry into PR8 while preserving006 acceptance, both diagnostic histories and new phase ledgers;007 production UI stays separate.
+
+Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Validate inherited stacked continuations against their committed exact prompt hashes when the PR base advances, retaining strict single-step local hooks and both parent histories.
+
+Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Prove bundled earlier work against both committed records and preserved exact prompt snapshots, testing actual advanced-base history without relaxing local commit or screenshot guards.
+
+Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Verify bundled87 records against exact canonical prompt prefixes including appended heading separators; reject altered text or invented uncommitted records and preserve strict local hooks.
+
+Prompt 94 | 965494c557693a139428410b7bf6f64c6263b6f96c47b91771360313b65587a5 | Serialize cold rules readiness under one shared deadline, preserve all walkthrough links, and instrument native image decode without changing capture guards.
+
+Prompt 94 | 965494c557693a139428410b7bf6f64c6263b6f96c47b91771360313b65587a5 | Propagate reviewed serialized readiness and diagnostic-only image timing through006 while preserving both parent histories and all native references.
+
+Prompt 96 | 913970fb3b6e3370ede000e4023044c9a17f2140f1d820631c8ea9fe283e31ed | Prove exact installed-source readback before reusing CLI compilation, retain shared10s and denial checks, and preserve in-flight Linux evidence before propagation.
+
+Prompt 97 | c68aa2d1aefbd6cb040fe8572e6ba627eb9c6db07d2b107c44624e2aea5dc1ee | Preserve accepted scope and readiness CI proof, verify exact-source readback on a fresh larger rules JVM, and retain failed publication/capture evidence without blind reruns.
+
+Prompt 97 | c68aa2d1aefbd6cb040fe8572e6ba627eb9c6db07d2b107c44624e2aea5dc1ee | Carry exact-source emulator readback into006, prove175 security tests under unchanged deadlines, and wait for running native Linux evidence before pushing this tooling-only propagation.
+
+Prompt 98 | 9e3c6771d80fb656ae220209778b64c4c2093cbd77510fa0f82232b2626991b4 | Preserve the2248ms Linux camera trace and use verified host shared memory instead of disk-backed browser surfaces, retaining every renderer flag, reference and2000ms guard.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate readback and verified host-memory configuration after preserving the failed71/72 native run, retaining all006 UI, references, security assertions and capture deadlines.
+
+Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Reconcile007 with current006 ancestry while preserving both continuation streams, accepted production references and every existing capture guard.

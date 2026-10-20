@@ -282,3 +282,9 @@ Current publication ledger91: PR7 head80f1533; independently verified earlier d8
 007 is independently locally accepted:80/80 exact macOS journeys,80 generating=false story records/5067 frames, including8 new007 variants/1028 frames;178 backend tests/2996 assertions,43 capture guards,47 tooling tests, clean types/source policy. Independent ordinary production, empty A/yielding B, conservation, reload, phone/cardinal/corner/4K review is accepted. Publish007 stacked on feat/rival-research; Linux exact and matching-current-head hosted acceptance remain separate pending gates.
 
 008 is explicitly released on a NEW branch stacked on committed007. Implement the three printed trade rates, repeated exchanges, left-to-right Supply draw, right-to-left returns/overflow, decommission with immediate control recalculation, and Finish trading/pass without ordinary production. Begin with ordinary desktop/phone/shared local review before illustrated references.005/006 unresolved source-sensitive publication and Linux gates remain tracked independently; propagate verified repairs. No PR merging.
+
+
+### Inherited006 infrastructure ledger
+
+
+
