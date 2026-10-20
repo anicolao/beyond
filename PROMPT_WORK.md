@@ -246,3 +246,5 @@ Prompt 88 | edf136be17b0678cd2ffce956445223d18032b68e3f61cfcf5679015cab450cd | P
 Prompt 89 | df474916631ef11ce50fd2df878e3cc5fd580d89699e134e4edb9f6d4ae0461f | Record independent006 local acceptance, publish the reviewed stacked increment and begin007 separately while tracking exact-source deployment and Linux gates.
 
 Prompt 89 | df474916631ef11ce50fd2df878e3cc5fd580d89699e134e4edb9f6d4ae0461f | Restrict staged policy enumeration to its existing TypeScript/JavaScript inputs so native PNG path volume cannot overflow the Git subprocess buffer; retain every policy check.
+
+Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Preserve independently verified PR7 d81 deployment, publish006 as PR8 at599e80d, retain pending static/Linux/hosted gates and continue007 physical-column review on5202.
