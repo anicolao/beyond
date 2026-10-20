@@ -341,3 +341,9 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | E
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate sparse preview checkout and earlier unchanged stale-head rejection while keeping complete exact-test inputs and strict rules validation.
 
 Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Propagate sparse preview checkout and earlier unchanged stale-head rejection while keeping complete exact-test inputs and strict rules validation.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Combine final acknowledgement and unchanged full audit in one polling RPC; preserve initial warming/pointer order, exact references and all deadlines.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagatec17bce4 final-acknowledgement batching after72/72 exact4039-frame proof; retain all original capture guards and unchanged reference files.
+
+Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Carry6f6b215 reviewed-reference-preserving readiness batching into007; keep source-specific native and matching hosted gates separate.
