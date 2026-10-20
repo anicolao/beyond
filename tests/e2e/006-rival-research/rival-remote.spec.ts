@@ -1,0 +1,9 @@
+import {test,expect} from '../helpers/fixtures';
+import {TestStepHelper} from '../helpers/test-step-helper';
+import {assertDiscoveryReady,assertDiscoveryBoard,type Photo} from '../005-technology-discovery/journey';
+import {rivalJourney,type Scenario} from './journey';
+for(const [scenario,title] of [['rival','Research a rival discovery once and respect its exclusive printed Action'],['paid','Pay the printed laser Action and retain a complete three-point jump']] as [Scenario,string][])test(title,async({page,context,browser},info)=>{
+ info.annotations.push({type:'viewports',description:'phone,desktop'},{type:'setup',description:'Two separate authenticated remote controllers; ordinary UI setup and legal preparatory turns. Only initial setup entropy is fixed to66666666-6666-4666-8666-000000000009. No game-state injection or future-deck inspection. Actual printed research access, payment, occupancy, effects and recovery use production components.'});
+ const steps=new TestStepHelper(page,info,info.title);const photo:Photo=(id,caption,actor,player,check,documentView)=>steps.step(id,caption,[{spec:caption,check},{spec:'Canonical effects settle before capture.',check:()=>assertDiscoveryReady(actor)},{spec:'Any printed Action plan is ready.',check:async()=>{const planner=actor.locator('.technology-action-plan:visible');if(await planner.count())await expect(planner).toHaveAttribute('aria-busy','false');}},{spec:'Public compact topology remains physically separated.',check:()=>assertDiscoveryBoard(actor)},{spec:'The gameplay shell fits the actual viewport.',check:async()=>expect(await actor.evaluate(()=>document.documentElement.scrollWidth<=innerWidth&&document.documentElement.scrollHeight<=innerHeight&&!scrollX&&!scrollY)).toBe(true)}],{page:actor,player,document:documentView});
+ await rivalJourney({page,context,browser,info,photo,remote:true,scenario});
+});

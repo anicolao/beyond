@@ -35,6 +35,7 @@ export function advanceDiscovery(initial:PublicSetup,state:PlayState,limit=1){
   }
   if(step.kind==='jump-power'){
    const locations=step.legs.flatMap(leg=>[leg.path[0],leg.path.at(-1)!]),location=locations[step.index];
+   if(step.amount>2){if(step.index===0)d.jumpControlChecks=[];if(!locations.slice(0,step.index).includes(location)&&specialty(initial,state,location))d.jumpControlChecks!.push({kind:'control-check',responder:step.responder,location,source:'Jump'});}
    d.powers[step.responder][location]=p.ships.filter(ship=>ship.location===location).reduce((n,ship)=>n+ship.level,0);
    if(++step.index===locations.length){d.queue.shift();updateControl(initial,state,'Jump',locations,step.responder);}continue;
   }
@@ -50,7 +51,7 @@ export function advanceDiscovery(initial:PublicSetup,state:PlayState,limit=1){
    if(e.kind==='population'&&p.supply.reduce((a,b)=>a+b,0)>=e.amount){for(let i=0;i<e.amount;i++){take(p,e.side==='right');p.population++;}d.queue.shift();continue;}
    if(e.kind==='automate'&&e.track!=='either'){automate(p,e.track);d.queue.shift();continue;}
    if(e.kind==='upgrade'&&!p.ships.some(s=>s.level<4&&(!e.location||s.location===e.location))){d.queue.shift();continue;}
-   if(e.kind==='jump'&&!p.ships.length){d.queue.shift();continue;}
+   if(e.kind==='jump'&&!e.required&&!p.ships.length){d.queue.shift();continue;}
    return;
   }
   return;
@@ -139,7 +140,7 @@ function respondEffect(initial:PublicSetup,state:PlayState,position:string,step:
   if(move.option!=='build'||!convert(p,move.usePopulation,e.side==='right'))throw new Error('Choose Supply, or the explicit exhausted Supply exception.');spawn(state,position,p,e.level,location);done();return;
  }
  if(e.kind==='jump'){
-  if(move.option!=='jump')throw new Error('Commit a simultaneous jump plan, or an empty plan to pass.');const legs=move.legs??[];validateJump(initial,state,position,e.amount,legs);done();if(legs.length)prepend(state,{kind:'jump-apply',responder:position,amount:e.amount,legs});return;
+  if(move.option!=='jump')throw new Error('Commit a simultaneous jump plan, or an empty plan to pass.');const legs=move.legs??[];if(e.required&&!legs.some(leg=>leg.path.at(-1)!==leg.path[0]))throw new Error('This Action must move a ship to a different location.');validateJump(initial,state,position,e.amount,legs);done();if(legs.length)prepend(state,{kind:'jump-apply',responder:position,amount:e.amount,legs});return;
  }
  if(e.kind==='research-I'){
   const card=initial.technologies.find(t=>t.card===move.option);
@@ -187,7 +188,7 @@ export function canAdvanceDiscovery(game:PublicSetup):boolean{
  if(step.kind==='control'){const system=game.systems.find(s=>s.slot===step.location);const section=system&&canonicalCard(system.card).sections.find(s=>s.label==='Specialty');return step.location.startsWith('shipyard-')?step.location!=='shipyard-north':!!section&&!section.secondarySymbol;}
  if(step.kind==='effect'){
   const e=step.effect;
-  return e.kind==='return-population'||e.kind==='ship'&&automaticShipAvailable(game.discovery!,p,step.responder,e)||e.kind==='ore'||e.kind==='population'&&p.supply.reduce((a,b)=>a+b,0)>=e.amount||e.kind==='automate'&&e.track!=='either'||e.kind==='upgrade'&&!p.ships.some(s=>s.level<4&&(!e.location||s.location===e.location))||e.kind==='jump'&&!p.ships.length;
+  return e.kind==='return-population'||e.kind==='ship'&&automaticShipAvailable(game.discovery!,p,step.responder,e)||e.kind==='ore'||e.kind==='population'&&p.supply.reduce((a,b)=>a+b,0)>=e.amount||e.kind==='automate'&&e.track!=='either'||e.kind==='upgrade'&&!p.ships.some(s=>s.level<4&&(!e.location||s.location===e.location))||e.kind==='jump'&&!e.required&&!p.ships.length;
  }
  return false;
 }

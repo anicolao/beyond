@@ -223,6 +223,10 @@ Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | S
 
 Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | Require explicit cache endpoints, correct optional SDK configuration typing and confirm zero errors/warnings plus four cache-integrity tests before publication.
 
+Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | Begin006 on feat/rival-research from00561ce658; preserve005 services and pending CI gates, establish a separate persistent5201 preview and source-audited action queue.
+
+Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | Implement006 personal printed-action access, once-only rival bonus and full four-point movement/control proofs;171/2961 backend,41 guards and live remote/phone/corner flows pass; local review pending.
+
 Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | Review21 native samples/all14 new variants, decode3271 Linux frames and import1460 exact PNGs; retain66 inherited refs,5s compatibility guards and pending independent Linux/hosted gates.
 
 Prompt 81 | 12e8b835a5b0fbb9164a888273ec8e3fe39ef604f53efbb00485cac9ae49acb8 | Record07:33 acceptance of the additional Prompt79 rows separately from round78; retain4/4 exact proof, isolate stale emulator configuration diagnosis and preserve pending005 gates/services.
@@ -233,4 +237,12 @@ Prompt 83 | f029917fdb64b0f84dce7cd5777cfd2294889e1ecbdb28d6e7d3f507c10951ee | P
 
 Prompt 86 | ef7f18400ecb84b8d4d49ba14981e57ca0ab01d2b1cd2e9bdd4b150ac46c699e | Replace masked release conflicts with strict compile/upload/update/readback deployment, test ten failure/race paths and preserve serialization, auth, exact guards and pending hosted gates.
 
+Prompt 87 | 21eccc1c113a101190c7a30801f60e2b0db9d5c6a83e0497b756b5c89c1b9961 | Preserve stalled container metadata and cancel superseded startup, propagate strict release repair, and author ordinary remote/cardinal/corner rival and wide-jump illustrated stories.
+
+Prompt 87 | 21eccc1c113a101190c7a30801f60e2b0db9d5c6a83e0497b756b5c89c1b9961 | Preserve current-source compile503 before release writes and rerun failed publish only; verify untouched005 selector references and refresh006 evidence after the shorter printed-Action label.
+
 Prompt 88 | edf136be17b0678cd2ffce956445223d18032b68e3f61cfcf5679015cab450cd | Preserve Linux join timing trace, overlap native decode with acknowledgement under unchanged guards, prove late-image rejection, and isolate source-sensitive cloud compilation without fallback.
+
+Prompt 89 | df474916631ef11ce50fd2df878e3cc5fd580d89699e134e4edb9f6d4ae0461f | Record independent006 local acceptance, publish the reviewed stacked increment and begin007 separately while tracking exact-source deployment and Linux gates.
+
+Prompt 89 | df474916631ef11ce50fd2df878e3cc5fd580d89699e134e4edb9f6d4ae0461f | Restrict staged policy enumeration to its existing TypeScript/JavaScript inputs so native PNG path volume cannot overflow the Git subprocess buffer; retain every policy check.
