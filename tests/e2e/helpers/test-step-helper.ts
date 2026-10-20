@@ -28,11 +28,12 @@ export class TestStepHelper {
         const path = this.info.snapshotPath(record.slug, stem);
         const updating = ['all', 'changed'].includes(this.info.config.updateSnapshots);
         const reference = !updating && existsSync(path) ? preparePixels(readFileSync(path)) : undefined;
-        await page.bringToFront(); await page.mouse.move(0, 0);
-        // Overlap independent image decoding with acknowledgement, inside the
-        // original shared deadline. The strict final preparation/audit below
-        // runs after both and rechecks all current images and every layout guard.
-        const [, ready] = await Promise.all([
+        // Start independent readiness work together. Pointer placement remains
+        // ordered after foregrounding; the strict final decode/layout audit and
+        // native photograph run only after all three preparations complete.
+        // All work stays inside the original shared 2,000 ms deadline.
+        const [, , ready] = await Promise.all([
+          (async () => { await page.bringToFront(); await page.mouse.move(0, 0); })(),
           page.evaluate(warmVisibleImages),
           page.waitForFunction(({ status }) => document.querySelector('[data-backend-status]')?.getAttribute('data-backend-status') === status, { status: view.status ?? 'synced' }, { timeout: remaining(), polling: 20 })
         ]);
