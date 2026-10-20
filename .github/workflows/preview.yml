@@ -52,8 +52,12 @@ jobs:
           umask 077
           printenv FIREBASE_DEPLOY_CREDENTIALS > "$credentials"
           export GOOGLE_APPLICATION_CREDENTIALS="$credentials"
-          if ! nix develop --command bunx firebase deploy --only firestore:rules,auth --project beyond-20261018 --non-interactive; then
+          if ! nix develop --command node scripts/deploy-firestore-rules.mjs; then
             nix develop --command node scripts/diagnose-rules-compiler.mjs
+            rm "$credentials"
+            exit 1
+          fi
+          if ! nix develop --command bunx firebase deploy --only auth --project beyond-20261018 --non-interactive; then
             rm "$credentials"
             exit 1
           fi

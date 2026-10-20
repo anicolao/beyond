@@ -477,3 +477,21 @@ Reviewer07:53: independently inspected PR7 static-and-rules failure job118512786
 Reviewer-authored phase005 in-test compatibility deadline diagnosis and scoped Linux image review:
 
 Reviewer08:54: PR7 head263a591 static job118535929726 now155pass/1fail: deployed remote-3 remains writable with immutable attributed events and Begin timed out5000.96ms inside test, not startup hook. Saved full log /tmp/beyond-pr7-static-118535929726.log. Preserve limits/assertions while diagnosing. Independently viewed Linux005055-same-candidates-phone from pinned3a6archive: compact rows and candidate composition match accepted local design; scoped visual pass only, exact rerun/hosted still required.
+
+## Prompt 84: Rival Proof Review
+
+Reviewer-authored scoped006 live/layout review and atomic-proof evidence request; baselines/007 remain held:
+
+Reviewer09:48: Independent ordinary shared table35041e0e on5201 passed rival Psionics research (occupied II space blocked, exact3Ore/Population payment, own bonus once, reload preserved, no Event replay), and paid NarrowBeamLasers build plus full3jump Sol/Wolf359/DeepSpace/Northernshipyard and Ore outpost bonus. Phone current-source80/014 and rotated four-point80/004 captures pass scoped layout review. Full006 acceptance still pending independent proof review and remaining mode/occupancy checks; keep baseline hold/007 hold. While I review, monitor PR7 exact/static/hosted gates and clean temporary transport tags once safely uploaded. Please point to root/event atomic-coupling negative tests for wide-jump split proofs and any changed guards; preserve services and identities.
+
+## Prompt 85: Rival Validation Release
+
+Reviewer-authored006 local exploratory acceptance and final illustrated-validation authorization; final gate/007 remain held:
+
+Reviewer09:58: Phase006 local exploratory visual/functional review is accepted for proceeding to final illustrated E2E evidence. Independent ordinary shared35041e0e covered rival LevelII Psionics payment/own bonus/reload/no Event replay and paid NarrowBeamLasers full3jump/control/Ore yield; reviewed phone013 occupied disabled/014 enabled, desktop016 observer, and rotated4K four-point004 plus prior scoped captures. Independently read atomic split rules and four negative tests; verified175 backend/2977 assertions and clean types2. Proceed required TestStepHelper stories and exact macOS checks across remote desktop/phone/shared, preserve all guards and meaningful intermediate states. This is NOT final local gate or007 release until complete illustrated exact checks and evidence review pass. PR7 static now SUCCESS at51cdd6c; continue exact/hosted monitoring and propagate fixes. Never merge.
+
+## Prompt 86: Firestore Release Conflict
+
+Reviewer-authored concrete PR7 publication409 diagnosis and repair delegation; retain validation and006 E2E work:
+
+Reviewer10:03: New concrete PR7 publish failure at51cdd6c/job118562560434 is NOT503. Independently downloaded /tmp/beyond-pr7-publish-118562560434.log: Firebase release creation POST /projects/beyond-20261018/releases returns409 cloud.firestore already exists. Diagnostic current and frozenPR5 Rules:test both200 (current warnings only). Inspect existing-release update/deployment serialization behavior and repair without weakening rules or fallback publication. Static/rules alreadyPASS; exactstillrunning. Please prioritize this gate alongside006 E2E.

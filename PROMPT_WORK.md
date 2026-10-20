@@ -230,3 +230,5 @@ Prompt 81 | 12e8b835a5b0fbb9164a888273ec8e3fe39ef604f53efbb00485cac9ae49acb8 | R
 Prompt 82 | c529ce7017ebfadb230125618d5e6005ec38d18e2b4c403def76d1dedd52c4a5 | Preserve61ce658 startup failure; verify published readiness/cache/teardown fixes in006, distinguish later compatibility deadline and correct unauthenticated-read wording without changing guards.
 
 Prompt 83 | f029917fdb64b0f84dce7cd5777cfd2294889e1ecbdb28d6e7d3f507c10951ee | Preserve155/1 Linux compatibility timeout, profile all21 command steps with unchanged assertions, verify published independent-read optimization in006 and retain scoped Linux visual acceptance.
+
+Prompt 86 | ef7f18400ecb84b8d4d49ba14981e57ca0ab01d2b1cd2e9bdd4b150ac46c699e | Replace masked release conflicts with strict compile/upload/update/readback deployment, test ten failure/race paths and preserve serialization, auth, exact guards and pending hosted gates.

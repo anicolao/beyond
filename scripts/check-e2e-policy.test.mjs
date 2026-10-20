@@ -10,7 +10,12 @@ test('the real capture infrastructure retains every required guard', () => { ass
 test('preview publication stays independent and deploys hosted rules before publishing the client', () => {
   const workflow = readFileSync('.github/workflows/preview.yml', 'utf8');
   assert.doesNotMatch(workflow, /^\s+needs:/m);
-  assert.ok(workflow.indexOf('firebase deploy --only firestore:rules,auth') < workflow.indexOf('peaceiris/actions-gh-pages'));
+  const rules = workflow.indexOf('node scripts/deploy-firestore-rules.mjs');
+  const auth = workflow.indexOf('firebase deploy --only auth');
+  assert.ok(rules >= 0 && auth > rules && auth < workflow.indexOf('peaceiris/actions-gh-pages'));
+  assert.match(workflow, /group: hosted-firestore-and-pages\n  cancel-in-progress: false/);
+  assert.match(workflow, /if ! nix develop --command node scripts\/deploy-firestore-rules\.mjs; then[\s\S]*?exit 1/);
+  assert.match(workflow, /if ! nix develop --command bunx firebase deploy --only auth[^\n]*; then[\s\S]*?exit 1/);
   assert.match(workflow, /github\.event\.pull_request\.head\.repo\.full_name == github\.repository/);
   assert.match(workflow, /scripts\/preview-smoke\.mjs/);
   assert.doesNotMatch(workflow, /PUBLIC_DATA_CHANNEL/);
