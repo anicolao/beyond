@@ -1,0 +1,888 @@
+{
+  "priorHead": "ce655cc339856007f3e8c4c532438c415060cf33",
+  "oldFiles": 5853,
+  "byteEqual": 5798,
+  "encodingOnlyRestored": [],
+  "changed": [
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-compact-shared-basic-table/022-compact-mat-desktop-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 414993,
+      "bounds": {
+        "minX": 233,
+        "minY": 0,
+        "maxX": 1094,
+        "maxY": 719
+      },
+      "oldPngSha256": "5e8efe43d53213b76ced427fa88e24297bcb41ebd26ebd9de03f69aad355698c",
+      "newPngSha256": "56e5f48c91e83abc0bdd098432cfdc31f22e4e75865d6f9f3e7880f076dda5ab",
+      "oldRgbaSha256": "8db612508f283ad3fbb38fa46c9dbba10278381177032125ba657670b63d24e7",
+      "newRgbaSha256": "3023a9186bbecdc9b3c290ef28716fa2f640534fb3966a702307b7c99a85467a"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-compact-shared-basic-table/025-ada-mat-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 223545,
+      "bounds": {
+        "minX": 358,
+        "minY": 138,
+        "maxX": 1105,
+        "maxY": 855
+      },
+      "oldPngSha256": "80f9c3451c42341134517bfad7dce1fc1c57c44fc949b64b168bcd698b7dacf5",
+      "newPngSha256": "bfad815a6cbeee9e905c771c18dec9a232125ae767e8a37f0a9e081faa66b10c",
+      "oldRgbaSha256": "f40634f06226ddccad8dc2c387995cd6579149e1c04e36c75344d6ffe0c2a230",
+      "newRgbaSha256": "7593bca54fd165f757227c7cf7dad306888d05676a56c0d8b0dbfa63d990cbdb"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-remote-basic-game/030-faction-mat-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 429694,
+      "bounds": {
+        "minX": 247,
+        "minY": 189,
+        "maxX": 1197,
+        "maxY": 824
+      },
+      "oldPngSha256": "992dc796a0e2169afcf4a59de1dfd1caabda39ea7b665dcce73c25e17b4d69aa",
+      "newPngSha256": "64274d2c34a9163342fdec4e3ea639446700102c97479f6608c4fe2e2918e975",
+      "oldRgbaSha256": "eb01835cb414c0012182e36b448e06a8a2be2f998ab4d31fc8cd5b17b05e40c5",
+      "newRgbaSha256": "0c12c748eedc1b59b0c0d91176aa74b73d0bdb6f0c4c59dd71385b0f532b9924"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-remote-basic-game/030-faction-mat-phone-darwin.png",
+      "width": 393,
+      "height": 852,
+      "changedPixels": 165782,
+      "bounds": {
+        "minX": 36,
+        "minY": 143,
+        "maxX": 359,
+        "maxY": 798
+      },
+      "oldPngSha256": "67c84323f6560a16e4615af14f3fd1cde887e5a029face1e5e2ab20598507151",
+      "newPngSha256": "183f23b524bf64a4b56a111c8d3aad6ab377df48013d698042d4519b060a8a62",
+      "oldRgbaSha256": "1f00b4800d9e62332e30e9150c886b00f0c49f16270db7e40777421c34e18ec5",
+      "newRgbaSha256": "ce03dde5e41d602eb881c22bcebe0c12537a2bcaab67efe78fad9496e198f7e7"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-shared-basic-table/016-ada-mat-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 223545,
+      "bounds": {
+        "minX": 358,
+        "minY": 138,
+        "maxX": 1105,
+        "maxY": 855
+      },
+      "oldPngSha256": "b7877936ff67a53bba32ce2e2e690cdffad8a65bbe723c78f22fe6b3b61bc087",
+      "newPngSha256": "1d0f9d2f77f09d241b80be45f2251ae7169c5373e9f69578fb50651b7e8f1812",
+      "oldRgbaSha256": "03687357d7a48285076a0378d47333fee338ac3a31dc3bfe9877d46fc232f843",
+      "newRgbaSha256": "ca0a22e259f81e163f69c0e0649ad534ad27e5b25e39124e64c12f00bae0fb8e"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-shared-basic-table/016-ada-mat-tabletop-4k-darwin.png",
+      "width": 3840,
+      "height": 2160,
+      "changedPixels": 433761,
+      "bounds": {
+        "minX": 1383,
+        "minY": 540,
+        "maxX": 2468,
+        "maxY": 1610
+      },
+      "oldPngSha256": "d5c8b2823637528b133d6010ff40e205c1530cf2181c37f13dcb06b801a1fa10",
+      "newPngSha256": "794c18c8c4818faed99c0c812b175591d5c655214e4ffeaded67720216261ccc",
+      "oldRgbaSha256": "e65dabd4814f3eed980bf895f3b01ee0e603cf34eb127baa2ffd5f897a90bc11",
+      "newRgbaSha256": "03c974bcef0bfc10b1d2bbec9c289e9ed3d553864336c0ecbf2fba1fb278b761"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-3-player-compact-shared-basic-table/028-compact-mat-desktop-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 434194,
+      "bounds": {
+        "minX": 252,
+        "minY": 60,
+        "maxX": 1024,
+        "maxY": 717
+      },
+      "oldPngSha256": "f75f5c24afa9756fc570c9295ce7957f8eff8be269d65cb2c70de1e4d41be372",
+      "newPngSha256": "78cedef21415d24af87192b404d126ad8e47c16cb6a4993591a181a0a6d98f50",
+      "oldRgbaSha256": "1293f7095500c8bd0891a9c32eb33c5b2b699e544a11c41005da946ab03d53ad",
+      "newRgbaSha256": "57ef010816f996954f36b4035e93ada3d2ddfe550ab62bdd23df8401e5949112"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-3-player-compact-shared-basic-table/031-ada-mat-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 220180,
+      "bounds": {
+        "minX": 407,
+        "minY": 279,
+        "maxX": 1037,
+        "maxY": 753
+      },
+      "oldPngSha256": "d073ea4c19d3a255608ebf3b6468e79aebecb642b24d4149945d0cc5e83ce136",
+      "newPngSha256": "fc33906ea4b1c41d25b315e0479d77b3f856d53abadb7b616a62d6df6fdfd17b",
+      "oldRgbaSha256": "9f01fb7c045152f334ea2715504e805bf7104229b235e352d9e2b987768a5421",
+      "newRgbaSha256": "f410d1e0fe0ff2671350cebecc5764112edd7e0d2be2c6d73ece65865ac91341"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-3-player-remote-basic-game/042-faction-mat-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 429694,
+      "bounds": {
+        "minX": 247,
+        "minY": 189,
+        "maxX": 1197,
+        "maxY": 824
+      },
+      "oldPngSha256": "120e2802826744681a546e16f3c1129d991e114e8f833b7ec488720d8ef69815",
+      "newPngSha256": "170f570699e4e54a83886db26bdcb661306b6fb1cc43b17485df8ce27f91f851",
+      "oldRgbaSha256": "bc9d9625c592f8df6ac426254d296255e94d44c56d23eaf3b6c012349594b061",
+      "newRgbaSha256": "7dc6740885eb7ac2a3337178ee9bd6429941d9dbbbfb0407d9cdb37f0b6a183c"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-3-player-remote-basic-game/042-faction-mat-phone-darwin.png",
+      "width": 393,
+      "height": 852,
+      "changedPixels": 165782,
+      "bounds": {
+        "minX": 36,
+        "minY": 143,
+        "maxX": 359,
+        "maxY": 798
+      },
+      "oldPngSha256": "b1c09a610151b3ee0c2d0d38048683eea36ac25b93181760400a4cea440cbb45",
+      "newPngSha256": "b16bf4d751d1c0b4c8b115e1119738795378772ae2930a458006ba906f87a21f",
+      "oldRgbaSha256": "209742c529d8e5120aa501f60c6fff996d2372e1f1b19de07a56a54555b4fd0a",
+      "newRgbaSha256": "01017fc2af4c6c2612ff2cce9aa8da86c6198eb436c3e7fc3b4aa690560a4f18"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-3-player-shared-basic-table/022-ada-mat-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 220180,
+      "bounds": {
+        "minX": 407,
+        "minY": 279,
+        "maxX": 1037,
+        "maxY": 753
+      },
+      "oldPngSha256": "11fd15136761c1cc3dfb195e26e83dc5619ab507952ae7e34c2e1561e7f3f813",
+      "newPngSha256": "30252ca258a8c9d9eb8683df6d5b68d47bb5fd5d22b24f6547bd12e3dbfa50d4",
+      "oldRgbaSha256": "db13cc1c6576b8a27d46ee93e7b0f95977a85fe2c79123b2edc075ff15c33277",
+      "newRgbaSha256": "32878fb8d5b5681cb672541b2f5876b486819bb5c6cabce06bc9850e3aa3fba3"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-3-player-shared-basic-table/022-ada-mat-tabletop-4k-darwin.png",
+      "width": 3840,
+      "height": 2160,
+      "changedPixels": 429864,
+      "bounds": {
+        "minX": 1447,
+        "minY": 769,
+        "maxX": 2397,
+        "maxY": 1404
+      },
+      "oldPngSha256": "04ef5a78546fa39fe4d73c7ae4040f3f3d42b5f8badc13ecc0543cd63e6bac7a",
+      "newPngSha256": "128ba823b45294b676bcde187ab5f9308e91b2741ab51d9069b395b1d1206c48",
+      "oldRgbaSha256": "cb73757085db0cbb1dfd9ded1ee18edaf7dcc0e441f7b9739e31a503124440e6",
+      "newRgbaSha256": "998b5a225a4d36a357adaa7abc903ca645c6f816b887620d3833ed53a86c9f66"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-4-player-compact-shared-basic-table/032-compact-mat-desktop-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 435264,
+      "bounds": {
+        "minX": 252,
+        "minY": 60,
+        "maxX": 1024,
+        "maxY": 716
+      },
+      "oldPngSha256": "756d27887953a99f6ab4b178d33cca1b02425a0d9acef8d8943705620b5b710b",
+      "newPngSha256": "5deefea0a565a91111e74fb3a8c2d1dc2e2e25f75dc518a692dea3ec2f706e0c",
+      "oldRgbaSha256": "f57e0e6ab097ea2a34d2020e8e64fdc88ede82b680fd05a0188cacb836b8946d",
+      "newRgbaSha256": "6ffb2323dff180e1de7413f5d772f1a474a1d765961976be971ac0aaa470597f"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-4-player-compact-shared-basic-table/035-ada-mat-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 220072,
+      "bounds": {
+        "minX": 407,
+        "minY": 279,
+        "maxX": 1037,
+        "maxY": 753
+      },
+      "oldPngSha256": "cd3ad07c0c3b0c68e2f243f222655cc1d0011a274fc1caa74fc9ab2e3e0c28d2",
+      "newPngSha256": "238590ed2a110cbd80b0eb7866b1bc2d21a7b1ce8964fb9479d84c8cbd5d44d5",
+      "oldRgbaSha256": "dd2e886a726dd724179b37468583e3afbf1c1725bdb4248af5b3676b08794c35",
+      "newRgbaSha256": "dc20f369e08865c5027db49459c9cba187ba89e2ab80f5d22911d4058966b800"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-4-player-remote-basic-game/057-faction-mat-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 429694,
+      "bounds": {
+        "minX": 247,
+        "minY": 189,
+        "maxX": 1197,
+        "maxY": 824
+      },
+      "oldPngSha256": "1b1c204a098a338e6c6c742254df32866af5e9faef86167e50448d6687988d1c",
+      "newPngSha256": "3246623d51232994a3189cacb11e7661f0af365595a6fd2c028ef73955176990",
+      "oldRgbaSha256": "32e49a8128359babb757fd0d57249ad3c89fd6e8f17851390737e4956915e136",
+      "newRgbaSha256": "a8041dded22f4a4cb665f978b3a7f0c8f5275a3c478e517cb9a8bbb74e064f47"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-4-player-remote-basic-game/057-faction-mat-phone-darwin.png",
+      "width": 393,
+      "height": 852,
+      "changedPixels": 165782,
+      "bounds": {
+        "minX": 36,
+        "minY": 143,
+        "maxX": 359,
+        "maxY": 798
+      },
+      "oldPngSha256": "776b1ef3324f075f053aa500c902b2b34488522027a3febdc52ad0e701de67f9",
+      "newPngSha256": "dc43816e96fd1d85b1b1307cbb30252d44f7e3bf056d2da26ca8a0520f197a04",
+      "oldRgbaSha256": "348060ac3a3b3dc051ce7418fee6e95eb45c423ec0b7fa09005194a7476ddc2e",
+      "newRgbaSha256": "ebc0ee64793cc469aca06bd143b013a8230ec64886832f8df3914575ddd103ac"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-4-player-shared-basic-table/026-ada-mat-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 220072,
+      "bounds": {
+        "minX": 407,
+        "minY": 279,
+        "maxX": 1037,
+        "maxY": 753
+      },
+      "oldPngSha256": "81b3d776f7bc4233cf8dbf8ef0bb8621660287ff995442de7962a825b16d1f0e",
+      "newPngSha256": "ea051b6f0139837544b43a6b59b6f5cc3eb03d9a3933f4be74b050363eb87139",
+      "oldRgbaSha256": "68b6ca02a1267db43ebd0844d55b72f2b58b373bd9796ac5e5135f0517c6440c",
+      "newRgbaSha256": "7737531d8c6de7e6891e6dce28a7cab093d2083d96c420f522c7c8f6a331bf59"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-4-player-shared-basic-table/026-ada-mat-tabletop-4k-darwin.png",
+      "width": 3840,
+      "height": 2160,
+      "changedPixels": 429694,
+      "bounds": {
+        "minX": 1447,
+        "minY": 769,
+        "maxX": 2397,
+        "maxY": 1404
+      },
+      "oldPngSha256": "7a792213cf69168d5cd2401e1feb7754e576ac5e019eaa06d9be5d3b23262046",
+      "newPngSha256": "7d86b17417e0a81673c3a737028715872cc91442e2c0739dc5c7a8ea44ba8fc3",
+      "oldRgbaSha256": "29c5d997cce95e0ae3ff95bf62547452eabd266eea0f6697bdda4dede624b420",
+      "newRgbaSha256": "f8c03d8a65e7e336dc587213d89626848669b6f5db1b9b7f98c0a533deae9f26"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-2-player-shared-cardinal-research-round/043-supply-overflow-desktop-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 443187,
+      "bounds": {
+        "minX": 252,
+        "minY": 3,
+        "maxX": 1027,
+        "maxY": 659
+      },
+      "oldPngSha256": "92e8de785078d648a8512f603af6b0076ab870a3490317af7c590456806e64f5",
+      "newPngSha256": "1ee4d77fc38ac8b431df679747cb52d1f26ad57b6929813da8d833a36ec4de34",
+      "oldRgbaSha256": "c959bc5234670f01576b1fda80ea6bf437281e434b6630252e7e875817c8764e",
+      "newRgbaSha256": "2590ae80adfd26ed3ca317067c7b9cae3cc81a8ea6fbcd6f9ef9219ec9b787e6"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/058-supply-overflow-desktop-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 419213,
+      "bounds": {
+        "minX": 186,
+        "minY": 0,
+        "maxX": 1050,
+        "maxY": 719
+      },
+      "oldPngSha256": "47a94b5fe9148b09bb7f8823760d5d60c7442dc25ef5e991307dc39f1d505e98",
+      "newPngSha256": "4d07d4c5473e2a4af09731ffdff43557b94f4ab993e63b948fcbe86ab6bdb837",
+      "oldRgbaSha256": "178ae9cca5bac550428824ede08f84d8cd1f4d83051114962e18dcd049841103",
+      "newRgbaSha256": "faebb17b28f4c828d9fbe593a5c07f1e3409113518133e88e39a93358608d8e0"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-research-from-the-compact-desktop-decision-overview/046-supply-overflow-desktop-darwin.png",
+      "width": 393,
+      "height": 852,
+      "changedPixels": 163812,
+      "bounds": {
+        "minX": 36,
+        "minY": 143,
+        "maxX": 359,
+        "maxY": 798
+      },
+      "oldPngSha256": "c075c60d56a546665b6ba8f0d090175bc7668eebc6f02e910ec583556fb89955",
+      "newPngSha256": "eefc057012894d54e2886eef0169ef967bfc0c9aff3b365dfab1e7c75cf3c6ea",
+      "oldRgbaSha256": "02cf746fd57c8d9b353e69130baee2ee2eaa3cd59885d09992108283e00676d0",
+      "newRgbaSha256": "840a8a72c521575e3077e724115d175532019aba50a60813e23d880a6688b10e"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/research-and-recover-a-2-player-shared-cardinal-first-round/043-supply-overflow-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 219326,
+      "bounds": {
+        "minX": 402,
+        "minY": 246,
+        "maxX": 1032,
+        "maxY": 720
+      },
+      "oldPngSha256": "296a93f99ff17f168cc25049edc4892ba88662b86aaccbc343829688ed9e3243",
+      "newPngSha256": "dbe18417ecc2ffa1be2589a45b63efb97911dcb1009e2924baad5f95f6633db5",
+      "oldRgbaSha256": "fcc845ea1ec31a3e26b52d96bf538b2d011d4312923266d6447009875c09671f",
+      "newRgbaSha256": "d6546b9d628630356728fbd35b29318fb1eb9de42329b653af3b4d3e3194091e"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/research-and-recover-a-2-player-shared-cardinal-first-round/043-supply-overflow-tabletop-4k-darwin.png",
+      "width": 3840,
+      "height": 2160,
+      "changedPixels": 427964,
+      "bounds": {
+        "minX": 1442,
+        "minY": 755,
+        "maxX": 2392,
+        "maxY": 1390
+      },
+      "oldPngSha256": "1bcbd2bd93d18ec35715fecb956f46c054b7fe14620662c62f25c8927ca915a0",
+      "newPngSha256": "aaefdcd47c9bd722c709aa8085ed63ed2d0a5a660fb9789db9ef39adac963799",
+      "oldRgbaSha256": "d55d8f59cd41c6651c217789fc1915660b15d7156e92aec63771479741f7bcc3",
+      "newRgbaSha256": "439cc0f7393eafaf68ee73306e838e24ef8caa7718519ef89d418e54b06e024c"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/research-and-recover-a-3-player-shared-cardinal-first-round/050-supply-overflow-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 219326,
+      "bounds": {
+        "minX": 466,
+        "minY": 187,
+        "maxX": 940,
+        "maxY": 817
+      },
+      "oldPngSha256": "d5ac177501175a4e9cbe8d1fef59b63405dc1e76c1dc9c93ac241a018e7a3f92",
+      "newPngSha256": "983438c4e0fb4526ae60a803318920e5509027f26ef5bb8e76b6b3138fe6f930",
+      "oldRgbaSha256": "e7ae1b1888c536d568d0d23ff314bb58fadb4a1f1d41fe9905ee20f89a2f5b36",
+      "newRgbaSha256": "e7bd6bdefe5ea79cb47eb9e5d92efbd7a8149274b69751a9310cbe95d2d6625f"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/research-and-recover-a-3-player-shared-cardinal-first-round/050-supply-overflow-tabletop-4k-darwin.png",
+      "width": 3840,
+      "height": 2160,
+      "changedPixels": 427964,
+      "bounds": {
+        "minX": 1595,
+        "minY": 607,
+        "maxX": 2230,
+        "maxY": 1557
+      },
+      "oldPngSha256": "2ad7deefd318fcc98973c1e1f53ce2b416d772d63e2a8aacd2f6e0aed5792457",
+      "newPngSha256": "b5ee93ea43367620993ad51ed7052d9b966bc3419de20035ad0d91292981bc5f",
+      "oldRgbaSha256": "f1692c4a84b8f20c7c6a64f088c7f28fe8666c394461462d54e193a03224759d",
+      "newRgbaSha256": "889d8885bab009f73f9637cf09d84e625ed56298e75b90efacac8eb123371961"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/research-and-recover-a-4-player-shared-cardinal-first-round/053-supply-overflow-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 219326,
+      "bounds": {
+        "minX": 466,
+        "minY": 187,
+        "maxX": 940,
+        "maxY": 817
+      },
+      "oldPngSha256": "83596929e86ccde4ffd644351a0ee0f21f4904f18bf67596627ec6a51d34bb45",
+      "newPngSha256": "9574017f0acf30e6a3a3b931c19c1447a37a21a1ff53e55ca39ece9cb3b89dbd",
+      "oldRgbaSha256": "f7d97d3b2fcd7599a6c222b3762c15f2de2f3d7341adef2e352553e5d869433a",
+      "newRgbaSha256": "fe310027cc2c53f1b97c2fb2974d03768e408bcbaf36c912d9d3869c48623352"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/research-and-recover-a-4-player-shared-cardinal-first-round/053-supply-overflow-tabletop-4k-darwin.png",
+      "width": 3840,
+      "height": 2160,
+      "changedPixels": 427964,
+      "bounds": {
+        "minX": 1595,
+        "minY": 607,
+        "maxX": 2230,
+        "maxY": 1557
+      },
+      "oldPngSha256": "3202828c1a39af1d0fa684cd52d9126a67b07ecff846fd97117ee44e57a36a78",
+      "newPngSha256": "e68df713c5fd42157e080ca10109abed7a42c4a194de02bf09d5917b726b6993",
+      "oldRgbaSha256": "fe9a18fb90031bf466addd4511c19078fd1cbe5f92d4a8a72edfeb71e9967c1b",
+      "newRgbaSha256": "125d8a7e2593f01b8f57dfcc428d2e62153d9b4cf5dde942d9f76528d998be4f"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/research-and-recover-a-4-player-shared-corner-first-round/058-supply-overflow-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 222758,
+      "bounds": {
+        "minX": 358,
+        "minY": 114,
+        "maxX": 1075,
+        "maxY": 861
+      },
+      "oldPngSha256": "d911bc708b85943d07fd1e14c4d093b77b16b9594dfb53b83180438732661b76",
+      "newPngSha256": "33cb7f4d870df3f64508def37d16eaebecd16d7bfaf697e15c1851636d45fef1",
+      "oldRgbaSha256": "414e2b7d4630ee43b4da3d09e4a233419adb9723d5bcaa9a99f6da4c138e3d62",
+      "newRgbaSha256": "50a2a6e6287e6f11f045f4054d08013920862f42271672042dcc4d86d2f7e02d"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/research-and-recover-a-4-player-shared-corner-first-round/058-supply-overflow-tabletop-4k-darwin.png",
+      "width": 3840,
+      "height": 2160,
+      "changedPixels": 431999,
+      "bounds": {
+        "minX": 1380,
+        "minY": 531,
+        "maxX": 2450,
+        "maxY": 1616
+      },
+      "oldPngSha256": "0e62a657c459243ee5c604703b819747c4d2d1343065d4a2b899376031f15147",
+      "newPngSha256": "4aca4342834b81a77086fc0a3ec65b6a10e39817d7bdd528b13750d3f0ef2c86",
+      "oldRgbaSha256": "4ac2456dd1f0fc332a8d2e62592b7014a676cd63429a6d9ace2130287b365e90",
+      "newRgbaSha256": "7dce4135562eb4d2274838d4f5ce6141df16bda2bb5fc47c985b45b4ede928b5"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/research-and-recover-a-complete-2-player-remote-first-round/046-supply-overflow-desktop-darwin.png",
+      "width": 393,
+      "height": 852,
+      "changedPixels": 163812,
+      "bounds": {
+        "minX": 36,
+        "minY": 143,
+        "maxX": 359,
+        "maxY": 798
+      },
+      "oldPngSha256": "c075c60d56a546665b6ba8f0d090175bc7668eebc6f02e910ec583556fb89955",
+      "newPngSha256": "eefc057012894d54e2886eef0169ef967bfc0c9aff3b365dfab1e7c75cf3c6ea",
+      "oldRgbaSha256": "02cf746fd57c8d9b353e69130baee2ee2eaa3cd59885d09992108283e00676d0",
+      "newRgbaSha256": "840a8a72c521575e3077e724115d175532019aba50a60813e23d880a6688b10e"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/research-and-recover-a-complete-2-player-remote-first-round/046-supply-overflow-phone-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 427964,
+      "bounds": {
+        "minX": 247,
+        "minY": 189,
+        "maxX": 1197,
+        "maxY": 824
+      },
+      "oldPngSha256": "c75e9e511a86170aef0da0c59ed6b060994a1295ab33368fff5ab9d735be76aa",
+      "newPngSha256": "dff83019da4d5aee011f2d6aa9d8796db776cbf8493c3478e11332885992a378",
+      "oldRgbaSha256": "f753c5c1da712beb4f395c14655a88d905fda90d903b777822f4e0d34487b7e4",
+      "newRgbaSha256": "d63681dd681153b83ad0ac2231553235b9af822de1fbdf7db820afbd12e0a3e5"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/research-and-recover-a-complete-3-player-remote-first-round/054-supply-overflow-desktop-darwin.png",
+      "width": 393,
+      "height": 852,
+      "changedPixels": 163812,
+      "bounds": {
+        "minX": 36,
+        "minY": 143,
+        "maxX": 359,
+        "maxY": 798
+      },
+      "oldPngSha256": "60d916586cf9fe029ddb39d9ea997295bb8ea4e4a166aadade1728bb5dbe14b3",
+      "newPngSha256": "9e34e5c0146d56334bb819e9d11a460ff1c4f324e666abeea1fffbb800f0d517",
+      "oldRgbaSha256": "6c4c84701891d266f06f36156a96d7a588f79064d052fdf1576ae765cf02d5f8",
+      "newRgbaSha256": "c64c660cea48a94225838089b3511b90b2f44449ee530bc73e3f2fadb0b58561"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/research-and-recover-a-complete-3-player-remote-first-round/054-supply-overflow-phone-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 427964,
+      "bounds": {
+        "minX": 247,
+        "minY": 189,
+        "maxX": 1197,
+        "maxY": 824
+      },
+      "oldPngSha256": "8b2a06ea63505c964369e4f8ccbe8922ad5de6a2533aa3d64276f356595ddd13",
+      "newPngSha256": "51fc3eecb3fd771647f7d2927f04622e4bd83fd21ab924e5c7339589ba11ecf1",
+      "oldRgbaSha256": "372ddf896b189fa4d13ebd658f55387532f3d38c9c064185edc867c7f5e7ca46",
+      "newRgbaSha256": "d6dacd2d93f11f1ccc95b189abc14a02914a3031814eb0a333b1afdea7b79c44"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/research-and-recover-a-complete-4-player-remote-first-round/061-supply-overflow-desktop-darwin.png",
+      "width": 393,
+      "height": 852,
+      "changedPixels": 163812,
+      "bounds": {
+        "minX": 36,
+        "minY": 143,
+        "maxX": 359,
+        "maxY": 798
+      },
+      "oldPngSha256": "8d533f07b89c2e578f4216c270b106449d1386146a0a035190a64036ac48de3c",
+      "newPngSha256": "ccfb6bdeb4466e2b5a96705491df143d6e441bb4633862f8810a04aa01079ee3",
+      "oldRgbaSha256": "5749efb79e49572c965272c164bc118895347b9a49dc3dc4ea063998ec296aea",
+      "newRgbaSha256": "69a2d693b9ab242957cb6ada2508c6848b4cf6b67b12041f30a75f60717618b2"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/research-and-recover-a-complete-4-player-remote-first-round/061-supply-overflow-phone-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 427964,
+      "bounds": {
+        "minX": 247,
+        "minY": 189,
+        "maxX": 1197,
+        "maxY": 824
+      },
+      "oldPngSha256": "04e401ff60007a5efaedca0c3e9b358cada17189d291cd931aea1b84490c6ff5",
+      "newPngSha256": "2a999688563a491eb6eae4ef0340e9602a48525c40e411b658d164385fb1cb95",
+      "oldRgbaSha256": "952a384aecad422bee6f173a201ccb53810ae7e5360b5eff1f174e306a16508a",
+      "newRgbaSha256": "e4747ac6168fa2c35a66e7291fcc56c2aaa23daf1081a2e928e36f4cf9083ec0"
+    },
+    {
+      "path": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/160-only-b-proof-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 220299,
+      "bounds": {
+        "minX": 407,
+        "minY": 279,
+        "maxX": 1037,
+        "maxY": 753
+      },
+      "oldPngSha256": "9d97c31fdc9fe4051af71b8cad45ca3a9b53c404d9a9f6afa994725175c27818",
+      "newPngSha256": "b8c2475877292756a71c50349fd28922f87ace9389ae78f5f219bf9fb3bc9bcc",
+      "oldRgbaSha256": "903ad54c0f34b33bff6b2f312b8cbcd8e123a0c27c801da801f3fa3acb3def4e",
+      "newRgbaSha256": "26c44ea5cea9ff9a71d5272dedecc1a721e1292e6727531164c6cbf72f804e80"
+    },
+    {
+      "path": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/160-only-b-proof-tabletop-4k-darwin.png",
+      "width": 3840,
+      "height": 2160,
+      "changedPixels": 430136,
+      "bounds": {
+        "minX": 1447,
+        "minY": 769,
+        "maxX": 2397,
+        "maxY": 1404
+      },
+      "oldPngSha256": "03d8f784dfeea6e7950b49beaf7bf23914b6fbc2701f2825c806edc294da67fc",
+      "newPngSha256": "9387d1836ce1d2e8e8a58172a6198acd97901b9ecb6900b3b529e8bd5a53a95d",
+      "oldRgbaSha256": "18b28f2184d07d76e51135dc79d26250f2ad0a5caf8fd88a6fdc14b0b9ab62c2",
+      "newRgbaSha256": "3156ed4bc49038173bb1243fe23eaefcb3483fd1e5a6e917ce93d85f34378479"
+    },
+    {
+      "path": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-corner-seats/164-only-b-proof-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 223771,
+      "bounds": {
+        "minX": 334,
+        "minY": 144,
+        "maxX": 1081,
+        "maxY": 861
+      },
+      "oldPngSha256": "53f203236874ab920cf6ce26cf70b16b4d99e3521b39529ad28eb5c34da9916d",
+      "newPngSha256": "963fdc81ac71ad4c3a4d97ee4f620e9eb05d4be66a948b0047dda34761c757b9",
+      "oldRgbaSha256": "ecbf45637adf652993748078156d14dcd1d365930fedc06044c0852d2a8facb2",
+      "newRgbaSha256": "89c3abe46f27fb2c068d40bb4ab39bd87965b54ef953c3531094c9eb0cd9a038"
+    },
+    {
+      "path": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-corner-seats/164-only-b-proof-tabletop-4k-darwin.png",
+      "width": 3840,
+      "height": 2160,
+      "changedPixels": 434212,
+      "bounds": {
+        "minX": 1371,
+        "minY": 549,
+        "maxX": 2456,
+        "maxY": 1619
+      },
+      "oldPngSha256": "777b01c9dd4eb5f7ba854f0b36c612dea3381654c4e4fbad2d3b1861a0115003",
+      "newPngSha256": "054523f0f4f0d7559fd535023b5ab3c63b31efb1ec469a9857d7b7d187177334",
+      "oldRgbaSha256": "5a425c8954432a0f261d71e5c5375a16232e68b1af08a5dbeee66bc4611e2648",
+      "newRgbaSha256": "1eb01a369636524dec4b1d394fe31fcccb729d4e1d2821f17de549393f274d5d"
+    },
+    {
+      "path": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/083-only-b-proof-desktop-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 434192,
+      "bounds": {
+        "minX": 252,
+        "minY": 60,
+        "maxX": 1024,
+        "maxY": 717
+      },
+      "oldPngSha256": "c23f0f6a07771459b96c87129049b9a3ca142d36fb85c436e689848d36b22b21",
+      "newPngSha256": "21b441d952f24a2de9d2eb82e467b135fcfc0fbce979dfbe002b628f29b83471",
+      "oldRgbaSha256": "69d646c37b9427d2c47739464a943a8117148d542868536aa86cfd23aae2deda",
+      "newRgbaSha256": "042f9915caa6359046e342871aa48b739a14a71a811f5cee624b218fe8b3859a"
+    },
+    {
+      "path": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/083-only-b-proof-tabletop-4k-darwin.png",
+      "width": 3840,
+      "height": 2160,
+      "changedPixels": 430136,
+      "bounds": {
+        "minX": 1447,
+        "minY": 769,
+        "maxX": 2397,
+        "maxY": 1404
+      },
+      "oldPngSha256": "5c5d198bcf9c509cc1ab58fb73fbe5b81eaf7c6a9ae7520974222ce9a8f0222d",
+      "newPngSha256": "0a454319770b33c4d0b50585f8db65f5baf5719af0ebcb0432df09734b5c6808",
+      "oldRgbaSha256": "2bbeb7adf3c13d949cef30cd0ca02c7f7add5c9f9103d7d58a75c35d844c5309",
+      "newRgbaSha256": "e5ea57826fa4b58ea550229ad2bb4848c26179ffd154afeca654ff7ba88db813"
+    },
+    {
+      "path": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/095-only-b-proof-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 430136,
+      "bounds": {
+        "minX": 247,
+        "minY": 189,
+        "maxX": 1197,
+        "maxY": 824
+      },
+      "oldPngSha256": "05093e4594f6ba61ef3da54508d9f2cd4b9e53822a679d391dc37922a76b49b1",
+      "newPngSha256": "b936d6908ba7c07df48241867779a7d9e4de79d39105ea6b94139e3043d2904a",
+      "oldRgbaSha256": "5c211ccdbd5f969cb2162a5e60d3d3d64dab7dfb3c95ea004f01e7ae3835cb87",
+      "newRgbaSha256": "a79e87b79cf4feb875d00400e3bbd99b4598bdc7f2687c0eee7c75ae2a2f086b"
+    },
+    {
+      "path": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/095-only-b-proof-phone-darwin.png",
+      "width": 393,
+      "height": 852,
+      "changedPixels": 166012,
+      "bounds": {
+        "minX": 36,
+        "minY": 143,
+        "maxX": 359,
+        "maxY": 798
+      },
+      "oldPngSha256": "8214a02d67d81be6c3a5f55d297203c82540bcd29401c7e2074bd15010b84781",
+      "newPngSha256": "eebae4e7153ef953e022ba22b1668c4c916f266db9dcc1ad4ff30d94628a25dc",
+      "oldRgbaSha256": "923ea4ed2afdf1826d71d0c9bcea3623155260da0d59705799dc645e27aeffdc",
+      "newRgbaSha256": "571d7a734fc6098c5592f8c8234a53eec4ea92a21c0f9a0c764e4687b426ebf2"
+    },
+    {
+      "path": "tests/e2e/008-trading/screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/067-control-finished-proof-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 223607,
+      "bounds": {
+        "minX": 334,
+        "minY": 144,
+        "maxX": 1081,
+        "maxY": 861
+      },
+      "oldPngSha256": "260738667f3688afb7c2ceccf0d703588b700bbb4cd2e3247541fa384bc2112b",
+      "newPngSha256": "69244228746d338140e65ce818878605c1794d23d6ccfc727fd87c423081e1dd",
+      "oldRgbaSha256": "fba04dae7f37aea805e84f9b5d1fe69eaa13bcf3e210a048586a3a0ad3eddd9e",
+      "newRgbaSha256": "2d53463139d72089db54ed8eea430e7035ec2a7303d8493c763d98848f389eae"
+    },
+    {
+      "path": "tests/e2e/008-trading/screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/067-control-finished-proof-tabletop-4k-darwin.png",
+      "width": 3840,
+      "height": 2160,
+      "changedPixels": 433834,
+      "bounds": {
+        "minX": 1371,
+        "minY": 549,
+        "maxX": 2456,
+        "maxY": 1619
+      },
+      "oldPngSha256": "f416596666555dd816c43985a3901205732b415646a41c81945f1db59da5f842",
+      "newPngSha256": "6e48e664b8facf04d91c3318a9894c6133b3d2add470fec2a173e8383ec69bae",
+      "oldRgbaSha256": "fa2c9714b43161f3c92cc0f24f6b0e204e90dbbdbb8ff3369a1e43552fca41f6",
+      "newRgbaSha256": "31bdcdfe7a1cbac5b768b31cfbba0323173084db38008f07769d013f2d2c4100"
+    },
+    {
+      "path": "tests/e2e/008-trading/screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/076-control-finished-proof-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 429770,
+      "bounds": {
+        "minX": 247,
+        "minY": 189,
+        "maxX": 1197,
+        "maxY": 824
+      },
+      "oldPngSha256": "1fe350b278e34d8be1ffe8c6b1d48de7403d94da1596f32349076b682ed90527",
+      "newPngSha256": "b1be397208fe275050fd44d20230577643a8e447ce07b2731a6897147fd52ced",
+      "oldRgbaSha256": "2c87de089b3115ef32e3a81011654b86defefc5c82382d5608c31b9c3161097b",
+      "newRgbaSha256": "89a923931de7cd20561226b8435b8f6a52c80327ffa4e9bb496ca06e894b01f4"
+    },
+    {
+      "path": "tests/e2e/008-trading/screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/076-control-finished-proof-phone-darwin.png",
+      "width": 393,
+      "height": 852,
+      "changedPixels": 165856,
+      "bounds": {
+        "minX": 36,
+        "minY": 143,
+        "maxX": 359,
+        "maxY": 798
+      },
+      "oldPngSha256": "e3e8c329714193afbdc645176f1c01a76f6bc80a6ab96ec095156a08f8879585",
+      "newPngSha256": "d68462345d33e6c52260a914f15b71ee7f31d2e381e028969350de53aa76e2cd",
+      "oldRgbaSha256": "376391db82df43f6b77e18cb041cafffcc9e5f776136b3fa84c2c2c9af7d4a3d",
+      "newRgbaSha256": "330c913f5ffa8baf782f4d6c1f10556c22a89942ee0ff95d7acb8bbde0756f23"
+    },
+    {
+      "path": "tests/e2e/008-trading/screenshots/trade-from-a-food-covered-supply-column-without-ordinary-production-at-physical-shared-seats/058-covered-finished-proof-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 220252,
+      "bounds": {
+        "minX": 407,
+        "minY": 279,
+        "maxX": 1037,
+        "maxY": 753
+      },
+      "oldPngSha256": "0c5faaf1aed7a3c617f2d1a1b743eaadfcc6400515631696d462a6c7eb137067",
+      "newPngSha256": "fbebf3c2e46cfca7639713288ad6a705408213cbb65814ee48c924f2c70be274",
+      "oldRgbaSha256": "a0590705d46994b8db6217a749bdd745ce2e7a84dbdc8d28054a36468f51789a",
+      "newRgbaSha256": "bb72d9bd6727d8911986f8ac1b2f4cd7654c1ae0dc4e80da6e39a877cd56e9ce"
+    },
+    {
+      "path": "tests/e2e/008-trading/screenshots/trade-from-a-food-covered-supply-column-without-ordinary-production-at-physical-shared-seats/058-covered-finished-proof-tabletop-4k-darwin.png",
+      "width": 3840,
+      "height": 2160,
+      "changedPixels": 430042,
+      "bounds": {
+        "minX": 1447,
+        "minY": 769,
+        "maxX": 2397,
+        "maxY": 1404
+      },
+      "oldPngSha256": "196b59eaa37c205e3291a0ed3fa34b1c59d6b048fe5888ca98bd70ef6a0766f6",
+      "newPngSha256": "dfe7ade47cdc77c056c13e34fcec2bd04ba6509e62fc14bc713802f5f408bde2",
+      "oldRgbaSha256": "075949aedf1a629d5afbc34df4c05468464f417c44ab346189eb7445696d4064",
+      "newRgbaSha256": "b07f8ff1faf38bc6e2df1446baa7b2ea13288fa38adf5f486de7d0b26fb174e2"
+    },
+    {
+      "path": "tests/e2e/008-trading/screenshots/trade-from-a-food-covered-supply-column-without-ordinary-production-with-separate-controllers/066-covered-finished-proof-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 430042,
+      "bounds": {
+        "minX": 247,
+        "minY": 189,
+        "maxX": 1197,
+        "maxY": 824
+      },
+      "oldPngSha256": "b542eaa5379b5b875d4cc88479c41600a96e6969e16c1ab0eb1e91ab752f7410",
+      "newPngSha256": "571f76d8588c4e51863e46db4ffb4327f68105261e5dbf0be33daa0eee7c1332",
+      "oldRgbaSha256": "d08b54a1b41f71d641bbb30707194fc80029db8be4963940749c88eeb853c7b8",
+      "newRgbaSha256": "d8126d5044cb11f5bc8db207714170d40a3032d628c451f4d87eef128ce0c68e"
+    },
+    {
+      "path": "tests/e2e/008-trading/screenshots/trade-from-a-food-covered-supply-column-without-ordinary-production-with-separate-controllers/066-covered-finished-proof-phone-darwin.png",
+      "width": 393,
+      "height": 852,
+      "changedPixels": 165989,
+      "bounds": {
+        "minX": 36,
+        "minY": 143,
+        "maxX": 359,
+        "maxY": 798
+      },
+      "oldPngSha256": "91dcc80b3c72e16fc5363a6f13d5ed9761d2e029b07b98a2af151b4e0c794bba",
+      "newPngSha256": "bc29d9b66c9b1491a690d39dcca9a21b9420354d1376f721eba3beb83809dfbb",
+      "oldRgbaSha256": "c0e41461fc67355bd19574861188f9feec23ea401786c99f664533379b738f94",
+      "newRgbaSha256": "d7c3287221f1b6688b09f18c33605e8e1f36147ddaa6419bd0b954e87500332c"
+    },
+    {
+      "path": "tests/e2e/008-trading/screenshots/trade-repeatedly-and-return-every-cube-through-the-real-supply-overflow-at-physical-shared-seats/043-finished-proof-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 219350,
+      "bounds": {
+        "minX": 407,
+        "minY": 279,
+        "maxX": 1037,
+        "maxY": 753
+      },
+      "oldPngSha256": "9b326f819fc2bdaf77f2cc353901d6c4ebc936a4b017d371f4bfdf1c48250fbc",
+      "newPngSha256": "fd47d3bba96f6f1307c2cc5158344f7caeb6f501d8556a11ec1f6fc44c808765",
+      "oldRgbaSha256": "1ac06f69553c40bec70959dffa0cb4601c17de3c7c084c9300b086a66737818e",
+      "newRgbaSha256": "24802e3728545726f684643ce22f597e02918ee3fab76ccc4066e30277f2d238"
+    },
+    {
+      "path": "tests/e2e/008-trading/screenshots/trade-repeatedly-and-return-every-cube-through-the-real-supply-overflow-at-physical-shared-seats/043-finished-proof-tabletop-4k-darwin.png",
+      "width": 3840,
+      "height": 2160,
+      "changedPixels": 428083,
+      "bounds": {
+        "minX": 1447,
+        "minY": 769,
+        "maxX": 2397,
+        "maxY": 1404
+      },
+      "oldPngSha256": "77ab6c278277ef2f3bf26e8fd16dde0f3fdd4d380d39c8cfec5af2369bd4242e",
+      "newPngSha256": "66c2a0acd2627fe3155afbbc45fd2e431ef49e47776560c30d831c2c17a4d66a",
+      "oldRgbaSha256": "4429906967bb9ab774c63254df4a2185275e06c5543228af50cbeced61d01084",
+      "newRgbaSha256": "af9e28d84ff92df4720970e44fcbb894e368284df12313c339d9f931f904691a"
+    },
+    {
+      "path": "tests/e2e/008-trading/screenshots/trade-repeatedly-and-return-every-cube-through-the-real-supply-overflow-with-separate-controllers/045-finished-proof-desktop-darwin.png",
+      "width": 1440,
+      "height": 1000,
+      "changedPixels": 428083,
+      "bounds": {
+        "minX": 247,
+        "minY": 189,
+        "maxX": 1197,
+        "maxY": 824
+      },
+      "oldPngSha256": "b11727164239d3ec3850d60b1739c98fb0b3a9956c8d178423d30421096cc7a3",
+      "newPngSha256": "4ef42b452a565cada204c367a88e3d7197e1e8d862d4156cb3770ae9e150fb4d",
+      "oldRgbaSha256": "1be01fdee0de4377d0755d77fd9df0e065b43fe5be80de135113a243472886c7",
+      "newRgbaSha256": "91c84bec5487003b2d35881a54c3d2e52545f835709143e5564e4b7d4a922013"
+    },
+    {
+      "path": "tests/e2e/008-trading/screenshots/trade-repeatedly-and-return-every-cube-through-the-real-supply-overflow-with-separate-controllers/045-finished-proof-phone-darwin.png",
+      "width": 393,
+      "height": 852,
+      "changedPixels": 164670,
+      "bounds": {
+        "minX": 36,
+        "minY": 143,
+        "maxX": 359,
+        "maxY": 798
+      },
+      "oldPngSha256": "d46d1a3fab3f22f7fae7d524c63c0b78d689e7098e1e4c9616802cf90650913a",
+      "newPngSha256": "237fbf4254a15df2a40bdf8dea0cd72a57f6ec7c6e809cf4f8dc2b3e85cb0e1c",
+      "oldRgbaSha256": "1875899cf76307b8ef174b1872b9ff505143263b212b09f9ab2f63ff0c883000",
+      "newRgbaSha256": "e17be6757358f7e9973e6a6465ab63ff7818ab4e83d82c605881a20159ab8014"
+    }
+  ]
+}

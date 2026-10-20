@@ -36,3 +36,10 @@ The community second-printing version description was considered as a discovery 
 Retain the inspected canonical ID `wise-1541-2250`, its title and its existing mechanical paraphrase. Preserve the100-design/100-copy manifest and the existing discrepancy note. Do not introduce WISE0855-0714 as an extra design, silently change a persistence identity, or claim that the edition question is resolved. Any future display-title correction can preserve this stable ID after authoritative evidence and reviewer agreement.
 
 No UI/card data changed, tests were not rerun, and no baselines, pushes, merges or phase advancement occurred. The live review remains http://127.0.0.1:5197/gallery/ .
+
+
+## Publisher PDF acquisition follow-up —2026-10-20
+
+The Reviewer43 account above is a dated investigation record. Its direct-download limitation is now superseded by a verified publisher-file acquisition during the009 scoring audit. The original second-print PDF, downloaded through the ordinary publisher browser viewer, is3,062,628bytes, SHA-256 `85fbf08a21f7753331c3a89896deee55b6b0690c59b70d32ca42e7839d24fcdc`. PDF page25/printed p.23 was rendered and visually inspected from those actual bytes. Its Private Technology clarification names **WISE0855-0714**, confirming the earlier rulebook finding rather than identifying a new card. The raw PDF and full-page render remain research evidence under local `tmp/automation117-publisher-*`; they are not product artwork.
+
+This primary-file confirmation does not show the physical System face, explain the discrepancy or certify verbatim second-print component wording. Keep canonical `wise-1541-2250`, the single existing inventory entry and its mechanical paraphrase. All three precise title/cause/transcription limits above remain. The previously accepted gallery/source review remains accepted with that documented limitation; no catalog, artwork, rules or persistence change follows from this acquisition.

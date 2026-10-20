@@ -1,0 +1,9 @@
+import {test,expect} from '../helpers/fixtures';
+import {TestStepHelper} from '../helpers/test-step-helper';
+import {assertDiscoveryReady,assertDiscoveryBoard,type Photo} from '../005-technology-discovery/journey';
+import {automationJourney} from './journey';
+for(const count of [2,4] as const)for(const corners of [false,true])test(`Automate production permanently at ${count} shared ${corners?'corner':'cardinal'} seats`,async({page,context,browser},info)=>{
+ info.annotations.push({type:'viewports',description:'desktop,tabletop-4k'},{type:'setup',description:'One shared controller; direct physical seating without remote identities or devices. Ordinary production UI setup, legal unique Basic factions and preparatory turns. Fixed setup entropy66666666-6666-4666-8666-000000000009; command identities are deterministic, never injected game state or a transferred controller. Production-disc removal, exposed yields, permanent level and cumulative printed scoring are real canonical effects. Read-only future inspection pays nothing. Deterministic exhausted-track/above-seven cases remain backend coverage; no fake advanced UI state.'});
+ const steps=new TestStepHelper(page,info,info.title);const photo:Photo=(id,caption,actor,player,check,documentView)=>steps.step(id,caption,[{spec:caption,check},{spec:'The canonical effect and backend acknowledgement settle.',check:()=>assertDiscoveryReady(actor)},{spec:'Public technology topology retains physical separation.',check:()=>assertDiscoveryBoard(actor)},{spec:'The actual viewport fits without page scrolling.',check:async()=>expect(await actor.evaluate(()=>document.documentElement.scrollWidth<=innerWidth&&document.documentElement.scrollHeight<=innerHeight&&!scrollX&&!scrollY)).toBe(true)}],{page:actor,player,document:documentView});
+ await automationJourney({page,context,browser,info,photo,remote:false,count,corners});
+});

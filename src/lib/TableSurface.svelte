@@ -61,7 +61,7 @@
       {:else if table.seats[p]}
         <span class="seat-seal" aria-hidden="true">{table.seats[p]?.slice(0,1).toUpperCase()}</span>
         <h2>{table.seats[p]}</h2><p class="player-order">Player {order.indexOf(p) + 1}</p>
-        {#if settings.factions==='basic'}<FactionChoice angle={seatAngles[p]} name={table.seats[p]!} count={Math.max(2,order.length) as 2|3|4} selected={table.factions?.[p]} taken={Object.values(table.factions??{})} {busy} disabled={order.length<2} choose={id=>commit({type:'table-faction-selected',position:p,name:'',faction:id})}/>{/if}
+        {#if settings.factions==='basic'}<FactionChoice angle={seatAngles[p]} name={table.seats[p]??`${label(p)} seat`} count={Math.max(2,order.length) as 2|3|4} selected={table.factions?.[p]} taken={Object.values(table.factions??{})} {busy} disabled={order.length<2} choose={id=>commit({type:'table-faction-selected',position:p,name:'',faction:id})}/>{/if}
         <div class="seat-actions">
           <button aria-label={`Edit ${table.seats[p]}`} disabled={busy} onclick={() => { name = table.seats[p] ?? ''; editing = p; }}>Edit</button>
           <button aria-label={`${table.seats[p]} leaves table`} disabled={busy} onclick={() => { void commit({ type: 'seat-left', position: p, name: '' }).catch(() => undefined); }}>Leave</button>

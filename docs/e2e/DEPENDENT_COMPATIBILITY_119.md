@@ -1,0 +1,15 @@
+# Dependent-policy compatibility timeout119
+
+Reviewer finding: PR9 source978da61ad37323a6069f5ec4eaa74d462acacbed, static job118811504433,178 pass/1 fail. The remote-four frozen-history test exceeded its original5000ms limit at5007.95ms. This is a failed gate; a PR7 pass does not accept this dependent source.
+
+The preserved complete log contains no per-phase diagnostic record. Its final two remote-four REST warnings correspond to revision25 `remote-begun`, first the foreign-identity denial and then the forged-faction denial, immediately before timeout. It does not establish that the following legal SDK Begin commit completed. Expected denial messages are not themselves evidence of an authorization defect or the timing cause.
+
+The failed source policy SHA256 is7f0576786d8be232e4214b07c113a7f343436b392d940de9ca141cf2b07928e3, identical to current006–009. A counterbalanced local dependent/PR7/PR7/dependent comparison uses the same unmodified current frozen-history tests, SDK identities, requests, assertions, diagnostic marks and5000ms budgets, changing only policy bytes on isolated8597. Each run passes all9 tests. Remote-four medians are534.576ms for the dependent policy and543.792ms for PR7. This does not reproduce or prove a dependent-policy slowdown, and macOS is not a substitute for the failed Linux gate.
+
+A second original/error-only/error-only/original logging experiment changes only SDK warning verbosity with both full and Lite SDK `setLogLevel('error')`. All9 tests pass in each run; remote-four medians541.681ms versus540.046ms show no useful improvement. Reject that candidate: production/test logging remains unchanged. No new timeout retry, request removal, parallel denied writes or policy change is adopted.
+
+Both experiments restore original tracked test/policy bytes and exact dependent source on the isolated backend. Live Auth9397, Firestore8297 and frontend5204 are untouched. All raw evidence and candidate code remain under root `tmp/compat119-dependent`; the adjacent JSON pins hashes and phase timings. Raw test logs are local evidence rather than shipped game data.
+
+Current PR9 head45e1e3a has an independent static job118933226741. At the final checkpoint it has advanced from checkout to dependency installation, before tests; it is not an executing compatibility run. Existing current-source diagnostics will distinguish legal commits, denials, reads and tail probes when execution begins. No speculative timing repair is claimed, and no duplicate run is requested while that job remains pending.009 prior exact/source acceptance evidence is unchanged; no010 or merge is authorized.
+
+A full current dependent backend run, with ordinary original logging and the same isolated endpoint, passes192/192 tests and3102 assertions in75.38s. Remote-four completes526.667ms inside that full run. This excludes a reproduced local full-suite slowdown, not the source-specific Linux failure. No product, rules, test or native-reference bytes changed during this investigation.

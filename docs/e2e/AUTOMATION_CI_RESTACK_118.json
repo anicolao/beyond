@@ -1,0 +1,27 @@
+{
+  "passedSource": "e94b79469a17d3839585bab00d7d04dea871ec21",
+  "base": "21bce87ee5fc5080b6a78d1ab3ca0c216df1bcb3",
+  "ciMergeArchive": "6c67a277dc3b0781abafaac939b3d108239f7556",
+  "applicationTestsHelpersNativeReferencesUnchanged": true,
+  "changedFromPassedSource": [
+    ".github/workflows/verify.yml",
+    "IMPLEMENTATION_PLAN.md",
+    "PROMPT_WORK.md",
+    "docs/e2e/LINUX_CHECKOUT_INPUTS_118.json",
+    "docs/e2e/LINUX_CHECKOUT_INPUTS_118.md"
+  ],
+  "restackCheckpoint": "7120c02d8640ae159e5e6ee3b1586b85d4df3743",
+  "subsequentChanges": "Documentation/continuation only; app/helpers/tests/native references remain identical.",
+  "verifiedRuntimeObjects": {
+    "src": "3ea022b3c48541a3b1df63f440e842cf86f0487c",
+    "tests": "2a074935e2430298b8cba38a67df02a558b97985",
+    "static": "e2f87e16653e33e9cabb4aa1d00f3cd46ae14c97",
+    "scripts": "2f1e633d683affe844ea5a58a15988351dd3da02",
+    "firestore.rules": "7cec56d14f2f80c5aae13afe0f37e3715805faab",
+    "package.json": "67af487b83616948c129dafaec15cd6e74d4c1ad",
+    "bun.lock": "6d9c161f2cb779d72f2d7af48ea028c8456fe3ae",
+    "playwright.config.ts": "21bb5719f08496c6718f89b21f1ef6df621a67e9",
+    "vite.config.ts": "63a65fd85295af3dac52c82329440f422a75d80e",
+    "svelte.config.js": "ec2b07a4b38c361a65499c57dfeecb4b0eea9e5e"
+  }
+}
