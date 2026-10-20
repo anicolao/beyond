@@ -1,0 +1,159 @@
+{
+  "run": 39390326563,
+  "source": "3a6ac4ababd595a38447d4ee83ea5b22804d8f3b",
+  "artifact": 12251038116,
+  "sha256": "390805db26ca48ca6d83cdd0b0a6c6520f20179358a40adb09f7e181da91eb36",
+  "pngs": 3337,
+  "executedFrames": 3271,
+  "inheritedUnexecutedRetained": 66,
+  "newOrChanged": 1460,
+  "reviewedSamples": [
+    {
+      "path": "005-technology-discovery/screenshots/retain-resource-cube-rerolls-and-complete-the-mandatory-upgrade-and-optional-bonus/055-same-candidates-phone-linux.png",
+      "sha256": "7df872c230e789b91529fd7e2d91463454162910f07345916e1b661603983073",
+      "width": 393,
+      "height": 852,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/retain-resource-cube-rerolls-and-complete-the-mandatory-upgrade-and-optional-bonus/055-same-candidates-desktop-linux.png",
+      "sha256": "d6e66296ebe60c93c8d48b914f2ecc69b0b5115037879a234fb3f0878296dda4",
+      "width": 1440,
+      "height": 1000,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/resolve-separate-march-responders-and-research-the-same-public-discovery-twice/052-candidate-selected-phone-linux.png",
+      "sha256": "fc11d28ae7ae27e04724ac4d39c82acde314bf5af3b9d6dd15ebd74c71c06230",
+      "width": 393,
+      "height": 852,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/choose-a-two-prerequisite-discovery-type-and-retain-the-exact-public-candidates/059-candidate-selected-desktop-linux.png",
+      "sha256": "e6804726372f767ae185ca3479ca02b706ed6831f1e1e36dfce9358709d646ee",
+      "width": 1440,
+      "height": 1000,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/045-same-candidates-tabletop-4k-linux.png",
+      "sha256": "b84cd08e28ae11308022a49054c8791e0cd653db54ff6cafbe469a882d3c113f",
+      "width": 3840,
+      "height": 2160,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/077-jump-ready-tabletop-4k-linux.png",
+      "sha256": "0e0add08a295bcea762f43f222ab070988a680c8a54c556f4a7970f7edf07dd0",
+      "width": 3840,
+      "height": 2160,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/057-cube-pending-restored-tabletop-4k-linux.png",
+      "sha256": "12b35111d4be7e44b48bbee85449f5287384c2c9fad36d3432100ce96f3ded23",
+      "width": 3840,
+      "height": 2160,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/080-same-candidates-tabletop-4k-linux.png",
+      "sha256": "53326d8166ff08558a0fd6afc9b38c3923eee68bf16227bf7808a5464ef1b6f1",
+      "width": 3840,
+      "height": 2160,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/092-compact-overview-720-tabletop-4k-linux.png",
+      "sha256": "07b7a48e59ab327d0b03fd8083bd5dd300782f5a761d64136af030e09e7e536e",
+      "width": 1280,
+      "height": 720,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/045-candidate-selected-desktop-linux.png",
+      "sha256": "4c99ee3e5f053254fc0ec762bb564841e3e4eb1439673688ee68e561d26ccd22",
+      "width": 1440,
+      "height": 1000,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/choose-a-two-prerequisite-discovery-type-and-retain-the-exact-public-candidates/043-maya-guild-choice-phone-linux.png",
+      "sha256": "e15d3fa980979dbca84b2f9cac6b79f11483ed005c08ff97f06a0ef570b5f2ba",
+      "width": 393,
+      "height": 852,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/resolve-separate-march-responders-and-research-the-same-public-discovery-twice/062-bora-known-selected-desktop-linux.png",
+      "sha256": "56f539dfe89c8965228b3deb17af9f7bc03de4a378975c21d85fb9384f039a17",
+      "width": 393,
+      "height": 852,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/054-bora-known-selected-tabletop-4k-linux.png",
+      "sha256": "8cd34f749da6ee6c4828a763e1228c4a62e2304c0ba0a848ed95a7af1094515a",
+      "width": 3840,
+      "height": 2160,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/052-attached-map-desktop-linux.png",
+      "sha256": "2aa0779ce6639cea93b843fe8692bf8c2af6effbc1af0a2d2e82f490794be04a",
+      "width": 1440,
+      "height": 1000,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/082-bonus-upgrade-desktop-linux.png",
+      "sha256": "d162e5d253d389a19164cfba36f3693d6f3379b53f4ca8c3f7ce9c73b01abaaa",
+      "width": 1440,
+      "height": 1000,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/087-public-control-desktop-linux.png",
+      "sha256": "de74c80f12e637b5afc99aea20da10b8f5f4321f8dbc54df1701506218b3589d",
+      "width": 1440,
+      "height": 1000,
+      "changed": true
+    },
+    {
+      "path": "005-technology-discovery/screenshots/retain-resource-cube-rerolls-and-complete-the-mandatory-upgrade-and-optional-bonus/057-bonus-upgrade-phone-linux.png",
+      "sha256": "e785130977a8044083b8e594738f776f8d8d2654af9a602e8d9f3e77ec49e095",
+      "width": 393,
+      "height": 852,
+      "changed": true
+    },
+    {
+      "path": "004-first-research/screenshots/research-and-recover-a-3-player-shared-cardinal-first-round/057-turn-1-handoff-tabletop-4k-linux.png",
+      "sha256": "5bbc9dca54b4f88eed5e262970a4f8b3b47c4d25acbd2c9c6ff317ebf78cfe25",
+      "width": 3840,
+      "height": 2160,
+      "changed": true
+    },
+    {
+      "path": "003-basic-setup/screenshots/begin-and-recover-an-exact-4-player-shared-basic-table/025-begun-tabletop-4k-linux.png",
+      "sha256": "f14dd14d30b73d9f5ec3e3baf7b07bbd61ce6cb69d39e30f8d1f9b1016f2a26b",
+      "width": 3840,
+      "height": 2160,
+      "changed": true
+    },
+    {
+      "path": "002-remote-rooms/screenshots/invite-a-remote-friend-confirm-setup-and-restore-the-same-seats-across-clients/043-recovery-keyboard-back-phone-linux.png",
+      "sha256": "690b6be0472e83fab2b8082305b35ad399700dc4e9bc8ac08256263e6366d94f",
+      "width": 393,
+      "height": 852,
+      "changed": false
+    },
+    {
+      "path": "001a-card-gallery/screenshots/explore-source-reviewed-card-faces-and-representative-public-states/051-full-human-experiments-desktop-linux.png",
+      "sha256": "adecc7756006a8a51c57d0302c259fe0e374d72fa5400afdbce46f7de44f0d40",
+      "width": 1440,
+      "height": 1000,
+      "changed": false
+    }
+  ]
+}

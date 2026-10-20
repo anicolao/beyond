@@ -222,3 +222,5 @@ Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | R
 Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | Share exact-source compiler work across fresh backend SDK contexts;156/2877 backend and25 tooling pass at unchanged5s limits; preserve late-hook and hosted503 evidence.
 
 Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | Require explicit cache endpoints, correct optional SDK configuration typing and confirm zero errors/warnings plus four cache-integrity tests before publication.
+
+Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | Review21 native samples/all14 new variants, decode3271 Linux frames and import1460 exact PNGs; retain66 inherited refs,5s compatibility guards and pending independent Linux/hosted gates.

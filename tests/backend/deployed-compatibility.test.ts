@@ -36,9 +36,11 @@ for(const fixture of protocol.fixtures)test(`deployed ${fixture.name} remains wr
    await assertFails(write(id,forged));
   }
   try{await assertSucceeds(write(id,command));}catch(error){throw new Error(`${fixture.name} revision${command.event.revision} ${command.event.type}`,{cause:error});}
-  expect((await getDoc(doc(database(owner),`games/${id}`))).data()).toEqual(command.after);
+  await Promise.all([
+   getDoc(doc(database(owner),`games/${id}`)).then(snapshot=>expect(snapshot.data()).toEqual(command.after)),
+   assertFails(updateDoc(doc(database(owner),`games/${id}/events/${command.event.commandId}`),{name:'Forged'}))
+  ]);
   await assertFails(write(id,command));
-  await assertFails(updateDoc(doc(database(owner),`games/${id}/events/${command.event.commandId}`),{name:'Forged'}));
  }
  const db=database(owner),last=commands.at(-1)!;
  await assertFails(getDocs(collection(database('compat-intruder'),'games')));
