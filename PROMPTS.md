@@ -516,3 +516,80 @@ Reviewer10:53: Independently read final local exact2:66/72, six remaining005 pix
 Reviewer-authored006 local acceptance, publication and explicit007 release under overlap authorization; final hosted/Linux gates remain pending:
 
 Reviewer11:23 LOCAL ACCEPTANCE006: Independently verified rival88-final-exact3.log72/72PASS. Cumulative ordinary live rival research/reload/paid3-jump/control review, remote phone and shared4K review, atomic security proof/175backend tests,43captureguards and unchanged2000ms/exact checks satisfy localgate. Independently viewed corrected005080-dx-paid4K and057-bonus-upgradephone: mandatoryupgrade label correction accepted; six tightly scoped references appropriate. Commit/push006 and open its own PR based on feat/technology-discovery at propagatedd81af39, with evidence counts and current outstanding gates. Then explicitly BEGIN007 Manage Population and Ore on a NEW stacked branch from committed006 while005/006 CI and hosted verification finish, per human overlap authorization. Keep prioritizing source-sensitive compiler repair and propagate verified fixes through dependent branches; no fallback rules or weakened guards. Final005/006 acceptance still withheld pending Linux exact and independently verified matching hosted previews. Never merge. Report PR/base/head and persistent007 local URL for review.
+
+
+## Prompt 90: Physical Production Columns
+
+Reviewer-authored preliminary007 review and continued005/006 gate delegation; no007 visual acceptance:
+
+Reviewer11:38 preliminary007: Independently compared round89/production-393.png with07-production.png. Current phone hierarchy/yield labels and touch controls are readable, but Supply columns look like small flat statistic tiles versus the concept physical cube columns and exposed/empty/covered states. Before final review, give columns tangible cube/slot treatment using existing original materials, with strong visual distinction for exposed yielding, exposed-empty, and covered columns; retain correct five-column source rules rather than copying concept inaccuracies. Demonstrate changed-track and actually empty matching-column states in ordinary play, plus expanded conservation view, phone/desktop/shared rotated4K. No007visualacceptance yet. Keep prior005 compiler/static repairs prioritized alongside this work and finish006PR upload; no duplicate baseline generation until review.
+
+
+## Prompt 91: Verified Deployment Milestone
+
+Reviewer-authored independent hosted revision verification; remaining005 gates and007 review stay separate:
+
+Reviewer11:43: PR7 publish job118595538854 is SUCCESS; independently fetched hosted/pr7/revision.json and confirmed exactd81af396b0025797800fa8d49d12a1ea86a5da78. This is a material deployment milestone despite later diagnostic503s; preserve successful job evidence and do not assume publication remains blocked. Final005 still pending static remote-4 timeout fix, Linux exact and supervisor hostedfunctionalreview. Continue006upload/007correction;11:38feedbackacknowledged, no new visualacceptance.
+
+
+## Prompt 92: Coverage Gate Continuation
+
+Reviewer-authored scoped007 visual pass and continued coverage/005/006 gate repair delegation; no final acceptance:
+
+Reviewer12:14 continuation: Independently reviewed007round91phone emptyA/yieldingB/coveredCDE and rotated4Kconservation. Material/state correction looks good; scopedvisualPASS, not final007acceptance. Continue with missing sharedfour-player/corner and keyboard/focus/reload coverage listed inREVIEW.md while I conduct independentordinaryplay. Keep007baselines held. Do not stop with pending005/006gates: continue diagnosing current static readiness failure,0054Kcapturebudget and exact-source compiler503, preserve limits/assertions, propagate repairs. PR7hostedloaded d81af39 ordinary II1discovery passed independent eventattachment(ErraticSolar→Lalande), AndroidDestroyers selection/level3bonus and reload; finalacceptance stillneeds matchingcurrenthead/allchecks. Report concrete repair and four-player reviewentrypoints; no merges.
+
+
+## Prompt 93: Production Verification Release
+
+Reviewer-authored007 exploratory acceptance and formal verification release;008 and final acceptance remain held:
+
+Reviewer 12:34: Phase 007 exploratory visual/functional review is accepted. Independent ordinary shared table 73244fce completed Genetics growth, Robotics full 2 Ore, paid Lasers build and 3 legal jumps to Northern shipyard Food outpost, A+B growth, then Gather to empty A / yielding B. Conservation 10+5+2+3=20; Escape restored opener; reload retained pending production; Grow consumed only B2->1 with A0 unchanged. Independently inspected round92 compact 45-degree production and 315-degree conservation: contained/readable, scoped pass. Read production-preview.ts and its real-turn tests; read-only manifest-derived projection is appropriate. Proceed with required illustrated 007 remote/phone/shared/corner/4K stories, candidate review and full independent exact local comparisons with all guards/budgets unchanged. This releases formal verification only, not 008: report full local gate before next-phase release. Continue pending 005/006 CI and matching-head hosted repairs separately. Never merge.
+
+
+## Prompt 94: Verification Followup
+
+Reviewer-authored delegation:
+
+Reviewer 12:40: Acknowledgement of 007 formal-verification release observed; no 008 release. Independently reviewed serialized prepare-rules-test change: initial denial -> exact-source upload -> current-source denial under one shared 10s deadline preserves security checks and is stricter than per-request resets; tooling log 39/39 passes. Scope/source review positive, still require CI proof. Image-warm diff adds diagnostics only. Note current discovery55 diff deletes eight existing 003 walkthrough index links after scoped run; restore/preserve the complete index before committing repair, so focused validation does not remove earlier story discoverability. Continue short-cardinal layout correction and show final evidence for independent review before accepting those candidates.
+
+
+## Prompt 95: Cardinal Acceptance
+
+Reviewer-authored delegation:
+
+Reviewer 12:45: Independently viewed round94 shared-cardinal Ada production at 1280x640 and full 3840x2160. Short-screen correction accepted: five Supply columns, Food/Ore tracks, all three production choices and footer remain readable/contained. Full4K composition also accepted. Continue formal 007 illustrated validation under existing release; no 008 until full local gate. Independently confirmed PR7 head29d6729f46b6078efee182e1940b1013c677c122 excludes walkthrough-index deletions and new CI is running; PR8 head9a1c190c91cdd9216ffc69200c20ce37bd628c35 propagated repair. Final005/006 gates remain pending.
+
+
+## Prompt 96: Gather Acceptance
+
+Reviewer-authored delegation:
+
+Reviewer 12:55: Independently confirmed PR7 29d6729 static-and-rules SUCCESS; serialized-readiness repair now has CI proof. Publication and Linux exact gates remain separate. Independently inspected round95 gather-corner Bora-gather-1280.png and Bora-gather-3840.png: rotated planner text, selector, commit button and footer contained/readable; scoped correction accepted for formal candidates. Continue current 007 verification and 005/006 publication/capture diagnosis with unchanged guards. No 008 release until full local gate.
+
+
+## Prompt 97: Scoped Acceptance
+
+Reviewer-authored delegation:
+
+Reviewer 13:00: Independently inspected round96/full-corner/only-b-consumed.png and GameSurface diff. The 4K guild controls now fit inside the widened Spacefaring panel; scoped visual correction accepted. Preserve source/viewport targeting and unchanged screen-fit guards. Reviewed current discovery55 readiness readback diff: exact single-file byte equality plus no ERROR issues, before/after denial, upload+readback on mismatch, shared10s deadline retained; source direction is sound, pending tests and CI. PR8 static/publication remain failed at9a1c190; no final acceptance or008 release. Continue current work; no duplicate reruns absent a concrete change.
+
+
+## Prompt 98: Discovered Overview
+
+Reviewer-authored delegation:
+
+Reviewer 13:15: Independently inspected current full-candidate Dimensional Rift trace. Failure is assertDiscoveryBoard journey.ts:37 via discoveryJourney line127: covered positions/discovered cards fail physical separation in complete compact overview, not timing or pixel mismatch. Current log also has desktop shared-discovery and four-fleet failures (46/48/49). Diagnose scoped short-table overview CSS against these discovered states; preserve overlap assertion and touch sizes, show corrected intermediate desktop captures before accepting affected references. Full007 local gate remains held. Continue running suite/evidence work without interruption; no008 release.
+
+
+## Prompt 99: Propagation Release
+
+Reviewer-authored delegation:
+
+Reviewer 13:30: Independently confirmed affected discovery refresh 6/6, reviewed corrected compact overview/lower view and restored native4K Dimensional Rift061. Scoped discovered-branch selector correction accepted; full007 exact gate still pending, no008 release yet. PR7 b39591c static/docs now PASS, publish FAIL/browser running. PR8 9a1c190 native generation has now finished FAILURE, so preserve its failure evidence and proceed with needed readback propagation without the previous in-flight-generation hold. Source-reviewed shared-memory helper/config: no render flags, exact guards or deadlines removed; performance remains unproven and requires unchanged-reference Linux evidence. Keep CI/hosted final gates separate.
+
+
+## Prompt 100: Production Release
+
+Reviewer-authored delegation:
+
+Reviewer 13:45 LOCAL ACCEPTANCE / NEXT PHASE RELEASE: Independently verified production98-final-exact completed80/80; inspected80 story.json records all generating=false,5067 frames total,007 increment8 variants/1028 frames. Also verified178 backend tests/2996 assertions,43 capture guards,47 tooling tests,clean types/source policy. Together with independent ordinary production/empty A and exposed B/conservation/reload and phone/cardinal/corner/4K visual review,007 is locally ACCEPTED. Commit/push007 on feat/production-management and open its PR based on feat/rival-research. You are explicitly authorized to begin008 Trade and decommission on a NEW branch stacked on007 while Linux CI and matching-head hosted gates finish; do not wait for those or another human prompt. Implement exact three trade rates, repeated exchanges, left-to-right Supply draw/right-to-left returns and overflow, ship decommission with immediate control recalculation, Finish trading/pass, no ordinary production added; use source-reviewed rules and local desktop/phone/shared real flows first. Preserve005/006 unresolved publication/Linux gates separately and propagate repairs. No merges.

@@ -406,4 +406,12 @@ dialog{padding:0;background:#162c30;color:#e5d7af;border:2px solid #baa069;borde
  .shared.corner-only.diagonal:not(.discovered-branches) .technology-tree{--overview-row:105px;--overview-gap:5px;grid-template-rows:repeat(7,var(--overview-row));row-gap:var(--overview-gap);padding-top:120px}
  .shared.corner-only.diagonal:not(.discovered-branches) .prerequisite-lines{inset:calc(120px - var(--overview-gap)/2) 0 auto;height:calc(var(--overview-row)*7 + var(--overview-gap)*7)}
 }
+/* Keep real touch-size overview cards separated after recovery on short tables. */
+@media(min-width:761px) and (max-width:2199px) and (max-height:650px){
+ .shared:not(.diagonal):not(.discovered-branches):not(.technology-focus) .compact-overview{display:block;overflow:auto;scrollbar-color:#c8ae72 #132c32;padding-right:6px}
+ .shared:not(.diagonal):not(.discovered-branches):not(.technology-focus) .overview-scroll-cue{display:block;margin:0 0 8px;font-size:10px;line-height:1.3;color:#ddcfaa}
+ .shared:not(.diagonal):not(.discovered-branches):not(.technology-focus) .compact-overview :global(.technology-overview){min-height:300px}
+ .shared:not(.diagonal):not(.discovered-branches):not(.technology-focus) .compact-overview :global(.overview-map){min-height:244px}
+}
+@media(min-width:2200px){.shared.corner-only.diagonal .spacefaring{min-width:260px}}
 </style>

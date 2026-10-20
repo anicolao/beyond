@@ -1,0 +1,9 @@
+# Production fidelity
+
+The production instrument uses the reviewed Supply and cube-cycle composition in `docs/ux/concepts/07-production.png`, with the actual five columns and Food/Ore tracks defined by the base-game manifest. Original CSS cube faces, recessed empty sockets and existing ivory/brass/graphite materials distinguish exposed yielding, exposed-empty and covered columns. The preview derives from the same current player economy as the production commands; it neither changes state nor offers adjustable yields.
+
+Every illustrated story uses the shared fixture and TestStepHelper. It starts with ordinary seating, unique Basic factions and Begin, then performs legal Genetics, Robotics, gathering and paid Narrow Beam Lasers movement. A real Northern shipyard Food outpost exposes A and B. Subsequent ordinary turns exhaust A; growth takes only B's matching cube. The saved public faction mat proves A remains zero and B changes from two to one. Full Ore production, 20-cube conservation, keyboard trapping/Escape/focus return, pending-production reload and turn handoff are separate captured steps. Remote host and guest use separate authentication contexts. Shared cardinal and corner seats use one controller and their actual physical orientation.
+
+The only fixed entropy is the initial setup seed and per-story command identifiers. There is no game-state injection, hidden-deck inspection, controller transfer or fixture-only gameplay. The read-model unit fixture for an empty exposed column is explicitly labelled; UI stories reach that condition through real turns.
+
+Reviewer exploratory acceptance releases formal verification, not milestone008. Native macOS candidates require visual inspection followed by independent exact comparison; Linux and matching-head hosted checks remain separate final gates. Capture guards, lossless pixel comparison and the shared2,000ms deadline remain unchanged.
