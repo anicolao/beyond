@@ -117,15 +117,17 @@ service cloud.firestore {
       function allReady(d) { return d.seats.p1.ready && d.seats.p2.ready && (d.settings.capacity < 3 || d.seats.p3.ready) && (d.settings.capacity < 4 || d.seats.p4.ready); }
       function link(d) {
         let event = getAfter(/databases/$(database)/documents/games/$(game)/events/$(d.lastCommand)).data;
-        return event.commandId == d.lastCommand && event.revision == d.revision;
+        return event.actorUid == request.auth.uid && event.commandId == d.lastCommand && event.revision == d.revision;
       }
       allow get: if signedIn() && resource.data.mode == 'remote' && resource.data.schema == 1;
       allow create: if signedIn() && remoteShape(request.resource.data) && request.resource.data.ownerUid == request.auth.uid
         && request.resource.data.revision == 0 && link(request.resource.data)
         && getAfter(/databases/$(database)/documents/invites/$(request.resource.data.code)).data.gameId == game;
-      allow update: if signedIn() && isRemote(resource.data) && resource.data.phase == 'gathering' && remoteShape(request.resource.data)
+      // Reject a mismatched attributed actor/revision before validating every seat.
+      // The immutable event independently enforces the same actor identity.
+      allow update: if signedIn() && isRemote(resource.data) && resource.data.phase == 'gathering'
         && request.resource.data.ownerUid == resource.data.ownerUid && request.resource.data.code == resource.data.code
-        && request.resource.data.revision == resource.data.revision + 1 && link(request.resource.data);
+        && request.resource.data.revision == resource.data.revision + 1 && link(request.resource.data) && remoteShape(request.resource.data);
       match /events/{event} {
         function sameSeat(p, except, b, a, clear) {
           return p == except || (!(p in b.seats) && !(p in a.seats)) || (p in b.seats && p in a.seats

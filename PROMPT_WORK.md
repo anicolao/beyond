@@ -234,3 +234,9 @@ Prompt 83 | f029917fdb64b0f84dce7cd5777cfd2294889e1ecbdb28d6e7d3f507c10951ee | P
 Prompt 86 | ef7f18400ecb84b8d4d49ba14981e57ca0ab01d2b1cd2e9bdd4b150ac46c699e | Replace masked release conflicts with strict compile/upload/update/readback deployment, test ten failure/race paths and preserve serialization, auth, exact guards and pending hosted gates.
 
 Prompt 88 | edf136be17b0678cd2ffce956445223d18032b68e3f61cfcf5679015cab450cd | Preserve Linux join timing trace, overlap native decode with acknowledgement under unchanged guards, prove late-image rejection, and isolate source-sensitive cloud compilation without fallback.
+
+Prompt 89 | df474916631ef11ce50fd2df878e3cc5fd580d89699e134e4edb9f6d4ae0461f | Preserve remote4 deadline failure and successful exact-source hosted publish; overlap only independent post-commit denial/read requests before the next frozen command, retaining every assertion and5000ms.
+
+Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Preserve independently verified PR7 d81 deployment, publish006 as PR8 at599e80d, retain pending static/Linux/hosted gates and continue007 physical-column review on5202.
+
+Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Reject mismatched linked actors before full remote seat validation; preserve all156 security tests and deadlines, successful d81 publish, new Linux faction-capture trace and exact-source503 evidence.

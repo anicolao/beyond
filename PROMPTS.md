@@ -509,3 +509,24 @@ Reviewer10:13: Independently reviewed64bd94a deployer: current-source compile/re
 Reviewer-authored exact2/Linux capture/compiler findings and repair delegation;006 acceptance/007 release remain withheld:
 
 Reviewer10:53: Independently read final local exact2:66/72, six remaining005 pixel failures;006local acceptance/007release still withheld while you fix those. PR7 Linux job118574851070 just finished61PASS/1FAIL:003 two-player shared Basic tabletop-4k, setup-tabletop.spec.ts:20:73 shared capture2019.819ms versus2000. Log saved /tmp/beyond-pr7-browser-118574851070.log. Preserve artifact/trace and diagnose this specific capture with guards unchanged; no baseline refresh warranted for timing failure. Publication attempt2 again current-source503/frozenPR5 200; investigate source-sensitive compiler issue rather than repeated blind retries, retain exact-source deployment/no fallback. Propagate any repairs through006. No merges.
+
+
+## Prompt 89: Rival Acceptance Release
+
+Reviewer-authored006 local acceptance, publication and explicit007 release under overlap authorization; final hosted/Linux gates remain pending:
+
+Reviewer11:23 LOCAL ACCEPTANCE006: Independently verified rival88-final-exact3.log72/72PASS. Cumulative ordinary live rival research/reload/paid3-jump/control review, remote phone and shared4K review, atomic security proof/175backend tests,43captureguards and unchanged2000ms/exact checks satisfy localgate. Independently viewed corrected005080-dx-paid4K and057-bonus-upgradephone: mandatoryupgrade label correction accepted; six tightly scoped references appropriate. Commit/push006 and open its own PR based on feat/technology-discovery at propagatedd81af39, with evidence counts and current outstanding gates. Then explicitly BEGIN007 Manage Population and Ore on a NEW stacked branch from committed006 while005/006 CI and hosted verification finish, per human overlap authorization. Keep prioritizing source-sensitive compiler repair and propagate verified fixes through dependent branches; no fallback rules or weakened guards. Final005/006 acceptance still withheld pending Linux exact and independently verified matching hosted previews. Never merge. Report PR/base/head and persistent007 local URL for review.
+
+
+## Prompt 90: Physical Production Columns
+
+Reviewer-authored preliminary007 review and continued005/006 gate delegation; no007 visual acceptance:
+
+Reviewer11:38 preliminary007: Independently compared round89/production-393.png with07-production.png. Current phone hierarchy/yield labels and touch controls are readable, but Supply columns look like small flat statistic tiles versus the concept physical cube columns and exposed/empty/covered states. Before final review, give columns tangible cube/slot treatment using existing original materials, with strong visual distinction for exposed yielding, exposed-empty, and covered columns; retain correct five-column source rules rather than copying concept inaccuracies. Demonstrate changed-track and actually empty matching-column states in ordinary play, plus expanded conservation view, phone/desktop/shared rotated4K. No007visualacceptance yet. Keep prior005 compiler/static repairs prioritized alongside this work and finish006PR upload; no duplicate baseline generation until review.
+
+
+## Prompt 91: Verified Deployment Milestone
+
+Reviewer-authored independent hosted revision verification; remaining005 gates and007 review stay separate:
+
+Reviewer11:43: PR7 publish job118595538854 is SUCCESS; independently fetched hosted/pr7/revision.json and confirmed exactd81af396b0025797800fa8d49d12a1ea86a5da78. This is a material deployment milestone despite later diagnostic503s; preserve successful job evidence and do not assume publication remains blocked. Final005 still pending static remote-4 timeout fix, Linux exact and supervisor hostedfunctionalreview. Continue006upload/007correction;11:38feedbackacknowledged, no new visualacceptance.
