@@ -246,3 +246,5 @@ Prompt 94 | 965494c557693a139428410b7bf6f64c6263b6f96c47b91771360313b65587a5 | S
 Prompt 96 | 913970fb3b6e3370ede000e4023044c9a17f2140f1d820631c8ea9fe283e31ed | Prove exact installed-source readback before reusing CLI compilation, retain shared10s and denial checks, and preserve in-flight Linux evidence before propagation.
 
 Prompt 97 | c68aa2d1aefbd6cb040fe8572e6ba627eb9c6db07d2b107c44624e2aea5dc1ee | Preserve accepted scope and readiness CI proof, verify exact-source readback on a fresh larger rules JVM, and retain failed publication/capture evidence without blind reruns.
+
+Prompt 98 | 9e3c6771d80fb656ae220209778b64c4c2093cbd77510fa0f82232b2626991b4 | Preserve the2248ms Linux camera trace and use verified host shared memory instead of disk-backed browser surfaces, retaining every renderer flag, reference and2000ms guard.

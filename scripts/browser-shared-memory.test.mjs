@@ -1,0 +1,5 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import {browserSharedMemory} from './browser-shared-memory.mjs';
+test('local and non-Linux launches retain every default argument without probing Linux paths',()=>{for(const [platform,ci]of[['darwin','true'],['linux','false']])assert.deepEqual(browserSharedMemory({platform,ci,stat:()=>{throw Error('No Linux probe allowed');}}),{ignoreDefaultArgs:[]});});
+test('pinned Linux CI removes only the disk workaround after proving sufficient tmpfs capacity',()=>{assert.deepEqual(browserSharedMemory({platform:'linux',ci:'true',stat:path=>{assert.equal(path,'/dev/shm');return{type:0x01021994,bsize:4096,blocks:65536};}}),{ignoreDefaultArgs:['--disable-dev-shm-usage']});});
+test('small or disk-backed allocations fail before the browser can start',()=>{for(const fs of[{type:0x01021994,bsize:4096,blocks:16384},{type:0xef53,bsize:4096,blocks:1048576}])assert.throws(()=>browserSharedMemory({platform:'linux',ci:'true',stat:()=>fs}),/memory-backed/);});
