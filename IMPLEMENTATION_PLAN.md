@@ -294,3 +294,6 @@ Preview checkout repair117: observed superseded5d408b2 still in actions/checkout
 
 
 CI118 checkout repair: exclude only unused Darwin screenshot blobs from pinned Linux comparison/native checkout using blob:none/non-cone patterns. Preserve all native Linux references and source/art/font/rules inputs; static job, container/hardware, render flags, capture2000ms/story120000ms limits and artifact selection unchanged. Git metadata fixture and largest008inventory proof retain4105 Linux blobs, exclude5853 Darwin captures and preserve retained bytes. Structural YAML equality outside two checkout.with blocks and existing tooling/policy/capture gates are required; actual CI performance/build/exact proof remains pending. This is startup/input optimization, not an asserted fix for separate backend5000ms or native aggregate failures; no policy fallback or failed-archive adoption.
+
+
+Reviewer120 approved exact-ACTIVE immutable-source reuse (delegation logged in009 PROMPTS): apply reviewed discovery117 patch. Verify complete filename/content equality before and after a no-op; changed source still requires compiler/upload/release readback. All13 deployer tests pass; actual CI/hosted revision/functional proof remains pending per head. No historical fallback, rules changes,010 or merges.

@@ -29,12 +29,17 @@ export async function deployFirestoreRules({ request, content, project = 'beyond
     const actual = data?.source?.files;
     return actual?.length === 1 && actual[0].name === files[0].name && actual[0].content === content;
   }
-  const compiled = await call('POST', `${root}:test`, { source: { files } });
-  if ((compiled.data?.issues ?? []).some(issue => issue.severity === 'ERROR')) throw new Error('Rules compilation rejected current source; publication blocked');
   const current = await call('GET', releaseName, undefined, [404]);
   if (current.status !== 404 && current.data?.name !== releaseName) throw new Error('Unexpected release identity');
   let desired = current.data?.rulesetName;
-  if (!desired || !await matches(desired)) {
+  // An immutable ruleset already enforced by this exact release needs no
+  // replacement or repeat compilation when its complete file bytes match.
+  // Any difference still takes the original current-source compilation gate.
+  // Recheck the release and source below, including on this read-only path.
+  const reusedActive = Boolean(desired && await matches(desired));
+  if (!reusedActive) {
+    const compiled = await call('POST', `${root}:test`, { source: { files } });
+    if ((compiled.data?.issues ?? []).some(issue => issue.severity === 'ERROR')) throw new Error('Rules compilation rejected current source; publication blocked');
     const created = await call('POST', `${root}/rulesets`, { source: { files } });
     desired = rulesetName(created.data?.name);
     if (!await matches(desired)) throw new Error('Uploaded rules differ from current source; publication blocked');
@@ -54,7 +59,7 @@ export async function deployFirestoreRules({ request, content, project = 'beyond
   }
   const verified = await call('GET', releaseName);
   if (verified.data?.name !== releaseName || verified.data?.rulesetName !== desired || !await matches(desired)) throw new Error('Release readback differs from current source; publication blocked');
-  return { release: releaseName, ruleset: desired, verified: true };
+  return { release: releaseName, ruleset: desired, verified: true, reusedActive };
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
