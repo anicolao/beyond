@@ -25,3 +25,13 @@ test('isolated browser services use configured loopback ports without changing p
  assert.deepEqual(urls,['http://127.0.0.1:9397/emulator/v1/projects/demo-beyond/config','http://127.0.0.1:8297/v1/projects/demo-beyond/databases/(default)/documents/invites/_connection']);
  for(const port of [0,1023,65536,NaN])await assert.rejects(requireEmulatorReadiness('demo-beyond',()=>{throw new Error('must not request');},{auth:port,firestore:8297}),/Invalid local emulator port/);
 });
+
+for (const service of ['Auth','Firestore']) test(`${service} readiness timeout identifies its primary request without retries`,async()=>{
+ const timeout=new DOMException('timed out','TimeoutError'),calls=[];
+ await assert.rejects(requireEmulatorReadiness('demo-beyond',async(url,options)=>{
+  calls.push({url,options});
+  if(url.includes(service==='Auth'?':9297':':8197'))throw timeout;
+  return url.includes(':9297')?response(200,{}):response(403,{error:{status:'PERMISSION_DENIED'}});
+ }),error=>error.message.startsWith(`${service} emulator readiness request failed`)&&error.cause===timeout);
+ assert.equal(calls.length,2);assert.ok(calls.every(({options})=>options.signal instanceof AbortSignal&&!options.method&&!options.body&&!options.headers));
+});
