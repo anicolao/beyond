@@ -266,3 +266,9 @@ Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | V
 Prompt 94 | 965494c557693a139428410b7bf6f64c6263b6f96c47b91771360313b65587a5 | Serialize cold rules readiness under one shared deadline, preserve all walkthrough links, and instrument native image decode without changing capture guards.
 
 Prompt 94 | 965494c557693a139428410b7bf6f64c6263b6f96c47b91771360313b65587a5 | Propagate reviewed serialized readiness and diagnostic-only image timing through006 while preserving both parent histories and all native references.
+
+Prompt 96 | 913970fb3b6e3370ede000e4023044c9a17f2140f1d820631c8ea9fe283e31ed | Prove exact installed-source readback before reusing CLI compilation, retain shared10s and denial checks, and preserve in-flight Linux evidence before propagation.
+
+Prompt 97 | c68aa2d1aefbd6cb040fe8572e6ba627eb9c6db07d2b107c44624e2aea5dc1ee | Preserve accepted scope and readiness CI proof, verify exact-source readback on a fresh larger rules JVM, and retain failed publication/capture evidence without blind reruns.
+
+Prompt 97 | c68aa2d1aefbd6cb040fe8572e6ba627eb9c6db07d2b107c44624e2aea5dc1ee | Carry exact-source emulator readback into006, prove175 security tests under unchanged deadlines, and wait for running native Linux evidence before pushing this tooling-only propagation.

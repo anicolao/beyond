@@ -551,3 +551,24 @@ Reviewer 12:34: Phase 007 exploratory visual/functional review is accepted. Inde
 Reviewer-authored delegation:
 
 Reviewer 12:40: Acknowledgement of 007 formal-verification release observed; no 008 release. Independently reviewed serialized prepare-rules-test change: initial denial -> exact-source upload -> current-source denial under one shared 10s deadline preserves security checks and is stricter than per-request resets; tooling log 39/39 passes. Scope/source review positive, still require CI proof. Image-warm diff adds diagnostics only. Note current discovery55 diff deletes eight existing 003 walkthrough index links after scoped run; restore/preserve the complete index before committing repair, so focused validation does not remove earlier story discoverability. Continue short-cardinal layout correction and show final evidence for independent review before accepting those candidates.
+
+
+## Prompt 95: Cardinal Acceptance
+
+Reviewer-authored delegation:
+
+Reviewer 12:45: Independently viewed round94 shared-cardinal Ada production at 1280x640 and full 3840x2160. Short-screen correction accepted: five Supply columns, Food/Ore tracks, all three production choices and footer remain readable/contained. Full4K composition also accepted. Continue formal 007 illustrated validation under existing release; no 008 until full local gate. Independently confirmed PR7 head29d6729f46b6078efee182e1940b1013c677c122 excludes walkthrough-index deletions and new CI is running; PR8 head9a1c190c91cdd9216ffc69200c20ce37bd628c35 propagated repair. Final005/006 gates remain pending.
+
+
+## Prompt 96: Gather Acceptance
+
+Reviewer-authored delegation:
+
+Reviewer 12:55: Independently confirmed PR7 29d6729 static-and-rules SUCCESS; serialized-readiness repair now has CI proof. Publication and Linux exact gates remain separate. Independently inspected round95 gather-corner Bora-gather-1280.png and Bora-gather-3840.png: rotated planner text, selector, commit button and footer contained/readable; scoped correction accepted for formal candidates. Continue current 007 verification and 005/006 publication/capture diagnosis with unchanged guards. No 008 release until full local gate.
+
+
+## Prompt 97: Scoped Acceptance
+
+Reviewer-authored delegation:
+
+Reviewer 13:00: Independently inspected round96/full-corner/only-b-consumed.png and GameSurface diff. The 4K guild controls now fit inside the widened Spacefaring panel; scoped visual correction accepted. Preserve source/viewport targeting and unchanged screen-fit guards. Reviewed current discovery55 readiness readback diff: exact single-file byte equality plus no ERROR issues, before/after denial, upload+readback on mismatch, shared10s deadline retained; source direction is sound, pending tests and CI. PR8 static/publication remain failed at9a1c190; no final acceptance or008 release. Continue current work; no duplicate reruns absent a concrete change.
