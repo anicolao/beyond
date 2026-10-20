@@ -715,3 +715,27 @@ Reviewer18:53: 009 source/local visual-functional review accepted for proceeding
 Reviewer-authored delegation:
 
 Reviewer18:58 new distinct CI finding: PR9 current978da61 static job118811504433 failed178pass/1fail; same deployed remote-4 compatibility test5007.95ms despite REST denial transport. Full log /tmp/beyond-review-pr9-static-978da61.log. PR7 pass is scoped to its source/head; diagnose dependent policy/runtime overhead without dropping assertions or raising limits. Prior009 E2E authorization remains queued; do not duplicate its content.
+
+## Prompt 120: Active Reuse
+
+Reviewer-authored delegation:
+
+Reviewer19:03: Reviewed discovery117-exact-active-reuse.patch and independently ran all13 deployer tests PASS; verified817e2df firestore SHA equals recorded active dcf91cdcf67128c4e8ea6e7e6e1d7b5b341ed9a66fee4095e2c4b4b769732102. Approve narrow exact-ACTIVE immutable-source reuse with complete filename/content equality and second release/source readback. This preserves canonical policy enforcement; different source still MUST compile, no arbitrary historical fallback. Commit/push/propagate reviewed patch and verify actual CI publication/revision/hosted behavior; update docs to describe identity-verified no-op deployment accurately. Prior009 E2E authorization and PR9 timeout feedback remain queued; consume in order. No010/no merges.
+
+## Prompt 121: Remote Three
+
+Reviewer-authored delegation:
+
+Reviewer21:19 new CI evidence: current PR7 c17bce4 static job118886965616 fails deployed remote-3 compatibility at5002.94ms/5000ms (not prior remote-4). Full sanitized timing log /tmp/beyond-review-pr7-static-c17bce4.log. Diagnose with existing compatibility work, retain protocol/assertions/deadline. No need to interrupt009 stories; older deploy approval remains queued.
+
+## Prompt 122: Containment Classification
+
+Reviewer-authored delegation:
+
+Reviewer21:49: Independent final automation118-final-exact.log classification is 50 pass / 52 fail: 50 snapshot mismatch errors PLUS two real Component clipped by div.tray-scroll errors on mat-envelope (Ada and Bora). Do not classify all failures as expected references. Diagnose/fix both containment failures with guards unchanged before scoped refresh/full exact acceptance. PR8 latest also independently confirmed70/72, readiness1997ms and capture2066.83ms; already under your diagnosis, no separate action request.
+
+## Prompt 123: Fleet Release
+
+Reviewer-authored delegation:
+
+Reviewer22:30: FULL LOCAL009 ACCEPTED. Independently verified102/102 exact2 pass23.9m and executed final audit:102 comparison-mode records/6825frames,10 automation variants/972frames; reviewed source, live flow, composed phone/cardinal/corner/4K and compact repair,55 scoped prior-reference deltas, required local checks. Commit/push009 and open PR stacked on feat/trade-decommission; then BEGIN010 Build and upgrade a fleet on NEW branch stacked on feat/automation while009/older Linux and matching-hosted gates finish. Never merge. Preserve live5204 review state; keep older failures separate and propagate fixes. This releases010 implementation, not final009 acceptance; all required Linux and exact-head hosted gates still required.

@@ -427,3 +427,22 @@ Prompt 118 | 99811dedead03610c9255ebae6c69c2b4e173a2b8fd1c9dfd9f35d52c9d14486 | 
 Prompt 118 | 99811dedead03610c9255ebae6c69c2b4e173a2b8fd1c9dfd9f35d52c9d14486 | Pin identical runtime/test/native-reference Git objects across the CI-only restack so the original exact proof remains independently auditable.
 
 Prompt 119 | 14fb8e7423e1b0b6e0028597d66181a1def9a1c386225fe95a197f98d0d0c4c7 | Preserve dependent978da61 timeout and counterbalance exact policy/runtime histories; reject unproven logging changes while Linux diagnostics remain pending.
+
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Apply reviewer120-approved exact-active immutable source reuse; retain changed-source compilation and two release/source identity checks before publication.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate060cfb8 approved exact-active policy reuse; preserve changed-source compilation, complete file equality and double release/source readback.
+
+Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Propagate349a261 approved exact-active policy reuse; preserve changed-source compilation, complete file equality and double release/source readback.
+
+Prompt 112 | 8a063e14627321e4e3d6ea70390e02d79b7293ba57354d358f62cdd4ca749e4a | Propagate925b31a approved exact-active policy reuse; preserve changed-source compilation, complete file equality and double release/source readback.
+
+Prompt 120 | e9ea56ac32b7bc58a29a96912bd52dc643c825e4b4e9f94e33d9be8b7ed1f403 | Propagate3af3263 approved exact-active policy reuse; preserve changed-source compilation, complete file equality and double release/source readback.
+
+Prompt 121 | f05b8026b273f43a4cede9f9bb3e0b4444f1828266bf2a626bfe0de524a4ac26 | Preserve remote-three timeout and compare its final-check aggregate with later identical-policy Linux success, without repeating unproven timing experiments.
+
+Prompt 121 | f05b8026b273f43a4cede9f9bb3e0b4444f1828266bf2a626bfe0de524a4ac26 | Clarify the measured revision20 boundary separately from command count; preserve the exact same-policy source proof and diagnostic-only scope.
+
+Prompt 122 | 5591e3b00dfe13a79be290ddd5c44c1249580410c4cf26f4619c36399e8110d1 | Pin two genuine containment failures separately from50 mismatches, corrected Ada/Bora native captures and unchanged-source5/52/102 passing evidence.
+
+Prompt 123 | 7570576836119c35ecc52228c7761696bdcf616d9ed179d4308e1a3cc7f5b862 | Record independent full-local009 acceptance and explicit010 release; publish reviewed automation stack while preserving per-head Linux/hosted gates and5204.

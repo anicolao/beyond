@@ -33,6 +33,11 @@ Ship this as a separate PR based on the latest `feat/foundation-tracer` head whi
 | 006 | PR #8 · `feat/rival-research` · `599e80d` · base `feat/technology-discovery` at `d81af39` | Prompt89 LOCAL ACCEPTANCE:72/72 macOS exact,4039 recorded frames; new five stories/ten variants/768 frames;175 backend/2977 assertions;43 guards,37 tooling, types/policy/builds pass | New PR Linux exact, source rules deployment and matching hosted independent review pending; six mandatory-upgrade references independently accepted; unmerged | 007 authorized on a new stacked branch |
 | 007 | feat/production-management, stacked on006 | Locally accepted under Prompt100:80 exact journeys/5067 frames;8 new variants/1028 frames | Linux exact and matching-head hosted review pending | 008 released on a new branch |
 
+
+| 008 | PR #10 · `feat/trade-decommission` · `3af3263` · base `feat/production-management` | LOCAL ACCEPTANCE Prompt112:92 exact journeys/5853frames;186backend/3057assertions;48guards; approved trade boundaries/640px/4K | Linux exact and matching-head hosted gates remain separate; unmerged | 009 locally accepted |
+| 009 | `feat/automation` · base `feat/trade-decommission` at `3af3263` | FULL LOCAL ACCEPTANCE Prompt123:102 exact journeys/6825frames;10 new variants/972frames;192backend/3102assertions;50guards; source/fidelity and55 scoped deltas independently reviewed | New PR Linux exact and exact-head hosted revision/functional gates pending; unmerged | 010 explicitly released on a new stacked branch |
+| 010 | New `feat/fleet-management` branch, stacked on009 | Implementation released Prompt123; local-first review required before baselines | Implementation, independent review, formal checks and hosted/Linux gates remain pending | 011 held |
+
 Update this ledger as phase gates change. Keep dependency heads explicit, and do not interpret a generation run or a pending hosted preview as final acceptance. Human requests remain in meta-prompts.md in supervised work; reviewer delegations and logical work continuations follow AGENTS.md.
 
 ## Preview first, verification in parallel
@@ -457,3 +462,23 @@ CI118 dependency propagation: inherit45e1e3a input-preserving Linux checkout thr
 
 
 Reviewer119 dependent static finding: preserve PR9 source978da61/job118811504433 remote-four5007.95ms failure separately. Same-policy local counterbalanced histories pass9/9 per run with no reproduced dependent slowdown; error-only logging experiment gives no improvement and is rejected. Pin evidence in docs/e2e/DEPENDENT_COMPATIBILITY_119.{md,json}. Current45e1e3a Linux static remains independently pending; no gate accepted from PR7, no assertions/limits/references changed, no duplicate009 authorization or010.
+
+
+Reviewer120 approved exact-ACTIVE immutable-source reuse (delegation logged in009 PROMPTS): apply reviewed discovery117 patch. Verify complete filename/content equality before and after a no-op; changed source still requires compiler/upload/release readback. All13 deployer tests pass; actual CI/hosted revision/functional proof remains pending per head. No historical fallback, rules changes,010 or merges.
+
+Reviewer120 dependency propagation: inherit060cfb8 approved identity-verified no-op deployment throughfeat/rival-research; different source still must compile. CI/hosted proof remains per-head; no gameplay/reference/guard changes.
+
+Reviewer120 dependency propagation: inherit349a261 approved identity-verified no-op deployment throughfeat/production-management; different source still must compile. CI/hosted proof remains per-head; no gameplay/reference/guard changes.
+
+Reviewer120 dependency propagation: inherit925b31a approved identity-verified no-op deployment throughfeat/trade-decommission; different source still must compile. CI/hosted proof remains per-head; no gameplay/reference/guard changes.
+
+Reviewer120 dependency propagation: inherit3af3263 approved identity-verified no-op deployment throughfeat/automation; different source still must compile. CI/hosted proof remains per-head; no gameplay/reference/guard changes.
+
+
+Reviewer121 remote-three evidence: preserve c17bce4/job1188869656165002.94ms failure (same previously archived log), final diagnostic completion5008.885ms. Final checks534.859ms after4474.027ms through Begin replay. Later identical-policy cef377e static157/2884PASS, remote-three1110.202ms, is source-scoped evidence rather than a retroactive repair claim. Pin comparison in docs/e2e/REMOTE_THREE_TIMING_121.{md,json}; no protocol/assertion/deadline changes or repeated009 stories. Approved120 deployment already verified on060cfb8, not replayed.010 held.
+
+
+Reviewer122 first-exact classification confirmed50 snapshot errors plus2 real Ada/Bora mat-envelope containment failures, not52 expected references. Both were corrected by76×64vmin compact reader with unchanged diagonal envelope/typography/guards before5 affected candidates,52 scoped candidates and102 independent exactPASS. Pin original/final log hashes, corrected native PNGs and current runtime/reference tree equality in docs/e2e/COMPACT_MAT_CONTAINMENT_122.json. No repeated baselines or weakened guard, no final independent acceptance/010 release claimed. PR8 readiness/capture failures remain separately tracked without duplicate action.
+
+
+Reviewer123 FULL LOCAL009 ACCEPTANCE: independent102/102 exact23.9m,102 comparison records/6825frames,10 automation variants/972frames,55 scoped references and required checks accepted. Publish009 stacked onfeat/trade-decommission3af3263; begin010 on NEWfeat/fleet-management stacked oncommittedfeat/automation. Preserve5204 services/identities, older failures and per-head gates; no final009 acceptance or merge.010 starts source-reviewed fleet build/upgrade composition and ordinary local flows, without011 movement redesign or baselines before independent review.

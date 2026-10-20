@@ -1,0 +1,82 @@
+{
+  "firstComparison": {
+    "passed": 50,
+    "failed": 52,
+    "snapshotMismatchErrors": 50,
+    "realContainmentErrors": 2,
+    "failedRunAccepted": false
+  },
+  "correctedStories": [
+    "003-basic-setup/setup-shared-compact.spec.ts: two-player Ada mat",
+    "004-first-research/research-shared-compact.spec.ts: four-player corner Bora sixth-Supply-cube mat"
+  ],
+  "correction": {
+    "file": "src/lib/game/GameSurface.svelte",
+    "oldCompactReader": "80vmin wide /60vmin high",
+    "correctedCompactReader": "76vmin wide /64vmin high",
+    "diagonalSumVmin": 140,
+    "clippingGuardOrTypographyChanged": false
+  },
+  "subsequentResults": {
+    "affectedCandidatesPassed": 5,
+    "scopedCandidatesPassed": 52,
+    "independentExactPassed": 102,
+    "independentExactFailed": 0,
+    "updateSnapshotsInIndependentRun": false,
+    "frames": 6825
+  },
+  "passedSource": "e94b79469a17d3839585bab00d7d04dea871ec21",
+  "unchangedCurrentObjects": {
+    "src": "3ea022b3c48541a3b1df63f440e842cf86f0487c",
+    "tests": "2a074935e2430298b8cba38a67df02a558b97985",
+    "static": "e2f87e16653e33e9cabb4aa1d00f3cd46ae14c97",
+    "firestore.rules": "7cec56d14f2f80c5aae13afe0f37e3715805faab",
+    "playwright.config.ts": "21bb5719f08496c6718f89b21f1ef6df621a67e9",
+    "playwright.infrastructure.config.ts": "ac0eb68cb8bc3322167d3ec208756cd6a6bbc1e2"
+  },
+  "evidence": [
+    {
+      "path": "tmp/automation118-final-exact.log",
+      "sha256": "bbd8388aa5977eb038a046b3f4038daeba4633c0a1964c490b74692be9e9db32"
+    },
+    {
+      "path": "tmp/automation118-compact-candidates.log",
+      "sha256": "ff6a476d8802e728d2a83002e2f5508c5afd8503f24df3e1f8dc91fb40620f13"
+    },
+    {
+      "path": "tmp/automation118-mat-refresh.log",
+      "sha256": "5e34c4511f0a95cd428c21ee844dac6df542f43269e71b087360ba450b395416"
+    },
+    {
+      "path": "tmp/automation118-final-exact2.log",
+      "sha256": "a733016f9be8f9c2a46c297dfd9a9633f57385b0d2639f9fa184f4f90b7adf71"
+    },
+    {
+      "path": "tmp/automation118-final-exact-audit.json",
+      "sha256": "3a928f981b36de81b6a0f38b874641f142cd7dc920a755be1bb32fd672c16669"
+    }
+  ],
+  "correctedNativeImages": [
+    {
+      "player": "Ada",
+      "path": "tmp/local-automation-review/round118/compact-mat-1280.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "56e5f48c91e83abc0bdd098432cfdc31f22e4e75865d6f9f3e7880f076dda5ab",
+      "visuallyInspected": true
+    },
+    {
+      "player": "Bora",
+      "path": "tmp/local-automation-review/round118/corner-mat-1280.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "4d07d4c5473e2a4af09731ffdff43557b94f4ab993e63b948fcbe86ab6bdb837",
+      "visuallyInspected": true
+    }
+  ],
+  "independentFinalAcceptance": "pending supervisor review"
+}
