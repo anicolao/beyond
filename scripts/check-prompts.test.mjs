@@ -133,3 +133,16 @@ test('stacked PR-base comparison preserves both append-only branch histories wit
  f.write(first+child+parent,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.equal(f.check(),0);assert.equal(f.check('--base',base),0);
  for(const invalid of [first+child,child+parent,first+child+parent+child]){f.write(invalid,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check('--base',base),0);}
 });
+
+test('real stacked merge preserves both parents and requires exactly one newly authored continuation',t=>{
+ const f=fixture(t);f.seed();const digest=createHash('sha256').update(initial).digest('hex');
+ const row=label=>`Prompt 1 | ${digest} | ${label} logical continuation\n`;
+ const common=row('Common'),parent=row('Parent'),child=row('Child'),merge=row('Merge');
+ f.write(common,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Common');const base=f.git('rev-parse','HEAD').trim();
+ f.write(common+parent,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Parent');const incoming=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',base);f.write(common+child,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Child');
+ const cwd=f.git('rev-parse','--show-toplevel').trim();spawnSync('git',['merge','--no-commit',incoming],{cwd,stdio:'pipe'});
+ for(const [text,valid]of [[common+child+parent,false],[common+child+parent+merge,true],[common+child+merge,false],[common+child+parent+merge+row('Extra'),false]]){
+  f.write(text,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.equal(f.check()===0,valid,text);
+ }
+});

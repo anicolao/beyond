@@ -243,8 +243,16 @@ Prompt 87 | 21eccc1c113a101190c7a30801f60e2b0db9d5c6a83e0497b756b5c89c1b9961 | P
 
 Prompt 88 | edf136be17b0678cd2ffce956445223d18032b68e3f61cfcf5679015cab450cd | Preserve Linux join timing trace, overlap native decode with acknowledgement under unchanged guards, prove late-image rejection, and isolate source-sensitive cloud compilation without fallback.
 
+Prompt 89 | df474916631ef11ce50fd2df878e3cc5fd580d89699e134e4edb9f6d4ae0461f | Preserve remote4 deadline failure and successful exact-source hosted publish; overlap only independent post-commit denial/read requests before the next frozen command, retaining every assertion and5000ms.
 Prompt 89 | df474916631ef11ce50fd2df878e3cc5fd580d89699e134e4edb9f6d4ae0461f | Record independent006 local acceptance, publish the reviewed stacked increment and begin007 separately while tracking exact-source deployment and Linux gates.
 
 Prompt 89 | df474916631ef11ce50fd2df878e3cc5fd580d89699e134e4edb9f6d4ae0461f | Restrict staged policy enumeration to its existing TypeScript/JavaScript inputs so native PNG path volume cannot overflow the Git subprocess buffer; retain every policy check.
 
 Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Preserve independently verified PR7 d81 deployment, publish006 as PR8 at599e80d, retain pending static/Linux/hosted gates and continue007 physical-column review on5202.
+
+
+
+
+Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Reject mismatched linked actors before full remote seat validation; preserve all156 security tests and deadlines, successful d81 publish, new Linux faction-capture trace and exact-source503 evidence.
+
+Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Merge PR7 attribution repair ancestry into PR8 while preserving006 acceptance, both diagnostic histories and new phase ledgers;007 production UI stays separate.

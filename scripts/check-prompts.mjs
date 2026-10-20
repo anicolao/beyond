@@ -58,8 +58,25 @@ try {
     const oldWork = base ? trackedAt(base, 'PROMPT_WORK.md') : '';
     let lines;
     if (!args.length) {
-      if (!work.startsWith(oldWork)) fail('Preserve existing continuation history.');
-      lines = work.slice(oldWork.length).trim().split('\n').filter(Boolean);
+      const merging = spawnSync('git', ['rev-parse', '--verify', 'MERGE_HEAD'], { encoding: 'utf8', stdio: ['ignore','pipe','ignore'] });
+      if (merging.status !== 0) {
+        if (!work.startsWith(oldWork)) fail('Preserve existing continuation history.');
+        lines = work.slice(oldWork.length).trim().split('\n').filter(Boolean);
+      } else {
+        // A real merge interleaves committed history, while preserving each
+        // parent's exact records in order. Only one newly authored step is allowed.
+        const parentPrompts = trackedAt(merging.stdout.trim(), 'PROMPTS.md');
+        if (!staged.startsWith(parentPrompts)) fail('Preserve incoming prompt history byte for byte.');
+        const parents = [oldWork, trackedAt(merging.stdout.trim(), 'PROMPT_WORK.md')].map(text=>text.split('\n').filter(Boolean));
+        const current = work.split('\n').filter(Boolean);
+        for (const prior of parents) {
+          let cursor=0;
+          for (const line of current) if (line===prior[cursor]) cursor++;
+          if (cursor!==prior.length) fail('Preserve both continuation histories.');
+        }
+        const committed = new Set(parents.flat());
+        lines = current.filter(line=>!committed.has(line));
+      }
     } else {
       // A stacked merge keeps each parent's records verbatim and in order,
       // while its other branch can contribute intervening continuation entries.
