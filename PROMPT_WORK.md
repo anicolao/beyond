@@ -309,3 +309,7 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | P
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Combine final acknowledgement and unchanged full audit in one polling RPC; preserve initial warming/pointer order, exact references and all deadlines.
 
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagatec17bce4 final-acknowledgement batching after72/72 exact4039-frame proof; retain all original capture guards and unchanged reference files.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Filter only unused Darwin captures from pinned Linux checkout; preserve all native/source inputs, render settings, strict guards and current evidence.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagatecef377e Linux input filtering through rival research, preserving both parent logs and all app/rules/native-reference/render/timing behavior.
