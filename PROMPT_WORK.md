@@ -216,3 +216,5 @@ Prompt 78 | ea92c5505c202cee31f29dd137989904f475eb182e9f11aeb92519f50c538217 | F
 Prompt 79 | 7a6f65e0c5015585a4009bce6fd7272ce7ebce54293849898bc0c981d840afa8 | Compose explicit player/outcome result rows; inspect phone and rotated4K replays, pass41 guards/types/policy, load exact reviewed live rules without service or identity restart; review pending.
 
 Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | Publish independently accepted Prototype rows with four refreshed and independently exact-matched variants; preserve62/62 full report and failure evidence; release006 on a new stack.
+
+Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | Repair005 cold compiler readiness before Bun while retaining5s hooks; four startup/tooling and four canonical rules tests pass; preserve Firebase503 and Linux failures, propagate into006.
