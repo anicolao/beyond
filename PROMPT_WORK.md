@@ -240,3 +240,5 @@ Prompt 89 | df474916631ef11ce50fd2df878e3cc5fd580d89699e134e4edb9f6d4ae0461f | P
 Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Preserve independently verified PR7 d81 deployment, publish006 as PR8 at599e80d, retain pending static/Linux/hosted gates and continue007 physical-column review on5202.
 
 Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Reject mismatched linked actors before full remote seat validation; preserve all156 security tests and deadlines, successful d81 publish, new Linux faction-capture trace and exact-source503 evidence.
+
+Prompt 94 | 965494c557693a139428410b7bf6f64c6263b6f96c47b91771360313b65587a5 | Serialize cold rules readiness under one shared deadline, preserve all walkthrough links, and instrument native image decode without changing capture guards.

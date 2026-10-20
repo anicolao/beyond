@@ -2,7 +2,9 @@
  * flight. This is an optimization only: assertScreenFit still decodes every
  * current visible image after acknowledgement, including late/replaced images. */
 export async function warmVisibleImages() {
-  await Promise.all([...document.images].filter(image=>image.checkVisibility({visibilityProperty:true})).map(image=>image.decode()));
+  const start=performance.now(),images=[...document.images].filter(image=>image.checkVisibility({visibilityProperty:true}));
+  await Promise.all(images.map(image=>image.decode()));
+  console.info('beyond-image-warm',JSON.stringify({elapsed:performance.now()-start,images:images.length}));
 }
 
 /** Runs inside the page: audit components, text lines and every clipping ancestor. */
