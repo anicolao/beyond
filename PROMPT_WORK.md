@@ -295,3 +295,5 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | P
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Preserve exact pixels with lossless environment delivery; add sanitized compatibility phase timing while retaining every assertion and deadline.
 
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate pixel-preserving environment delivery and diagnostic-only compatibility timing from173384b while preserving reviewed006 references.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Import only774 original native references after full4105-PNG decode, exact scope/hash audit and representative Linux visual review; preserve pending exact gates.
