@@ -447,3 +447,15 @@ Reviewer03:13 scoped evidence: independently confirmed fleet5 5/5 and full backe
 Reviewer-authored phase005 independent local visual/functional acceptance and final-validation authorization:
 
 Reviewer04:24: phase005 local visual/functional review ACCEPTED for final validation. Independently reloaded room0eaca825 at1280x720: II-3/Hypercomputing separated and full inspection opens/closes; your03:13 correction is resolved. Reviewed round76-cardinal-board, retry-error-cardinal-3840 and final rotated candidate images: spacing and error containment pass. Prior independent March of Progress gameplay and reviewed desktop/phone/cardinal/corner/observer/keyboard evidence support this scoped acceptance. Proceed with required TestStepHelper illustrated stories, meaningful rare-effect coverage, final macOS exact comparisons and all checks; keep guards/deadlines unchanged. No final005 acceptance yet. After local exact/checks PASS, report results for explicit006 release and publish005 stacked on feat/first-research-turn head58ad180; never merge. Preserve all identities and services.
+
+## Prompt 79: Prototype Result Rows
+
+Reviewer-authored rare-effect phone composition correction:
+
+Reviewer05:03: inspected generated 055-same-candidates-phone-darwin.png for Experimental Prototypes. Results consume excessive vertical space with bullets, isolated separator dots and Level2 ship wrapping across lines; compose each player/result as a compact readable row so candidate selection is visible without being crowded by the fixed footer. I see you are already examining this image/layout, so fold this into that repair. Fresh affected rare-effect screenshots require independent review before final005 acceptance;006 still held. No guard relaxation.
+
+## Prompt 80: Rival Research Release
+
+Reviewer-authored phase005 local acceptance and explicit milestone006 authorization:
+
+Reviewer06:30: independently confirmed final-exact3 62/62 PASS and 3271 recorded frames, alongside backend156/2877,41 guards,17 tooling and current types/policy/build gates. Phase005 LOCAL gate accepted. Narrow phone result chips, rotated4K cube controls, initial corner heading and corrected connector geometry independently reviewed and accepted; this resolves my queued05:03feedback. Commit/push005 and open PR stacked on feat/first-research-turn at58ad180, then explicitly BEGIN006 Learn from a rivals discovery on a NEW branch stacked on005 while005 Linux exact and matching hosted review finish. Implement source-reviewed personal research access, once-only immediate bonus, actual printed action costs/occupancy and blocked-before-research inspection across remote/phone/shared; no invented actions. Keep persistent local preview and request local review before baseline iteration. Track005 CI/hosted pending separately; final005 acceptance withheld until those pass. Never merge; log reviewer-authored.
