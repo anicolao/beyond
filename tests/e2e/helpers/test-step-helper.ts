@@ -40,9 +40,12 @@ export class TestStepHelper {
         await ready.dispose();
         // Warming may finish after the first acknowledgement; retain an exact
         // post-warm status check before the final preparation and capture.
-        const current = await page.waitForFunction(({ status }) => document.querySelector('[data-backend-status]')?.getAttribute('data-backend-status') === status, { status: view.status ?? 'synced' }, { timeout: remaining(), polling: 20 });
+        // Audit in the same browser call as the post-warm acknowledgement;
+        // false status keeps the same20ms polling, and any audit error rejects.
+        const current = await page.waitForFunction(assertScreenFit,
+          { status: view.status ?? 'synced', document: view.document, touchTargets: true, prepare: true },
+          { timeout: remaining(), polling: 20 });
         await current.dispose();
-        await page.evaluate(assertScreenFit, { document: view.document, touchTargets: true, prepare: true });
         const camera = await page.context().newCDPSession(page);
         let image: Buffer;
         try { image = Buffer.from((await camera.send('Page.captureScreenshot', { format: 'png', fromSurface: true, captureBeyondViewport: false, optimizeForSpeed: true })).data, 'base64'); }

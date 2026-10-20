@@ -305,3 +305,7 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | P
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Exclude unused screenshot-reference blobs only from preview checkout, prove sparse production build and reject stale heads before build; retain full exact CI.
 
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate sparse preview checkout and earlier unchanged stale-head rejection while keeping complete exact-test inputs and strict rules validation.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Combine final acknowledgement and unchanged full audit in one polling RPC; preserve initial warming/pointer order, exact references and all deadlines.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagatec17bce4 final-acknowledgement batching after72/72 exact4039-frame proof; retain all original capture guards and unchanged reference files.

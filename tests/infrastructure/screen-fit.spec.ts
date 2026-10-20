@@ -110,3 +110,17 @@ test('successful warming cannot hide an undecodable image added before the final
  await page.evaluate(()=>{const late=document.createElement('img');late.width=48;late.height=48;late.src='data:image/png;base64,broken';document.querySelector('main')!.append(late);});
  await expect(page.evaluate(assertScreenFit,{prepare:true})).rejects.toThrow(/decoded/);
 });
+
+test('combined acknowledgement defers audit until the exact requested status',async({page})=>{
+ await page.setContent('<main data-e2e-layout data-backend-status="reconnecting"><button style="width:80px;height:44px">Go</button></main>');
+ await page.evaluate(()=>{(window as Window&{__beyondTransitions?:Map<Element,string>}).__beyondTransitions=new Map();});
+ expect(await page.evaluate(assertScreenFit,{status:'synced',prepare:true,touchTargets:true})).toBe(false);
+ await page.locator('main').evaluate(element=>element.setAttribute('data-backend-status','synced'));
+ expect(await page.evaluate(assertScreenFit,{status:'synced',prepare:true,touchTargets:true})).toBe(true);
+ expect(await page.evaluate(assertScreenFit,{status:'offline'})).toBe(false);
+});
+test('acknowledgement polling propagates a real audit failure without retrying it',async({page})=>{
+ await page.setContent('<main data-e2e-layout data-backend-status="synced"><button style="width:43px;height:44px;padding:0">Go</button></main>');
+ await page.evaluate(()=>{(window as Window&{__beyondTransitions?:Map<Element,string>}).__beyondTransitions=new Map();});
+ await expect(page.waitForFunction(assertScreenFit,{status:'synced',prepare:true,touchTargets:true},{timeout:2000,polling:20})).rejects.toThrow('Touch target too small');
+});
