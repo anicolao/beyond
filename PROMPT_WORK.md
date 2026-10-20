@@ -291,3 +291,7 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | P
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Queue follow-up verification per PR instead of cancelling active Linux exact/native evidence while publishing the compatibility repair.
 
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Preserve active native evidence while queueing the compatibility repair propagated from feat/technology-discovery; publish without cancelling generation.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Preserve exact pixels with lossless environment delivery; add sanitized compatibility phase timing while retaining every assertion and deadline.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate pixel-preserving environment delivery and diagnostic-only compatibility timing from173384b while preserving reviewed006 references.

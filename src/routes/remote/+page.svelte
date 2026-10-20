@@ -142,7 +142,7 @@
 <svelte:head><title>Gather remotely — Beyond the Sun</title><meta name="description" content="Invite remote friends to a shared Beyond the Sun room and confirm its setup together." /></svelte:head>
 <main class="remote-screen" class:playing={!!game} class:editing-seat={editingName || !!selectedSeat} class:gathered={screen === 'room' && !!room} data-e2e-layout data-backend-status={busy?'saving':status} data-room-state={room ? room.phase==='started'?'remote-started':'remote-gathering' : 'none'}>
   <div class="gathering-table" aria-hidden="true"><div class="table-inlay"></div></div>
-  <img class="environment" src={`${base}/art/observatory.png`} alt=""/><div class="shade"></div>
+  <img class="environment" src={`${base}/art/observatory.webp`} alt=""/><div class="shade"></div>
   <header class="remote-header"><a href={`${base}/`}>← Observatory</a><span class="remote-status" aria-live="polite">{status === 'synced' ? 'Connected' : status === 'saving' ? 'Saving…' : status === 'offline' ? 'Connection interrupted' : 'Connecting…'}</span></header>
   {#if error}<div class="remote-error" role="alert"><p>{error}</p>{#if roomId || status === 'offline'}<button onclick={() => { if (pending) void act(pending.intent, true); else if (roomId) void openRoom(roomId); else location.reload(); }} disabled={busy}>Retry connection</button>{/if}<button onclick={() => { error = ''; screen = 'join'; room = undefined; unsubscribe?.(); }}>Check another code</button></div>{/if}
   {#if screen !== 'room' || !room}
