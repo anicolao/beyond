@@ -343,3 +343,10 @@ CI118 checkout repair: exclude only unused Darwin screenshot blobs from pinned L
 CI118 dependency propagation: inheritcef377e input-preserving Linux checkout throughfeat/rival-research. Application, rules, native references and render/capture settings unchanged; CI/performance/hosted gates remain separate. Active evidence jobs finish without cancellation.
 
 CI118 dependency propagation: inheritc4e4130 input-preserving Linux checkout throughfeat/production-management. Application, rules, native references and render/capture settings unchanged; CI/performance/hosted gates remain separate. Active evidence jobs finish without cancellation.
+
+
+Reviewer120 approved exact-ACTIVE immutable-source reuse (delegation logged in009 PROMPTS): apply reviewed discovery117 patch. Verify complete filename/content equality before and after a no-op; changed source still requires compiler/upload/release readback. All13 deployer tests pass; actual CI/hosted revision/functional proof remains pending per head. No historical fallback, rules changes,010 or merges.
+
+Reviewer120 dependency propagation: inherit060cfb8 approved identity-verified no-op deployment throughfeat/rival-research; different source still must compile. CI/hosted proof remains per-head; no gameplay/reference/guard changes.
+
+Reviewer120 dependency propagation: inherit349a261 approved identity-verified no-op deployment throughfeat/production-management; different source still must compile. CI/hosted proof remains per-head; no gameplay/reference/guard changes.

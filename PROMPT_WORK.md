@@ -353,3 +353,10 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | F
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagatecef377e Linux input filtering through rival research, preserving both parent logs and all app/rules/native-reference/render/timing behavior.
 
 Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Inheritc4e4130 Linux checkout input preservation; keep app/rules/references, native render flags, timing guards and active evidence unchanged.
+
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Apply reviewer120-approved exact-active immutable source reuse; retain changed-source compilation and two release/source identity checks before publication.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate060cfb8 approved exact-active policy reuse; preserve changed-source compilation, complete file equality and double release/source readback.
+
+Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Propagate349a261 approved exact-active policy reuse; preserve changed-source compilation, complete file equality and double release/source readback.
