@@ -262,3 +262,7 @@ Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | V
 Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Prove bundled earlier work against both committed records and preserved exact prompt snapshots, testing actual advanced-base history without relaxing local commit or screenshot guards.
 
 Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Verify bundled87 records against exact canonical prompt prefixes including appended heading separators; reject altered text or invented uncommitted records and preserve strict local hooks.
+
+Prompt 94 | 965494c557693a139428410b7bf6f64c6263b6f96c47b91771360313b65587a5 | Serialize cold rules readiness under one shared deadline, preserve all walkthrough links, and instrument native image decode without changing capture guards.
+
+Prompt 94 | 965494c557693a139428410b7bf6f64c6263b6f96c47b91771360313b65587a5 | Propagate reviewed serialized readiness and diagnostic-only image timing through006 while preserving both parent histories and all native references.

@@ -530,3 +530,24 @@ Reviewer11:38 preliminary007: Independently compared round89/production-393.png 
 Reviewer-authored independent hosted revision verification; remaining005 gates and007 review stay separate:
 
 Reviewer11:43: PR7 publish job118595538854 is SUCCESS; independently fetched hosted/pr7/revision.json and confirmed exactd81af396b0025797800fa8d49d12a1ea86a5da78. This is a material deployment milestone despite later diagnostic503s; preserve successful job evidence and do not assume publication remains blocked. Final005 still pending static remote-4 timeout fix, Linux exact and supervisor hostedfunctionalreview. Continue006upload/007correction;11:38feedbackacknowledged, no new visualacceptance.
+
+
+## Prompt 92: Coverage Gate Continuation
+
+Reviewer-authored scoped007 visual pass and continued coverage/005/006 gate repair delegation; no final acceptance:
+
+Reviewer12:14 continuation: Independently reviewed007round91phone emptyA/yieldingB/coveredCDE and rotated4Kconservation. Material/state correction looks good; scopedvisualPASS, not final007acceptance. Continue with missing sharedfour-player/corner and keyboard/focus/reload coverage listed inREVIEW.md while I conduct independentordinaryplay. Keep007baselines held. Do not stop with pending005/006gates: continue diagnosing current static readiness failure,0054Kcapturebudget and exact-source compiler503, preserve limits/assertions, propagate repairs. PR7hostedloaded d81af39 ordinary II1discovery passed independent eventattachment(ErraticSolar→Lalande), AndroidDestroyers selection/level3bonus and reload; finalacceptance stillneeds matchingcurrenthead/allchecks. Report concrete repair and four-player reviewentrypoints; no merges.
+
+
+## Prompt 93: Production Verification Release
+
+Reviewer-authored007 exploratory acceptance and formal verification release;008 and final acceptance remain held:
+
+Reviewer 12:34: Phase 007 exploratory visual/functional review is accepted. Independent ordinary shared table 73244fce completed Genetics growth, Robotics full 2 Ore, paid Lasers build and 3 legal jumps to Northern shipyard Food outpost, A+B growth, then Gather to empty A / yielding B. Conservation 10+5+2+3=20; Escape restored opener; reload retained pending production; Grow consumed only B2->1 with A0 unchanged. Independently inspected round92 compact 45-degree production and 315-degree conservation: contained/readable, scoped pass. Read production-preview.ts and its real-turn tests; read-only manifest-derived projection is appropriate. Proceed with required illustrated 007 remote/phone/shared/corner/4K stories, candidate review and full independent exact local comparisons with all guards/budgets unchanged. This releases formal verification only, not 008: report full local gate before next-phase release. Continue pending 005/006 CI and matching-head hosted repairs separately. Never merge.
+
+
+## Prompt 94: Verification Followup
+
+Reviewer-authored delegation:
+
+Reviewer 12:40: Acknowledgement of 007 formal-verification release observed; no 008 release. Independently reviewed serialized prepare-rules-test change: initial denial -> exact-source upload -> current-source denial under one shared 10s deadline preserves security checks and is stricter than per-request resets; tooling log 39/39 passes. Scope/source review positive, still require CI proof. Image-warm diff adds diagnostics only. Note current discovery55 diff deletes eight existing 003 walkthrough index links after scoped run; restore/preserve the complete index before committing repair, so focused validation does not remove earlier story discoverability. Continue short-cardinal layout correction and show final evidence for independent review before accepting those candidates.
