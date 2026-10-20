@@ -256,3 +256,5 @@ Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | P
 Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Reject mismatched linked actors before full remote seat validation; preserve all156 security tests and deadlines, successful d81 publish, new Linux faction-capture trace and exact-source503 evidence.
 
 Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Merge PR7 attribution repair ancestry into PR8 while preserving006 acceptance, both diagnostic histories and new phase ledgers;007 production UI stays separate.
+
+Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Validate inherited stacked continuations against their committed exact prompt hashes when the PR base advances, retaining strict single-step local hooks and both parent histories.

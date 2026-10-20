@@ -146,3 +146,16 @@ test('real stacked merge preserves both parents and requires exactly one newly a
   f.write(text,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.equal(f.check()===0,valid,text);
  }
 });
+
+test('advanced stacked base accepts an older continuation only with its exact committed prompt proof',t=>{
+ const f=fixture(t);f.seed();const common=f.git('rev-parse','HEAD').trim();
+ const oldDigest=createHash('sha256').update(initial).digest('hex');
+ const old=`Prompt 1 | ${oldDigest} | Child implementation before next prompt\n`;
+ f.write(old,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Earlier child work');const child=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',common);f.write(initial+next);f.git('add','PROMPTS.md');f.git('commit','-qm','Advanced parent prompt');const parent=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',child);const cwd=f.git('rev-parse','--show-toplevel').trim();spawnSync('git',['merge','--no-commit',parent],{cwd,stdio:'pipe'});
+ const digest=createHash('sha256').update(initial+next).digest('hex'),step=`Prompt 2 | ${digest} | Merge the reviewed stacked implementation\n`;
+ f.write(old+step,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Merge parent');
+ assert.equal(f.check('--base',parent),0);
+ f.write(old+step+`Prompt 1 | ${oldDigest} | Invented uncommitted historical continuation\n`,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check('--base',parent),0);
+});

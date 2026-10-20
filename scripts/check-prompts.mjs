@@ -90,9 +90,19 @@ try {
     if (!lines.length || (!args.length && lines.length !== 1)) fail('Append one unique continuation per commit.');
     const digest = createHash('sha256').update(staged).digest('hex');
     const seen = new Set(oldWork.split('\n'));
+    let history;
+    function inheritedRecord(line, parts) {
+      if (!args.length || !base) return false;
+      history ??= git(['log','--format=%H',`${base}..HEAD`,'--','PROMPT_WORK.md']).trim().split('\n').filter(Boolean).map(ref=>({
+        work:trackedAt(ref,'PROMPT_WORK.md').split('\n'), prompts:trackedAt(ref,'PROMPTS.md')
+      }));
+      return history.some(record=>record.work.includes(line)
+        && parts[0]===`Prompt ${[...record.prompts.matchAll(/^## Prompt ([1-9][0-9]*): /gm)].at(-1)?.[1]}`
+        && parts[1]===createHash('sha256').update(record.prompts).digest('hex'));
+    }
     for (const line of lines) {
       const parts = line.split(' | ');
-      if (parts.length !== 3 || parts[0] !== `Prompt ${latest}` || parts[1] !== digest
+      if (parts.length !== 3 || (!(parts[0] === `Prompt ${latest}` && parts[1] === digest) && !inheritedRecord(line,parts))
           || !/^[^\r\n]{10,200}$/.test(parts[2]) || seen.has(line)) {
         fail('Append a unique continuation for the latest prompt and exact staged log SHA-256.');
       }
