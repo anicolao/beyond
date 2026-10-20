@@ -218,3 +218,7 @@ Prompt 79 | 7a6f65e0c5015585a4009bce6fd7272ce7ebce54293849898bc0c981d840afa8 | C
 Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | Publish independently accepted Prototype rows with four refreshed and independently exact-matched variants; preserve62/62 full report and failure evidence; release006 on a new stack.
 
 Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | Repair005 cold compiler readiness before Bun while retaining5s hooks; four startup/tooling and four canonical rules tests pass; preserve Firebase503 and Linux failures, propagate into006.
+
+Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | Share exact-source compiler work across fresh backend SDK contexts;156/2877 backend and25 tooling pass at unchanged5s limits; preserve late-hook and hosted503 evidence.
+
+Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | Require explicit cache endpoints, correct optional SDK configuration typing and confirm zero errors/warnings plus four cache-integrity tests before publication.

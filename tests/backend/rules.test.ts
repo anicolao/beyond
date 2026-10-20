@@ -1,10 +1,11 @@
+import {initializeBackendTestEnvironment} from '../../scripts/backend-rules-environment.mjs';
 import { afterAll, beforeAll, describe, expect, test } from 'bun:test';
-import { initializeTestEnvironment, assertFails, assertSucceeds, type RulesTestEnvironment } from '@firebase/rules-unit-testing';
+import {  assertFails, assertSucceeds, type RulesTestEnvironment } from '@firebase/rules-unit-testing';
 import { doc, getDoc, setDoc, updateDoc, deleteDoc, writeBatch, runTransaction } from 'firebase/firestore';
 import { readFileSync } from 'node:fs';
 import { apply, projectTable, clockwise, type TableEvent, type Table } from '../../src/lib/table';
 let environment: RulesTestEnvironment;
-beforeAll(async () => { environment = await initializeTestEnvironment({ projectId: 'demo-beyond', firestore: { host: '127.0.0.1', port: Number(process.env.RULES_TEST_PORT??8197), rules: readFileSync('firestore.rules', 'utf8') } }); });
+beforeAll(async () => { environment = await initializeBackendTestEnvironment({ projectId: 'demo-beyond', firestore: { host: '127.0.0.1', port: Number(process.env.RULES_TEST_PORT??8197), rules: readFileSync('firestore.rules', 'utf8') } }); });
 afterAll(async () => { await environment?.cleanup(); });
 const event = (revision: number, type: TableEvent['type'], position: TableEvent['position'] = '', name = ''): TableEvent => ({ schema: 1, actorUid: 'controller', commandId: crypto.randomUUID(), revision, type, position, name });
 function header(table: Table, commandId: string) { return { ...table, ownerUid: 'controller', schema: 1, mode: 'tabletop', lastCommand: commandId }; }

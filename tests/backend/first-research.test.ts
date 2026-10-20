@@ -1,6 +1,7 @@
+import {initializeBackendTestEnvironment} from '../../scripts/backend-rules-environment.mjs';
 import {sameCommandValue} from '../../src/lib/command-value';
 import {beforeAll,afterAll,test,expect} from 'bun:test';
-import {initializeTestEnvironment,assertFails,assertSucceeds,type RulesTestEnvironment} from '@firebase/rules-unit-testing';
+import {assertFails,assertSucceeds,type RulesTestEnvironment} from '@firebase/rules-unit-testing';
 import {doc,writeBatch,updateDoc} from 'firebase/firestore';
 import {readFileSync} from 'node:fs';
 import {applyRemote,defaultSettings,type RemoteEvent,type RemoteRoom} from '../../src/lib/remote/model';
@@ -41,8 +42,8 @@ test('trade uses the same cube cycle and never adds ordinary production',()=>{
  play=applyTurn(game,play,'p1',{kind:'finish-trading'});expect(play.players.p1.ore).toBe(1);expect(play.phase).toBe('achievement');
 });
 let env:RulesTestEnvironment;
-beforeAll(async()=>{env=await initializeTestEnvironment({projectId:'demo-beyond',firestore:{host:'127.0.0.1',port:Number(process.env.RULES_TEST_PORT??8197),rules:readFileSync('firestore.rules','utf8')}});});
-afterAll(async()=>env.cleanup());
+beforeAll(async()=>{env=await initializeBackendTestEnvironment({projectId:'demo-beyond',firestore:{host:'127.0.0.1',port:Number(process.env.RULES_TEST_PORT??8197),rules:readFileSync('firestore.rules','utf8')}});});
+afterAll(async()=>env?.cleanup());
 // Integration fixtures replay real commands; ordinary browser stories separately
 // prove a person can reach the same setup and turn through visible controls.
 async function fixture(){

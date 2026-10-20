@@ -1,5 +1,6 @@
+import {initializeBackendTestEnvironment} from '../../scripts/backend-rules-environment.mjs';
 import {beforeAll,afterAll,test,expect} from 'bun:test';
-import {initializeTestEnvironment,assertFails,assertSucceeds,type RulesTestEnvironment} from '@firebase/rules-unit-testing';
+import {assertFails,assertSucceeds,type RulesTestEnvironment} from '@firebase/rules-unit-testing';
 import {doc,writeBatch,updateDoc,setDoc} from 'firebase/firestore';
 import {readFileSync} from 'node:fs';
 import {applyRemote,defaultSettings,type RemoteEvent,type RemoteRoom} from '../../src/lib/remote/model';
@@ -10,7 +11,7 @@ import {initialDiscovery} from '../../src/lib/game/discovery';
 import {startingSetup} from '../../src/lib/game/setup';
 const start={version:'basic-2020-v1' as const,seed:'11111111-1111-4111-8111-000000000007'};
 let env:RulesTestEnvironment;
-beforeAll(async()=>{env=await initializeTestEnvironment({projectId:'demo-beyond',firestore:{host:'127.0.0.1',port:Number(process.env.DISCOVERY_RULES_TEST_PORT??process.env.RULES_TEST_PORT??8197),rules:readFileSync(process.env.RULES_SOURCE_PATH??'firestore.rules','utf8')}});});
+beforeAll(async()=>{env=await initializeBackendTestEnvironment({projectId:'demo-beyond',firestore:{host:'127.0.0.1',port:Number(process.env.DISCOVERY_RULES_TEST_PORT??process.env.RULES_TEST_PORT??8197),rules:readFileSync(process.env.RULES_SOURCE_PATH??'firestore.rules','utf8')}});});
 afterAll(async()=>{await env?.cleanup();});
 async function fixture(seed=start.seed,settings=defaultSettings){
  const gameStart={...start,seed};
