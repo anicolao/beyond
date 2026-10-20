@@ -301,3 +301,7 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | I
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Retain every pending PR preview in the serialized deployment group using documented queue:max; preserve all publication and E2E gates.
 
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate documented multi-pending preview queue fromb9b4930 while retaining serialization, exact-source deployment and independent E2E gates.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Exclude unused screenshot-reference blobs only from preview checkout, prove sparse production build and reject stale heads before build; retain full exact CI.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate sparse preview checkout and earlier unchanged stale-head rejection while keeping complete exact-test inputs and strict rules validation.

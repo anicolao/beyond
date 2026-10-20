@@ -32,13 +32,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          # Reference PNGs are not inputs to building or hosted smoke checks.
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/tests/e2e/*/screenshots/
       - uses: cachix/install-nix-action@v31
       - run: nix develop --command bun install --frozen-lockfile
-      - name: Configure live client and build
-        run: |
-          nix develop --command node scripts/configure-backend.mjs
-          nix develop --command bun run build
-          nix develop --command node --input-type=module -e 'import {writeFileSync} from "node:fs"; writeFileSync("build/revision.json", JSON.stringify({revision:process.env.DEPLOY_REVISION, base:process.env.PUBLIC_BASE_PATH})); writeFileSync("build/.nojekyll", "");'
       - name: Reject a superseded PR deployment
         if: github.event_name == 'pull_request'
         env:
@@ -46,6 +46,11 @@ jobs:
         run: |
           current=$(nix develop --command gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --json headRefOid --jq .headRefOid)
           test "$current" = "$DEPLOY_REVISION"
+      - name: Configure live client and build
+        run: |
+          nix develop --command node scripts/configure-backend.mjs
+          nix develop --command bun run build
+          nix develop --command node --input-type=module -e 'import {writeFileSync} from "node:fs"; writeFileSync("build/revision.json", JSON.stringify({revision:process.env.DEPLOY_REVISION, base:process.env.PUBLIC_BASE_PATH})); writeFileSync("build/.nojekyll", "");'
       - name: Deploy this revision's Firestore rules and anonymous authentication
         env:
           FIREBASE_DEPLOY_CREDENTIALS: ${{ secrets.FIREBASE_DEPLOY_CREDENTIALS }}
