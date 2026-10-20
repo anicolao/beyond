@@ -1,0 +1,14 @@
+{
+  "fixtureFiles": 10,
+  "excludedOnlyDarwinPaths": [
+    "tests/e2e/001-foundation/screenshots/story/001-phone-darwin.png",
+    "tests/e2e/009-automation/screenshots/deeper/story/001-mat-tabletop-4k-darwin.png"
+  ],
+  "retainedFixtureBytesEqual": true,
+  "sourceHead": "ce655cc339856007f3e8c4c532438c415060cf33",
+  "sourceTreeEntries": 10301,
+  "excludedDarwin": 5853,
+  "retainedLinux": 4105,
+  "linuxBlobInventorySha256": "96f18de33d249325c27e707acfad54420164ccfb0bab417a79abcae1ab5fa606",
+  "actualCheckoutBuildOrLinuxVerification": "pending; this is pattern/inventory proof only, not a performance or native exact pass"
+}
