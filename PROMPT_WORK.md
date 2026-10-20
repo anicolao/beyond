@@ -335,3 +335,9 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | R
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate documented multi-pending preview queue fromb9b4930 while retaining serialization, exact-source deployment and independent E2E gates.
 
 Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Keep007 publication pending safely in the shared multi-run queue without changing rules validation or pinned browser/security checks.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Exclude unused screenshot-reference blobs only from preview checkout, prove sparse production build and reject stale heads before build; retain full exact CI.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate sparse preview checkout and earlier unchanged stale-head rejection while keeping complete exact-test inputs and strict rules validation.
+
+Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Propagate sparse preview checkout and earlier unchanged stale-head rejection while keeping complete exact-test inputs and strict rules validation.
