@@ -248,3 +248,31 @@ Local independent browser runs may use separate already-installed emulator proce
 The complete gallery story traverses all100 source-verified identities and quantities, verifies original-art completeness and inspects dense full-marker faces in75 illustrated steps per viewport. Candidate generation and independent comparison are separate runs; both platforms must be independently reviewed.
 
 Milestone004 uses `004-first-research/journey.ts` through the required shared fixture and TestStepHelper. Seventeen viewport variants demonstrate ordinary2/3/4-player remote and shared first rounds, including compact/cardinal/corner views, all four Level I bonuses, exact resources, three executed exchanges, Supply overflow, pending-choice reload, separate public observers and keyboard focus return. The existing31 journeys remain in the full regression. Every meaningful setup input, choice and result has a named illustrated step. Native captures are visually inspected before an independent zero-tolerance comparison run.
+
+Persistent reviewer Auth imports can invalidate previously cached anonymous
+credentials even when the same account IDs and Firestore history survive. Keep
+review services separate from test resets, and follow
+[retained-controller recovery](docs/REVIEW_SESSION_RECOVERY.md) before a planned
+restart. A new anonymous controller's fresh UI replay is not proof of recovery
+of the original session. Never repair a test or review by assigning an existing
+game to a replacement identity or weakening its owner rules.
+
+Milestone005 uses `005-technology-discovery/journey.ts`, the shared fixture and
+required TestStepHelper for14 illustrated variants: independent remote desktop
+and phone controllers, shared cardinal and corner seats, and native4K. Ordinary
+UI preparation reaches two-prerequisite type choice, March responders and repeat
+research, persisted Prototype rolls/two rerolls, mandatory and optional Exo-Alloy
+bonuses, a revealed Rift attachment, and two distinct ships' simultaneous jumps
+and real control bonuses. Every input, public result, reload, full-face inspection,
+focus return and handoff is illustrated. Fixed initial entropy selects a declared
+scenario; ordinary journeys neither inject history nor inspect concealed decks.
+Explicitly labelled backend integration cases separately exercise exhausted
+resources, all ten LevelII Events, every printed LevelII bonus queue and tariff
+positions. They supplement rather than replace those ordinary journeys.
+
+Discovery readiness includes completion of its persisted preparation and mandatory
+automatic continuations. The production LevelII planner exposes `aria-busy` while
+its preparation or save remains active; the page's backend status also reflects
+an in-flight save. Illustrated steps assert that real settled state before the
+unchanged capture helper photographs and compares it. No sleeps, comparison
+masks, retries or larger operation/capture deadlines are introduced.

@@ -1,9 +1,10 @@
+import type {PublicDiscovery} from './discovery';
 import { achievementDecks, events, factions, legalFaction, levelOne, setupVersion, startingSystems, supplyCapacity, systemDecks, technologyDecks, type FactionId, type PlayerCount } from './manifest';
 export type SetupSettings = { factions:'basic'|'advanced'; achievements:'introductory'|'randomized' };
 export type SetupPlayer = { position:string; name:string; faction:FactionId };
 export type BasicStart = { version:typeof setupVersion; seed:string };
-export type PlayerState = SetupPlayer & { ore:number; population:number; supply:number[]; foodDiscs:number; oreDiscs:number; automation:number; ships:{id:string;level:1|2|3|4;location:string}[]; actionLocation:string|null; research:string[] };
-export type PublicSetup = { version:typeof setupVersion; activePosition:string; phase:'action'|'production'|'trade'|'achievement'; achievementClaims:0; count:PlayerCount; overlay:PlayerCount; endgameClaims:3|4; achievementSecondSlot:boolean; players:PlayerState[]; technologies:{slot:string;card:string}[]; systems:{slot:string;card:string}[]; achievements:string[]; deckCounts:Record<string,number>; eventCovers:{slot:string;level:'II'|'III'}[] };
+export type PlayerState = SetupPlayer & { ore:number; population:number; supply:number[]; foodDiscs:number; oreDiscs:number; automation:number; ships:{id:string;level:1|2|3|4;location:string}[]; actionLocation:string|null; research:string[]; reservedResearch?:string[] };
+export type PublicSetup = { version:typeof setupVersion; activePosition:string; phase:'action'|'production'|'trade'|'achievement'|'discovery'; turn?:number; discovery?:PublicDiscovery; achievementClaims:number; count:PlayerCount; overlay:PlayerCount; endgameClaims:3|4; achievementSecondSlot:boolean; players:PlayerState[]; technologies:{slot:string;card:string}[]; systems:{slot:string;card:string}[]; achievements:string[]; deckCounts:Record<string,number>; eventCovers:{slot:string;level:'II'|'III'}[] };
 export function validSeed(seed: string) { return /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/.test(seed); }
 // Independent named streams: adding another deck never shifts existing shuffles.
 function stream(seed:string,label:string) {

@@ -309,3 +309,141 @@ Reviewer19:33: independently viewed refreshed 057-turn-1-handoff-tabletop-4k-dar
 Reviewer-authored local acceptance and phase release:
 
 Reviewer19:54: independently verified research-round52-final-exact.log completed48/48PASS in6.0m, command has no update-snapshots;40backend/2422 assertions,41guards,17tooling,types/builds pass and helper guards unchanged. Prior live004 review plus corrected heading and full-rules native images are accepted. Phase004 LOCAL ACCEPTANCE complete. Commit/push reviewed004 and open stacked PR based on feat/basic-setup af76265; then immediately begin005 Discover humanity next technology on a NEW branch stacked on004 while004 Linux exact and matching hosted verification finish. Implement legal preparatory turns, LevelII Event/discovery/type/candidate/persisted queue and reveal boundary per plan/source rules in remote/phone/shared modes; persistent local server and independent review before baselines. Keep004 pending final gates separately, propagate needed fixes, preserve all evidence, never merge. Report PR URL/head and005 branch; no further human prompt needed.
+
+## Prompt 56: Review Linux Evidence
+
+Reviewer-authored gate checkpoint:
+
+Reviewer21:02: PR6 0297259 hosted revision matches; independently exercised retained PR5 table in PR6, Lasers mandatory ship target, cost/bonus, reload restored Production with 1 Population/4 Ore/cube/level-2 ship, Produce Ore gave 5 Ore and Bora handoff. Linux browser-comparison now failed 34/48 (14 pass), missing new 004 Linux snapshots and existing snapshot mismatches; job 118298453514 logs available via gh api actions/jobs/.../logs although run still active. Please inspect completed candidates and actual diffs, preserve guards and timings, review Linux evidence before committing appropriate baselines and rerun exact. Track alongside 005; no final 004 acceptance yet.
+
+## Prompt 57: Diagnose Candidate Timeouts
+
+Reviewer-authored failure evidence:
+
+Reviewer21:09 additional evidence: candidate generation test step has failed, even while artifact upload keeps job running. Downloaded small candidate-failure-evidence artifact12220483765 to /tmp/beyond-pr6-candidate-failure-review. Embedded Playwright report shows three 004 tabletop-4k tests hit the 60000ms test timeout; diagnostic capture then masks it with page.evaluate closed-page error at journey.ts:14 (call sites52/55). Inspect primary timeout/capture work and preserve timing guards; do not treat this as baseline-only failure.
+
+## Prompt 58: Resolve Capture Deadline
+
+Reviewer-authored timing checkpoint:
+
+Reviewer21:40 new a4a130a Linux evidence: comparison job118315760262 still14/48pass; beyond baseline differences/missing004 refs, 003 setup-tabletop.spec.ts:20:73 records Shared capture deadline2041.03ms vs2000. Log independently saved /tmp/beyond-pr6-a4a130a-comparison.log (lines2181+). Whole-story120s is permitted by E2E_GUIDE26, but this separate per-capture failure must be resolved without raising2000ms. Hostedrevision now matchesa4a130a. No final004 acceptance yet.
+
+## Prompt 59: Compact Phone Discovery
+
+Reviewer-authored preliminary visual review:
+
+Reviewer21:50 preliminary005 screenshot review: spread-1280.png now exposes both selection controls and correct Discovery phase, useful improvement. spread-393.png still spends first ~350px on header/resolved Event and shows only first candidate title/art above sticky footer; no candidate bonus or selection visible initially. Compact phone resolved-Event summary and candidate art into decision-focused rows/cards so at least first candidate bonus+Select are visible without scrolling; keep full readable card inspection and access to both candidates. No final acceptance from these captures; live flow/reload/remote responder/shared orientation review still required.
+
+## Prompt 60: Persistent Review Backend
+
+Reviewer-authored live review blocker:
+
+Reviewer23:06: opened supplied shared review URL in independent browser; it shows Connection interrupted / We could not reopen your table. lsof finds no listeners on expected Auth9397/Firestore8297. Please keep005 emulator backend plus5198 alive between review captures and provide normal-UI setup path for a fresh reviewer controller (do not transfer identity). Current supplied room cannot be independently reviewed live. Preserve existing review room data when restarting.
+
+## Prompt 61: Repair Staging Runtime
+
+Reviewer-authored CI findings:
+
+Reviewer23:25 new CI findings: staging39340455886 validated archive SHA/inventory2219 (1386 changed,66 retained), then failed loading sharp linux-arm64: libstdc++.so.6 missing. Supply native runtime library using established CI environment setup; preserve full decode/pixel checks and pinned archive. No review branch was staged. Preview39340387514 failed GitHub remote Internal Server Error on gh-pages push; I requested failed-job rerun, no need duplicate. PR6 final exact/matching hosted gates remain. No006 release.
+
+## Prompt 62: Preserve Review Service
+
+Reviewer-authored service checkpoint:
+
+Reviewer23:38: human correctly challenged offline-emulator blocker (verbatim in root meta-prompts.md). I started persistent discovery review Auth9397/Firestore8297 through existing nix develop /private/tmp/beyond-toolchain, config /tmp/beyond-discovery-review-supervisor.json using your discovery55 rules and existing cached jar. Both ready; do not stop these for tests. Backend has fresh local review state; older8197 backend untouched. Independent review can now create fresh rooms through ordinary UI. Preserve this service and separate backend-test ports.
+
+## Prompt 63: Tight Storage Checkpoint
+
+Reviewer-authored backend and storage checkpoint:
+
+Reviewer23:42: latest70 backend tests/2576assertions verifiedPASS. Disk full now also aborts independent browser IndexedDB and nix SQLite. I removed only regenerable npm download cache ~/.npm/_cacache (291MB); free space now406MiB. No evidence/source/dependencies removed. Persistent review emulators remain healthy. Please continue safe fixes; storage remains tight.
+
+## Prompt 64: Correct Review Ports
+
+Reviewer-authored frontend environment correction:
+
+Reviewer23:46 correction: inspected5198 process public env; it had EMULATORS=true but no explicit ports, so actually used old9297/8197, not assumed9397/8297. Restarted ONLY5198 Vite via existing Nix with explicit9397/8297; independent browser now Connected/Play enabled. Added temporary .review-vite.config.ts allowing symlinked root node_modules fonts; do not commit review config. Persistent frontend session17638/backend88096. Prior offline diagnosis was incomplete; no data/identity cleared. Preserve correct review processes.
+
+## Prompt 65: Fit Research Header
+
+Reviewer-authored reference and local planner checkpoint:
+
+Reviewer23:52: independently verified staging39342819076PASS, commit58ad180 parent1879901:1386 Linux PNGs plus only IMPLEMENTATION_PLAN/PROMPT_WORK;2219 decoded with matching dimensions, pinned SHA, no transforms. Proceed incorporating reviewed reference commit into PR6 and ordinary exact comparison; no finalacceptance yet. Live fresh shared table25e1df7d-557c-4984-ae87-ff47e845fd58 now began normally. At1280x720 Plan research screenshot has Research Level I wrapping I onto separate line, and helper says two choices per row but actual tray shows one card per row. Correct heading/selector fit and truthful layout hint in005; no baseline churn.
+
+## Prompt 66: Restore Discovery Production
+
+Reviewer-authored live005 blocker:
+
+Reviewer00:07 LIVE005 blocker: independent shared room25e1df7d-557c-4984-ae87-ff47e845fd58 on5198/9397/8297. Ada Nishida south and Bora UNSol north both researchedRobotics; Ada grewPop, Bora producedOre. Ada paidII-3→ExperimentalPrototypes, keptLevel4→level2Solship; Bora keptSupply→2Ore. Ada selectedHypercomputing; bonus resolves, reload restoresProduction1Pop/2Ore/2cubes,+3Ore yield. Clicking ProduceOre is rejected by Firestore evaluation error L732 create/L720 update; remainsProduction, raw rules trace shown in two UIalerts. Preserve room and fix legal production-after-discovery plus user-friendly error; may involve live rules changes during retained history. No005acceptance/006.
+
+## Prompt 67: Accept Phase Four
+
+Reviewer-authored final004 acceptance:
+
+Reviewer00:51 milestone: independently verified PR6 head58ad180 Linux exact attempt2 run39345573191 job118385073347 PASS48/48 in14.8m, capture guards41PASS; all required checks pass, hosted revision.json matches58ad180 and prior independent hosted retained-table/UI review stands. Phase004 FINALLY ACCEPTED at this head, unmerged. Preserve first-attempt two4K timing failures in history; diagnostic follow-up may proceed without weakening guards but acceptance does not include uncommitted changes. Prioritize consuming pending005 review feedback and repairing retained production failure before further phase advancement. No006 release; no merge. Log reviewer-authored.
+
+## Prompt 68: Diagnose Retained Recovery
+
+Reviewer-authored independent recovery regression:
+
+Reviewer01:47 new independent regression: after your retained-production compatibility fix, I reloaded existing IAB tab27 at5198/?table=25e1df7d-557c-4984-ae87-ff47e845fd58 with unchanged original controller. It now shows arrival/Play disabled/Connection interrupted/We could not reopen your table. Reopen table retry same result, no moves submitted. Please diagnose retained auth/data recovery after backend restart; preserve original controller and room. This blocks independent production retest. No browser identity injection/reset.
+
+## Prompt 69: Sanitize Recovery Diagnostics
+
+Reviewer-authored diagnostic request:
+
+Reviewer01:52 response: IAB dev.logs returns empty, and DOM only exposes generic reopen failure. Browser tool does not expose network or Firebase runtime state; I will not inspect hidden storage or alter identity. Please add temporary sanitized console diagnostics in recovery catch (error code/message and boolean current UID matches owner, no tokens/UID values), then tell me ready; I can reload original tab and read dev.logs. Keep original room/controller intact. Independent discovery66 backend results will be reviewed separately.
+
+## Prompt 70: Verify Served Diagnostics
+
+Reviewer-authored diagnostic retest:
+
+Reviewer02:02 repair retest: original IABtab27 reloaded after validSince repair, still arrival/Play disabled/Connection interrupted/We could not reopen your table. dev.logs now only Vite connecting/connected; no sanitized recovery diagnostic yet. No identity/storage changes. Await diagnostic implementation before next reload.
+
+## Prompt 71: Diagnose Denied Owner
+
+Reviewer-authored original-controller diagnostic evidence:
+
+Reviewer02:07 diagnostics now confirmed in original IABtab27 after reload: revision70 ready; recovery code permission-denied, signedIn:true; ownerComparisonAvailable:false, ownerMatchesCurrentUid:null, ownerRead code permission-denied. Error prose withheld by sanitizer. Still arrival/Play disabled/reopen failure. No browser identity/storage changes or moves. Please use this evidence for diagnosis; do not replace owner or bypass authorization.
+
+## Prompt 72: Preserve Recovery Boundary
+
+Reviewer-authored confirmed identity mismatch and recovery constraints:
+
+Reviewer02:12 original IABtab27 revision71 verified diagnostic: ownerComparisonAvailable:true, ownerMatchesCurrentUid:false, roomUnchanged:true. Recovery remains permission-denied signedIn:true. Supervisor did not reset/inject browser identity. Original session evidently differs now; do not transfer room ownership or bypass rules. Preserve original history and diagnose prevention/recovery semantics; independent fresh normal-UI replay can validate gameplay separately but must not be claimed as recovered original session. Remove temporary probes before publication.
+
+## Prompt 73: Resume Discovery Review
+
+Reviewer-authored recovery checkpoint and continued005 authorization:
+
+Reviewer02:22 independently verified originaltab27 now Connected/Play enabled and precise identity-denial message; original session is not recovered and history must remain intact. Continue authorized005 work: fresh ordinary-UI full discovery-to-production/handoff/reload replay using persistent existing backend, complete remote/phone/rotated shared coverage and security checks. Report exact review URLs/captures and remaining gaps; keep backend alive, no further auth restart during review, no baselines until independent local acceptance, no006 or merge. I will independently replay with current reviewer controller separately from lost original session.
+
+## Prompt 74: Restore Crashed Auth
+
+Reviewer-authored narrow Auth recovery authorization:
+
+Reviewer02:42 authorize controlled Auth-only relaunch to restore failed service: preserve exported accounts and original validity boundaries before accepting browser connections; leave liveFirestore/data/ownership untouched and verify same-controller refresh on isolated test first if not already proven. This supersedes my no-restart direction solely for crashed9397 recovery. Current independent freshroom0eaca825-4c80-487b-ae4d-7d77e0ac5a0b reached BoraAction after AdaRobotics+Grow; preserve its current controller too, latest export may need current accounts beyond old original owner. Do not reopen browser review until metadata preservation verified; report readiness. No bypass/reset or006.
+
+## Prompt 75: Continue Discovery Validation
+
+Reviewer-authored independent Auth recovery acceptance and005 continuation:
+
+Reviewer02:58 independently confirmed freshroom0eaca825 reload after controlledAuthrecovery preserved current controller and BoraAction. BoraRobotics in open space2 thenProduceOre+2 succeeded, nowAdaAction. Continue authorized005 remote/phone/shared replay and required local checks on persistentbackend; no further stop awaiting prompt, no006/baselines before independentacceptance. I am proceeding toAdaLevelII.
+
+## Prompt 76: Fresh Replay Checkpoint
+
+Reviewer-authored independent discovery replay checkpoint and continued005 validation:
+
+Reviewer03:05 independent fresh shared room0eaca825 passed II-4 March of Progress (Robotics named; Ada +2 Ore; Bora Supply to level2 Sol ship), Hypercomputing discovery, +3 Ore production, Bora handoff and reload. Ada retains1 Population/7 Ore. Fresh-session replay only, original lost controller remains unrecovered. Saw remote replay handoff PASS in pane; continue current security/layout corrections and remaining phone/shared/4K checks. No005 acceptance or006 release yet.
+
+## Prompt 77: Compact Overview Overlap
+
+Reviewer-authored scoped evidence and additional retained-room layout finding:
+
+Reviewer03:13 scoped evidence: independently confirmed fleet5 5/5 and full backend85/2641 PASS; phone candidate/selected/production captures readable. Additional viewport for your active overlap fix: live retained shared room0eaca825 at1280x720 compact complete overview still has Hypercomputing II-4 covering lower half of II-3 row after reload. Please include compact overview as well as four-player expanded board in the correction. No duplicate restart or phase advancement.
+
+## Prompt 78: Discovery Local Acceptance
+
+Reviewer-authored phase005 independent local visual/functional acceptance and final-validation authorization:
+
+Reviewer04:24: phase005 local visual/functional review ACCEPTED for final validation. Independently reloaded room0eaca825 at1280x720: II-3/Hypercomputing separated and full inspection opens/closes; your03:13 correction is resolved. Reviewed round76-cardinal-board, retry-error-cardinal-3840 and final rotated candidate images: spacing and error containment pass. Prior independent March of Progress gameplay and reviewed desktop/phone/cardinal/corner/observer/keyboard evidence support this scoped acceptance. Proceed with required TestStepHelper illustrated stories, meaningful rare-effect coverage, final macOS exact comparisons and all checks; keep guards/deadlines unchanged. No final005 acceptance yet. After local exact/checks PASS, report results for explicit006 release and publish005 stacked on feat/first-research-turn head58ad180; never merge. Preserve all identities and services.

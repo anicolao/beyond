@@ -4,7 +4,7 @@ import { doc, getDoc, getDocs, collection, writeBatch, updateDoc, deleteDoc } fr
 import { readFileSync } from 'node:fs';
 import { applyRemote, projectRemote, defaultSettings, type RemoteEvent, type RemoteRoom } from '../../src/lib/remote/model';
 let env: RulesTestEnvironment;
-beforeAll(async () => { env = await initializeTestEnvironment({ projectId: 'demo-beyond', firestore: { host: '127.0.0.1', port: 8197, rules: readFileSync('firestore.rules', 'utf8') } }); });
+beforeAll(async () => { env = await initializeTestEnvironment({ projectId: 'demo-beyond', firestore: { host: '127.0.0.1', port: Number(process.env.RULES_TEST_PORT??8197), rules: readFileSync('firestore.rules', 'utf8') } }); });
 afterAll(async () => { await env.cleanup(); });
 const clients = new Map<string, ReturnType<RulesTestEnvironment['authenticatedContext']>>();
 const db = (uid: string) => { if (!clients.has(uid)) clients.set(uid, env.authenticatedContext(uid)); return clients.get(uid)!.firestore(); };

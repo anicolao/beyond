@@ -8,7 +8,7 @@ import{applyRemote,projectRemote,defaultSettings,type RemoteEvent,type RemoteRoo
 import{apply,projectTable,clockwise,type TableEvent,type Table}from'../../src/lib/table';
 const start:BasicStart={version:setupVersion,seed:'12345678-1234-4567-89ab-123456789abc'};
 let env:RulesTestEnvironment;
-beforeAll(async()=>{env=await initializeTestEnvironment({projectId:'demo-beyond',firestore:{host:'127.0.0.1',port:8197,rules:readFileSync('firestore.rules','utf8')}});});
+beforeAll(async()=>{env=await initializeTestEnvironment({projectId:'demo-beyond',firestore:{host:'127.0.0.1',port:Number(process.env.RULES_TEST_PORT??8197),rules:readFileSync('firestore.rules','utf8')}});});
 afterAll(async()=>await env.cleanup());
 test('reviewed Basic mats conserve all twenty cubes and apply the exceptional columns and locations',()=>{
  const factions:FactionId[]=['nishida','zheng','united-nations','disciples'];

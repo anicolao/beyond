@@ -1,9 +1,10 @@
 /** Runs inside the page: audit components, text lines and every clipping ancestor. */
 export async function assertScreenFit(options: {document?:boolean;touchTargets?:boolean;prepare?:boolean} = {}) {
+  const timing={started:performance.now(),fonts:0,images:0,animations:0};
   if(options.prepare){
-    await document.fonts.ready;
-    await Promise.all([...document.images].filter(i=>i.checkVisibility({visibilityProperty:true})).map(i=>i.decode()));
-    await Promise.all(document.getAnimations().filter(a=>a.playState!=='finished').map(a=>a.finished));
+    await document.fonts.ready;timing.fonts=performance.now();
+    await Promise.all([...document.images].filter(i=>i.checkVisibility({visibilityProperty:true})).map(i=>i.decode()));timing.images=performance.now();
+    await Promise.all(document.getAnimations().filter(a=>a.playState!=='finished').map(a=>a.finished));timing.animations=performance.now();
     const transitions=(window as Window&{__beyondTransitions?:Map<Element,string>}).__beyondTransitions;
     if(!transitions||transitions.size)throw new Error('A Svelte transition is still active');
   }
@@ -158,4 +159,8 @@ export async function assertScreenFit(options: {document?:boolean;touchTargets?:
   for(let i=0;i<controls.length;i++)for(let j=i+1;j<controls.length;j++){
     if(overlaps(polygons[i],polygons[j]))throw new Error(`Controls overlap: ${label(controls[i])} / ${label(controls[j])}`);
   }
+  // Trace-only timings identify browser work separately from protocol stalls.
+  // Every guard above and the caller's combined 2,000 ms deadline stay intact.
+  console.info('beyond-capture-audit',JSON.stringify({fonts:timing.fonts?timing.fonts-timing.started:0,images:timing.images?timing.images-timing.fonts:0,animations:timing.animations?timing.animations-timing.images:0,audit:performance.now()-(timing.animations||timing.started),elements:elements.length,controls:controls.length}));
+
 }

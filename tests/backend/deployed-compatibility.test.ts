@@ -8,7 +8,7 @@ import protocol from './fixtures/deployed-protocol-34d7cc9.json';
 // No later application model, setup implementation or UI is backported here.
 type Command={event:Record<string,any>;after:Record<string,any>};
 let environment:RulesTestEnvironment;
-beforeAll(async()=>{environment=await initializeTestEnvironment({projectId:'demo-beyond',firestore:{host:'127.0.0.1',port:8197,rules:readFileSync('firestore.rules','utf8')}});});
+beforeAll(async()=>{environment=await initializeTestEnvironment({projectId:'demo-beyond',firestore:{host:'127.0.0.1',port:Number(process.env.RULES_TEST_PORT??8197),rules:readFileSync('firestore.rules','utf8')}});});
 afterAll(async()=>{await environment.cleanup();});
 const clients=new Map<string,ReturnType<RulesTestEnvironment['authenticatedContext']>>();
 const database=(uid:string)=>{if(!clients.has(uid))clients.set(uid,environment.authenticatedContext(uid));return clients.get(uid)!.firestore();};

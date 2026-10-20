@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
+  import {connectionInterrupted,saveErrorMessage,recoveryErrorMessage,recoveryAccessDenied} from '$lib/user-error';
   import { base } from '$app/paths';
   import { backend, commitTable, restoreTable, retainedKey } from '$lib/backend';
   import TableSurface from '$lib/TableSurface.svelte';
@@ -13,15 +14,16 @@
   let error = $state('');
   let table = $state<Table>({ seats: {}, firstPlayer: '', revision: 0 });
   let retained = $state('');
+  let recoveryTarget = $state('');
   let retainedRoom = $state('');
   let pending: { command: Command; id: string; revision: number } | undefined;
   let busy = $state(false);
   let heading = $state<HTMLHeadingElement>();
   function show(next: Screen) { screen = next; error = ''; queueMicrotask(() => heading?.focus()); }
   async function recover(id: string) {
-    busy = true; status = 'reconnecting'; error = '';
+    recoveryTarget = id; busy = true; status = 'reconnecting'; error = '';
     try { table = await restoreTable(id); retained = id; retainedRoom = ''; localStorage.setItem(retainedKey, id); localStorage.setItem(lastGameKey, JSON.stringify({ mode: 'tabletop', id })); screen = 'table'; history.replaceState(null, '', `${base}/?table=${id}`); status = 'synced'; }
-    catch (cause) { error = cause instanceof Error && cause.message.includes('incompatible') ? cause.message : 'We could not reopen your table. Check your connection and try again.'; status = 'offline'; }
+    catch (cause) { error = recoveryErrorMessage(cause); status = recoveryAccessDenied(cause) ? 'synced' : 'offline'; }
     finally { busy = false; }
   }
   onMount(() => {
@@ -37,7 +39,7 @@
   async function create() {
     if (busy) return;
     busy = true; error = ''; status = 'saving';
-    retained = crypto.randomUUID();
+    recoveryTarget = ''; retained = crypto.randomUUID();
     pending = { command: { type: 'table-created', position: '', name: '' }, id: crypto.randomUUID(), revision: -1 };
     await sendPending();
   }
@@ -50,7 +52,7 @@
       localStorage.setItem(lastGameKey, JSON.stringify({ mode: 'tabletop', id: retained })); retainedRoom = '';
       history.replaceState(null, '', `${base}/?table=${retained}`);
       pending = undefined; screen = 'table'; status = 'synced';
-    } catch (cause) { error = cause instanceof Error ? cause.message : 'Your change could not be saved. Retry or reopen the table.'; status = 'offline'; throw cause; }
+    } catch (cause) { const message=saveErrorMessage(cause); error=pending?.command.type==='game-move'?'':message; status=connectionInterrupted(cause)?'offline':'synced'; throw new Error(message); }
     finally { busy = false; }
   }
   async function commit(command: Command) {
@@ -62,7 +64,7 @@
 
 <svelte:head><title>Beyond the Sun</title><meta name="description" content="Gather at an orbital table and build humanity's future among the stars." /></svelte:head>
 
-<main data-screen={screen} class:at-table={screen === 'table'} data-e2e-layout data-backend-status={status} data-room-state={screen === 'table' ? table.start?'started':'gathering' : 'none'}>
+<main data-screen={screen} class:at-table={screen === 'table'} data-e2e-layout data-backend-status={busy?'saving':status} data-room-state={screen === 'table' ? table.start?'started':'gathering' : 'none'}>
   <img class="environment" src={`${base}/art/observatory.png`} alt="" />
   <div class="shade"></div>
   {#if screen === 'table'}
@@ -102,7 +104,7 @@
     {/if}
   </div>
   {/if}
-    {#if error}<div class="error" role="alert"><p>{error}</p><button onclick={() => { if (!pending && !retained) location.reload(); else void (pending ? sendPending() : recover(retained)).catch(() => undefined); }}>Retry change</button><button onclick={() => { pending = undefined; void recover(retained); }}>Reopen table</button></div>{/if}
+    {#if error}<div class="error" role="alert"><p>{error}</p><button onclick={() => { if (!pending && !(recoveryTarget || retained)) location.reload(); else void (pending ? sendPending() : recover(recoveryTarget || retained)).catch(() => undefined); }}>Retry change</button><button onclick={() => { pending = undefined; void recover(recoveryTarget || retained); }}>Reopen table</button></div>{/if}
   <footer><span class:connected={status === 'synced'} class="connection" aria-live="polite">{status === 'synced' ? 'Connected' : busy ? 'Saving your place…' : status === 'offline' ? 'Connection interrupted' : 'Connecting…'}</span>{#if screen === 'home'}<a class="gallery-entry" href={`${base}/gallery/`}>Card gallery ↗</a>{/if}<span class="footer-title">BEYOND THE SUN</span></footer>
 </main>
 

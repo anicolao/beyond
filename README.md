@@ -4,7 +4,7 @@ Lead a faction beyond Earth. Help shape humanity's shared technology tree, build
 
 This repository defines a browser implementation of **Beyond the Sun**, designed by Dennis K. Chan and published by Rio Grande Games. Two to four players research technologies, develop production, build and move fleets, colonize systems, and claim achievements. The winner has the most victory points after the final round.
 
-**Status: gathering, complete card gallery and Basic setup implemented.** Browse all100 source-reviewed designs/100 physical copies, gather local players at shared-table positions, or host/join with separate remote identities. Choose legal unique Basic factions, Begin once and inspect exact2/3/4-player starting boards/mats. Recovery preserves the same canonical game. Turn actions follow in later increments; this branch includes no004 research/production implementation. The card correction has local visual acceptance; its final Linux/hosted gates remain pending.
+**Status: gathering, complete card gallery, Basic setup and Level I/II research implemented.** Browse all 100 source-reviewed card designs / 100 physical copies, gather on a shared table or use separate remote identities, and Begin exact 2/3/4-player Basic setup. Play legal preparation, production and trades, then discover a Level II technology through its real Event, public type/candidate choice and once-only bonus. Pending decisions and recovery share canonical history. Milestone 005 passes 62 local exact journeys; Linux/hosted final gates remain pending. Later gameplay stays in the implementation plan.
 
 ## Project documents
 
@@ -16,7 +16,7 @@ This repository defines a browser implementation of **Beyond the Sun**, designed
 | [E2E_GUIDE.md](E2E_GUIDE.md) | Real multiplayer journeys, exact screenshots, illustrated evidence, and delivery sequence. |
 | [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) | Commit-sized tracer stories, hosted preview contract, and milestone acceptance. |
 
-Read the vision first, then the rules and UX together. The E2E guide defines how each required behavior is demonstrated. [AGENTS.md](AGENTS.md) records project instructions, and [PROMPTS.md](PROMPTS.md) preserves the user requests verbatim.
+Read the vision first, then the rules and UX together. The E2E guide defines how each required behavior is demonstrated. [AGENTS.md](AGENTS.md) records project instructions, and [PROMPTS.md](PROMPTS.md) records direct requests and labelled reviewer instructions; [meta-prompts.md](meta-prompts.md) holds the supervising human conversation.
 
 ## Scope
 
@@ -60,7 +60,7 @@ Build small, complete browser-visible slices in the sequence in [E2E_GUIDE.md](E
 
 Implementation starts with the pinned environment and static application shell, followed by rooms and reviewed setup manifests. Document development and verification commands as their scripts are implemented. Never copy sibling credentials.
 
-The [illustrated walkthroughs](tests/e2e/001-foundation/README.md) demonstrate arrival, physical-seat joining and configuration, and recovery between two built deployment paths. Tabletop stories use desktop and 4K shared displays; arrival also covers phone. The [remote gathering stories](tests/e2e/002-remote-rooms/README.md) cover separate identities, missing/full room recovery, readiness invalidation, keyboard dialogs and shared canonical persistence.
+The [illustrated walkthroughs](tests/e2e/001-foundation/README.md) demonstrate arrival, physical-seat joining and configuration, and recovery between two built deployment paths. Tabletop stories use desktop and 4K shared displays; arrival also covers phone. The [remote gathering stories](tests/e2e/002-remote-rooms/README.md) cover separate identities, missing/full room recovery, readiness invalidation, keyboard dialogs and shared canonical persistence. [Basic setup](tests/e2e/003-basic-setup/README.md), [first research](tests/e2e/004-first-research/README.md), and [technology discovery](tests/e2e/005-technology-discovery/README.md) provide the ordinary gameplay walkthroughs, including remote phone/desktop and seat-facing shared 4K.
 
 ## Card collection
 
@@ -94,13 +94,13 @@ Firebase project `beyond-20261018` has anonymous Auth and a production Firestore
 
 ## Rules and visual assets
 
-The authority is the publisher's [second-printing combined rulebook and setup sheets](https://www.riograndegames.com/wp-content/uploads/2020/08/Beyond-the-Sun-2nd-Print-Rules-Combined.pdf), with [official errata](https://www.riograndegames.com/games/beyond-the-sun/). The summary records mechanics and implementation obligations; the complete card and faction manifests still need transcription and review.
+The authority is the publisher's [second-printing combined rulebook and setup sheets](https://www.riograndegames.com/wp-content/uploads/2020/08/Beyond-the-Sun-2nd-Print-Rules-Combined.pdf), with [official errata](https://www.riograndegames.com/games/beyond-the-sun/). The summary records mechanics and implementation obligations; the complete base-card inventory and Basic setup manifests have source review. The [inventory audit](docs/content/CARD_INVENTORY.md) retains the unresolved physical second-print WISE name/verbatim-wording limitation; Advanced faction implementation remains a later increment.
 
 Use original illustrations, component frames, and interface artwork with recorded provenance. Publisher PDFs are rules references, not image atlases for the application. The project is an unofficial implementation; no affiliation or asset permission is implied. Original project material is licensed under [GNU GPL version 3 only](LICENSE). Publisher material remains the property of its respective rights holders.
 
 ## Prompt history and checks
 
-Record every user request verbatim in [PROMPTS.md](PROMPTS.md), following the append-only rules in [AGENTS.md](AGENTS.md). Each numbered heading has a 2–3 word summary. Multiple commits under one request use an explicit continuation record rather than duplicating a prompt.
+Follow the append-only routing in [AGENTS.md](AGENTS.md): direct human requests and labelled reviewer delegations belong in [PROMPTS.md](PROMPTS.md); supervising human requests belong in [meta-prompts.md](meta-prompts.md). Each numbered heading has a 2–3 word summary. Multiple commits under one request use an explicit continuation record rather than duplicating a prompt.
 
 Install the versioned commit hook and run its regression checks with Node.js:
 

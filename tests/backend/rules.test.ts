@@ -4,7 +4,7 @@ import { doc, getDoc, setDoc, updateDoc, deleteDoc, writeBatch, runTransaction }
 import { readFileSync } from 'node:fs';
 import { apply, projectTable, clockwise, type TableEvent, type Table } from '../../src/lib/table';
 let environment: RulesTestEnvironment;
-beforeAll(async () => { environment = await initializeTestEnvironment({ projectId: 'demo-beyond', firestore: { host: '127.0.0.1', port: 8197, rules: readFileSync('firestore.rules', 'utf8') } }); });
+beforeAll(async () => { environment = await initializeTestEnvironment({ projectId: 'demo-beyond', firestore: { host: '127.0.0.1', port: Number(process.env.RULES_TEST_PORT??8197), rules: readFileSync('firestore.rules', 'utf8') } }); });
 afterAll(async () => { await environment.cleanup(); });
 const event = (revision: number, type: TableEvent['type'], position: TableEvent['position'] = '', name = ''): TableEvent => ({ schema: 1, actorUid: 'controller', commandId: crypto.randomUUID(), revision, type, position, name });
 function header(table: Table, commandId: string) { return { ...table, ownerUid: 'controller', schema: 1, mode: 'tabletop', lastCommand: commandId }; }
