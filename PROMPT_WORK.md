@@ -272,3 +272,7 @@ Prompt 96 | 913970fb3b6e3370ede000e4023044c9a17f2140f1d820631c8ea9fe283e31ed | P
 Prompt 97 | c68aa2d1aefbd6cb040fe8572e6ba627eb9c6db07d2b107c44624e2aea5dc1ee | Preserve accepted scope and readiness CI proof, verify exact-source readback on a fresh larger rules JVM, and retain failed publication/capture evidence without blind reruns.
 
 Prompt 97 | c68aa2d1aefbd6cb040fe8572e6ba627eb9c6db07d2b107c44624e2aea5dc1ee | Carry exact-source emulator readback into006, prove175 security tests under unchanged deadlines, and wait for running native Linux evidence before pushing this tooling-only propagation.
+
+Prompt 98 | 9e3c6771d80fb656ae220209778b64c4c2093cbd77510fa0f82232b2626991b4 | Preserve the2248ms Linux camera trace and use verified host shared memory instead of disk-backed browser surfaces, retaining every renderer flag, reference and2000ms guard.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate readback and verified host-memory configuration after preserving the failed71/72 native run, retaining all006 UI, references, security assertions and capture deadlines.

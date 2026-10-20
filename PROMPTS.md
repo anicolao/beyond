@@ -572,3 +572,17 @@ Reviewer 12:55: Independently confirmed PR7 29d6729 static-and-rules SUCCESS; se
 Reviewer-authored delegation:
 
 Reviewer 13:00: Independently inspected round96/full-corner/only-b-consumed.png and GameSurface diff. The 4K guild controls now fit inside the widened Spacefaring panel; scoped visual correction accepted. Preserve source/viewport targeting and unchanged screen-fit guards. Reviewed current discovery55 readiness readback diff: exact single-file byte equality plus no ERROR issues, before/after denial, upload+readback on mismatch, shared10s deadline retained; source direction is sound, pending tests and CI. PR8 static/publication remain failed at9a1c190; no final acceptance or008 release. Continue current work; no duplicate reruns absent a concrete change.
+
+
+## Prompt 98: Discovered Overview
+
+Reviewer-authored delegation:
+
+Reviewer 13:15: Independently inspected current full-candidate Dimensional Rift trace. Failure is assertDiscoveryBoard journey.ts:37 via discoveryJourney line127: covered positions/discovered cards fail physical separation in complete compact overview, not timing or pixel mismatch. Current log also has desktop shared-discovery and four-fleet failures (46/48/49). Diagnose scoped short-table overview CSS against these discovered states; preserve overlap assertion and touch sizes, show corrected intermediate desktop captures before accepting affected references. Full007 local gate remains held. Continue running suite/evidence work without interruption; no008 release.
+
+
+## Prompt 99: Propagation Release
+
+Reviewer-authored delegation:
+
+Reviewer 13:30: Independently confirmed affected discovery refresh 6/6, reviewed corrected compact overview/lower view and restored native4K Dimensional Rift061. Scoped discovered-branch selector correction accepted; full007 exact gate still pending, no008 release yet. PR7 b39591c static/docs now PASS, publish FAIL/browser running. PR8 9a1c190 native generation has now finished FAILURE, so preserve its failure evidence and proceed with needed readback propagation without the previous in-flight-generation hold. Source-reviewed shared-memory helper/config: no render flags, exact guards or deadlines removed; performance remains unproven and requires unchanged-reference Linux evidence. Keep CI/hosted final gates separate.
