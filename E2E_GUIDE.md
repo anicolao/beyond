@@ -281,3 +281,6 @@ The backend test command performs isolated emulator readiness before starting Bu
 
 
 Pinned Linux browser jobs use their existing `--ipc=host` allocation for Chromium’s memory-backed shared surfaces. Startup verifies at least256MiB in `/dev/shm` and removes only Playwright’s small-container `--disable-dev-shm-usage` workaround. All pinned rendering flags, browser/image versions, native viewport pixels, comparisons, assertions and shared2,000ms capture deadlines remain unchanged. Any pixel change fails exact comparison; timing failures never authorize reference refreshes. Local macOS launch behavior is unchanged.
+
+
+Hosted rules deployment verifies the named `cloud.firestore` release and its immutable ruleset source. If its complete single-file source matches this revision's `firestore.rules` filename and content exactly, deployment is an identity-verified no-op: it performs no compilation or release write, then reads the same release and complete source again. A changed release identity or source blocks publication. Any source difference requires the current-source compiler gate, exact upload/source readback and release update/readback before the client can publish. Matching an arbitrary historical ruleset never qualifies for reuse. This does not change shared canonical game storage or gate previews on E2E.
