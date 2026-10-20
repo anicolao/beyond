@@ -90,15 +90,18 @@ try {
     if (!lines.length || (!args.length && lines.length !== 1)) fail('Append one unique continuation per commit.');
     const digest = createHash('sha256').update(staged).digest('hex');
     const seen = new Set(oldWork.split('\n'));
-    let history;
+    let history, promptHistory;
     function inheritedRecord(line, parts) {
       if (!args.length || !base) return false;
       history ??= git(['log','--format=%H',`${base}..HEAD`,'--','PROMPT_WORK.md']).trim().split('\n').filter(Boolean).map(ref=>({
         work:trackedAt(ref,'PROMPT_WORK.md').split('\n'), prompts:trackedAt(ref,'PROMPTS.md')
       }));
-      return history.some(record=>record.work.includes(line)
-        && parts[0]===`Prompt ${[...record.prompts.matchAll(/^## Prompt ([1-9][0-9]*): /gm)].at(-1)?.[1]}`
-        && parts[1]===createHash('sha256').update(record.prompts).digest('hex'));
+      if (!history.some(record=>record.work.includes(line))) return false;
+      // Work may be recorded before the next reviewer prompt, then committed
+      // together. Prove both the committed record and its exact prior prompt bytes.
+      promptHistory ??= git(['log','--format=%H','HEAD','--','PROMPTS.md']).trim().split('\n').filter(Boolean).map(ref=>trackedAt(ref,'PROMPTS.md'));
+      return promptHistory.some(prompts=>parts[0]===`Prompt ${[...prompts.matchAll(/^## Prompt ([1-9][0-9]*): /gm)].at(-1)?.[1]}`
+        && parts[1]===createHash('sha256').update(prompts).digest('hex'));
     }
     for (const line of lines) {
       const parts = line.split(' | ');

@@ -159,3 +159,12 @@ test('advanced stacked base accepts an older continuation only with its exact co
  assert.equal(f.check('--base',parent),0);
  f.write(old+step+`Prompt 1 | ${oldDigest} | Invented uncommitted historical continuation\n`,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check('--base',parent),0);
 });
+
+test('committed earlier work can cite its preserved prompt snapshot after a later prompt is bundled',t=>{
+ const f=fixture(t);f.seed();const common=f.git('rev-parse','HEAD').trim();const digest=createHash('sha256').update(initial).digest('hex');
+ const record=`Prompt 1 | ${digest} | Work recorded before the later reviewer prompt\n`;
+ f.write(initial+next);f.write(record,'PROMPT_WORK.md');f.git('add','PROMPTS.md','PROMPT_WORK.md');f.git('commit','-qm','Bundle prior work and later prompt');const child=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',common);f.write(initial+next);f.git('add','PROMPTS.md');f.git('commit','-qm','Parent advances prompt');const parent=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',child);assert.equal(f.check('--base',parent),0);
+ f.write(record.replace(digest,'0'.repeat(64)),'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check('--base',parent),0);
+});

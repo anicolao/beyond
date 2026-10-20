@@ -258,3 +258,5 @@ Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | R
 Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Merge PR7 attribution repair ancestry into PR8 while preserving006 acceptance, both diagnostic histories and new phase ledgers;007 production UI stays separate.
 
 Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Validate inherited stacked continuations against their committed exact prompt hashes when the PR base advances, retaining strict single-step local hooks and both parent histories.
+
+Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Prove bundled earlier work against both committed records and preserved exact prompt snapshots, testing actual advanced-base history without relaxing local commit or screenshot guards.
