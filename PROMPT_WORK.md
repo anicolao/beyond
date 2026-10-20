@@ -228,3 +228,5 @@ Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | R
 Prompt 81 | 12e8b835a5b0fbb9164a888273ec8e3fe39ef604f53efbb00485cac9ae49acb8 | Record07:33 acceptance of the additional Prompt79 rows separately from round78; retain4/4 exact proof, isolate stale emulator configuration diagnosis and preserve pending005 gates/services.
 
 Prompt 82 | c529ce7017ebfadb230125618d5e6005ec38d18e2b4c403def76d1dedd52c4a5 | Preserve61ce658 startup failure; verify published readiness/cache/teardown fixes in006, distinguish later compatibility deadline and correct unauthenticated-read wording without changing guards.
+
+Prompt 83 | f029917fdb64b0f84dce7cd5777cfd2294889e1ecbdb28d6e7d3f507c10951ee | Preserve155/1 Linux compatibility timeout, profile all21 command steps with unchanged assertions, verify published independent-read optimization in006 and retain scoped Linux visual acceptance.

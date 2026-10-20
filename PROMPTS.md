@@ -471,3 +471,9 @@ Reviewer07:33: independently inspected round79 phone/055-same-candidates.png and
 Reviewer-authored phase005 startup/readiness failure handoff; preserve limits, tests, evidence and006 propagation:
 
 Reviewer07:53: independently inspected PR7 static-and-rules failure job118512786813 at head61ce658. Backend152pass/2fail: rules.test.ts initial environment hook timed out5001ms, then cleanup dereferenced undefined environment. Full log saved /tmp/beyond-pr7-static-118512786813.log. Diagnose startup/readiness without weakening limits or skipping tests; preserve failure evidence and fix/propagate through006 as needed. Preview retry still running. Final005 remains pending.
+
+## Prompt 83: Compatibility Deadline Review
+
+Reviewer-authored phase005 in-test compatibility deadline diagnosis and scoped Linux image review:
+
+Reviewer08:54: PR7 head263a591 static job118535929726 now155pass/1fail: deployed remote-3 remains writable with immutable attributed events and Begin timed out5000.96ms inside test, not startup hook. Saved full log /tmp/beyond-pr7-static-118535929726.log. Preserve limits/assertions while diagnosing. Independently viewed Linux005055-same-candidates-phone from pinned3a6archive: compact rows and candidate composition match accepted local design; scoped visual pass only, exact rerun/hosted still required.
