@@ -256,3 +256,5 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | P
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Queue follow-up verification per PR instead of cancelling active Linux exact/native evidence while publishing the compatibility repair.
 
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Preserve exact pixels with lossless environment delivery; add sanitized compatibility phase timing while retaining every assertion and deadline.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Retain every pending PR preview in the serialized deployment group using documented queue:max; preserve all publication and E2E gates.
