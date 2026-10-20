@@ -9,9 +9,15 @@ import protocol from './fixtures/deployed-protocol-34d7cc9.json';
 // Frozen wire-protocol samples from the already deployed PR5 revision.
 // No later application model, setup implementation or UI is backported here.
 type Command={event:Record<string,any>;after:Record<string,any>};
+type CompatibilityTiming={fixture:string;started:number;phase:string;at:number;revision:number;history:{phase:string;revision:number;ms:number}[]};
+const compatibilityTimings:CompatibilityTiming[]=[];
 let environment:RulesTestEnvironment;
 beforeAll(async()=>{environment=await initializeBackendTestEnvironment({projectId:'demo-beyond',firestore:{host:'127.0.0.1',port:Number(process.env.RULES_TEST_PORT??8197),rules:readFileSync('firestore.rules','utf8')}});});
-afterAll(async()=>{await environment?.cleanup();});
+afterAll(async()=>{
+ // Sanitized diagnostics only; all requests, assertions and5s test limits stay intact.
+ console.info('compatibility-timing',JSON.stringify(compatibilityTimings.map(t=>({fixture:t.fixture,phase:t.phase,revision:t.revision,pendingMs:t.phase==='complete'?0:performance.now()-t.at,completedMs:t.at-t.started,recent:t.history.slice(-8),slowest:[...t.history].sort((a,b)=>b.ms-a.ms).slice(0,5)}))));
+ await environment?.cleanup();
+});
 const clients=new Map<string,ReturnType<RulesTestEnvironment['authenticatedContext']>>();
 const database=(uid:string)=>{if(!clients.has(uid))clients.set(uid,environment.authenticatedContext(uid));return clients.get(uid)!.firestore();};
 // Denial probes use the server-only REST transport with the exact same mock
@@ -58,33 +64,47 @@ test('denial transport preserves each principal identity and enforces owner-only
 });
 for(const fixture of protocol.fixtures)test(`deployed ${fixture.name} remains writable with immutable attributed events and Begin`,async()=>{
  const id=crypto.randomUUID(),commands=newCommands(fixture.commands),owner=commands[0].event.actorUid;
+ const clock=performance.now(),timing:CompatibilityTiming={fixture:fixture.name,started:clock,phase:'starting',at:clock,revision:-1,history:[]};compatibilityTimings.push(timing);
+ const mark=(phase:string,revision=timing.revision)=>{const now=performance.now();timing.history.push({phase:timing.phase,revision:timing.revision,ms:now-timing.at});timing.phase=phase;timing.revision=revision;timing.at=now;};
  for(const command of commands){
+  mark('foreign identity denial',command.event.revision as number);
   await assertFails(restWrite(id,command,'compat-intruder'));
   if(fixture.mode==='remote' && command.event.type!=='remote-faction-selected' && Object.keys(command.after.factions??{}).length && command.event.type!=='remote-seat-left'){
+   mark('forged faction denial');
    const forged=structuredClone(command);delete forged.after.factions[Object.keys(forged.after.factions)[0]];
    await assertFails(restWrite(id,forged));
   }
+  mark('legal SDK commit');
   try{await assertSucceeds(write(id,command));}catch(error){throw new Error(`${fixture.name} revision${command.event.revision} ${command.event.type}`,{cause:error});}
+  mark('projection read and immutable event denial');
   await Promise.all([
    getDoc(doc(database(owner),`games/${id}`)).then(snapshot=>expect(snapshot.data()).toEqual(command.after)),
    assertFails(updateDoc(doc(database(owner),`games/${id}/events/${command.event.commandId}`),{name:'Forged'}))
   ]);
+  mark('replay denial');
   await assertFails(restWrite(id,command));
  }
  const db=database(owner),last=commands.at(-1)!;
+ mark('collection access denials');
  await assertFails(getDocs(collection(database('compat-intruder'),'games')));
  await assertFails(getDoc(doc(environment.unauthenticatedContext().firestore(),`games/${id}`)));
  await assertFails(getDocs(collection(database('compat-intruder'),`games/${id}/events`)));
+ mark('immutable Begin denial');
  await assertFails(updateDoc(doc(db,`games/${id}`),{start:{...last.after.start,seed:crypto.randomUUID()}}));
+ mark('root delete denial');
  await assertFails(deleteDoc(doc(db,`games/${id}`)));
  const forged=structuredClone(last);forged.event.commandId=crypto.randomUUID();forged.event.revision++;forged.after.revision++;forged.after.lastCommand=forged.event.commandId;
+ mark('forged projection denial');
  await assertFails(restWrite(id,forged));
+ mark('retained projection read');
  expect((await getDoc(doc(db,`games/${id}`))).data()).toEqual(last.after);
+ mark('invitation and final identity probes');
  if(fixture.mode==='remote'){
   await assertSucceeds(getDoc(doc(database('compat-intruder'),`invites/${last.after.code}`)));
   await assertFails(getDocs(collection(database('compat-intruder'),'invites')));
   await assertFails(updateDoc(doc(db,`invites/${last.after.code}`),{gameId:'hijacked'}));
  }else await assertFails(getDoc(doc(database('compat-guest2'),`games/${id}`)));
+ mark('complete');
 });
 test('deployed remote protocol still atomically rejects competing claims and forged projections',async()=>{
  const fixture=protocol.fixtures.find(f=>f.name==='remote-2')!,commands=newCommands(fixture.commands),id=crypto.randomUUID();

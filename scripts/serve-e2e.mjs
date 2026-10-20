@@ -8,7 +8,7 @@ const clients = [['/beyond/pr2', 'build-e2e-preview'], ['/beyond', 'build-e2e-pr
 for (const [base, directory] of clients) execFileSync('bun', ['run', 'build'], { stdio: 'inherit', env: { ...process.env, PUBLIC_BASE_PATH: base, BUILD_DIRECTORY: directory } });
 // The existing web-server startup budget includes actual emulator readiness.
 await requireEmulatorReadiness(process.env.PUBLIC_FIREBASE_PROJECT_ID,fetch,{auth:Number(process.env.PUBLIC_AUTH_EMULATOR_PORT||9297),firestore:Number(process.env.PUBLIC_FIRESTORE_EMULATOR_PORT||8197)});
-const mime = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.png': 'image/png', '.woff2': 'font/woff2', '.json': 'application/json' };
+const mime = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.png': 'image/png', '.webp': 'image/webp', '.woff2': 'font/woff2', '.json': 'application/json' };
 createServer((request, response) => {
   const path = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
   const client = clients.find(([base]) => path === base || path.startsWith(`${base}/`));
