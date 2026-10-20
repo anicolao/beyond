@@ -920,7 +920,7 @@ Viewpoint: **Bora · North West · shared controller**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 52. Choose the printed ship decommission exchange
+## 52. Inspect the printed ship decommission exchange
 
 Viewpoint: **Bora · North West · shared controller**.
 
@@ -934,11 +934,11 @@ Viewpoint: **Bora · North West · shared controller**.
 
 </details>
 
-- [x] Choose the printed ship decommission exchange
+- [x] Inspect the printed ship decommission exchange
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 53. Choose the unupgraded first ship, preserving the level2 second ship
+## 53. Identify the unupgraded first Sol ship, preserving the level2 second ship
 
 Viewpoint: **Bora · North West · shared controller**.
 
@@ -952,7 +952,7 @@ Viewpoint: **Bora · North West · shared controller**.
 
 </details>
 
-- [x] Choose the unupgraded first ship, preserving the level2 second ship
+- [x] Identify the unupgraded first Sol ship, preserving the level2 second ship
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
@@ -974,7 +974,7 @@ Viewpoint: **Bora · North West · shared controller**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 55. Choose the Population return exchange
+## 55. Inspect the Population return exchange
 
 Viewpoint: **Bora · North West · shared controller**.
 
@@ -988,7 +988,7 @@ Viewpoint: **Bora · North West · shared controller**.
 
 </details>
 
-- [x] Choose the Population return exchange
+- [x] Inspect the Population return exchange
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
@@ -1100,7 +1100,7 @@ Viewpoint: **Bora · North West · shared controller**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 62. Choose the printed recruitment exchange
+## 62. Inspect the printed recruitment exchange
 
 Viewpoint: **Bora · North West · shared controller**.
 
@@ -1114,7 +1114,7 @@ Viewpoint: **Bora · North West · shared controller**.
 
 </details>
 
-- [x] Choose the printed recruitment exchange
+- [x] Inspect the printed recruitment exchange
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 

@@ -660,13 +660,41 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 48. Pay1 Ore and turn the first ship into available Population
+## 48. Inspect the printed ship decommission exchange
 
 Viewpoint: **Bora · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/047-decommissioned-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/047-decommissioned-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/047-decommissioned-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/047-decommissioned-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/047-decommission-exchange-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/047-decommission-exchange-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/047-decommission-exchange-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/047-decommission-exchange-desktop-darwin.png) |
+
+
+
+- [x] Inspect the printed ship decommission exchange
+- [x] Public Technology headings have physical clearance above their cards.
+- [x] The game stays within its actual viewport without page scrolling.
+
+## 49. Identify the unupgraded first Sol ship, preserving the level2 second ship
+
+Viewpoint: **Bora · separate remote identity**.
+
+| phone · 1440 × 1000 | desktop · 393 × 852 |
+| --- | --- |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/048-decommission-target-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/048-decommission-target-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/048-decommission-target-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/048-decommission-target-desktop-darwin.png) |
+
+
+
+- [x] Identify the unupgraded first Sol ship, preserving the level2 second ship
+- [x] Public Technology headings have physical clearance above their cards.
+- [x] The game stays within its actual viewport without page scrolling.
+
+## 50. Pay1 Ore and turn the first ship into available Population
+
+Viewpoint: **Bora · separate remote identity**.
+
+| phone · 1440 × 1000 | desktop · 393 × 852 |
+| --- | --- |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/049-decommissioned-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/049-decommissioned-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/049-decommissioned-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/049-decommissioned-desktop-darwin.png) |
 
 
 
@@ -674,13 +702,27 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 49. Return Population1 to the rightmost Supply space
+## 51. Inspect the Population return exchange
 
 Viewpoint: **Bora · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/048-returned-0-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/048-returned-0-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/048-returned-0-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/048-returned-0-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/050-return-exchange-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/050-return-exchange-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/050-return-exchange-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/050-return-exchange-desktop-darwin.png) |
+
+
+
+- [x] Inspect the Population return exchange
+- [x] Public Technology headings have physical clearance above their cards.
+- [x] The game stays within its actual viewport without page scrolling.
+
+## 52. Return Population1 to the rightmost Supply space
+
+Viewpoint: **Bora · separate remote identity**.
+
+| phone · 1440 × 1000 | desktop · 393 × 852 |
+| --- | --- |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/051-returned-0-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/051-returned-0-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/051-returned-0-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/051-returned-0-desktop-darwin.png) |
 
 
 
@@ -688,13 +730,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 50. Return Population2 to the rightmost Supply space
+## 53. Return Population2 to the rightmost Supply space
 
 Viewpoint: **Bora · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/049-returned-1-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/049-returned-1-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/049-returned-1-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/049-returned-1-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/052-returned-1-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/052-returned-1-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/052-returned-1-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/052-returned-1-desktop-darwin.png) |
 
 
 
@@ -702,13 +744,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 51. Close the trade reader without ending its saved phase
+## 54. Close the trade reader without ending its saved phase
 
 Viewpoint: **Bora · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/050-trade-table-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/050-trade-table-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/050-trade-table-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/050-trade-table-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/053-trade-table-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/053-trade-table-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/053-trade-table-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/053-trade-table-desktop-darwin.png) |
 
 
 
@@ -716,13 +758,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 52. The complete mat shows the actual sixth Supply cube
+## 55. The complete mat shows the actual sixth Supply cube
 
 Viewpoint: **Bora · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/051-supply-overflow-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/051-supply-overflow-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/051-supply-overflow-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/051-supply-overflow-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/054-supply-overflow-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/054-supply-overflow-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/054-supply-overflow-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/054-supply-overflow-desktop-darwin.png) |
 
 
 
@@ -730,13 +772,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 53. Return from the public mat inspection with the trade phase retained
+## 56. Return from the public mat inspection with the trade phase retained
 
 Viewpoint: **Bora · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/052-mat-return-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/052-mat-return-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/052-mat-return-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/052-mat-return-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/055-mat-return-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/055-mat-return-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/055-mat-return-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/055-mat-return-desktop-darwin.png) |
 
 
 
@@ -744,13 +786,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 54. Resume the same accepted trade stream
+## 57. Resume the same accepted trade stream
 
 Viewpoint: **Bora · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/053-trade-resumed-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/053-trade-resumed-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/053-trade-resumed-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/053-trade-resumed-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/056-trade-resumed-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/056-trade-resumed-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/056-trade-resumed-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/056-trade-resumed-desktop-darwin.png) |
 
 
 
@@ -758,13 +800,27 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 55. Pay3 Ore and convert the leftmost Supply into Population
+## 58. Inspect the printed recruitment exchange
 
 Viewpoint: **Bora · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/054-recruited-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/054-recruited-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/054-recruited-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/054-recruited-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/057-recruit-exchange-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/057-recruit-exchange-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/057-recruit-exchange-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/057-recruit-exchange-desktop-darwin.png) |
+
+
+
+- [x] Inspect the printed recruitment exchange
+- [x] Public Technology headings have physical clearance above their cards.
+- [x] The game stays within its actual viewport without page scrolling.
+
+## 59. Pay3 Ore and convert the leftmost Supply into Population
+
+Viewpoint: **Bora · separate remote identity**.
+
+| phone · 1440 × 1000 | desktop · 393 × 852 |
+| --- | --- |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/058-recruited-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/058-recruited-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/058-recruited-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/058-recruited-desktop-darwin.png) |
 
 
 
@@ -772,13 +828,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 56. Reload preserves the accepted exchanges and trading phase
+## 60. Reload preserves the accepted exchanges and trading phase
 
 Viewpoint: **Bora · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/055-retained-trade-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/055-retained-trade-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/055-retained-trade-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/055-retained-trade-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/059-retained-trade-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/059-retained-trade-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/059-retained-trade-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/059-retained-trade-desktop-darwin.png) |
 
 
 
@@ -786,13 +842,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 57. Reopen the saved balance without duplicating an exchange
+## 61. Reopen the saved balance without duplicating an exchange
 
 Viewpoint: **Bora · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/056-restored-trade-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/056-restored-trade-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/056-restored-trade-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/056-restored-trade-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/060-restored-trade-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/060-restored-trade-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/060-restored-trade-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/060-restored-trade-desktop-darwin.png) |
 
 
 
@@ -800,13 +856,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 58. Bora hands off automatically after the resolved production branch
+## 62. Bora hands off automatically after the resolved production branch
 
 Viewpoint: **Bora · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/057-turn-1-handoff-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/057-turn-1-handoff-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/057-turn-1-handoff-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/057-turn-1-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/061-turn-1-handoff-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/061-turn-1-handoff-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/061-turn-1-handoff-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/061-turn-1-handoff-desktop-darwin.png) |
 
 
 
@@ -814,13 +870,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 59. Cleo sees the canonical handoff on their own interface
+## 63. Cleo sees the canonical handoff on their own interface
 
 Viewpoint: **Cleo · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/058-turn-1-next-player-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/058-turn-1-next-player-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/058-turn-1-next-player-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/058-turn-1-next-player-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/062-turn-1-next-player-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/062-turn-1-next-player-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/062-turn-1-next-player-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/062-turn-1-next-player-desktop-darwin.png) |
 
 
 
@@ -828,13 +884,13 @@ Viewpoint: **Cleo · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 60. Cleo plans the real Action pawn and permanent research payment
+## 64. Cleo plans the real Action pawn and permanent research payment
 
 Viewpoint: **Cleo · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/059-turn-2-plan-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/059-turn-2-plan-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/059-turn-2-plan-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/059-turn-2-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/063-turn-2-plan-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/063-turn-2-plan-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/063-turn-2-plan-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/063-turn-2-plan-desktop-darwin.png) |
 
 
 
@@ -842,13 +898,13 @@ Viewpoint: **Cleo · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 61. Cleo selects Advanced Robotics without paying yet
+## 65. Cleo selects Advanced Robotics without paying yet
 
 Viewpoint: **Cleo · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/060-turn-2-selected-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/060-turn-2-selected-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/060-turn-2-selected-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/060-turn-2-selected-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/064-turn-2-selected-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/064-turn-2-selected-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/064-turn-2-selected-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/064-turn-2-selected-desktop-darwin.png) |
 
 
 
@@ -856,13 +912,13 @@ Viewpoint: **Cleo · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 62. Cleo pays once, places the permanent cube and resolves Advanced Robotics
+## 66. Cleo pays once, places the permanent cube and resolves Advanced Robotics
 
 Viewpoint: **Cleo · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/061-turn-2-researched-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/061-turn-2-researched-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/061-turn-2-researched-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/061-turn-2-researched-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/065-turn-2-researched-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/065-turn-2-researched-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/065-turn-2-researched-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/065-turn-2-researched-desktop-darwin.png) |
 
 
 
@@ -870,13 +926,13 @@ Viewpoint: **Cleo · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 63. Cleo hands off automatically after the resolved production branch
+## 67. Cleo hands off automatically after the resolved production branch
 
 Viewpoint: **Cleo · separate remote identity**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/062-turn-2-handoff-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/062-turn-2-handoff-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/062-turn-2-handoff-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/062-turn-2-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/066-turn-2-handoff-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/066-turn-2-handoff-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/066-turn-2-handoff-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/066-turn-2-handoff-desktop-darwin.png) |
 
 
 
@@ -884,13 +940,13 @@ Viewpoint: **Cleo · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 64. Ada sees the canonical handoff on their own interface
+## 68. Ada sees the canonical handoff on their own interface
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/063-turn-2-next-player-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/063-turn-2-next-player-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/063-turn-2-next-player-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/063-turn-2-next-player-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/067-turn-2-next-player-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/067-turn-2-next-player-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/067-turn-2-next-player-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/067-turn-2-next-player-desktop-darwin.png) |
 
 
 
@@ -898,13 +954,13 @@ Viewpoint: **Ada · host**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 65. Reload recovers permanent cubes, occupied spaces and all economies
+## 69. Reload recovers permanent cubes, occupied spaces and all economies
 
 Viewpoint: **Ada · host**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/064-restored-round-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/064-restored-round-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/064-restored-round-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/064-restored-round-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/068-restored-round-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/068-restored-round-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/068-restored-round-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/068-restored-round-desktop-darwin.png) |
 
 
 
@@ -912,13 +968,13 @@ Viewpoint: **Ada · host**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 66. A separate unseated identity sees permanent public research without turn authority
+## 70. A separate unseated identity sees permanent public research without turn authority
 
 Viewpoint: **Public observer · separate identity**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/065-public-observer-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/065-public-observer-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/065-public-observer-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/065-public-observer-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/069-public-observer-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/069-public-observer-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/069-public-observer-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/069-public-observer-desktop-darwin.png) |
 
 
 
@@ -926,13 +982,13 @@ Viewpoint: **Public observer · separate identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 67. The observer can inspect the same researched public face
+## 71. The observer can inspect the same researched public face
 
 Viewpoint: **Public observer · separate identity**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/066-observer-inspects-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/066-observer-inspects-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/066-observer-inspects-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/066-observer-inspects-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/070-observer-inspects-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/070-observer-inspects-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/070-observer-inspects-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/070-observer-inspects-desktop-darwin.png) |
 
 
 
@@ -940,13 +996,13 @@ Viewpoint: **Public observer · separate identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 68. Escape restores public inspection focus without acquiring a seat
+## 72. Escape restores public inspection focus without acquiring a seat
 
 Viewpoint: **Public observer · separate identity**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/067-observer-return-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/067-observer-return-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/067-observer-return-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/067-observer-return-desktop-darwin.png) |
+| [![phone](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/071-observer-return-phone-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/071-observer-return-phone-darwin.png) | [![desktop](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/071-observer-return-desktop-darwin.png)](../../screenshots/research-and-recover-a-complete-3-player-remote-first-round/071-observer-return-desktop-darwin.png) |
 
 
 

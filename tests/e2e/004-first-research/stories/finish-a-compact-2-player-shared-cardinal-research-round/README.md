@@ -506,13 +506,41 @@ Viewpoint: **Bora · North · shared controller**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 37. Pay1 Ore and turn the first ship into available Population
+## 37. Inspect the printed ship decommission exchange
 
 Viewpoint: **Bora · North · shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/036-decommissioned-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/036-decommissioned-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/036-decommission-exchange-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/036-decommission-exchange-desktop-darwin.png) |
+
+
+
+- [x] Inspect the printed ship decommission exchange
+- [x] Public Technology headings have physical clearance above their cards.
+- [x] The game stays within its actual viewport without page scrolling.
+
+## 38. Identify the unupgraded first Sol ship, preserving the level2 second ship
+
+Viewpoint: **Bora · North · shared controller**.
+
+| desktop · 1280 × 720 |
+| --- |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/037-decommission-target-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/037-decommission-target-desktop-darwin.png) |
+
+
+
+- [x] Identify the unupgraded first Sol ship, preserving the level2 second ship
+- [x] Public Technology headings have physical clearance above their cards.
+- [x] The game stays within its actual viewport without page scrolling.
+
+## 39. Pay1 Ore and turn the first ship into available Population
+
+Viewpoint: **Bora · North · shared controller**.
+
+| desktop · 1280 × 720 |
+| --- |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/038-decommissioned-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/038-decommissioned-desktop-darwin.png) |
 
 
 
@@ -520,13 +548,27 @@ Viewpoint: **Bora · North · shared controller**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 38. Return Population1 to the rightmost Supply space
+## 40. Inspect the Population return exchange
 
 Viewpoint: **Bora · North · shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/037-returned-0-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/037-returned-0-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/039-return-exchange-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/039-return-exchange-desktop-darwin.png) |
+
+
+
+- [x] Inspect the Population return exchange
+- [x] Public Technology headings have physical clearance above their cards.
+- [x] The game stays within its actual viewport without page scrolling.
+
+## 41. Return Population1 to the rightmost Supply space
+
+Viewpoint: **Bora · North · shared controller**.
+
+| desktop · 1280 × 720 |
+| --- |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/040-returned-0-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/040-returned-0-desktop-darwin.png) |
 
 
 
@@ -534,13 +576,13 @@ Viewpoint: **Bora · North · shared controller**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 39. Return Population2 to the rightmost Supply space
+## 42. Return Population2 to the rightmost Supply space
 
 Viewpoint: **Bora · North · shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/038-returned-1-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/038-returned-1-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/041-returned-1-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/041-returned-1-desktop-darwin.png) |
 
 
 
@@ -548,13 +590,13 @@ Viewpoint: **Bora · North · shared controller**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 40. Close the trade reader without ending its saved phase
+## 43. Close the trade reader without ending its saved phase
 
 Viewpoint: **Bora · North · shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/039-trade-table-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/039-trade-table-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/042-trade-table-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/042-trade-table-desktop-darwin.png) |
 
 
 
@@ -562,13 +604,13 @@ Viewpoint: **Bora · North · shared controller**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 41. The complete mat shows the actual sixth Supply cube
+## 44. The complete mat shows the actual sixth Supply cube
 
 Viewpoint: **Bora · North · shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/040-supply-overflow-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/040-supply-overflow-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/043-supply-overflow-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/043-supply-overflow-desktop-darwin.png) |
 
 
 
@@ -576,13 +618,13 @@ Viewpoint: **Bora · North · shared controller**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 42. Return from the public mat inspection with the trade phase retained
+## 45. Return from the public mat inspection with the trade phase retained
 
 Viewpoint: **Bora · North · shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/041-mat-return-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/041-mat-return-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/044-mat-return-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/044-mat-return-desktop-darwin.png) |
 
 
 
@@ -590,13 +632,13 @@ Viewpoint: **Bora · North · shared controller**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 43. Resume the same accepted trade stream
+## 46. Resume the same accepted trade stream
 
 Viewpoint: **Bora · North · shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/042-trade-resumed-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/042-trade-resumed-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/045-trade-resumed-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/045-trade-resumed-desktop-darwin.png) |
 
 
 
@@ -604,13 +646,27 @@ Viewpoint: **Bora · North · shared controller**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 44. Pay3 Ore and convert the leftmost Supply into Population
+## 47. Inspect the printed recruitment exchange
 
 Viewpoint: **Bora · North · shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/043-recruited-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/043-recruited-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/046-recruit-exchange-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/046-recruit-exchange-desktop-darwin.png) |
+
+
+
+- [x] Inspect the printed recruitment exchange
+- [x] Public Technology headings have physical clearance above their cards.
+- [x] The game stays within its actual viewport without page scrolling.
+
+## 48. Pay3 Ore and convert the leftmost Supply into Population
+
+Viewpoint: **Bora · North · shared controller**.
+
+| desktop · 1280 × 720 |
+| --- |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/047-recruited-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/047-recruited-desktop-darwin.png) |
 
 
 
@@ -618,13 +674,13 @@ Viewpoint: **Bora · North · shared controller**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 45. Reload preserves the accepted exchanges and trading phase
+## 49. Reload preserves the accepted exchanges and trading phase
 
 Viewpoint: **Bora · North · shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/044-retained-trade-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/044-retained-trade-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/048-retained-trade-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/048-retained-trade-desktop-darwin.png) |
 
 
 
@@ -632,13 +688,13 @@ Viewpoint: **Bora · North · shared controller**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 46. Reopen the saved balance without duplicating an exchange
+## 50. Reopen the saved balance without duplicating an exchange
 
 Viewpoint: **Bora · North · shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/045-restored-trade-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/045-restored-trade-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/049-restored-trade-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/049-restored-trade-desktop-darwin.png) |
 
 
 
@@ -646,13 +702,13 @@ Viewpoint: **Bora · North · shared controller**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 47. Bora hands off automatically after the resolved production branch
+## 51. Bora hands off automatically after the resolved production branch
 
 Viewpoint: **Bora · North · shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/046-turn-1-handoff-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/046-turn-1-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/050-turn-1-handoff-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/050-turn-1-handoff-desktop-darwin.png) |
 
 
 
@@ -660,13 +716,13 @@ Viewpoint: **Bora · North · shared controller**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 48. Reload recovers permanent cubes, occupied spaces and all economies
+## 52. Reload recovers permanent cubes, occupied spaces and all economies
 
 Viewpoint: **Ada · South · shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/047-restored-round-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/047-restored-round-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/051-restored-round-desktop-darwin.png)](../../screenshots/finish-a-compact-2-player-shared-cardinal-research-round/051-restored-round-desktop-darwin.png) |
 
 
 

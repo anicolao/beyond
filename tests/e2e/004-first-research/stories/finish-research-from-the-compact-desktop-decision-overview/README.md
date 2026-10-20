@@ -548,13 +548,41 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 40. Pay1 Ore and turn the first ship into available Population
+## 40. Inspect the printed ship decommission exchange
 
 Viewpoint: **Bora · separate remote identity**.
 
 | desktop · 393 × 852 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/039-decommissioned-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/039-decommissioned-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/039-decommission-exchange-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/039-decommission-exchange-desktop-darwin.png) |
+
+
+
+- [x] Inspect the printed ship decommission exchange
+- [x] Public Technology headings have physical clearance above their cards.
+- [x] The game stays within its actual viewport without page scrolling.
+
+## 41. Identify the unupgraded first Sol ship, preserving the level2 second ship
+
+Viewpoint: **Bora · separate remote identity**.
+
+| desktop · 393 × 852 |
+| --- |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/040-decommission-target-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/040-decommission-target-desktop-darwin.png) |
+
+
+
+- [x] Identify the unupgraded first Sol ship, preserving the level2 second ship
+- [x] Public Technology headings have physical clearance above their cards.
+- [x] The game stays within its actual viewport without page scrolling.
+
+## 42. Pay1 Ore and turn the first ship into available Population
+
+Viewpoint: **Bora · separate remote identity**.
+
+| desktop · 393 × 852 |
+| --- |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/041-decommissioned-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/041-decommissioned-desktop-darwin.png) |
 
 
 
@@ -562,13 +590,27 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 41. Return Population1 to the rightmost Supply space
+## 43. Inspect the Population return exchange
 
 Viewpoint: **Bora · separate remote identity**.
 
 | desktop · 393 × 852 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/040-returned-0-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/040-returned-0-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/042-return-exchange-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/042-return-exchange-desktop-darwin.png) |
+
+
+
+- [x] Inspect the Population return exchange
+- [x] Public Technology headings have physical clearance above their cards.
+- [x] The game stays within its actual viewport without page scrolling.
+
+## 44. Return Population1 to the rightmost Supply space
+
+Viewpoint: **Bora · separate remote identity**.
+
+| desktop · 393 × 852 |
+| --- |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/043-returned-0-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/043-returned-0-desktop-darwin.png) |
 
 
 
@@ -576,13 +618,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 42. Return Population2 to the rightmost Supply space
+## 45. Return Population2 to the rightmost Supply space
 
 Viewpoint: **Bora · separate remote identity**.
 
 | desktop · 393 × 852 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/041-returned-1-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/041-returned-1-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/044-returned-1-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/044-returned-1-desktop-darwin.png) |
 
 
 
@@ -590,13 +632,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 43. Close the trade reader without ending its saved phase
+## 46. Close the trade reader without ending its saved phase
 
 Viewpoint: **Bora · separate remote identity**.
 
 | desktop · 393 × 852 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/042-trade-table-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/042-trade-table-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/045-trade-table-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/045-trade-table-desktop-darwin.png) |
 
 
 
@@ -604,13 +646,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 44. The complete mat shows the actual sixth Supply cube
+## 47. The complete mat shows the actual sixth Supply cube
 
 Viewpoint: **Bora · separate remote identity**.
 
 | desktop · 393 × 852 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/043-supply-overflow-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/043-supply-overflow-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/046-supply-overflow-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/046-supply-overflow-desktop-darwin.png) |
 
 
 
@@ -618,13 +660,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 45. Return from the public mat inspection with the trade phase retained
+## 48. Return from the public mat inspection with the trade phase retained
 
 Viewpoint: **Bora · separate remote identity**.
 
 | desktop · 393 × 852 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/044-mat-return-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/044-mat-return-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/047-mat-return-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/047-mat-return-desktop-darwin.png) |
 
 
 
@@ -632,13 +674,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 46. Resume the same accepted trade stream
+## 49. Resume the same accepted trade stream
 
 Viewpoint: **Bora · separate remote identity**.
 
 | desktop · 393 × 852 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/045-trade-resumed-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/045-trade-resumed-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/048-trade-resumed-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/048-trade-resumed-desktop-darwin.png) |
 
 
 
@@ -646,13 +688,27 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 47. Pay3 Ore and convert the leftmost Supply into Population
+## 50. Inspect the printed recruitment exchange
 
 Viewpoint: **Bora · separate remote identity**.
 
 | desktop · 393 × 852 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/046-recruited-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/046-recruited-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/049-recruit-exchange-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/049-recruit-exchange-desktop-darwin.png) |
+
+
+
+- [x] Inspect the printed recruitment exchange
+- [x] Public Technology headings have physical clearance above their cards.
+- [x] The game stays within its actual viewport without page scrolling.
+
+## 51. Pay3 Ore and convert the leftmost Supply into Population
+
+Viewpoint: **Bora · separate remote identity**.
+
+| desktop · 393 × 852 |
+| --- |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/050-recruited-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/050-recruited-desktop-darwin.png) |
 
 
 
@@ -660,13 +716,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 48. Reload preserves the accepted exchanges and trading phase
+## 52. Reload preserves the accepted exchanges and trading phase
 
 Viewpoint: **Bora · separate remote identity**.
 
 | desktop · 393 × 852 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/047-retained-trade-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/047-retained-trade-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/051-retained-trade-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/051-retained-trade-desktop-darwin.png) |
 
 
 
@@ -674,13 +730,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 49. Reopen the saved balance without duplicating an exchange
+## 53. Reopen the saved balance without duplicating an exchange
 
 Viewpoint: **Bora · separate remote identity**.
 
 | desktop · 393 × 852 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/048-restored-trade-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/048-restored-trade-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/052-restored-trade-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/052-restored-trade-desktop-darwin.png) |
 
 
 
@@ -688,13 +744,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 50. Bora hands off automatically after the resolved production branch
+## 54. Bora hands off automatically after the resolved production branch
 
 Viewpoint: **Bora · separate remote identity**.
 
 | desktop · 393 × 852 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/049-turn-1-handoff-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/049-turn-1-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/053-turn-1-handoff-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/053-turn-1-handoff-desktop-darwin.png) |
 
 
 
@@ -702,13 +758,13 @@ Viewpoint: **Bora · separate remote identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 51. Ada sees the canonical handoff on their own interface
+## 55. Ada sees the canonical handoff on their own interface
 
 Viewpoint: **Ada · host**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/050-turn-1-next-player-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/050-turn-1-next-player-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/054-turn-1-next-player-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/054-turn-1-next-player-desktop-darwin.png) |
 
 
 
@@ -716,13 +772,13 @@ Viewpoint: **Ada · host**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 52. Reload recovers permanent cubes, occupied spaces and all economies
+## 56. Reload recovers permanent cubes, occupied spaces and all economies
 
 Viewpoint: **Ada · host**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/051-restored-round-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/051-restored-round-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/055-restored-round-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/055-restored-round-desktop-darwin.png) |
 
 
 
@@ -730,13 +786,13 @@ Viewpoint: **Ada · host**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 53. A separate unseated identity sees permanent public research without turn authority
+## 57. A separate unseated identity sees permanent public research without turn authority
 
 Viewpoint: **Public observer · separate identity**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/052-public-observer-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/052-public-observer-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/056-public-observer-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/056-public-observer-desktop-darwin.png) |
 
 
 
@@ -744,13 +800,13 @@ Viewpoint: **Public observer · separate identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 54. The observer can inspect the same researched public face
+## 58. The observer can inspect the same researched public face
 
 Viewpoint: **Public observer · separate identity**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/053-observer-inspects-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/053-observer-inspects-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/057-observer-inspects-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/057-observer-inspects-desktop-darwin.png) |
 
 
 
@@ -758,13 +814,13 @@ Viewpoint: **Public observer · separate identity**.
 - [x] Public Technology headings have physical clearance above their cards.
 - [x] The game stays within its actual viewport without page scrolling.
 
-## 55. Escape restores public inspection focus without acquiring a seat
+## 59. Escape restores public inspection focus without acquiring a seat
 
 Viewpoint: **Public observer · separate identity**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/054-observer-return-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/054-observer-return-desktop-darwin.png) |
+| [![desktop](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/058-observer-return-desktop-darwin.png)](../../screenshots/finish-research-from-the-compact-desktop-decision-overview/058-observer-return-desktop-darwin.png) |
 
 
 

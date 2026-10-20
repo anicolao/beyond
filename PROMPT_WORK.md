@@ -297,3 +297,15 @@ Prompt 98 | 9e3c6771d80fb656ae220209778b64c4c2093cbd77510fa0f82232b2626991b4 | P
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate readback and verified host-memory configuration after preserving the failed71/72 native run, retaining all006 UI, references, security assertions and capture deadlines.
 
 Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Reconcile007 with current006 ancestry while preserving both continuation streams, accepted production references and every existing capture guard.
+
+Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Begin008 on feat/trade-decommission from committed007; preserve review backend identities and open persistent5203 for ordinary trade/decommission review.
+
+Prompt 103 | 411dab116b801ee67e3d91eca866eef2e3bf76db761b57c9a65d6d43428b2f58 | Preserve PR8 comparison/candidate failures separately, correct trade-only Supply labels and rotated controls, and prove ordinary covered-B/control-changing decommission locally.
+
+Prompt 104 | 2e51efa47e5a050d37fcf1f76cdbcba50473cb2730883a56184061fdcfcdf36f | Label trade-triggered control continuations truthfully, preserve discovery wording, and verify phone/shared reload, keyboard return and native inspector teardown with unchanged guards.
+
+Prompt 107 | 41d68992c83711ff99342b86398d69cab0dd7a06e0c632c711505b15a4678a69 | Preserve PR9 Linux failures separately; classify missing references, inherited pixel mismatches and primary capture timeout.
+
+Prompt 111 | b16a8225991612529daef92aeca6b9fae62970b964e7b10ba4773f9697f0596d | Correct compact trade footer containment, prove native short and4K replay, preserve distinct PR9 native failures and resume formal validation.
+
+Prompt 112 | 8a063e14627321e4e3d6ea70390e02d79b7293ba57354d358f62cdd4ca749e4a | Publish locally accepted008 with92 exact journeys and preserve pending stack gates; release009 on a separate dependent branch.

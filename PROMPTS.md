@@ -593,3 +593,82 @@ Reviewer 13:30: Independently confirmed affected discovery refresh 6/6, reviewed
 Reviewer-authored delegation:
 
 Reviewer 13:45 LOCAL ACCEPTANCE / NEXT PHASE RELEASE: Independently verified production98-final-exact completed80/80; inspected80 story.json records all generating=false,5067 frames total,007 increment8 variants/1028 frames. Also verified178 backend tests/2996 assertions,43 capture guards,47 tooling tests,clean types/source policy. Together with independent ordinary production/empty A and exposed B/conservation/reload and phone/cardinal/corner/4K visual review,007 is locally ACCEPTED. Commit/push007 on feat/production-management and open its PR based on feat/rival-research. You are explicitly authorized to begin008 Trade and decommission on a NEW branch stacked on007 while Linux CI and matching-head hosted gates finish; do not wait for those or another human prompt. Implement exact three trade rates, repeated exchanges, left-to-right Supply draw/right-to-left returns and overflow, ship decommission with immediate control recalculation, Finish trading/pass, no ordinary production added; use source-reviewed rules and local desktop/phone/shared real flows first. Preserve005/006 unresolved publication/Linux gates separately and propagate repairs. No merges.
+
+
+## Prompt 101: Trade Semantics
+
+Reviewer-authored delegation:
+
+Reviewer 14:00 preliminary008 visual feedback: independently viewed round100 trade-initial-1280 and remote/ship-selected-393. Physical composition/contained controls look promising. Concrete semantic defect: Trade still shows production preview Full growth +1, Covered columns, +1 Pop and Only exposed letters draw from their matching column. Those are production rules, contradicting trade leftmost-nonempty Supply regardless of exposed Food. Give trade its own read-only Supply visualization/labels: actual next draw and rightmost return/overflow, selected exchange consequence, no implied growth or Ore payout; retain20-cube inspection. Test a covered-column trade draw to demonstrate distinction. Await desktop/phone/shared rotated evidence and independent ordinary flow; no008 acceptance/baseline release yet.
+
+
+## Prompt 102: Scoped Acceptance
+
+Reviewer-authored delegation:
+
+Reviewer14:05: Independently viewed round101 trade-initial-1280 and remote/ship-selected-393. Scoped trade-specific Supply correction accepted: leftmost draw/rightmost return/overflow labels replace false production yields; controls remain contained. Full008 local acceptance still pending independent ordinary flow, covered-column UI evidence, rotated/shared controls and control-changing decommission. GitHub now independently confirms PR7 3077d57 browser-comparison PASS alongside static/docs; publication remains FAIL, so final005 still awaits matching-head hosted gate. No duplicate Linux run needed absent changes. Continue upload recovery and008 local evidence.
+
+
+## Prompt 103: Linux Findings
+
+Reviewer-authored delegation:
+
+Reviewer14:10: Independently viewed round102 covered-phone/draw-b-food-covered.png; A0/B4 selected drawB and3Ore conversion are clear, scoped covered-column presentation passes. Independent PR8 Linux0094e6b result now55/72,17fail: missing new006 Linux references PLUS actual pixel mismatches and a shared2000ms capture timeout. Saved full log /tmp/beyond-review-pr8-linux.log. Preserve artifacts and diagnose inherited mismatches/timing separately; do not classify all17 as missing candidates or accept updated pixels without review. Native generation still running; avoid cancellation. Full008 live/control-change/rotation review remains pending.
+
+
+## Prompt 104: Control Context
+
+Reviewer-authored delegation:
+
+Reviewer14:25: Independent own tablef9118b45 ordinary Gather→Trade verified all3 exact rates, repeated returns/A overflow, reload retains4Pop1Ore/no ships, Finish→Bora without production. Reviewed compact45degree control-change-selected: controls separated/contained, scoped layout passes. One remaining semantic issue in round102/covered-phone/bora-control-choice.png: decommission-triggered outpost choice says Discovery phase, Humanity’s next discovery, Payment saved/Revealed information cannot be undone. No discovery/reveal happened here; use contextual control-transfer/outpost heading and continuation status for trade-triggered responder, preserving genuine discovery wording for actual discovery. Review phone/shared restored trade and keyboard return after correction; no baseline release yet.
+
+
+## Prompt 105: Validation Release
+
+Reviewer-authored delegation:
+
+Reviewer14:30: Independently reviewed round104 phone restored control choice, corrected cube inspector, and native4K rotated responder. Scoped wording/containment fixes accepted; read continuation-kind preservation tests and phone3/corner3 ordinary control-changing PASS logs, types clean. Combined with prior independent three-rate/overflow/reload/pass flow and local composition reviews, proceed to formal illustrated008 candidate generation then independent exact comparison and full required local checks with guards unchanged. This releases validation only, not full008 local acceptance or009. Include inspector keyboard focus return and ensure shared ProductionPreview portal change does not regress007. Keep PR7 publication, PR8 mixed Linux failures, PR9 ongoing checks separate; never merge.
+
+
+## Prompt 106: Publication Failure
+
+Reviewer-authored delegation:
+
+Reviewer14:35: Validation release acknowledgement confirmed. New gate: PR9 0495b1e publication failed14:33; independently read job118680854239, exact Rules POST projects/beyond-20261018:test HTTP503. Diagnostic log preserved /tmp/beyond-review-pr9-publish.log. Track with existing strict compiler blocker; no fallback or altered rules semantics. PR9 static/browser/native still running. Continue008 formal work without duplicate visual iteration; full008 acceptance and009 remain pending required local checks.
+
+
+## Prompt 107: Regression Findings
+
+Reviewer-authored delegation:
+
+Reviewer14:50: New PR9 Linux failure independently verified via completed job118681604970 logs (gh api job/logs works while run still active):29/80 PASS,51fail. Log /tmp/beyond-review-pr9-linux.log has18 missing references,32 exact snapshot mismatches and1 CDP detach error. Preserve artifacts and diagnose inherited mismatches separately; do not blanket accept generated refs. Native generation still running.008 corrected candidates12/12 and backend186/3057 verified; full local regression/exact still required before009. Continue current run without interruption; track this distinct new CI failure.
+
+## Prompt 108: Footer Containment
+
+Reviewer-authored delegation:
+
+Reviewer15:15: Affected refresh23/23 confirmed. Independently viewed current008 053-control-ship-selected-tabletop-4k-darwin.png: trade-boundary paragraph at bottom of Supply side visibly runs beneath opaque footer (Trade replaces production. Exchange... remainder clipped). Do not accept this native4K composition from green guards alone. Fit the full explanatory sentence above footer or shorten it meaningfully; preserve rates/control consequence and44px controls. Verify native4K selected decommission and return/focus views locally, plus strengthen containment coverage for this text. Hold visual acceptance of revised compact4K until corrected; no009.
+
+## Prompt 109: Native Failures
+
+Reviewer-authored delegation:
+
+Reviewer15:20: New PR9 native generation result independently verified77/80,3fail:003 two-player shared4K and007 four-corner/four-cardinal4K. Log /tmp/beyond-review-pr9-native.log has two2000ms/shared-capture deadlines plus closed-page error; preserve evidence and inspect primary causes separately. New containment guard source reviewed and observed correctly rejecting live497>494 overlap; continue fix without weakening it. No duplicate visual acceptance; await fresh local native4K proof.
+
+## Prompt 110: Scoped Acceptance
+
+Reviewer-authored delegation:
+
+Reviewer15:25: Independently inspected round109 control-change-selected-3840 and trade-cube-focus-return-3840: full boundary sentence now visible above footer; rates/control consequence and focus ring retained. Scoped native4K correction ACCEPTED. Read ordinary corner replay PASS. Short640 round109-short2 still474>458 per guard, so overall compact visual acceptance/full validation remains held pending that fix and independent fresh short capture. Continue current correction; no009.
+
+## Prompt 111: Validation Resumed
+
+Reviewer-authored delegation:
+
+Reviewer15:30: Independently inspected round109-final selected640 and matching3840. Complete shortened Supply rules and trade boundary clear footer; selected ship/control consequence, decommission and Finish remain contained. Scoped short-layout correction ACCEPTED; ordinary replay/keyboard/teardown PASS and types/policy clean verified. Resume affected formal candidate refresh followed by full independent exact comparison with containment guards enabled. Full008 LOCAL acceptance and009 remain pending completed checks. Keep outstanding PR7/8/9 Linux/publication repairs tracked separately; no merges.
+
+## Prompt 112: Automation Release
+
+Reviewer-authored delegation:
+
+Reviewer16:01: Phase008 LOCAL ACCEPTED. Independently verified full exact92/92 PASS and audited92 story records, all generating=false,5853 frames, plus prior ordinary live trade/reload/finish and round109-final640/4K containment reviews. Local backend186/3057, guards48, tooling47, types/policy and diff check pass. Commit/push008 and open its PR based on feat/production-management; then explicitly begin009 Automate production on a NEW branch stacked on008 without waiting for CI or another human prompt. Preserve production visuals and source-reviewed automation rules, permanent automation distinct from outposts, exposed yields/cumulative scoring, deterministic placeholders/levels beyond7. Keep persistent local server for independent desktop/phone/shared review.008 final acceptance still requires Linux exact and matching-head hosted preview. Track and repair outstanding005-007 Linux/publication gates separately; failed native archives remain unaccepted. Never merge. Log as reviewer-authored and report PR/base/head and009 branch.
