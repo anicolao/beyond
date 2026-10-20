@@ -8,6 +8,7 @@
   import FactionChoice from '$lib/game/FactionChoice.svelte';
   import GameSurface from '$lib/game/GameSurface.svelte';
   import { factions, setupVersion } from '$lib/game/manifest';
+  import {projectGame} from '$lib/game/turn';
   import { startingSetup } from '$lib/game/setup';
   import InviteQr from '$lib/remote/InviteQr.svelte';
   let rosterElement=$state<HTMLDivElement>(undefined!),rosterFirst=$state(1),rosterLast=$state(1),earlierSeats=$state(false),laterSeats=$state(false);
@@ -47,7 +48,7 @@
   const occupants = $derived(Object.values(room?.seats ?? {}));
   const readyCount = $derived(occupants.filter(seat => seat?.ready).length);
   const complete = $derived(!!room && occupants.length === room.settings.capacity && readyCount === occupants.length);
-  const game = $derived(room?.start ? startingSetup(room.start,remotePositions.filter(p=>room?.seats[p]).map(p=>({position:p,name:room!.seats[p]!.name,faction:room!.factions![p]!})),room.settings):undefined);
+  const game = $derived(room?.start ? projectGame(startingSetup(room.start,remotePositions.filter(p=>room?.seats[p]).map(p=>({position:p,name:room!.seats[p]!.name,faction:room!.factions![p]!})),room.settings),room.play):undefined);
   const canBegin = $derived(complete && room?.settings.factions === 'basic' && occupants.every(seat=>!!room?.factions?.[room.members[seat!.uid]]));
   const full = $derived(!!room && occupants.length === room.settings.capacity);
   const invitation = $derived(typeof location === 'undefined' || !room ? '' : `${location.origin}${base}/remote/?join=${room.code}`);
@@ -149,7 +150,7 @@
       {:else}<form class="ivory code-form" onsubmit={event => { event.preventDefault(); void find(); }}><h2>An invitation to explore</h2><label>Invitation code<input bind:value={inviteCode} maxlength="5" minlength="5" required pattern={'[A-Za-z]{5}'} autocapitalize="characters" autocomplete="off" spellcheck="false"/></label><p>Enter the five letters shared by your host. You’ll see the room before taking a seat.</p><button type="submit" class="primary" disabled={busy || status !== 'synced' || inviteCode.trim().length !== 5}>Find room</button></form>{/if}
     </section>
   {:else if game}
-    <GameSurface {game} ownPosition={ownPosition} recovery={()=>{void openRecovery();}} home={()=>location.assign(`${base}/`)}/>
+    <GameSurface {game} ownPosition={ownPosition} {busy} commitMove={async move=>{await act({type:'game-move',position:ownPosition!,move});if(error)throw new Error(error);}} recovery={()=>{void openRecovery();}} home={()=>location.assign(`${base}/`)}/>
   {:else}
     <section class="gathering-heading"><div><p class="eyebrow">BEYOND THE SUN</p><h1>Gather your players</h1></div><p class="room-progress" role="status">{complete ? 'Everyone is ready' : `${readyCount} of ${room.settings.capacity} players ready`}</p></section>
     <!-- svelte-ignore a11y_no_noninteractive_tabindex (The roster is a named keyboard-scrollable region.) -->
@@ -256,4 +257,6 @@ dialog::backdrop { background:#021019d9; }
 .roster-navigation>button{min-width:44px;min-height:44px;padding:6px 9px;font-size:10px;background:linear-gradient(130deg,#354c43,#142e34);border:1px solid #b29b64}
 .roster-navigation>button:disabled{opacity:.45}
 }
+
+@media(min-width:761px){.own-actions button{min-width:48px}}
 </style>

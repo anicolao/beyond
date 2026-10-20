@@ -1,4 +1,6 @@
+import {sameCommandValue} from '$lib/command-value';
 import type { FactionId } from '$lib/game/manifest';
+import type { TurnMove } from '$lib/game/turn';
 import type { BasicStart } from '$lib/game/setup';
 import { doc, collection, getDocFromServer, getDocsFromServer, onSnapshot, orderBy, query, runTransaction } from 'firebase/firestore';
 import { backend } from '$lib/backend';
@@ -54,7 +56,7 @@ export async function createRemote(name: string, settings: RemoteSettings) {
   }
   throw new Error('We could not reserve an invitation code. Please try again.');
 }
-export type RemoteIntent = { type: RemoteCommand['type']; position?: RemotePosition; name?: string; ready?: boolean; settings?: RemoteSettings; faction?: FactionId; start?: BasicStart };
+export type RemoteIntent = { type: RemoteCommand['type']; position?: RemotePosition; name?: string; ready?: boolean; settings?: RemoteSettings; faction?: FactionId; start?: BasicStart; move?:TurnMove };
 export async function sendRemote(id: string, intent: RemoteIntent, configVersion: number, commandId: string) {
   const { db, ready } = backend(), user = await ready;
   let next: RemoteRoom | undefined;
@@ -69,12 +71,12 @@ export async function sendRemote(id: string, intent: RemoteIntent, configVersion
     observedRevision = before.revision;
     if (duplicate.exists()) {
       const prior = duplicate.data() as RemoteEvent;
-      if (prior.actorUid !== user.uid || prior.type !== intent.type || prior.name !== (intent.name?.trim() ?? '') || prior.position !== (intent.position ?? '') || prior.ready !== (intent.ready ?? false) || (intent.settings && !sameSettings(prior.settings, intent.settings)) || prior.faction !== intent.faction || JSON.stringify(prior.start) !== JSON.stringify(intent.start)) throw new Error('Command identity was already used.');
+      if (prior.actorUid !== user.uid || prior.type !== intent.type || prior.name !== (intent.name?.trim() ?? '') || prior.position !== (intent.position ?? '') || prior.ready !== (intent.ready ?? false) || (intent.settings && !sameSettings(prior.settings, intent.settings)) || prior.faction !== intent.faction || !sameCommandValue(prior.start,intent.start) || !sameCommandValue(prior.move,intent.move)) throw new Error('Command identity was already used.');
       return before;
     }
     if (configVersion !== before.configVersion) throw new Error('Room setup changed. Review the current settings before continuing.');
-    const changed = !['remote-ready-changed','remote-begun'].includes(intent.type);
-    const event: RemoteEvent = { ...(intent.faction ? {faction:intent.faction}:{}), ...(intent.start ? {start:intent.start}:{}), schema: 1, actorUid: user.uid, revision: before.revision + 1, commandId, type: intent.type, position: intent.position ?? '', name: intent.name?.trim() ?? '', ready: intent.ready ?? false, settings: intent.settings ?? before.settings, code: before.code, configVersion: before.configVersion + Number(changed) };
+    const changed = !['remote-ready-changed','remote-begun','game-move'].includes(intent.type);
+    const event: RemoteEvent = { ...(intent.move ? {move:intent.move}:{}), ...(intent.faction ? {faction:intent.faction}:{}), ...(intent.start ? {start:intent.start}:{}), schema: 1, actorUid: user.uid, revision: before.revision + 1, commandId, type: intent.type, position: intent.position ?? '', name: intent.name?.trim() ?? '', ready: intent.ready ?? false, settings: intent.settings ?? before.settings, code: before.code, configVersion: before.configVersion + Number(changed) };
     const after = applyRemote(before, event);
     transaction.set(root, after); transaction.set(eventRef, event);
     return after;

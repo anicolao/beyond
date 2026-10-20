@@ -13,6 +13,12 @@ export async function assertScreenFit(options: {document?:boolean;touchTargets?:
   const roots = options.document ? [modal ?? document.body] : [...document.querySelectorAll<HTMLElement>('[data-e2e-layout]')].filter(root => root.checkVisibility({visibilityProperty:true}) && (!modal || modal.contains(root)));
   if (!roots.length) throw new Error('No visible layout root to audit');
   const elements = [...new Set(roots.flatMap(root => [root, ...root.querySelectorAll<HTMLElement>('*')]))];
+  // After readiness, this entire audit is synchronous and read-only. Bounds
+  // and visibility cannot change during it; reuse the identical native results.
+  const rectangles=new Map<Element,DOMRect>();
+  const rectFor=(element:Element)=>{if(!rectangles.has(element))rectangles.set(element,element.getBoundingClientRect());return rectangles.get(element)!;};
+  const visibility=new Map<Element,boolean>();
+  const visibleFor=(element:Element)=>{if(!visibility.has(element))visibility.set(element,element.checkVisibility({visibilityProperty:true}));return visibility.get(element)!;};
   const styles = new Map<Element, CSSStyleDeclaration>();
   const style = (element: Element) => { if (!styles.has(element)) styles.set(element, getComputedStyle(element)); return styles.get(element)!; };
   // This audit is read-only. Cache immutable geometry within this one call,
@@ -32,7 +38,7 @@ export async function assertScreenFit(options: {document?:boolean;touchTargets?:
   const clips=new Map<HTMLElement,{left:number;top:number;right:number;bottom:number}>();
   const clipFor=(ancestor:HTMLElement)=>{
     if(!clips.has(ancestor)){
-      const css=style(ancestor),box=ancestor.getBoundingClientRect(),matrix=matrixFor(ancestor);
+      const css=style(ancestor),box=rectFor(ancestor),matrix=matrixFor(ancestor);
       const sx=Math.hypot(matrix.a,matrix.b),sy=Math.hypot(matrix.c,matrix.d);
       const left=parseFloat(css.borderLeftWidth)||0,right=parseFloat(css.borderRightWidth)||0,top=parseFloat(css.borderTopWidth)||0,bottom=parseFloat(css.borderBottomWidth)||0;
       const scrollbarX=Math.max(0,ancestor.offsetWidth-ancestor.clientWidth-left-right),scrollbarY=Math.max(0,ancestor.offsetHeight-ancestor.clientHeight-top-bottom);
@@ -58,7 +64,7 @@ export async function assertScreenFit(options: {document?:boolean;touchTargets?:
     if (!rect.width || !rect.height) return;
     const focused = document.activeElement === element || (!!document.activeElement?.matches('button,a,input,select,textarea') && document.activeElement.contains(element));
     const region = options.document && !focused ? scrollRegion(element) : undefined;
-    const window = region?.getBoundingClientRect();
+    const window = region?rectFor(region):undefined;
     const visible = window ? {left:rect.left,right:rect.right,top:Math.max(rect.top,window.top),bottom:Math.min(rect.bottom,window.bottom)} : rect;
     const verticalArea = visible.bottom > visible.top;
     if (outside(visible as DOMRect,viewport,true,verticalArea && (!options.document || !!modal))) throw new Error(`${text?'Text':'Component'} clipped by viewport: ${label(element)}`);
@@ -75,24 +81,24 @@ export async function assertScreenFit(options: {document?:boolean;touchTargets?:
   if(document.documentElement.scrollWidth>innerWidth||(!options.document&&(document.documentElement.scrollHeight>innerHeight||scrollX||scrollY)))throw new Error('Game screen must fit without page scrolling');
   const controls:HTMLElement[]=[];
   for(const element of elements){
-    if(element.closest('.sr-only,#svelte-announcer,[hidden],[aria-hidden="true"]')||!element.checkVisibility({visibilityProperty:true})||element.matches('img[alt=""],.skip-link:not(:focus)'))continue;
-    inspect(element,element.getBoundingClientRect());
-    if(element.dataset.layoutState==='overflow')throw new Error(`Card content overflow (${element.dataset.cardId}, width ${element.getBoundingClientRect().width}): ${element.dataset.layoutIssues}`);
+    if(element.closest('.sr-only,#svelte-announcer,[hidden],[aria-hidden="true"]')||!visibleFor(element)||element.matches('img[alt=""],.skip-link:not(:focus)'))continue;
+    inspect(element,rectFor(element));
+    if(element.dataset.layoutState==='overflow')throw new Error(`Card content overflow (${element.dataset.cardId}, width ${rectFor(element).width}): ${element.dataset.layoutIssues}`);
     for(const node of element.childNodes){
       if(node.nodeType!==Node.TEXT_NODE||!node.textContent?.trim())continue;
       const range=document.createRange();range.selectNodeContents(node);
       for(const rect of range.getClientRects())inspect(element,rect,true);
     }
-    if(element.matches('button,input,select,a')&&!element.closest('[inert]')&&element.getBoundingClientRect().width)controls.push(element);
+    if(element.matches('button,input,select,a')&&!element.closest('[inert]')&&rectFor(element).width)controls.push(element);
   }
   // A pinned document navigation deliberately covers scrolled content. Compare
   // the remaining on-screen hit regions; game views still compare whole controls.
-  const pinned=options.document?[...document.querySelectorAll<HTMLElement>('.sticky-nav')].filter(node=>node.checkVisibility({visibilityProperty:true})&&/^(sticky|fixed)$/.test(style(node).position)).map(node=>node.getBoundingClientRect()).filter(rect=>rect.top<=0&&rect.bottom>0):[];
+  const pinned=options.document?[...document.querySelectorAll<HTMLElement>('.sticky-nav')].filter(node=>visibleFor(node)&&/^(sticky|fixed)$/.test(style(node).position)).map(node=>rectFor(node)).filter(rect=>rect.top<=0&&rect.bottom>0):[];
   const hitRegion=(element:HTMLElement)=>{
-    const rect=element.getBoundingClientRect();
+    const rect=rectFor(element);
     if(!options.document)return rect;
     const top=Math.max(0,rect.top,...(element.closest('.sticky-nav')?[]:pinned.map(header=>header.bottom)));
-    const region = scrollRegion(element)?.getBoundingClientRect();
+    const scroll=scrollRegion(element),region=scroll?rectFor(scroll):undefined;
     return {left:Math.max(0,rect.left),right:Math.min(innerWidth,rect.right),top:Math.max(top,region?.top ?? 0),bottom:Math.min(innerHeight,rect.bottom,region?.bottom ?? innerHeight)};
   };
   type Point = {x:number;y:number};
@@ -106,7 +112,7 @@ export async function assertScreenFit(options: {document?:boolean;touchTargets?:
       const region = hitRegion(element);
       return region.right > region.left && region.bottom > region.top ? rectangle(region) : [];
     }
-    const rect=element.getBoundingClientRect();
+    const rect=rectFor(element);
     let matrix=new DOMMatrix();
     for(let parent:HTMLElement|null=element;parent;parent=parent.parentElement){
       const css=style(parent);
@@ -143,8 +149,8 @@ export async function assertScreenFit(options: {document?:boolean;touchTargets?:
     // Keep the capture contract's original document-wide target audit, including
     // controls behind native modality; batching removes only a browser trip.
     for(const element of document.querySelectorAll<HTMLElement>('button,input,select')){
-      if(!element.checkVisibility({visibilityProperty:true}))continue;
-      const r=element.getBoundingClientRect();
+      if(!visibleFor(element))continue;
+      const r=rectFor(element);
       if(r.width<44||r.height<44)throw new Error(`Touch target too small: ${element.textContent||element.getAttribute('aria-label')}`);
     }
   }

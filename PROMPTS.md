@@ -249,3 +249,63 @@ Reviewer checkpoint: independently compared all 46 Technology definitions agains
 Reviewer-authored response:
 
 Reviewer response to Linux runner question: no additional local endpoint is known. Do not pursue sudo credentials or install a new runtime. Complete macOS exact evidence and the propagation plan first; report Linux as pending, then use the existing GitHub pinned Linux workflow after the reviewed stack update is published. Linux is a final acceptance gate, not a prerequisite for that publication. The earlier request to report before publishing remains for the propagation plan/macOS results; no need to stall useful local work. Keep005 held and preserve all review evidence given low disk space. Log as reviewer-authored.
+
+## Prompt 46: Confirm Linux Checkpoint
+
+Reviewer-authored checkpoint:
+
+Reviewer16:45: independently fetched hosted PR3 revision.json and it now serves fff9e5206596c4c4a11a1ffd39375ff08278966e, despite the earlier deployment wait timeout. Do not treat that as functional smoke acceptance yet. Independently inspected Linux Human Experiments phone, full-claim phone and Dyson desktop: readable and coherent. Linux static log confirms remote-4 compatibility test exceeded aggregate5000ms; preserve security assertions and all existing UI/capture budgets when addressing it. Continue current investigation;005held.
+
+## Prompt 47: Accept Corrected Gallery
+
+Reviewer-authored acceptance:
+
+Reviewer17:15 acceptance: independently confirmed PR3 head1bcc370 all required checks pass and hosted revision matches; cumulative live gallery search/inspection/Escape review plus source/inventory/art review accepts the corrected gallery, with documented WISE edition-name limitation retained. PR3 remains unmerged. Independently read PR5 final31/31macOS exact log and viewed four-player4K starting-card-return image: Basic Spacefaring and lower focused card contained, orientation preserved; scoped fix accepted. Finish PR4/PR5 remaining Linux/hosted gates and004 local review.005 remains held until004 independently passes; no merge.
+
+## Prompt 48: Accept Remote Correction
+
+Reviewer-authored acceptance:
+
+Reviewer17:33: corrected PR4 head28d63df finally accepted. Independently verified all checks pass, matching hosted revision, live create room EVUGV (52e514a2-2f36-4143-b088-2702374b854b), readable physical gathering composition, and host identity/setup retained after reload. Remains unmerged. Continue PR5 gates and004 local review;005 still requires004 acceptance.
+
+## Prompt 49: Accept Basic Correction
+
+Reviewer-authored acceptance:
+
+Reviewer18:14: corrected PR5 af76265 finally accepted after all required checks and matching revision, independent hosted shared seating/factions/Begin/card scroll/Escape/reload review. Room fc9b8ba4-24b3-4ea2-b88b-2426308ea39c retains factions/resources/board. Cumulative phone/4K/local/Linux review stands. Minor accessibility polish for subsequent local work: unjoined seat editor exposes disabled Choose faction for undefined; use a meaningful seat label. Continue004 local review preparation already underway;005 still held pending independent004 acceptance. No merge.
+
+## Prompt 50: Compose Research Choices
+
+Reviewer-authored visual finding:
+
+Reviewer18:18 phase004 visual finding: reviewed round47 research-open-1280/planned-1280, research-open/upgrade-393 and four-cardinal-3840 actor2-plan against04-research. Rotated compact shared planner is readable/contained. Desktop1280x720 initial planner spends visible area on heading/pawn controls/art: both first-row card rules and Select controls are below scroll, unlike concept composed choices. Please improve desktop decision overview so first pair shows identity, art, immediate consequence and selection together without initial scrolling; preserve readable text, consistent shared card sizing and full inspection, using the compact planner approach if appropriate. Selected desktop state should retain visible card identity alongside consequence (currently titles scroll away). Phone ship picker also needs selected ship consequence clear with commit. Continue local iteration only; no004 baseline churn/005 release yet.
+
+## Prompt 51: Accept Research Composition
+
+Reviewer-authored scoped acceptance:
+
+Reviewer18:28: independently inspected round50 overview-initial/selected1280x720 and research-upgrade393. Requested composition correction passes scoped visual review: first pair shows identity/art/immediate consequence/Select together; selected summary retains title/consequence; phone commit shows exact selected ship and level1to2. Continue remaining local functional/keyboard checks and prepare concise review entrypoints. Full004 acceptance still awaits my independent live flow review and final local checks; no005 release yet.
+
+## Prompt 52: Validate Research Increment
+
+Reviewer-authored local acceptance:
+
+Reviewer18:40: phase004 independent local visual/functional review accepted for final illustrated validation. Fresh ordinary shared setup3b69ddba-d33f-4bfc-b78b-400bc8be5981: Genetics permanent payment/bonus, reload pending production, Growth auto-handoff; Luna Lasers disabled until explicit second-ship choice, correct level1to2/Ore gain, Produce Ore auto-handoff. Prior live trade room exercised all3rates and occupied-space blocking. Cumulative phone/desktop/4K/cardinal/corner/observer reviews and round50 correction accepted. Proceed required TestStepHelper illustrated stories and final local exact checks with unchanged guards, then publish004 stacked on accepted PR5. Report exact pass; I will release005 after that local gate while004 CI/hosted finish. No merge.
+
+## Prompt 53: Inspect Heading Clearance
+
+Reviewer-authored visual correction:
+
+Reviewer19:17: targeted 3-player desktop/4K guard pass verified. Independent image review of tests/e2e/004-first-research/screenshots/research-and-recover-a-3-player-shared-cardinal-first-round/057-turn-1-handoff-tabletop-4k-darwin.png shows Advanced Genetics appearing to cover the Level I heading and Four discoveries subtitle (only top of I visible), unlike clear II/III/IIII column labels. Please inspect native image/overlap and ensure first column heading stays visibly separated from the first card after handoff; a passing clipping guard alone does not accept this composition. Preserve current full candidate work; fix if confirmed and include refreshed handoff evidence. No phase005 release yet.
+
+## Prompt 54: Accept Heading Clearance
+
+Reviewer-authored scoped acceptance:
+
+Reviewer19:33: independently viewed refreshed 057-turn-1-handoff-tabletop-4k-darwin.png in the 3-player shared cardinal story. Level I and Four discoveries are now visibly separated above Advanced Genetics, with full topology/cards retained. Scoped heading-clearance correction accepted; this resolves my queued19:17 visual finding. Continue affected refresh and full exact validation. Phase005 release still awaits passing local exact; no merge.
+
+## Prompt 55: Begin Technology Discovery
+
+Reviewer-authored local acceptance and phase release:
+
+Reviewer19:54: independently verified research-round52-final-exact.log completed48/48PASS in6.0m, command has no update-snapshots;40backend/2422 assertions,41guards,17tooling,types/builds pass and helper guards unchanged. Prior live004 review plus corrected heading and full-rules native images are accepted. Phase004 LOCAL ACCEPTANCE complete. Commit/push reviewed004 and open stacked PR based on feat/basic-setup af76265; then immediately begin005 Discover humanity next technology on a NEW branch stacked on004 while004 Linux exact and matching hosted verification finish. Implement legal preparatory turns, LevelII Event/discovery/type/candidate/persisted queue and reveal boundary per plan/source rules in remote/phone/shared modes; persistent local server and independent review before baselines. Keep004 pending final gates separately, propagate needed fixes, preserve all evidence, never merge. Report PR URL/head and005 branch; no further human prompt needed.

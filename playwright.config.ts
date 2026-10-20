@@ -7,7 +7,9 @@ export default defineConfig({
   retries: 0,
   workers: 1,
   updateSnapshots: 'none',
-  timeout: 60_000,
+  // Complete illustrated rounds have independent operation/capture deadlines.
+  // Linux traces need >60s for 58+ native frames; no operation inherits this allowance.
+  timeout: 120_000,
   reporter: [['list'], ['html', { open: 'never' }], ['./tests/e2e/helpers/story-reporter.ts']],
   snapshotPathTemplate: '{testDir}/{testFileDir}/screenshots/{arg}{ext}',
   use: {
@@ -25,10 +27,10 @@ export default defineConfig({
   },
   expect: { timeout: 2_000, toHaveScreenshot: { timeout: 2_000, maxDiffPixels: 0, threshold: 0 } },
   projects: [
-    { name: 'phone', testMatch: ['**/arrival.spec.ts', '**/gallery.spec.ts', '**/remote.spec.ts', '**/modes.spec.ts', '**/setup-remote.spec.ts'], use: { viewport: { width: 393, height: 852 } } },
+    { name: 'phone', testMatch: ['**/arrival.spec.ts', '**/gallery.spec.ts', '**/remote.spec.ts', '**/modes.spec.ts', '**/setup-remote.spec.ts', '**/research-remote.spec.ts'], use: { viewport: { width: 393, height: 852 } } },
     { name: 'desktop-compact', testMatch: '**/gallery.spec.ts', use: { viewport: { width: 1280, height: 720 } } },
     { name: 'desktop', use: { viewport: { width: 1440, height: 1000 } } },
-    { name: 'tabletop-4k', testIgnore: ['**/remote.spec.ts','**/setup-remote.spec.ts','**/setup-shared-compact.spec.ts'], use: { viewport: { width: 3840, height: 2160 } } }
+    { name: 'tabletop-4k', testIgnore: ['**/remote.spec.ts','**/setup-remote.spec.ts','**/setup-shared-compact.spec.ts','**/research-remote.spec.ts','**/research-shared-compact.spec.ts','**/research-remote-compact.spec.ts'], use: { viewport: { width: 3840, height: 2160 } } }
   ],
   webServer: {
     command: 'node scripts/serve-e2e.mjs',

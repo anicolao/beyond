@@ -1,3 +1,4 @@
+import {sameCommandValue} from '$lib/command-value';
 import { initializeApp } from 'firebase/app';
 import { connectAuthEmulator, getAuth, signInAnonymously } from 'firebase/auth';
 import { connectFirestoreEmulator, collection, doc, getDocFromServer, getDocsFromServer, getFirestore, orderBy, query, runTransaction } from 'firebase/firestore';
@@ -27,7 +28,7 @@ export async function commitTable(id: string, command: Command, expectedRevision
     const [existing, duplicate] = await Promise.all([transaction.get(root), transaction.get(eventRef)]);
     if (duplicate.exists()) {
       const previous = duplicate.data() as TableEvent;
-      if (previous.type !== command.type || previous.position !== command.position || previous.name !== command.name || JSON.stringify(previous.settings) !== JSON.stringify(command.settings) || previous.faction !== command.faction || JSON.stringify(previous.start) !== JSON.stringify(command.start)) throw new Error('Command identity was already used.');
+      if (previous.type !== command.type || previous.position !== command.position || previous.name !== command.name || !sameCommandValue(previous.settings,command.settings) || previous.faction !== command.faction || !sameCommandValue(previous.start,command.start) || !sameCommandValue(previous.move,command.move)) throw new Error('Command identity was already used.');
       return existing.data() as Table;
     }
     const before = existing.exists() ? existing.data() as Table : undefined;

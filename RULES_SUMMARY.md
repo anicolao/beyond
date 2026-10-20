@@ -8,9 +8,9 @@ The authority is Rio Grande Games' [combined rulebook and setup sheets](https://
 
 Two to four factions compete for victory points through technology, automation, colonies, outposts, achievements, and event effects. There is no fixed turn count.
 
-Each faction has one Action pawn, twenty resource cubes, eight Food production discs, eight Ore production discs, and achievement/placeholder markers. Cubes have Supply, Population, and ship-level 1–4 states; they are not rolled. Research commits a cube permanently. Ships can return to Supply through colonization, keeping the resource cycle moving. Ore and placeholder markers have no effective component limit.
+Each faction has one Action pawn, twenty resource cubes, eight Food production discs, eight Ore production discs, and achievement/placeholder markers. Cubes have Supply, Population, and ship-level 1–4 states; they are not normally rolled. Experimental Prototypes specifically instructs factions to roll a Supply cube; that Event is an explicit exception. Research commits a cube permanently. Ships can return to Supply through colonization, keeping the resource cycle moving. Ore and placeholder markers have no effective component limit.
 
-The base content inventory is 46 Technology cards, 20 Events, 24 Systems split evenly between decks A and B, ten Achievements, four guild covers, Basic and Advanced faction mats, player-count action overlays, and two exploration-board faces. Exact definitions belong in reviewed manifests before use.
+The base content inventory is 46 Technology cards, 20 Events, 24 Systems split evenly between decks A and B, ten Achievements, four guild covers, Basic and Advanced faction mats, player-count action overlays, and two exploration-board faces. The [canonical card inventory audit](docs/content/CARD_INVENTORY.md) enumerates every design and physical quantity; each of these 100 base designs has one physical copy.
 
 ## Setup
 

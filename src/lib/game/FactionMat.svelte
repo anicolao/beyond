@@ -1,22 +1,23 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
+  import {growthColumns,oreProduction} from './turn';
   import { factions, foodColumns, supplyCapacity } from './manifest';
   import type { PlayerState } from './setup';
   let { player, order=1, expanded=false, rim=false, dock=false, controls }: {player:PlayerState;order?:number;expanded?:boolean;rim?:boolean;dock?:boolean;controls?:Snippet}=$props();
   const faction=$derived(factions.find(f=>f.id===player.faction)!);
 </script>
-<div class="mat-envelope"><article class="faction-mat" class:expanded class:rim class:dock style={`--player-hue:${[170,38,8,275][order-1]}`} aria-label={`${player.name} faction mat`}>
+<div class="mat-envelope"><article class="faction-mat" class:expanded class:rim class:dock class:overflow-supply={player.supply[0]>supplyCapacity[0]} style={`--player-hue:${[170,38,8,275][order-1]}`} aria-label={`${player.name} faction mat`}>
   <header><span class="mat-medallion" aria-hidden="true">{faction.emblem}</span><div><p>PLAYER {order} {order===1?'· STARTING PLAYER':''}</p><h2>{player.name}</h2><h3>{faction.name}</h3></div><span class="basic-label">BASIC</span>{#if dock && controls}<div class="dock-controls">{@render controls()}</div>{/if}</header>
   <div class="mat-body">
     <section class="resource-well" aria-label="Available resources"><h4>Available</h4><div class="resource"><span class="population-cube" aria-hidden="true">♟</span><strong>{player.population}</strong><span>Population</span></div><div class="resource"><span class="ore-crystal" aria-hidden="true">◆</span><strong>{player.ore}</strong><span>Ore</span></div><p class="setup-bonus">{faction.bonus}</p><p class="cube-total">20 resource cubes · {player.ships.length} {player.ships.length===1?'ship':'ships'} on the map</p></section>
     <div class="economy">
       <section class="automation" aria-label="Automation track"><h4>Automation</h4><ol>{#each Array.from({length:8},(_,i)=>i) as i}<li class:current={i===player.automation}>{i}</li>{/each}</ol></section>
-      <div class="supply-machine"><section class="supply" aria-label="Supply columns">{#each player.supply as remaining,i}<div class="supply-column" aria-label={`Column ${'ABCDE'[i]}: ${remaining} Supply of ${supplyCapacity[i]}`}><strong>{'ABCDE'[i]}</strong><div>{#each Array.from({length:supplyCapacity[i]},(_,j)=>j) as j}<span class:empty={j>=remaining} class="supply-cube" aria-hidden="true">◇</span>{/each}</div><small>{remaining}/{supplyCapacity[i]}</small></div>{/each}</section>
-      <section class="production" aria-label="Population growth track"><h4>Food</h4><ol>{#each foodColumns as column,i}<li class:exposed={i===0}><span class="production-disc food" class:off={i===0} aria-label={i===0?'Exposed: column A':`Covered slot ${i}`}>{i===0?'A': '❧'}</span><small>{column??'—'}</small></li>{/each}</ol></section>
-      <section class="production" aria-label="Ore production track"><h4>Ore</h4><ol>{#each Array.from({length:9},(_,i)=>i) as i}<li class:exposed={i===0}><span class="production-disc ore" class:off={i===0} aria-label={i===0?'Exposed: 1 Ore':`Covered slot ${i}`}>{i===0?'1':'✹'}</span><small>1</small></li>{/each}</ol></section></div>
+      <div class="supply-machine"><section class="supply" aria-label="Supply columns">{#each player.supply as remaining,i}<div class="supply-column" aria-label={remaining>supplyCapacity[i]?`Column ${'ABCDE'[i]}: ${remaining} Supply, ${remaining-supplyCapacity[i]} overflow beyond ${supplyCapacity[i]} printed spaces`:`Column ${'ABCDE'[i]}: ${remaining} Supply of ${supplyCapacity[i]}`}><strong>{'ABCDE'[i]}</strong><div>{#each Array.from({length:Math.max(supplyCapacity[i],remaining)},(_,j)=>j) as j}<span class:empty={j>=remaining} class="supply-cube" aria-hidden="true">◇</span>{/each}</div><small>{remaining}/{supplyCapacity[i]}</small></div>{/each}</section>
+      <section class="production" aria-label="Population growth track"><h4>Food</h4><ol>{#each foodColumns as column,i}<li class:exposed={i<=8-player.foodDiscs}><span class="production-disc food" class:off={i<=8-player.foodDiscs} aria-label={i<=8-player.foodDiscs?`Exposed: ${column?`column ${column}`:'no additional yield'}`:`Covered slot ${i}`}>{i<=8-player.foodDiscs?(column??'—'):'❧'}</span><small>{column??'—'}</small></li>{/each}</ol></section>
+      <section class="production" aria-label="Ore production track"><h4>Ore</h4><ol>{#each Array.from({length:9},(_,i)=>i) as i}<li class:exposed={i<=8-player.oreDiscs}><span class="production-disc ore" class:off={i<=8-player.oreDiscs} aria-label={i<=8-player.oreDiscs?'Exposed: 1 Ore':`Covered slot ${i}`}>{i<=8-player.oreDiscs?'1':'✹'}</span><small>1</small></li>{/each}</ol></section></div>
     </div>
   </div>
-  <footer><span>Production capacity · A → 1 Population · 1 Ore</span><span>Trade · 3 Ore → Supply to Population · 1 Ore + ship → Population · Population to Supply → 1 Ore</span></footer>
+  <footer><span>Production capacity · {growthColumns(player).map(c=>c.letter).join(', ')} → {growthColumns(player).filter(c=>c.available).length} Population · {oreProduction(player)} Ore</span><span>Trade · 3 Ore → Supply to Population · 1 Ore + ship → Population · Population to Supply → 1 Ore</span></footer>
 </article></div>
 <style>
 .mat-envelope{container-type:inline-size;width:100%;}
@@ -52,4 +53,5 @@
 .dock-controls{grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:6px;margin-top:3px}
 .dock-controls :global(button){min-height:44px;font-size:10px;padding:6px 9px}
 @media(min-width:2200px){.dock header{grid-template-columns:68px minmax(0,1fr);gap:17px;padding-bottom:0}.dock-controls{gap:12px;margin-top:6px}.dock-controls :global(button){font-size:23px;padding:14px 20px}}
+.faction-mat.overflow-supply:not(.dock) .supply-column:first-child>div{display:grid;grid-template-rows:repeat(5,auto);grid-auto-flow:column}
 </style>

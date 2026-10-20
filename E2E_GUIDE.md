@@ -51,7 +51,7 @@ tests/e2e/
   helpers/
     fixtures.ts
     test-step-helper.ts
-  004-research-and-discovery/
+  004-first-research/
     research.spec.ts
     research.integration.spec.ts
     README.md
@@ -194,19 +194,15 @@ Each numbered slice delivers its rules, accessible production UI, emulator-backe
 | Slice | Browser-visible outcome |
 | --- | --- |
 | 001 — Shell and visual foundation | Required `TestStepHelper` and shared fixture with capture/policy guards; illustrated arrival and Learn; direct physical-position joining for 2–4 local players, editing/leaving/Player 1 on the actual table, immutable commands, and recovery across built PR/production paths sharing one game. Multiple mode-specific E2E stories per commit are allowed and required where flows differ. Live preview posts its link on the PR independently of E2E. Review visual composition before accepting baselines. |
-| 001a — Card collection review | Arrival-accessible gallery, source-reviewed Technology/Event/System/Achievement faces using shared production renderers; clearly labelled visual fixtures, filtering/search, internal-scroll inspection, persistent navigation, focus containment/restoration, and player-count restrictions on phone, compact desktop, desktop and 4K. Complete local visual review before final candidate generation and independent exact comparison. |
+| 001a — Card collection review | Arrival-accessible complete100-design/100-copy base gallery, independent manifest/quantity equality, all-page reachability, source-reviewed Technology/Event/System/Achievement faces using shared production renderers; clearly labelled visual fixtures, filtering/search, internal-scroll inspection, persistent navigation, focus containment/restoration, and player-count restrictions on phone, compact desktop, desktop and 4K. Complete local visual review before final candidate generation and independent exact comparison. |
 | 002 — Rooms and seating | Remote create/join/code/QR, readiness, owner settings, full/missing room recovery, retained seats and collision handling; keep remote joining separate from tabletop local seats. |
 | 003 — Seeded Basic setup | Two-, three-, and four-player boards, overlays, faction uniqueness, starting resources, achievement slots, first player, and conserved cubes/discs. |
-| 004 — Research and discovery | Legal action movement, prerequisites, permanent cubes, event resolution, public candidates, type choice, immediate bonuses, guild unlocking, and research ownership. |
-| 005 — Economy and automation | Population by column, Ore, repeated trade exchanges, empty columns, returning/overworking cubes, automation and information-safe undo. |
-| 006 — Fleets and control | Build/upgrade, multi-ship jump plans, simultaneous movement, ties, empty outposts, control bonuses, disc choices, and observer comprehension. |
-| 007 — Colonization and Systems | Settler selection, overpayment, exile, replacement reveal, second disc, ordered bonuses, personal technologies, and chained decisions. |
-| 008 — Remaining base content | All technology/event/guild effects, persistent scoring, copied actions, special destinations, and manifest coverage review. Use integration fixtures for rare boundaries alongside real playable stories. |
-| 009 — Achievements and complete games | Mandatory claims, player-count thresholds, current-round completion plus final round, complete scoring/ties, final inspection, and rematch. |
-| 010 — Advanced factions | Reverse-order selection after shared setup, every innovation, threshold loss/reactivation, unique tracks, and an Advanced complete-game journey. |
-| 011 — Shared tabletop | One browser and controller; direct local names/physical positions, Player 1/clockwise order, setup edits, all actions and out-of-turn responses on the display, no QR/personal devices, and retained controller recovery. |
-| 012 — Recovery and compatibility | Lost acknowledgements, concurrent submissions, offline/catch-up behavior, immutable undo boundaries, and explicit version failures across gameplay. |
-| 013 — Accessibility and release review | Complete responsive journeys, keyboard-only and touch play, focus/announcements, reduced motion, gallery completeness, and reviewed platform screenshots. |
+| 004 — First research turn | Legal Basic Level I pawn movement/occupancy, permanent cubes independent of occupancy, all four source-reviewed immediate bonuses, exact production/trade and clockwise handoff; desktop/phone and one-controller shared display, reload and keyboard. |
+| 005 — Technology discovery | Prerequisites, event resolution, public candidates, type choice, once-only immediate bonuses, guild unlocking, research ownership and persisted pending choices. |
+| 006 — Shared discoveries | Rival research, once-only personal bonuses, card actions and occupied spaces. |
+| 007–009 — Economy and automation | Changed production tracks, full printed-rate trading, overflow, automation and scoring. |
+| 010–012 — Fleets and control | Build/upgrade, simultaneous jumps, ties, outposts and ordered control bonuses. |
+| 013 onward | Colonization, remaining content, achievements, complete games, Advanced factions, recovery and release review in the detailed plan sequence. |
 
 Recovery and accessibility start in the first slice; their named slices consolidate coverage rather than postpone them. Core interactions are not complete until they work in the personal and shared-table projections.
 
@@ -247,6 +243,8 @@ Run `bun run test:capture` for focused capture-guard regressions. Its synthetic 
 
 The gallery's bounded inspector uses a named, keyboard-reachable scroll region for its card and source notes, with Close and Previous/Next outside that scroll area. Capture auditing permits intentional vertical content scrolling only inside such regions. Focused controls and text, horizontal clipping, hidden overflow, real overlap and offscreen inspector chrome remain errors. Focused guard regressions cover these boundaries, including empty offscreen document hit regions; no screenshot tolerance, masking or deadline changes accompany this support.
 
-The complete gallery story traverses all100 source-verified identities and quantities, verifies original-art completeness and inspects dense full-marker faces in75 illustrated steps per viewport. Candidate generation and independent comparison are separate runs; both platforms must be independently reviewed. Historical six-example Linux references do not accept the revised collection.
-
 Local independent browser runs may use separate already-installed emulator processes on configured loopback ports via PUBLIC_AUTH_EMULATOR_PORT and PUBLIC_FIRESTORE_EMULATOR_PORT. Defaults remain9297/8197. Each run starts with fresh ephemeral test data while the persistent reviewer emulator and its games remain intact. Preview and production clients within the run still share one canonical demo project/store; hosted storage is unchanged. Readiness probes use the same configured endpoints. Never clear the reviewer database to resolve deterministic story-code collisions.
+
+The complete gallery story traverses all100 source-verified identities and quantities, verifies original-art completeness and inspects dense full-marker faces in75 illustrated steps per viewport. Candidate generation and independent comparison are separate runs; both platforms must be independently reviewed.
+
+Milestone004 uses `004-first-research/journey.ts` through the required shared fixture and TestStepHelper. Seventeen viewport variants demonstrate ordinary2/3/4-player remote and shared first rounds, including compact/cardinal/corner views, all four Level I bonuses, exact resources, three executed exchanges, Supply overflow, pending-choice reload, separate public observers and keyboard focus return. The existing31 journeys remain in the full regression. Every meaningful setup input, choice and result has a named illustrated step. Native captures are visually inspected before an independent zero-tolerance comparison run.
