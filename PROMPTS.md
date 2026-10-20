@@ -459,3 +459,15 @@ Reviewer05:03: inspected generated 055-same-candidates-phone-darwin.png for Expe
 Reviewer-authored phase005 local acceptance and explicit milestone006 authorization:
 
 Reviewer06:30: independently confirmed final-exact3 62/62 PASS and 3271 recorded frames, alongside backend156/2877,41 guards,17 tooling and current types/policy/build gates. Phase005 LOCAL gate accepted. Narrow phone result chips, rotated4K cube controls, initial corner heading and corrected connector geometry independently reviewed and accepted; this resolves my queued05:03feedback. Commit/push005 and open PR stacked on feat/first-research-turn at58ad180, then explicitly BEGIN006 Learn from a rivals discovery on a NEW branch stacked on005 while005 Linux exact and matching hosted review finish. Implement source-reviewed personal research access, once-only immediate bonus, actual printed action costs/occupancy and blocked-before-research inspection across remote/phone/shared; no invented actions. Keep persistent local preview and request local review before baseline iteration. Track005 CI/hosted pending separately; final005 acceptance withheld until those pass. Never merge; log reviewer-authored.
+
+## Prompt 81: Prototype Acceptance Clarification
+
+Reviewer-authored scoped acceptance of the additional Prompt79 composition edits; phase005 final gates remain pending:
+
+Reviewer07:33: independently inspected round79 phone/055-same-candidates.png and shared/074-public-candidates.png. The NEW compact result-row CSS passes scoped visual review: unbroken results, readable candidate and rotated controls. This acceptance covers the additional Prompt79 edits (06:30 referred to earlier round78). Proceed with affected exact checks/publication as planned; 006 release remains in effect. Record stale live-emulator rules diagnosis separately from product behavior; preserve current services/identities. Final005 Linux/hosted gates remain outstanding.
+
+## Prompt 82: Startup Failure Review
+
+Reviewer-authored phase005 startup/readiness failure handoff; preserve limits, tests, evidence and006 propagation:
+
+Reviewer07:53: independently inspected PR7 static-and-rules failure job118512786813 at head61ce658. Backend152pass/2fail: rules.test.ts initial environment hook timed out5001ms, then cleanup dereferenced undefined environment. Full log saved /tmp/beyond-pr7-static-118512786813.log. Diagnose startup/readiness without weakening limits or skipping tests; preserve failure evidence and fix/propagate through006 as needed. Preview retry still running. Final005 remains pending.

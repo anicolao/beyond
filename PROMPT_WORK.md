@@ -224,3 +224,7 @@ Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | S
 Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | Require explicit cache endpoints, correct optional SDK configuration typing and confirm zero errors/warnings plus four cache-integrity tests before publication.
 
 Prompt 80 | 88e89fb51a2e60e9de42c9bffb04f2f554ce435fd4fb2c6bca0dae3ff602cae6 | Review21 native samples/all14 new variants, decode3271 Linux frames and import1460 exact PNGs; retain66 inherited refs,5s compatibility guards and pending independent Linux/hosted gates.
+
+Prompt 81 | 12e8b835a5b0fbb9164a888273ec8e3fe39ef604f53efbb00485cac9ae49acb8 | Record07:33 acceptance of the additional Prompt79 rows separately from round78; retain4/4 exact proof, isolate stale emulator configuration diagnosis and preserve pending005 gates/services.
+
+Prompt 82 | c529ce7017ebfadb230125618d5e6005ec38d18e2b4c403def76d1dedd52c4a5 | Preserve61ce658 startup failure; verify published readiness/cache/teardown fixes in006, distinguish later compatibility deadline and correct unauthenticated-read wording without changing guards.
