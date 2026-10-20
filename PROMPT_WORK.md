@@ -286,3 +286,8 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | P
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Preserve the remote4 deadline; use identity-proven REST denials with production SDK legal writes and diagnose distinct emulator startup timeouts.
 
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate identity-proven compatibility denial transport and unchanged-budget startup diagnostics from feat/technology-discovery through this stack dependency.
+
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Queue follow-up verification per PR instead of cancelling active Linux exact/native evidence while publishing the compatibility repair.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Preserve active native evidence while queueing the compatibility repair propagated from feat/technology-discovery; publish without cancelling generation.
