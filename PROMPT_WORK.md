@@ -260,3 +260,5 @@ Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | M
 Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Validate inherited stacked continuations against their committed exact prompt hashes when the PR base advances, retaining strict single-step local hooks and both parent histories.
 
 Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Prove bundled earlier work against both committed records and preserved exact prompt snapshots, testing actual advanced-base history without relaxing local commit or screenshot guards.
+
+Prompt 91 | 9df380a476894bfe6d9ccfd4c0b85eaed03e1f26d138210520723054ca8b4cc6 | Verify bundled87 records against exact canonical prompt prefixes including appended heading separators; reject altered text or invented uncommitted records and preserve strict local hooks.

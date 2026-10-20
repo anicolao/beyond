@@ -100,8 +100,16 @@ try {
       // Work may be recorded before the next reviewer prompt, then committed
       // together. Prove both the committed record and its exact prior prompt bytes.
       promptHistory ??= git(['log','--format=%H','HEAD','--','PROMPTS.md']).trim().split('\n').filter(Boolean).map(ref=>trackedAt(ref,'PROMPTS.md'));
-      return promptHistory.some(prompts=>parts[0]===`Prompt ${[...prompts.matchAll(/^## Prompt ([1-9][0-9]*): /gm)].at(-1)?.[1]}`
-        && parts[1]===createHash('sha256').update(prompts).digest('hex'));
+      return promptHistory.some(prompts=>{
+        const headings=[...prompts.matchAll(/^## Prompt ([1-9][0-9]*): /gm)];
+        const index=headings.findIndex(entry=>parts[0]===`Prompt ${entry[1]}`);
+        if(index<0)return false;
+        const prefix=prompts.slice(0,headings[index+1]?.index??prompts.length);
+        // Appending a heading can add separator newlines to the old log. The
+        // record's hash must still prove an exact preserved prefix, never altered text.
+        const separators=prefix.match(/\n*$/)[0].length;
+        return Array.from({length:separators+1},(_,trim)=>prefix.slice(0,prefix.length-trim)).some(text=>parts[1]===createHash('sha256').update(text).digest('hex'));
+      });
     }
     for (const line of lines) {
       const parts = line.split(' | ');
