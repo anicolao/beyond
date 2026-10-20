@@ -331,3 +331,14 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | P
 Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Propagate identity-proven compatibility denial transport and unchanged-budget startup diagnostics from feat/rival-research through this stack dependency.
 
 Prompt 112 | 8a063e14627321e4e3d6ea70390e02d79b7293ba57354d358f62cdd4ca749e4a | Propagate identity-proven compatibility denial transport and unchanged-budget startup diagnostics from feat/production-management through this stack dependency.
+
+
+
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Queue follow-up verification per PR instead of cancelling active Linux exact/native evidence while publishing the compatibility repair.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Preserve active native evidence while queueing the compatibility repair propagated from feat/technology-discovery; publish without cancelling generation.
+
+Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Preserve active native evidence while queueing the compatibility repair propagated from feat/rival-research; publish without cancelling generation.
+
+Prompt 112 | 8a063e14627321e4e3d6ea70390e02d79b7293ba57354d358f62cdd4ca749e4a | Preserve active native evidence while queueing the compatibility repair propagated from feat/production-management; publish without cancelling generation.

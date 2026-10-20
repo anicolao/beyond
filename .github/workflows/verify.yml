@@ -12,7 +12,8 @@ permissions:
 
 concurrency:
   group: verify-${{ github.ref }}
-  cancel-in-progress: true
+  # Finish active exact/native evidence; queue the newest follow-up per PR.
+  cancel-in-progress: false
 
 jobs:
   static-and-rules:
