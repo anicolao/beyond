@@ -262,3 +262,5 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | R
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Exclude unused screenshot-reference blobs only from preview checkout, prove sparse production build and reject stale heads before build; retain full exact CI.
 
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Combine final acknowledgement and unchanged full audit in one polling RPC; preserve initial warming/pointer order, exact references and all deadlines.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Filter only unused Darwin captures from pinned Linux checkout; preserve all native/source inputs, render settings, strict guards and current evidence.
