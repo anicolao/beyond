@@ -305,3 +305,11 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | O
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate parent7b3d95f capture scheduling and complete walkthrough index into006; preserve its native-pixel, timing and exact-source publication gates.
 
 Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Propagate334ea09c capture readiness into007 without changing production visuals, rules, native references or deadlines; keep Linux and hosted gates distinct.
+
+
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Preserve the remote4 deadline; use identity-proven REST denials with production SDK legal writes and diagnose distinct emulator startup timeouts.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate identity-proven compatibility denial transport and unchanged-budget startup diagnostics from feat/technology-discovery through this stack dependency.
+
+Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Propagate identity-proven compatibility denial transport and unchanged-budget startup diagnostics from feat/rival-research through this stack dependency.
