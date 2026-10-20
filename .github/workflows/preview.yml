@@ -12,6 +12,8 @@ permissions:
 concurrency:
   group: hosted-firestore-and-pages
   cancel-in-progress: false
+  # Preserve every PR publication; the default retains only one pending run.
+  queue: max
 
 jobs:
   publish:
