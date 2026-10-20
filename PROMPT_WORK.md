@@ -376,3 +376,11 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | P
 Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Carry6f6b215 reviewed-reference-preserving readiness batching into007; keep source-specific native and matching hosted gates separate.
 
 Prompt 112 | 8a063e14627321e4e3d6ea70390e02d79b7293ba57354d358f62cdd4ca749e4a | Propagate9b1caff unchanged-audit batching through008 while retaining trade containment guards, original references and pending hosted/Linux gates.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Filter only unused Darwin captures from pinned Linux checkout; preserve all native/source inputs, render settings, strict guards and current evidence.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagatecef377e Linux input filtering through rival research, preserving both parent logs and all app/rules/native-reference/render/timing behavior.
+
+Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Inheritc4e4130 Linux checkout input preservation; keep app/rules/references, native render flags, timing guards and active evidence unchanged.
+
+Prompt 112 | 8a063e14627321e4e3d6ea70390e02d79b7293ba57354d358f62cdd4ca749e4a | Inherit45e1e3a Linux checkout input preservation; keep app/rules/references, native render flags, timing guards and active evidence unchanged.
