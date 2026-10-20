@@ -1,3 +1,10 @@
+/** Warm current visible image decodes while the canonical acknowledgement is in
+ * flight. This is an optimization only: assertScreenFit still decodes every
+ * current visible image after acknowledgement, including late/replaced images. */
+export async function warmVisibleImages() {
+  await Promise.all([...document.images].filter(image=>image.checkVisibility({visibilityProperty:true})).map(image=>image.decode()));
+}
+
 /** Runs inside the page: audit components, text lines and every clipping ancestor. */
 export async function assertScreenFit(options: {document?:boolean;touchTargets?:boolean;prepare?:boolean} = {}) {
   const timing={started:performance.now(),fonts:0,images:0,animations:0};

@@ -2,7 +2,7 @@ import { expect, test, type Page, type TestInfo } from '@playwright/test';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { identicalPixels, preparePixels } from './exact-pixels';
-import { assertScreenFit } from './screen-fit';
+import { assertScreenFit, warmVisibleImages } from './screen-fit';
 
 export const OPERATION_BUDGET = 2_000;
 export interface Verification { spec: string; check: () => Promise<unknown> }
@@ -29,8 +29,18 @@ export class TestStepHelper {
         const updating = ['all', 'changed'].includes(this.info.config.updateSnapshots);
         const reference = !updating && existsSync(path) ? preparePixels(readFileSync(path)) : undefined;
         await page.bringToFront(); await page.mouse.move(0, 0);
-        const ready = await page.waitForFunction(({ status }) => document.querySelector('[data-backend-status]')?.getAttribute('data-backend-status') === status, { status: view.status ?? 'synced' }, { timeout: remaining(), polling: 20 });
+        // Overlap independent image decoding with acknowledgement, inside the
+        // original shared deadline. The strict final preparation/audit below
+        // runs after both and rechecks all current images and every layout guard.
+        const [, ready] = await Promise.all([
+          page.evaluate(warmVisibleImages),
+          page.waitForFunction(({ status }) => document.querySelector('[data-backend-status]')?.getAttribute('data-backend-status') === status, { status: view.status ?? 'synced' }, { timeout: remaining(), polling: 20 })
+        ]);
         await ready.dispose();
+        // Warming may finish after the first acknowledgement; retain an exact
+        // post-warm status check before the final preparation and capture.
+        const current = await page.waitForFunction(({ status }) => document.querySelector('[data-backend-status]')?.getAttribute('data-backend-status') === status, { status: view.status ?? 'synced' }, { timeout: remaining(), polling: 20 });
+        await current.dispose();
         await page.evaluate(assertScreenFit, { document: view.document, touchTargets: true, prepare: true });
         const camera = await page.context().newCDPSession(page);
         let image: Buffer;

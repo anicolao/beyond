@@ -232,3 +232,5 @@ Prompt 82 | c529ce7017ebfadb230125618d5e6005ec38d18e2b4c403def76d1dedd52c4a5 | P
 Prompt 83 | f029917fdb64b0f84dce7cd5777cfd2294889e1ecbdb28d6e7d3f507c10951ee | Preserve155/1 Linux compatibility timeout, profile all21 command steps with unchanged assertions, verify published independent-read optimization in006 and retain scoped Linux visual acceptance.
 
 Prompt 86 | ef7f18400ecb84b8d4d49ba14981e57ca0ab01d2b1cd2e9bdd4b150ac46c699e | Replace masked release conflicts with strict compile/upload/update/readback deployment, test ten failure/race paths and preserve serialization, auth, exact guards and pending hosted gates.
+
+Prompt 88 | edf136be17b0678cd2ffce956445223d18032b68e3f61cfcf5679015cab450cd | Preserve Linux join timing trace, overlap native decode with acknowledgement under unchanged guards, prove late-image rejection, and isolate source-sensitive cloud compilation without fallback.

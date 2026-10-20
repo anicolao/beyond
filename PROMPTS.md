@@ -495,3 +495,17 @@ Reviewer09:58: Phase006 local exploratory visual/functional review is accepted f
 Reviewer-authored concrete PR7 publication409 diagnosis and repair delegation; retain validation and006 E2E work:
 
 Reviewer10:03: New concrete PR7 publish failure at51cdd6c/job118562560434 is NOT503. Independently downloaded /tmp/beyond-pr7-publish-118562560434.log: Firebase release creation POST /projects/beyond-20261018/releases returns409 cloud.firestore already exists. Diagnostic current and frozenPR5 Rules:test both200 (current warnings only). Inspect existing-release update/deployment serialization behavior and repair without weakening rules or fallback publication. Static/rules alreadyPASS; exactstillrunning. Please prioritize this gate alongside006 E2E.
+
+
+## Prompt 87: Container Startup Investigation
+
+Reviewer-authored scoped deployer review and stalled Linux runner investigation; hosted result and006 final validation remain pending:
+
+Reviewer10:13: Independently reviewed64bd94a deployer: current-source compile/readback, explicit404-only creation, existing-release PATCH, bounded transient retry and blocked publication on mismatch look scoped correctly; hosted result stillrequired. Older51cdd6c browser job118561372702 remains Initialize containers since09:43:49 (~30min), so it has not begun exact tests. Please inspect runner/container startup failure rather than reporting it as test execution; preserve evidence and recover CI as appropriate without weakening comparison. Continue006 stories.
+
+
+## Prompt 88: Remaining Gate Diagnosis
+
+Reviewer-authored exact2/Linux capture/compiler findings and repair delegation;006 acceptance/007 release remain withheld:
+
+Reviewer10:53: Independently read final local exact2:66/72, six remaining005 pixel failures;006local acceptance/007release still withheld while you fix those. PR7 Linux job118574851070 just finished61PASS/1FAIL:003 two-player shared Basic tabletop-4k, setup-tabletop.spec.ts:20:73 shared capture2019.819ms versus2000. Log saved /tmp/beyond-pr7-browser-118574851070.log. Preserve artifact/trace and diagnose this specific capture with guards unchanged; no baseline refresh warranted for timing failure. Publication attempt2 again current-source503/frozenPR5 200; investigate source-sensitive compiler issue rather than repeated blind retries, retain exact-source deployment/no fallback. Propagate any repairs through006. No merges.
