@@ -318,3 +318,7 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | P
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Apply reviewer120-approved exact-active immutable source reuse; retain changed-source compilation and two release/source identity checks before publication.
 
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate060cfb8 approved exact-active policy reuse; preserve changed-source compilation, complete file equality and double release/source readback.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Prove installed emulator source before fresh SDK suites; preserve exact mismatching-source compilation, authorization assertions and original hook deadlines.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Carry exact installed-source readback through rival research, preserving fresh SDK contexts, mismatching-source compilation and unchanged local/CI deadlines.
