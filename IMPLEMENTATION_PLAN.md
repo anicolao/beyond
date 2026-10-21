@@ -392,3 +392,6 @@ Reviewer120 dependency propagation: inherit060cfb8 approved identity-verified no
 Reviewer120 dependency propagation: inherit349a261 approved identity-verified no-op deployment throughfeat/production-management; different source still must compile. CI/hosted proof remains per-head; no gameplay/reference/guard changes.
 
 Reviewer120 dependency propagation: inherit925b31a approved identity-verified no-op deployment throughfeat/trade-decommission; different source still must compile. CI/hosted proof remains per-head; no gameplay/reference/guard changes.
+
+
+Separate123 startup repair: PR11 same-head static succeeds once but another run loses rules/remote beforeAll hooks at5001/5000ms; preserve both outcomes. Node startup exact-source proof does not populate Bun’s in-process compiler cache. Read exact installed emulator source for each fresh SDK environment, avoid only byte-identical redundant upload, and retain actual compilation for differing/missing/error source. Fail closed on transport/readback errors. Local phase005157/2884 and8 tooling tests pass; CI proof remains pending. Policies, identities, assertions and all original deadlines stay unchanged. Evidence: docs/e2e/EXACT_EMULATOR_READBACK_123.json.
