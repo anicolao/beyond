@@ -1,0 +1,38 @@
+{
+  "reviewerPrompt": 140,
+  "phase": "008",
+  "pr": 10,
+  "head": "3b3c148c2d481c9b88818d408839bf557a4f3284",
+  "job": 119007051388,
+  "passed": 90,
+  "failed": 2,
+  "minutes": 46.2,
+  "captureGuardsPassed": 51,
+  "primaryFailures": [
+    {
+      "story": "007 four-corner tabletop4K production",
+      "limitMs": 120000
+    },
+    {
+      "story": "007 four-cardinal tabletop4K production",
+      "limitMs": 120000
+    }
+  ],
+  "reviewerLog": "/tmp/beyond-review-pr10-native-3b3c148.log",
+  "retainedLog": "/Users/anicolao/projects/games/beyond/tmp/fleet133-ci/pr10-native-119007051388.log",
+  "byteIdentical": true,
+  "sha256": "3a2a01cb44c1f5f74aa1620612d25e1626fd82a33ea653e7ce82f633a43ae953",
+  "cohortAccepted": false,
+  "referencesAdopted": false,
+  "guardOrLimitChanges": false,
+  "readerFinding": "Reviewer clarifies prior overlap is a guard finding, not an established physical collision.",
+  "correctedPathProof": "docs/e2e/FLEET_READER_PATH_PROOF_140.json",
+  "correctedOriginalPathsPassed": 6,
+  "fullComparisonPassed": 118,
+  "frames": 8011,
+  "nativePathCaptures": "tmp/local-fleet-review/round140/REVIEW.md",
+  "extraInertnessProof": "tmp/local-fleet-review/round139/REVIEW.md",
+  "independentVisualAndAuditModeAcceptance": "pending",
+  "phase011Released": false,
+  "merged": false
+}

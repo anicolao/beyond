@@ -1,0 +1,504 @@
+{
+  "pr": 8,
+  "head": "0c4421b5ce95d4d599e81e7016f9963a30684f05",
+  "job": 118995634292,
+  "run": 39530692208,
+  "result": {
+    "passed": 66,
+    "failed": 6,
+    "minutes": 28.0
+  },
+  "logSha256": "7ba4637fcb1d7c58bbe9a77ee12cb36c8b0ba4779a7a508e16716ee2369b8cd4",
+  "artifact": {
+    "id": 12316237672,
+    "sha256": "b1b1c93ed40c9adda7d09bf9c3a445bb985f190a2759ea9a2905510a779a9d17",
+    "digestVerified": true
+  },
+  "classification": "Five primary2000ms capture failures and one120000ms whole-story failure; secondary closed-target/detach errors do not change primary classification. No missing/pixel-reference failure identified.",
+  "acknowledgementFinding": "Every failed final capture has synced at its initial and post-warm entry checks; no pending-backend-state polling observed. Delays include image decode/warm, browser execution scheduling and CDP capture; this does not establish their external cause.",
+  "traces": [
+    {
+      "story": "006-rival-research-rival-t-0ecd5-g-jump-at-four-corner-seats-tabletop-4k",
+      "lastCalls": [
+        {
+          "method": "queryCount",
+          "startTime": 1681009.881,
+          "ms": 1.290999999968335
+        },
+        {
+          "method": "queryCount",
+          "startTime": 1681012.724,
+          "ms": 1.343000000109896
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1681015.203,
+          "ms": 0.6689999999944121
+        },
+        {
+          "method": "waitForSelector",
+          "startTime": 1681017.089,
+          "ms": 4.4910000001545995
+        },
+        {
+          "method": "isVisible",
+          "startTime": 1681025.197,
+          "ms": 1.6580000000540167
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1681028.522,
+          "ms": 0.6709999998565763
+        },
+        {
+          "method": "bringToFront",
+          "startTime": 1681036.659,
+          "ms": 2.0479999999515712
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1681036.83,
+          "ms": 4.02599999983795
+        },
+        {
+          "method": "waitForFunction",
+          "startTime": 1681037.776,
+          "ms": 4.317999999970198
+        },
+        {
+          "method": "mouseMove",
+          "startTime": 1681040.508,
+          "ms": 278.59499999997206
+        },
+        {
+          "method": "waitForFunction",
+          "startTime": 1681321.286,
+          "ms": 89.18099999986589
+        },
+        {
+          "method": "newCDPSession",
+          "startTime": 1681412.591,
+          "ms": 0.621999999973923
+        }
+      ],
+      "lastCaptureAckAndAudit": [
+        {
+          "timestamp": 1681038.861,
+          "text": "beyond-capture-ack {\"phase\":\"initial\",\"expected\":\"synced\",\"observed\":\"synced\"}"
+        },
+        {
+          "timestamp": 1681322.841,
+          "text": "beyond-capture-ack {\"phase\":\"post-warm\",\"expected\":\"synced\",\"observed\":\"synced\"}"
+        },
+        {
+          "timestamp": 1681326.115,
+          "text": "beyond-capture-audit {\"fonts\":0,\"images\":0.7999999998137355,\"animations\":0,\"audit\":2.3999999999068677,\"elements\":52,\"controls\":4}"
+        }
+      ]
+    },
+    {
+      "story": "004-first-research-researc-a014d-shared-cardinal-first-round-tabletop-4k",
+      "lastCalls": [
+        {
+          "method": "queryCount",
+          "startTime": 1091647.904,
+          "ms": 4.072999999858439
+        },
+        {
+          "method": "getAttribute",
+          "startTime": 1091653.307,
+          "ms": 2.209999999962747
+        },
+        {
+          "method": "expect",
+          "startTime": 1091658.348,
+          "ms": 4.046000000089407
+        },
+        {
+          "method": "queryCount",
+          "startTime": 1091664.942,
+          "ms": 1.7309999999124557
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1091668.345,
+          "ms": 0.8270000000484288
+        },
+        {
+          "method": "bringToFront",
+          "startTime": 1091674.394,
+          "ms": 1.535999999847263
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1091674.812,
+          "ms": 7.298000000184402
+        },
+        {
+          "method": "waitForFunction",
+          "startTime": 1091675.298,
+          "ms": 5.97400000016205
+        },
+        {
+          "method": "mouseMove",
+          "startTime": 1091677.021,
+          "ms": 1.1100000001024455
+        },
+        {
+          "method": "waitForFunction",
+          "startTime": 1091684.043,
+          "ms": 4.96999999997206
+        },
+        {
+          "method": "newCDPSession",
+          "startTime": 1091690.798,
+          "ms": 0.8040000000037253
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1093675.117,
+          "ms": 20.902000000001863
+        }
+      ],
+      "lastCaptureAckAndAudit": [
+        {
+          "timestamp": 1091679.126,
+          "text": "beyond-capture-ack {\"phase\":\"initial\",\"expected\":\"synced\",\"observed\":\"synced\"}"
+        },
+        {
+          "timestamp": 1091685.823,
+          "text": "beyond-capture-ack {\"phase\":\"post-warm\",\"expected\":\"synced\",\"observed\":\"synced\"}"
+        },
+        {
+          "timestamp": 1091688.846,
+          "text": "beyond-capture-audit {\"fonts\":0,\"images\":0.9000000001396984,\"animations\":0.09999999986030161,\"audit\":1.7000000001862645,\"elements\":37,\"controls\":3}"
+        }
+      ]
+    },
+    {
+      "story": "004-first-research-researc-ec3b1-r-shared-corner-first-round-tabletop-4k",
+      "lastCalls": [
+        {
+          "method": "queryCount",
+          "startTime": 1124680.722,
+          "ms": 3.0899999998509884
+        },
+        {
+          "method": "getAttribute",
+          "startTime": 1124685.123,
+          "ms": 2.0760000001173466
+        },
+        {
+          "method": "expect",
+          "startTime": 1124690.217,
+          "ms": 5.677000000141561
+        },
+        {
+          "method": "queryCount",
+          "startTime": 1124697.744,
+          "ms": 3.0190000000875443
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1124702.749,
+          "ms": 1.2309999999124557
+        },
+        {
+          "method": "bringToFront",
+          "startTime": 1124709.25,
+          "ms": 1.4580000001005828
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1124709.52,
+          "ms": 5.53899999987334
+        },
+        {
+          "method": "waitForFunction",
+          "startTime": 1124710.083,
+          "ms": 4.3869999998714775
+        },
+        {
+          "method": "mouseMove",
+          "startTime": 1124712.005,
+          "ms": 1.8180000002030283
+        },
+        {
+          "method": "waitForFunction",
+          "startTime": 1124717.342,
+          "ms": 17.239999999990687
+        },
+        {
+          "method": "newCDPSession",
+          "startTime": 1124736.735,
+          "ms": 0.8659999999217689
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1126710.242,
+          "ms": 10.570999999996275
+        }
+      ],
+      "lastCaptureAckAndAudit": [
+        {
+          "timestamp": 1124712.955,
+          "text": "beyond-capture-ack {\"phase\":\"initial\",\"expected\":\"synced\",\"observed\":\"synced\"}"
+        },
+        {
+          "timestamp": 1124720.717,
+          "text": "beyond-capture-ack {\"phase\":\"post-warm\",\"expected\":\"synced\",\"observed\":\"synced\"}"
+        },
+        {
+          "timestamp": 1124734.156,
+          "text": "beyond-capture-audit {\"fonts\":0.09999999986030161,\"images\":12.699999999953434,\"animations\":0,\"audit\":2,\"elements\":37,\"controls\":3}"
+        }
+      ]
+    },
+    {
+      "story": "004-first-research-researc-edacf-shared-cardinal-first-round-tabletop-4k",
+      "lastCalls": [
+        {
+          "method": "getAttribute",
+          "startTime": 1061196.543,
+          "ms": 1.287999999942258
+        },
+        {
+          "method": "expect",
+          "startTime": 1061200.125,
+          "ms": 37.455000000074506
+        },
+        {
+          "method": "queryCount",
+          "startTime": 1061239.544,
+          "ms": 1.2620000001043081
+        },
+        {
+          "method": "queryCount",
+          "startTime": 1061241.995,
+          "ms": 1.1729999999515712
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1061244.699,
+          "ms": 0.6559999999590218
+        },
+        {
+          "method": "bringToFront",
+          "startTime": 1061258.546,
+          "ms": 1.9379999998491257
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1061258.718,
+          "ms": 666.5629999998491
+        },
+        {
+          "method": "waitForFunction",
+          "startTime": 1061259.063,
+          "ms": 667.1129999998957
+        },
+        {
+          "method": "mouseMove",
+          "startTime": 1061261.695,
+          "ms": 666.4699999999721
+        },
+        {
+          "method": "waitForFunction",
+          "startTime": 1061930.295,
+          "ms": 925.4990000000689
+        },
+        {
+          "method": "newCDPSession",
+          "startTime": 1062857.879,
+          "ms": 0.7060000000055879
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1063248.789,
+          "ms": 20.957999999867752
+        }
+      ],
+      "lastCaptureAckAndAudit": [
+        {
+          "timestamp": 1061262.48,
+          "text": "beyond-capture-ack {\"phase\":\"initial\",\"expected\":\"synced\",\"observed\":\"synced\"}"
+        },
+        {
+          "timestamp": 1062834.93,
+          "text": "beyond-capture-ack {\"phase\":\"post-warm\",\"expected\":\"synced\",\"observed\":\"synced\"}"
+        },
+        {
+          "timestamp": 1062854.697,
+          "text": "beyond-capture-audit {\"fonts\":0,\"images\":15.5,\"animations\":0.09999999986030161,\"audit\":3.9000000001396984,\"elements\":120,\"controls\":19}"
+        }
+      ]
+    },
+    {
+      "story": "006-rival-research-rival-t-172db-ction-at-two-cardinal-seats-tabletop-4k",
+      "lastCalls": [
+        {
+          "method": "expect",
+          "startTime": 1545931.023,
+          "ms": 1.6059999999124557
+        },
+        {
+          "method": "expect",
+          "startTime": 1545934.129,
+          "ms": 2.3640000000596046
+        },
+        {
+          "method": "queryCount",
+          "startTime": 1545938.009,
+          "ms": 1.282999999821186
+        },
+        {
+          "method": "queryCount",
+          "startTime": 1545940.83,
+          "ms": 1.25
+        },
+        {
+          "method": "isVisible",
+          "startTime": 1545943.235,
+          "ms": 1.4020000000018626
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1545946.149,
+          "ms": 0.659999999916181
+        },
+        {
+          "method": "bringToFront",
+          "startTime": 1545954.677,
+          "ms": 0.9400000001769513
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1545954.838,
+          "ms": 6.46999999997206
+        },
+        {
+          "method": "waitForFunction",
+          "startTime": 1545955.158,
+          "ms": 4.4390000000130385
+        },
+        {
+          "method": "mouseMove",
+          "startTime": 1545956.586,
+          "ms": 220.2960000000894
+        },
+        {
+          "method": "waitForFunction",
+          "startTime": 1546179.088,
+          "ms": 37.9340000001248
+        },
+        {
+          "method": "newCDPSession",
+          "startTime": 1546219.097,
+          "ms": 0.6759999999776483
+        }
+      ],
+      "lastCaptureAckAndAudit": [
+        {
+          "timestamp": 1545958.603,
+          "text": "beyond-capture-ack {\"phase\":\"initial\",\"expected\":\"synced\",\"observed\":\"synced\"}"
+        },
+        {
+          "timestamp": 1546181.304,
+          "text": "beyond-capture-ack {\"phase\":\"post-warm\",\"expected\":\"synced\",\"observed\":\"synced\"}"
+        },
+        {
+          "timestamp": 1546216.791,
+          "text": "beyond-capture-audit {\"fonts\":0,\"images\":33.1999999997206,\"animations\":0,\"audit\":2.3999999999068677,\"elements\":52,\"controls\":4}"
+        }
+      ]
+    },
+    {
+      "story": "005-technology-discovery-d-96095-he-complete-Exo-Alloy-queue-tabletop-4k",
+      "lastCalls": [
+        {
+          "method": "expect",
+          "startTime": 1247058.988,
+          "ms": 2.7440000001806766
+        },
+        {
+          "method": "queryCount",
+          "startTime": 1247063.318,
+          "ms": 1.6510000000707805
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1247066.112,
+          "ms": 1.0609999999869615
+        },
+        {
+          "method": "waitForSelector",
+          "startTime": 1247068.4,
+          "ms": 4.568000000203028
+        },
+        {
+          "method": "isVisible",
+          "startTime": 1247076.933,
+          "ms": 1.7890000001061708
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1247080.32,
+          "ms": 0.7169999999459833
+        },
+        {
+          "method": "bringToFront",
+          "startTime": 1247088.749,
+          "ms": 1.0689999999012798
+        },
+        {
+          "method": "evaluateExpression",
+          "startTime": 1247088.922,
+          "ms": 6.074000000022352
+        },
+        {
+          "method": "waitForFunction",
+          "startTime": 1247089.247,
+          "ms": 4.277999999932945
+        },
+        {
+          "method": "mouseMove",
+          "startTime": 1247090.998,
+          "ms": 682.6570000001229
+        },
+        {
+          "method": "waitForFunction",
+          "startTime": 1247776.261,
+          "ms": 6.8190000001341105
+        },
+        {
+          "method": "newCDPSession",
+          "startTime": 1247784.94,
+          "ms": 0.6929999999701977
+        }
+      ],
+      "lastCaptureAckAndAudit": [
+        {
+          "timestamp": 1247092.711,
+          "text": "beyond-capture-ack {\"phase\":\"initial\",\"expected\":\"synced\",\"observed\":\"synced\"}"
+        },
+        {
+          "timestamp": 1247778.011,
+          "text": "beyond-capture-ack {\"phase\":\"post-warm\",\"expected\":\"synced\",\"observed\":\"synced\"}"
+        },
+        {
+          "timestamp": 1247782.847,
+          "text": "beyond-capture-audit {\"fonts\":0,\"images\":1.1999999999534339,\"animations\":0,\"audit\":3.5,\"elements\":111,\"controls\":11}"
+        }
+      ]
+    }
+  ],
+  "action": "Preserve guard/budget/reference identity. No same-head rerun, baseline adoption or speculative implementation attributed as a repair. Accepted PR7 source remains unchanged.",
+  "classificationCorrection135": "Earlier shorthand counted all six as capture/step deadlines. Exact log proves five capture deadlines and one primary120-second whole-story timeout. Raw traces/logs and acknowledgement observations remain preserved.",
+  "primaryFailureCounts": {
+    "captureDeadline": 5,
+    "wholeStoryDeadline": 1,
+    "pixelMismatch": 0,
+    "missingReference": 0
+  },
+  "exactPrimaryCasesReport": "docs/e2e/RIVAL_CI_CHECKPOINT_135.json"
+}

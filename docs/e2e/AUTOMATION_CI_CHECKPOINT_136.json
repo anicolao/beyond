@@ -1,0 +1,97 @@
+{
+  "reviewerPrompt": 136,
+  "phase": "009",
+  "pr": 11,
+  "head": "029449dccb7c4458f5e75aa0c018b80ec5d538b7",
+  "comparison": {
+    "job": 119000070424,
+    "passed": 16,
+    "failed": 86,
+    "minutes": 16.2,
+    "pixelMismatches": 56,
+    "missingReferences": 30,
+    "captureTimeouts": 0,
+    "storyTimeouts": 0,
+    "reviewerLog": "/tmp/beyond-review-pr11-linux-029449d.log",
+    "byteIdentical": true,
+    "retainedLog": {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-ci/pr11-comparison-119000070424.log",
+      "sha256": "7525dde2a6fb471c4e063a418e6c27d1b3fabbb1d23de88aa2b3886ba22090a2",
+      "bytes": 594900
+    }
+  },
+  "native": {
+    "job": 119000070090,
+    "pendingAtReviewerCheckpoint": true,
+    "latestStatus": "completed",
+    "conclusion": "failure",
+    "completedAtUtc": "2026-10-21T03:29:31Z",
+    "run": 39530853921,
+    "passed": 98,
+    "failed": 4,
+    "captureDeadlines": 2,
+    "storyDeadlines": 2,
+    "retainedLog": {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-ci/pr11-native-119000070090.log",
+      "sha256": "b3ec5b5157de1b466205b0b4050f083abd76c59254b9fe3c3b0fe4f866d7b835",
+      "bytes": 256081
+    },
+    "caseDetails": "docs/e2e/OLDER_LINUX_EVIDENCE_133.json"
+  },
+  "cohortAccepted": false,
+  "referencesAdopted": false,
+  "limitsOrAssertionsWeakened": false,
+  "phase010": {
+    "inFlightCandidateCheckpoint": "Reviewer observed4/16; historical incomplete progress, not a final result. Failed candidates retained in tmp/fleet133-candidates-final1 and subsequent candidate logs.",
+    "completedFullExact": {
+      "passed": 118,
+      "failed": 0,
+      "minutes": 28.6,
+      "frames": 8011,
+      "fleetVariants": 16,
+      "fleetFrames": 1182,
+      "audit": "docs/e2e/FLEET_FINAL_AUDIT_010.json"
+    },
+    "backendHistory": {
+      "initial": {
+        "passed": 199,
+        "failed": 1,
+        "assertions": 3156,
+        "failure": "optional ad-leonis pass is paid once and responder-bound: permission-denied",
+        "evidence": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-backend.log",
+          "sha256": "9984fdba00cbc42efbe93748feb9b1a8cc28e43f3e768d2fcb64f81ffa19bf9e",
+          "bytes": 1165986
+        }
+      },
+      "targeted": {
+        "passed": 1,
+        "failed": 0,
+        "assertions": 2,
+        "evidence": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-ad-leonis-targeted.log",
+          "sha256": "fd5d1d715e069a515cfbc0ad50361382e6b52f68a1c9bdeebe9168b76f3d9d14",
+          "bytes": 2969
+        }
+      },
+      "freshFull": {
+        "passed": 200,
+        "failed": 0,
+        "assertions": 3158,
+        "seconds": 71.93,
+        "evidence": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-backend-fresh.log",
+          "sha256": "8a0508e65b5a6ca9c9cb121b5688072f686a9c037ba671f24f9ad7e54b526086",
+          "bytes": 1167045
+        }
+      },
+      "cause": "Unresolved.3117 prior synthetic invitations were observed in isolated8597; collision/contamination was not proven as the cause. Only test namespace reset; reviewer data/auth untouched.",
+      "sourceChange": "Error-only setup-event attribution preserves every write/assertion; no policy/reducer change claimed as a repair."
+    },
+    "latestChecks": "51 capture guards,56 tooling,types0/0,policy,builds and diff checks pass",
+    "independentFinalEvidenceReview": "pending",
+    "reviewPacket": "tmp/local-fleet-review/round133/REVIEW.md"
+  },
+  "phase011Released": false,
+  "merged": false
+}

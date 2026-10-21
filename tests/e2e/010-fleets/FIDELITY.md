@@ -1,0 +1,15 @@
+# Fleet presentation and review010
+
+The production shipbuilding and fleet-register components follow the ivory/graphite/brass and illuminated resource-object composition in `docs/ux/concepts/05-fleets.png`. The concept is a visual authority, not a rules source. Actual destinations, board edges, ship levels and costs come from the reviewed base-game manifests and publisher rules.
+
+Independent review accepted compact desktop/phone construction, the source Population cube → levelled ship and location-power preview, persistent cost/commit, owned-yard construction, upgrade/control consequences, and native cardinal/corner4K and640-height compositions. Reviewer133 releases formal candidates for these surfaces. It does not release011 or establish a final local/hosted gate.
+
+Every ordinary journey uses the shared fixture and TestStepHelper for setup inputs, faction choice, planning, optional-build keyboard toggle, cancellation/focus return, occupied space, commitments, pending-effect reload, movement decline, production/handoff and public fleet inspection. Remote participants use separate authenticated contexts. Shared seats use one controller. No fixture state, future deck read, gameplay write or transferred controller reaches the board.
+
+The Level I upgrade picker now names the ship's actual public location, including a controlled Northern shipyard. Previously its historical Sol/Deep Space formatting could mislabel a remote ship. Required target selection, costs, control resolver, source cubes and immutable events remain canonical.
+
+Candidate PNG generation and independent exact comparison are separate stages. Retain all2s capture/operation and120s story budgets, touch/clipping/topology guards, pinned rendering flags, native PNGs and zero-tolerance RGBA comparisons. Inspect actual native captures before accepting references. Earlier-reference deltas require scoped review; failures never authorize a blanket refresh. Linux and matching-head hosted checks remain separate final gates.
+
+The first full118-story comparison passed116 and exposed two deterministic remote-fixture code collisions with006. The fixture’s distinct UUIDs were equal after the production five-byte/modulo26 invitation projection. Only010 Basic remote prefixes changed; production randomness, reservation retries, rules, real controller separation and fixed setup seed remain unchanged. Preserve the first full evidence, regenerate only those two invitation-bearing variants, then require a fresh complete independent comparison. The full walkthrough index remains intact after focused generation.
+
+Final macOS independent comparison:118/118 PASS28.6m,8011 recorded frames with generating=false;010 contributes16 variants/1182 frames. Current backend200/3158,51 unchanged capture guards,56 tooling,types0/0 and source policy pass. Native PNG review packet: tmp/local-fleet-review/round133/REVIEW.md. Independent final reviewer acceptance and later exact-head Linux/hosted gates remain separate;011 is not released.

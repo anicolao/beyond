@@ -1,0 +1,28 @@
+{
+  "scope": "Source-only010 repair;011 visuals and preview remain local",
+  "reviewerAcceptance": "Prompt147 independently verifies retained Zheng/Barnard room reaches Production, two ships at Barnard plus one Sol, Food outpost/Population bonus. Room/controller untouched by agent.",
+  "fix": "resolveControlCheck reads state.players[position] ?? initial actor without materializing another economy.",
+  "securityCoverage": "Six new ordinary legal shared-table scenarios:2/3/4 first-turn control, plus every pair of three Zheng ships to Barnard. Exact initial-opponent-economy forgery rejected; outpost/bonus/remaining ship/persisted projection checked.",
+  "rulesChanged": false,
+  "referencesChanged": false,
+  "guardsChanged": false,
+  "baselineSource": "118/118 accepted local at9018b9f; no UI/story/reference change in repair",
+  "pending": [
+    "Current-source publisher503",
+    "Linux exact: old9018 comparison16/118,56pixels/46missing; no new cohort accepted",
+    "Latest old9018 static198/200: deployed remote3/4 five-second timeouts",
+    "Independent matching-head hosted review"
+  ],
+  "failedTimingCandidate": "Parallel probes contended on same documents; both candidates/logs retained and completely reverted. Original compatibility source unchanged.",
+  "validation": {
+    "backend": "206 pass/3197 assertions, isolated8597, original5s budgets",
+    "types": "0 errors/0 warnings",
+    "sourcePolicy": "PASS",
+    "diffCheck": "PASS"
+  },
+  "sourceFiles": [
+    "src/lib/game/discovery-movement.ts",
+    "tests/backend/rules.test.ts"
+  ],
+  "canonicalRulesSha256": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67"
+}

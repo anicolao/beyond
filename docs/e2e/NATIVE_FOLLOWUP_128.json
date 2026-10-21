@@ -1,0 +1,58 @@
+{
+  "reviewerPrompt": 128,
+  "head": "07cbf3df956221c00c25a85ab86a35a713aeae8d",
+  "job": "118955393110",
+  "completedResult": {
+    "passed": 98,
+    "failed": 4,
+    "minutes": 50.2,
+    "captureGuardsPassed": 50
+  },
+  "fullLog": {
+    "path": "/Users/anicolao/projects/games/beyond/tmp/fleet123-ci/pr11-native-118955393110-final.log",
+    "sha256": "44676c9bdf4c2055f349328c2504d115edccdf44a9f20f0bc8964e49e05ada76",
+    "bytes": 448931
+  },
+  "previousClassification": "tmp/fleet123-ci/pr11-native-classification.json",
+  "reconciliation": "Final full log confirms original small-artifact classification; prior in-flight upload status is historical. No native cohort accepted.",
+  "primaryFailures": [
+    {
+      "story": "005 Dimensional Rift",
+      "captureMs": 2071.4776550000533,
+      "limitMs": 2000
+    },
+    {
+      "story": "005 four fleets",
+      "captureMs": 2034.318158,
+      "limitMs": 2000
+    },
+    {
+      "story": "007 four corner seats",
+      "storyLimitMs": 120000
+    },
+    {
+      "story": "007 four cardinal seats",
+      "storyLimitMs": 120000
+    }
+  ],
+  "secondaryErrors": "Closed-page errors after story timeout are diagnostic consequences, not additional primary failures.",
+  "budgetsChanged": false,
+  "referencesImported": false,
+  "phase010": {
+    "scopedVisualApproval": [
+      "round124-remote-c/phone-build-393.png",
+      "round124-remote-c/host-build-1280.png"
+    ],
+    "independentOrdinaryFlow": "Reviewer own retained table passed Basic build/reload/no-move/production/register and Escape focus return.",
+    "protectedRoom": "http://127.0.0.1:5205/?table=b06dacf7-1bee-4e3f-9ac0-9e46793dfc24",
+    "controllerAccessed": false,
+    "fullAcceptance": false,
+    "baselineAuthorization": false,
+    "pendingReview": [
+      "rotated shared",
+      "controlled shipyard",
+      "upgrade",
+      "remaining live review"
+    ]
+  }
+}

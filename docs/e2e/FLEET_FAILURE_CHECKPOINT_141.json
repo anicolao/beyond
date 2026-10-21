@@ -1,0 +1,124 @@
+{
+  "reviewerPrompt": 141,
+  "checkpoint": "At reviewer04:39 cause was not established; passing tail did not make the in-flight run clean. Initial progress counts that missed phone21 were explicitly corrected.",
+  "firstFullRun": {
+    "passed": 116,
+    "failed": 2,
+    "minutes": 28.7,
+    "log": {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-first-full-exact/exact.log",
+      "sha256": "58316d8443973848247fafddee7e32701d1b59923b1d215e42e5d50ef3a59fa4",
+      "bytes": 39454
+    },
+    "failures": [
+      {
+        "project": "phone",
+        "caseNumber": 21,
+        "seconds": 2.4,
+        "case": "Build upgrade and retain a real fleet with separate controllers",
+        "failedAt": "Wait for Invitation code after Create room",
+        "uiState": "Connected; invitation reservation error; still on ordinary host form",
+        "completedSteps": 4,
+        "errorContext": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-first-full-exact/test-results/010-fleets-fleet-remote-Bu-bbb38-t-with-separate-controllers-phone/error-context.md",
+          "sha256": "a93f94a4800a0b21f9024fda4a20995113efdbb3e13fe025ff10e2691cd58ffe",
+          "bytes": 8103
+        },
+        "trace": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-first-full-exact/test-results/010-fleets-fleet-remote-Bu-bbb38-t-with-separate-controllers-phone/trace.zip",
+          "sha256": "48e8b96d8ee9aedcefec6cf2d38d00e52825edba7e08324d9772047673aa4682",
+          "bytes": 54208
+        },
+        "partialRecord": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-first-full-exact/test-results/010-fleets-fleet-remote-Bu-bbb38-t-with-separate-controllers-phone/story.json",
+          "sha256": "06fe0060c01530ae19146a3dad427466503c6257994506ddeaa406e1759aaec6",
+          "bytes": 3007
+        }
+      },
+      {
+        "project": "desktop",
+        "caseNumber": 76,
+        "seconds": 2.6,
+        "case": "Build upgrade and retain a real fleet with separate controllers",
+        "failedAt": "Wait for Invitation code after Create room",
+        "uiState": "Connected; invitation reservation error; still on ordinary host form",
+        "completedSteps": 4,
+        "errorContext": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-first-full-exact/test-results/010-fleets-fleet-remote-Bu-bbb38-t-with-separate-controllers-desktop/error-context.md",
+          "sha256": "a93f94a4800a0b21f9024fda4a20995113efdbb3e13fe025ff10e2691cd58ffe",
+          "bytes": 8103
+        },
+        "trace": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-first-full-exact/test-results/010-fleets-fleet-remote-Bu-bbb38-t-with-separate-controllers-desktop/trace.zip",
+          "sha256": "2aa40ed7a0f06930df10ae1fa0d6d2f0156e77152da604b4a6bdee19ad500a7a",
+          "bytes": 54309
+        },
+        "partialRecord": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-first-full-exact/test-results/010-fleets-fleet-remote-Bu-bbb38-t-with-separate-controllers-desktop/story.json",
+          "sha256": "e59660d0cb45e976a84c932fc06b4446e2e52a03be11c845429884e7e9d1ed3e",
+          "bytes": 3017
+        }
+      }
+    ],
+    "status": "FAILED, permanently preserved; never reclassified as a clean pass"
+  },
+  "postRunDiagnosis": {
+    "finding": "Deterministic010 basic remote UUID prefixes collide with006 paid remote invitation codes after the production modulo26 projection, although UUIDs themselves differ. All five retries increment only a UUID suffix outside the five consumed bytes, so this fixture cannot escape the collision.",
+    "cases": [
+      {
+        "project": "phone",
+        "fleetPrefix": "0xa0121000",
+        "paidRivalPrefix": "0x86121000",
+        "bothCodes": "ESQAE",
+        "assertEqual": true,
+        "newFleetPrefix": "0xab121000",
+        "newCode": "PSQAE"
+      },
+      {
+        "project": "desktop",
+        "fleetPrefix": "0xa0122000",
+        "paidRivalPrefix": "0x86122000",
+        "bothCodes": "ESGAE",
+        "assertEqual": true,
+        "newFleetPrefix": "0xab122000",
+        "newCode": "PSGAE"
+      }
+    ],
+    "proof": "Earlier006 paid-rival room creation passes in the same unchanged test backend. Production modulo26 projection maps deterministic fixture prefix bytes to the same five-letter code. Both010 failures show the reservation error, not a pixel/capture-guard failure. Five fixture retry UUIDs vary only outside consumed code bytes.",
+    "productCodeChanged": false,
+    "correction": "Only010 Basic remote test UUID prefixes; setup entropy and all gameplay unchanged",
+    "candidateRefresh": "Two affected variants2/2PASS19s; full index preserved",
+    "fullRegressionRequiredAndRun": true
+  },
+  "freshIndependentFullRun": {
+    "passed": 118,
+    "failed": 0,
+    "minutes": 28.6,
+    "frames": 8011,
+    "fleetVariants": 16,
+    "fleetFrames": 1182,
+    "generating": false,
+    "command": "PUBLIC_FIREBASE_EMULATORS=true PUBLIC_AUTH_EMULATOR_PORT=9697 PUBLIC_FIRESTORE_EMULATOR_PORT=8797 bunx playwright test",
+    "snapshotUpdateArgument": false,
+    "log": {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-final-exact2.log",
+      "sha256": "0a5407ba1ac21f49fac06d6214ab4b51c3b196e44c6ee6fbed4234b56f02db4a",
+      "bytes": 22150
+    },
+    "recordAudit": {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-final-audit.json",
+      "sha256": "405aa9879e270448e88c56746baa61d18cb04deab1a792e39fdbc2977d6224b3",
+      "bytes": 5676
+    },
+    "allRecords": {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-final-story-records.json",
+      "sha256": "a00e0f412247505cad1b63f9e0917ed4eb40d3a039b7227202d344e3aa5d09ae",
+      "bytes": 5047985
+    }
+  },
+  "assertionsGuardsOrDeadlinesWeakened": false,
+  "referenceAcceptance": "Independent reader/audit-mode and final reference review still pending; machine frame audit complete.",
+  "readerProof": "tmp/local-fleet-review/round140/REVIEW.md",
+  "phase011Released": false,
+  "merged": false
+}

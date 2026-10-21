@@ -1,0 +1,62 @@
+{
+  "reviewerPrompt": 137,
+  "phase": "007",
+  "pr": 9,
+  "head": "5ba1cbee114d5ba9ac9732ccf1262f15ef96fb7f",
+  "native": {
+    "job": 118995776273,
+    "passed": 77,
+    "failed": 3,
+    "minutes": 36.5,
+    "captureGuardsPassed": 46,
+    "reviewerLog": "/tmp/beyond-review-pr9-native-5ba1cbe.log",
+    "retainedLog": "/Users/anicolao/projects/games/beyond/tmp/fleet133-ci/pr9-native-118995776273.log",
+    "byteIdentical": true,
+    "sha256": "25990a132790b03d4b826fe3002764514678bb3bc4e51eea60f6a03942722c5f",
+    "captureFailure": {
+      "story": "005 four-fleets tabletop4K",
+      "ms": 2195.546106999973,
+      "limitMs": 2000
+    },
+    "storyFailures": [
+      {
+        "story": "007 four-corner production",
+        "limitMs": 120000
+      },
+      {
+        "story": "007 four-cardinal production",
+        "limitMs": 120000
+      }
+    ]
+  },
+  "comparisonTrackedSeparately": "docs/e2e/PRODUCTION_CI_CHECKPOINT_134.json:30/80;41pixel/8missing/1capture failure",
+  "cohortAccepted": false,
+  "referencesAdopted": false,
+  "guardsOrBudgetsChanged": false,
+  "phase010": {
+    "reviewerObservedCandidateProgress": "16/16 before complete exact gate; historical checkpoint preserved",
+    "northernSolCorrection": "Actual-location target and summary correction completed; final phone/native evidence matches final source references.",
+    "laterCompletedGates": {
+      "fullExactPassed": 118,
+      "fullExactFailed": 0,
+      "minutes": 28.6,
+      "frames": 8011,
+      "fleetVariants": 16,
+      "fleetFrames": 1182,
+      "backendPassed": 200,
+      "backendAssertions": 3158,
+      "captureGuards": 51,
+      "tooling": 56,
+      "types": "0errors/0warnings",
+      "sourcePolicy": "PASS",
+      "builds": "preview+production PASS",
+      "diffCheck": "PASS"
+    },
+    "evidence": "tmp/local-fleet-review/round133/REVIEW.md",
+    "audit": "docs/e2e/FLEET_FINAL_AUDIT_010.json",
+    "originalBackendFailurePreserved": "docs/e2e/AUTOMATION_CI_CHECKPOINT_136.json; underlying cause not established",
+    "independentFinalEvidenceReview": "pending"
+  },
+  "phase011Released": false,
+  "merged": false
+}

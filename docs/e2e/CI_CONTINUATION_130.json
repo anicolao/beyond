@@ -1,0 +1,120 @@
+{
+  "reviewerPrompt": 130,
+  "nativeFollowup": {
+    "head": "6a45f0d7cce0977434aac1cc80f766b59502c3ef",
+    "job": 118977526225,
+    "run": 39523242067,
+    "testStep": "FAILED; archive upload continues; no cancellation or rerun",
+    "passed": 99,
+    "failed": 3,
+    "artifact": {
+      "id": 12315840618,
+      "bytes": 21964412,
+      "sha256": "c66e9b69fb0b4c093d4a08b7d50ffa48627e6f70408a23f0ba7b7b9200242564",
+      "fullSmallArchiveVerified": true
+    },
+    "failures": [
+      {
+        "story": "Manage matching Supply and full Ore yields at four corner seats",
+        "file": "007-production/production-tabletop.spec.ts",
+        "durationMs": 120155,
+        "primary": "120000ms story timeout",
+        "secondary": "Closed-page/detach errors after timeout are secondary"
+      },
+      {
+        "story": "Manage matching Supply and full Ore yields at four cardinal seats",
+        "file": "007-production/production-tabletop.spec.ts",
+        "durationMs": 120143,
+        "primary": "120000ms story timeout",
+        "secondary": "Closed-page/detach errors after timeout are secondary"
+      },
+      {
+        "story": "Recover one game between PR and production clients",
+        "file": "001-foundation/recovery.spec.ts",
+        "durationMs": 8836,
+        "primary": "Initial acknowledgement wait exceeded original2000ms capture deadline at PR-to-production recovery",
+        "secondary": "No final screenshot/audit completed; contextual snapshot eventually Connected, insufficient to prove status at poll entry"
+      }
+    ],
+    "candidateCohortAccepted": false,
+    "referencesImported": false
+  },
+  "compiler": {
+    "canonicalSourceSHA256": "7f0576786d8be232e4214b07c113a7f343436b392d940de9ca141cf2b07928e3",
+    "newProbes": [
+      {
+        "status": 503,
+        "name": "unified-overlapping-game-event-scopes",
+        "bytes": 112832,
+        "sha256": "13c86fde11eef67aa1d2d129f0f0ccfbdd2ebc534597330b69e5970e04c9ae95",
+        "ms": 5417.186541,
+        "deployed": false,
+        "liveEmulatorChanged": false,
+        "scope": "Read-only compiler diagnostic, not adopted; Every helper body and allow clause byte-preserved; unify identical overlapping match paths and narrow all event-only helpers by exact dependency closure."
+      },
+      {
+        "status": 503,
+        "name": "shallow-root-preserving-split",
+        "bytes": 140859,
+        "sha256": "4aae3d74ad7d55be217faf6fed096bf18420583fb6da7a7d4f3d6760e6a8112b",
+        "ms": 5381.360584,
+        "deployed": false,
+        "liveEmulatorChanged": false,
+        "scope": "Read-only compiler diagnostic, not adopted; Original ordered boolean leaves distributed into helper functions; no predicates removed; not adopted pending full equivalence/security review."
+      }
+    ],
+    "scopeProof": {
+      "privateCompilerProbe": true,
+      "deployed": false,
+      "sourceSHA256": "7f0576786d8be232e4214b07c113a7f343436b392d940de9ca141cf2b07928e3",
+      "candidateSHA256": "13c86fde11eef67aa1d2d129f0f0ccfbdd2ebc534597330b69e5970e04c9ae95",
+      "bytes": 112832,
+      "uniqueFunctionNames": 235,
+      "functionBodiesByteIdentical": true,
+      "allowClausesByteIdenticalMultiset": true,
+      "rootGameHelpers": 54,
+      "eventOnlyHelpers": 177,
+      "outsideHelpersRetained": 4,
+      "rootAllows": 9,
+      "eventAllows": 8,
+      "change": "Merge three overlapping /games/{game} scopes and their identical relative event paths; narrow event-exclusive declarations after exact root dependency closure. Same bound wildcard names and unchanged sibling allow clauses. No predicate or function body removed."
+    },
+    "callDepthFollowup": {
+      "earlierBroadSplit": "Conservative lexical bound34 exceeds documented20; rejected and never adopted.",
+      "canonicalSource": 12,
+      "unifiedScopes": 12,
+      "rootPreservingSplit": 20,
+      "allRootPreservingLetCountsAtMost10": true,
+      "claim": "Bounds are conservative lexical diagnostics, not proof of service-internal failure. Even narrowed root-preserving source returns503."
+    },
+    "documentation": "https://firebase.google.com/docs/rules/rules-language#functions",
+    "deployed": false,
+    "emulatorChanged": false,
+    "bypassOrFrozenFallback": false
+  },
+  "nativePaintProbe": {
+    "resultSHA256": "9d3062629f5b04717a16f180c903967ce31e1bc17a1e72fad70b2e37a5ccdb7b",
+    "fullViewport": "3840x2160",
+    "states": [
+      "ordinary4-player board",
+      "research planner"
+    ],
+    "variants": [
+      "will-change opacity on board/dialog",
+      "will-change transform on board/dialog",
+      "will-change opacity on environment"
+    ],
+    "allVariantsRejected": "Every modified variant changes RGBA pixels and is not faster than baseline. No CSS adopted.",
+    "sourceRenderFlagsChanged": false
+  },
+  "ciDiagnosticStatus": {
+    "phase006Head": "0c4421b5ce95d4d599e81e7016f9963a30684f05",
+    "browserJob": 118995634292,
+    "stage": "E2E test step in progress; no result claimed",
+    "publishJob": 118995634449,
+    "publishResult": "Exact7f057678 Rules:test503; frozen control200; strict publication remains blocked"
+  },
+  "performanceRepairProven": false,
+  "reviewServicesAndIdentitiesPreserved": true,
+  "phase010And011Held": true
+}

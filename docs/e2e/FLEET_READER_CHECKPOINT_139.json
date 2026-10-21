@@ -1,0 +1,359 @@
+{
+  "reviewerPrompt": 139,
+  "finding": "Original candidate log failed three two-player rotated-reader variants, not three player-count variants. Current physical geometry is separated; document AABBs of rotated controls intersect.",
+  "originalFailures": [
+    {
+      "players": 2,
+      "project": "desktop",
+      "story": "003 compact shared setup"
+    },
+    {
+      "players": 2,
+      "project": "desktop",
+      "story": "003 shared setup"
+    },
+    {
+      "players": 2,
+      "project": "tabletop-4k",
+      "story": "003 shared setup"
+    }
+  ],
+  "originalLog": "tmp/fleet133-candidates/003-basic-setup/exact.log",
+  "existingCorrection": "003/004 mat fixture metadata selects the same established polygon audit used for rotated faction choosers. No production layout, guard predicate or budget change. This correction remains subject to independent reader review.",
+  "freshOrdinaryUiProof": {
+    "cases": 9,
+    "players": [
+      2,
+      3,
+      4
+    ],
+    "viewports": [
+      "1280x720",
+      "1440x1000",
+      "3840x2160"
+    ],
+    "headerGapCssPx": [
+      12,
+      20
+    ],
+    "gamePolygonAudit": "9/9PASS",
+    "documentAabbAudit": "PASS for all6 unrotated3/4-player cases; false positive for all3 rotated2-player cases",
+    "focus": "Background mat Close and table opener cannot take focus while Fleet modal is active. Ten Tab presses remain within Fleet; Escape restores Fleet opener then physical mat opener in all9 cases.",
+    "testData": "New normal-UI controller/room per player count; no state injection or reviewer-controller reuse.",
+    "results": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/results.json",
+    "resultsSha256": "5400e10bba9fdffb941350d604130241846824861c8215896aa423ac287e1a64",
+    "images": [
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/2p-1280-fleet-inert.png",
+        "sha256": "2d9ddba4fe0e541874daa61e84046baae55ab0198c57c0b01310c1a3f0a7dc32",
+        "dimensions": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/2p-1280-fleet-return.png",
+        "sha256": "45d9daf6be846c4cf40a9dc4d33ac4e618a7484942198c10392667617178d01c",
+        "dimensions": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/2p-1280-mat-return.png",
+        "sha256": "120ca190513dc092d8d66a53c865d1d20d74ace9f7c908be41115e64b33d5cda",
+        "dimensions": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/2p-1280-mat.png",
+        "sha256": "6f3fab66c754050c85d115c2b8512c69491fe145ec259c8356ecc1b5f5388e57",
+        "dimensions": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/2p-1440-fleet-inert.png",
+        "sha256": "fce52c77dcdd8a63d35cca42f604582019896a3c030549fb38d27ab5af4ceb49",
+        "dimensions": [
+          1440,
+          1000
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/2p-1440-fleet-return.png",
+        "sha256": "d0eb908ad21b533c41dda7bb64e3ec9f1647b098b2a76c53a63802e78d206405",
+        "dimensions": [
+          1440,
+          1000
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/2p-1440-mat-return.png",
+        "sha256": "c05f544f52cc63817808eb0ceaba4ed6903cb7297a5446aaa149c99c9a16edb4",
+        "dimensions": [
+          1440,
+          1000
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/2p-1440-mat.png",
+        "sha256": "d0eb908ad21b533c41dda7bb64e3ec9f1647b098b2a76c53a63802e78d206405",
+        "dimensions": [
+          1440,
+          1000
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/2p-3840-fleet-inert.png",
+        "sha256": "ca0fc1168c0312a3aa577cdae18b39b43eb2bfc7d12ffefc95b51564b448e8de",
+        "dimensions": [
+          3840,
+          2160
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/2p-3840-fleet-return.png",
+        "sha256": "a5d602be9690379d2f82a998ae726be0072345b21b96aef1f7ddaa46b55ebec0",
+        "dimensions": [
+          3840,
+          2160
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/2p-3840-mat-return.png",
+        "sha256": "1fbe90ed4d274880cf2c344153fa1d137734d5f0dbe16b693ae82a4cf034f1a5",
+        "dimensions": [
+          3840,
+          2160
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/2p-3840-mat.png",
+        "sha256": "a5d602be9690379d2f82a998ae726be0072345b21b96aef1f7ddaa46b55ebec0",
+        "dimensions": [
+          3840,
+          2160
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/3p-1280-fleet-inert.png",
+        "sha256": "72c3a4db194d2bf9cd28204384798cf4cef89b429d11a0e6af5006a5bae46f52",
+        "dimensions": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/3p-1280-fleet-return.png",
+        "sha256": "f263879c78891cdb1fff92e9f0d2420dd5a402b219ceb3d9bd801bddef5631c6",
+        "dimensions": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/3p-1280-mat-return.png",
+        "sha256": "e8b75406f469c5c2f7491b51200e3640a2d8ced1ef29f11e5a09720136b15498",
+        "dimensions": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/3p-1280-mat.png",
+        "sha256": "f7ab969fba14c0022781c4875d56d09bd45dc76633481b6a3c10b035b041239c",
+        "dimensions": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/3p-1440-fleet-inert.png",
+        "sha256": "6fc0ab2d129aec4b6c334ff5e4344e5276d6423ef9af3c9d677888253ecec3e2",
+        "dimensions": [
+          1440,
+          1000
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/3p-1440-fleet-return.png",
+        "sha256": "72d5b7e251f58b3a5b8370e85ad223335805bbae9d7c97f9d80a380e87fe3587",
+        "dimensions": [
+          1440,
+          1000
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/3p-1440-mat-return.png",
+        "sha256": "7948f277cac3e4997efd8ecafcac319df399d3698d791b3edbc1cdf4dc077f54",
+        "dimensions": [
+          1440,
+          1000
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/3p-1440-mat.png",
+        "sha256": "72d5b7e251f58b3a5b8370e85ad223335805bbae9d7c97f9d80a380e87fe3587",
+        "dimensions": [
+          1440,
+          1000
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/3p-3840-fleet-inert.png",
+        "sha256": "501ea0c1175494c67a8b55e9e4208115a2cb8fca2b4f586b239835aeb15334de",
+        "dimensions": [
+          3840,
+          2160
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/3p-3840-fleet-return.png",
+        "sha256": "d73f9f728871fffd68f8df36885745251f68313fd8f2b2db2f14e9349acb4d87",
+        "dimensions": [
+          3840,
+          2160
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/3p-3840-mat-return.png",
+        "sha256": "d5503ce313ca2d997e17cc2c3c0d0ab6a17ed3ca46dfdfab101020b2a89c41a6",
+        "dimensions": [
+          3840,
+          2160
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/3p-3840-mat.png",
+        "sha256": "d73f9f728871fffd68f8df36885745251f68313fd8f2b2db2f14e9349acb4d87",
+        "dimensions": [
+          3840,
+          2160
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/4p-1280-fleet-inert.png",
+        "sha256": "43aa85580b614a19de70fe0d5bfb8bb9099166892838fe1fa1ce1bf8698183bc",
+        "dimensions": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/4p-1280-fleet-return.png",
+        "sha256": "363af697c6a75f4fb134f657b355a2d9c782126e030612e92de05aba003aaeb3",
+        "dimensions": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/4p-1280-mat-return.png",
+        "sha256": "1de4c8619e91d2eb5856541d44d053252aab2768abd54c2edf9434324c6e21c0",
+        "dimensions": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/4p-1280-mat.png",
+        "sha256": "3986b71ca7f33ce428dd80ce3c3eef57d1cb5959ecb28cc26acaf3e5de7d1262",
+        "dimensions": [
+          1280,
+          720
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/4p-1440-fleet-inert.png",
+        "sha256": "fd270f3ab5743ada2baa72f00d59abc6c81a6378ac75d2e4f2e6ec02759f5ff1",
+        "dimensions": [
+          1440,
+          1000
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/4p-1440-fleet-return.png",
+        "sha256": "b6cf425b12dc8677647003194032968eab4552db0ae88a60331871fe061b081a",
+        "dimensions": [
+          1440,
+          1000
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/4p-1440-mat-return.png",
+        "sha256": "0e329e28672deccf77f3421d1f80f1b4215c53eb43e546e17bcafb0553a7afa5",
+        "dimensions": [
+          1440,
+          1000
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/4p-1440-mat.png",
+        "sha256": "b6cf425b12dc8677647003194032968eab4552db0ae88a60331871fe061b081a",
+        "dimensions": [
+          1440,
+          1000
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/4p-3840-fleet-inert.png",
+        "sha256": "0ebb4e1179b7aa1214a2a4547a1322ece8ff5e015f6ac7e230927f7447162d90",
+        "dimensions": [
+          3840,
+          2160
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/4p-3840-fleet-return.png",
+        "sha256": "1cefbc40b13cbac8e473bb33d004c18f9439aafb01ce190aa05596d2df09239f",
+        "dimensions": [
+          3840,
+          2160
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/4p-3840-mat-return.png",
+        "sha256": "c77f33d7ac41e4a5c2c0668ea9e51266c2703f8a071d8144f53fb347a72a064e",
+        "dimensions": [
+          3840,
+          2160
+        ]
+      },
+      {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round139/4p-3840-mat.png",
+        "sha256": "1cefbc40b13cbac8e473bb33d004c18f9439aafb01ce190aa05596d2df09239f",
+        "dimensions": [
+          3840,
+          2160
+        ]
+      }
+    ]
+  },
+  "productLayoutChanges": false,
+  "newReferenceGeneration": false,
+  "guardsWeakened": false,
+  "current118ExactResult": "PASS28.6m,8011frames; unchanged product/helper source since run",
+  "independentReaderReview": "pending",
+  "pr11Native": {
+    "head": "029449dccb7c4458f5e75aa0c018b80ec5d538b7",
+    "job": 119000070090,
+    "passed": 98,
+    "failed": 4,
+    "minutes": 55.3,
+    "guardsPassed": 51,
+    "captureDeadlines": 2,
+    "storyDeadlines": 2,
+    "retainedLog": "/Users/anicolao/projects/games/beyond/tmp/fleet133-ci/pr11-native-119000070090.log",
+    "reviewerLog": "/tmp/beyond-review-pr11-native-029449d.log",
+    "byteIdentical": true,
+    "sha256": "b3ec5b5157de1b466205b0b4050f083abd76c59254b9fe3c3b0fe4f866d7b835",
+    "cohortAccepted": false
+  },
+  "protectedReviewServicesAndControllers": "preserved",
+  "phase011Released": false,
+  "merged": false
+}

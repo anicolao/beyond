@@ -6,7 +6,7 @@ export function continuationKind(game:PublicSetup):'action'|'research'|'control'
  const resume=game.discovery?.queue.find(q=>q.kind==='resume');
  if(resume?.kind==='resume'){
   if(resume.returnTo==='trade'&&!resume.card&&!resume.slot&&!resume.event)return'control';
-  if(resume.returnTo==='production'&&!resume.card&&game.players.find(p=>p.position===game.activePosition)?.actionLocation?.startsWith('technology:'))return'action';
+  if(resume.returnTo==='production'&&!resume.card&&/^(technology:|build-jump:)/.test(game.players.find(p=>p.position===game.activePosition)?.actionLocation??''))return'action';
   if(resume.card&&!resume.slot&&!resume.event)return'research';
  }
  return'discovery';

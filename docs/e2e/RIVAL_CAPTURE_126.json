@@ -1,0 +1,88 @@
+{
+  "reviewerInstruction": 126,
+  "pr": 8,
+  "head": "349a2612c116cb9b4b44cc30a62509c618337faa",
+  "job": 118947461670,
+  "exactResult": {
+    "passed": 71,
+    "total": 72,
+    "minutes": 31.7,
+    "captureGuardsPassed": 45
+  },
+  "soleFailure": {
+    "story": "Begin and recover an exact2-player shared Basic table",
+    "project": "tabletop-4k",
+    "step": "Commit Ada\u2019s unique Basic faction",
+    "source": "setup-tabletop.spec.ts:27",
+    "budgetMs": 2000,
+    "elapsedMs": 2013.8252439999924,
+    "bothErrorsSameFrame": true
+  },
+  "logSHA256": "452658ebf44e3590f229c16ab58ad55347a5090cf3a9c335a1db08d993e886bf",
+  "reviewerLogByteIdentical": true,
+  "artifact": {
+    "id": 12310782187,
+    "bytes": 10999268,
+    "verifiedSHA256": "203196acb04775e7e3fb0b0359553dba395a232ca31c5d04fdc653429b8b40f6"
+  },
+  "lastRecordedStep": "faction-open-0",
+  "captureStages": [
+    {
+      "stage": "Bring to front",
+      "startMs": 15.189,
+      "durationMs": 3.757
+    },
+    {
+      "stage": "Evaluate",
+      "startMs": 16.048,
+      "durationMs": 623.098
+    },
+    {
+      "stage": "Wait for function",
+      "startMs": 16.883,
+      "durationMs": 622.43
+    },
+    {
+      "stage": "Mouse move",
+      "startMs": 19.898,
+      "durationMs": 621.418
+    },
+    {
+      "stage": "Wait for function",
+      "startMs": 643.04,
+      "durationMs": 939.576
+    },
+    {
+      "stage": "Create CDP session",
+      "startMs": 1584.119,
+      "durationMs": 1.057
+    },
+    {
+      "stage": "Send CDP command",
+      "startMs": 1585.91,
+      "durationMs": 410.142
+    },
+    {
+      "stage": "Detach CDP session",
+      "startMs": 2000.354,
+      "durationMs": 12.602
+    }
+  ],
+  "browserDiagnostics": {
+    "visibleImageCount": 1,
+    "imageWarmMs": 617.9,
+    "finalAudit": {
+      "fontsMs": 0,
+      "imagesMs": 10.4,
+      "animationsMs": 0.1,
+      "geometryMs": 3.7,
+      "elements": 119,
+      "controls": 16
+    }
+  },
+  "conclusion": "Overlapping initial readiness617-623ms and final acknowledgement/audit wait939.58ms dominate before410.14ms native capture; final actual decode/audit14.2ms, so about925ms final wait is not geometry work. Current trace has no network or frame snapshots; it cannot establish how much is post-warm acknowledgement polling versus browser scheduling. No speculative source patch or geometry-guard removal.",
+  "referencesChanged": false,
+  "budgetsChanged": false,
+  "rerunsRequested": false,
+  "final006Acceptance": false
+}

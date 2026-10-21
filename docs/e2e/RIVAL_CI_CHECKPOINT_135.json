@@ -1,0 +1,57 @@
+{
+  "reviewerPrompt": 135,
+  "phase": "006",
+  "pr": 8,
+  "head": "0c4421b5ce95d4d599e81e7016f9963a30684f05",
+  "job": 118995634292,
+  "passed": 66,
+  "failed": 6,
+  "minutes": 28.0,
+  "captureGuardsPassed": 46,
+  "reviewerLog": "/tmp/beyond-review-pr8-linux-0c4421b.log",
+  "retainedLog": "/Users/anicolao/projects/games/beyond/tmp/fleet133-pr8-0c4421b-browser.log",
+  "byteIdentical": true,
+  "sha256": "7ba4637fcb1d7c58bbe9a77ee12cb36c8b0ba4779a7a508e16716ee2369b8cd4",
+  "primaryFailures": {
+    "captureDeadlineMs": 2000,
+    "captureCases": [
+      {
+        "story": "004 shared3 cardinal",
+        "ms": 2029.1534709999978
+      },
+      {
+        "story": "004 shared4 cardinal",
+        "ms": 2046.834139999999
+      },
+      {
+        "story": "004 shared4 corner full-card inspection",
+        "error": "Step timeout2000ms; secondary CDP detach failure"
+      },
+      {
+        "story": "005 four-corner Exo-Alloy",
+        "ms": 2276.5707910000056
+      },
+      {
+        "story": "006 four-corner Terraforming",
+        "ms": 2047.9779250000138
+      }
+    ],
+    "wholeStoryCases": [
+      {
+        "story": "006 two-cardinal rival research/action",
+        "msLimit": 120000,
+        "failedDuring": "Capture after explicitly declining optional movement; detach error is secondary"
+      }
+    ]
+  },
+  "pixelMismatchFailures": 0,
+  "missingReferenceFailures": 0,
+  "classificationCorrection": "Earlier shorthand counted all six as capture/step deadlines. Exact log proves five capture deadlines and one primary120-second whole-story timeout. Raw traces/logs and acknowledgement observations remain preserved.",
+  "cohortAccepted": false,
+  "referencesSubstituted": false,
+  "limitsOrGuardChanges": false,
+  "diagnosticsRepeated": false,
+  "phase010": "118/118 local exact and8011-frame audit complete; independent final evidence review pending",
+  "phase011Released": false,
+  "merged": false
+}

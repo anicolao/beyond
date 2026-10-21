@@ -1,0 +1,66 @@
+{
+  "reviewerPrompt": 134,
+  "phase": "007",
+  "pr": 9,
+  "head": "5ba1cbee114d5ba9ac9732ccf1262f15ef96fb7f",
+  "comparison": {
+    "job": 118995776284,
+    "passed": 30,
+    "failed": 50,
+    "minutes": 15.3,
+    "pixelMismatches": 41,
+    "missingReferences": 8,
+    "captureDeadlines": 1,
+    "captureStory": "006 four-corner paid laser/control-yard",
+    "captureMs": 2037.0740839999999,
+    "limitMs": 2000,
+    "retainedLog": "/Users/anicolao/projects/games/beyond/tmp/fleet133-ci/pr9-comparison-118995776284.log",
+    "reviewerLog": "/tmp/beyond-review-pr9-linux-5ba1cbe.log",
+    "byteIdentical": true,
+    "sha256": "54861ac986eb203f777235149ab9d81bca617663ca9cde5dc37c2dbc7a0d10c6"
+  },
+  "native": {
+    "job": 118995776273,
+    "pendingAtReviewerCheckpoint": true,
+    "latestStatus": "completed",
+    "conclusion": "failure",
+    "completedAtUtc": "2026-10-21T02:55:15Z",
+    "run": 39530737148,
+    "passed": 77,
+    "failed": 3,
+    "captureDeadline": {
+      "story": "005 four-fleet discovery",
+      "ms": 2195.546106999973,
+      "limitMs": 2000
+    },
+    "wholeStoryDeadlines": {
+      "stories": [
+        "007 four-corner production",
+        "007 four-cardinal production"
+      ],
+      "limitMs": 120000
+    },
+    "retainedLog": "/Users/anicolao/projects/games/beyond/tmp/fleet133-ci/pr9-native-118995776273.log",
+    "sha256": "25990a132790b03d4b826fe3002764514678bb3bc4e51eea60f6a03942722c5f",
+    "independentConfirmation137": {
+      "minutes": 36.5,
+      "guardsPassed": 46,
+      "reviewerLogByteIdentical": true,
+      "report": "docs/e2e/PRODUCTION_NATIVE_CHECKPOINT_137.json"
+    }
+  },
+  "cohortAccepted": false,
+  "referencesAdopted": false,
+  "budgetsOrGuardsChanged": false,
+  "sourceOfFullClassification": "docs/e2e/OLDER_LINUX_EVIDENCE_133.json",
+  "phase010": {
+    "fullLocalExactPassed": 118,
+    "frames": 8011,
+    "fleetVariants": 16,
+    "fleetFrames": 1182,
+    "evidence": "tmp/local-fleet-review/round133/REVIEW.md",
+    "independentFinalEvidenceReview": "pending"
+  },
+  "phase011Released": false,
+  "merged": false
+}

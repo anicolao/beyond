@@ -1,0 +1,119 @@
+{
+  "pass": 32,
+  "fail": 86,
+  "classification": [
+    {
+      "phase": "001-foundation",
+      "expectedVariants": 7,
+      "returnCode": 0,
+      "records": 7,
+      "frames": 102,
+      "allComparisonMode": true,
+      "snapshotMismatchErrors": 0,
+      "otherErrorHeaders": []
+    },
+    {
+      "phase": "001a-card-gallery",
+      "expectedVariants": 4,
+      "returnCode": 0,
+      "records": 4,
+      "frames": 300,
+      "allComparisonMode": true,
+      "snapshotMismatchErrors": 0,
+      "otherErrorHeaders": []
+    },
+    {
+      "phase": "002-remote-rooms",
+      "expectedVariants": 5,
+      "returnCode": 0,
+      "records": 5,
+      "frames": 156,
+      "allComparisonMode": true,
+      "snapshotMismatchErrors": 0,
+      "otherErrorHeaders": []
+    },
+    {
+      "phase": "003-basic-setup",
+      "expectedVariants": 15,
+      "returnCode": 1,
+      "records": 15,
+      "frames": 349,
+      "allComparisonMode": true,
+      "snapshotMismatchErrors": 15,
+      "otherErrorHeaders": []
+    },
+    {
+      "phase": "004-first-research",
+      "expectedVariants": 17,
+      "returnCode": 1,
+      "records": 17,
+      "frames": 341,
+      "allComparisonMode": true,
+      "snapshotMismatchErrors": 17,
+      "otherErrorHeaders": []
+    },
+    {
+      "phase": "005-technology-discovery",
+      "expectedVariants": 14,
+      "returnCode": 1,
+      "records": 14,
+      "frames": 234,
+      "allComparisonMode": true,
+      "snapshotMismatchErrors": 14,
+      "otherErrorHeaders": []
+    },
+    {
+      "phase": "006-rival-research",
+      "expectedVariants": 10,
+      "returnCode": 1,
+      "records": 10,
+      "frames": 178,
+      "allComparisonMode": true,
+      "snapshotMismatchErrors": 10,
+      "otherErrorHeaders": []
+    },
+    {
+      "phase": "007-production",
+      "expectedVariants": 8,
+      "returnCode": 1,
+      "records": 8,
+      "frames": 148,
+      "allComparisonMode": true,
+      "snapshotMismatchErrors": 8,
+      "otherErrorHeaders": []
+    },
+    {
+      "phase": "008-trading",
+      "expectedVariants": 12,
+      "returnCode": 1,
+      "records": 12,
+      "frames": 168,
+      "allComparisonMode": true,
+      "snapshotMismatchErrors": 12,
+      "otherErrorHeaders": []
+    },
+    {
+      "phase": "009-automation",
+      "expectedVariants": 10,
+      "returnCode": 1,
+      "records": 10,
+      "frames": 174,
+      "allComparisonMode": true,
+      "snapshotMismatchErrors": 10,
+      "otherErrorHeaders": []
+    },
+    {
+      "phase": "010-fleets",
+      "expectedVariants": 16,
+      "returnCode": 0,
+      "records": 16,
+      "frames": 1182,
+      "allComparisonMode": true,
+      "snapshotMismatchErrors": 0,
+      "otherErrorHeaders": []
+    }
+  ],
+  "scope": "No reference refresh in this pass. Reviewed expected/actual begun2/4-player native boards and corrected lost printed +1 surcharge before candidate generation. Current16 fleet comparison source predates this narrow mark correction.",
+  "logRoot": "tmp/fleet133-regression",
+  "guardChanges": false
+}

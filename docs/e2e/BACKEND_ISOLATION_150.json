@@ -1,0 +1,138 @@
+{
+  "prompt": 150,
+  "scope": "Source-only PR12 backend runner candidate; no011 UI/rules/PNG/helper changes",
+  "independentLog": {
+    "secondStaticJob": 119119913489,
+    "bytes": 1882183,
+    "sha256": "27c5b69d140761d38ee65aa5ead7a710a72fc3a73bec1aecffa96365682bdb70",
+    "byteEquality": true,
+    "remote3TimeoutMs": 5018.02,
+    "remote4TimeoutMs": 5014.02,
+    "testLimitMs": 5000
+  },
+  "sameHeadEvidence": {
+    "firstJob": 119098339242,
+    "firstResult": "200/200 PASS",
+    "secondResult": "198/200 FAIL; originals retained",
+    "firstFixtureTimesMs": {
+      "remote-2": 1804.001,
+      "tabletop-2": 657.119,
+      "remote-3": 1555.804,
+      "tabletop-3": 578.476,
+      "remote-4": 1828.533,
+      "tabletop-4": 711.625
+    },
+    "secondFixtureTimesMs": {
+      "remote-2": 3814.252,
+      "tabletop-2": 1578.64,
+      "remote-3": 5072.492,
+      "tabletop-3": 2274.343,
+      "remote-4": 6435.334,
+      "tabletop-4": 2833.092
+    },
+    "observation": "Passing compatibility suite precedes heavy discovery-security; failing compatibility runs last. Strong order/lifetime correlation, not established Linux repair cause."
+  },
+  "rejectedCandidate": {
+    "change": "Private expected REST log-level suppression only",
+    "before": "9/112 PASS1.96s,823910 log bytes",
+    "after": "9/112 PASS1.99s,34614 log bytes",
+    "conclusion": "No useful local performance gain; not adopted. All original expected denial logs remain enabled."
+  },
+  "candidate": {
+    "implementation": "Discover every nested backend test; one fresh Bun process per suite; continue through failures and fail aggregate; deployed compatibility last after all current-source suites.",
+    "unchanged": [
+      "Complete protocol fixtures and original compatibility source byte-identical",
+      "Every original5000ms test and hook budget",
+      "All wire requests, mock principal identities, real SDK legal writes/reads and atomic race assertions",
+      "Same emulator/project/exact source; no data/rules/identity resets",
+      "Native capture guards,2000ms budgets and exact references"
+    ],
+    "mechanism": "Release suite-owned SDK clients/process globals between files; keep compatibility after the full emulator load to avoid hiding order sensitivity.",
+    "proofBoundary": "Local correctness only; actual Linux confirmation still required."
+  },
+  "local": {
+    "PR12": {
+      "passed": 206,
+      "failed": 0,
+      "assertions": 3197,
+      "suites": [
+        [
+          "16",
+          "0"
+        ]
+      ]
+    },
+    "011": {
+      "passed": 216,
+      "failed": 0,
+      "assertions": 3240,
+      "suites": [
+        [
+          "17",
+          "0"
+        ]
+      ]
+    },
+    "tooling": "61/61 PASS including5 runner coverage tests",
+    "types": "0 errors/0 warnings",
+    "policy": "PASS",
+    "diffCheck": "PASS"
+  },
+  "frozenHashes": {
+    "tests/backend/deployed-compatibility.test.ts": {
+      "bytes": 9107,
+      "sha256": "c622f7233807e10acac433cb2c2bcd013c561dfbde9801c5bf0d4ee54484135c",
+      "equal7b42": true
+    },
+    "tests/backend/fixtures/deployed-protocol-34d7cc9.json": {
+      "bytes": 132440,
+      "sha256": "500491ef5a8305e1d78510b513aeffaed7a47259bebafcb1ac895eb0f9fc14f9",
+      "equal7b42": true
+    },
+    "firestore.rules": {
+      "bytes": 118531,
+      "sha256": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67",
+      "equal7b42": true
+    }
+  },
+  "logs": {
+    "compat150-static-first-pass.log": {
+      "bytes": 1882661,
+      "sha256": "f17bd8078ceb2696339b810ec1395660b9edbe5137c2fc8447ee9fd0186c2a9c"
+    },
+    "fleet147-pr12-static-second.log": {
+      "bytes": 1882183,
+      "sha256": "27c5b69d140761d38ee65aa5ead7a710a72fc3a73bec1aecffa96365682bdb70"
+    },
+    "compat150-original.log": {
+      "bytes": 823910,
+      "sha256": "05801fbf03a695d5cc23a4057379cfb4ca25bb1bd0f9103f52ea3d4c1deaecd5"
+    },
+    "compat150-loglevel.log": {
+      "bytes": 34614,
+      "sha256": "03755c03a4a20b18589583c60da7ba65d1b4827677f7cfb1fadaf383ad2f933b"
+    },
+    "compat150-isolated-full.log": {
+      "bytes": 1176882,
+      "sha256": "4a4436b9c53b62e5d1bd568f077b2cfda43cda35664fffb586992c4df5fa8aa6"
+    },
+    "compat150-pr12-isolated-full.log": {
+      "bytes": 1175688,
+      "sha256": "1a40f514264975138ee1db4737854b9b933e31ee0b210051b21ac1c4569ee5e1"
+    },
+    "compat150-pr12-tooling.log": {
+      "bytes": 5850,
+      "sha256": "b5c91b0b605263d18aba91c0e6a9bc377a2f6a0701544f42ab2779ed06d22d18"
+    },
+    "compat150-pr12-types.log": {
+      "bytes": 199,
+      "sha256": "f16c9cdef9eff0bca0dbceae0b5b5fc4aab19c93d6462036d1f7fc2c2b07fd3d"
+    }
+  },
+  "pending": [
+    "New exact-head Linux static confirmation",
+    "Existing PR12 Linux native/exact-reference review and required exact comparison",
+    "Exact-source publisher503 and matching hosted revision/UI",
+    "011 independent local visual acceptance; no formal011 baselines/012/merge"
+  ]
+}

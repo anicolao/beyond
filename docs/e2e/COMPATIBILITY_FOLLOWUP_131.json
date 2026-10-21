@@ -1,0 +1,762 @@
+{
+  "reviewerPrompt": 131,
+  "classification": {
+    "head": "b969feb0a60efec97d2842bec64fd2d922f59c1d",
+    "job": 118981684304,
+    "logSHA256": "c536f39d354f44a520b24718f59331acc99cb980c43b24b792963ddbfc1f51d8",
+    "reportedFailures": [
+      {
+        "fixture": "remote-3",
+        "timeoutMs": 5002.01,
+        "budgetMs": 5000
+      },
+      {
+        "fixture": "remote-4",
+        "timeoutMs": 5002.01,
+        "budgetMs": 5000
+      }
+    ],
+    "backendResult": {
+      "passed": 174,
+      "failed": 2,
+      "assertions": 2984
+    },
+    "classification": "Two complete test callbacks timed out; not beforeAll/afterAll initialization-hook failures. Late asynchronous completion is retained diagnostic evidence, not a pass.",
+    "timings": [
+      {
+        "fixture": "remote-3",
+        "phase": "complete",
+        "revision": 20,
+        "pendingMs": 0,
+        "completedMs": 5318.470269999991,
+        "recent": [
+          {
+            "phase": "projection read and immutable event denial",
+            "revision": 20,
+            "ms": 73.98208700001123
+          },
+          {
+            "phase": "replay denial",
+            "revision": 20,
+            "ms": 53.82905000000028
+          },
+          {
+            "phase": "collection access denials",
+            "revision": 20,
+            "ms": 201.35175400000298
+          },
+          {
+            "phase": "immutable Begin denial",
+            "revision": 20,
+            "ms": 73.18935599998804
+          },
+          {
+            "phase": "root delete denial",
+            "revision": 20,
+            "ms": 79.78958500002045
+          },
+          {
+            "phase": "forged projection denial",
+            "revision": 20,
+            "ms": 27.39489899997716
+          },
+          {
+            "phase": "retained projection read",
+            "revision": 20,
+            "ms": 32.33116600001813
+          },
+          {
+            "phase": "invitation and final identity probes",
+            "revision": 20,
+            "ms": 224.7138949999935
+          }
+        ],
+        "slowest": [
+          {
+            "phase": "invitation and final identity probes",
+            "revision": 20,
+            "ms": 224.7138949999935
+          },
+          {
+            "phase": "collection access denials",
+            "revision": 20,
+            "ms": 201.35175400000298
+          },
+          {
+            "phase": "projection read and immutable event denial",
+            "revision": 11,
+            "ms": 85.20941500001936
+          },
+          {
+            "phase": "projection read and immutable event denial",
+            "revision": 5,
+            "ms": 80.0843069999828
+          },
+          {
+            "phase": "projection read and immutable event denial",
+            "revision": 12,
+            "ms": 79.89591999998083
+          }
+        ]
+      },
+      {
+        "fixture": "remote-4",
+        "phase": "complete",
+        "revision": 25,
+        "pendingMs": 0,
+        "completedMs": 6110.294603999995,
+        "recent": [
+          {
+            "phase": "projection read and immutable event denial",
+            "revision": 25,
+            "ms": 52.39579499998945
+          },
+          {
+            "phase": "replay denial",
+            "revision": 25,
+            "ms": 28.883711000002222
+          },
+          {
+            "phase": "collection access denials",
+            "revision": 25,
+            "ms": 129.67791100000613
+          },
+          {
+            "phase": "immutable Begin denial",
+            "revision": 25,
+            "ms": 52.015921999991406
+          },
+          {
+            "phase": "root delete denial",
+            "revision": 25,
+            "ms": 5.240629000007175
+          },
+          {
+            "phase": "forged projection denial",
+            "revision": 25,
+            "ms": 19.499962000001688
+          },
+          {
+            "phase": "retained projection read",
+            "revision": 25,
+            "ms": 9.162679000000935
+          },
+          {
+            "phase": "invitation and final identity probes",
+            "revision": 25,
+            "ms": 10.306378000008408
+          }
+        ],
+        "slowest": [
+          {
+            "phase": "collection access denials",
+            "revision": 25,
+            "ms": 129.67791100000613
+          },
+          {
+            "phase": "projection read and immutable event denial",
+            "revision": 23,
+            "ms": 84.39965599999414
+          },
+          {
+            "phase": "replay denial",
+            "revision": 15,
+            "ms": 83.84630499998457
+          },
+          {
+            "phase": "legal SDK commit",
+            "revision": 16,
+            "ms": 81.97427700000117
+          },
+          {
+            "phase": "projection read and immutable event denial",
+            "revision": 17,
+            "ms": 81.78309000001173
+          }
+        ]
+      }
+    ],
+    "initialHypothesis": "Immutable-event update denial uses owner full SDK Write stream after each legal commit; test server-only REST with identical mock principal. Causality unproved until counterbalanced evidence.",
+    "securityAndBudgetsChanged": false
+  },
+  "sameRelevantSource": {
+    "tests/backend/deployed-compatibility.test.ts": {
+      "b969feb": "c622f7233807e10acac433cb2c2bcd013c561dfbde9801c5bf0d4ee54484135c",
+      "0c4421b": "c622f7233807e10acac433cb2c2bcd013c561dfbde9801c5bf0d4ee54484135c"
+    },
+    "firestore.rules": {
+      "b969feb": "7f0576786d8be232e4214b07c113a7f343436b392d940de9ca141cf2b07928e3",
+      "0c4421b": "7f0576786d8be232e4214b07c113a7f343436b392d940de9ca141cf2b07928e3"
+    },
+    "scripts/backend-rules-environment.mjs": {
+      "b969feb": "64fb859e4fa56f37435e0f04e108b86f3493fadf02957fa15fe84b97d49dd414",
+      "0c4421b": "64fb859e4fa56f37435e0f04e108b86f3493fadf02957fa15fe84b97d49dd414"
+    },
+    ".github/workflows/verify.yml": {
+      "b969feb": "a5bfe0a7d8fc3d24dfa9b2dfe1354dd4115d6dd1d3cd191d30b362a76834636b",
+      "0c4421b": "a5bfe0a7d8fc3d24dfa9b2dfe1354dd4115d6dd1d3cd191d30b362a76834636b"
+    }
+  },
+  "newHead": "0c4421b5ce95d4d599e81e7016f9963a30684f05",
+  "newJob": 118995634385,
+  "newResult": {
+    "passed": 176,
+    "failed": 0,
+    "logSha256": "6c29166ebffbd98f3bef36553c7c8f732180d01a32684eaf6d11e5970b31e210"
+  },
+  "newTimings": [
+    {
+      "fixture": "remote-2",
+      "phase": "complete",
+      "revision": 15,
+      "pendingMs": 0,
+      "completedMs": 1116.780878,
+      "recent": [
+        {
+          "phase": "projection read and immutable event denial",
+          "revision": 15,
+          "ms": 10.65687700000035
+        },
+        {
+          "phase": "replay denial",
+          "revision": 15,
+          "ms": 16.02401000000009
+        },
+        {
+          "phase": "collection access denials",
+          "revision": 15,
+          "ms": 28.474229000000378
+        },
+        {
+          "phase": "immutable Begin denial",
+          "revision": 15,
+          "ms": 9.342316999999639
+        },
+        {
+          "phase": "root delete denial",
+          "revision": 15,
+          "ms": 3.3676359999999477
+        },
+        {
+          "phase": "forged projection denial",
+          "revision": 15,
+          "ms": 12.857868000000053
+        },
+        {
+          "phase": "retained projection read",
+          "revision": 15,
+          "ms": 6.208375999999589
+        },
+        {
+          "phase": "invitation and final identity probes",
+          "revision": 15,
+          "ms": 11.983194000000367
+        }
+      ],
+      "slowest": [
+        {
+          "phase": "forged faction denial",
+          "revision": 13,
+          "ms": 52.493429000000106
+        },
+        {
+          "phase": "legal SDK commit",
+          "revision": 13,
+          "ms": 34.22485200000028
+        },
+        {
+          "phase": "collection access denials",
+          "revision": 15,
+          "ms": 28.474229000000378
+        },
+        {
+          "phase": "foreign identity denial",
+          "revision": 14,
+          "ms": 27.119038000000728
+        },
+        {
+          "phase": "legal SDK commit",
+          "revision": 1,
+          "ms": 25.73480299999983
+        }
+      ]
+    },
+    {
+      "fixture": "tabletop-2",
+      "phase": "complete",
+      "revision": 7,
+      "pendingMs": 0,
+      "completedMs": 361.1728069999999,
+      "recent": [
+        {
+          "phase": "projection read and immutable event denial",
+          "revision": 7,
+          "ms": 7.503185000000485
+        },
+        {
+          "phase": "replay denial",
+          "revision": 7,
+          "ms": 9.81383199999982
+        },
+        {
+          "phase": "collection access denials",
+          "revision": 7,
+          "ms": 28.620318999999654
+        },
+        {
+          "phase": "immutable Begin denial",
+          "revision": 7,
+          "ms": 9.729264000000512
+        },
+        {
+          "phase": "root delete denial",
+          "revision": 7,
+          "ms": 2.8988369999997303
+        },
+        {
+          "phase": "forged projection denial",
+          "revision": 7,
+          "ms": 15.268565000000308
+        },
+        {
+          "phase": "retained projection read",
+          "revision": 7,
+          "ms": 4.98704699999962
+        },
+        {
+          "phase": "invitation and final identity probes",
+          "revision": 7,
+          "ms": 3.78970500000014
+        }
+      ],
+      "slowest": [
+        {
+          "phase": "collection access denials",
+          "revision": 7,
+          "ms": 28.620318999999654
+        },
+        {
+          "phase": "legal SDK commit",
+          "revision": 7,
+          "ms": 15.369678000000022
+        },
+        {
+          "phase": "forged projection denial",
+          "revision": 7,
+          "ms": 15.268565000000308
+        },
+        {
+          "phase": "legal SDK commit",
+          "revision": 0,
+          "ms": 15.087670999999318
+        },
+        {
+          "phase": "legal SDK commit",
+          "revision": 1,
+          "ms": 13.830700000000434
+        }
+      ]
+    },
+    {
+      "fixture": "remote-3",
+      "phase": "complete",
+      "revision": 20,
+      "pendingMs": 0,
+      "completedMs": 1054.0328020000006,
+      "recent": [
+        {
+          "phase": "projection read and immutable event denial",
+          "revision": 20,
+          "ms": 5.16805100000056
+        },
+        {
+          "phase": "replay denial",
+          "revision": 20,
+          "ms": 15.50347099999999
+        },
+        {
+          "phase": "collection access denials",
+          "revision": 20,
+          "ms": 22.05181099999936
+        },
+        {
+          "phase": "immutable Begin denial",
+          "revision": 20,
+          "ms": 5.601357999999891
+        },
+        {
+          "phase": "root delete denial",
+          "revision": 20,
+          "ms": 6.225350000000617
+        },
+        {
+          "phase": "forged projection denial",
+          "revision": 20,
+          "ms": 12.987733999999364
+        },
+        {
+          "phase": "retained projection read",
+          "revision": 20,
+          "ms": 4.053023000000394
+        },
+        {
+          "phase": "invitation and final identity probes",
+          "revision": 20,
+          "ms": 9.253453000000263
+        }
+      ],
+      "slowest": [
+        {
+          "phase": "collection access denials",
+          "revision": 20,
+          "ms": 22.05181099999936
+        },
+        {
+          "phase": "replay denial",
+          "revision": 1,
+          "ms": 18.25671599999987
+        },
+        {
+          "phase": "legal SDK commit",
+          "revision": 16,
+          "ms": 17.49591700000019
+        },
+        {
+          "phase": "legal SDK commit",
+          "revision": 2,
+          "ms": 17.383154000000104
+        },
+        {
+          "phase": "legal SDK commit",
+          "revision": 20,
+          "ms": 17.378888999999617
+        }
+      ]
+    },
+    {
+      "fixture": "tabletop-3",
+      "phase": "complete",
+      "revision": 9,
+      "pendingMs": 0,
+      "completedMs": 413.5107199999993,
+      "recent": [
+        {
+          "phase": "projection read and immutable event denial",
+          "revision": 9,
+          "ms": 4.51854800000001
+        },
+        {
+          "phase": "replay denial",
+          "revision": 9,
+          "ms": 12.193713000000571
+        },
+        {
+          "phase": "collection access denials",
+          "revision": 9,
+          "ms": 21.92158399999971
+        },
+        {
+          "phase": "immutable Begin denial",
+          "revision": 9,
+          "ms": 4.518616999999722
+        },
+        {
+          "phase": "root delete denial",
+          "revision": 9,
+          "ms": 2.7896319999999832
+        },
+        {
+          "phase": "forged projection denial",
+          "revision": 9,
+          "ms": 10.25100300000031
+        },
+        {
+          "phase": "retained projection read",
+          "revision": 9,
+          "ms": 6.141974000000118
+        },
+        {
+          "phase": "invitation and final identity probes",
+          "revision": 9,
+          "ms": 6.2798439999996845
+        }
+      ],
+      "slowest": [
+        {
+          "phase": "replay denial",
+          "revision": 8,
+          "ms": 37.255708000000595
+        },
+        {
+          "phase": "collection access denials",
+          "revision": 9,
+          "ms": 21.92158399999971
+        },
+        {
+          "phase": "replay denial",
+          "revision": 5,
+          "ms": 14.263754000000517
+        },
+        {
+          "phase": "replay denial",
+          "revision": 4,
+          "ms": 13.752251999999316
+        },
+        {
+          "phase": "legal SDK commit",
+          "revision": 4,
+          "ms": 13.692461999999978
+        }
+      ]
+    },
+    {
+      "fixture": "remote-4",
+      "phase": "complete",
+      "revision": 25,
+      "pendingMs": 0,
+      "completedMs": 1373.9036489999999,
+      "recent": [
+        {
+          "phase": "projection read and immutable event denial",
+          "revision": 25,
+          "ms": 4.685030000000552
+        },
+        {
+          "phase": "replay denial",
+          "revision": 25,
+          "ms": 10.35324799999944
+        },
+        {
+          "phase": "collection access denials",
+          "revision": 25,
+          "ms": 23.30851100000018
+        },
+        {
+          "phase": "immutable Begin denial",
+          "revision": 25,
+          "ms": 5.11572200000046
+        },
+        {
+          "phase": "root delete denial",
+          "revision": 25,
+          "ms": 5.739996999999676
+        },
+        {
+          "phase": "forged projection denial",
+          "revision": 25,
+          "ms": 36.243656999999985
+        },
+        {
+          "phase": "retained projection read",
+          "revision": 25,
+          "ms": 4.309750999999778
+        },
+        {
+          "phase": "invitation and final identity probes",
+          "revision": 25,
+          "ms": 11.319470999999794
+        }
+      ],
+      "slowest": [
+        {
+          "phase": "forged faction denial",
+          "revision": 17,
+          "ms": 36.325409999999465
+        },
+        {
+          "phase": "forged projection denial",
+          "revision": 25,
+          "ms": 36.243656999999985
+        },
+        {
+          "phase": "legal SDK commit",
+          "revision": 18,
+          "ms": 36.08333399999992
+        },
+        {
+          "phase": "collection access denials",
+          "revision": 25,
+          "ms": 23.30851100000018
+        },
+        {
+          "phase": "replay denial",
+          "revision": 7,
+          "ms": 22.667993000000024
+        }
+      ]
+    },
+    {
+      "fixture": "tabletop-4",
+      "phase": "complete",
+      "revision": 11,
+      "pendingMs": 0,
+      "completedMs": 418.2293800000007,
+      "recent": [
+        {
+          "phase": "projection read and immutable event denial",
+          "revision": 11,
+          "ms": 3.877967999998873
+        },
+        {
+          "phase": "replay denial",
+          "revision": 11,
+          "ms": 12.139811000000918
+        },
+        {
+          "phase": "collection access denials",
+          "revision": 11,
+          "ms": 24.767610999999306
+        },
+        {
+          "phase": "immutable Begin denial",
+          "revision": 11,
+          "ms": 8.003190999999788
+        },
+        {
+          "phase": "root delete denial",
+          "revision": 11,
+          "ms": 3.0867510000007314
+        },
+        {
+          "phase": "forged projection denial",
+          "revision": 11,
+          "ms": 9.994894999999815
+        },
+        {
+          "phase": "retained projection read",
+          "revision": 11,
+          "ms": 5.051774999999907
+        },
+        {
+          "phase": "invitation and final identity probes",
+          "revision": 11,
+          "ms": 3.082765000001018
+        }
+      ],
+      "slowest": [
+        {
+          "phase": "collection access denials",
+          "revision": 11,
+          "ms": 24.767610999999306
+        },
+        {
+          "phase": "legal SDK commit",
+          "revision": 11,
+          "ms": 12.335487000000285
+        },
+        {
+          "phase": "replay denial",
+          "revision": 11,
+          "ms": 12.139811000000918
+        },
+        {
+          "phase": "legal SDK commit",
+          "revision": 8,
+          "ms": 11.820717999999943
+        },
+        {
+          "phase": "legal SDK commit",
+          "revision": 10,
+          "ms": 11.659904999999526
+        }
+      ]
+    }
+  ],
+  "interpretation": "Aggregate per-test execution failure, not hook initialization. Multiple request phases slowed; successful unchanged relevant source does not identify or repair cause. No assertion, identity, deadline, policy or baseline changed.",
+  "rejectedProbe": {
+    "variant": "Same-principal REST immutable-event update denial instead of full SDK",
+    "runs": [
+      {
+        "name": "A1",
+        "results": [
+          {
+            "fixture": "remote-2",
+            "ms": 304.500625
+          },
+          {
+            "fixture": "tabletop-2",
+            "ms": 135.43825000000004
+          },
+          {
+            "fixture": "remote-3",
+            "ms": 398.64312500000005
+          },
+          {
+            "fixture": "tabletop-3",
+            "ms": 203.13237500000014
+          },
+          {
+            "fixture": "remote-4",
+            "ms": 486.52191700000003
+          },
+          {
+            "fixture": "tabletop-4",
+            "ms": 185.44733400000018
+          }
+        ]
+      },
+      {
+        "name": "B1",
+        "results": [
+          {
+            "fixture": "remote-2",
+            "ms": 307.65595799999994
+          },
+          {
+            "fixture": "tabletop-2",
+            "ms": 128.8877920000001
+          },
+          {
+            "fixture": "remote-3",
+            "ms": 386.27762500000006
+          },
+          {
+            "fixture": "tabletop-3",
+            "ms": 155.9161670000001
+          },
+          {
+            "fixture": "remote-4",
+            "ms": 488.58574999999996
+          },
+          {
+            "fixture": "tabletop-4",
+            "ms": 165.10283299999992
+          }
+        ]
+      },
+      {
+        "name": "B2",
+        "results": [
+          {
+            "fixture": "remote-2",
+            "ms": 294.94795799999997
+          },
+          {
+            "fixture": "tabletop-2",
+            "ms": 127.17025000000001
+          },
+          {
+            "fixture": "remote-3",
+            "ms": 377.62804199999994
+          },
+          {
+            "fixture": "tabletop-3",
+            "ms": 142.8520840000001
+          },
+          {
+            "fixture": "remote-4",
+            "ms": 531.122625
+          },
+          {
+            "fixture": "tabletop-4",
+            "ms": 162.6326660000002
+          }
+        ]
+      }
+    ],
+    "outcome": "No consistent speedup; found duplicate of rejected117 probe. Stopped counterbalance before redundant A2 and restored complete original source; phase-total instrumentation also removed."
+  },
+  "acceptedPR7Untouched": true,
+  "phase010ReviewAndBaselineHold": true,
+  "phase011Released": false
+}

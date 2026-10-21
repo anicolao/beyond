@@ -1,0 +1,9 @@
+import {test,expect} from '../helpers/fixtures';
+import {TestStepHelper} from '../helpers/test-step-helper';
+import {assertDiscoveryReady,assertDiscoveryBoard,type Photo} from '../005-technology-discovery/journey';
+import {fleetJourney} from './journey';
+for(const scenario of ['basic','yard'] as const)test(scenario==='basic'?'Build upgrade and retain a real fleet with separate controllers':'Upgrade a rival-tied fleet and build at the newly controlled yard with separate controllers',async({page,context,browser},info)=>{
+ info.annotations.push({type:'viewports',description:'phone,desktop'},{type:'setup',description:'Two actual separate authenticated controllers. Ordinary production UI setup, named legal unique Basic factions and real preparatory turns. Fixed setup entropy55555555-5555-4555-8555-000000000002; deterministic command identities never inject game state or inspect concealed decks. Basic builds use Population, second-space costs follow the actual player overlay, printed Lasers builds/upgrades and Terraforming paths resolve canonically. Separate backend integration coverage verifies exhausted source, cap4, invalid targets and atomic split denials.'});
+ const steps=new TestStepHelper(page,info,info.title);const photo:Photo=(id,caption,actor,player,check,documentView)=>steps.step(id,caption,[{spec:caption,check},{spec:'The actual canonical effect and backend acknowledgement settle.',check:()=>assertDiscoveryReady(actor)},{spec:'Public technology topology retains physical separation.',check:()=>assertDiscoveryBoard(actor)},{spec:'The actual viewport fits without page scrolling.',check:async()=>expect(await actor.evaluate(()=>document.documentElement.scrollWidth<=innerWidth&&document.documentElement.scrollHeight<=innerHeight&&!scrollX&&!scrollY)).toBe(true)}],{page:actor,player,document:documentView});
+ await fleetJourney({page,context,browser,info,photo,remote:true,scenario});
+});

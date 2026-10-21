@@ -1541,17 +1541,55 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 82. The chosen ship at DX Cancri upgrades from level2 to3
+## 82. Browse the next public owned ship before choosing the eligible DX Cancri target
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/081-dx-target-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/081-dx-target-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/081-dx-browse-0-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/081-dx-browse-0-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/081-dx-target-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/081-dx-target-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/081-dx-browse-0-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/081-dx-browse-0-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Browse the next public owned ship before choosing the eligible DX Cancri target
+- [x] The saved automatic consequences settle before the public decision is photographed.
+- [x] Covered and discovered compact nodes retain physical separation.
+- [x] The game stays inside its actual viewport.
+
+## 83. Browse the next public owned ship before choosing the eligible DX Cancri target
+
+Viewpoint: **Ada · West · single shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/082-dx-browse-1-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/082-dx-browse-1-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/082-dx-browse-1-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/082-dx-browse-1-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Browse the next public owned ship before choosing the eligible DX Cancri target
+- [x] The saved automatic consequences settle before the public decision is photographed.
+- [x] Covered and discovered compact nodes retain physical separation.
+- [x] The game stays inside its actual viewport.
+
+## 84. The chosen ship at DX Cancri upgrades from level2 to3
+
+Viewpoint: **Ada · West · single shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/083-dx-target-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/083-dx-target-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/083-dx-target-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/083-dx-target-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1560,17 +1598,17 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 83. The saved discovery and its complete immediate bonus resume ordinary Production
+## 85. The saved discovery and its complete immediate bonus resume ordinary Production
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/082-discovery-production-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/082-discovery-production-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/084-discovery-production-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/084-discovery-production-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/082-discovery-production-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/082-discovery-production-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/084-discovery-production-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/084-discovery-production-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1579,17 +1617,17 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 84. Reload preserves the discovered technology and pending Production without duplicating the bonus
+## 86. Reload preserves the discovered technology and pending Production without duplicating the bonus
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/083-production-pending-restored-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/083-production-pending-restored-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/085-production-pending-restored-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/085-production-pending-restored-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/083-production-pending-restored-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/083-production-pending-restored-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/085-production-pending-restored-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/085-production-pending-restored-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1598,17 +1636,17 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 85. Resume the same exclusive production decision
+## 87. Resume the same exclusive production decision
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/084-production-reopened-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/084-production-reopened-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/086-production-reopened-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/086-production-reopened-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/084-production-reopened-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/084-production-reopened-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/086-production-reopened-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/086-production-reopened-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1617,17 +1655,17 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 86. Ada completes ordinary production and hands off automatically
+## 88. Ada completes ordinary production and hands off automatically
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/085-discovery-handoff-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/085-discovery-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/087-discovery-handoff-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/087-discovery-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/085-discovery-handoff-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/085-discovery-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/087-discovery-handoff-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/087-discovery-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1636,17 +1674,17 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 87. Reload retains the discovered public card, permanent research and canonical Bora handoff
+## 89. Reload retains the discovered public card, permanent research and canonical Bora handoff
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/086-handoff-restored-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/086-handoff-restored-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/088-handoff-restored-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/088-handoff-restored-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/086-handoff-restored-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/086-handoff-restored-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/088-handoff-restored-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/088-handoff-restored-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1655,17 +1693,17 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 88. Both moved ships leave their actual Ore control discs on the public board
+## 90. Both moved ships leave their actual Ore control discs on the public board
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/087-public-control-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/087-public-control-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/089-public-control-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/089-public-control-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/087-public-control-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/087-public-control-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/089-public-control-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/089-public-control-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1674,17 +1712,17 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 89. The1280×720 complete overview preserves public node separation and explicit bounded scrolling
+## 91. The1280×720 complete overview preserves public node separation and explicit bounded scrolling
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/088-compact-overview-720-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/088-compact-overview-720-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/090-compact-overview-720-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/090-compact-overview-720-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 1280 × 720</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/088-compact-overview-720-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/088-compact-overview-720-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/090-compact-overview-720-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/090-compact-overview-720-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1693,17 +1731,17 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 90. Focus exposes readable real card objects and all prerequisite positions
+## 92. Focus exposes readable real card objects and all prerequisite positions
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/089-compact-focus-720-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/089-compact-focus-720-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/091-compact-focus-720-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/091-compact-focus-720-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 1280 × 720</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/089-compact-focus-720-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/089-compact-focus-720-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/091-compact-focus-720-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/091-compact-focus-720-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1712,17 +1750,17 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 91. Explicit lower navigation retains the entire lower public topology
+## 93. Explicit lower navigation retains the entire lower public topology
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/090-compact-lower-720-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/090-compact-lower-720-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-lower-720-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-lower-720-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 1280 × 720</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/090-compact-lower-720-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/090-compact-lower-720-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-lower-720-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-lower-720-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1731,17 +1769,17 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 92. Return to the balanced Technology and Exploration overview
+## 94. Return to the balanced Technology and Exploration overview
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/091-compact-return-720-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/091-compact-return-720-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-return-720-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-return-720-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 1280 × 720</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/091-compact-return-720-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/091-compact-return-720-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-return-720-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-return-720-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1750,17 +1788,17 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 93. The1280×640 complete overview preserves public node separation and explicit bounded scrolling
+## 95. The1280×640 complete overview preserves public node separation and explicit bounded scrolling
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1280 × 640 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-overview-640-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-overview-640-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/094-compact-overview-640-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/094-compact-overview-640-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 1280 × 640</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-overview-640-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-overview-640-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/094-compact-overview-640-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/094-compact-overview-640-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1769,17 +1807,17 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 94. Focus exposes readable real card objects and all prerequisite positions
+## 96. Focus exposes readable real card objects and all prerequisite positions
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1280 × 640 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-focus-640-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-focus-640-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/095-compact-focus-640-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/095-compact-focus-640-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 1280 × 640</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-focus-640-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-focus-640-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/095-compact-focus-640-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/095-compact-focus-640-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1788,17 +1826,17 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 95. Explicit lower navigation retains the entire lower public topology
+## 97. Explicit lower navigation retains the entire lower public topology
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1280 × 640 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/094-compact-lower-640-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/094-compact-lower-640-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-compact-lower-640-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-compact-lower-640-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 1280 × 640</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/094-compact-lower-640-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/094-compact-lower-640-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-compact-lower-640-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-compact-lower-640-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1807,17 +1845,17 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 96. Return to the balanced Technology and Exploration overview
+## 98. Return to the balanced Technology and Exploration overview
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1280 × 640 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/095-compact-return-640-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/095-compact-return-640-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/097-compact-return-640-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/097-compact-return-640-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 1280 × 640</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/095-compact-return-640-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/095-compact-return-640-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/097-compact-return-640-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/097-compact-return-640-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1826,17 +1864,17 @@ Viewpoint: **Ada · West · single shared controller**.
 - [x] Covered and discovered compact nodes retain physical separation.
 - [x] The game stays inside its actual viewport.
 
-## 97. Restore the original shared display with canonical state intact
+## 99. Restore the original shared display with canonical state intact
 
 Viewpoint: **Ada · West · single shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-shared-restored-viewport-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-shared-restored-viewport-desktop-darwin.png) |
+| [![desktop](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/098-shared-restored-viewport-desktop-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/098-shared-restored-viewport-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-shared-restored-viewport-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-shared-restored-viewport-tabletop-4k-darwin.png)
+[![4K](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/098-shared-restored-viewport-tabletop-4k-darwin.png)](../../screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/098-shared-restored-viewport-tabletop-4k-darwin.png)
 
 </details>
 

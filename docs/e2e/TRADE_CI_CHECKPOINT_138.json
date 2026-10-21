@@ -1,0 +1,97 @@
+{
+  "reviewerPrompt": 138,
+  "phase": "008",
+  "pr": 10,
+  "head": "3b3c148c2d481c9b88818d408839bf557a4f3284",
+  "publication": {
+    "job": 118997884164,
+    "result": "SUCCESS",
+    "verified": true,
+    "reusedActive": false,
+    "deploymentComplete": true,
+    "hostedRevisionMatches": true,
+    "hostedRevision": "3b3c148c2d481c9b88818d408839bf557a4f3284",
+    "independentReviewerConfirmation": true,
+    "retainedLog": {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-ci/pr10-3b3c148-publish.log",
+      "sha256": "559b5e79c85789e6afa57869fe9243e87a294392463d85cefbffa188e3a44b22",
+      "bytes": 153785
+    },
+    "exactSourceProof": "docs/e2e/PUBLICATION_RECOVERY_133.json"
+  },
+  "comparison": {
+    "job": 119007051378,
+    "passed": 30,
+    "failed": 62,
+    "minutes": 16.3,
+    "pixelMismatches": 41,
+    "missingReferences": 20,
+    "captureDeadlineCases": 1,
+    "captureLimitMs": 2000,
+    "primaryTimingCases": [
+      {
+        "test": "[tabletop-4k] \u203a tests/e2e/004-first-research/research-tabletop.spec.ts:4:80 \u203a Research and recover a 2-player shared cardinal first round",
+        "primary": "capture-deadline",
+        "captureMs": [
+          "2080.382255000004"
+        ],
+        "secondaryClosedTarget": false
+      }
+    ],
+    "retainedLog": {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-ci/pr10-comparison-119007051378.log",
+      "sha256": "2cd9d66890574c7cf71393361c726692ec38f50e7012debfd9f7f8988bc8ec48",
+      "bytes": 465460
+    },
+    "reviewerLog": "/tmp/beyond-review-pr10-linux-3b3c148.log",
+    "byteIdentical": true
+  },
+  "native": {
+    "job": 119007051388,
+    "pendingAtReviewerCheckpoint": true,
+    "latestStatus": "completed",
+    "conclusion": "failure",
+    "completedAtUtc": "2026-10-21T03:41:09Z",
+    "run": 39530930551,
+    "passed": 90,
+    "failed": 2,
+    "primaryTimingCases": [
+      {
+        "test": "[tabletop-4k] \u203a tests/e2e/007-production/production-tabletop.spec.ts:5:299 \u203a Manage matching Supply and full Ore yields at four corner seats",
+        "primary": "story-deadline",
+        "captureMs": [],
+        "secondaryClosedTarget": false
+      },
+      {
+        "test": "[tabletop-4k] \u203a tests/e2e/007-production/production-tabletop.spec.ts:5:299 \u203a Manage matching Supply and full Ore yields at four cardinal seats \u203a Bora completes production and hands off to Cleo \u203a Ready, unclipped, photographed, and compared within 2,000 ms",
+        "primary": "story-deadline",
+        "captureMs": [],
+        "secondaryClosedTarget": true
+      }
+    ],
+    "retainedLog": {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-ci/pr10-native-119007051388.log",
+      "sha256": "3a2a01cb44c1f5f74aa1620612d25e1626fd82a33ea653e7ce82f633a43ae953",
+      "bytes": 224896
+    }
+  },
+  "phase008FinalAcceptance": false,
+  "cohortAccepted": false,
+  "referencesAdopted": false,
+  "budgetsOrGuardsChanged": false,
+  "phase010": {
+    "earlierPhaseRegression": "Completed after observed16-variant checkpoint:118/118 full exact PASS28.6m,8011 frames; generating=false for every story.",
+    "fleetVariants": 16,
+    "fleetFrames": 1182,
+    "backendTests": 200,
+    "backendAssertions": 3158,
+    "captureGuards": 51,
+    "tooling": 56,
+    "types": "0errors/0warnings",
+    "audit": "docs/e2e/FLEET_FINAL_AUDIT_010.json",
+    "reviewPacket": "tmp/local-fleet-review/round133/REVIEW.md",
+    "independentFinalEvidenceReview": "pending"
+  },
+  "phase011Released": false,
+  "merged": false
+}
