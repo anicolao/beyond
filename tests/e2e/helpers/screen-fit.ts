@@ -9,6 +9,10 @@ export async function warmVisibleImages() {
 
 /** Runs inside the page: audit components, text lines and every clipping ancestor. */
 export async function assertScreenFit(options: {document?:boolean;touchTargets?:boolean;prepare?:boolean;status?:string} = {}) {
+  // Trace the status seen on entry, before any await: Linux traces can then
+  // distinguish a genuinely pending acknowledgement from delayed execution.
+  // Only connection-state labels are recorded; no game, controller or content.
+  if(options.status!==undefined)console.info('beyond-capture-ack',JSON.stringify({phase:'post-warm',expected:options.status,observed:document.querySelector('[data-backend-status]')?.getAttribute('data-backend-status')??null}));
   // As a polling predicate, defer the complete audit until the same exact
   // post-warm acknowledgement. Non-polling callers retain their original audit.
   if(options.status !== undefined && document.querySelector('[data-backend-status]')?.getAttribute('data-backend-status') !== options.status) return false;

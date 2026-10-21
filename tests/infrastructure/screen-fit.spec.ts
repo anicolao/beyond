@@ -124,3 +124,15 @@ test('acknowledgement polling propagates a real audit failure without retrying i
  await page.evaluate(()=>{(window as Window&{__beyondTransitions?:Map<Element,string>}).__beyondTransitions=new Map();});
  await expect(page.waitForFunction(assertScreenFit,{status:'synced',prepare:true,touchTargets:true},{timeout:2000,polling:20})).rejects.toThrow('Touch target too small');
 });
+
+// Diagnostic entry logs must not turn a pending status into an audit pass or
+// swallow the real geometry failure once that same status is acknowledged.
+test('acknowledgement diagnostics preserve pending and failing guard outcomes',async({page})=>{
+ const reports:string[]=[];page.on('console',message=>{if(message.text().startsWith('beyond-capture-ack '))reports.push(message.text());});
+ await page.setContent('<main data-e2e-layout data-backend-status="saving"><button style="width:43px;height:44px;padding:0">Private fixture text</button></main>');
+ expect(await page.evaluate(assertScreenFit,{status:'synced',touchTargets:true})).toBe(false);
+ await page.locator('main').evaluate(element=>element.setAttribute('data-backend-status','synced'));
+ await expect(page.evaluate(assertScreenFit,{status:'synced',touchTargets:true})).rejects.toThrow('Touch target too small');
+ expect(reports.map(line=>JSON.parse(line.slice('beyond-capture-ack '.length)))).toEqual([{phase:'post-warm',expected:'synced',observed:'saving'},{phase:'post-warm',expected:'synced',observed:'synced'}]);
+ expect(reports.join(' ')).not.toContain('Private fixture text');
+});
