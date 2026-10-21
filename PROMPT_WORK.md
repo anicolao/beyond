@@ -268,3 +268,5 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | F
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Apply reviewer120-approved exact-active immutable source reuse; retain changed-source compilation and two release/source identity checks before publication.
 
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Prove installed emulator source before fresh SDK suites; preserve exact mismatching-source compilation, authorization assertions and original hook deadlines.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Narrow optional SDK configuration before exact readback; restore clean checked-JavaScript types with all eight identity and fail-closed tests passing.
