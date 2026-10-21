@@ -883,3 +883,21 @@ Reviewer07:54 NEW independent live011 blocker: own shared2 table b648ddfd-d6cc-4
 Reviewer-authored retained-room checkpoint:
 
 Reviewer08:04 update to07:54 blocker: independently reloaded own table b648ddfd-d6cc-43df-a189-d07c58d3182d on5206. Now Production, two Ada level1 ships at Barnards Star plus one Sol, Food outpost and Population bonus applied (2 Population, A Supply3). Inspected resolveControlCheck nonmutating lookup diff. Scoped retained-room recovery verified; not whole011 acceptance. Continue visual corrections and fresh broader flow/security checks; preserve room.
+
+## Prompt 148: Scoped Map Review
+
+Reviewer-authored scoped visual checkpoint:
+
+Reviewer08:14: independently inspected round144-final3 desktop map/scrolled arrival, remote-final2 phone map and four-final corner640 map. Contrast, legend containment and endpoint-arrow separation improved; these specific corrections look good. Whole011 acceptance still withheld: complete packet outstanding longer printed4-jump/multi-origin, observer/isolation, source-effect inspection and rare/recovery cases before formal baselines. Map currently still all text plaques; retain actual production System/ship cues where practical without reducing legibility. No012 release. Existing08:04 scoped recovery update supersedes07:54 stuck-room status.
+
+## Prompt 149: Linux Checkpoint
+
+Reviewer-authored independent CI checkpoint:
+
+Reviewer08:29: independently read PR12 Linux job119098339638 log:16/118PASS,102FAIL (56 pixel mismatch reports,46 missing snapshots),15m. Saved /tmp/beyond-review-pr12-linux-9018b9f.log. Additional run39562980280 now active static119119913489/browser119119913405/native candidates119119913057. Keep exact-head native review and final comparison gates separate; no blanket reference acceptance. Publisher503 still open.08:04 recovery now acknowledged; continue broader011 coverage after queued08:14.
+
+## Prompt 150: Static Timing
+
+Reviewer-authored independent static failure checkpoint:
+
+Reviewer08:44 NEW PR12 second static failure: job119119913489 failed deployed remote-3 remains writable with immutable attributed events and Begin at5018.02ms, remote-4 same at5014.02ms, unchanged5000ms guards. Log independently saved /tmp/beyond-review-pr12-static-second-9018b9f.log. Original static job passed200/200; diagnose/preserve both results, no timeout weakening. Browser/native candidates still running. Broader011 remains local review only.

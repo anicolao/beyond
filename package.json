@@ -11,7 +11,7 @@
     "preview": "vite preview --host 127.0.0.1 --port 4197 --strictPort",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "test:tooling": "node --test scripts/*.test.mjs",
-    "test:rules": "firebase emulators:exec --project demo-beyond --only firestore 'node scripts/prepare-rules-test.mjs && bun test tests/backend'",
+    "test:rules": "firebase emulators:exec --project demo-beyond --only firestore 'node scripts/prepare-rules-test.mjs && node scripts/run-backend-tests.mjs'",
     "test:e2e": "firebase emulators:exec --project demo-beyond --only auth,firestore 'playwright test'",
     "test:e2e:update": "firebase emulators:exec --project demo-beyond --only auth,firestore 'playwright test --update-snapshots'",
     "emulators": "firebase emulators:start --project demo-beyond --only auth,firestore",

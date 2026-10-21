@@ -536,3 +536,5 @@ Prompt 142 | 2dccfccd49fd3eb4eb33cc401673b241b03e3b823bd2748c13af0dcee125ad69 | 
 Prompt 143 | f8bc83525348789a3a9396916c84ef8db79471f083063917ceacd4d2dc32665a | Record full local010 acceptance and selective delta review; publish against latest009 ancestry and release011 with independent Linux/hosted gates preserved.
 
 Prompt 147 | 43dc04ff761c5c3262781329bf74f4b4534e105c1f1e97248d115524d3f50d83 | Backport reviewer-verified nonmutating control reads and ordinary opening-jump regressions to PR12 without planner UI or reference changes
+
+Prompt 150 | d243f2d17fa522325ff18f452fd44749c5e937ad78dec04e8fe7fa1850009360 | Isolate complete backend suites in fresh Bun processes with compatibility last; preserve original assertions, emulator state and five-second limits; verify before CI
