@@ -1,0 +1,19 @@
+# 008 fidelity and verification
+
+The source-reviewed production/trade concept in docs/ux/concepts/07-production.png guides the lifted exchange instrument beside the physical Supply mat. Trade has its own read-only next-draw/rightmost-return/overflow labels; it never displays production yields or Food restrictions. Actual five-column capacities and all three printed rates come from the second-printing rulebook, printed pp.8–9. Gameplay remains semantic production components and canonical persistence, with original materials/artwork.
+
+Reviewer101/102 accepted the corrected trade-specific desktop/phone scope;103 accepted covered-B presentation;104 accepted ordinary rates/overflow/reload/Finish and rotated containment. Reviewer105 released final illustrated validation after reviewing contextual control-transfer wording, phone/shared restoration, cube inspector/focus and native4K responder. Full008 local acceptance and009 are still held.
+
+The stories use ordinary named unique-faction setups. Remote controllers have separate anonymous identities; shared seats use one controller directly at cardinal or opposite corner positions. Only initial setup entropy and command identifiers are deterministic. No game-state injection, future-deck inspection, identity transfer or extra production occurs.
+
+- Repeated exchanges: Gather, all three exact rates, disabled unavailable trades, rightmost returns/A overflow, all20 cubes in Supply, repeated recruitment, reload, keyboard inspection and Finish/handoff.
+- Covered-column trade: real Terraforming/Genetics/growth exhaust A while Food still covers B; recruitment draws B anyway, pays3 Ore each time, and preserves conservation/reload/handoff.
+- Control-changing decommission: paid Lasers and a real four-point Terraforming fleet establish a tied existing outpost; decommission changes its owner, transfers the choice to the correct responder, preserves contextual status on reload, then returns to trading. No discovery/reveal is implied.
+
+All new variants capture each meaningful choice/result through TestStepHelper. Independent exact comparisons and full backend/tooling/type/policy/capture checks must pass. The shared ProductionPreview native inspector is also covered by the existing007 stories: modal keyboard containment, Escape focus return, restored production and teardown.
+
+Local review screenshots/logs are indexed at tmp/local-trade-review/round104/REVIEW.md in the shared root workspace. Preserve earlier failed captures and unchanged guards/deadlines. Review native candidate images before accepting references. Linux and matching-head hosted gates remain separate from local acceptance; all PRs remain unmerged.
+
+The rotated trade explanation also uses `assertTradeContainment`, comparing the note and opaque footer in their shared layout coordinates before rotation/scale. Axis-aligned viewport bounds alone miss this sibling occlusion. Five native guard tests exercise45/225-degree acceptance/rejection and the inert background behind the cube inspector; all43 original guards remain unchanged (48 total). This guard rejected the actual497>494 and474>458 defects before correction. Reviewer111 accepted the corrected native640/4K views before the29-variant affected refresh. The full independent exact run must use these additional checks without updating snapshots.
+
+Reviewer112 final local gate: independent exact92/92 PASS,92 generating=false story records/5853 frames;008 contributes12 variants/746 frames. Backend186/3057, capture/containment48, tooling47, types/policy/diff and both static builds pass. Final640/4K composition and ordinary trade/control-transfer review are accepted. Linux exact and matching-head hosted review remain required after publication;009 is released on a separate stacked branch. Preserved exact evidence: root tmp/trade111-final-exact.log and tmp/trade111-final-exact-evidence.

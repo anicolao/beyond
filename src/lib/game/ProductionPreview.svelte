@@ -1,36 +1,46 @@
 <script lang="ts">
   import {supplyCapacity} from './manifest';
   import {productionPreview} from './production-preview';
+  import {tradeSupply} from './trade-preview';
   import type {TurnPlayer} from './turn';
-  let {player,compact=false}:{player:TurnPlayer;compact?:boolean}=$props();
+  let {player,compact=false,purpose='production'}:{player:TurnPlayer;compact?:boolean;purpose?:'production'|'trade'}=$props();
   let cycle=$state<HTMLDialogElement>(undefined!),cycleButton=$state<HTMLButtonElement>(undefined!);
   const preview=$derived(productionPreview(player));
+  const route=$derived(tradeSupply(player));
+  function placeCycle(host:HTMLDivElement){
+    const reader=host.querySelector('dialog')!;
+    // Keep the native inspector outside the bounded choices scroller. The
+    // stationary host preserves this component's DOM ownership on teardown.
+    (host.closest('dialog')??document.body).append(reader);
+    return {destroy:()=>reader.remove()};
+  }
 </script>
-<section class="production-mat" class:compact aria-label="Your production mat">
-  <div class="mat-heading"><h3>Supply → Population<small>Full growth: +{preview.population}</small></h3></div>
+<section class="production-mat" class:compact aria-label={purpose==='trade'?'Your trade Supply':'Your production mat'}>
+  <div class="mat-heading"><h3>{#if purpose==='trade'}Supply exchange<small>Next draw: {route.draw?.letter??'none'} · return: {route.returned.letter}{route.returned.overflow?' (overflow)':''}</small>{:else}Supply → Population<small>Full growth: +{preview.population}</small>{/if}</h3></div>
   <div class="inspection-control"><button bind:this={cycleButton} aria-haspopup="dialog" onclick={()=>cycle.showModal()}>Inspect {Object.values(preview.cubes).reduce((a,b)=>a+b,0)} cubes ↗</button></div>
-  <div class="columns" aria-label="Population growth by Supply column">
+  <div class="columns" aria-label={purpose==='trade'?'Trade Supply columns':'Population growth by Supply column'}>
     {#each preview.columns as column}
-      <div class="column" class:covered={!column.exposed} class:empty={column.exposed&&!column.supply} aria-label={`Column ${column.letter}: ${column.supply} Supply; ${!column.exposed?'Food letter covered':column.supply?'produces 1 Population':'empty, no yield'}`}>
-        <strong class="letter">{column.letter}</strong><div class="cube-well" aria-hidden="true">{#each Array.from({length:supplyCapacity[column.letter.charCodeAt(0)-65]}) as _,index}<i class:cube={index<column.supply} class:socket={index>=column.supply}></i>{/each}{#if column.supply>supplyCapacity[column.letter.charCodeAt(0)-65]}<span class="overflow-cubes">+{column.supply-supplyCapacity[column.letter.charCodeAt(0)-65]}</span>{/if}</div><span class="cube-count">{column.supply} Supply</span><b>{!column.exposed?(compact?'—':'Covered'):column.yield?'+1 Pop':'Empty · +0'}</b>
+      <div class="column" class:covered={purpose==='production'&&!column.exposed} class:empty={purpose==='production'&&column.exposed&&!column.supply} class:next-draw={purpose==='trade'&&route.draw?.letter===column.letter} class:next-return={purpose==='trade'&&route.returned.letter===column.letter} aria-label={`Column ${column.letter}: ${column.supply} Supply; ${purpose==='trade'?[(route.draw?.letter===column.letter?'next draw':''),(route.returned.letter===column.letter?route.returned.overflow?'overflow return':'next return':'')].filter(Boolean).join(' and ')||'waiting':!column.exposed?'Food letter covered':column.supply?'produces 1 Population':'empty, no yield'}`}>
+        <strong class="letter">{column.letter}</strong><div class="cube-well" aria-hidden="true">{#each Array.from({length:supplyCapacity[column.letter.charCodeAt(0)-65]}) as _,index}<i class:cube={index<column.supply} class:socket={index>=column.supply}></i>{/each}{#if column.supply>supplyCapacity[column.letter.charCodeAt(0)-65]}<span class="overflow-cubes">+{column.supply-supplyCapacity[column.letter.charCodeAt(0)-65]}</span>{/if}</div><span class="cube-count">{column.supply} Supply</span><b>{#if purpose==='trade'}{route.draw?.letter===column.letter?'Draw':''}{route.draw?.letter===column.letter&&route.returned.letter===column.letter?' / ':''}{route.returned.letter===column.letter?route.returned.overflow?'Overflow':'Return':''}{:else}{!column.exposed?(compact?'—':'Covered'):column.yield?'+1 Pop':'Empty · +0'}{/if}</b>
       </div>
     {/each}
   </div>
-  <div class="tracks">
+  {#if purpose==='production'}<div class="tracks">
     <div class="track"><span>Food</span><ol aria-label="Food production track">{#each preview.food as slot,index}<li class:disc={!slot.exposed} aria-label={`Position ${index}: ${slot.exposed?(slot.letter?`exposed ${slot.letter}`:'exposed blank'):'covered by Food disc'}`}><span aria-hidden="true">{slot.exposed?(slot.letter??'·'):'●'}</span></li>{/each}</ol><b>{player.foodDiscs} discs</b></div>
     <div class="track"><span>Ore</span><ol aria-label="Ore production track">{#each preview.ore as slot,index}<li class:disc={!slot.exposed} aria-label={`Position ${index}: ${slot.exposed?'exposed, 1 Ore':'covered by Ore disc'}`}><span aria-hidden="true">{slot.exposed?'◆':'●'}</span></li>{/each}</ol><b>+{preview.oreYield} Ore</b></div>
   </div>
   {#if compact}<p class="covered-key">Covered Food letters: {preview.columns.filter(c=>!c.exposed).map(c=>c.letter).join(' · ')||'none'}</p>{/if}
-  <p class="column-rule">Only exposed letters draw from their matching column. Empty columns yield nothing.</p>
+  <p class="column-rule">Only exposed letters draw from their matching column. Empty columns yield nothing.</p>{:else}<p class="trade-supply-rule">{compact?'Draw leftmost nonempty Supply, ignoring Food. Return rightmost empty; overflow to A.':'Draw from the leftmost nonempty column, regardless of Food. Return to the rightmost empty space; overflow extends A.'}</p>{/if}
 
 </section>
-<dialog class="cycle-reader" bind:this={cycle} aria-label="Your cube cycle" data-e2e-layout onclose={()=>cycleButton?.focus({preventScroll:true})} onkeydown={event=>{event.stopPropagation();if(event.key==='Tab'){event.preventDefault();cycle.querySelector('button')?.focus();}}}>
+<div class="cycle-host" use:placeCycle><dialog class="cycle-reader" bind:this={cycle} aria-label="Your cube cycle" data-e2e-layout onclose={()=>cycleButton?.focus({preventScroll:true})} onkeydown={event=>{event.stopPropagation();if(event.key==='Tab'){event.preventDefault();cycle.querySelector('button')?.focus();}}}>
   <h2>Your cube cycle</h2><p class="cycle-total">{Object.values(preview.cubes).reduce((a,b)=>a+b,0)} physical cubes</p>
   <dl>{#each Object.entries(preview.cubes) as [label,count]}<div><dt>{label==='research'?'Permanent research':label}</dt><dd>{count}</dd></div>{/each}</dl>
-  <p>Growth converts Supply into available Population. Ships and permanent research use those same cubes. Ore production leaves cubes unchanged.</p><p>Returned cubes fill empty Supply spaces from right to left; overflow goes into A.</p>
-  <button onclick={()=>cycle.close()}>Return to production</button>
-</dialog>
+  <p>{purpose==='trade'?'Trade converts Supply or an owned ship into Population, or returns Population to Supply. Each exchange pays or gains the printed Ore amount.':'Growth converts Supply into available Population. Ships and permanent research use those same cubes. Ore production leaves cubes unchanged.'}</p><p>Returned cubes fill empty Supply spaces from right to left; overflow goes into A.</p>
+  <button onclick={()=>cycle.close()}>Return to {purpose==='trade'?'trading':'production'}</button>
+</dialog></div>
 <style>
+.cycle-host{display:contents}
 .production-mat{position:relative;margin:16px 0;padding:14px;border:1px solid #a28a57;border-radius:10px;background:linear-gradient(130deg,#183c3e,#0a242c);box-shadow:inset 0 1px 2px #dac18a66,0 5px 10px #0008;color:#f2e6c6}.mat-heading{position:absolute;left:14px;top:14px;right:120px;pointer-events:none}.mat-heading h3{font:22px/1.1 'Cormorant Garamond',serif;margin:0}.mat-heading h3 small{font:11px 'Atkinson Hyperlegible',sans-serif;display:block;margin-top:3px}.inspection-control{display:flow-root;min-height:66px}.inspection-control>button{float:right;width:98px;min-height:44px;border:1px solid #bda16877;border-radius:50%;background:radial-gradient(ellipse at 30% 20%,#35534d,#0e292e);color:#f3e2ad;font:11px 'Atkinson Hyperlegible',sans-serif;box-shadow:inset 0 1px 1px #e0c79266,0 2px 3px #0007;cursor:pointer}.inspection-control>button:focus-visible,.cycle-reader button:focus-visible{outline:3px solid #70ede4;outline-offset:3px}
 .columns{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.column{display:flex;flex-direction:column;align-items:center;gap:3px;padding:7px 3px;color:#183235;background:linear-gradient(110deg,#fbefd1,#d3bc87);border:1px solid #a58d58;border-radius:6px;box-shadow:inset 0 1px 1px #fff9,0 3px 4px #0006,0 0 8px #e4c36d44}.letter{font:25px 'Cormorant Garamond',serif}.cube-count{font-size:11px}.column b{font-size:11px;margin-top:3px}.column.covered{background:linear-gradient(125deg,#263735,#122a2f);color:#d8caab;box-shadow:inset 0 1px 1px #fff2,0 3px 4px #0006}.column.empty{background:linear-gradient(110deg,#e0d5b8,#c1b294)}.column.empty b{color:#693519}
 .cube-well{position:relative;width:100%;height:52px;display:grid;grid-template-columns:repeat(2,16px);grid-auto-rows:14px;gap:4px 6px;justify-content:center;align-content:center;background:linear-gradient(120deg,#122e3099,#061a20dd);border:1px solid #7f704f;border-radius:4px;box-shadow:inset 2px 3px 5px #000b,inset -1px -1px 1px #d5c29655;margin:4px 0 3px}.cube-well i{display:block;width:13px;height:13px;border-radius:1px}.cube-well .cube{background:linear-gradient(135deg,#96e4cf 0%,#59c1b0 45%,#288b81 46%,#267b79);box-shadow:2px 2px 0 #124b4d,3px 4px 3px #0009,inset 1px 1px 0 #cdf9e1;transform:skewY(-9deg) rotate(-4deg)}.cube-well .socket{box-sizing:border-box;border:1px dashed #9b927088;border-radius:50%;background:radial-gradient(circle,#0008,#071a1b44);box-shadow:inset 1px 2px 3px #000a}.covered .cube-well{filter:saturate(.45)}.empty .cube-well{border-color:#b69a65;box-shadow:inset 2px 3px 7px #000c}
@@ -52,4 +62,5 @@
  .production-mat:not(.compact) .track ol{gap:6px}.production-mat:not(.compact) .track li{max-width:44px;font-size:20px}.production-mat:not(.compact) .track b{font-size:20px}
  .production-mat:not(.compact) .column-rule{font-size:22px;margin-top:20px}.production-mat:not(.compact) .overflow-cubes{font-size:18px}
 }
+.trade-supply-rule{font-size:11px;line-height:1.4;margin:12px 0 0;color:#f0ddb1}.column.next-draw{outline:2px solid #73dbca;outline-offset:-3px}.column.next-return{box-shadow:inset 0 0 0 2px #997136,0 3px 4px #0006}.compact .trade-supply-rule{font-size:10px;margin-top:3px}.production-mat[aria-label="Your trade Supply"] .column b{min-height:1em}@media(min-width:2200px){.production-mat:not(.compact) .trade-supply-rule{font-size:22px;margin-top:24px}}
 </style>
