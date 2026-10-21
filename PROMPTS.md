@@ -859,3 +859,27 @@ Reviewer05:09: independently confirmed repaired phone010 passes in full sequence
 Reviewer-authored local acceptance and next-phase delegation:
 
 Reviewer06:09: Phase010 FULL LOCAL ACCEPTANCE granted. Independently reviewed reference audit142, group096 before/after, group038 before/after and flagged040/041/080/088 after layouts, plus rotated119; contained readable collateral reflow and surcharge labels acceptable. Earlier live remote/shared build, upgrade, control and recovery review plus118/118 exact8011frames and local checks close local gates. Selective review is not exhaustive per-image certification. Commit/push010 on feat/fleet-management, open stacked PR based on feat/automation (preserve latest009 ancestry), report URL/head. Then explicitly BEGIN011 Plan simultaneous jumps on a NEW branch stacked on010 while010 CI/hosted finish. Preserve current local server/review data. Keep PR8-11 failures and all matching hosted UI gates tracked separately and repair/propagate; no weakened guards, no merges. No rerun of unchanged passing local suite required. Follow plan/source rules for011, local UI review before baselines.
+
+## Prompt 144: Jump Review
+
+Reviewer-authored local composition and post-commit diagnosis:
+
+Reviewer06:39: independently inspected round143/cardinal/initial-1280x720.png. After all jumps explanatory text is cut at bottom behind action strip; ensure compact view makes full endpoint consequences and any scrolling affordance clear. Map uses low-contrast text boxes over photograph; improve node/route contrast and reuse production system/ship visual language so destinations and ship levels read without relying on tiny text. Also observed shared2 review script timeout awaiting Place|Choose|Produce|Grow after commit; diagnose/report actual post-commit state before flow acceptance. Continue local iteration, no baselines yet.
+
+## Prompt 145: Publisher Diagnosis
+
+Reviewer-authored exact-source publication checkpoint:
+
+Reviewer07:39: PR12 publisher run39562966118/job119098339244 failed. Independently read logs: current118531-byte rules SHA d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67 POST503, diagnostic current503 versus frozenPR5 200. Preview unavailable; keep final010 acceptance withheld and diagnose exact current rules without old-rule fallback or weakened guards. Other checks running. Existing06:39 planner feedback still queued; address that queued feedback before requesting011 acceptance.
+
+## Prompt 146: Zheng Continuation
+
+Reviewer-authored independent live blocker:
+
+Reviewer07:54 NEW independent live011 blocker: own shared2 table b648ddfd-d6cc-43df-a189-d07c58d3182d at5206, Ada south Zheng-Yi/Bora north UN. Ordinary Basic build Space1 adds third Sol ship; plan Ship1 and Ship2 each Sol to Barnards Star (2 points). Remove/clear/rebuild budget previews correct. Commit jumps leads Resolve printed Action / Resolve the Event / Resolving the saved effect, then alert This move was not accepted. Reload retains Action effects, Continue action effects returns same resolving state. Please diagnose canonical continuation/control bonus; do not mutate reviewer room or use reviewer identity. Reproduce separately. Current1124x720 also clips map legend under buttons. No011 acceptance.
+
+## Prompt 147: Retained Recovery
+
+Reviewer-authored retained-room checkpoint:
+
+Reviewer08:04 update to07:54 blocker: independently reloaded own table b648ddfd-d6cc-43df-a189-d07c58d3182d on5206. Now Production, two Ada level1 ships at Barnards Star plus one Sol, Food outpost and Population bonus applied (2 Population, A Supply3). Inspected resolveControlCheck nonmutating lookup diff. Scoped retained-room recovery verified; not whole011 acceptance. Continue visual corrections and fresh broader flow/security checks; preserve room.

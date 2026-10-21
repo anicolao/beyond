@@ -534,3 +534,5 @@ Prompt 141 | 0df7e3d83f885572c64a79dd583da48513be085d45288abaa817d14baf268cbb | 
 Prompt 142 | 2dccfccd49fd3eb4eb33cc401673b241b03e3b823bd2748c13af0dcee125ad69 | Audit3014 prior PNG deltas against parent native pixels; inspect16 pairs, index174 patterns/unchanged frames and flag78 collateral4K board changes before publication.
 
 Prompt 143 | f8bc83525348789a3a9396916c84ef8db79471f083063917ceacd4d2dc32665a | Record full local010 acceptance and selective delta review; publish against latest009 ancestry and release011 with independent Linux/hosted gates preserved.
+
+Prompt 147 | 43dc04ff761c5c3262781329bf74f4b4534e105c1f1e97248d115524d3f50d83 | Backport reviewer-verified nonmutating control reads and ordinary opening-jump regressions to PR12 without planner UI or reference changes

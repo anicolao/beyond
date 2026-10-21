@@ -24,7 +24,7 @@ export function updateControl(initial:PublicSetup,state:PlayState,source:string,
  prepend(state,...[...new Set(affected)].filter(location=>!!specialty(initial,state,location)).map(location=>({kind:'control-check' as const,responder,location,source})));
 }
 export function resolveControlCheck(initial:PublicSetup,state:PlayState,location:string,source:string){
- const d=state.discovery!,powers=initial.players.map(actor=>({position:actor.position,power:player(initial,state,actor.position).ships.filter(s=>s.location===location).reduce((n,s)=>n+s.level,0)}));
+ const d=state.discovery!,powers=initial.players.map(actor=>({position:actor.position,power:(state.players[actor.position]??actor).ships.filter(s=>s.location===location).reduce((n,s)=>n+s.level,0)}));
  const max=Math.max(...powers.map(p=>p.power)),leaders=powers.filter(p=>p.power===max),old=d.outposts[location];
  const owner=!max?old?.owner:leaders.some(p=>p.position===old?.owner)?old!.owner:leaders.length===1?leaders[0].position:undefined;
  d.queue.shift();if(owner===old?.owner)return;
