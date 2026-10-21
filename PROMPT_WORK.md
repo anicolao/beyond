@@ -366,3 +366,9 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | P
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Carry exact installed-source readback through rival research, preserving fresh SDK contexts, mismatching-source compilation and unchanged local/CI deadlines.
 
 Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Propagate verified exact installed-source proof through production without policy, capture, identity or deadline changes.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Narrow optional SDK configuration before exact readback; restore clean checked-JavaScript types with all eight identity and fail-closed tests passing.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate checked-JavaScript readback narrowing through rival research; preserve exact source checks, SDK contexts, assertions and unchanged deadlines.
+
+Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Propagate checked-JavaScript readback narrowing through production; preserve exact source checks, SDK contexts, assertions and unchanged deadlines.
