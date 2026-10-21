@@ -1,6 +1,6 @@
 // Synthetic DOM fixtures test the capture guard itself, not a game user story.
 import { test, expect } from '@playwright/test';
-import { assertScreenFit } from '../e2e/helpers/screen-fit';
+import { assertScreenFit, warmVisibleImages } from '../e2e/helpers/screen-fit';
 const fixture = (angle: number, buttonTop: number) => `<style>
   *{box-sizing:border-box}body{margin:0}
   main{position:absolute;left:200px;top:200px;width:400px;height:300px;transform:rotate(${angle}deg)}
@@ -91,4 +91,36 @@ for(const width of [60,220])test(`nested transformed clipping ${width===60?'fits
  await page.setContent(`<style>*{box-sizing:border-box}body{margin:0}main{position:absolute;left:200px;top:100px;transform:scale(.9) rotate(15deg);width:300px;height:300px}.clip{width:160px;height:130px;overflow:hidden;border:1px solid;transform:scale(.8)}span{display:block;margin:20px;width:${width}px;height:40px;background:ivory}</style><main data-e2e-layout><div class="clip"><span>Source</span></div></main>`);
  const result=page.evaluate(assertScreenFit,{});
  if(width===60)await result;else await expect(result).rejects.toThrow('clipped by div');
+});
+
+// Warming must never replace final validation of images appearing after an ack.
+const imageSource='data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><rect width="48" height="48" fill="ivory"/></svg>');
+test('image warming preserves a fresh native decode of every current late image',async({page})=>{
+ await page.setContent(`<main data-e2e-layout><img id="first" alt="" width="48" height="48" src="${imageSource}"></main>`);
+ await page.evaluate(()=>{(window as Window&{__beyondTransitions?:Map<Element,string>}).__beyondTransitions=new Map();const native=HTMLImageElement.prototype.decode;(window as Window&{decoded?:string[]}).decoded=[];HTMLImageElement.prototype.decode=function(){(window as Window&{decoded?:string[]}).decoded!.push(this.id);return native.call(this);};});
+ await page.evaluate(warmVisibleImages);
+ await page.evaluate(()=>{const late=document.querySelector('img')!.cloneNode() as HTMLImageElement;late.id='late';document.querySelector('main')!.append(late);});
+ await page.evaluate(assertScreenFit,{prepare:true});
+ expect(await page.evaluate(()=>(window as Window&{decoded?:string[]}).decoded)).toEqual(['first','first','late']);
+});
+test('successful warming cannot hide an undecodable image added before the final audit',async({page})=>{
+ await page.setContent(`<main data-e2e-layout><img alt="" width="48" height="48" src="${imageSource}"></main>`);
+ await page.evaluate(()=>{(window as Window&{__beyondTransitions?:Map<Element,string>}).__beyondTransitions=new Map();});
+ await page.evaluate(warmVisibleImages);
+ await page.evaluate(()=>{const late=document.createElement('img');late.width=48;late.height=48;late.src='data:image/png;base64,broken';document.querySelector('main')!.append(late);});
+ await expect(page.evaluate(assertScreenFit,{prepare:true})).rejects.toThrow(/decoded/);
+});
+
+test('combined acknowledgement defers audit until the exact requested status',async({page})=>{
+ await page.setContent('<main data-e2e-layout data-backend-status="reconnecting"><button style="width:80px;height:44px">Go</button></main>');
+ await page.evaluate(()=>{(window as Window&{__beyondTransitions?:Map<Element,string>}).__beyondTransitions=new Map();});
+ expect(await page.evaluate(assertScreenFit,{status:'synced',prepare:true,touchTargets:true})).toBe(false);
+ await page.locator('main').evaluate(element=>element.setAttribute('data-backend-status','synced'));
+ expect(await page.evaluate(assertScreenFit,{status:'synced',prepare:true,touchTargets:true})).toBe(true);
+ expect(await page.evaluate(assertScreenFit,{status:'offline'})).toBe(false);
+});
+test('acknowledgement polling propagates a real audit failure without retrying it',async({page})=>{
+ await page.setContent('<main data-e2e-layout data-backend-status="synced"><button style="width:43px;height:44px;padding:0">Go</button></main>');
+ await page.evaluate(()=>{(window as Window&{__beyondTransitions?:Map<Element,string>}).__beyondTransitions=new Map();});
+ await expect(page.waitForFunction(assertScreenFit,{status:'synced',prepare:true,touchTargets:true},{timeout:2000,polling:20})).rejects.toThrow('Touch target too small');
 });

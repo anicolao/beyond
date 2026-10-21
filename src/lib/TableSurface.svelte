@@ -25,7 +25,7 @@
     editing = ''; name = '';
   }
 </script>
-{#if game}<GameSurface {game} mode="tabletop" {home} {busy} commitMove={move=>commit({type:'game-move',position:game!.activePosition as Position,name:'',move})} recovery={()=>{void openGameRecovery();}}/>{:else}
+{#if game}<GameSurface {game} mode="tabletop" {home} {busy} commitMove={move=>commit({type:'game-move',position:((move.kind==='discovery-choice'||move.kind==='discovery-advance')?game!.discovery!.queue[0].responder:game!.activePosition) as Position,name:'',move})} recovery={()=>{void openGameRecovery();}}/>{:else}
 <section class="table-surface" aria-label="Shared table">
   <div class="table-center">
     <div class="gathering-crest"><InstrumentIcon kind="compass" /></div>

@@ -208,3 +208,7 @@ aside from looking bad the card gallery also seems to be incomplete, it should h
 ## Useful progress check
 
 let's check that we are making useful progress.
+
+## Current status
+
+what's our currnet status

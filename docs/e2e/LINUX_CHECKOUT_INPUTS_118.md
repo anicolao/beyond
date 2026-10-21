@@ -1,0 +1,7 @@
+# Linux checkout input preservation
+
+Comparison and native-generation jobs use blob-filtered, non-cone checkout that excludes only tests/e2e/**/screenshots/**/*-darwin.png. Every Linux reference, original artwork, font, source/build input, rule, fixture and walkthrough remains selected. The static job is unchanged. No renderer, container/hardware, capture/story limit, comparison, native generation or artifact-selection setting changes.
+
+[The path/inventory proof](LINUX_CHECKOUT_INPUTS_118.json) applies Git sparse checkout to a representative metadata repository, including nested screenshot paths and source/art inputs. Only macOS captures disappear; every retained fixture byte remains equal. The largest public008ce655cc tree contains5853 excluded Darwin captures and4105 retained Linux blobs, whose Git object inventory is pinned. This does not transform or accept any reference image.
+
+The workflow is also parsed and compared structurally against its prior version: deleting only the two checkout.with additions yields identical configuration. Existing tooling/policy/capture checks remain required. This addresses large unused-blob checkout overhead; actual Linux build/performance/exact proof remains pending CI. It does not claim to fix the separate static5000ms or native120000ms failures, and strict current-source rules publication remains required. Active exact/native evidence finishes under unchanged concurrency; failed archives remain unaccepted.

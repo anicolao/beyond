@@ -12,7 +12,8 @@ permissions:
 
 concurrency:
   group: verify-${{ github.ref }}
-  cancel-in-progress: true
+  # Finish active exact/native evidence; queue the newest follow-up per PR.
+  cancel-in-progress: false
 
 jobs:
   static-and-rules:
@@ -36,6 +37,14 @@ jobs:
         shell: bash
     steps:
       - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          # Preserve every Linux reference and all source/build inputs.
+          # Only the unused macOS capture blobs stay outside this Linux checkout.
+          sparse-checkout: |
+            /*
+            !/tests/e2e/**/screenshots/**/*-darwin.png
       - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - run: apt-get update && apt-get install -y --no-install-recommends sudo xz-utils
       - uses: cachix/install-nix-action@v31
@@ -69,6 +78,14 @@ jobs:
         shell: bash
     steps:
       - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          # Preserve every Linux reference and all source/build inputs.
+          # Only the unused macOS capture blobs stay outside this Linux checkout.
+          sparse-checkout: |
+            /*
+            !/tests/e2e/**/screenshots/**/*-darwin.png
       - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - run: apt-get update && apt-get install -y --no-install-recommends sudo xz-utils
       - uses: cachix/install-nix-action@v31

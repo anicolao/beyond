@@ -83,7 +83,7 @@ service cloud.firestore {
         }
         allow read: if signedIn() && get(root()).data.ownerUid == request.auth.uid;
         allow get: if signedIn() && !exists(root());
-        allow create: if owner() && valid();
+        allow create: if request.resource.data.type!='game-move' && owner() && valid();
         allow update, delete: if false;
       }
     }
@@ -117,15 +117,17 @@ service cloud.firestore {
       function allReady(d) { return d.seats.p1.ready && d.seats.p2.ready && (d.settings.capacity < 3 || d.seats.p3.ready) && (d.settings.capacity < 4 || d.seats.p4.ready); }
       function link(d) {
         let event = getAfter(/databases/$(database)/documents/games/$(game)/events/$(d.lastCommand)).data;
-        return event.commandId == d.lastCommand && event.revision == d.revision;
+        return event.actorUid == request.auth.uid && event.commandId == d.lastCommand && event.revision == d.revision;
       }
       allow get: if signedIn() && resource.data.mode == 'remote' && resource.data.schema == 1;
       allow create: if signedIn() && remoteShape(request.resource.data) && request.resource.data.ownerUid == request.auth.uid
         && request.resource.data.revision == 0 && link(request.resource.data)
         && getAfter(/databases/$(database)/documents/invites/$(request.resource.data.code)).data.gameId == game;
-      allow update: if signedIn() && isRemote(resource.data) && resource.data.phase == 'gathering' && remoteShape(request.resource.data)
+      // Reject a mismatched attributed actor/revision before validating every seat.
+      // The immutable event independently enforces the same actor identity.
+      allow update: if signedIn() && isRemote(resource.data) && resource.data.phase == 'gathering'
         && request.resource.data.ownerUid == resource.data.ownerUid && request.resource.data.code == resource.data.code
-        && request.resource.data.revision == resource.data.revision + 1 && link(request.resource.data);
+        && request.resource.data.revision == resource.data.revision + 1 && link(request.resource.data) && remoteShape(request.resource.data);
       match /events/{event} {
         function sameSeat(p, except, b, a, clear) {
           return p == except || (!(p in b.seats) && !(p in a.seats)) || (p in b.seats && p in a.seats
@@ -190,7 +192,7 @@ service cloud.firestore {
         allow list: if signedIn() && isRemote(get(path()).data) && request.auth.uid in get(path()).data.members;
         allow get: if signedIn() && isRemote(get(path()).data)
           && (!exists(/databases/$(database)/documents/games/$(game)/events/$(event)) || request.auth.uid in get(path()).data.members || resource.data.actorUid == request.auth.uid);
-        allow create: if signedIn() && validRemoteEvent();
+        allow create: if signedIn() && request.resource.data.type!='game-move' && validRemoteEvent();
       }
     }
     // Ordinary turns extend the same immutable setup/event stream. The actor's
@@ -199,10 +201,12 @@ service cloud.firestore {
       function gamePath() { return /databases/$(database)/documents/games/$(game); }
       function firstPosition(b) { return b.mode == 'remote' ? 'p1' : b.firstPlayer; }
       function physicalIndex(p) { return p == 'north' ? 0 : p == 'north-east' ? 1 : p == 'east' ? 2 : p == 'south-east' ? 3 : p == 'south' ? 4 : p == 'south-west' ? 5 : p == 'west' ? 6 : 7; }
+      function nextPhysicalPosition(b,p) {
+        let positions=['north','north-east','east','south-east','south','south-west','west','north-west'];let i=physicalIndex(p);
+        return positions[(i+1)%8] in b.seats ? positions[(i+1)%8] : positions[(i+2)%8] in b.seats ? positions[(i+2)%8] : positions[(i+3)%8] in b.seats ? positions[(i+3)%8] : positions[(i+4)%8] in b.seats ? positions[(i+4)%8] : positions[(i+5)%8] in b.seats ? positions[(i+5)%8] : positions[(i+6)%8] in b.seats ? positions[(i+6)%8] : positions[(i+7)%8];
+      }
       function nextPosition(b,p) {
-        let positions=['north','north-east','east','south-east','south','south-west','west','north-west']; let i=physicalIndex(p);
-        return b.mode == 'remote' ? (p == 'p1' ? 'p2' : p == 'p2' && b.settings.capacity>=3 ? 'p3' : p == 'p3' && b.settings.capacity == 4 ? 'p4' : 'p1')
-          : positions[(i+1)%8] in b.seats ? positions[(i+1)%8] : positions[(i+2)%8] in b.seats ? positions[(i+2)%8] : positions[(i+3)%8] in b.seats ? positions[(i+3)%8] : positions[(i+4)%8] in b.seats ? positions[(i+4)%8] : positions[(i+5)%8] in b.seats ? positions[(i+5)%8] : positions[(i+6)%8] in b.seats ? positions[(i+6)%8] : positions[(i+7)%8];
+        return b.mode=='remote' ? (p=='p1'?'p2':p=='p2' && b.settings.capacity>=3?'p3':p=='p3' && b.settings.capacity==4?'p4':'p1') : nextPhysicalPosition(b,p);
       }
       function blankPlay(b) { return {'turn':0,'activePosition':firstPosition(b),'phase':'action','players':{}}; }
       function initialEconomy(b,p) {
@@ -223,8 +227,11 @@ service cloud.firestore {
       function pawnClear(players,i,location) { return i>=players.size() || players[i].actionLocation != location; }
       function spaceOpen(s,location) { let players=s.players.values(); return pawnClear(players,0,location) && pawnClear(players,1,location) && pawnClear(players,2,location) && pawnClear(players,3,location); }
       function upgradeAt(b,a,id,i) { return i<b.size() && b[i].id == id && b[i].level<4 && a.size() == b.size() && a[i] == {'id':b[i].id,'level':b[i].level+1,'location':b[i].location} && a.removeAll([a[i]]) == b.removeAll([b[i]]); }
-      function upgrade(b,a,id) { return upgradeAt(b,a,id,0) || upgradeAt(b,a,id,1) || upgradeAt(b,a,id,2); }
-      function researchBonus(m,b,a,p) {
+      function upgrade(b,a,id) {
+        let removed=b.removeAll(a);let added=a.removeAll(b);
+        return removed.size()==1 && added.size()==1 && removed[0].id==id && removed[0].level<4 && added[0]=={'id':id,'level':removed[0].level+1,'location':removed[0].location} && a.size()==b.size();
+      }
+      function otherResearchBonus(m,b,a,p) {
         let supply=leftSupply(b.supply);
         return (m.card == 'terraforming' && !('ship' in m) && a.diff(b).affectedKeys().hasOnly(['population','research','actionLocation','supply','ships']) && (
           (supply>=0 && !('supplyFallback' in m) && a.population == b.population-1 && supplyDelta(b.supply,a.supply,supply,-1) && a.ships == b.ships.concat([{'id':p+'-terraforming','level':1,'location':'deep-space'}]))
@@ -232,11 +239,14 @@ service cloud.firestore {
           || (supply<0 && m.supplyFallback == 'population' && b.population>=2 && a.population == b.population-2 && a.supply == b.supply && a.ships == b.ships.concat([{'id':p+'-terraforming','level':1,'location':'deep-space'}]))))
         || (m.card == 'advanced-genetics' && !m.keys().hasAny(['ship','supplyFallback']) && a.diff(b).affectedKeys().hasOnly(['population','research','actionLocation','supply','foodDiscs','automation']) && a.population == b.population-1+(supply>=0 ? 1 : 0) && supplyDelta(b.supply,a.supply,supply,-1) && a.foodDiscs == (b.foodDiscs>0 ? b.foodDiscs-1 : 0) && a.automation == b.automation+1)
         || (m.card == 'advanced-robotics' && !m.keys().hasAny(['ship','supplyFallback']) && a.diff(b).affectedKeys().hasOnly(['population','research','actionLocation','ore','oreDiscs','automation']) && a.population == b.population-1 && a.ore == b.ore+1 && a.oreDiscs == (b.oreDiscs>0 ? b.oreDiscs-1 : 0) && a.automation == b.automation+1)
-        || (m.card == 'narrow-beam-lasers' && !('supplyFallback' in m) && a.diff(b).affectedKeys().hasOnly(['population','research','actionLocation','ore','ships']) && a.population == b.population-1 && a.ore == b.ore+1 && ((b.ships.size() == 0 && !('ship' in m) && a.ships == b.ships) || upgrade(b.ships,a.ships,m.ship)));
+        ;
+      }
+      function researchBonus(m,b,a,p,power) {
+        return m.card=='narrow-beam-lasers' ? (!('supplyFallback' in m) && a.diff(b).affectedKeys().hasOnly(['population','research','actionLocation','ore','ships']) && a.population == b.population-1 && a.ore == b.ore+1 && ((!('ship' in m) && (b.ships.size() == 0 || ('*' in power ? power['*']==4*b.ships.size() : noEligibleUpgrade(b.ships,{}))) && a.ships == b.ships) || upgrade(b.ships,a.ships,m.ship))) : otherResearchBonus(m,b,a,p);
       }
       function researchMove(m,s,t,b,a,p,count) {
         let location='research-I:'+string(m.space);
-        return m.keys().hasOnly(['kind','space','card','ship','supplyFallback']) && s.phase == 'action' && t.phase == 'production' && m.space is int && m.space>=0 && m.space<count && spaceOpen(s,location) && b.population>=1 && m.card in ['terraforming','advanced-genetics','narrow-beam-lasers','advanced-robotics'] && !(m.card in b.research) && a.actionLocation == location && a.research == b.research.concat([m.card]) && researchBonus(m,b,a,p);
+        return m.keys().hasOnly(['kind','space','card','ship','supplyFallback']) && s.phase == 'action' && t.phase == 'production' && m.space is int && m.space>=0 && m.space<count && spaceOpen(s,location) && b.population>=1 && m.card in ['terraforming','advanced-genetics','narrow-beam-lasers','advanced-robotics'] && !(m.card in b.research) && a.actionLocation == location && a.research == b.research.concat([m.card]) && researchBonus(m,b,a,p,'discovery' in s && !('ship' in m)?s.discovery.powers.get(p,{}):{});
       }
       function growDelta(b,a) {
         let removed=8-b.foodDiscs;
@@ -245,13 +255,27 @@ service cloud.firestore {
         return a.diff(b).affectedKeys().hasOnly(['supply','population']) && a.supply == [b.supply[0]-ca,b.supply[1]-cb,b.supply[2]-cc,b.supply[3]-cd,b.supply[4]-ce] && a.population == b.population+ca+cb+cc+cd+ce;
       }
       function removeShipAt(b,a,id,i) { return i<b.size() && b[i].id == id && a == b.removeAll([b[i]]); }
+      function removedOwnedShip(before,after,id) {
+        let removed=before.removeAll(after);
+        return removed.size()==1 && removed[0].id==id && after==before.removeAll(removed);
+      }
       function tradeMove(m,b,a) {
         return (m.kind == 'buy-population' && m.keys().hasOnly(['kind']) && b.ore>=3 && leftSupply(b.supply)>=0 && a.diff(b).affectedKeys().hasOnly(['ore','population','supply']) && a.ore == b.ore-3 && a.population == b.population+1 && supplyDelta(b.supply,a.supply,leftSupply(b.supply),-1))
         || (m.kind == 'sell-population' && m.keys().hasOnly(['kind']) && b.population>=1 && a.diff(b).affectedKeys().hasOnly(['ore','population','supply']) && a.ore == b.ore+1 && a.population == b.population-1 && supplyDelta(b.supply,a.supply,rightSupply(b.supply),1))
-        || (m.kind == 'decommission' && m.keys().hasOnly(['kind','ship']) && b.ore>=1 && a.diff(b).affectedKeys().hasOnly(['ore','population','ships']) && a.ore == b.ore-1 && a.population == b.population+1 && (removeShipAt(b.ships,a.ships,m.ship,0) || removeShipAt(b.ships,a.ships,m.ship,1) || removeShipAt(b.ships,a.ships,m.ship,2)));
+        || (m.kind == 'decommission' && m.keys().hasOnly(['kind','ship']) && b.ore>=1 && a.diff(b).affectedKeys().hasOnly(['ore','population','ships']) && a.ore == b.ore-1 && a.population == b.population+1 && removedOwnedShip(b.ships,a.ships,m.ship));
+      }
+      function gatherMove(m,s,t,b,a) {
+        let column=leftSupply(b.supply);
+        return m.keys().hasOnly(['kind','supplyFallback']) && s.phase == 'action' && t.phase == 'production'
+          && (spaceOpen(s,'supply-population:0') || b.actionLocation == 'supply-population:0')
+          && a.diff(b).affectedKeys().hasOnly(['ore','population','supply','actionLocation'])
+          && a.actionLocation == 'supply-population:0' && a.ore == b.ore+1
+          && (column>=0 ? !('supplyFallback' in m) && a.population == b.population+1 && supplyDelta(b.supply,a.supply,column,-1)
+             : m.supplyFallback in ['skip','population'] && (m.supplyFallback == 'skip' || b.population>0) && a.population == b.population && a.supply == b.supply);
       }
       function turnEffect(m,s,t,b,a,p,count) {
-        return (m.kind == 'research-I' && t.turn == s.turn && researchMove(m,s,t,b,a,p,count))
+        return (m.kind == 'gather' && t.turn == s.turn && gatherMove(m,s,t,b,a))
+        || (m.kind == 'research-I' && t.turn == s.turn && researchMove(m,s,t,b,a,p,count))
         || (m.keys().hasOnly(['kind']) && s.phase == 'production' && t.turn == s.turn && (
           (m.kind == 'grow' && t.phase == 'achievement' && growDelta(b,a))
           || (m.kind == 'ore' && t.phase == 'achievement' && a.diff(b).affectedKeys().hasOnly(['ore']) && a.ore == b.ore+9-b.oreDiscs)
@@ -259,23 +283,754 @@ service cloud.firestore {
         || (s.phase == 'trade' && t.turn == s.turn && ((t.phase == 'trade' && tradeMove(m,b,a)) || (m.kind == 'finish-trading' && m.keys().hasOnly(['kind']) && t.phase == 'achievement' && a == b)))
         || (m.kind == 'end-turn' && m.keys().hasOnly(['kind']) && s.phase == 'achievement' && t.phase == 'action' && t.turn == s.turn+1 && a == b);
       }
+      // Discovery kernel: authority stays with the named responder; each
+      // deterministic continuation is a separate atomic, cursor-bound command.
+      function discoveryMember(b,p) {
+        return signedIn() && 'start' in b && (b.mode=='tabletop' && b.ownerUid==request.auth.uid || b.mode=='remote' && b.phase=='started' && b.members.get(request.auth.uid,'')==p);
+      }
+      function discoveryOthers(s,t,p) {
+        return t.players.diff(s.players).affectedKeys().hasOnly([p]);
+      }
+      function technologyType(id) { return {'advanced-robotics':'Scientific','advanced-genetics':'Economic','narrow-beam-lasers':'Military','terraforming':'Commercial'}.get(id,'Commercial'); }
+      function prerequisiteIndices(slot) { return slot=='II-1' ? [0] : slot=='II-2' ? [0,1] : slot=='II-3' ? [1] : slot=='II-4' ? [2] : slot=='II-5' ? [2,3] : [3]; }
+      function typesFor(d,indices) { return indices.size()==1 ? [technologyType(d.basis[indices[0]])] : [technologyType(d.basis[indices[0]]),technologyType(d.basis[indices[1]])]; }
+      function prerequisitesOwned(d,indices,p) { return d.basis[indices[0]] in p.research && (indices.size()==1 || d.basis[indices[1]] in p.research); }
+      function slotIndex(slot) { return {'II-1':0,'II-2':1,'II-3':2,'II-4':3,'II-5':4,'II-6':5}.get(slot,5); }
+      function secondLevelCards() { return ['hypercomputing','human-experiments','psionics-research','multi-colony-symposium','exo-alloy-refinement','plasma-cannon','android-destroyers','modular-fleet','bio-synaptic-network','outer-sector-militia','mass-cloning','android-surveyors','spacetime-anomaly-studies','terranova-cruisers','supply-outpost','intersystem-diplomacy']; }
+      function matchingCards(type) { return type=='Scientific' ? ['hypercomputing','human-experiments','psionics-research','multi-colony-symposium'] : type=='Military' ? ['exo-alloy-refinement','plasma-cannon','android-destroyers','modular-fleet'] : type=='Economic' ? ['bio-synaptic-network','outer-sector-militia','mass-cloning','android-surveyors'] : ['spacetime-anomaly-studies','terranova-cruisers','supply-outpost','intersystem-diplomacy']; }
+      function properDraw(type,revealed,candidates,remaining,before) {
+        return candidates.size()==2 && candidates==revealed.removeAll(secondLevelCards().removeAll(matchingCards(type)))
+          && revealed.concat(remaining)==before && revealed[revealed.size()-1]==candidates[1];
+      }
+      function systemCardsA() { return ['alpha-centauri','barnards-star','61-cygni','epsilon-indi','gj-1061','groombridge-34','lalande-21185','procyon','sirius','struve-2398','teegardens-star','wolf-359']; }
+      function systemCardsB() { return ['ad-leonis','den-0255-4700','dx-cancri','ez-aquarii','kapteyns-star','kruger-60','lacaille-9352','luytens-star','ross-154','tau-ceti','tz-arietis','wise-1541-2250']; }
+      function systemInventory(b,d) {
+        let basis=d.systemBasis;let starts=b.seats.size()==2?[basis['a-1']]:[basis['a-1'],basis['a-2']];let a=starts.concat(d.systemDecks.A);let allB=[basis['b-1'],basis['b-2']].concat(d.systemDecks.B);
+        return basis.keys().hasOnly(b.seats.size()==2?['a-1','b-1','b-2']:['a-1','a-2','b-1','b-2']) && starts.hasOnly(['barnards-star','lalande-21185','sirius','wolf-359'])
+          && d.systemDecks.keys().hasOnly(['A','B']) && a.size()==12 && a.toSet()==systemCardsA().toSet() && allB.size()==12 && allB.toSet()==systemCardsB().toSet();
+      }
+
+      function shipLevel(ships,index) { return index<ships.size()?ships[index].level:0; }
+      function initialShipAllowed(ships,index) { return index>=ships.size()||ships[index].location in ['sol','deep-space']; }
+      function initialShipPower(ships,index,location) { return index<ships.size()&&ships[index].location==location?ships[index].level:0; }
+      function initialPowerFor(b,d,p) {
+        let ships=b.play.players[p].ships;
+        return ships.size()<=3 && initialShipAllowed(ships,0)&&initialShipAllowed(ships,1)&&initialShipAllowed(ships,2) && d.powers[p]=={'sol':initialShipPower(ships,0,'sol')+initialShipPower(ships,1,'sol')+initialShipPower(ships,2,'sol'),'deep-space':initialShipPower(ships,0,'deep-space')+initialShipPower(ships,1,'deep-space')+initialShipPower(ships,2,'deep-space'),'*':shipLevel(ships,0)+shipLevel(ships,1)+shipLevel(ships,2)};
+      }
+      function powerAt(d,p,location) { return d.powers[p].get(location,0); }
+      function singlePowerDelta(old,d,p,location,delta) {
+        return d.powers.diff(old.powers).affectedKeys().hasOnly([p]) && d.powers[p].diff(old.powers[p]).affectedKeys().hasOnly([location,'*']) && powerAt(d,p,location)==powerAt(old,p,location)+delta && powerAt(d,p,'*')==powerAt(old,p,'*')+delta;
+      }
+      function levelAt(ships,index,location) { return index<ships.size()&&ships[index].location==location?ships[index].level:0; }
+      function changedPowerAt(old,d,p,removed,added,location) {
+        return powerAt(d,p,location)==powerAt(old,p,location)-levelAt(removed,0,location)-levelAt(removed,1,location)+levelAt(added,0,location)+levelAt(added,1,location);
+      }
+      function upgradePower(old,d,p,removed,added) {
+        let first=removed[0].location;let second=removed.size()>1?removed[1].location:first;
+        let delta=added[0].level-removed[0].level;let other=removed.size()>1?added[1].level-removed[1].level:0;
+        let prior=old.powers[p];let power=d.powers[p];
+        return d.powers.diff(old.powers).affectedKeys().hasOnly([p]) && power.diff(prior).affectedKeys().hasOnly([first,second,'*'])
+          && power['*']==prior['*']+delta+other && power.get(first,0)==prior.get(first,0)+delta+(first==second?other:0)
+          && (first==second||power.get(second,0)==prior.get(second,0)+other);
+      }
+      function initialDiscoveryValid(b,d) {
+        return d.keys().hasOnly(['seed','achievements','claims','basis','eventDeck','cursor','sequence','rollIndex','systems','systemDecks','systemBasis','outposts','industry','powers','deckII','records','technologies','events','guilds','queue','reservations']) && d.cursor==0 && d.sequence==0 && d.rollIndex==0 && d.seed==b.start.seed && d.basis.size()==4 && d.basis.toSet()==['terraforming','advanced-genetics','narrow-beam-lasers','advanced-robotics'].toSet()
+          && d.powers=={} && systemInventory(b,d) && d.deckII.size()==16 && d.deckII.toSet()==secondLevelCards().toSet()
+          && d.eventDeck.size()==6 && d.eventDeck.toSet().size()==6 && d.eventDeck.hasAll(['maya-chaturvedi','tyler-lee'])
+          && d.eventDeck.hasOnly(['maya-chaturvedi','tyler-lee','experimental-prototypes','march-of-progress','economic-boom','covert-arms-deal','dimensional-rift','research-tariffs','black-market-industries','erratic-solar-activity'])
+          && d.claims==[] && d.achievements.size()==4 && d.achievements[0]=='transcendence' && d.achievements[1]=='empire'
+          && d.achievements[2] in ['technologist','efficiency','prosperity','agility'] && d.achievements[3] in ['posthumanist','strategist','warlord','specialization']
+          && (b.settings.achievements!='introductory' || d.achievements==['transcendence','empire','technologist','warlord'])
+          && d.technologies==[] && d.guilds==[] && d.outposts=={} && d.industry==[] && d.systems==[];
+      }
+      function tariff(d,slot) {
+        return d.events.size()>0 && d.events.hasAny([
+          {'id':'research-tariffs','slot':'II-1','resolved':true,'target':slot},{'id':'research-tariffs','slot':'II-2','resolved':true,'target':slot},
+          {'id':'research-tariffs','slot':'II-3','resolved':true,'target':slot},{'id':'research-tariffs','slot':'II-4','resolved':true,'target':slot},
+          {'id':'research-tariffs','slot':'II-5','resolved':true,'target':slot},{'id':'research-tariffs','slot':'II-6','resolved':true,'target':slot}]);
+      }
+      // Bind the appended research card directly to the unchanged public slot.
+      // Exact membership avoids re-scanning all six slots under the expression cap.
+      // The atomic projection write proves player payment and the root/turn
+      // envelope; the immutable event write proves the exact discovery queue.
+      // Neither document can pass alone because both link command/revision.
+      function researchIIPlayerTransition(b,a,e) {
+        let m=e.move;let s=b.play;let t=a.play;let p=e.position;let before=s.players.get(p,{});let after=t.players.get(p,{});
+        let slot=m.get('slot','');let space=m.get('space',-1);let cost=2+(space >= (b.seats.size()==2?1:2)?1:0)+(tariff(s.discovery,slot)?1:0);
+        let known=s.discovery.technologies.size()>0 && after.research.size()==before.research.size()+1?after.research[after.research.size()-1]:'';
+        return t.keys().hasOnly(['turn','activePosition','phase','players','discovery']) && t.turn==s.turn && t.activePosition==s.activePosition && t.players.diff(s.players).affectedKeys().hasOnly([p])
+          && p==s.activePosition && s.phase=='action' && t.phase=='discovery' && spaceOpen(s,'research-II:'+string(space))
+          && before.population>=1 && before.ore>=cost && prerequisitesOwned(s.discovery,prerequisiteIndices(slot),before)
+          && after.ore==before.ore-cost && after.population==before.population-1 && after.actionLocation=='research-II:'+string(space)
+          && (known!='' ? !(known in before.research) && after.diff(before).affectedKeys().hasOnly(['ore','population','research','actionLocation']) && after.research==before.research.concat([known])
+            : after.diff(before).affectedKeys().hasOnly(['ore','population','actionLocation','reservedResearch']) && after.reservedResearch==before.get('reservedResearch',[]).concat([slot]));
+      }
+      function researchKnownII(old,d,selection,p) {
+        let card=selection[2];
+        return old.technologies.hasAny([{'slot':selection[1],'card':card}]) && d.diff(old).affectedKeys().hasOnly(['queue'])
+          && d.queue==bonusQueue(card,p).concat([{'kind':'resume','responder':p,'card':card}]);
+      }
+      function newResearchII(b,e,s,t,before,after) {
+        let m=e.move;let d=t.discovery;let old=s.discovery;let slot=m.get('slot','');let space=m.get('space',-1);
+        let known=old.technologies.size()>0 && after.research.size()==before.research.size()+1?after.research[after.research.size()-1]:'';let event=known==''?d.eventDeck[slotIndex(slot)]:'';let p=e.position;
+        return old.powers.keys().toSet()==b.seats.keys().toSet() && m.keys().hasOnly(['kind','space','slot'])
+          && space is int && space>=0 && space<b.seats.size() && slot in ['II-1','II-2','II-3','II-4','II-5','II-6']
+          && (known!='' ? researchKnownII(old,d,[space,slot,known],p)
+            : d.diff(old).affectedKeys().hasOnly(['records','events','reservations','queue','revealBoundary']) && noPreviousSlot(old,slot)
+          && d.events==old.events.concat([{'id':event,'slot':slot,'resolved':false}])
+          && d.records==old.records.concat([{'slot':slot,'event':event}]) && d.reservations==old.reservations.concat([{'position':p,'slot':slot}])
+          && d.queue==[{'kind':'event','event':event,'responder':p,'slot':slot},{'kind':'type','responder':p,'slot':slot,'types':typesFor(d,prerequisiteIndices(slot))},{'kind':'resume','responder':p,'slot':slot,'event':event}]
+          && d.revealBoundary=={'turn':s.turn,'reason':'Event reveal'});
+      }
+      function noPreviousSlot(d,slot) {
+        let records=d.records;let n=records.size();
+        return n==0 || !(slot in [n>0?records[0].slot:'',n>1?records[1].slot:'',n>2?records[2].slot:'',n>3?records[3].slot:'',n>4?records[4].slot:'',n>5?records[5].slot:'']);
+      }
+      function rest(queue) { return queue.removeAll([queue[0]]); }
+      function oneEffect(kind,p,source,effect) { return {'kind':kind,'responder':p,'source':source,'effect':effect}; }
+      function lateBonusQueue(card,p) {
+        return card=='outer-sector-militia' ? [oneEffect('effect',p,card,{'kind':'ship','level':2}),oneEffect('effect',p,card,{'kind':'jump','amount':1})] : card=='mass-cloning' ? [oneEffect('effect',p,card,{'kind':'automate','track':'food'}),oneEffect('effect',p,card,{'kind':'population','amount':1})] : card=='android-surveyors' ? [oneEffect('effect',p,card,{'kind':'automate','track':'food'}),oneEffect('effect',p,card,{'kind':'jump','amount':1})]
+          : card=='spacetime-anomaly-studies' ? [oneEffect('effect',p,card,{'kind':'jump','amount':2})]
+          : card=='supply-outpost' ? [oneEffect('effect',p,card,{'kind':'upgrade','levels':1,'ships':1}),oneEffect('effect',p,card,{'kind':'jump','amount':2})]
+          : card=='intersystem-diplomacy' ? [oneEffect('effect',p,card,{'kind':'population','amount':1}),oneEffect('effect',p,card,{'kind':'ore','amount':1})]
+          : card=='terraforming' ? [oneEffect('effect',p,card,{'kind':'ship','level':1,'location':'deep-space'})]
+          : card=='advanced-genetics' ? [oneEffect('effect',p,card,{'kind':'automate','track':'food'}),oneEffect('effect',p,card,{'kind':'population','amount':1})]
+          : card=='narrow-beam-lasers' ? [oneEffect('effect',p,card,{'kind':'ore','amount':1}),oneEffect('effect',p,card,{'kind':'upgrade','levels':1,'ships':1})]
+          : card=='advanced-robotics' ? [oneEffect('effect',p,card,{'kind':'automate','track':'ore'}),oneEffect('effect',p,card,{'kind':'ore','amount':1})] : [];
+      }
+      function bonusQueue(card,p) {
+        return card in ['outer-sector-militia','mass-cloning','android-surveyors','spacetime-anomaly-studies','supply-outpost','intersystem-diplomacy','terraforming','advanced-genetics','narrow-beam-lasers','advanced-robotics'] ? lateBonusQueue(card,p) : card in ['modular-fleet','terranova-cruisers','multi-colony-symposium'] ? [] : card=='hypercomputing' ? [oneEffect('effect',p,card,{'kind':'automate','track':'ore'})]
+          : card=='human-experiments' ? [oneEffect('effect',p,card,{'kind':'upgrade','levels':1,'ships':2,'optional':true})]
+          : card=='psionics-research' ? [oneEffect('effect',p,card,{'kind':'automate','track':'food'})]
+          : card=='exo-alloy-refinement' ? [oneEffect('effect',p,card,{'kind':'upgrade','levels':2,'ships':1}),oneEffect('effect',p,card,{'kind':'choice','id':'exo-alloy'})]
+          : card=='plasma-cannon' ? [oneEffect('effect',p,card,{'kind':'ship','level':3}),oneEffect('effect',p,card,{'kind':'jump','amount':1})]
+          : card=='android-destroyers' ? [oneEffect('effect',p,card,{'kind':'ship','level':3,'side':'right'})]
+          : card=='bio-synaptic-network' ? [oneEffect('effect',p,card,{'kind':'choice','id':'bio-synaptic'})]
+ : [];
+      }
+      function pendingDiscoveryEnvelope(b,e,s,t) {
+        // turnEvent already enforces discoveryMember for this exact event position.
+        return s.phase=='discovery' && s.discovery.queue.size()>0 && s.discovery.queue[0].responder==e.position
+          && e.move.at==s.discovery.cursor && t.discovery.cursor==s.discovery.cursor+1
+         ;
+      }
+      function eventChanged(old,d,id,changes) {
+        let removed=old.events.removeAll(d.events);let added=d.events.removeAll(old.events);
+        return added.size()==1 && removed.size()==1 && removed[0].id==id && added[0].id==id
+          && added[0].diff(removed[0]).affectedKeys().hasOnly(changes)
+          && d.events.removeAll(added)==old.events.removeAll(removed);
+      }
+      function fixedDiscoveryEffect(q,b,a) {
+        let effect=q.effect;
+        return effect.kind=='return-population' && effect.amount==1 && b.population>0 && a.diff(b).affectedKeys().hasOnly(['population','supply']) && a.population==b.population-1 && supplyDelta(b.supply,a.supply,rightSupply(b.supply),1)
+          || effect.kind=='ore' && a.diff(b).affectedKeys().hasOnly(['ore']) && a.ore==b.ore+effect.amount
+          || effect.kind=='population' && effect.amount==1 && leftSupply(b.supply)>=0 && a.diff(b).affectedKeys().hasOnly(['supply','population']) && a.population==b.population+1 && supplyDelta(b.supply,a.supply,leftSupply(b.supply),-1)
+          || effect.kind=='automate' && effect.track in ['food','ore'] && a.diff(b).affectedKeys().hasOnly(['automation',effect.track=='food'?'foodDiscs':'oreDiscs'])
+            && a.automation==b.automation+1 && (effect.track=='food' ? a.foodDiscs==(b.foodDiscs>0?b.foodDiscs-1:0) : a.oreDiscs==(b.oreDiscs>0?b.oreDiscs-1:0));
+      }
+      function initializeSimpleEvent(old,d,q,b,a) {
+        let next=q.event=='dimensional-rift' ? 'deck' : 'choose';
+        return !('stage' in q) && (
+          (q.event in ['maya-chaturvedi','tyler-lee'] && d.diff(old).affectedKeys().hasOnly(['cursor','queue'])
+            && d.queue==[{'kind':'event','event':q.event,'responder':q.responder,'slot':q.slot,'stage':'guild'}].concat(rest(old.queue))
+            && (q.event=='tyler-lee' ? a.diff(b).affectedKeys().hasOnly(['ore']) && a.ore==b.ore+1
+              : a.diff(b).affectedKeys().hasOnly(['supply','population']) && a.population==b.population+(leftSupply(b.supply)>=0?1:0) && supplyDelta(b.supply,a.supply,leftSupply(b.supply),-1)))
+          || (!(q.event in ['maya-chaturvedi','tyler-lee','experimental-prototypes','black-market-industries']) && a.diff(b).affectedKeys().size()==0
+            && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==[{'kind':'event','event':q.event,'responder':q.responder,'slot':q.slot,'stage':next}].concat(rest(old.queue))));
+      }
+      function revealCandidates(old,d,q,type,b,a,turn) {
+        let record=old.records[old.records.size()-1];let changed=d.records[d.records.size()-1];let next=d.queue[0];
+        return a.diff(b).affectedKeys().size()==0 && type in q.types && d.diff(old).affectedKeys().hasOnly(['cursor','queue','deckII','records','revealBoundary'])
+          && d.records==old.records.removeAll([record]).concat([changed]) && changed=={'slot':record.slot,'event':record.event,'type':type,'revealed':next.revealed,'candidates':next.cards}
+          && next=={'kind':'candidate','responder':q.responder,'slot':q.slot,'cards':next.cards,'revealed':next.revealed,'type':type}
+          && d.queue==[next].concat(rest(old.queue)) && properDraw(type,next.revealed,next.cards,d.deckII,old.deckII)
+          && d.revealBoundary=={'turn':turn,'reason':'Technology reveal'};
+      }
+      function discoverCandidate(old,d,q,m,b,a) {
+        let record=old.records[old.records.size()-1];let rejected=q.revealed.removeAll([m.option]);
+        return m.option in q.cards && d.diff(old).affectedKeys().hasOnly(['cursor','technologies','records','deckII','queue','reservations'])
+          && d.technologies==old.technologies.concat([{'slot':q.slot,'card':m.option}]) && d.records==old.records.removeAll([record]).concat([{'slot':record.slot,'event':record.event,'type':record.type,'revealed':record.revealed,'candidates':record.candidates,'chosen':m.option}])
+          && d.deckII==old.deckII.concat(d.deckII.removeAll(old.deckII)) && d.deckII.size()==old.deckII.size()+rejected.size() && d.deckII.removeAll(old.deckII).toSet()==rejected.toSet()
+          && d.reservations==old.reservations.removeAll([{'position':q.responder,'slot':q.slot}])
+          && a.diff(b).affectedKeys().hasOnly(['reservedResearch','research']) && a.research==b.research.concat([m.option]) && a.get('reservedResearch',[])==b.get('reservedResearch',[]).removeAll([q.slot])
+          && d.queue==bonusQueue(m.option,q.responder).concat(rest(old.queue));
+      }
+      function chooseGuild(old,d,q,m,b,a) {
+        return q.kind=='event' && q.stage=='guild' && q.event in ['maya-chaturvedi','tyler-lee'] && a.diff(b).affectedKeys().size()==0 && m.option in ['terraforming-guild','professors-guild'] && !(m.option in old.guilds)
+          && d.diff(old).affectedKeys().hasOnly(['cursor','guilds','events','queue']) && d.guilds==old.guilds.concat([m.option]) && d.queue==rest(old.queue)
+          && eventChanged(old,d,q.event,['choice','resolved']) && d.events.removeAll(old.events)[0].choice==m.option && d.events.removeAll(old.events)[0].resolved;
+      }
+      function ordinaryDiscoveryAdvance(old,d,q,b,a,s,t) {
+        return (q.kind=='effect' && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==rest(old.queue) && fixedDiscoveryEffect(q,b,a) && t.phase==(d.queue.size()==0?'production':'discovery'))
+          || (q.kind=='event' && t.phase=='discovery' && initializeSimpleEvent(old,d,q,b,a))
+          || (q.kind=='type' && q.types.size()==1 && t.phase=='discovery' && revealCandidates(old,d,q,q.types[0],b,a,s.turn))
+          || (q.kind=='resume' && a.diff(b).affectedKeys().size()==0 && t.phase==q.get('returnTo','production') && d.queue==rest(old.queue) && d.diff(old).affectedKeys().hasOnly(['cursor','queue','completed'])
+            && (q.get('card','')!=''?d.completed=={'turn':s.turn,'card':q.card}
+              :q.get('slot','')!=''?old.records[old.records.size()-1].slot==q.slot&&d.completed=={'turn':s.turn,'card':old.records[old.records.size()-1].chosen}
+              :d.get('completed',null)==old.get('completed',null)));
+      }
+      function eventReply(q,p,stage,value) { return {'kind':'event','event':q.event,'responder':p,'slot':q.slot,'stage':stage,'value':value}; }
+      function moreResponders(b,p,n,q,stage,value) {
+        let n2=nextPosition(b,n);
+        return b.seats.size()==3 ? [eventReply(q,p,stage,value),eventReply(q,n,stage,value),eventReply(q,n2,stage,value)]
+          : [eventReply(q,p,stage,value),eventReply(q,n,stage,value),eventReply(q,n2,stage,value),eventReply(q,nextPosition(b,n2),stage,value)];
+      }
+      function responders(b,p,q,stage,value) {
+        let n=nextPosition(b,p);
+        return b.seats.size()==2 ? [eventReply(q,p,stage,value),eventReply(q,n,stage,value)] : moreResponders(b,p,n,q,stage,value);
+      }
+      function expandedEvent(b,old,d,q,stage,value,after) {
+        return d.queue==responders(b,q.responder,q,stage,value).concat(after).concat([{'kind':'event-complete','event':q.event,'responder':q.responder}]).concat(rest(old.queue));
+      }
+      function attachedSystemSlot(b,slot) { return slot in ['a-1','b-1','b-2'] || b.seats.size()>2 && slot=='a-2'; }
+      function uncolonizedSlot(b,d,slot) { return attachedSystemSlot(b,slot) || d.systems.size()>0 && d.systems[0].slot==slot; }
+      function chosenEvent(old,d,q,m,b,a,root) {
+        return a.diff(b).affectedKeys().size()==0 && q.kind=='event' && d.diff(old).affectedKeys().hasOnly(['cursor','queue','events']) && d.queue==rest(old.queue)
+          && eventChanged(old,d,q.event,['target','resolved']) && d.events.removeAll(old.events)[0].resolved && d.events.removeAll(old.events)[0].target==m.option
+          && ((q.event=='research-tariffs' && m.option in ['II-1','II-2','II-3','II-4','II-5','II-6'] && m.option!=q.slot)
+            || (q.event=='erratic-solar-activity' && uncolonizedSlot(root,old,m.option)));
+      }
+      function sharedEventChoice(root,old,d,q,m,b,a) {
+        return q.stage=='choose' && a.diff(b).affectedKeys().size()==0 && d.diff(old).affectedKeys().hasOnly(['cursor','queue','events'])
+          && eventChanged(old,d,q.event,['choice']) && d.events.removeAll(old.events)[0].choice==m.option
+          && d.queue==[eventReply(q,q.responder,'dispatch',m.option)].concat(rest(old.queue))
+          && ((q.event=='economic-boom' && m.option in ['population','ore','exchange'])
+            || (q.event=='march-of-progress' && m.option in ['terraforming','advanced-genetics','narrow-beam-lasers','advanced-robotics'])
+            || (q.event=='covert-arms-deal' && m.option in ['1','2']));
+      }
+      function sharedEventDispatch(root,old,d,q,b,a,t) {
+        // The dispatcher establishes event/dispatch before this exact queue check.
+        return t.phase=='discovery' && a==b && d.diff(old).affectedKeys().hasOnly(['cursor','queue'])
+          && (q.event=='covert-arms-deal' ? expandedEvent(root,old,d,q,'arms',q.value,[oneEffect('effect',q.responder,q.event,{'kind':'upgrade','levels':1,'ships':1,'optional':true})])
+            : q.event=='economic-boom' ? expandedEvent(root,old,d,q,'economy',q.value,[])
+            : q.event=='march-of-progress' && expandedEvent(root,old,d,q,'march',q.value,[]));
+      }
+      function eventFinished(old,d,q) {
+        return d.queue==rest(old.queue) && d.diff(old).affectedKeys().hasOnly(['cursor','queue','events'])
+          && eventChanged(old,d,q.event,['resolved']) && d.events.removeAll(old.events)[0].resolved;
+      }
+      function resourceCubeSpent(b,a,m,right) {
+        let column=right ? (b.supply[4]>0?4:b.supply[3]>0?3:b.supply[2]>0?2:b.supply[1]>0?1:b.supply[0]>0?0:-1) : leftSupply(b.supply);
+        return column>=0 ? !m.get('usePopulation',false) && supplyDelta(b.supply,a.supply,column,-1) && a.population==b.population
+          : m.get('usePopulation',false) && b.population>0 && a.supply==b.supply && a.population==b.population-1;
+      }
+      function discoveryShip(b,a,level,location,p,sequence,turn) {
+        return a.ships==b.ships.concat([{'id':p+'-discovery-'+string(turn)+'-'+string(sequence),'level':level,'location':location}]);
+      }
+      function permittedYard(d,p,location) {
+        return location=='sol' || location in ['shipyard-north','shipyard-west','shipyard-east'] && d.outposts.get(location,{}).get('owner','')==p;
+      }
+      function sharedEventResponse(old,d,q,m,b,a,s) {
+        return q.kind=='event' && d.queue==rest(old.queue) && (
+          (q.event=='economic-boom' && q.stage=='economy' && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && (
+            q.value=='exchange' && (m.option=='pass' && a.diff(b).affectedKeys().size()==0 || m.option=='exchange' && b.population>0 && a.diff(b).affectedKeys().hasOnly(['population','ore','supply']) && a.population==b.population-1 && a.ore==b.ore+2 && supplyDelta(b.supply,a.supply,rightSupply(b.supply),1))
+            || q.value=='population' && (m.option=='convert' && leftSupply(b.supply)>=0 && a.diff(b).affectedKeys().hasOnly(['population','supply']) && a.population==b.population+1 && supplyDelta(b.supply,a.supply,leftSupply(b.supply),-1)
+              || leftSupply(b.supply)<0 && a.diff(b).affectedKeys().size()==0 && (m.option=='pass' || m.option=='convert' && m.get('usePopulation',false) && b.population>0))))
+          || (q.event=='covert-arms-deal' && q.stage=='arms' && (m.option=='pass' && a.diff(b).affectedKeys().size()==0 && d.diff(old).affectedKeys().hasOnly(['cursor','queue'])
+              || m.option=='build' && d.diff(old).affectedKeys().hasOnly(['cursor','queue','sequence','powers']) && d.sequence==old.sequence+1 && a.diff(b).affectedKeys().hasOnly(['population','supply','ships']) && resourceCubeSpent(b,a,m,false) && discoveryShip(b,a,q.value=='1'?1:2,'deep-space',q.responder,old.sequence,s.turn) && singlePowerDelta(old,d,q.responder,'deep-space',q.value=='1'?1:2))));
+      }
+      function eventRift(old,d,q,m,b,a,root) {
+        return a.diff(b).affectedKeys().size()==0 && q.event=='dimensional-rift' && (
+          (q.stage=='deck' && m.option in ['A','B'] && old.systemDecks[m.option].size()>0
+            && d.diff(old).affectedKeys().hasOnly(['cursor','queue','systemDecks','events'])
+            && d.systemDecks.diff(old.systemDecks).affectedKeys().hasOnly([m.option]) && d.systemDecks[m.option]==old.systemDecks[m.option].removeAll([old.systemDecks[m.option][0]])
+            && d.queue==[{'kind':'event','event':q.event,'responder':q.responder,'slot':q.slot,'stage':'attach','value':old.systemDecks[m.option][0]}].concat(rest(old.queue))
+            && eventChanged(old,d,q.event,['choice']) && d.events.removeAll(old.events)[0].choice==old.systemDecks[m.option][0])
+          || (q.stage=='attach' && attachedSystemSlot(root,m.option) && d.diff(old).affectedKeys().hasOnly(['cursor','queue','systems','events'])
+            && d.systems==old.systems.concat([{'slot':'rift-'+q.slot,'card':q.value,'parent':m.option}]) && d.queue==rest(old.queue)
+            && eventChanged(old,d,q.event,['target','resolved']) && d.events.removeAll(old.events)[0].target=='rift-'+q.slot && d.events.removeAll(old.events)[0].resolved));
+      }
+      function additionalEventAdvance(root,old,d,q,b,a,t) {
+        return t.phase==(d.queue.size()==0?'production':'discovery') && (q.kind=='event-complete' && a.diff(b).affectedKeys().size()==0 && eventFinished(old,d,q)
+          || q.kind=='event' && (
+            q.event=='black-market-industries' && !('stage' in q) && a.diff(b).affectedKeys().hasOnly(['ore']) && a.ore==b.ore+1 && eventFinished(old,d,q)
+            || q.event=='experimental-prototypes' && !('stage' in q) && a.diff(b).affectedKeys().size()==0 && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && expandedEvent(root,old,d,q,'roll','',[])
+            || q.event=='economic-boom' && q.stage=='economy' && q.value=='ore' && a.diff(b).affectedKeys().hasOnly(['ore']) && a.ore==b.ore+1 && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==rest(old.queue)));
+      }
+
+      function upgradedPair(b,a,effect) {
+        return a=={'id':b.id,'location':b.location,'level':b.level+effect.levels>4?4:b.level+effect.levels}
+          && b.level<4 && (!('location' in effect) || effect.location==b.location);
+      }
+      function upgradedShips(b,a,m,effect) {
+        let removed=b.ships.removeAll(a.ships);let added=a.ships.removeAll(b.ships);
+        return a.diff(b).affectedKeys().hasOnly(['ships']) && a.ships.size()==b.ships.size()
+          && m.ships.size()==removed.size() && m.ships.toSet().size()==m.ships.size() && m.ships.size()<=effect.ships
+          && removed.size()==added.size() && b.ships.removeAll(removed)==a.ships.removeAll(added)
+          && (removed.size()==0 ? effect.get('optional',false)
+            : (removed.size()==1 && m.ships==[removed[0].id] && upgradedPair(removed[0],added[0],effect))
+              || (removed.size()==2 && effect.ships==2 && m.ships.hasAll([removed[0].id,removed[1].id]) && upgradedPair(removed[0],added[0],effect) && upgradedPair(removed[1],added[1],effect)));
+      }
+      function controlledLocation(root,d,location) {
+        return location in ['a-1','b-1','b-2','shipyard-north'] || root.seats.size()>2 && location in ['a-2','shipyard-west','shipyard-east'] || d.systems.size()>0 && location==d.systems[0].slot;
+      }
+      function checkAt(root,d,location,q) {
+        return controlledLocation(root,d,location)?[{'kind':'control-check','responder':q.responder,'location':location,'source':q.source}]:[];
+      }
+      function checksFor(root,d,locations,q) {
+        let prefix=(locations.size()>0?checkAt(root,d,locations[0],q):[])
+          .concat(locations.size()>1&&locations[1]!=locations[0]?checkAt(root,d,locations[1],q):[]);
+        return locations.size()<=2?prefix:prefix
+          .concat(!(locations[2] in [locations[0],locations[1]])?checkAt(root,d,locations[2],q):[])
+          .concat(locations.size()>3&&!(locations[3] in [locations[0],locations[1],locations[2]])?checkAt(root,d,locations[3],q):[]);
+      }
+      function regularAdjacent(count,from,to) {
+        return from=='sol'?to=='a-1'||count>2&&to=='a-2'
+          :from=='a-1'?to in ['sol','deep-space']||count>2&&to in ['a-2','shipyard-west']
+          :from=='deep-space'?to in ['a-1','b-1','b-2','shipyard-north']||count>2&&to=='a-2'
+          :from=='b-1'?to in ['deep-space','shipyard-north']||count>2&&to=='shipyard-west'
+          :from=='b-2'?to in ['deep-space','shipyard-north']||count>2&&to=='shipyard-east'
+          :from=='shipyard-north'?to in ['deep-space','b-1','b-2']
+          :count>2&&(from=='a-2'?to in ['sol','a-1','deep-space','shipyard-east']:from=='shipyard-west'?to in ['a-1','b-1']:from=='shipyard-east'?to in ['a-2','b-2']:false);
+      }
+      function connected(root,d,from,to) {
+        return regularAdjacent(root.seats.size(),from,to)||d.systems.size()>0&&((from==d.systems[0].parent&&to==d.systems[0].slot)||(to==d.systems[0].parent&&from==d.systems[0].slot));
+      }
+      function ownedJumpStart(b,leg) {
+        let ship=b.ships[leg.index];
+        return leg.keys().hasOnly(['ship','index','path']) && leg.index is int && leg.index>=0 && leg.index<b.ships.size()
+          && leg.ship==ship.id && leg.path[0]==ship.location;
+      }
+      function ownedJumpLeg(b,leg) {
+        return ownedJumpStart(b,leg) && leg.path.size()>=2 && leg.path.size()<=3;
+      }
+      function legalJumpHop(root,d,from,to) {
+        // This increment has no Level III acquisition; entry to Luyten is unavailable.
+        return connected(root,d,from,to) && d.systemBasis.get(to,'')!='luytens-star'
+          && !(d.systems.size()>0 && d.systems[0].card=='luytens-star' && d.systems[0].slot==to);
+      }
+      function legalJumpPath(root,d,path) {
+        return legalJumpHop(root,d,path[0],path[1]) && (path.size()<3||legalJumpHop(root,d,path[1],path[2]));
+      }
+      function jumpLegDelta(leg,level,location) {
+        let path=leg.path;
+        return (path[path.size()-1]==location?level:0)-(path[0]==location?level:0);
+      }
+      function solarTarget(old) {
+        let events=old.events;let count=events.size();
+        return count>0&&events[0].id=='erratic-solar-activity'?events[0].get('target','')
+          :count>1&&events[1].id=='erratic-solar-activity'?events[1].get('target','')
+          :count>2&&events[2].id=='erratic-solar-activity'?events[2].get('target','')
+          :count>3&&events[3].id=='erratic-solar-activity'?events[3].get('target','')
+          :count>4&&events[4].id=='erratic-solar-activity'?events[4].get('target','')
+          :count>5&&events[5].id=='erratic-solar-activity'?events[5].get('target',''):'';
+      }
+      function solarLegCost(leg,target) {
+        let path=leg.path;
+        return path.size()>1&&path[0]!=path[path.size()-1]&&target==path[path.size()-1]?1:0;
+      }
+      function solarCost(old,leg) { return old.events.size()==0?0:solarLegCost(leg,solarTarget(old)); }
+      function jumpedOne(root,old,d,q,leg,b,a) {
+        let path=leg.path;let from=path[0];let to=path[path.size()-1];let level=b.ships[leg.index].level;let cost=solarCost(old,leg);
+        return a.ships[leg.index]=={'id':leg.ship,'level':level,'location':to}
+          && a.ships.size()==b.ships.size() && a.ships.removeAll([a.ships[leg.index]])==b.ships.removeAll([b.ships[leg.index]])
+          && a.diff(b).affectedKeys().hasOnly(['ships','ore']) && b.ore>=cost && a.ore==b.ore-cost
+          && d.queue==[{'kind':'jump-power','responder':q.responder,'amount':q.amount,'legs':q.legs,'index':0}].concat(rest(old.queue));
+      }
+      function jumpedPair(root,old,d,q,m,b,a) {
+        let first=m.legs[0];let second=m.legs.size()>1?m.legs[1]:first;
+        let target=old.events.size()==0?'':solarTarget(old);let cost=solarLegCost(first,target)+solarLegCost(second,target);
+        return m.legs.size()==2 && a.ships[first.index]=={'id':first.ship,'level':b.ships[first.index].level,'location':first.path[first.path.size()-1]} && a.ships[second.index]=={'id':second.ship,'level':b.ships[second.index].level,'location':second.path[second.path.size()-1]}
+          && a.ships.size()==b.ships.size() && a.ships.removeAll([a.ships[first.index],a.ships[second.index]])==b.ships.removeAll([b.ships[first.index],b.ships[second.index]])
+          && a.diff(b).affectedKeys().hasOnly(['ships','ore']) && b.ore>=cost && a.ore==b.ore-cost
+          && d.queue==[{'kind':'jump-power','responder':q.responder,'amount':q.amount,'legs':q.legs,'index':0}].concat(rest(old.queue));
+      }
+      function affordableSolarJump(old,first,second,two,ore) {
+        let target=old.events.size()==0?'':solarTarget(old);
+        return ore>=solarLegCost(first,target)+(two?solarLegCost(second,target):0);
+      }
+      function plannedJumpPair(root,old,q,legs,b) {
+        let first=legs[0];let second=legs[1];
+        return q.effect.amount>=2 && first.path.size()==2 && second.path.size()==2 && first.index!=second.index
+          && ownedJumpStart(b,first) && ownedJumpStart(b,second)
+          && legalJumpHop(root,old,first.path[0],first.path[1]) && (second.path==first.path||legalJumpHop(root,old,second.path[0],second.path[1]))
+          && (b.ore>=2 || affordableSolarJump(old,first,second,true,b.ore));
+      }
+      function plannedJump(root,old,q,m,b,a) {
+        let legs=m.legs;let first=legs[0];
+        return legs.size()==2?plannedJumpPair(root,old,q,legs,b):legs.size()==1 && first.path.size()-1<=q.effect.amount
+          && ownedJumpLeg(b,first) && legalJumpPath(root,old,first.path)
+          && (b.ore>=1 || affordableSolarJump(old,first,first,false,b.ore));
+      }
+      function manualJump(root,old,d,q,m,b,a) {
+        return q.effect.kind=='jump' && m.option=='jump' && a==b && d.diff(old).affectedKeys().hasOnly(['cursor','queue'])
+          && (m.legs.size()==0 ? d.queue==rest(old.queue) : plannedJump(root,old,q,m,b,a)
+            && d.queue==[{'kind':'jump-apply','responder':q.responder,'amount':q.effect.amount,'legs':m.legs}].concat(rest(old.queue)));
+      }
+      function applyJump(root,old,d,q,b,a) {
+        return d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && (q.legs.size()==1?jumpedOne(root,old,d,q,q.legs[0],b,a):jumpedPair(root,old,d,q,{'legs':q.legs},b,a));
+      }
+      function settleJumpPower(root,old,d,q,b,a) {
+        let first=q.legs[0];let second=q.legs.size()>1?q.legs[1]:first;
+        let locations=[first.path[0],first.path[first.path.size()-1]].concat(q.legs.size()>1?[second.path[0],second.path[second.path.size()-1]]:[]);
+        let location=locations[q.index];let p=q.responder;
+        let repeated=q.index>0&&location==locations[0] || q.index>1&&location==locations[1] || q.index>2&&location==locations[2];
+        let delta=repeated?0:jumpLegDelta(first,b.ships[first.index].level,location)+(q.legs.size()>1?jumpLegDelta(second,b.ships[second.index].level,location):0);
+        return a==b && d.diff(old).affectedKeys().hasOnly(['cursor','queue','powers'])
+          && d.powers.diff(old.powers).affectedKeys().hasOnly([p]) && d.powers[p].diff(old.powers[p]).affectedKeys().hasOnly([location])
+          && powerAt(d,p,location)==powerAt(old,p,location)+delta
+          && d.queue==(q.index+1<locations.size()?[{'kind':'jump-power','responder':p,'amount':q.amount,'legs':q.legs,'index':q.index+1}]:checksFor(root,old,locations,{'responder':p,'source':'Jump'})).concat(rest(old.queue));
+      }
+      function controlEntry(kind,q,p) { return {'kind':kind,'responder':p,'location':q.location,'source':q.source}; }
+      function fleetAt(d,p,location) { return d.powers.get(p,{}).get(location,0); }
+      function uniquePowerOwner(positions,values,highest) {
+        return (values[0]==highest?1:0)+(values[1]==highest?1:0)+(positions.size()>2&&values[2]==highest?1:0)+(positions.size()>3&&values[3]==highest?1:0)!=1?''
+          :values[0]==highest?positions[0]:values[1]==highest?positions[1]:values[2]==highest?positions[2]:positions[3];
+      }
+      function controlWinner(root,d,q) {
+        let positions=root.seats.keys();let v0=fleetAt(d,positions[0],q.location);let v1=fleetAt(d,positions[1],q.location);
+        let v2=positions.size()>2?fleetAt(d,positions[2],q.location):0;let v3=positions.size()>3?fleetAt(d,positions[3],q.location):0;
+        let max01=v0>v1?v0:v1;let max23=v2>v3?v2:v3;let highest=max01>max23?max01:max23;
+        let incumbent=d.outposts.get(q.location,{}).get('owner','');
+        return incumbent!=''&&fleetAt(d,incumbent,q.location)>=highest?incumbent:highest==0?'':uniquePowerOwner(positions,[v0,v1,v2,v3],highest);
+      }
+      function checkControl(root,old,d,q,b,a) {
+        let before=old.outposts.get(q.location,{}).get('owner','');let winner=controlWinner(root,old,q);
+        return a==b && d.diff(old).affectedKeys().hasOnly(['cursor','queue'])
+          && d.queue==(before==winner?[]:(before!=''?[controlEntry('control-loss',q,before)]:[]).concat(winner!=''?[controlEntry('control',q,winner)]:[])).concat(rest(old.queue));
+      }
+      function loseControl(old,d,q,b,a) {
+        let post=old.outposts[q.location];let key=post.track=='food'?'foodDiscs':'oreDiscs';
+        return post.owner==q.responder && d.diff(old).affectedKeys().hasOnly(['cursor','queue','outposts']) && d.queue==rest(old.queue)
+          && d.outposts.diff(old.outposts).affectedKeys().hasOnly([q.location]) && !(q.location in d.outposts)
+          && a.diff(b).affectedKeys().hasOnly([key]) && a[key]==b[key]+(post.get('placeholder',false)?0:1);
+      }
+      function gainControlCard(id) { return id in ['alpha-centauri','barnards-star','61-cygni','epsilon-indi','gj-1061','groombridge-34','sirius','teegardens-star','ad-leonis','dx-cancri','kruger-60','ross-154','tau-ceti']; }
+      function isControlAt(queue,index) { return index<queue.size() && queue[index].kind in ['control-check','control-loss','control']; }
+      function gainAfterControls(tail,gain) {
+        let prefix=[tail[0]].concat(isControlAt(tail,1)?[tail[1]]:[]).concat(isControlAt(tail,1)&&isControlAt(tail,2)?[tail[2]]:[]);
+        return prefix.concat([gain]).concat(tail.removeAll(prefix));
+      }
+      function addGain(old,q) {
+        let tail=rest(old.queue);let card=currentSystem(old,q.location);let gain={'kind':'gain-bonus','responder':q.responder,'location':q.location,'source':card};
+        return !gainControlCard(card)?tail:!isControlAt(tail,0)?[gain].concat(tail):gainAfterControls(tail,gain);
+      }
+      function takeControl(old,d,q,b,a,track) {
+        let key=track=='food'?'foodDiscs':'oreDiscs';let empty=b[key]==0;
+        return track in ['food','ore'] && matchesSpecialty(old,q.location,track) && !(q.location in old.outposts)
+          && d.diff(old).affectedKeys().hasOnly(['cursor','queue','outposts']) && d.queue==addGain(old,q)
+          && d.outposts.diff(old.outposts).affectedKeys().hasOnly([q.location])
+          && d.outposts[q.location]==(empty?{'owner':q.responder,'track':track,'placeholder':true}:{'owner':q.responder,'track':track})
+          && a.diff(b).affectedKeys().hasOnly([key]) && a[key]==(empty?0:b[key]-1);
+      }
+      function automaticControl(old,d,q,b,a) {
+        let track=specialtyTrack(old,q.location);
+        return track in ['food','ore'] && takeControl(old,d,q,b,a,track);
+      }
+      function systemBonusQueue(old,position,location,b) {
+        let card=currentSystem(old,location);
+        return card=='61-cygni'?[oneEffect('effect',position,card,{'kind':'ore','amount':b.ore<3?3-b.ore:0})]
+          :card in ['barnards-star','teegardens-star']?[oneEffect('effect',position,card,{'kind':'population','amount':1})]
+          :card in ['sirius','kruger-60']?[oneEffect('effect',position,card,{'kind':'ore','amount':1})]
+          :[oneEffect('effect',position,card,{'kind':'system-bonus','id':card,'location':location})];
+      }
+      function ownGainAt(queue,index,p) {
+        return index<queue.size()&&queue[index].kind=='gain-bonus'&&queue[index].responder==p?1:0;
+      }
+      function ownGains(old,p) { return ownGainAt(old.queue,0,p)+ownGainAt(old.queue,1,p)+ownGainAt(old.queue,2,p)+ownGainAt(old.queue,3,p); }
+      function gainControlBonus(old,d,q,b,a,location) {
+        let gain={'kind':'gain-bonus','responder':q.responder,'location':location,'source':currentSystem(old,location)};
+        return gain in old.queue && a==b && d.diff(old).affectedKeys().hasOnly(['cursor','queue'])
+          && d.queue==systemBonusQueue(old,q.responder,location,b).concat(old.queue.removeAll([gain]));
+      }
+      function manualUpgrade(root,old,d,q,m,b,a) {
+        let removed=b.ships.removeAll(a.ships);let added=a.ships.removeAll(b.ships);
+        let locations=removed.size()==0?[]:removed.size()==1?[removed[0].location]:[removed[0].location,removed[1].location];
+        return q.effect.kind=='upgrade' && m.option=='upgrade' && d.diff(old).affectedKeys().hasOnly(['cursor','queue','powers'])
+          && d.queue==checksFor(root,old,locations,q).concat(rest(old.queue)) && upgradedShips(b,a,m,q.effect)
+          && (removed.size()==0?d.powers==old.powers:upgradePower(old,d,q.responder,removed,added));
+      }
+      function bonusShip(old,d,q,m,b,a,s) {
+        let effect=q.effect;let location=effect.get('location',m.get('destination',''));
+        return effect.kind=='ship' && (m.option=='pass' && leftSupply(b.supply)<0 && a.diff(b).affectedKeys().size()==0 && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==rest(old.queue)
+          || m.option=='build' && (effect.get('location','')=='deep-space' ? location=='deep-space' : permittedYard(old,q.responder,location))
+            && d.diff(old).affectedKeys().hasOnly(['cursor','queue','sequence','powers']) && d.sequence==old.sequence+1 && d.queue==rest(old.queue)
+            && a.diff(b).affectedKeys().hasOnly(['supply','population','ships']) && resourceCubeSpent(b,a,m,effect.get('side','left')=='right')
+            && discoveryShip(b,a,effect.level,location,q.responder,old.sequence,s.turn) && singlePowerDelta(old,d,q.responder,location,effect.level));
+      }
+      function copyKnown(d,card,i) { return i<d.technologies.size() && d.technologies[i].card==card; }
+      function copyDiscovered(d,card) { return copyKnown(d,card,0) || copyKnown(d,card,1) || copyKnown(d,card,2) || copyKnown(d,card,3) || copyKnown(d,card,4) || copyKnown(d,card,5); }
+      function immediateChoice(old,d,q,m,b,a) {
+        return q.effect.kind=='choice' && a.diff(b).affectedKeys().size()==0 && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && (
+          q.effect.id=='exo-alloy' && (m.option=='automate' && d.queue==[oneEffect('effect',q.responder,q.source,{'kind':'automate','track':'ore'})].concat(rest(old.queue))
+            || m.option=='research' && b.ore>=1 && b.population>=1 && !b.research.hasAll(['terraforming','advanced-genetics','narrow-beam-lasers','advanced-robotics']) && d.queue==[oneEffect('effect',q.responder,q.source,{'kind':'research-I','cost':1})].concat(rest(old.queue)))
+          || q.effect.id=='bio-synaptic' && (m.option=='automate' && m.track in ['food','ore'] && d.queue==[oneEffect('effect',q.responder,q.source,{'kind':'automate','track':m.track}),oneEffect('effect',q.responder,q.source,{'kind':'ore','amount':2})].concat(rest(old.queue))
+            || m.option=='copy' && copyDiscovered(old,m.target) && bonusQueue(m.target,q.responder).size()>0 && d.queue==bonusQueue(m.target,q.responder).concat(rest(old.queue))));
+      }
+      function bonusResearchI(old,d,q,m,b,a) {
+        return q.effect.kind=='research-I' && m.option in ['terraforming','advanced-genetics','narrow-beam-lasers','advanced-robotics'] && !(m.option in b.research)
+          && b.population>=1 && b.ore>=q.effect.cost && a.diff(b).affectedKeys().hasOnly(['ore','population','research']) && a.ore==b.ore-q.effect.cost && a.population==b.population-1 && a.research==b.research.concat([m.option])
+          && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==bonusQueue(m.option,q.responder).concat(rest(old.queue));
+      }
+      function marchResponse(old,d,q,m,b,a,s) {
+        return q.event=='march-of-progress' && q.stage=='march' && (
+          m.option=='pass' && a.diff(b).affectedKeys().size()==0 && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==rest(old.queue)
+          || (q.get('value','') in b.research && (
+            m.option=='ore' && a.diff(b).affectedKeys().hasOnly(['ore']) && a.ore==b.ore+2 && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==rest(old.queue)
+            || m.option=='ship' && permittedYard(old,q.responder,m.get('destination','sol')) && a.diff(b).affectedKeys().hasOnly(['supply','population','ships']) && resourceCubeSpent(b,a,m,false)
+              && discoveryShip(b,a,2,m.get('destination','sol'),q.responder,old.sequence,s.turn) && singlePowerDelta(old,d,q.responder,m.get('destination','sol'),2) && d.diff(old).affectedKeys().hasOnly(['cursor','queue','sequence','powers']) && d.sequence==old.sequence+1 && d.queue==rest(old.queue))
+            || (!(q.get('value','') in b.research) && m.option=='research' && a.diff(b).affectedKeys().hasOnly(['supply','population','research']) && resourceCubeSpent(b,a,m,false) && a.research==b.research.concat([q.value]) && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==bonusQueue(q.value,q.responder).concat(rest(old.queue)))));
+      }
+      function exhaustedPopulation(old,d,q,m,b,a) {
+        return q.effect.kind=='population' && leftSupply(b.supply)<0 && a.diff(b).affectedKeys().size()==0 && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==rest(old.queue)
+          && (m.option=='pass' || m.option=='convert' && m.get('usePopulation',false) && b.population>0);
+      }
+      function optionalSystemQueue(old,d,q,b,a,effects) {
+        return a==b && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==effects.concat(rest(old.queue));
+      }
+      function relocateSupplyToA(old,d,b,a) {
+        let column=b.supply[4]>0?4:b.supply[3]>0?3:b.supply[2]>0?2:b.supply[1]>0?1:b.supply[0]>0?0:-1;
+        return column>=0 && a.diff(b).affectedKeys().hasOnly(['supply']) && a.supply==[b.supply[0]+(column>0?1:0),b.supply[1]-(column==1?1:0),b.supply[2]-(column==2?1:0),b.supply[3]-(column==3?1:0),b.supply[4]-(column==4?1:0)]
+          && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==rest(old.queue);
+      }
+      function optionalSystemBuild(root,old,d,q,m,b,a) {
+        let location=m.get('destination','sol');
+        return b.ore>=2 && b.population>=1 && permittedYard(old,q.responder,location)
+          && a.diff(b).affectedKeys().hasOnly(['ore','population','ships']) && a.ore==b.ore-2 && a.population==b.population-1
+          && discoveryShip(b,a,2,location,q.responder,old.sequence,root.play.turn)
+          && d.diff(old).affectedKeys().hasOnly(['cursor','queue','sequence','powers']) && d.sequence==old.sequence+1 && d.queue==rest(old.queue)
+          && singlePowerDelta(old,d,q.responder,location,2);
+      }
+      function manualSystemBonus(root,old,d,q,m,b,a) {
+        let id=q.effect.id;
+        return id in ['alpha-centauri','gj-1061','epsilon-indi','groombridge-34','ad-leonis','dx-cancri','ross-154','tau-ceti'] && (
+          m.option=='pass' && optionalSystemQueue(old,d,q,b,a,[])
+          || m.option=='accept' && (
+            id=='epsilon-indi' ? b.population>0 && a.diff(b).affectedKeys().hasOnly(['population','supply','ore']) && a.population==b.population-1 && a.ore==b.ore+3 && supplyDelta(b.supply,a.supply,rightSupply(b.supply),1) && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==rest(old.queue)
+            : id in ['ross-154','tau-ceti'] ? relocateSupplyToA(old,d,b,a)
+            : id=='groombridge-34' ? optionalSystemBuild(root,old,d,q,m,b,a)
+            : id in ['alpha-centauri','gj-1061'] ? optionalSystemQueue(old,d,q,b,a,[oneEffect('effect',q.responder,id,id=='gj-1061'?{'kind':'ship','level':1,'location':'deep-space'}:{'kind':'ship','level':1})])
+            : id=='ad-leonis' ? b.ore>=2 && b.population>=1 && !b.research.hasAll(['terraforming','advanced-genetics','narrow-beam-lasers','advanced-robotics']) && optionalSystemQueue(old,d,q,b,a,[oneEffect('effect',q.responder,id,{'kind':'research-I','cost':2})])
+            : id=='dx-cancri' ? b.ore>=1 && !noEligibleUpgrade(b.ships,q.effect) && a.diff(b).affectedKeys().hasOnly(['ore']) && a.ore==b.ore-1 && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==[oneEffect('effect',q.responder,id,{'kind':'upgrade','levels':1,'ships':1,'location':q.effect.location})].concat(rest(old.queue))
+            : false));
+      }
+      function extraManualEffect(root,old,d,q,m,b,a) {
+        let kind=q.get('effect',{}).get('kind','');
+        return q.kind=='effect' && (kind=='jump' ? manualJump(root,old,d,q,m,b,a) : kind=='upgrade' ? manualUpgrade(root,old,d,q,m,b,a) : kind=='ship' ? bonusShip(old,d,q,m,b,a,root.play) : kind=='choice' ? immediateChoice(old,d,q,m,b,a) : kind=='research-I' ? bonusResearchI(old,d,q,m,b,a) : kind=='population' ? exhaustedPopulation(old,d,q,m,b,a) : kind=='system-bonus' ? manualSystemBonus(root,old,d,q,m,b,a) : false);
+      }
+
+      function cubeResult(q,face,rolls) { return {'kind':'event','event':q.event,'responder':q.responder,'slot':q.slot,'stage':'result','value':q.value,'face':face,'rolls':rolls}; }
+      function advanceCube(old,d,q,b,a) {
+        let next=d.queue[0];
+        return q.kind=='event' && q.event=='experimental-prototypes' && q.stage=='roll' && a.diff(b).affectedKeys().size()==0 && (
+          leftSupply(b.supply)<0 && q.value!='population' && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==[eventReply(q,q.responder,'empty-supply',q.value)].concat(rest(old.queue))
+          || (leftSupply(b.supply)>=0 || q.value=='population' && b.population>0) && d.diff(old).affectedKeys().hasOnly(['cursor','rollIndex','queue']) && d.rollIndex==old.get('rollIndex',0)+1 && next.face is int && next.face>=0 && next.face<6
+            && d.queue==[cubeResult(q,next.face,1)].concat(rest(old.queue)));
+      }
+      function prototypeBonus(q) {
+        return q.face==0 ? (q.value=='population' ? [oneEffect('effect',q.responder,q.event,{'kind':'return-population','amount':1}),oneEffect('effect',q.responder,q.event,{'kind':'ore','amount':2})] : [oneEffect('effect',q.responder,q.event,{'kind':'ore','amount':2})])
+          : q.face in [1,2] ? (q.value=='population' ? [] : [oneEffect('effect',q.responder,q.event,{'kind':'population','amount':1})])
+          : [oneEffect('effect',q.responder,q.event,q.value=='population' ? {'kind':'ship','level':2,'location':'sol','cube':'population'} : {'kind':'ship','level':2,'location':'sol'})];
+      }
+      function cubeResponse(old,d,q,m,b,a,s) {
+        let next=d.queue[0];
+        return q.kind=='event' && q.event=='experimental-prototypes' && (
+          q.stage=='empty-supply' && a.diff(b).affectedKeys().size()==0 && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && (m.option=='pass' && d.queue==rest(old.queue) || m.option=='population' && b.population>0 && d.queue==[eventReply(q,q.responder,'roll','population')].concat(rest(old.queue)))
+          || q.stage=='result' && (
+            m.option=='reroll' && q.responder==s.activePosition && q.rolls<3 && a.diff(b).affectedKeys().size()==0 && d.diff(old).affectedKeys().hasOnly(['cursor','rollIndex','queue']) && d.rollIndex==old.get('rollIndex',0)+1 && next.face is int && next.face>=0 && next.face<6 && d.queue==[cubeResult(q,next.face,q.rolls+1)].concat(rest(old.queue))
+            || m.option=='keep' && a.diff(b).affectedKeys().size()==0 && d.diff(old).affectedKeys().hasOnly(['cursor','queue','events']) && d.queue==prototypeBonus(q).concat(rest(old.queue))
+              && eventChanged(old,d,q.event,['rolls']) && d.events.removeAll(old.events)[0].rolls==old.events.removeAll(d.events)[0].get('rolls',[]).concat([{'position':q.responder,'face':q.face,'attempts':q.rolls}])));
+      }
+
+      function manualEvent(root,old,d,q,m,b,a) {
+        return (q.event in ['maya-chaturvedi','tyler-lee'] && chooseGuild(old,d,q,m,b,a))
+          || (q.event in ['research-tariffs','erratic-solar-activity'] && chosenEvent(old,d,q,m,b,a,root))
+          || (q.event in ['economic-boom','march-of-progress','covert-arms-deal'] && q.get('stage','')=='choose' && sharedEventChoice(root,old,d,q,m,b,a))
+          || (q.event in ['economic-boom','covert-arms-deal'] && q.get('stage','') in ['economy','arms'] && sharedEventResponse(old,d,q,m,b,a,root.play))
+          || (q.event=='march-of-progress' && q.get('stage','')=='march' && marchResponse(old,d,q,m,b,a,root.play))
+          || (q.event=='dimensional-rift' && eventRift(old,d,q,m,b,a,root))
+          || (q.event=='experimental-prototypes' && cubeResponse(old,d,q,m,b,a,root.play));
+      }
+      function noOtherYard(d,p) { return d.outposts.get('shipyard-north',{}).get('owner','')!=p && d.outposts.get('shipyard-west',{}).get('owner','')!=p && d.outposts.get('shipyard-east',{}).get('owner','')!=p; }
+      function automaticBonusShip(old,d,q,b,a,s,t) {
+        let effect=q.get('effect',{});let location=effect.get('location','sol');
+        return t.phase=='discovery' && q.kind=='effect' && effect.kind=='ship'
+          && (effect.get('location','') in ['sol','deep-space'] || !('location' in effect) && noOtherYard(old,q.responder))
+          && d.diff(old).affectedKeys().hasOnly(['cursor','queue','sequence','powers']) && d.queue==rest(old.queue) && d.sequence==old.sequence+1
+          && a.diff(b).affectedKeys().hasOnly(['supply','population','ships'])
+          && (effect.get('cube','')=='population' ? b.population>0 && a.population==b.population-1 && a.supply==b.supply : resourceCubeSpent(b,a,{'usePopulation':false},effect.get('side','left')=='right'))
+          && discoveryShip(b,a,effect.level,location,q.responder,old.sequence,s.turn) && singlePowerDelta(old,d,q.responder,location,effect.level);
+      }
+      function noUpgradeAt(ships,index,effect) {
+        return index>=ships.size() || ships[index].level==4 || ('location' in effect && ships[index].location!=effect.location);
+      }
+      function noEligibleUpgrade(ships,effect) { return ships.size()<=19 && noUpgradeAt(ships,0,effect) && noUpgradeAt(ships,1,effect) && noUpgradeAt(ships,2,effect) && noUpgradeAt(ships,3,effect) && noUpgradeAt(ships,4,effect) && noUpgradeAt(ships,5,effect) && noUpgradeAt(ships,6,effect) && noUpgradeAt(ships,7,effect) && noUpgradeAt(ships,8,effect) && noUpgradeAt(ships,9,effect) && noUpgradeAt(ships,10,effect) && noUpgradeAt(ships,11,effect) && noUpgradeAt(ships,12,effect) && noUpgradeAt(ships,13,effect) && noUpgradeAt(ships,14,effect) && noUpgradeAt(ships,15,effect) && noUpgradeAt(ships,16,effect) && noUpgradeAt(ships,17,effect) && noUpgradeAt(ships,18,effect); }
+      function exhaustedFleetEffect(old,d,q,b,a,t) {
+        let effect=q.effect;
+        return t.phase=='discovery' && a==b && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==rest(old.queue)
+          && (effect.kind=='jump' && b.ships.size()==0 || effect.kind=='upgrade' && noEligibleUpgrade(b.ships,effect));
+      }
+      function prototypeDispatch(root,old,d,q,b,a,t) {
+        return t.phase=='discovery' && a==b && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && expandedEvent(root,old,d,q,'roll','',[]);
+      }
+      function automaticDiscoveryStep(root,q,b,a,s,t) {
+        let old=s.discovery;let d=t.discovery;
+        return q.kind=='jump-power' ? t.phase=='discovery' && settleJumpPower(root,old,d,q,b,a)
+          : q.kind=='jump-apply' ? t.phase=='discovery' && applyJump(root,old,d,q,b,a)
+          : q.kind=='control-check' ? t.phase=='discovery' && checkControl(root,old,d,q,b,a)
+          : q.kind=='control-loss' ? t.phase=='discovery' && loseControl(old,d,q,b,a)
+          : q.kind=='control' ? t.phase=='discovery' && automaticControl(old,d,q,b,a)
+          : q.kind=='gain-bonus' ? t.phase=='discovery' && ownGains(old,q.responder)==1 && gainControlBonus(old,d,q,b,a,q.location)
+          : q.kind=='effect' ? (q.effect.kind=='ship' ? automaticBonusShip(old,d,q,b,a,s,t) : q.effect.kind in ['upgrade','jump'] ? exhaustedFleetEffect(old,d,q,b,a,t) : ordinaryDiscoveryAdvance(old,d,q,b,a,s,t))
+          : q.kind=='event' ? (q.get('stage','')=='dispatch' ? sharedEventDispatch(root,old,d,q,b,a,t)
+            : q.event=='experimental-prototypes' && q.get('stage','')=='roll' ? t.phase=='discovery' && advanceCube(old,d,q,b,a)
+            : q.event=='experimental-prototypes' && !('stage' in q) ? prototypeDispatch(root,old,d,q,b,a,t) : ordinaryDiscoveryAdvance(old,d,q,b,a,s,t) || additionalEventAdvance(root,old,d,q,b,a,t))
+          : ordinaryDiscoveryAdvance(old,d,q,b,a,s,t) || additionalEventAdvance(root,old,d,q,b,a,t);
+      }
+      function discoveryStep(b,e,s,t,before,after) {
+        let old=s.discovery;let d=t.discovery;let q=old.queue[0];let m=e.move;
+        return pendingDiscoveryEnvelope(b,e,s,t) && (
+          (m.kind=='discovery-advance' && m.keys().hasOnly(['kind','at']) && automaticDiscoveryStep(b,q,before,after,s,t))
+          || (m.kind=='discovery-choice' && m.keys().hasOnly(['kind','at','option','target','ships','track','destination','usePopulation','legs']) && t.phase=='discovery' && (
+            q.kind=='effect' && q.effect.kind=='jump' ? manualJump(b,old,d,q,m,before,after)
+            : q.kind=='candidate' ? discoverCandidate(old,d,q,m,before,after)
+            : q.kind=='type' ? revealCandidates(old,d,q,m.option,before,after,s.turn)
+            : q.kind=='control' ? matchesSpecialty(old,q.location,'food')&&matchesSpecialty(old,q.location,'ore')&&takeControl(old,d,q,before,after,m.option)
+            : q.kind=='gain-bonus' ? gainControlBonus(old,d,q,before,after,m.option)
+            : q.kind=='event' ? manualEvent(b,old,d,q,m,before,after)
+            : extraManualEffect(b,old,d,q,m,before,after))));
+      }
+      function prepareDiscoveryTransition(b,e,s,t) {
+        return e.move.keys().hasOnly(['kind']) && actorAllowed(b,e.position) && s.phase in ['action','achievement'] && s.turn>=b.seats.size() && t.phase==s.phase && !('discovery' in s)
+          && t.diff(s).affectedKeys().hasOnly(['discovery']) && initialDiscoveryValid(b,t.discovery)
+          && t.discovery.records==[] && t.discovery.events==[] && t.discovery.reservations==[] && t.discovery.queue==[] && !('revealBoundary' in t.discovery);
+      }
+      // These claims are reachable through the mechanics in this increment.
+      // Colonization and Level III/IIII extend the same conditions in their increments.
+      function claimAt(d,index,id,p) { return index<d.claims.size() && d.claims[index].card==id && d.claims[index].position==p; }
+      function alreadyClaimed(d,id,p) { return claimAt(d,0,id,p)||claimAt(d,1,id,p)||claimAt(d,2,id,p); }
+      function countClaimAt(d,index,id) { return index<d.claims.size() && d.claims[index].card==id?1:0; }
+      function claimCount(d,id) { return countClaimAt(d,0,id)+countClaimAt(d,1,id)+countClaimAt(d,2,id); }
+      function sameTurnClaimAt(d,index,p,turn) { return index<d.claims.size() && d.claims[index].position==p && d.claims[index].turn==turn; }
+      function claimedThisTurn(d,p,turn) { return d.claims.size()>0&&(sameTurnClaimAt(d,0,p,turn)||sameTurnClaimAt(d,1,p,turn)||sameTurnClaimAt(d,2,p,turn)); }
+      function claimAvailable(root,d,id,p) { return d.claims.size()==0||!alreadyClaimed(d,id,p) && claimCount(d,id)<(id==d.achievements[2]&&root.seats.size()==4?2:1); }
+      function ownedTechnologyAt(d,p,index) { return index<d.technologies.size() && d.technologies[index].card in p.research; }
+      function allSixOwned(d,p) { return d.technologies.size()==6 && ownedTechnologyAt(d,p,0)&&ownedTechnologyAt(d,p,1)&&ownedTechnologyAt(d,p,2)&&ownedTechnologyAt(d,p,3)&&ownedTechnologyAt(d,p,4)&&ownedTechnologyAt(d,p,5); }
+      function strongFleet(d,position) {
+        let power=d.get('powers',{}).get(position,{});
+        // Remove the aggregate too: with three strong locations the total is
+        // strictly greater than any individual location. One-location equality
+        // can only remove another nonqualifying result.
+        return power.values().removeAll([0,1,2,3,power.get('*',0)]).size()>=3;
+      }
+      function currentSystem(d,location) { return d.systems.size()>0 && d.systems[0].slot==location?d.systems[0].card:d.systemBasis.get(location,''); }
+      function specialtyTrack(d,location) {
+        let card=currentSystem(d,location);
+        return location=='shipyard-north'||card in ['lalande-21185','procyon','struve-2398','wolf-359','kapteyns-star','luytens-star','ross-154','tau-ceti']?'either'
+          :location=='shipyard-west'||card in ['barnards-star','epsilon-indi','teegardens-star','ad-leonis','den-0255-4700','kruger-60','lacaille-9352','wise-1541-2250']?'food'
+          :location=='shipyard-east'||card in ['alpha-centauri','61-cygni','gj-1061','groombridge-34','sirius','dx-cancri','ez-aquarii','tz-arietis']?'ore':'';
+      }
+      function matchesSpecialty(d,location,track) { return specialtyTrack(d,location) in [track,'either']; }
+      function ownedSpecialty(d,p,location,track) { return d.outposts.get(location,{}).get('owner','')==p&&matchesSpecialty(d,location,track)?1:0; }
+      function specialtyCount(d,p,track) {
+        let extra=d.systems.size()>0?d.systems[0].slot:'';
+        return ownedSpecialty(d,p,'a-1',track)+ownedSpecialty(d,p,'a-2',track)+ownedSpecialty(d,p,'b-1',track)+ownedSpecialty(d,p,'b-2',track)+ownedSpecialty(d,p,'shipyard-north',track)+ownedSpecialty(d,p,'shipyard-west',track)+ownedSpecialty(d,p,'shipyard-east',track)+ownedSpecialty(d,p,extra,track);
+      }
+      function eligibleClaim(d,p,id,position,m) {
+        return id=='technologist'?allSixOwned(d,p)
+          :id=='efficiency'?p.foodDiscs==0||p.oreDiscs==0
+          :id=='agility'?allSixOwned(d,p)&&'human-experiments' in p.research&&!p.research.hasAny(['exo-alloy-refinement','bio-synaptic-network'])
+          :id=='posthumanist'?p.supply[0]+p.supply[1]+p.supply[2]+p.supply[3]+p.supply[4]<=2
+          :id=='strategist'?p.ore>=8&&p.population>=4&&p.ships.size()>=4
+          :id=='warlord'?strongFleet(d,position)
+          :id=='specialization'?specialtyCount(d,position,'food')>=6||specialtyCount(d,position,'ore')>=6:false;
+      }
+      function noDueClaim(root,s,p,position,m) {
+        let d=s.discovery;let a=d.achievements[2];let b=d.achievements[3];
+        return claimedThisTurn(d,position,s.turn) || !(eligibleClaim(d,p,a,position,m)&&claimAvailable(root,d,a,position))
+          && !(eligibleClaim(d,p,b,position,m)&&claimAvailable(root,d,b,position));
+      }
+      function achievementClaimTransition(b,e,s,t,before,after) {
+        let old=s.discovery;let d=t.discovery;let id=e.move.card;let count=claimCount(old,id);
+        return actorAllowed(b,e.position) && e.move.keys().hasOnly(['kind','card']) && s.phase=='achievement' && t.phase=='achievement'
+          && id in [old.achievements[2],old.achievements[3]] && eligibleClaim(old,before,id,e.position,e.move)
+          && !claimedThisTurn(old,e.position,s.turn) && claimAvailable(b,old,id,e.position) && after==before && t.diff(s).affectedKeys().hasOnly(['discovery'])
+          && d.diff(old).affectedKeys().hasOnly(['claims']) && d.claims==old.claims.concat([{'card':id,'position':e.position,'turn':s.turn,'reward':id==old.achievements[2]?(count==0?3:2):3}]);
+      }
+      function blackMarketTransition(b,e,s,t,before,after) {
+        let d=t.discovery;let old=s.discovery;let track=e.move.track;let key=track=='food'?'foodDiscs':'oreDiscs';
+        return actorAllowed(b,e.position) && e.move.keys().hasOnly(['kind','track']) && track in ['food','ore'] && t.phase==s.phase
+          && s.phase in ['action','production','trade','achievement','discovery'] && t.diff(s).affectedKeys().hasOnly(['players','discovery'])
+          && !old.industry.hasAny([e.position]) && old.events.hasAny([
+            {'id':'black-market-industries','slot':'II-1','resolved':true},{'id':'black-market-industries','slot':'II-2','resolved':true},{'id':'black-market-industries','slot':'II-3','resolved':true},
+            {'id':'black-market-industries','slot':'II-4','resolved':true},{'id':'black-market-industries','slot':'II-5','resolved':true},{'id':'black-market-industries','slot':'II-6','resolved':true}])
+          && d.diff(old).affectedKeys().hasOnly(['industry']) && d.industry==old.industry.concat([e.position])
+          && before[key]>0 && after.diff(before).affectedKeys().hasOnly([key]) && after[key]==before[key]-1;
+      }
+      function prepareFleetPowerTransition(b,e,s,t,before,after) {
+        let target=e.move.position;let old=s.discovery;let d=t.discovery;let powers=old.get('powers',{});
+        return actorAllowed(b,e.position) && e.move.keys().hasOnly(['kind','position']) && s.phase in ['action','achievement'] && t.phase==s.phase && s.turn>=b.seats.size() && target in b.seats
+          && (!(target in powers)||!('*' in powers[target])) && after==before && t.players==s.players && t.diff(s).affectedKeys().hasOnly(['discovery'])
+          && d.diff(old).affectedKeys().hasOnly(['powers']) && d.powers.diff(powers).affectedKeys().hasOnly([target]) && initialPowerFor(b,d,target);
+      }
+      function discoveryTransition(b,a,e) {
+        let kind=e.move.kind;let s=b.play;let t=a.play;let p=e.position;let before=s.players.get(p,{});let after=t.players.get(p,before);
+        return kind=='research-II' && newResearchII(b,e,s,t,before,after) || kind!='research-II' && sameTurnRoot(b,a) && t.keys().hasOnly(['turn','activePosition','phase','players','discovery']) && t.turn==s.turn && t.activePosition==s.activePosition
+          && discoveryOthers(s,t,p)
+          && ((kind=='prepare-fleet-power' && prepareFleetPowerTransition(b,e,s,t,before,after)) || (kind=='claim-achievement' && achievementClaimTransition(b,e,s,t,before,after)) || (kind=='black-market' && blackMarketTransition(b,e,s,t,before,after)) || (kind=='prepare-discovery' && prepareDiscoveryTransition(b,e,s,t)) || (kind in ['discovery-choice','discovery-advance'] && discoveryStep(b,e,s,t,before,after)));
+      }
+
+      // Ordinary Level I bonuses and decommissioning remain legal after the
+      // discovery kernel exists. Only exact ship power and printed control
+      // checks may change; no deck, cursor, Event or claim edits are authorized.
+      function ordinaryFleetQueue(root,old,d,t,m,p,location) {
+        let phase=m.kind=='research-I'?'production':'trade';
+        let checks=checkAt(root,old,location,{'responder':p,'source':m.kind=='research-I'?m.card:'Decommission'});
+        let resume=m.kind=='research-I'?{'kind':'resume','responder':p,'returnTo':phase,'card':m.card}:{'kind':'resume','responder':p,'returnTo':phase};
+        return d.queue==(checks.size()>0?checks.concat([resume]):[]) && t.phase==(checks.size()>0?'discovery':phase);
+      }
+      function ordinaryFleetChange(root,s,t,b,a,m,p) {
+        let old=s.discovery;let d=t.discovery;let removed=b.ships.removeAll(a.ships);
+        let location=removed.size()>0?removed[0].location:'deep-space';
+        let delta=m.kind=='decommission'?-removed[0].level:1;
+        let prior=old.powers[p];let power=d.powers[p];
+        return old.queue==[] && (m.kind=='decommission' || m.kind=='research-I' && m.card in ['terraforming','narrow-beam-lasers'])
+          && t.turn==s.turn && (m.kind=='research-I'?researchMove(m,s,{'phase':'production'},b,a,p,root.seats.size()):s.phase=='trade'&&tradeMove(m,b,a))
+          && d.diff(old).affectedKeys().hasOnly(['queue','powers'])
+          && d.powers.diff(old.powers).affectedKeys().hasOnly([p]) && power.diff(prior).affectedKeys().hasOnly('*' in prior?[location,'*']:[location])
+          && power.get(location,0)==prior.get(location,0)+delta && ('*' in prior?power['*']==prior['*']+delta:!('*' in power))
+          && (location in ['sol','deep-space'] ? d.queue==[] && t.phase==(m.kind=='research-I'?'production':'trade') : ordinaryFleetQueue(root,old,d,t,m,p,location));
+      }
+      function unindexedHomeFleet(ships) {
+        return ships.size()<=3
+          && (ships.size()<1 || ships[0].location in ['sol','deep-space'])
+          && (ships.size()<2 || ships[1].location in ['sol','deep-space'])
+          && (ships.size()<3 || ships[2].location in ['sol','deep-space']);
+      }
+      // Cancelling the first discovery planner may leave its private power
+      // cache unprepared. Exact ordinary actions remain legal at home, while
+      // the untouched kernel has no revealed technology or control topology.
+      function unpreparedFleetChange(s,t,b,a,m,p,count) {
+        return t.discovery==s.discovery && s.discovery.queue==[]
+          && s.discovery.records==[] && s.discovery.technologies==[] && s.discovery.outposts=={}
+          && unindexedHomeFleet(b.ships) && unindexedHomeFleet(a.ships)
+          && turnEffect(m,s,t,b,a,p,count);
+      }
       function turnTransition(b,a,e) {
-        let p=e.position; let s=b.get('play',blankPlay(b)); let t=a.play;
+        let p=e.position;let m=e.move; let s=b.get('play',blankPlay(b)); let t=a.play;
         let before=initialOrCurrent(b,p); let after=t.players[p];
-        return actorAllowed(b,p) && sameTurnRoot(b,a) && t.keys().hasOnly(['turn','activePosition','phase','players']) && t.turn is int && t.players is map && t.players.diff(s.players).affectedKeys().hasOnly([p])
-          && t.activePosition == (e.move.kind == 'end-turn' ? nextPosition(b,p) : s.activePosition)
-          && turnEffect(e.move,s,t,before,after,p,b.seats.size());
+        // turnEvent already requires discoveryMember(b,p), including identity and start.
+        return p==s.activePosition && sameTurnRoot(b,a) && t.keys().hasOnly(['turn','activePosition','phase','players','discovery']) && t.turn is int && t.players is map && t.players.diff(s.players).affectedKeys().hasOnly([p])
+          && t.activePosition == (m.kind == 'end-turn' ? nextPosition(b,p) : s.activePosition)
+          && (m.kind!='end-turn'||!('discovery' in s)||noDueClaim(b,s,before,p,m))
+          && (('discovery' in s && before.ships!=after.ships)
+            ? (p in s.discovery.get('powers',{}) ? ordinaryFleetChange(b,s,t,before,after,m,p) : unpreparedFleetChange(s,t,before,after,m,p,b.seats.size()))
+            : t.get('discovery',null)==s.get('discovery',null) && turnEffect(m,s,t,before,after,p,b.seats.size()));
+      }
+      function validTurnProjection(b,a) {
+        let event=getAfter(/databases/$(database)/documents/games/$(game)/events/$(a.lastCommand)).data;
+        return event.type=='game-move' && event.actorUid==request.auth.uid && event.revision==a.revision
+          && (event.move.kind!='research-II' || researchIIPlayerTransition(b,a,event));
       }
       allow update: if signedIn() && ('play' in request.resource.data) && sameTurnRoot(resource.data,request.resource.data)
-        && getAfter(/databases/$(database)/documents/games/$(game)/events/$(request.resource.data.lastCommand)).data.type == 'game-move'
-        && getAfter(/databases/$(database)/documents/games/$(game)/events/$(request.resource.data.lastCommand)).data.actorUid == request.auth.uid
-        && getAfter(/databases/$(database)/documents/games/$(game)/events/$(request.resource.data.lastCommand)).data.revision == request.resource.data.revision;
+        && validTurnProjection(resource.data,request.resource.data);
       match /events/{event} {
         function turnEvent() {
-          let e=request.resource.data; let b=get(gamePath()).data; let a=getAfter(gamePath()).data;
-          return e.type == 'game-move' && e.schema == 1 && e.actorUid == request.auth.uid && e.commandId == event && e.revision == a.revision && a.lastCommand == event && e.name == ''
+          let e=request.resource.data;let m=e.get('move',null);let discoveryMove=m.get('kind','') in ['prepare-discovery','prepare-fleet-power','research-II','discovery-choice','discovery-advance','black-market','claim-achievement']; let b=get(gamePath()).data; let a=getAfter(gamePath()).data;
+          return e.type == 'game-move' && m is map && m.get('kind','') is string && e.schema == 1 && e.actorUid == request.auth.uid && e.commandId == event && e.revision == a.revision && a.lastCommand == event && e.name == ''
+            && discoveryMember(b,e.position)
             && (b.mode == 'tabletop' ? e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','move']) : e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','move','ready','configVersion','settings','code']) && !e.ready && e.configVersion == b.configVersion && e.settings == b.settings && e.code == b.code)
-            && turnTransition(b,a,e);
+            && (discoveryMove && discoveryTransition(b,a,e) || !discoveryMove && turnTransition(b,a,e));
         }
         allow create: if signedIn() && request.resource.data.type == 'game-move' && turnEvent();
       }

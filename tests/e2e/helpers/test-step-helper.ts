@@ -2,7 +2,7 @@ import { expect, test, type Page, type TestInfo } from '@playwright/test';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { identicalPixels, preparePixels } from './exact-pixels';
-import { assertScreenFit } from './screen-fit';
+import { assertScreenFit, warmVisibleImages } from './screen-fit';
 
 export const OPERATION_BUDGET = 2_000;
 export interface Verification { spec: string; check: () => Promise<unknown> }
@@ -28,10 +28,24 @@ export class TestStepHelper {
         const path = this.info.snapshotPath(record.slug, stem);
         const updating = ['all', 'changed'].includes(this.info.config.updateSnapshots);
         const reference = !updating && existsSync(path) ? preparePixels(readFileSync(path)) : undefined;
-        await page.bringToFront(); await page.mouse.move(0, 0);
-        const ready = await page.waitForFunction(({ status }) => document.querySelector('[data-backend-status]')?.getAttribute('data-backend-status') === status, { status: view.status ?? 'synced' }, { timeout: remaining(), polling: 20 });
+        // Start independent readiness work together. Pointer placement remains
+        // ordered after foregrounding; the strict final decode/layout audit and
+        // native photograph run only after all three preparations complete.
+        // All work stays inside the original shared 2,000 ms deadline.
+        const [, , ready] = await Promise.all([
+          (async () => { await page.bringToFront(); await page.mouse.move(0, 0); })(),
+          page.evaluate(warmVisibleImages),
+          page.waitForFunction(({ status }) => document.querySelector('[data-backend-status]')?.getAttribute('data-backend-status') === status, { status: view.status ?? 'synced' }, { timeout: remaining(), polling: 20 })
+        ]);
         await ready.dispose();
-        await page.evaluate(assertScreenFit, { document: view.document, touchTargets: true, prepare: true });
+        // Warming may finish after the first acknowledgement; retain an exact
+        // post-warm status check before the final preparation and capture.
+        // Audit in the same browser call as the post-warm acknowledgement;
+        // false status keeps the same20ms polling, and any audit error rejects.
+        const current = await page.waitForFunction(assertScreenFit,
+          { status: view.status ?? 'synced', document: view.document, touchTargets: true, prepare: true },
+          { timeout: remaining(), polling: 20 });
+        await current.dispose();
         const camera = await page.context().newCDPSession(page);
         let image: Buffer;
         try { image = Buffer.from((await camera.send('Page.captureScreenshot', { format: 'png', fromSurface: true, captureBeyondViewport: false, optimizeForSpeed: true })).data, 'base64'); }

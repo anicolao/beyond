@@ -309,3 +309,280 @@ Reviewer19:33: independently viewed refreshed 057-turn-1-handoff-tabletop-4k-dar
 Reviewer-authored local acceptance and phase release:
 
 Reviewer19:54: independently verified research-round52-final-exact.log completed48/48PASS in6.0m, command has no update-snapshots;40backend/2422 assertions,41guards,17tooling,types/builds pass and helper guards unchanged. Prior live004 review plus corrected heading and full-rules native images are accepted. Phase004 LOCAL ACCEPTANCE complete. Commit/push reviewed004 and open stacked PR based on feat/basic-setup af76265; then immediately begin005 Discover humanity next technology on a NEW branch stacked on004 while004 Linux exact and matching hosted verification finish. Implement legal preparatory turns, LevelII Event/discovery/type/candidate/persisted queue and reveal boundary per plan/source rules in remote/phone/shared modes; persistent local server and independent review before baselines. Keep004 pending final gates separately, propagate needed fixes, preserve all evidence, never merge. Report PR URL/head and005 branch; no further human prompt needed.
+
+## Prompt 56: Review Linux Evidence
+
+Reviewer-authored gate checkpoint:
+
+Reviewer21:02: PR6 0297259 hosted revision matches; independently exercised retained PR5 table in PR6, Lasers mandatory ship target, cost/bonus, reload restored Production with 1 Population/4 Ore/cube/level-2 ship, Produce Ore gave 5 Ore and Bora handoff. Linux browser-comparison now failed 34/48 (14 pass), missing new 004 Linux snapshots and existing snapshot mismatches; job 118298453514 logs available via gh api actions/jobs/.../logs although run still active. Please inspect completed candidates and actual diffs, preserve guards and timings, review Linux evidence before committing appropriate baselines and rerun exact. Track alongside 005; no final 004 acceptance yet.
+
+## Prompt 57: Diagnose Candidate Timeouts
+
+Reviewer-authored failure evidence:
+
+Reviewer21:09 additional evidence: candidate generation test step has failed, even while artifact upload keeps job running. Downloaded small candidate-failure-evidence artifact12220483765 to /tmp/beyond-pr6-candidate-failure-review. Embedded Playwright report shows three 004 tabletop-4k tests hit the 60000ms test timeout; diagnostic capture then masks it with page.evaluate closed-page error at journey.ts:14 (call sites52/55). Inspect primary timeout/capture work and preserve timing guards; do not treat this as baseline-only failure.
+
+## Prompt 58: Resolve Capture Deadline
+
+Reviewer-authored timing checkpoint:
+
+Reviewer21:40 new a4a130a Linux evidence: comparison job118315760262 still14/48pass; beyond baseline differences/missing004 refs, 003 setup-tabletop.spec.ts:20:73 records Shared capture deadline2041.03ms vs2000. Log independently saved /tmp/beyond-pr6-a4a130a-comparison.log (lines2181+). Whole-story120s is permitted by E2E_GUIDE26, but this separate per-capture failure must be resolved without raising2000ms. Hostedrevision now matchesa4a130a. No final004 acceptance yet.
+
+## Prompt 59: Compact Phone Discovery
+
+Reviewer-authored preliminary visual review:
+
+Reviewer21:50 preliminary005 screenshot review: spread-1280.png now exposes both selection controls and correct Discovery phase, useful improvement. spread-393.png still spends first ~350px on header/resolved Event and shows only first candidate title/art above sticky footer; no candidate bonus or selection visible initially. Compact phone resolved-Event summary and candidate art into decision-focused rows/cards so at least first candidate bonus+Select are visible without scrolling; keep full readable card inspection and access to both candidates. No final acceptance from these captures; live flow/reload/remote responder/shared orientation review still required.
+
+## Prompt 60: Persistent Review Backend
+
+Reviewer-authored live review blocker:
+
+Reviewer23:06: opened supplied shared review URL in independent browser; it shows Connection interrupted / We could not reopen your table. lsof finds no listeners on expected Auth9397/Firestore8297. Please keep005 emulator backend plus5198 alive between review captures and provide normal-UI setup path for a fresh reviewer controller (do not transfer identity). Current supplied room cannot be independently reviewed live. Preserve existing review room data when restarting.
+
+## Prompt 61: Repair Staging Runtime
+
+Reviewer-authored CI findings:
+
+Reviewer23:25 new CI findings: staging39340455886 validated archive SHA/inventory2219 (1386 changed,66 retained), then failed loading sharp linux-arm64: libstdc++.so.6 missing. Supply native runtime library using established CI environment setup; preserve full decode/pixel checks and pinned archive. No review branch was staged. Preview39340387514 failed GitHub remote Internal Server Error on gh-pages push; I requested failed-job rerun, no need duplicate. PR6 final exact/matching hosted gates remain. No006 release.
+
+## Prompt 62: Preserve Review Service
+
+Reviewer-authored service checkpoint:
+
+Reviewer23:38: human correctly challenged offline-emulator blocker (verbatim in root meta-prompts.md). I started persistent discovery review Auth9397/Firestore8297 through existing nix develop /private/tmp/beyond-toolchain, config /tmp/beyond-discovery-review-supervisor.json using your discovery55 rules and existing cached jar. Both ready; do not stop these for tests. Backend has fresh local review state; older8197 backend untouched. Independent review can now create fresh rooms through ordinary UI. Preserve this service and separate backend-test ports.
+
+## Prompt 63: Tight Storage Checkpoint
+
+Reviewer-authored backend and storage checkpoint:
+
+Reviewer23:42: latest70 backend tests/2576assertions verifiedPASS. Disk full now also aborts independent browser IndexedDB and nix SQLite. I removed only regenerable npm download cache ~/.npm/_cacache (291MB); free space now406MiB. No evidence/source/dependencies removed. Persistent review emulators remain healthy. Please continue safe fixes; storage remains tight.
+
+## Prompt 64: Correct Review Ports
+
+Reviewer-authored frontend environment correction:
+
+Reviewer23:46 correction: inspected5198 process public env; it had EMULATORS=true but no explicit ports, so actually used old9297/8197, not assumed9397/8297. Restarted ONLY5198 Vite via existing Nix with explicit9397/8297; independent browser now Connected/Play enabled. Added temporary .review-vite.config.ts allowing symlinked root node_modules fonts; do not commit review config. Persistent frontend session17638/backend88096. Prior offline diagnosis was incomplete; no data/identity cleared. Preserve correct review processes.
+
+## Prompt 65: Fit Research Header
+
+Reviewer-authored reference and local planner checkpoint:
+
+Reviewer23:52: independently verified staging39342819076PASS, commit58ad180 parent1879901:1386 Linux PNGs plus only IMPLEMENTATION_PLAN/PROMPT_WORK;2219 decoded with matching dimensions, pinned SHA, no transforms. Proceed incorporating reviewed reference commit into PR6 and ordinary exact comparison; no finalacceptance yet. Live fresh shared table25e1df7d-557c-4984-ae87-ff47e845fd58 now began normally. At1280x720 Plan research screenshot has Research Level I wrapping I onto separate line, and helper says two choices per row but actual tray shows one card per row. Correct heading/selector fit and truthful layout hint in005; no baseline churn.
+
+## Prompt 66: Restore Discovery Production
+
+Reviewer-authored live005 blocker:
+
+Reviewer00:07 LIVE005 blocker: independent shared room25e1df7d-557c-4984-ae87-ff47e845fd58 on5198/9397/8297. Ada Nishida south and Bora UNSol north both researchedRobotics; Ada grewPop, Bora producedOre. Ada paidII-3→ExperimentalPrototypes, keptLevel4→level2Solship; Bora keptSupply→2Ore. Ada selectedHypercomputing; bonus resolves, reload restoresProduction1Pop/2Ore/2cubes,+3Ore yield. Clicking ProduceOre is rejected by Firestore evaluation error L732 create/L720 update; remainsProduction, raw rules trace shown in two UIalerts. Preserve room and fix legal production-after-discovery plus user-friendly error; may involve live rules changes during retained history. No005acceptance/006.
+
+## Prompt 67: Accept Phase Four
+
+Reviewer-authored final004 acceptance:
+
+Reviewer00:51 milestone: independently verified PR6 head58ad180 Linux exact attempt2 run39345573191 job118385073347 PASS48/48 in14.8m, capture guards41PASS; all required checks pass, hosted revision.json matches58ad180 and prior independent hosted retained-table/UI review stands. Phase004 FINALLY ACCEPTED at this head, unmerged. Preserve first-attempt two4K timing failures in history; diagnostic follow-up may proceed without weakening guards but acceptance does not include uncommitted changes. Prioritize consuming pending005 review feedback and repairing retained production failure before further phase advancement. No006 release; no merge. Log reviewer-authored.
+
+## Prompt 68: Diagnose Retained Recovery
+
+Reviewer-authored independent recovery regression:
+
+Reviewer01:47 new independent regression: after your retained-production compatibility fix, I reloaded existing IAB tab27 at5198/?table=25e1df7d-557c-4984-ae87-ff47e845fd58 with unchanged original controller. It now shows arrival/Play disabled/Connection interrupted/We could not reopen your table. Reopen table retry same result, no moves submitted. Please diagnose retained auth/data recovery after backend restart; preserve original controller and room. This blocks independent production retest. No browser identity injection/reset.
+
+## Prompt 69: Sanitize Recovery Diagnostics
+
+Reviewer-authored diagnostic request:
+
+Reviewer01:52 response: IAB dev.logs returns empty, and DOM only exposes generic reopen failure. Browser tool does not expose network or Firebase runtime state; I will not inspect hidden storage or alter identity. Please add temporary sanitized console diagnostics in recovery catch (error code/message and boolean current UID matches owner, no tokens/UID values), then tell me ready; I can reload original tab and read dev.logs. Keep original room/controller intact. Independent discovery66 backend results will be reviewed separately.
+
+## Prompt 70: Verify Served Diagnostics
+
+Reviewer-authored diagnostic retest:
+
+Reviewer02:02 repair retest: original IABtab27 reloaded after validSince repair, still arrival/Play disabled/Connection interrupted/We could not reopen your table. dev.logs now only Vite connecting/connected; no sanitized recovery diagnostic yet. No identity/storage changes. Await diagnostic implementation before next reload.
+
+## Prompt 71: Diagnose Denied Owner
+
+Reviewer-authored original-controller diagnostic evidence:
+
+Reviewer02:07 diagnostics now confirmed in original IABtab27 after reload: revision70 ready; recovery code permission-denied, signedIn:true; ownerComparisonAvailable:false, ownerMatchesCurrentUid:null, ownerRead code permission-denied. Error prose withheld by sanitizer. Still arrival/Play disabled/reopen failure. No browser identity/storage changes or moves. Please use this evidence for diagnosis; do not replace owner or bypass authorization.
+
+## Prompt 72: Preserve Recovery Boundary
+
+Reviewer-authored confirmed identity mismatch and recovery constraints:
+
+Reviewer02:12 original IABtab27 revision71 verified diagnostic: ownerComparisonAvailable:true, ownerMatchesCurrentUid:false, roomUnchanged:true. Recovery remains permission-denied signedIn:true. Supervisor did not reset/inject browser identity. Original session evidently differs now; do not transfer room ownership or bypass rules. Preserve original history and diagnose prevention/recovery semantics; independent fresh normal-UI replay can validate gameplay separately but must not be claimed as recovered original session. Remove temporary probes before publication.
+
+## Prompt 73: Resume Discovery Review
+
+Reviewer-authored recovery checkpoint and continued005 authorization:
+
+Reviewer02:22 independently verified originaltab27 now Connected/Play enabled and precise identity-denial message; original session is not recovered and history must remain intact. Continue authorized005 work: fresh ordinary-UI full discovery-to-production/handoff/reload replay using persistent existing backend, complete remote/phone/rotated shared coverage and security checks. Report exact review URLs/captures and remaining gaps; keep backend alive, no further auth restart during review, no baselines until independent local acceptance, no006 or merge. I will independently replay with current reviewer controller separately from lost original session.
+
+## Prompt 74: Restore Crashed Auth
+
+Reviewer-authored narrow Auth recovery authorization:
+
+Reviewer02:42 authorize controlled Auth-only relaunch to restore failed service: preserve exported accounts and original validity boundaries before accepting browser connections; leave liveFirestore/data/ownership untouched and verify same-controller refresh on isolated test first if not already proven. This supersedes my no-restart direction solely for crashed9397 recovery. Current independent freshroom0eaca825-4c80-487b-ae4d-7d77e0ac5a0b reached BoraAction after AdaRobotics+Grow; preserve its current controller too, latest export may need current accounts beyond old original owner. Do not reopen browser review until metadata preservation verified; report readiness. No bypass/reset or006.
+
+## Prompt 75: Continue Discovery Validation
+
+Reviewer-authored independent Auth recovery acceptance and005 continuation:
+
+Reviewer02:58 independently confirmed freshroom0eaca825 reload after controlledAuthrecovery preserved current controller and BoraAction. BoraRobotics in open space2 thenProduceOre+2 succeeded, nowAdaAction. Continue authorized005 remote/phone/shared replay and required local checks on persistentbackend; no further stop awaiting prompt, no006/baselines before independentacceptance. I am proceeding toAdaLevelII.
+
+## Prompt 76: Fresh Replay Checkpoint
+
+Reviewer-authored independent discovery replay checkpoint and continued005 validation:
+
+Reviewer03:05 independent fresh shared room0eaca825 passed II-4 March of Progress (Robotics named; Ada +2 Ore; Bora Supply to level2 Sol ship), Hypercomputing discovery, +3 Ore production, Bora handoff and reload. Ada retains1 Population/7 Ore. Fresh-session replay only, original lost controller remains unrecovered. Saw remote replay handoff PASS in pane; continue current security/layout corrections and remaining phone/shared/4K checks. No005 acceptance or006 release yet.
+
+## Prompt 77: Compact Overview Overlap
+
+Reviewer-authored scoped evidence and additional retained-room layout finding:
+
+Reviewer03:13 scoped evidence: independently confirmed fleet5 5/5 and full backend85/2641 PASS; phone candidate/selected/production captures readable. Additional viewport for your active overlap fix: live retained shared room0eaca825 at1280x720 compact complete overview still has Hypercomputing II-4 covering lower half of II-3 row after reload. Please include compact overview as well as four-player expanded board in the correction. No duplicate restart or phase advancement.
+
+## Prompt 78: Discovery Local Acceptance
+
+Reviewer-authored phase005 independent local visual/functional acceptance and final-validation authorization:
+
+Reviewer04:24: phase005 local visual/functional review ACCEPTED for final validation. Independently reloaded room0eaca825 at1280x720: II-3/Hypercomputing separated and full inspection opens/closes; your03:13 correction is resolved. Reviewed round76-cardinal-board, retry-error-cardinal-3840 and final rotated candidate images: spacing and error containment pass. Prior independent March of Progress gameplay and reviewed desktop/phone/cardinal/corner/observer/keyboard evidence support this scoped acceptance. Proceed with required TestStepHelper illustrated stories, meaningful rare-effect coverage, final macOS exact comparisons and all checks; keep guards/deadlines unchanged. No final005 acceptance yet. After local exact/checks PASS, report results for explicit006 release and publish005 stacked on feat/first-research-turn head58ad180; never merge. Preserve all identities and services.
+
+## Prompt 79: Prototype Result Rows
+
+Reviewer-authored rare-effect phone composition correction:
+
+Reviewer05:03: inspected generated 055-same-candidates-phone-darwin.png for Experimental Prototypes. Results consume excessive vertical space with bullets, isolated separator dots and Level2 ship wrapping across lines; compose each player/result as a compact readable row so candidate selection is visible without being crowded by the fixed footer. I see you are already examining this image/layout, so fold this into that repair. Fresh affected rare-effect screenshots require independent review before final005 acceptance;006 still held. No guard relaxation.
+
+## Prompt 80: Rival Research Release
+
+Reviewer-authored phase005 local acceptance and explicit milestone006 authorization:
+
+Reviewer06:30: independently confirmed final-exact3 62/62 PASS and 3271 recorded frames, alongside backend156/2877,41 guards,17 tooling and current types/policy/build gates. Phase005 LOCAL gate accepted. Narrow phone result chips, rotated4K cube controls, initial corner heading and corrected connector geometry independently reviewed and accepted; this resolves my queued05:03feedback. Commit/push005 and open PR stacked on feat/first-research-turn at58ad180, then explicitly BEGIN006 Learn from a rivals discovery on a NEW branch stacked on005 while005 Linux exact and matching hosted review finish. Implement source-reviewed personal research access, once-only immediate bonus, actual printed action costs/occupancy and blocked-before-research inspection across remote/phone/shared; no invented actions. Keep persistent local preview and request local review before baseline iteration. Track005 CI/hosted pending separately; final005 acceptance withheld until those pass. Never merge; log reviewer-authored.
+
+## Prompt 81: Prototype Acceptance Clarification
+
+Reviewer-authored scoped acceptance of the additional Prompt79 composition edits; phase005 final gates remain pending:
+
+Reviewer07:33: independently inspected round79 phone/055-same-candidates.png and shared/074-public-candidates.png. The NEW compact result-row CSS passes scoped visual review: unbroken results, readable candidate and rotated controls. This acceptance covers the additional Prompt79 edits (06:30 referred to earlier round78). Proceed with affected exact checks/publication as planned; 006 release remains in effect. Record stale live-emulator rules diagnosis separately from product behavior; preserve current services/identities. Final005 Linux/hosted gates remain outstanding.
+
+## Prompt 82: Startup Failure Review
+
+Reviewer-authored phase005 startup/readiness failure handoff; preserve limits, tests, evidence and006 propagation:
+
+Reviewer07:53: independently inspected PR7 static-and-rules failure job118512786813 at head61ce658. Backend152pass/2fail: rules.test.ts initial environment hook timed out5001ms, then cleanup dereferenced undefined environment. Full log saved /tmp/beyond-pr7-static-118512786813.log. Diagnose startup/readiness without weakening limits or skipping tests; preserve failure evidence and fix/propagate through006 as needed. Preview retry still running. Final005 remains pending.
+
+## Prompt 83: Compatibility Deadline Review
+
+Reviewer-authored phase005 in-test compatibility deadline diagnosis and scoped Linux image review:
+
+Reviewer08:54: PR7 head263a591 static job118535929726 now155pass/1fail: deployed remote-3 remains writable with immutable attributed events and Begin timed out5000.96ms inside test, not startup hook. Saved full log /tmp/beyond-pr7-static-118535929726.log. Preserve limits/assertions while diagnosing. Independently viewed Linux005055-same-candidates-phone from pinned3a6archive: compact rows and candidate composition match accepted local design; scoped visual pass only, exact rerun/hosted still required.
+
+## Prompt 84: Rival Proof Review
+
+Reviewer-authored scoped006 live/layout review and atomic-proof evidence request; baselines/007 remain held:
+
+Reviewer09:48: Independent ordinary shared table35041e0e on5201 passed rival Psionics research (occupied II space blocked, exact3Ore/Population payment, own bonus once, reload preserved, no Event replay), and paid NarrowBeamLasers build plus full3jump Sol/Wolf359/DeepSpace/Northernshipyard and Ore outpost bonus. Phone current-source80/014 and rotated four-point80/004 captures pass scoped layout review. Full006 acceptance still pending independent proof review and remaining mode/occupancy checks; keep baseline hold/007 hold. While I review, monitor PR7 exact/static/hosted gates and clean temporary transport tags once safely uploaded. Please point to root/event atomic-coupling negative tests for wide-jump split proofs and any changed guards; preserve services and identities.
+
+## Prompt 85: Rival Validation Release
+
+Reviewer-authored006 local exploratory acceptance and final illustrated-validation authorization; final gate/007 remain held:
+
+Reviewer09:58: Phase006 local exploratory visual/functional review is accepted for proceeding to final illustrated E2E evidence. Independent ordinary shared35041e0e covered rival LevelII Psionics payment/own bonus/reload/no Event replay and paid NarrowBeamLasers full3jump/control/Ore yield; reviewed phone013 occupied disabled/014 enabled, desktop016 observer, and rotated4K four-point004 plus prior scoped captures. Independently read atomic split rules and four negative tests; verified175 backend/2977 assertions and clean types2. Proceed required TestStepHelper stories and exact macOS checks across remote desktop/phone/shared, preserve all guards and meaningful intermediate states. This is NOT final local gate or007 release until complete illustrated exact checks and evidence review pass. PR7 static now SUCCESS at51cdd6c; continue exact/hosted monitoring and propagate fixes. Never merge.
+
+## Prompt 86: Firestore Release Conflict
+
+Reviewer-authored concrete PR7 publication409 diagnosis and repair delegation; retain validation and006 E2E work:
+
+Reviewer10:03: New concrete PR7 publish failure at51cdd6c/job118562560434 is NOT503. Independently downloaded /tmp/beyond-pr7-publish-118562560434.log: Firebase release creation POST /projects/beyond-20261018/releases returns409 cloud.firestore already exists. Diagnostic current and frozenPR5 Rules:test both200 (current warnings only). Inspect existing-release update/deployment serialization behavior and repair without weakening rules or fallback publication. Static/rules alreadyPASS; exactstillrunning. Please prioritize this gate alongside006 E2E.
+
+
+## Prompt 87: Container Startup Investigation
+
+Reviewer-authored scoped deployer review and stalled Linux runner investigation; hosted result and006 final validation remain pending:
+
+Reviewer10:13: Independently reviewed64bd94a deployer: current-source compile/readback, explicit404-only creation, existing-release PATCH, bounded transient retry and blocked publication on mismatch look scoped correctly; hosted result stillrequired. Older51cdd6c browser job118561372702 remains Initialize containers since09:43:49 (~30min), so it has not begun exact tests. Please inspect runner/container startup failure rather than reporting it as test execution; preserve evidence and recover CI as appropriate without weakening comparison. Continue006 stories.
+
+
+## Prompt 88: Remaining Gate Diagnosis
+
+Reviewer-authored exact2/Linux capture/compiler findings and repair delegation;006 acceptance/007 release remain withheld:
+
+Reviewer10:53: Independently read final local exact2:66/72, six remaining005 pixel failures;006local acceptance/007release still withheld while you fix those. PR7 Linux job118574851070 just finished61PASS/1FAIL:003 two-player shared Basic tabletop-4k, setup-tabletop.spec.ts:20:73 shared capture2019.819ms versus2000. Log saved /tmp/beyond-pr7-browser-118574851070.log. Preserve artifact/trace and diagnose this specific capture with guards unchanged; no baseline refresh warranted for timing failure. Publication attempt2 again current-source503/frozenPR5 200; investigate source-sensitive compiler issue rather than repeated blind retries, retain exact-source deployment/no fallback. Propagate any repairs through006. No merges.
+
+
+## Prompt 89: Rival Acceptance Release
+
+Reviewer-authored006 local acceptance, publication and explicit007 release under overlap authorization; final hosted/Linux gates remain pending:
+
+Reviewer11:23 LOCAL ACCEPTANCE006: Independently verified rival88-final-exact3.log72/72PASS. Cumulative ordinary live rival research/reload/paid3-jump/control review, remote phone and shared4K review, atomic security proof/175backend tests,43captureguards and unchanged2000ms/exact checks satisfy localgate. Independently viewed corrected005080-dx-paid4K and057-bonus-upgradephone: mandatoryupgrade label correction accepted; six tightly scoped references appropriate. Commit/push006 and open its own PR based on feat/technology-discovery at propagatedd81af39, with evidence counts and current outstanding gates. Then explicitly BEGIN007 Manage Population and Ore on a NEW stacked branch from committed006 while005/006 CI and hosted verification finish, per human overlap authorization. Keep prioritizing source-sensitive compiler repair and propagate verified fixes through dependent branches; no fallback rules or weakened guards. Final005/006 acceptance still withheld pending Linux exact and independently verified matching hosted previews. Never merge. Report PR/base/head and persistent007 local URL for review.
+
+
+## Prompt 90: Physical Production Columns
+
+Reviewer-authored preliminary007 review and continued005/006 gate delegation; no007 visual acceptance:
+
+Reviewer11:38 preliminary007: Independently compared round89/production-393.png with07-production.png. Current phone hierarchy/yield labels and touch controls are readable, but Supply columns look like small flat statistic tiles versus the concept physical cube columns and exposed/empty/covered states. Before final review, give columns tangible cube/slot treatment using existing original materials, with strong visual distinction for exposed yielding, exposed-empty, and covered columns; retain correct five-column source rules rather than copying concept inaccuracies. Demonstrate changed-track and actually empty matching-column states in ordinary play, plus expanded conservation view, phone/desktop/shared rotated4K. No007visualacceptance yet. Keep prior005 compiler/static repairs prioritized alongside this work and finish006PR upload; no duplicate baseline generation until review.
+
+
+## Prompt 91: Verified Deployment Milestone
+
+Reviewer-authored independent hosted revision verification; remaining005 gates and007 review stay separate:
+
+Reviewer11:43: PR7 publish job118595538854 is SUCCESS; independently fetched hosted/pr7/revision.json and confirmed exactd81af396b0025797800fa8d49d12a1ea86a5da78. This is a material deployment milestone despite later diagnostic503s; preserve successful job evidence and do not assume publication remains blocked. Final005 still pending static remote-4 timeout fix, Linux exact and supervisor hostedfunctionalreview. Continue006upload/007correction;11:38feedbackacknowledged, no new visualacceptance.
+
+
+## Prompt 92: Coverage Gate Continuation
+
+Reviewer-authored scoped007 visual pass and continued coverage/005/006 gate repair delegation; no final acceptance:
+
+Reviewer12:14 continuation: Independently reviewed007round91phone emptyA/yieldingB/coveredCDE and rotated4Kconservation. Material/state correction looks good; scopedvisualPASS, not final007acceptance. Continue with missing sharedfour-player/corner and keyboard/focus/reload coverage listed inREVIEW.md while I conduct independentordinaryplay. Keep007baselines held. Do not stop with pending005/006gates: continue diagnosing current static readiness failure,0054Kcapturebudget and exact-source compiler503, preserve limits/assertions, propagate repairs. PR7hostedloaded d81af39 ordinary II1discovery passed independent eventattachment(ErraticSolar→Lalande), AndroidDestroyers selection/level3bonus and reload; finalacceptance stillneeds matchingcurrenthead/allchecks. Report concrete repair and four-player reviewentrypoints; no merges.
+
+
+## Prompt 93: Production Verification Release
+
+Reviewer-authored007 exploratory acceptance and formal verification release;008 and final acceptance remain held:
+
+Reviewer 12:34: Phase 007 exploratory visual/functional review is accepted. Independent ordinary shared table 73244fce completed Genetics growth, Robotics full 2 Ore, paid Lasers build and 3 legal jumps to Northern shipyard Food outpost, A+B growth, then Gather to empty A / yielding B. Conservation 10+5+2+3=20; Escape restored opener; reload retained pending production; Grow consumed only B2->1 with A0 unchanged. Independently inspected round92 compact 45-degree production and 315-degree conservation: contained/readable, scoped pass. Read production-preview.ts and its real-turn tests; read-only manifest-derived projection is appropriate. Proceed with required illustrated 007 remote/phone/shared/corner/4K stories, candidate review and full independent exact local comparisons with all guards/budgets unchanged. This releases formal verification only, not 008: report full local gate before next-phase release. Continue pending 005/006 CI and matching-head hosted repairs separately. Never merge.
+
+
+## Prompt 94: Verification Followup
+
+Reviewer-authored delegation:
+
+Reviewer 12:40: Acknowledgement of 007 formal-verification release observed; no 008 release. Independently reviewed serialized prepare-rules-test change: initial denial -> exact-source upload -> current-source denial under one shared 10s deadline preserves security checks and is stricter than per-request resets; tooling log 39/39 passes. Scope/source review positive, still require CI proof. Image-warm diff adds diagnostics only. Note current discovery55 diff deletes eight existing 003 walkthrough index links after scoped run; restore/preserve the complete index before committing repair, so focused validation does not remove earlier story discoverability. Continue short-cardinal layout correction and show final evidence for independent review before accepting those candidates.
+
+
+## Prompt 95: Cardinal Acceptance
+
+Reviewer-authored delegation:
+
+Reviewer 12:45: Independently viewed round94 shared-cardinal Ada production at 1280x640 and full 3840x2160. Short-screen correction accepted: five Supply columns, Food/Ore tracks, all three production choices and footer remain readable/contained. Full4K composition also accepted. Continue formal 007 illustrated validation under existing release; no 008 until full local gate. Independently confirmed PR7 head29d6729f46b6078efee182e1940b1013c677c122 excludes walkthrough-index deletions and new CI is running; PR8 head9a1c190c91cdd9216ffc69200c20ce37bd628c35 propagated repair. Final005/006 gates remain pending.
+
+
+## Prompt 96: Gather Acceptance
+
+Reviewer-authored delegation:
+
+Reviewer 12:55: Independently confirmed PR7 29d6729 static-and-rules SUCCESS; serialized-readiness repair now has CI proof. Publication and Linux exact gates remain separate. Independently inspected round95 gather-corner Bora-gather-1280.png and Bora-gather-3840.png: rotated planner text, selector, commit button and footer contained/readable; scoped correction accepted for formal candidates. Continue current 007 verification and 005/006 publication/capture diagnosis with unchanged guards. No 008 release until full local gate.
+
+
+## Prompt 97: Scoped Acceptance
+
+Reviewer-authored delegation:
+
+Reviewer 13:00: Independently inspected round96/full-corner/only-b-consumed.png and GameSurface diff. The 4K guild controls now fit inside the widened Spacefaring panel; scoped visual correction accepted. Preserve source/viewport targeting and unchanged screen-fit guards. Reviewed current discovery55 readiness readback diff: exact single-file byte equality plus no ERROR issues, before/after denial, upload+readback on mismatch, shared10s deadline retained; source direction is sound, pending tests and CI. PR8 static/publication remain failed at9a1c190; no final acceptance or008 release. Continue current work; no duplicate reruns absent a concrete change.
+
+
+## Prompt 98: Discovered Overview
+
+Reviewer-authored delegation:
+
+Reviewer 13:15: Independently inspected current full-candidate Dimensional Rift trace. Failure is assertDiscoveryBoard journey.ts:37 via discoveryJourney line127: covered positions/discovered cards fail physical separation in complete compact overview, not timing or pixel mismatch. Current log also has desktop shared-discovery and four-fleet failures (46/48/49). Diagnose scoped short-table overview CSS against these discovered states; preserve overlap assertion and touch sizes, show corrected intermediate desktop captures before accepting affected references. Full007 local gate remains held. Continue running suite/evidence work without interruption; no008 release.
+
+
+## Prompt 99: Propagation Release
+
+Reviewer-authored delegation:
+
+Reviewer 13:30: Independently confirmed affected discovery refresh 6/6, reviewed corrected compact overview/lower view and restored native4K Dimensional Rift061. Scoped discovered-branch selector correction accepted; full007 exact gate still pending, no008 release yet. PR7 b39591c static/docs now PASS, publish FAIL/browser running. PR8 9a1c190 native generation has now finished FAILURE, so preserve its failure evidence and proceed with needed readback propagation without the previous in-flight-generation hold. Source-reviewed shared-memory helper/config: no render flags, exact guards or deadlines removed; performance remains unproven and requires unchanged-reference Linux evidence. Keep CI/hosted final gates separate.

@@ -15,7 +15,7 @@ export function apply(table: Table | undefined, event: TableEvent): Table {
   if(event.type==='game-move') {
     if(!table.start||!event.move||event.name||event.settings||event.faction||event.start)throw new Error('Choose a legal move in a begun game.');
     const initial=startingSetup(table.start,clockwise(table).map(p=>({position:p,name:table.seats[p]!,faction:table.factions![p]!})),table.settings??{factions:'basic',achievements:'introductory'});
-    return {...table,play:applyTurn(initial,table.play,event.position,event.move),revision:event.revision};
+    return {...table,play:applyTurn(initial,table.play,event.position,event.move,table.start.seed),revision:event.revision};
   }
   if(event.move)throw new Error('Unsupported turn payload.');
   if(table.start) throw new Error('This game has begun. Its setup is permanent.');

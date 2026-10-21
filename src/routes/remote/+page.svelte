@@ -1,4 +1,5 @@
 <script lang="ts">
+  import {connectionInterrupted,saveErrorMessage} from '$lib/user-error';
   import { onMount, onDestroy, tick } from 'svelte';
   import { base } from '$app/paths';
   import { replaceState } from '$app/navigation';
@@ -55,7 +56,7 @@
   function fail(cause: unknown) {
     const code = (cause as { code?: string })?.code;
     const interrupted = code === 'auth/network-request-failed' || code === 'unavailable';
-    error = interrupted ? 'Connection interrupted. Your destination and any retained seat are saved. Retry to reconnect.' : cause instanceof Error ? cause.message : String(cause);
+    error = interrupted ? 'Connection interrupted. Your destination and any retained seat are saved. Retry to reconnect.' : saveErrorMessage(cause);
     status = interrupted ? 'offline' : 'synced'; busy = false;
   }
   function receive(next: RemoteRoom) { room = next; status = 'synced'; if (next.members[uid]) retainRemote(roomId); }
@@ -104,6 +105,7 @@
       }
     } catch (cause) {
       if ((cause as { code?: string }).code !== 'unavailable') pending = undefined;
+      if(intent.type==='game-move'){status=connectionInterrupted(cause)?'offline':'synced';throw new Error(saveErrorMessage(cause));}
       fail(cause);
     }
     finally { busy = false; }
@@ -138,9 +140,9 @@
   onDestroy(() => unsubscribe?.());
 </script>
 <svelte:head><title>Gather remotely — Beyond the Sun</title><meta name="description" content="Invite remote friends to a shared Beyond the Sun room and confirm its setup together." /></svelte:head>
-<main class="remote-screen" class:playing={!!game} class:editing-seat={editingName || !!selectedSeat} class:gathered={screen === 'room' && !!room} data-e2e-layout data-backend-status={status} data-room-state={room ? room.phase==='started'?'remote-started':'remote-gathering' : 'none'}>
+<main class="remote-screen" class:playing={!!game} class:editing-seat={editingName || !!selectedSeat} class:gathered={screen === 'room' && !!room} data-e2e-layout data-backend-status={busy?'saving':status} data-room-state={room ? room.phase==='started'?'remote-started':'remote-gathering' : 'none'}>
   <div class="gathering-table" aria-hidden="true"><div class="table-inlay"></div></div>
-  <img class="environment" src={`${base}/art/observatory.png`} alt=""/><div class="shade"></div>
+  <img class="environment" src={`${base}/art/observatory.webp`} alt=""/><div class="shade"></div>
   <header class="remote-header"><a href={`${base}/`}>← Observatory</a><span class="remote-status" aria-live="polite">{status === 'synced' ? 'Connected' : status === 'saving' ? 'Saving…' : status === 'offline' ? 'Connection interrupted' : 'Connecting…'}</span></header>
   {#if error}<div class="remote-error" role="alert"><p>{error}</p>{#if roomId || status === 'offline'}<button onclick={() => { if (pending) void act(pending.intent, true); else if (roomId) void openRoom(roomId); else location.reload(); }} disabled={busy}>Retry connection</button>{/if}<button onclick={() => { error = ''; screen = 'join'; room = undefined; unsubscribe?.(); }}>Check another code</button></div>{/if}
   {#if screen !== 'room' || !room}

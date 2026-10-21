@@ -1,9 +1,22 @@
+/** Warm current visible image decodes while the canonical acknowledgement is in
+ * flight. This is an optimization only: assertScreenFit still decodes every
+ * current visible image after acknowledgement, including late/replaced images. */
+export async function warmVisibleImages() {
+  const start=performance.now(),images=[...document.images].filter(image=>image.checkVisibility({visibilityProperty:true}));
+  await Promise.all(images.map(image=>image.decode()));
+  console.info('beyond-image-warm',JSON.stringify({elapsed:performance.now()-start,images:images.length}));
+}
+
 /** Runs inside the page: audit components, text lines and every clipping ancestor. */
-export async function assertScreenFit(options: {document?:boolean;touchTargets?:boolean;prepare?:boolean} = {}) {
+export async function assertScreenFit(options: {document?:boolean;touchTargets?:boolean;prepare?:boolean;status?:string} = {}) {
+  // As a polling predicate, defer the complete audit until the same exact
+  // post-warm acknowledgement. Non-polling callers retain their original audit.
+  if(options.status !== undefined && document.querySelector('[data-backend-status]')?.getAttribute('data-backend-status') !== options.status) return false;
+  const timing={started:performance.now(),fonts:0,images:0,animations:0};
   if(options.prepare){
-    await document.fonts.ready;
-    await Promise.all([...document.images].filter(i=>i.checkVisibility({visibilityProperty:true})).map(i=>i.decode()));
-    await Promise.all(document.getAnimations().filter(a=>a.playState!=='finished').map(a=>a.finished));
+    await document.fonts.ready;timing.fonts=performance.now();
+    await Promise.all([...document.images].filter(i=>i.checkVisibility({visibilityProperty:true})).map(i=>i.decode()));timing.images=performance.now();
+    await Promise.all(document.getAnimations().filter(a=>a.playState!=='finished').map(a=>a.finished));timing.animations=performance.now();
     const transitions=(window as Window&{__beyondTransitions?:Map<Element,string>}).__beyondTransitions;
     if(!transitions||transitions.size)throw new Error('A Svelte transition is still active');
   }
@@ -158,4 +171,9 @@ export async function assertScreenFit(options: {document?:boolean;touchTargets?:
   for(let i=0;i<controls.length;i++)for(let j=i+1;j<controls.length;j++){
     if(overlaps(polygons[i],polygons[j]))throw new Error(`Controls overlap: ${label(controls[i])} / ${label(controls[j])}`);
   }
+  // Trace-only timings identify browser work separately from protocol stalls.
+  // Every guard above and the caller's combined 2,000 ms deadline stay intact.
+  console.info('beyond-capture-audit',JSON.stringify({fonts:timing.fonts?timing.fonts-timing.started:0,images:timing.images?timing.images-timing.fonts:0,animations:timing.animations?timing.animations-timing.images:0,audit:performance.now()-(timing.animations||timing.started),elements:elements.length,controls:controls.length}));
+  return true;
+
 }

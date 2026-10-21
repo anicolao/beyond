@@ -23,7 +23,7 @@ export function applyRemote(before: RemoteRoom | undefined, e: RemoteEvent): Rem
   if(e.type==='game-move') {
     if(before.phase!=='started'||!before.start||!e.move||!e.position||before.members[e.actorUid]!==e.position||e.name||e.ready||e.faction||e.start||!sameSettings(e.settings,before.settings)||e.code!==before.code||e.configVersion!==before.configVersion)throw new Error('Only the active faction may make this move.');
     const initial=startingSetup(before.start,remotePositions.filter(p=>before.seats[p]).map(p=>({position:p,name:before.seats[p]!.name,faction:before.factions![p]!})),before.settings);
-    return {...before,play:applyTurn(initial,before.play,e.position,e.move),revision:e.revision,lastCommand:e.commandId};
+    return {...before,play:applyTurn(initial,before.play,e.position,e.move,before.start.seed),revision:e.revision,lastCommand:e.commandId};
   }
   if(e.move)throw new Error('Unsupported turn payload.');
   if (before.mode !== 'remote' || before.phase !== 'gathering' || e.code !== before.code) throw new Error('This room has already started or needs a newer client.');
