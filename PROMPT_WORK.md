@@ -372,3 +372,7 @@ Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | N
 Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate checked-JavaScript readback narrowing through rival research; preserve exact source checks, SDK contexts, assertions and unchanged deadlines.
 
 Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Propagate checked-JavaScript readback narrowing through production; preserve exact source checks, SDK contexts, assertions and unchanged deadlines.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Carry reviewer129 capture-status diagnostics with targeted guard/pixel proof; preserve timing failures and strict compiler gate, no reference updates or feature advancement.
+
+Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Inherit reviewer129 status-entry diagnostics and native pixel/guard proof from rival research; preserve production rules, references, timings and pending gates.
