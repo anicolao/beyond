@@ -672,3 +672,70 @@ Reviewer15:30: Independently inspected round109-final selected640 and matching38
 Reviewer-authored delegation:
 
 Reviewer16:01: Phase008 LOCAL ACCEPTED. Independently verified full exact92/92 PASS and audited92 story records, all generating=false,5853 frames, plus prior ordinary live trade/reload/finish and round109-final640/4K containment reviews. Local backend186/3057, guards48, tooling47, types/policy and diff check pass. Commit/push008 and open its PR based on feat/production-management; then explicitly begin009 Automate production on a NEW branch stacked on008 without waiting for CI or another human prompt. Preserve production visuals and source-reviewed automation rules, permanent automation distinct from outposts, exposed yields/cumulative scoring, deterministic placeholders/levels beyond7. Keep persistent local server for independent desktop/phone/shared review.008 final acceptance still requires Linux exact and matching-head hosted preview. Track and repair outstanding005-007 Linux/publication gates separately; failed native archives remain unaccepted. Never merge. Log as reviewer-authored and report PR/base/head and009 branch.
+
+## Prompt 113: Automation Continuation
+
+Reviewer-authored delegation:
+
+Reviewer16:21: Independently discovered/attached PR10, verified base feat/production-management and exact head90e819c; checks pending. Continue009 authorized work now; do not stop at publication report. Read round112 REVIEW: initial phone inspector readable, but only scoped initial observation, no009 acceptance. Refresh desktop/phone and rotated shared/corner views after rotation/Close change and exercise ordinary automation effect, exposed yields, reload and focus restoration. Continue source search for printed seven-position awards without guessing; source gap blocks009 acceptance, not independent implementation. Preserve exact earlier CI/publication repair work and report progress separately. No baselines before independent local review or phase010 release.
+
+## Prompt 114: Gate Repairs
+
+Reviewer-authored delegation:
+
+Reviewer16:41: Independently exercised own ordinary shared room at5204: Ada/Bora unique Basic setup, Advanced Genetics, retained Production, mat/automation Track1 and Next Food exposesB/projected1-to2, Escape restores opener. Live desktop inspector readable; round113 corner Next Food scoped screenshot also good.009 remains unaccepted pending verified scoring, remaining independent phone/shared4K/live and full checks. Continue useful authorized work rather than idle: prioritize earlier Linux missing/pixel/timing gates and exact-source publication503 diagnosis while scoring source search continues; preserve guards/security semantics and do not generate009 baselines or advance010. PR10 docs pass, publish503, others pending at latest check.
+
+## Prompt 115: Repair Continuation
+
+Reviewer-authored delegation:
+
+Reviewer17:01: Your last output stopped mid-sentence (The first encoding experiment is), pane idle. Resume existing authorized repair work from current state without duplicating experiments. Independently retrieved PR10 Linux log /tmp/beyond-review-pr10-linux.log:29 passed/63 failed, includes native pixel differences and2000ms step timeout; static/docs pass, publish503. Classify exact failures and preserve artifacts; no blind baseline acceptance. Independent009 reload retainedProduction; grew exactly1 fromA4toA3 and Pop2to3 then Achievement phase, unchangedOre3.009 source/review gates and010 hold remain.
+
+## Prompt 116: Static Timing
+
+Reviewer-authored delegation:
+
+Reviewer17:42: Fresh PR7 7b3d95f static job118780667503 failed: 155 pass/1 fail, deployed remote-4 remains writable with immutable attributed events and Begin timed out at5000.04ms. Full log preserved /tmp/beyond-review-pr7-static-118780667503.log. Diagnose primary timing cause separately from expected denial logs; preserve guards and required behavior, propagate any repair. Publish still503; Linux pending. Continue existing009 source audit; no010 release.
+
+## Prompt 117: Continue Repairs
+
+Reviewer-authored delegation:
+
+Reviewer18:02: Verified pushed stacked heads817e2df/e4e6880/978da61/a6bd8f5 and reviewed compatibility transport candidate preserving assertions/identity/deadlines. Continue authorized work: preserve and classify completing prior Linux evidence, verify new CI repair, continue equivalent canonical rules compiler diagnosis and authoritative009 scoring-source audit. No blind baseline adoption, no010 release. Keep persistent009 preview/identities. Do not stop at status while these independent repair/source tasks remain actionable.
+
+
+## Prompt 118: Automation Validation
+
+Reviewer-authored delegation:
+
+Reviewer18:53: 009 source/local visual-functional review accepted for proceeding to illustrated E2E and baseline generation. Independently audited publisher second-print PDF pp13/19 cumulative/permanent rules, Basic figure plus clear physical corroboration, and round117 phone/desktop/cardinal/corner scoring views. Own retained room f3b87dc5-8838-4b1d-b4fe-a192cbe902f9: Bora Robotics -> full2Ore, Ada legally vacated occupied research space via Gather, Bora Genetics -> permanent level2/endgame1VP; reload retained2Pop6Ore and level2/1VP. Live north-facing inspector contained/readable. Proceed009 meaningful ordinary remote desktop/phone/shared2/4 cardinal/corner illustrated stories and full exact checks with original guards; no010 until those pass and explicit release. Keep older CI/compiler repair gates separately open; no merges.
+
+## Prompt 119: Dependent Timing
+
+Reviewer-authored delegation:
+
+Reviewer18:58 new distinct CI finding: PR9 current978da61 static job118811504433 failed178pass/1fail; same deployed remote-4 compatibility test5007.95ms despite REST denial transport. Full log /tmp/beyond-review-pr9-static-978da61.log. PR7 pass is scoped to its source/head; diagnose dependent policy/runtime overhead without dropping assertions or raising limits. Prior009 E2E authorization remains queued; do not duplicate its content.
+
+## Prompt 120: Active Reuse
+
+Reviewer-authored delegation:
+
+Reviewer19:03: Reviewed discovery117-exact-active-reuse.patch and independently ran all13 deployer tests PASS; verified817e2df firestore SHA equals recorded active dcf91cdcf67128c4e8ea6e7e6e1d7b5b341ed9a66fee4095e2c4b4b769732102. Approve narrow exact-ACTIVE immutable-source reuse with complete filename/content equality and second release/source readback. This preserves canonical policy enforcement; different source still MUST compile, no arbitrary historical fallback. Commit/push/propagate reviewed patch and verify actual CI publication/revision/hosted behavior; update docs to describe identity-verified no-op deployment accurately. Prior009 E2E authorization and PR9 timeout feedback remain queued; consume in order. No010/no merges.
+
+## Prompt 121: Remote Three
+
+Reviewer-authored delegation:
+
+Reviewer21:19 new CI evidence: current PR7 c17bce4 static job118886965616 fails deployed remote-3 compatibility at5002.94ms/5000ms (not prior remote-4). Full sanitized timing log /tmp/beyond-review-pr7-static-c17bce4.log. Diagnose with existing compatibility work, retain protocol/assertions/deadline. No need to interrupt009 stories; older deploy approval remains queued.
+
+## Prompt 122: Containment Classification
+
+Reviewer-authored delegation:
+
+Reviewer21:49: Independent final automation118-final-exact.log classification is 50 pass / 52 fail: 50 snapshot mismatch errors PLUS two real Component clipped by div.tray-scroll errors on mat-envelope (Ada and Bora). Do not classify all failures as expected references. Diagnose/fix both containment failures with guards unchanged before scoped refresh/full exact acceptance. PR8 latest also independently confirmed70/72, readiness1997ms and capture2066.83ms; already under your diagnosis, no separate action request.
+
+## Prompt 123: Fleet Release
+
+Reviewer-authored delegation:
+
+Reviewer22:30: FULL LOCAL009 ACCEPTED. Independently verified102/102 exact2 pass23.9m and executed final audit:102 comparison-mode records/6825frames,10 automation variants/972frames; reviewed source, live flow, composed phone/cardinal/corner/4K and compact repair,55 scoped prior-reference deltas, required local checks. Commit/push009 and open PR stacked on feat/trade-decommission; then BEGIN010 Build and upgrade a fleet on NEW branch stacked on feat/automation while009/older Linux and matching-hosted gates finish. Never merge. Preserve live5204 review state; keep older failures separate and propagate fixes. This releases010 implementation, not final009 acceptance; all required Linux and exact-head hosted gates still required.

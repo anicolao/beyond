@@ -62,6 +62,8 @@ Implementation starts with the pinned environment and static application shell, 
 
 The [illustrated walkthroughs](tests/e2e/001-foundation/README.md) demonstrate arrival, physical-seat joining and configuration, and recovery between two built deployment paths. Tabletop stories use desktop and 4K shared displays; arrival also covers phone. The [remote gathering stories](tests/e2e/002-remote-rooms/README.md) cover separate identities, missing/full room recovery, readiness invalidation, keyboard dialogs and shared canonical persistence. [Basic setup](tests/e2e/003-basic-setup/README.md), [first research](tests/e2e/004-first-research/README.md), and [technology discovery](tests/e2e/005-technology-discovery/README.md) provide the ordinary gameplay walkthroughs, including remote phone/desktop and seat-facing shared 4K.
 
+The [permanent automation walkthroughs](tests/e2e/009-automation/README.md) show real Food/Ore disc removal, exposed yields, retained production and cumulative scoring inspection across remote phone/desktop and two/four-player cardinal/corner shared tables. Source-reviewed placeholders and levels beyond seven have deterministic backend coverage without injected browser positions.
+
 ## Card collection
 
 Open `/gallery/` from the Card gallery link on arrival. Browse the complete second-printing base inventory: 100 designs and 100 physical copies (46 Technology, 20 Event, 24 System, 10 Achievement). Filter/search all cards, page through the collection, compare clean faces with labelled example markers, and change player count to review restricted claim slots. Inspection keeps navigation reachable while rules/source details scroll internally; Escape restores focus. This reference collection uses the reusable production card renderer. The collection describes rules without dispatching gameplay effects; markers never enter game state. All100 designs have distinct original illustrations with recorded provenance. See the [inventory audit and source gaps](docs/content/CARD_INVENTORY.md).
@@ -121,3 +123,5 @@ The shared production card renderer and complete source inventory are reviewed i
 ## First research turn
 
 After ordinary Basic setup, play the four public Level I technologies with permanent Population payment, once-only immediate bonuses and explicit ship selection where required. Choose Growth, Ore or Trade, execute the three printed exchanges, and hand off automatically. Pending production/trading and public research survive reload. Remote identities and the single-controller shared table use the same canonical history. Discovery, movement and colonization remain later milestones. See the [illustrated first-round stories](tests/e2e/004-first-research/README.md).
+
+Milestone009 local evidence: [permanent automation verification](docs/e2e/AUTOMATION_VERIFICATION_009.md) records102 exact macOS journeys and the scoped earlier-mat reference audit. Linux/hosted and final independent acceptance remain separate gates.
