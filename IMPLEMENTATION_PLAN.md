@@ -482,3 +482,6 @@ Reviewer122 first-exact classification confirmed50 snapshot errors plus2 real Ad
 
 
 Reviewer123 FULL LOCAL009 ACCEPTANCE: independent102/102 exact23.9m,102 comparison records/6825frames,10 automation variants/972frames,55 scoped references and required checks accepted. Publish009 stacked onfeat/trade-decommission3af3263; begin010 on NEWfeat/fleet-management stacked oncommittedfeat/automation. Preserve5204 services/identities, older failures and per-head gates; no final009 acceptance or merge.010 starts source-reviewed fleet build/upgrade composition and ordinary local flows, without011 movement redesign or baselines before independent review.
+
+
+Separate123 startup repair: PR11 same-head static succeeds once but another run loses rules/remote beforeAll hooks at5001/5000ms; preserve both outcomes. Node startup exact-source proof does not populate Bun’s in-process compiler cache. Read exact installed emulator source for each fresh SDK environment, avoid only byte-identical redundant upload, and retain actual compilation for differing/missing/error source. Fail closed on transport/readback errors. Local phase005157/2884 and8 tooling tests pass; CI proof remains pending. Policies, identities, assertions and all original deadlines stay unchanged. Evidence: docs/e2e/EXACT_EMULATOR_READBACK_123.json.

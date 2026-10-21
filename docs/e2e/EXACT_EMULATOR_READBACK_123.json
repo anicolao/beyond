@@ -1,0 +1,35 @@
+{
+  "failedHead": "07cbf3df956221c00c25a85ab86a35a713aeae8d",
+  "failedJob": "118955392937",
+  "failures": [
+    {
+      "suite": "rules.test.ts",
+      "hookMs": 5001.02
+    },
+    {
+      "suite": "remote.test.ts",
+      "hookMs": 5000.02
+    }
+  ],
+  "otherRun": {
+    "sameHead": "07cbf3d",
+    "staticJob": "118946268384",
+    "result": "SUCCESS"
+  },
+  "diagnosis": "The startup Node process proves installed exact source, but a fresh Bun process has an empty compiler digest cache. Its first SDK initializer uploads identical rules again within the unchanged 5s hook. A timed-out attempt leaves the cache empty for the second suite. Logs establish hook failures, not compiler-duration attribution; CI proof of the repair remains pending.",
+  "change": "Read back a single exact installed local source before every fresh SDK context; identical content skips redundant upload, different/missing/error source still compiles requested bytes; transport/server/malformed responses fail closed. No retries, altered assertions, policies or deadlines.",
+  "local": {
+    "tooling": {
+      "tests": 8,
+      "pass": 8
+    },
+    "phase005Backend": {
+      "tests": 157,
+      "assertions": 2884,
+      "pass": 157,
+      "seconds": 52.59
+    }
+  },
+  "originalLogSHA256": "7b504e0946a779e59e474d8ee10ad60b22d9dec13c4e2b280f11a7d21bc57055",
+  "localLogSHA256": "a0f476ca587e484f129d13e19b127acb43b57f292e8b94910f42c7594c1281eb"
+}
