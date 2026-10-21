@@ -1,0 +1,96 @@
+{
+  "prompt": 145,
+  "pr": 12,
+  "head": "9018b9f2476a942d16089160a8caf43c69ac0409",
+  "final010Acceptance": "Withheld: exact source publication and matching hosted verification remain required",
+  "reviewerEvidence": {
+    "publisherRun": 39562966118,
+    "publisherJob": 119098339244,
+    "bytes": 118531,
+    "sourceSha256": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67",
+    "creationPost": 503,
+    "diagnosticCurrent": 503,
+    "diagnosticFrozenPR5": 200,
+    "fallbackDeployed": false
+  },
+  "newDiagnostic": {
+    "callGraph": "237 uniquely named functions; static repeated-call text expansion estimates saved. Estimates are not compiled sizes or proof of a service limit.",
+    "candidate": "Only factor identical automatic Event/default fallback leaves; no conditions/leaf predicates removed, no source adopted or deployed.",
+    "results": {
+      "rows": [
+        {
+          "name": "current",
+          "sha256": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67",
+          "bytes": 118531,
+          "ms": 5878.931333,
+          "status": 503,
+          "deployed": false
+        },
+        {
+          "name": "factored-identical-fallback",
+          "sha256": "5973aeeea28dd08131ba42d8986d01333c54aed9cd6e859213aa3339b45edf4a",
+          "bytes": 118474,
+          "ms": 5130.121,
+          "status": 503,
+          "deployed": false
+        }
+      ],
+      "policyChanged": false,
+      "liveEmulatorChanged": false
+    },
+    "structuredError": {
+      "rows": [
+        {
+          "name": "current",
+          "sha256": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67",
+          "bytes": 118531,
+          "ms": 5339.558833,
+          "status": 503,
+          "serviceError": {
+            "code": 503,
+            "status": "UNAVAILABLE",
+            "message": "The service is currently unavailable.",
+            "detailTypes": []
+          },
+          "deployed": false
+        }
+      ],
+      "policyChanged": false,
+      "liveEmulatorChanged": false
+    },
+    "conclusion": "Current and equivalent factoring candidate both503. API supplies generic UNAVAILABLE with no detailed reason. Root cause not established; no claimed compiler repair."
+  },
+  "artifacts": {
+    "compiler145-callgraph.json": {
+      "sha256": "b87376dd22976faacf78dac365fb9fff9daada05fc1e04eaf31aa002b62ad140",
+      "path": "/Users/anicolao/projects/games/beyond/tmp/compiler145-callgraph.json"
+    },
+    "compiler145-fallback.json": {
+      "sha256": "9c84a8555b2fbdcd3793d9746d446e00af3168228570315b6814d41034a5d206",
+      "path": "/Users/anicolao/projects/games/beyond/tmp/compiler145-fallback.json"
+    },
+    "compiler145-fallback-result.json": {
+      "sha256": "e490800a3472ec553161a1bfa9837bc31601410c0cbf564e38d218e2b3773efc",
+      "path": "/Users/anicolao/projects/games/beyond/tmp/compiler145-fallback-result.json"
+    },
+    "compiler145-service-error.json": {
+      "sha256": "e4923405fa1c3b5c6b0660a57188b1abbfdb03173731b437dfedfbdae4e7a6b2",
+      "path": "/Users/anicolao/projects/games/beyond/tmp/compiler145-service-error.json"
+    }
+  },
+  "checks": {
+    "static-and-rules": "PASS",
+    "documentation": "PASS",
+    "browser-comparison": "Capture guards passed; actual test:e2e step started2026-10-21T08:11:50Z and remains running at checkpoint",
+    "publication": "FAIL; preview unavailable",
+    "nativeCandidateCohort": "No accepted new cohort"
+  },
+  "queuedPlannerFeedback": {
+    "prompt": 144,
+    "state": "Corrections implemented locally, not independently accepted. No011 acceptance requested.",
+    "evidence": "JUMP_LOCAL_REVIEW_144.json and tmp/local-jump-review/REVIEW.md",
+    "postCommit": "Real rival-state mutation repaired; same own saved controller reaches Production without rules/auth/data resets. Earlier generic Continue flow claims superseded.",
+    "visual": "Dedicated endpoint view with arrows outside scroll panel, visible scroll cue, high-contrast map/numbered cube materials; keyboard and short/corner/phone targeted evidence retained."
+  },
+  "gates": "No baseline churn, pushes, merges,012 advancement or fallback rules. Review services/identities preserved."
+}

@@ -1,0 +1,43 @@
+{
+  "prompt": 144,
+  "status": "Local corrections ready for independent review; no formal baselines or phase advancement",
+  "preview": "http://127.0.0.1:5206/",
+  "postCommit": {
+    "originalObserved": "Action effects/discovery cursor7, control-check a-1, ships/payment/power already saved; control continuation rejected. Production had not been reached.",
+    "cause": "resolveControlCheck called mutating player() for untouched opponents, materializing their economies and violating strict continuation framing.",
+    "repair": "Read state.players[position] ?? initial actor for fleet power; never persist another economy from this read. Rules bytes unchanged.",
+    "installedRulesSha": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67",
+    "retainedReplay": "Own controller and original room de44f313-a325-40ad-b96b-c01a103fa821 continued normally to Production cursor12/queue empty/outpost applied, without identity/rules/service changes.",
+    "earlierClaims": "Prior round143 generic Continue waits did not establish successful production. They are superseded by explicit pending-choice/production/no-alert/reload assertions; old evidence retained.",
+    "regressions": "2/3/4-player ordinary legal setup/build/split-jump/control commands accepted by unchanged rules; exact initial opponent-materialization forgery denied. Pure tests also assert no rival mutation."
+  },
+  "visualChanges": [
+    "Dedicated map/routes and endpoint-consequence views; one endpoint at a time.",
+    "Endpoint arrows outside bounded scroll content; persistent visible scroll cue and payment controls.",
+    "Ivory/brass high-contrast location plaques, solid printed routes versus bright dashed plans, sculpted numbered teal ship cubes. Existing original System art and real production CardFace inspection retained.",
+    "Phone power view omits irrelevant ship selector to give complete consequence more room. Compact rotated views retain their existing separate navigation."
+  ],
+  "checks": {
+    "projectionAndOpeningTurn": "9 pass/35 assertions",
+    "actualRules": "7 pass/21 assertions, including 3 new ordinary shared security scenarios; original 5000ms limits retained",
+    "localFlows": "Fresh shared2, remote separate host/guest393, shared4corner720/640/native3840: explicit Produce Ore/no alert/reload passed.",
+    "keyboard": "Full System inspection/Escape precise opener, plan retained, 15 Tabs contained, outer Escape and reload passed.",
+    "types": "0 errors/0 warnings",
+    "policy": "PASS",
+    "guards": "Original predicates/deadlines retained; first short-corner clipping and sticky-navigation overlap failures preserved and corrected."
+  },
+  "evidence": {
+    "desktop": "round144-final3/cardinal/",
+    "phone": "round144-remote-final2/",
+    "corner": "round144-four-final/corner/",
+    "keyboard": "round144-keyboard/",
+    "originalFailure": "round144/cardinal/after-commit.txt",
+    "installedSource": "round144/installed-rules.json"
+  },
+  "publication": {
+    "phase011": "Uncommitted/local; no PR or baseline update",
+    "phase010": "PR12 head9018b9f static/docs pass, Linux pending, publisher exact-source503 remains open. Source-only control-check repair should be propagated separately to010 after review; never mix011 planner UI into010.",
+    "olderPhases": "PR8\u201311 mixed exact/missing/timing failures and independent hosted gates remain separately open; no failed native cohort accepted.",
+    "merges": "None"
+  }
+}

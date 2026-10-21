@@ -470,3 +470,27 @@ for(const count of [2,3,4] as const)test(`fleet010: first-turn ${count}-player B
  await f.commit(e);expect(f.current.play!.players.p1.ore).toBe(count===2?2:3);await f.automatic();expect(f.current.play!.players.p1.population).toBe(1);expect(f.current.play!.players.p1.ships).toHaveLength(2);
  await assertFails(f.write(e,after));await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'jump',legs:[]});await f.automatic();expect(f.current.play!.phase).toBe('production');expect(f.current.play!.players.p1.population).toBe(1);
 });
+
+// Rare entry boundary reached through legal setup/turns and a real Rift reveal.
+// The fixed initial entropy is the same fixture used by the ordinary local UI replay.
+test('jump011: a publicly revealed Luyten Rift blocks unearned entry in model and atomic policy',async()=>{
+ const f=await fixture('55555555-5555-4555-8555-0000000004ca');
+ await f.command({kind:'research-I',space:0,card:'advanced-robotics'});await f.command({kind:'ore'});await f.command({kind:'end-turn'});
+ await f.command({kind:'research-I',space:1,card:'advanced-robotics'},'p2');await f.command({kind:'ore'},'p2');await f.command({kind:'end-turn'},'p2');
+ await f.command({kind:'prepare-discovery'});await f.preparePowers();await f.command({kind:'research-II',space:0,slot:'II-3'});await f.automatic();
+ await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'B'});await f.automatic();
+ expect(f.current.play!.discovery!.queue[0]).toMatchObject({kind:'event',stage:'attach',value:'luytens-star'});
+ await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'a-1'});await f.automatic();
+ await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'hypercomputing'});await f.automatic();
+ await f.command({kind:'ore'});await f.command({kind:'end-turn'});await f.command({kind:'gather'},'p2');await f.command({kind:'ore'},'p2');await f.command({kind:'end-turn'},'p2');
+ await f.command({kind:'build-jump',space:0,build:false,destination:'sol'});await f.automatic();
+ const cursor=f.current.play!.discovery!.cursor,ship=f.current.play!.players.p1.ships[0],legs=[{index:0,ship:ship.id,path:['sol','a-1','rift-II-3']}];
+ const denied=f.move({kind:'discovery-choice',at:cursor,option:'jump',legs});
+ expect(()=>applyRemote(f.current,denied)).toThrow('Luyten’s Star requires two Level III technologies.');
+ const forged=applyRemote(f.current,{...denied,move:{kind:'discovery-choice',at:cursor,option:'jump',legs:[{index:0,ship:ship.id,path:['sol','a-1']}]}}),pending=forged.play!.discovery!.queue[0];
+ expect(pending.kind).toBe('jump-apply');if(pending.kind!=='jump-apply')throw Error('Expected exact saved jump application.');pending.legs=legs;
+ await assertFails(f.write(denied,forged));
+ const db=env.authenticatedContext(f.host).firestore();expect((await getDoc(doc(db,`games/${f.id}`))).data()).toEqual(f.current);expect((await getDoc(doc(db,`games/${f.id}/events/${denied.commandId}`))).exists()).toBe(false);
+ await f.command({kind:'discovery-choice',at:cursor,option:'jump',legs:[{index:0,ship:ship.id,path:['sol','a-1']}]});await f.automatic();
+ expect(f.current.play!.phase).toBe('production');expect(f.current.play!.players.p1.ships[0].location).toBe('a-1');expect(f.current.play!.discovery!.outposts['rift-II-3']).toBeUndefined();
+});

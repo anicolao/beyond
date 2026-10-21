@@ -2,7 +2,9 @@
  import {continuationKind} from './continuation-kind';
  import {tick} from 'svelte';
  import CardFace from '$lib/cards/CardFace.svelte';
+ import OriginalCardArt from '$lib/cards/OriginalCardArt.svelte';
  import FleetEffect from './FleetEffect.svelte';
+ import JumpPlan from './JumpPlan.svelte';
  import {base} from '$app/paths';
  import {gainBonusChoices,canAdvanceDiscovery} from './discovery-resolution';
  import {cardById} from './cards';
@@ -20,7 +22,7 @@
  const currentEvent=$derived(step.kind==='event'?step.event:rootResume?.event??(rootResume&&!rootResume.returnTo&&discovery.revealBoundary?.turn===game.turn?discovery.records.at(-1)?.event:undefined));
  let spread=$state<HTMLDivElement>(undefined!);
  let previewIndex=$state(0);
- let selected=$state(''),shipIds=$state<string[]>([]),track=$state<'food'|'ore'>('food'),destination=$state('sol'),usePopulation=$state(false),jumpShip=$state(''),paths=$state<{ship:string;path:string[]}[]>([]);
+ let selected=$state(''),shipIds=$state<string[]>([]),track=$state<'food'|'ore'>('food'),destination=$state('sol'),usePopulation=$state(false);
  const map=$derived(discoveryMap(game));
  const shipyards=$derived(['sol',...Object.entries(discovery.outposts).filter(([id,p])=>id.startsWith('shipyard-')&&p.owner===actor.position).map(([id])=>id)]);
  const controlTransfer=$derived(continuationKind(game)==='control');
@@ -37,14 +39,9 @@
   if(delta)spread.scrollBy({top:delta,behavior:'instant'});
  }
 
- const selectedShip=$derived(actor.ships.find(s=>s.id===jumpShip));
- const path=$derived(paths.find(p=>p.ship===jumpShip)?.path??(selectedShip?[selectedShip.location]:[]));
- const movedShip=$derived(paths.some(leg=>leg.path.at(-1)!==leg.path[0]));
- const spent=$derived(paths.reduce((n,p)=>n+p.path.length-1,0));
- const jumpAmount=$derived(bonus?.kind==='jump'?bonus.amount:0);
  function respond(option:string,extra:Record<string,unknown>={}){send({kind:'discovery-choice',at:discovery.cursor,option,...extra} as TurnMove);}
- function addJump(to:string){if(!selectedShip)return;const next=[...path,to];paths=[...paths.filter(p=>p.ship!==jumpShip),{ship:jumpShip,path:next}];}
- $effect(()=>{const identity=JSON.stringify({step,cursor:discovery.cursor});if(identity){selected='';previewIndex=0;shipIds=[];destination='sol';usePopulation=false;paths=[];jumpShip='';void tick().then(()=>{if(!spread)return;spread.scrollTop=0;const top=[...document.querySelectorAll<HTMLDialogElement>('dialog[open]')].at(-1);if(!automatic&&top?.contains(spread)&&(!top.contains(document.activeElement)||document.activeElement instanceof HTMLButtonElement&&document.activeElement.disabled))spread.focus({preventScroll:true});});}});
+
+ $effect(()=>{const identity=JSON.stringify({step,cursor:discovery.cursor});if(identity){selected='';previewIndex=0;shipIds=[];destination='sol';usePopulation=false;void tick().then(()=>{if(!spread)return;spread.scrollTop=0;const top=[...document.querySelectorAll<HTMLDialogElement>('dialog[open]')].at(-1);if(!automatic&&top?.contains(spread)&&(!top.contains(document.activeElement)||document.activeElement instanceof HTMLButtonElement&&document.activeElement.disabled))spread.focus({preventScroll:true});});}});
  const systemChoice=$derived.by(()=>{
   if(bonus?.kind!=='system-bonus')return undefined;
   const supply=actor.supply.some(n=>n>0),cube=supply||actor.population>0;
@@ -80,11 +77,11 @@
   return [];
  });
 </script>
-<section class="discovery-choices" class:compact class:fleet-choice={bonus?.kind==='upgrade'||bonus?.kind==='ship'} class:saveError class:jumpDecision={bonus?.kind==='jump'} class:candidate-spread={step.kind==='candidate'} class:solo={!currentEvent&&!source} class:known-research={knownResearchBonus} class:action-continuation={!!actionEffects} aria-label={controlTransfer?'Pending outpost control':'Pending public discovery'}>
+<section class="discovery-choices" class:compact class:fleet-choice={bonus?.kind==='upgrade'||bonus?.kind==='ship'} class:saveError class:jumpDecision={bonus?.kind==='jump'} class:source-jump={bonus?.kind==='jump'&&!!source} class:candidate-spread={step.kind==='candidate'} class:solo={!currentEvent&&!source} class:known-research={knownResearchBonus} class:action-continuation={!!actionEffects} aria-label={controlTransfer?'Pending outpost control':'Pending public discovery'}>
  <div class="discovery-note">{#if step.kind!=='candidate'}<h3>{heading}</h3>{/if}<p>{actor.name} · {allowed?'your public choice':'waiting for this faction'}</p><small>{controlTransfer?'Decommission saved · settle control, then return to trading.':actionEffects?'Action saved · resolve its printed effects in order.':knownResearchBonus?'Research saved · resolve its immediate bonus once.':compact?'Paid · revealed information cannot be undone.':'Payment saved · Revealed information cannot be undone.'}</small></div>
  <!-- svelte-ignore a11y_no_noninteractive_tabindex (Named bounded public spread supports keyboard scrolling.) -->
  <div class="discovery-composition" bind:this={spread} role="region" aria-label="Public discovery faces and choices" tabindex="0">
-  {#if currentEvent||source}{@const faceId=(currentEvent??source)!}<aside class="event-object"><button class="face event-full" aria-label={`Read ${currentEvent?'Event':cardById(faceId).family} ${cardById(faceId).title}`} onclick={()=>inspect(faceId)}><CardFace card={cardById(faceId)}/></button><button class="event-thumbnail" onclick={()=>inspect(faceId)} aria-label={`Inspect full ${currentEvent?'Event':cardById(faceId).family} ${cardById(faceId).title}`}><img src={`${base}/art/cards/${cardById(faceId).art}.png`} alt=""/></button><span>{#if !compact}<strong>{cardById(faceId).title}</strong><br/>{/if}{currentEvent?(discovery.events.find(e=>e.id===currentEvent)?.resolved?'Event resolved':'Event resolves before discovery'):cardById(faceId).family==='System'?'System bonus':actionEffects?'Printed Action':'Immediate bonus'}<br/><small>Inspect {currentEvent?'Event':'card'} for full rules ↗</small></span>{#if currentEvent==='experimental-prototypes'&&discovery.events.find(e=>e.id===currentEvent)?.rolls?.length}<ul class="saved-rolls" aria-label="Saved resource cube results">{#each discovery.events.find(e=>e.id===currentEvent)?.rolls??[] as roll}<li><span class="roll-player">{game.players.find(p=>p.position===roll.position)?.name}</span><strong class="roll-outcome">{['Supply','Population','Population','Level 2 ship','Level 2 ship','Level 2 ship'][roll.face]}</strong></li>{/each}</ul>{/if}{#if step.kind==='event'&&step.event==='dimensional-rift'&&step.stage==='attach'&&step.value}<button onclick={()=>inspect(step.value!)}>Inspect revealed {cardById(step.value).title}</button>{/if}</aside>{/if}
+  {#if currentEvent||source}{@const faceId=(currentEvent??source)!}<aside class="event-object"><button class="face event-full" aria-label={`Read ${currentEvent?'Event':cardById(faceId).family} ${cardById(faceId).title}`} onclick={()=>inspect(faceId)}><CardFace card={cardById(faceId)}/></button><button class="event-thumbnail" onclick={()=>inspect(faceId)} aria-label={`Inspect full ${currentEvent?'Event':cardById(faceId).family} ${cardById(faceId).title}`}>{#if cardById(faceId).art==='astronomy'}<OriginalCardArt id={faceId}/>{:else}<img src={`${base}/art/cards/${cardById(faceId).art}.png`} alt=""/>{/if}</button><span>{#if !compact}<strong>{cardById(faceId).title}</strong><br/>{/if}{currentEvent?(discovery.events.find(e=>e.id===currentEvent)?.resolved?'Event resolved':'Event resolves before discovery'):cardById(faceId).family==='System'?'System bonus':actionEffects?'Printed Action':'Immediate bonus'}<br/><small>Inspect {currentEvent?'Event':'card'} for full rules ↗</small></span>{#if currentEvent==='experimental-prototypes'&&discovery.events.find(e=>e.id===currentEvent)?.rolls?.length}<ul class="saved-rolls" aria-label="Saved resource cube results">{#each discovery.events.find(e=>e.id===currentEvent)?.rolls??[] as roll}<li><span class="roll-player">{game.players.find(p=>p.position===roll.position)?.name}</span><strong class="roll-outcome">{['Supply','Population','Population','Level 2 ship','Level 2 ship','Level 2 ship'][roll.face]}</strong></li>{/each}</ul>{/if}{#if step.kind==='event'&&step.event==='dimensional-rift'&&step.stage==='attach'&&step.value}<button onclick={()=>inspect(step.value!)}>Inspect revealed {cardById(step.value).title}</button>{/if}</aside>{/if}
   <div class="response-object">
    {#if automatic}<p role="status">Resolving the saved effect…</p>{:else if step.kind==='candidate'}
     <p class="public-type">{step.type} ·2 public candidates<small class="portrait-scroll-cue">Scroll for the next candidate ↓</small></p>
@@ -104,7 +101,7 @@
     {#if source}{#if compact&&(bonus.kind==='upgrade'||bonus.kind==='ship')}<button class="fleet-source" aria-label={`Inspect bonus source ${cardById(source).title}`} onclick={()=>inspect(source)}>{cardById(source).title} <span aria-hidden="true">↗</span></button>{:else}<h4>{cardById(source).title}</h4><p class="source-rules">{(actionEffects&&source===game.players.find(p=>p.position===game.activePosition)?.actionLocation?.split(':')[1]?cardById(source).sections.filter(s=>s.label==='Action')[Number(actor.actionLocation?.split(':')[2]??0)]:cardById(source).sections.find(s=>s.label===(bonus.kind==='system-bonus'?'Gain control':'Immediate')))?.text}</p>{/if}{/if}
     {#if bonus.kind==='upgrade'||bonus.kind==='ship'}<FleetEffect {compact} {game} position={actor.position} effect={bonus} {allowed} {busy} {respond}/>
     {:else if bonus.kind==='jump'}
-     <div class="jump-planner"><p>Allocate up to{bonus.amount} jumps. Control and bonuses resolve after the complete simultaneous move.</p><label>Your ship<select bind:value={jumpShip}><option value="">Choose a ship</option>{#each actor.ships as ship}<option value={ship.id}>{ship.id} · level{ship.level} · {map.locations.find(l=>l.id===ship.location)?.title??ship.location}</option>{/each}</select></label>{#if selectedShip}<p>{path.map(id=>map.locations.find(l=>l.id===id)?.title??id).join(' → ')}</p><div class="response-list">{#each map.edges.filter(([a,b])=>a===path.at(-1)||b===path.at(-1)).map(([a,b])=>a===path.at(-1)?b:a) as id}<button disabled={spent>=jumpAmount} onclick={()=>addJump(id)}>Jump to {map.locations.find(l=>l.id===id)?.title??id}</button>{/each}</div>{/if}<div class="jump-actions"><p>{spent} of{bonus.amount} points planned</p><button onclick={()=>{paths=[];jumpShip='';}}>Clear unpaid jump plan</button><button class="primary" disabled={!allowed||busy||!!bonus.required&&!movedShip} onclick={()=>respond('jump',{legs:paths.map(leg=>({...leg,index:actor.ships.findIndex(ship=>ship.id===leg.ship)}))})}>{bonus.required&&!movedShip?'Plan a real jump':'Commit '+(spent?spent+' jumps':'no movement')}</button></div></div>
+     <JumpPlan {game} position={actor.position} amount={bonus.amount} required={bonus.required} {allowed} {busy} {compact} {respond} source={source??currentEvent} {inspect}/>
     {:else if bonus.kind==='automate'}<div class="response-list">{#each ['food','ore'] as id}<button disabled={!allowed||busy} onclick={()=>respond(id)}>Automate1 {id}</button>{/each}</div>
     {:else if bonus.kind==='population'}<button disabled={!allowed||busy} onclick={()=>respond('pass')}>Pass · Supply exhausted</button>
     {:else if bonus.kind==='research-I'}<div class="response-list">{#each game.technologies.filter(t=>cardById(t.card).technology?.level==='I'&&!actor.research.includes(t.card)) as t}<button disabled={!allowed||busy} onclick={()=>respond(t.card)}>Research {cardById(t.card).title} · {bonus.cost} Ore + permanent cube</button>{/each}</div>
@@ -166,19 +163,10 @@
 .compact.saveError .event-object>span,.compact.saveError .event-object small{font-size:9px;line-height:1.2}
 .compact.saveError .candidates article{grid-template-columns:86px minmax(0,1fr)}
 
-.jump-actions{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}.jump-actions p{margin-right:auto}
 .compact.jumpDecision .discovery-composition{grid-template-columns:1fr}
 .compact.jumpDecision .event-object{display:none}
 .compact.jumpDecision .response-object>h4{font-size:18px;margin:3px 0}
 .compact.jumpDecision .source-rules{padding:6px;margin:4px 0;font-size:11px;line-height:1.2}
-.compact .jump-planner{display:grid;gap:4px}
-.compact .jump-planner p{font-size:11px;line-height:1.2;margin:2px 0}
-.compact .jump-planner label{display:grid;grid-template-columns:64px minmax(0,1fr);align-items:center;gap:6px;margin:2px 0;font-size:11px}
-.compact .jump-planner select{margin:0;font-size:11px;padding:6px}
-.compact .jump-planner .response-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;margin:2px 0}
-.compact .jump-planner button{font-size:10px;min-height:44px;padding:4px}
-.compact .jump-actions{display:grid;grid-template-columns:42px minmax(0,1fr) minmax(0,1fr);gap:5px;margin:2px 0}
-.compact .jump-actions .primary{max-width:none}
 /* Persisted cube outcomes are compact public records, never a narrow list
    that displaces the next faction's decision or the candidate selection. */
 .saved-rolls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;list-style:none;margin:5px 0 0;padding:0;grid-column:1 / -1;min-width:0;width:100%}
@@ -212,4 +200,13 @@
 @media(min-width:2200px){.fleet-choice:not(.compact) .event-object{display:flex;flex-direction:column;align-self:start}.fleet-choice:not(.compact) .event-object>.event-full{display:block}.fleet-choice:not(.compact) .event-thumbnail{display:none}.fleet-choice:not(.compact) .event-object>span{flex:none}.fleet-choice:not(.compact) .saved-rolls{width:100%;flex:none}}
 
 .fleet-source{flex:none;display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:44px;text-align:left;font:600 22px 'Cormorant Garamond',serif;padding:7px 10px;color:#f3e5bf;border-color:#ad9762;background:linear-gradient(125deg,#2a4b49,#122a31)}
+
+
+.jumpDecision .discovery-composition{grid-template-columns:minmax(0,1fr);overflow:hidden}.jumpDecision .event-object{display:none}.jumpDecision .discovery-note{display:none}.jumpDecision .response-object{display:flex;flex-direction:column;min-height:0;height:100%;gap:5px}.jumpDecision .response-object>h4{font-size:21px;margin:0;line-height:1.1}.jumpDecision .source-rules{font-size:12px;line-height:1.3;margin:0;padding:6px}.jumpDecision .response-object>:global(.jump-plan){flex:1;min-height:0}
+
+.source-jump:not(.compact) .response-object{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto minmax(0,1fr);align-items:center;gap:6px 12px}
+.source-jump:not(.compact) .response-object>h4{grid-column:1;grid-row:1;font-size:18px;max-width:180px}
+.source-jump:not(.compact) .source-rules{grid-column:2;grid-row:1}
+.source-jump:not(.compact) .response-object>:global(.jump-plan){grid-column:1 / -1;grid-row:2;height:100%;align-self:stretch}
+.source-jump.compact .response-object>h4,.source-jump.compact .response-object>.source-rules{display:none}
 </style>

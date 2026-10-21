@@ -39,10 +39,11 @@ export async function productionJourney({page,context,browser,info,photo,remote,
  async function jump(i:number,title:string,targets:string[],id:string){
   const p=pFor(i);await action(i,title,id);await click(p,'Use '+title+' Action');
   await shot(id+'-paid','Commit the actual printed Action cost before planning movement',i,async()=>expect(p.getByRole('combobox',{name:'Your ship',exact:true})).toBeVisible());
-  const picker=p.getByRole('combobox',{name:'Your ship',exact:true});await picker.selectOption({index:1});
+  const picker=p.getByRole('combobox',{name:'Your ship',exact:true});await picker.selectOption({index:0});
   await shot(id+'-ship','Choose a real owned ship for the legal path',i,async()=>expect(picker).not.toHaveValue(''));
-  for(let j=0;j<targets.length;j++){await click(p,'Jump to '+targets[j]);await shot(id+'-leg-'+j,'Plan the next adjacent system without moving or paying again',i,async()=>expect(p.locator('.jump-planner')).toContainText(`${j+1} of${title==='Terraforming'?4:3} points planned`));}
-  await click(p,`Commit ${targets.length} jumps`);await shot(id+'-committed','Resolve the complete real path atomically',i,async()=>expect(targets.at(-1)==='Northern shipyard'?p.getByRole('button',{name:'Place food disc',exact:true}):p.getByRole('heading',{name:'Choose your production',exact:true})).toBeVisible());
+  const routeView=p.getByRole('button',{name:'Route editor',exact:true});if(await routeView.count())await routeView.click();await shot(id+'-route-editor','Open the actual connected-destination view',i,async()=>expect(p.getByRole('group',{name:'Connected destinations',exact:true})).toBeVisible());
+  for(let j=0;j<targets.length;j++){await click(p,'Jump to '+targets[j]);await shot(id+'-leg-'+j,'Plan the next adjacent system without moving or paying again',i,async()=>expect(p.locator('.jump-plan .budget')).toContainText(`Planned ${j+1}`));}
+  await click(p,'Commit jumps');await shot(id+'-committed','Resolve the complete real path atomically',i,async()=>expect(targets.at(-1)==='Northern shipyard'?p.getByRole('button',{name:'Place food disc',exact:true}):p.getByRole('heading',{name:'Choose your production',exact:true})).toBeVisible());
   if(targets.at(-1)==='Northern shipyard'){await click(p,'Place food disc');await shot(id+'-food','Place an actual Food outpost and expose the second matching column',i,async()=>{await expect(p.getByRole('heading',{name:'Choose your production',exact:true})).toBeVisible();await expect(p.getByLabel('Column B: 4 Supply; produces 1 Population',{exact:true})).toBeVisible();});}
  }
  const G='Advanced Genetics',R='Advanced Robotics',N='Narrow Beam Lasers',T='Terraforming';

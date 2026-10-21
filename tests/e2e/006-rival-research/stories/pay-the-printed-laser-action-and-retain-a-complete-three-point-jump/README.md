@@ -578,13 +578,29 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 37. Select the actual owned ship whose path will be planned
+## 37. Open the actual connected-destination view
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/036-ship-selected-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/036-ship-selected-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/036-ship-selected-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/036-ship-selected-desktop-darwin.png) |
+| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/036-action-route-editor-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/036-action-route-editor-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/036-action-route-editor-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/036-action-route-editor-desktop-darwin.png) |
+
+
+
+- [x] Open the actual connected-destination view
+- [x] Canonical effects settle before capture.
+- [x] Any printed Action plan is ready.
+- [x] Public compact topology remains physically separated.
+- [x] The gameplay shell fits the actual viewport.
+
+## 38. Select the actual owned ship whose path will be planned
+
+Viewpoint: **Ada · separate host controller**.
+
+| phone · 393 × 852 | desktop · 1440 × 1000 |
+| --- | --- |
+| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/037-ship-selected-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/037-ship-selected-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/037-ship-selected-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/037-ship-selected-desktop-darwin.png) |
 
 
 
@@ -594,13 +610,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 38. Plan leg 1 of the printed 3-point budget without early payment or movement
+## 39. Plan leg 1 of the printed 3-point budget without early payment or movement
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/037-leg-1-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/037-leg-1-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/037-leg-1-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/037-leg-1-desktop-darwin.png) |
+| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/038-leg-1-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/038-leg-1-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/038-leg-1-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/038-leg-1-desktop-darwin.png) |
 
 
 
@@ -610,13 +626,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 39. Plan leg 2 of the printed 3-point budget without early payment or movement
+## 40. Plan leg 2 of the printed 3-point budget without early payment or movement
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/038-leg-2-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/038-leg-2-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/038-leg-2-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/038-leg-2-desktop-darwin.png) |
+| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/039-leg-2-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/039-leg-2-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/039-leg-2-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/039-leg-2-desktop-darwin.png) |
 
 
 
@@ -626,13 +642,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 40. Plan leg 3 of the printed 3-point budget without early payment or movement
+## 41. Plan leg 3 of the printed 3-point budget without early payment or movement
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/039-leg-3-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/039-leg-3-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/039-leg-3-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/039-leg-3-desktop-darwin.png) |
+| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/040-leg-3-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/040-leg-3-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/040-leg-3-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/040-leg-3-desktop-darwin.png) |
 
 
 
@@ -642,13 +658,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 41. Commit the complete path atomically before any actual gain-control bonus
+## 42. Commit the complete path atomically before any actual gain-control bonus
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/040-jump-committed-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/040-jump-committed-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/040-jump-committed-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/040-jump-committed-desktop-darwin.png) |
+| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/041-jump-committed-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/041-jump-committed-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/041-jump-committed-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/041-jump-committed-desktop-darwin.png) |
 
 
 
@@ -658,13 +674,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 42. The actual Northern shipyard Food control disc and printed Ore bonus resolve before Production
+## 43. The actual Northern shipyard Food control disc and printed Ore bonus resolve before Production
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/041-yard-controlled-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/041-yard-controlled-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/041-yard-controlled-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/041-yard-controlled-desktop-darwin.png) |
+| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/042-yard-controlled-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/042-yard-controlled-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/042-yard-controlled-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/042-yard-controlled-desktop-darwin.png) |
 
 
 
@@ -674,13 +690,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 43. Ada completes production and hands off to Bora
+## 44. Ada completes production and hands off to Bora
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/042-printed-action-handoff-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/042-printed-action-handoff-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/042-printed-action-handoff-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/042-printed-action-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/043-printed-action-handoff-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/043-printed-action-handoff-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/043-printed-action-handoff-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/043-printed-action-handoff-desktop-darwin.png) |
 
 
 
@@ -690,13 +706,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 44. The independent next controller sees the canonical handoff
+## 45. The independent next controller sees the canonical handoff
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/043-printed-action-next-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/043-printed-action-next-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/043-printed-action-next-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/043-printed-action-next-desktop-darwin.png) |
+| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/044-printed-action-next-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/044-printed-action-next-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/044-printed-action-next-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/044-printed-action-next-desktop-darwin.png) |
 
 
 
@@ -706,13 +722,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 45. The printed Action, final ship location and Bora handoff survive reload
+## 46. The printed Action, final ship location and Bora handoff survive reload
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/044-handoff-restored-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/044-handoff-restored-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/044-handoff-restored-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/044-handoff-restored-desktop-darwin.png) |
+| [![phone](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/045-handoff-restored-phone-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/045-handoff-restored-phone-darwin.png) | [![desktop](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/045-handoff-restored-desktop-darwin.png)](../../screenshots/pay-the-printed-laser-action-and-retain-a-complete-three-point-jump/045-handoff-restored-desktop-darwin.png) |
 
 
 

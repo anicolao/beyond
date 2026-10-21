@@ -1,0 +1,116 @@
+{
+  "prompt": 156,
+  "status": "Targeted correction complete locally; independent scoped review requested. Whole011/baselines/012 held.",
+  "fix": {
+    "routes": "Omit previous/next navigation for an empty fleet and show explicit no-owned-ships optional/required message. Disable arrows for single ship; handler returns before modulo/index access when fewer than2 ships.",
+    "ordinary_ui": "Current client now retains explicit planner confirmation for an empty optional jump, rather than automatic passing before Routes can open. Shared showJumpPlanner predicate used in automatic-send and rendering paths.",
+    "compatibility": "No canonical automatic-pass, movement validator, required-movement rule, atomic policy or storage change; retained clients still may submit legal automatic pass. Required Plan a real jump disable predicate unchanged."
+  },
+  "checks": {
+    "unit": "11/11 jump-preview tests,45 assertions. New empty projection and client-confirmation/canonical-pass compatibility test includes required empty-plan rejection.",
+    "actual_rules": "Existing jump-only Terraforming model/atomic denial and legal alternative regression1PASS,120filtered;213.19ms under original5s budget, isolated8597.",
+    "remote": "Ordinary separate identities, Ada Gather/Trade/decommission last Sol ship, Bora legal Robotics/Ore, Ada Basic no-build. Disabled empty ship picker, empty Routes with no arrows,12Tabs within modal, unpaid reload, keyboard Commit no movement, zero ships/resources preserved, saved Production/reload. Guest commit disabled, no page exceptions/alerts.",
+    "shared_corner": "Same actual ordinary four-corner own history, legal intervening research turns, explicit valid Basic space/no-build. Empty Routes720/640,12Tab containment, keyboard no-movement commit, saved zero-ship Production/reload PASS.",
+    "types": "0errors/0warnings",
+    "source_policy": "PASS",
+    "diff": "PASS",
+    "guards": "Original touch/clipping/overlap predicates and2000ms screenshots unchanged. Formal TestStepHelper/exact remains held."
+  },
+  "preserved_failures": [
+    "Initial private replay tried occupied Gather for Bora; UI correctly disabled, corrected to legal research.",
+    "First no-ship Basic replay auto-passed directly to Production; prompted explicit client-only confirmation fix.",
+    "A shared-table phone-resize audit caught existing background System touch size; no guard relaxed or unrelated surface changed. Actual separate-identity remote phone and rotated desktop paths pass.",
+    "Compact shared scripts initially omitted required decommission selection and valid Basic action-space choice; disabled controls correctly prevented submission. Completed through explicit normal controls on same own controller.",
+    "Initial new unit import/type mistakes corrected; passing final logs retained."
+  ],
+  "images": [
+    {
+      "path": "round156-empty-fleet-remote/empty-complete-routes-393.png",
+      "width": 393,
+      "height": 852,
+      "sha256": "3639dd5118dd4dc68de3c82000c498c166ee4f959d7de2d8af6fff60ed57e053"
+    },
+    {
+      "path": "round156-empty-fleet-remote/empty-complete-routes-640.png",
+      "width": 393,
+      "height": 640,
+      "sha256": "33d896da6971429dfc10365b237e0227a41c5029686b46f6d879c0c88165f834"
+    },
+    {
+      "path": "round156-empty-fleet-remote/empty-route-editor-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "b164465ff676a9c5045e78f8a2a78e049d9a740da3b1370412a7aac078fb8665"
+    },
+    {
+      "path": "round156-empty-fleet-remote/keyboard-commit-no-movement-640.png",
+      "width": 393,
+      "height": 640,
+      "sha256": "7cd7bf594f77eca541cb62f7acea2bec799f657534b3294da80454bce81f0107"
+    },
+    {
+      "path": "round156-empty-fleet-remote/optional-no-movement-production-640.png",
+      "width": 393,
+      "height": 640,
+      "sha256": "8fd7cd997c740b921a2f4a039aa08e0165895b356ff22d42d5922405e69e7400"
+    },
+    {
+      "path": "round156-empty-fleet-remote/optional-no-movement-reloaded-640.png",
+      "width": 393,
+      "height": 640,
+      "sha256": "b116452a76728181d8eba767a832a8d4d0c5a62810eec96209fd230a0f90cc22"
+    },
+    {
+      "path": "round156-empty-fleet-remote/ordinary-last-ship-decommissioned-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "0e02c1ff828295428662b20cfd2adb77e7b514be4954541046ea302f426d22e6"
+    },
+    {
+      "path": "round156-empty-fleet-corner-proof/empty-complete-routes-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "16d463bb6f03279bc2c1479b4d13a8d6e7a3212dd40a41c865a574a0dab361d3"
+    },
+    {
+      "path": "round156-empty-fleet-corner-proof/empty-complete-routes-640.png",
+      "width": 1280,
+      "height": 640,
+      "sha256": "f6abfd46d866202926dfc97d3de3d64e06f4f5357df893046c891cd59341d25a"
+    },
+    {
+      "path": "round156-empty-fleet-corner-proof/empty-route-editor-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "cd24262ce378fb520ac0ffd6a95fabfca5d004c0eebf2728e9620ec54d00de2a"
+    },
+    {
+      "path": "round156-empty-fleet-corner-proof/keyboard-commit-no-movement-640.png",
+      "width": 1280,
+      "height": 640,
+      "sha256": "f6abfd46d866202926dfc97d3de3d64e06f4f5357df893046c891cd59341d25a"
+    },
+    {
+      "path": "round156-empty-fleet-corner-proof/optional-no-movement-production-640.png",
+      "width": 1280,
+      "height": 640,
+      "sha256": "4392c4e0ac9d699157a15cd33faa1c056e7c7b8c756c8a154962393b9404d94b"
+    },
+    {
+      "path": "round156-empty-fleet-corner-proof/optional-no-movement-reloaded-640.png",
+      "width": 1280,
+      "height": 640,
+      "sha256": "e1900daed879176f82d99dbbec348508bb594bf0a123b25ca5074bbec2e03206"
+    }
+  ],
+  "source_files": [
+    "src/lib/game/JumpPlan.svelte",
+    "src/lib/game/jump-preview.ts",
+    "src/lib/game/DiscoveryChoices.svelte",
+    "src/lib/game/TurnInstrument.svelte",
+    "tests/backend/jump-preview.test.ts"
+  ],
+  "services": "5206/9397/8297 preserved; no reviewer room or controller touched.",
+  "publication": "No baseline generation, staging, push,012 or merge.",
+  "supersededBy157": "Confirmation suppression reverted. These historical156 captures prove only that temporary client change, not current ordinary-flow reachability. See JUMP_AUTO_PASS_CORRECTION_157.json for restored auto-pass checks."
+}

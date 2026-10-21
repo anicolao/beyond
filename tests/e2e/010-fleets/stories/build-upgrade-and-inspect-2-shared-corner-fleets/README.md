@@ -458,17 +458,36 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 25. Decline optional movement without undoing the ship or Action cost
+## 25. Read the actual optional movement controls before declining every jump
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/024-ada-no-move-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/024-ada-no-move-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/024-ada-optional-jump-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/024-ada-optional-jump-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/024-ada-no-move-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/024-ada-no-move-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/024-ada-optional-jump-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/024-ada-optional-jump-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Read the actual optional movement controls before declining every jump
+- [x] The actual canonical effect and backend acknowledgement settle.
+- [x] Public technology topology retains physical separation.
+- [x] The actual viewport fits without page scrolling.
+
+## 26. Decline optional movement without undoing the ship or Action cost
+
+Viewpoint: **Ada · South West · one shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/025-ada-no-move-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/025-ada-no-move-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/025-ada-no-move-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/025-ada-no-move-tabletop-4k-darwin.png)
 
 </details>
 
@@ -477,17 +496,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 26. Ada completes ordinary production and hands off
+## 27. Ada completes ordinary production and hands off
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/025-ada-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/025-ada-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/026-ada-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/026-ada-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/025-ada-handoff-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/025-ada-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/026-ada-handoff-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/026-ada-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -496,17 +515,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 27. Bora opens the actual Action instrument
+## 28. Bora opens the actual Action instrument
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/026-bora-build-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/026-bora-build-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/027-bora-build-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/027-bora-build-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/026-bora-build-plan-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/026-bora-build-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/027-bora-build-plan-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/027-bora-build-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -515,17 +534,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 28. Bora selects Basic construction
+## 29. Bora selects Basic construction
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/027-bora-build-kind-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/027-bora-build-kind-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/028-bora-build-kind-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/028-bora-build-kind-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/027-bora-build-kind-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/027-bora-build-kind-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/028-bora-build-kind-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/028-bora-build-kind-tabletop-4k-darwin.png)
 
 </details>
 
@@ -534,17 +553,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 29. Ada’s occupied Basic space prevents a second pawn from using it
+## 30. Ada’s occupied Basic space prevents a second pawn from using it
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/028-bora-occupied-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/028-bora-occupied-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/029-bora-occupied-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/029-bora-occupied-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/028-bora-occupied-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/028-bora-occupied-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/029-bora-occupied-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/029-bora-occupied-tabletop-4k-darwin.png)
 
 </details>
 
@@ -553,17 +572,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 30. Choose the second printed space with one Ore surcharge
+## 31. Choose the second printed space with one Ore surcharge
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/029-bora-second-space-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/029-bora-second-space-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/030-bora-second-space-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/030-bora-second-space-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/029-bora-second-space-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/029-bora-second-space-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/030-bora-second-space-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/030-bora-second-space-tabletop-4k-darwin.png)
 
 </details>
 
@@ -572,17 +591,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 31. Build from Population at Sol and retain the exact second-space charge
+## 32. Build from Population at Sol and retain the exact second-space charge
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/030-bora-built-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/030-bora-built-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/031-bora-built-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/031-bora-built-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/030-bora-built-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/030-bora-built-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/031-bora-built-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/031-bora-built-tabletop-4k-darwin.png)
 
 </details>
 
@@ -591,17 +610,36 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 32. Decline optional movement without undoing the ship or Action cost
+## 33. Read the actual optional movement controls before declining every jump
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/031-bora-no-move-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/031-bora-no-move-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/032-bora-optional-jump-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/032-bora-optional-jump-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/031-bora-no-move-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/031-bora-no-move-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/032-bora-optional-jump-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/032-bora-optional-jump-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Read the actual optional movement controls before declining every jump
+- [x] The actual canonical effect and backend acknowledgement settle.
+- [x] Public technology topology retains physical separation.
+- [x] The actual viewport fits without page scrolling.
+
+## 34. Decline optional movement without undoing the ship or Action cost
+
+Viewpoint: **Bora · North East · one shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/033-bora-no-move-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/033-bora-no-move-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/033-bora-no-move-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/033-bora-no-move-tabletop-4k-darwin.png)
 
 </details>
 
@@ -610,17 +648,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 33. Bora completes ordinary production and hands off
+## 35. Bora completes ordinary production and hands off
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/032-bora-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/032-bora-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/034-bora-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/034-bora-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/032-bora-handoff-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/032-bora-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/034-bora-handoff-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/034-bora-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -629,17 +667,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 34. Open the retained faction economy and physical fleet register
+## 36. Open the retained faction economy and physical fleet register
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/033-bora-register-mat-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/033-bora-register-mat-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/035-bora-register-mat-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/035-bora-register-mat-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/033-bora-register-mat-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/033-bora-register-mat-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/035-bora-register-mat-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/035-bora-register-mat-tabletop-4k-darwin.png)
 
 </details>
 
@@ -648,17 +686,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 35. Inspect 2 real ships with explicit levels and public summed power
+## 37. Inspect 2 real ships with explicit levels and public summed power
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/034-bora-register-ships-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/034-bora-register-ships-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/036-bora-register-ships-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/036-bora-register-ships-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/034-bora-register-ships-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/034-bora-register-ships-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/036-bora-register-ships-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/036-bora-register-ships-tabletop-4k-darwin.png)
 
 </details>
 
@@ -667,17 +705,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 36. Open the paged public location register
+## 38. Open the paged public location register
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/035-bora-register-power-initial-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/035-bora-register-power-initial-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/037-bora-register-power-initial-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/037-bora-register-power-initial-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/035-bora-register-power-initial-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/035-bora-register-power-initial-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/037-bora-register-power-initial-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/037-bora-register-power-initial-tabletop-4k-darwin.png)
 
 </details>
 
@@ -686,17 +724,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 37. Inspect Bora's actual power at Sol
+## 39. Inspect Bora's actual power at Sol
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/036-bora-register-power-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/036-bora-register-power-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/038-bora-register-power-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/038-bora-register-power-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/036-bora-register-power-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/036-bora-register-power-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/038-bora-register-power-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/038-bora-register-power-tabletop-4k-darwin.png)
 
 </details>
 
@@ -705,17 +743,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 38. The register explains levels, location-specific power and incumbent ties without taking a turn
+## 40. The register explains levels, location-specific power and incumbent ties without taking a turn
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/037-bora-register-rules-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/037-bora-register-rules-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/039-bora-register-rules-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/039-bora-register-rules-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/037-bora-register-rules-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/037-bora-register-rules-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/039-bora-register-rules-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/039-bora-register-rules-tabletop-4k-darwin.png)
 
 </details>
 
@@ -724,17 +762,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 39. Keyboard reaches the bounded fleet details
+## 41. Keyboard reaches the bounded fleet details
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/038-bora-register-keyboard-region-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/038-bora-register-keyboard-region-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/040-bora-register-keyboard-region-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/040-bora-register-keyboard-region-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/038-bora-register-keyboard-region-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/038-bora-register-keyboard-region-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/040-bora-register-keyboard-region-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/040-bora-register-keyboard-region-tabletop-4k-darwin.png)
 
 </details>
 
@@ -743,17 +781,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 40. Reverse Tab stays within the fleet reader
+## 42. Reverse Tab stays within the fleet reader
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/039-bora-register-reverse-tab-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/039-bora-register-reverse-tab-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/041-bora-register-reverse-tab-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/041-bora-register-reverse-tab-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/039-bora-register-reverse-tab-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/039-bora-register-reverse-tab-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/041-bora-register-reverse-tab-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/041-bora-register-reverse-tab-tabletop-4k-darwin.png)
 
 </details>
 
@@ -762,17 +800,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 41. Forward Tab wraps back to persistent Close
+## 43. Forward Tab wraps back to persistent Close
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/040-bora-register-tab-wrap-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/040-bora-register-tab-wrap-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/042-bora-register-tab-wrap-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/042-bora-register-tab-wrap-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/040-bora-register-tab-wrap-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/040-bora-register-tab-wrap-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/042-bora-register-tab-wrap-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/042-bora-register-tab-wrap-tabletop-4k-darwin.png)
 
 </details>
 
@@ -781,17 +819,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 42. Escape restores the actual Fleet opener
+## 44. Escape restores the actual Fleet opener
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/041-bora-register-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/041-bora-register-return-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/043-bora-register-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/043-bora-register-return-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/041-bora-register-return-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/041-bora-register-return-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/043-bora-register-return-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/043-bora-register-return-tabletop-4k-darwin.png)
 
 </details>
 
@@ -800,17 +838,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 43. Close the mat and restore its physical opener
+## 45. Close the mat and restore its physical opener
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/042-bora-register-mat-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/042-bora-register-mat-return-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/044-bora-register-mat-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/044-bora-register-mat-return-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/042-bora-register-mat-return-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/042-bora-register-mat-return-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/044-bora-register-mat-return-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/044-bora-register-mat-return-tabletop-4k-darwin.png)
 
 </details>
 
@@ -819,17 +857,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 44. Ada opens the actual Action instrument
+## 46. Ada opens the actual Action instrument
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/043-ada-lasers-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/043-ada-lasers-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/045-ada-lasers-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/045-ada-lasers-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/043-ada-lasers-plan-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/043-ada-lasers-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/045-ada-lasers-plan-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/045-ada-lasers-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -838,17 +876,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 45. Ada chooses the unoccupied printed research space
+## 47. Ada chooses the unoccupied printed research space
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/044-ada-lasers-space-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/044-ada-lasers-space-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/046-ada-lasers-space-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/046-ada-lasers-space-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/044-ada-lasers-space-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/044-ada-lasers-space-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/046-ada-lasers-space-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/046-ada-lasers-space-tabletop-4k-darwin.png)
 
 </details>
 
@@ -857,17 +895,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 46. Browse the next public Technology without paying
+## 48. Browse the next public Technology without paying
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/045-ada-lasers-browse-0-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/045-ada-lasers-browse-0-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/047-ada-lasers-browse-0-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/047-ada-lasers-browse-0-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/045-ada-lasers-browse-0-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/045-ada-lasers-browse-0-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/047-ada-lasers-browse-0-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/047-ada-lasers-browse-0-tabletop-4k-darwin.png)
 
 </details>
 
@@ -876,17 +914,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 47. The mandatory one-level upgrade needs an explicit owned ship
+## 49. The mandatory one-level upgrade needs an explicit owned ship
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/046-ada-lasers-target-required-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/046-ada-lasers-target-required-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/048-ada-lasers-target-required-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/048-ada-lasers-target-required-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/046-ada-lasers-target-required-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/046-ada-lasers-target-required-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/048-ada-lasers-target-required-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/048-ada-lasers-target-required-tabletop-4k-darwin.png)
 
 </details>
 
@@ -895,17 +933,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 48. Select the owned ship and inspect the exact level change
+## 50. Select the owned ship and inspect the exact level change
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/047-ada-lasers-target-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/047-ada-lasers-target-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/049-ada-lasers-target-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/049-ada-lasers-target-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/047-ada-lasers-target-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/047-ada-lasers-target-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/049-ada-lasers-target-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/049-ada-lasers-target-tabletop-4k-darwin.png)
 
 </details>
 
@@ -914,17 +952,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 49. Ada pays permanent research Population and resolves the printed bonus
+## 51. Ada pays permanent research Population and resolves the printed bonus
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/048-ada-lasers-paid-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/048-ada-lasers-paid-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/050-ada-lasers-paid-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/050-ada-lasers-paid-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/048-ada-lasers-paid-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/048-ada-lasers-paid-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/050-ada-lasers-paid-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/050-ada-lasers-paid-tabletop-4k-darwin.png)
 
 </details>
 
@@ -933,17 +971,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 50. Ada completes ordinary production and hands off
+## 52. Ada completes ordinary production and hands off
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/049-ada-lasers-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/049-ada-lasers-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/051-ada-lasers-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/051-ada-lasers-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/049-ada-lasers-handoff-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/049-ada-lasers-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/051-ada-lasers-handoff-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/051-ada-lasers-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -952,17 +990,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 51. Bora opens the actual Action instrument
+## 53. Bora opens the actual Action instrument
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/050-bora-gather-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/050-bora-gather-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/052-bora-gather-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/052-bora-gather-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/050-bora-gather-plan-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/050-bora-gather-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/052-bora-gather-plan-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/052-bora-gather-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -971,17 +1009,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 52. Bora selects ordinary gathering
+## 54. Bora selects ordinary gathering
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/051-bora-gather-kind-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/051-bora-gather-kind-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/053-bora-gather-kind-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/053-bora-gather-kind-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/051-bora-gather-kind-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/051-bora-gather-kind-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/053-bora-gather-kind-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/053-bora-gather-kind-tabletop-4k-darwin.png)
 
 </details>
 
@@ -990,17 +1028,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 53. Receive actual Gather resources before production
+## 55. Receive actual Gather resources before production
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/052-bora-gather-gathered-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/052-bora-gather-gathered-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/054-bora-gather-gathered-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/054-bora-gather-gathered-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/052-bora-gather-gathered-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/052-bora-gather-gathered-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/054-bora-gather-gathered-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/054-bora-gather-gathered-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1009,17 +1047,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 54. Bora completes ordinary production and hands off
+## 56. Bora completes ordinary production and hands off
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/053-bora-gather-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/053-bora-gather-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/055-bora-gather-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/055-bora-gather-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/053-bora-gather-handoff-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/053-bora-gather-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/055-bora-gather-handoff-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/055-bora-gather-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1028,17 +1066,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 55. Ada opens the actual Action instrument
+## 57. Ada opens the actual Action instrument
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/054-paid-lasers-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/054-paid-lasers-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/056-paid-lasers-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/056-paid-lasers-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/054-paid-lasers-plan-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/054-paid-lasers-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/056-paid-lasers-plan-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/056-paid-lasers-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1047,17 +1085,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 56. Ada selects a printed Technology Action
+## 58. Ada selects a printed Technology Action
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/055-paid-lasers-kind-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/055-paid-lasers-kind-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/057-paid-lasers-kind-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/057-paid-lasers-kind-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/055-paid-lasers-kind-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/055-paid-lasers-kind-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/057-paid-lasers-kind-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/057-paid-lasers-kind-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1066,17 +1104,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 57. Read the personally available printed cost before committing
+## 59. Read the personally available printed cost before committing
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/056-paid-level-two-cost-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/056-paid-level-two-cost-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/058-paid-level-two-cost-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/058-paid-level-two-cost-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/056-paid-level-two-cost-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/056-paid-level-two-cost-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/058-paid-level-two-cost-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/058-paid-level-two-cost-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1085,17 +1123,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 58. The paid Action automatically builds level two at its sole permitted yard before optional movement
+## 60. The paid Action automatically builds level two at its sole permitted yard before optional movement
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/057-paid-level-two-built-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/057-paid-level-two-built-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/059-paid-level-two-built-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/059-paid-level-two-built-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/057-paid-level-two-built-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/057-paid-level-two-built-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/059-paid-level-two-built-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/059-paid-level-two-built-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1104,17 +1142,36 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 59. Decline optional movement without undoing the ship or Action cost
+## 61. Read the actual optional movement controls before declining every jump
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/058-paid-level-two-no-move-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/058-paid-level-two-no-move-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/060-paid-level-two-optional-jump-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/060-paid-level-two-optional-jump-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/058-paid-level-two-no-move-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/058-paid-level-two-no-move-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/060-paid-level-two-optional-jump-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/060-paid-level-two-optional-jump-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Read the actual optional movement controls before declining every jump
+- [x] The actual canonical effect and backend acknowledgement settle.
+- [x] Public technology topology retains physical separation.
+- [x] The actual viewport fits without page scrolling.
+
+## 62. Decline optional movement without undoing the ship or Action cost
+
+Viewpoint: **Ada · South West · one shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/061-paid-level-two-no-move-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/061-paid-level-two-no-move-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/061-paid-level-two-no-move-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/061-paid-level-two-no-move-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1123,17 +1180,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 60. Ada completes ordinary production and hands off
+## 63. Ada completes ordinary production and hands off
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/059-paid-level-two-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/059-paid-level-two-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/062-paid-level-two-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/062-paid-level-two-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/059-paid-level-two-handoff-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/059-paid-level-two-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/062-paid-level-two-handoff-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/062-paid-level-two-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1142,17 +1199,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 61. Open the retained faction economy and physical fleet register
+## 64. Open the retained faction economy and physical fleet register
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/060-ada-upgraded-register-mat-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/060-ada-upgraded-register-mat-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/063-ada-upgraded-register-mat-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/063-ada-upgraded-register-mat-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/060-ada-upgraded-register-mat-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/060-ada-upgraded-register-mat-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/063-ada-upgraded-register-mat-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/063-ada-upgraded-register-mat-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1161,17 +1218,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 62. Inspect 3 real ships with explicit levels and public summed power
+## 65. Inspect 3 real ships with explicit levels and public summed power
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/061-ada-upgraded-register-ships-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/061-ada-upgraded-register-ships-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/064-ada-upgraded-register-ships-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/064-ada-upgraded-register-ships-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/061-ada-upgraded-register-ships-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/061-ada-upgraded-register-ships-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/064-ada-upgraded-register-ships-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/064-ada-upgraded-register-ships-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1180,17 +1237,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 63. Open the paged public location register
+## 66. Open the paged public location register
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/062-ada-upgraded-register-power-initial-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/062-ada-upgraded-register-power-initial-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/065-ada-upgraded-register-power-initial-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/065-ada-upgraded-register-power-initial-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/062-ada-upgraded-register-power-initial-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/062-ada-upgraded-register-power-initial-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/065-ada-upgraded-register-power-initial-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/065-ada-upgraded-register-power-initial-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1199,17 +1256,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 64. Inspect Ada's actual power at Sol
+## 67. Inspect Ada's actual power at Sol
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/063-ada-upgraded-register-power-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/063-ada-upgraded-register-power-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/066-ada-upgraded-register-power-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/066-ada-upgraded-register-power-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/063-ada-upgraded-register-power-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/063-ada-upgraded-register-power-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/066-ada-upgraded-register-power-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/066-ada-upgraded-register-power-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1218,17 +1275,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 65. The register explains levels, location-specific power and incumbent ties without taking a turn
+## 68. The register explains levels, location-specific power and incumbent ties without taking a turn
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/064-ada-upgraded-register-rules-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/064-ada-upgraded-register-rules-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/067-ada-upgraded-register-rules-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/067-ada-upgraded-register-rules-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/064-ada-upgraded-register-rules-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/064-ada-upgraded-register-rules-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/067-ada-upgraded-register-rules-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/067-ada-upgraded-register-rules-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1237,17 +1294,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 66. Keyboard reaches the bounded fleet details
+## 69. Keyboard reaches the bounded fleet details
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/065-ada-upgraded-register-keyboard-region-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/065-ada-upgraded-register-keyboard-region-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/068-ada-upgraded-register-keyboard-region-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/068-ada-upgraded-register-keyboard-region-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/065-ada-upgraded-register-keyboard-region-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/065-ada-upgraded-register-keyboard-region-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/068-ada-upgraded-register-keyboard-region-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/068-ada-upgraded-register-keyboard-region-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1256,17 +1313,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 67. Reverse Tab stays within the fleet reader
+## 70. Reverse Tab stays within the fleet reader
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/066-ada-upgraded-register-reverse-tab-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/066-ada-upgraded-register-reverse-tab-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/069-ada-upgraded-register-reverse-tab-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/069-ada-upgraded-register-reverse-tab-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/066-ada-upgraded-register-reverse-tab-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/066-ada-upgraded-register-reverse-tab-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/069-ada-upgraded-register-reverse-tab-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/069-ada-upgraded-register-reverse-tab-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1275,17 +1332,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 68. Forward Tab wraps back to persistent Close
+## 71. Forward Tab wraps back to persistent Close
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/067-ada-upgraded-register-tab-wrap-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/067-ada-upgraded-register-tab-wrap-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/070-ada-upgraded-register-tab-wrap-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/070-ada-upgraded-register-tab-wrap-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/067-ada-upgraded-register-tab-wrap-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/067-ada-upgraded-register-tab-wrap-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/070-ada-upgraded-register-tab-wrap-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/070-ada-upgraded-register-tab-wrap-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1294,17 +1351,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 69. Escape restores the actual Fleet opener
+## 72. Escape restores the actual Fleet opener
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/068-ada-upgraded-register-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/068-ada-upgraded-register-return-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/071-ada-upgraded-register-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/071-ada-upgraded-register-return-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/068-ada-upgraded-register-return-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/068-ada-upgraded-register-return-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/071-ada-upgraded-register-return-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/071-ada-upgraded-register-return-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1313,17 +1370,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 70. Close the mat and restore its physical opener
+## 73. Close the mat and restore its physical opener
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/069-ada-upgraded-register-mat-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/069-ada-upgraded-register-mat-return-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/072-ada-upgraded-register-mat-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/072-ada-upgraded-register-mat-return-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/069-ada-upgraded-register-mat-return-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/069-ada-upgraded-register-mat-return-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/072-ada-upgraded-register-mat-return-tabletop-4k-darwin.png)](../../screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/072-ada-upgraded-register-mat-return-tabletop-4k-darwin.png)
 
 </details>
 

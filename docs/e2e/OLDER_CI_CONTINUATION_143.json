@@ -1,0 +1,92 @@
+{
+  "reviewerPrompt": 143,
+  "olderHeads": {
+    "8": "0c4421b5ce95d4d599e81e7016f9963a30684f05",
+    "9": "5ba1cbee114d5ba9ac9732ccf1262f15ef96fb7f",
+    "10": "3b3c148c2d481c9b88818d408839bf557a4f3284",
+    "11": "029449dccb7c4458f5e75aa0c018b80ec5d538b7"
+  },
+  "currentRequiredStatus": "PR8\u201311 static/docs/publication SUCCESS, browser-comparison FAILURE; PR9\u201311 candidate cohorts failed and remain unaccepted. No automatic reruns/reference adoption.",
+  "hostedSameGame": {
+    "rows": [
+      {
+        "pr": 8,
+        "revision": "0c4421b5ce95d4d599e81e7016f9963a30684f05",
+        "revisionMatches": true,
+        "normalUiRetainedProduction": true,
+        "room": "1dc07569-439e-48e4-8a7b-7787a7f132e2"
+      },
+      {
+        "pr": 9,
+        "revision": "5ba1cbee114d5ba9ac9732ccf1262f15ef96fb7f",
+        "revisionMatches": true,
+        "normalUiRetainedProduction": true,
+        "room": "1dc07569-439e-48e4-8a7b-7787a7f132e2"
+      },
+      {
+        "pr": 10,
+        "revision": "3b3c148c2d481c9b88818d408839bf557a4f3284",
+        "revisionMatches": true,
+        "normalUiRetainedProduction": true,
+        "room": "1dc07569-439e-48e4-8a7b-7787a7f132e2"
+      },
+      {
+        "pr": 11,
+        "revision": "029449dccb7c4458f5e75aa0c018b80ec5d538b7",
+        "revisionMatches": true,
+        "normalUiRetainedProduction": true,
+        "room": "1dc07569-439e-48e4-8a7b-7787a7f132e2"
+      }
+    ],
+    "scope": "Own ordinary shared setup/Genetics/pending Production retained across same-origin PR8\u201311 and reload. Does not replace phase-specific gameplay/security/Linux or independent hosted acceptance. Profile retained privately; no reviewer identity/table touched."
+  },
+  "cameraSessionProbe": {
+    "measurements": [
+      {
+        "state": "board",
+        "reuse": false,
+        "samples": 6,
+        "medianTotalMs": 215.80470799999966,
+        "medianCaptureMs": 199.1925000000001,
+        "medianAttachDetachMs": 0.800207999999202,
+        "allExact": true
+      },
+      {
+        "state": "board",
+        "reuse": true,
+        "samples": 6,
+        "medianTotalMs": 212.45143750000034,
+        "medianCaptureMs": 198.7749375000003,
+        "medianAttachDetachMs": 0.00045799999998052954,
+        "allExact": true
+      },
+      {
+        "state": "planner",
+        "reuse": false,
+        "samples": 6,
+        "medianTotalMs": 236.9801669999997,
+        "medianCaptureMs": 229.21145799999977,
+        "medianAttachDetachMs": 0.7164165000003777,
+        "allExact": true
+      },
+      {
+        "state": "planner",
+        "reuse": true,
+        "samples": 6,
+        "medianTotalMs": 237.50735450000047,
+        "medianCaptureMs": 230.91447900000003,
+        "medianAttachDetachMs": 0.0005420000015874393,
+        "allExact": true
+      }
+    ],
+    "adopted": false,
+    "conclusion": "No reliable overall improvement on native macOS; no evidence that this repairs Linux captures/story deadlines. Original guards/helpers/flags untouched."
+  },
+  "linuxTimingRepairAdopted": false,
+  "helpersGuardsDeadlinesChanged": false,
+  "evidence": {
+    "hosted": "/Users/anicolao/projects/games/beyond/tmp/hosted-stack143/results.json",
+    "nativeProbe": "/Users/anicolao/projects/games/beyond/tmp/capture143-session-reuse2/result.json"
+  },
+  "pending": "Old phase-specific Linux exact and independent matching-head hosted UI gates stay open; no claim that local microbenchmark repairs Linux."
+}

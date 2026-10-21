@@ -1,0 +1,23 @@
+{
+  "head": "65cb4a49befe99ea26ece29233ba32013db5dfd1",
+  "screenshots": 12148,
+  "all_index_blobs_equal_head": true,
+  "all_stage_zero": true,
+  "skip_worktree": 12148,
+  "present_on_disk": 0,
+  "unstaged_deletions": 0,
+  "staged_changes": 0,
+  "sparse_patterns": "/*\n!/tests/e2e/*/screenshots/\n",
+  "reference_manifest_sha256": "2072bad6ce2c70c41698ff6f20b6e83716cd8cd812627624bf01a6c8761a1cd9",
+  "method": "Read-only index/HEAD equality; no checkout, restore, staging, or PNG expansion. Prior metadata restoration already complete before this checkpoint. Standard git add respects skip-worktree; use explicit paths and repeat deletion audit before any commit.",
+  "ci": {
+    "reviewer_run": 39576797656,
+    "reviewer_head": "7b42cd410818a99d3acd3ff2bcb0792678c490a2",
+    "reviewer_run_status": "in_progress: static/comparison failed, native generation in progress",
+    "current_verify_run": 39585195254,
+    "current_verify_status": "pending",
+    "current_publish_job": 119172247756,
+    "current_publish": "failed exact current Rules:test HTTP503; diagnostic current503/frozenPR5 200; no fallback",
+    "log": "/Users/anicolao/projects/games/beyond/tmp/sparse152-pr12-publish-65cb4a4.log"
+  }
+}

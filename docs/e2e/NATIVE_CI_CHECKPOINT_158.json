@@ -1,0 +1,76 @@
+{
+  "prompt": 158,
+  "head": "7b42cd410818a99d3acd3ff2bcb0792678c490a2",
+  "run": 39576797656,
+  "native_job": 119154497318,
+  "result": "112/118 PASS,6fail,1.1h;51 capture guards PASS",
+  "categories": {
+    "capture_2000ms": 3,
+    "whole_story_120000ms": 3,
+    "secondary_detach_errors": 4,
+    "cohort_accepted": false,
+    "references_imported": 0
+  },
+  "failures": [
+    {
+      "phase": "003 shared2 Basic setup",
+      "step": "Commit Ada\u2019s unique Basic faction",
+      "primary": "2000ms capture-step timeout",
+      "secondary": "CDP detach: No session with given id"
+    },
+    {
+      "phase": "003 shared3 Basic setup",
+      "primary": "2000ms capture-step timeout / shared capture deadline",
+      "measured_ms": 2065.114431000002
+    },
+    {
+      "phase": "005 four-corner Exo-Alloy",
+      "step": "Choose Level II and inspect all six public prerequisites without revealing cards",
+      "primary": "2000ms capture-step timeout",
+      "secondary": "CDP detach: target page/context/browser closed"
+    },
+    {
+      "phase": "006 two-cardinal rival research",
+      "step": "Explicitly decline optional movement and resume Production",
+      "primary": "120000ms whole-story timeout",
+      "secondary": "CDP detach: target page/context/browser closed"
+    },
+    {
+      "phase": "007 four-corner production",
+      "step": "Browse the next public Level I face",
+      "primary": "120000ms whole-story timeout",
+      "secondary": "CDP detach: target page/context/browser closed"
+    },
+    {
+      "phase": "007 four-cardinal production",
+      "step": "Bora selects ordinary gathering",
+      "primary": "120000ms whole-story timeout",
+      "secondary": "mouse.move terminated by same whole-story deadline"
+    }
+  ],
+  "preserved_log": {
+    "reviewer": "/tmp/beyond-review-pr12-native-7b42cd4.log",
+    "copy": "/Users/anicolao/projects/games/beyond/tmp/fleet158-native-7b42cd4.log",
+    "bytes": 290414,
+    "sha256": "6ecbb2b8825e915f7ebc228a60dfcfa98d3b5541723fee749e1f184b88c8ce42"
+  },
+  "current_65cb": {
+    "run": 39585195254,
+    "head": "65cb4a49befe99ea26ece29233ba32013db5dfd1",
+    "static": {
+      "job": 119189568119,
+      "status": "in_progress"
+    },
+    "comparison": {
+      "job": 119189567850,
+      "status": "in_progress"
+    },
+    "optional_native": {
+      "job": 119189569950,
+      "status": "skipped as planned for source-only suite-isolation candidate"
+    },
+    "repair_proof": "Pending current CI; local206 pass does not close static gate."
+  },
+  "local011": "157 narrow correction complete before CI reconciliation: original auto-pass restored; tested defensive route helper; fresh normal shared/remote auto-pass/Production/reload pass.12/12 helper54assertions,types0/0,policy/diff. Source finding is defensive unsafe handler, not verified reachable ordinary crash.",
+  "boundaries": "No failed cohort/reference adoption, guard or timing changes, artifact bulk download, service/controller changes, baseline generation,012 or merge."
+}

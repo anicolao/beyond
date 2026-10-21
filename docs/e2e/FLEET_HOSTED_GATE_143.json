@@ -1,0 +1,49 @@
+{
+  "pr": 12,
+  "head": "9018b9f2476a942d16089160a8caf43c69ac0409",
+  "publisherJob": 119098339244,
+  "publisherRun": 39562966118,
+  "primary": "Exact-source ruleset creation POST HTTP503; release publication blocked",
+  "sourceSha256": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67",
+  "sourceBytes": 118531,
+  "initialCompilation": "Reaching ruleset POST implies initial current-source :test returned success without ERROR under the reviewed deployer control flow; inferred, not separately timed in job log.",
+  "postFailureDiagnostic": {
+    "current": 503,
+    "frozenPR5": 200
+  },
+  "readOnlyCandidateProbe": {
+    "rows": [
+      {
+        "name": "current",
+        "sha256": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67",
+        "bytes": 118531,
+        "ms": 5285.2360419999995,
+        "status": 503,
+        "deployed": false
+      },
+      {
+        "name": "unreferenced-only",
+        "sha256": "7af86bb39a1c19f4dfb07d3f8b5cfc1759ebcd224689d0c4a18b46703ebd65e3",
+        "bytes": 117823,
+        "ms": 5183.956417,
+        "status": 503,
+        "deployed": false
+      }
+    ],
+    "policyChanged": false,
+    "liveEmulatorChanged": false
+  },
+  "candidateAdopted": false,
+  "fallbackDeployed": false,
+  "localReviewServicesUnchanged": true,
+  "hostedRevisionStatus": 404,
+  "evidenceLog": "/Users/anicolao/projects/games/beyond/tmp/fleet143-pr12-publish-failure.log",
+  "evidenceLogSha256": "7074cb54089550f8d549d4822a6f8c0f0def0d3024d75b6c5197478157e0f11a",
+  "pending": [
+    "Exact-source publication recovery",
+    "Matching revision and independent hosted010 flow",
+    "Required Linux/static/docs checks",
+    "Reviewed native Linux cohort/exact comparison"
+  ],
+  "next": "011 local review before baselines;012 held"
+}

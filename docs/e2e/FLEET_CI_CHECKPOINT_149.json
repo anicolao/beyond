@@ -1,0 +1,46 @@
+{
+  "prompt": 149,
+  "reviewerLog": {
+    "path": "/tmp/beyond-review-pr12-linux-9018b9f.log",
+    "bytes": 679848,
+    "sha256": "79a167e842bc6fb486ac9dc984ffdab1f644e09355dec71afef0fb863a6db917",
+    "exactBytesEqualLocal": true
+  },
+  "reviewedParentComparison": {
+    "head": "9018b9f2476a942d16089160a8caf43c69ac0409",
+    "job": 119098339638,
+    "result": "16/118 PASS;102 failures:56 pixel mismatches,46 missing snapshots",
+    "acceptedReferences": false
+  },
+  "laterParentRun": {
+    "run": 39562980280,
+    "status": "Completed FAILURE since reviewer checkpoint",
+    "static": {
+      "job": 119119913489,
+      "result": "198/200; remote3/4 compatibility five-second timeouts"
+    },
+    "comparison": {
+      "job": 119119913405,
+      "result": "16/118;56pixels/46missing"
+    },
+    "native": {
+      "job": 119119913057,
+      "result": "116/118;007 four-corner/cardinal120s stories, secondary closed-page detach",
+      "cohortAccepted": false
+    }
+  },
+  "currentHead": {
+    "sha": "7b42cd410818a99d3acd3ff2bcb0792678c490a2",
+    "static": "204/206;remote3 5013.99ms/remote4 5002.99ms, unchanged5s limits",
+    "comparison": {
+      "job": 119154497427,
+      "result": "16/118 PASS14.7m;56pixels/46missing, no capture/story timing errors found",
+      "logBytes": 679831,
+      "logSha256": "a5bb55d07f04225ab5103bda8eb3147304ef3e1eb16cfbce6af1983c78ec1c3d"
+    },
+    "native": "119154497318 still running at checkpoint; independent candidate review and full exact gate remain pending",
+    "publisher": "Exact current rules503; diagnostic frozenPR5 was200; no fallback/publication bypass"
+  },
+  "local011": "148 broader ordinary four-jump/multi-origin/observer/source inspection/Rift/Solar/Luyten/expiry packet ready;216/3240 backend,types0/0,policy/diff pass. Whole011 acceptance/formal-baseline release withheld.",
+  "boundaries": "No native cohort accepted, no blanket reference replacement, no012, no merges or service/identity changes."
+}

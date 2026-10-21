@@ -1,0 +1,139 @@
+{
+  "base": "65cb4a49befe99ea26ece29233ba32013db5dfd1",
+  "variants": 132,
+  "frames": 9141,
+  "generating": false,
+  "jumpVariants": 14,
+  "jumpFrames": 1054,
+  "phases": {
+    "001-foundation": {
+      "variants": 7,
+      "frames": 102
+    },
+    "001a-card-gallery": {
+      "variants": 4,
+      "frames": 300
+    },
+    "002-remote-rooms": {
+      "variants": 5,
+      "frames": 156
+    },
+    "003-basic-setup": {
+      "variants": 15,
+      "frames": 570
+    },
+    "004-first-research": {
+      "variants": 17,
+      "frames": 1131
+    },
+    "005-technology-discovery": {
+      "variants": 14,
+      "frames": 1058
+    },
+    "006-rival-research": {
+      "variants": 10,
+      "frames": 774
+    },
+    "007-production": {
+      "variants": 8,
+      "frames": 1044
+    },
+    "008-trading": {
+      "variants": 12,
+      "frames": 754
+    },
+    "009-automation": {
+      "variants": 10,
+      "frames": 972
+    },
+    "010-fleets": {
+      "variants": 16,
+      "frames": 1226
+    },
+    "011-jump-planning": {
+      "variants": 14,
+      "frames": 1054
+    }
+  },
+  "actualPngDimensions": {
+    "(1440, 1000)": 4352,
+    "(393, 852)": 1683,
+    "(3840, 2160)": 2758,
+    "(1280, 720)": 297,
+    "(1280, 640)": 51
+  },
+  "command": "PUBLIC_AUTH_EMULATOR_PORT=9497 PUBLIC_FIRESTORE_EMULATOR_PORT=8497 bunx playwright test",
+  "snapshotUpdateArgument": false,
+  "logSha256": "20efd13582f0cb787e1eb322979efd4c490f6f0a79a2bfffd56e697658632e54",
+  "logBytes": 24289,
+  "protectedReviewServicesAndIdentities": "untouched",
+  "sourceSha256": {
+    "firestore.rules": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67",
+    "playwright.config.ts": "cd43b8910afeb0089becea41dc1e3e0c9167300334c77615ee5257c9b398ec45",
+    "src/lib/game/AutomationInspection.svelte": "67cb6337892064875599b7a02e983be8244e267be481c80c44fa8cbbf3497611",
+    "src/lib/game/BasicFleetPlan.svelte": "a7e1ed3c222ba7cf3ea3b794a358eec2f2f420fbcfa2ec79239cb4707a346a8a",
+    "src/lib/game/DiscoveryChoices.svelte": "03df33a7b4192a9fd358fe73dcd2079765b3d16883cc6810698493582a0f4993",
+    "src/lib/game/FactionChoice.svelte": "3014258e6b0067d07ce7cad506290d3613b4130f82d7ebd248317c6c7946ed5a",
+    "src/lib/game/FactionMat.svelte": "3f7ec7083ea71e18b451a63420ed9f79e357569234e12251f7638207e1984d38",
+    "src/lib/game/FleetEffect.svelte": "42c71081f9e348614e60420c438d0eec4549a32b00d2bf334c787432c61a0e57",
+    "src/lib/game/FleetInspection.svelte": "7adcad7b00b3fabf53e74138448e62bc148658eb46c44655018db4b7a2887362",
+    "src/lib/game/GameSurface.svelte": "3b3b12dda8ab90a81bc1401372b05a181c087c9947a556dbf9a3bb9c613d8ce1",
+    "src/lib/game/JumpPlan.svelte": "c5541ed473e9423c7f6ca193cc462a613cac658e1faee8e1e51d7d5f17f788d0",
+    "src/lib/game/LevelTwoPlan.svelte": "c286e7acdbe08c6d9b25ece4d5fa9f92e1aedb33463444212a41d7893c2392b4",
+    "src/lib/game/ProductionPreview.svelte": "a25518efcc7e274710868ca09218c9c27e42b26dd2ef72f22d1efc3567ac6573",
+    "src/lib/game/TechnologyActionPlan.svelte": "c76826a7029876d214b1f623722e122ac7a26edcde2ca37b44360747a0baf2a3",
+    "src/lib/game/TechnologyOverview.svelte": "2c5a4b4c9c49ed7590a261f54da76378307d85e694c119390934546ccd21f367",
+    "src/lib/game/TradePlan.svelte": "bc6ebb6ce4078dbcf53784b93acfc40057abc8104e2637bdd69e2dadee3dbc15",
+    "src/lib/game/TurnInstrument.svelte": "d3091040bd1753c94b6eb1648c4e56be6df3abb5ad08e026f6b5a03113c0121b",
+    "src/lib/game/achievements.ts": "ee44a3eaabe31b4444f1dd6274cdccc6e3e6c2705ba9649a3ffdb50278927b99",
+    "src/lib/game/automation-preview.ts": "713041d1f4e2711bff37ac11a866d336132156e50ef29d911d3b794db8f35001",
+    "src/lib/game/automation-scoring.ts": "1ce91516af158fd8d6848f6b4a614de5ed3f4a032462aae8339e19bc8038178f",
+    "src/lib/game/basic-fleet-action.ts": "2564b58fb0b3773ab03c48e7c96e6f2ac10e07b4899a5e6c4cecba5d03474e1f",
+    "src/lib/game/cards.ts": "cb54211c971ff19ea020ee0e457ff6069eb189b509f35c1debf92940d7528b8c",
+    "src/lib/game/continuation-kind.ts": "583626b94b65df306f0b1b06c434200023e9ac06cb972d2345c79b18e8c88270",
+    "src/lib/game/discovery-economy.ts": "cc25dff7fc2e8298f920dcde830277058f51123b52b0b777b4338698dc3a1d85",
+    "src/lib/game/discovery-effects.ts": "4c8a315c8739acbadb6a1ee7105d5b1c3028252f8bef24311b12a0101bf8d72e",
+    "src/lib/game/discovery-events.ts": "58ddff4e0ff1c085a1ab006275f05e970cb34fd0f99ef678025a56cedd03b40d",
+    "src/lib/game/discovery-movement.ts": "dd6d360bfd5e389d35166d9da9fdbcc7924e4a8ad767c5f13d47bf53fb6cb537",
+    "src/lib/game/discovery-queue.ts": "9900aca604e3bafc827a5a3f6b2d0d721fa23141abccce9a62581342fab68a68",
+    "src/lib/game/discovery-resolution.ts": "d3668e97f0393f39584c61f84b0d2022cc6a317110805d7fa8c59c60e567bdc3",
+    "src/lib/game/discovery.ts": "70c1cbb65cb18bc8056435f0620749bcacfba03c4761ff2e848c2060b26952b9",
+    "src/lib/game/fleet-preview.ts": "1c9315384bb55ab3cf6023ed79e926c9ec77f0814e9fff44bd7ca4c39e22ba76",
+    "src/lib/game/jump-preview.ts": "8d59c312ce2af47420e9715ea62e30b3a65de8d6fc210deb14eb5301a8a78320",
+    "src/lib/game/manifest.ts": "f5504ba5be29179303dc8569a95397304ff54f8f602539c472dc8f14567f8042",
+    "src/lib/game/production-preview.ts": "229e1f4bb5c15051a93e320d9d32d151daa0c436fce69cceed117cf40f70d89a",
+    "src/lib/game/setup.ts": "36f4d08bb92354d2a82e8890bad33c0602a8aecb5dc88521be5134a22f5ebf04",
+    "src/lib/game/technology-actions.ts": "0b36bf89166733939a88f31d47e12ac209baa0d764e6fb960ff6cc3522b2e727",
+    "src/lib/game/trade-preview.ts": "474a87c4b35c4748de57cbd79645b97f1fdc82c647fa6805898c6eca3b83bf31",
+    "src/lib/game/turn.ts": "09bd176291ce13c20a052c398fe4de6f5fd20e2a9df54b5c5e4f6b34f97daac6",
+    "tests/e2e/011-jump-planning/journey.ts": "0ab5c9f3e82bf5518468b6528f31b60a4f2004a497f53b4c170a77587c3293ff",
+    "tests/e2e/011-jump-planning/jump-remote.spec.ts": "fdab44bad9d0937de2390a578dc0e3b8e62b69eb44ba2bd82c6102e2f623a966",
+    "tests/e2e/011-jump-planning/jump-tabletop.spec.ts": "344fd72e7f1b2a7658e33141c7f7b90a79f777e8585b4dfaa4bc9407f7923087"
+  },
+  "guardSourcesByteIdenticalToBase": [
+    "firestore.rules",
+    "tests/e2e/helpers/screen-fit.ts",
+    "tests/e2e/helpers/exact-pixels.ts",
+    "tests/e2e/helpers/fixtures.ts",
+    "tests/e2e/helpers/story-reporter.ts"
+  ],
+  "pending": "Independent reviewer final evidence, Linux exact and matching-head hosted verification; no merge",
+  "checks": {
+    "backend": {
+      "passed": 219,
+      "assertions": 3259,
+      "isolatedSuites": 17,
+      "originalTestBudgetMs": 5000
+    },
+    "tooling": 64,
+    "captureGuards": 51,
+    "types": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "sourcePolicy": "PASS",
+    "staticProductionAndPreviewBuilds": "PASS",
+    "gitDiffCheck": "PASS"
+  },
+  "earlierFailures": "First130/132, second131/132 responsive assertion, third131/132 tiny original-art variation on pre-visible-budget build retained. Finalcurrent132/132PASS31.2m;12 unchanged-reference diagnostic captures did not reproduce tiny variation."
+}

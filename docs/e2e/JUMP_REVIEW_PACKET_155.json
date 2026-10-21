@@ -1,0 +1,187 @@
+{
+  "prompt": 155,
+  "status": "Exploratory local review/check packet complete; independent whole011 acceptance remains pending. Formal baselines and012 held.",
+  "scoped_acceptance": "Reviewer155 accepts151 corner route context at640/720 and recorded selected-context/type checks; no wider acceptance inferred.",
+  "entry": "http://127.0.0.1:5206/",
+  "normal_ui": "Play \u2192 Shared table \u2192 named seats and unique Basic factions \u2192 Begin. For four-jump: Ada Terraforming/Grow; Bora Robotics/Produce Ore; Ada Printed Action Terraforming. Remote Create/Join requires distinct ordinary identities.",
+  "evidence": {
+    "verified_pngs": 37,
+    "all_recorded_hashes_match": true,
+    "records": [
+      {
+        "path": "round148-map/map-1280x720.png",
+        "sha256": "87a363097d044c41a682a856a1832d6555c2d56c8eb36d94f427f3952b28aa3e"
+      },
+      {
+        "path": "round148-map/map-393x852.png",
+        "sha256": "47224187e7d33048aca50c011936a9cc9a3c9755a0961e364d3c7991e2efd930"
+      },
+      {
+        "path": "round148-terraforming-ready/route-editor-393.png",
+        "sha256": "157e8e646b95f767ba7de808a6cafd61a3d028367b7a3563cb4a63e636a28ee4"
+      },
+      {
+        "path": "round148-terraforming-ready/source-effect-1280.png",
+        "sha256": "8266aa46f29b829705939f22e6f5a57fe563c07669e6f83e64d697875a353251"
+      },
+      {
+        "path": "round148-terraforming-ready/source-complete-rules-1280.png",
+        "sha256": "f4093211f913d15ace7f66a780e20de4ab9b48667f6c61f19e50de847b662378"
+      },
+      {
+        "path": "round148-terraforming-ready/source-focus-return-1280.png",
+        "sha256": "9b0b0cca2d07e3f734fd1f74f01e4538c474a0acf183ad801b74533e8287db6a"
+      },
+      {
+        "path": "round147-paid-remote-final3/observer-393.png",
+        "sha256": "958b37a56ef38c409d94d4cfdfe8f6362f349dbfcb47e16bb85e5f69b66150e0"
+      },
+      {
+        "path": "round148-paid-four-corner-final/exploration-1280x640.png",
+        "sha256": "dd9229fac05abce92163ca39d028983425907391ca494ff7b13639e7342c8474"
+      },
+      {
+        "path": "round148-paid-four-corner-final/exploration-3840.png",
+        "sha256": "a4de79559650cd427d2c84958db929c8e4659cc10ef19b497cfcb44af5b20c3d"
+      },
+      {
+        "path": "round148-paid-four-corner-final/arrival-consequence-3840.png",
+        "sha256": "9e1a88c4087fdea5d15f04229169c5601d0afaf747a496e7921137df6686b4fb"
+      },
+      {
+        "path": "round148-paid-four-corner-final/system-focus-return-3840.png",
+        "sha256": "4488eb085a11e849a3f8d734a7364237e785b60e1bbd2734441c819aeb82b94a"
+      },
+      {
+        "path": "round148-rift/rift-same-system.png",
+        "sha256": "39cc20acadde876d66b2b330e19812b027659aaec8af26f07cc8bd7af737c589"
+      },
+      {
+        "path": "round148-rift-continuation/actual-rift-route-1280.png",
+        "sha256": "97b6db2e309e37ca083d6f1e05acb7fd276fde354aed65926f6b6a470ac473c9"
+      },
+      {
+        "path": "round148-rift-continuation/rift-pending-recovered-1280.png",
+        "sha256": "751528072929ae4653a1f4c59b194028474ba94578069e8bd044c06b687dd7fa"
+      },
+      {
+        "path": "round148-rift-finish/retained-real-epsilon-bonus-1280.png",
+        "sha256": "5bbc2724dab797a75d0b89a44f099aea898aa85d42aa03ee058718c2be4bdf0b"
+      },
+      {
+        "path": "round148-rift-finish/rift-production-reloaded-1280.png",
+        "sha256": "65b3ccfe36940a725e63e21979109e6235c64a959330e900373eb18e1413bb0c"
+      },
+      {
+        "path": "round148-expiry/no-carry-reloaded-1280.png",
+        "sha256": "b3c662c86cc7bffb518626a1388ca8caf26374b94b2dd5ccd3ec3b4aee8ecb74"
+      },
+      {
+        "path": "round148-multi-origin/two-origin-plan-1280.png",
+        "sha256": "a607bef1a3682fa0252c3a599fc8b845022e057068ab7570d8c1fb3b7d8fb6a0"
+      },
+      {
+        "path": "round148-multi-origin/rival-control-transfer-1280.png",
+        "sha256": "fbd96fa24cdc168ed725286b046b25f23f044fce4d731c265870c52b4648f73b"
+      },
+      {
+        "path": "round148-multi-origin/transfer-reloaded-1280.png",
+        "sha256": "c5d886a60b7e9d8f62b0873f08de2bd8c0dfd2971fb72e2dbea1f21e43a69155"
+      },
+      {
+        "path": "round148-solar-finish/solar-exact-arrival-cost-1280.png",
+        "sha256": "cc4a5b4a43aaaa2910d4233cdbb29889712ebd202521dde16f2d70155c514743"
+      },
+      {
+        "path": "round148-solar-finish/solar-unpaid-reload-1280.png",
+        "sha256": "231e64187ff66520bd74c3652db214b5c4a4994b71c0fa3d4ec89ea24408af2b"
+      },
+      {
+        "path": "round148-solar-finish/solar-paid-reloaded-1280.png",
+        "sha256": "2601674c96dadc1041758ad49f3f6e3a1ffbb9741121daf5c3b09c196899d081"
+      },
+      {
+        "path": "round148-luyten/actual-entry-blocked-1280.png",
+        "sha256": "d604dd15287138811df05c575bcc6df7ad4d2ad89bf00b23ec6b77dd1395d8d7"
+      },
+      {
+        "path": "round148-luyten/full-printed-entry-rule-1280.png",
+        "sha256": "81e75661b7a2df307ac08071a02326fc5b702f863600efe0dcacfbc6351d99eb"
+      },
+      {
+        "path": "round148-luyten/blocked-inspection-focus-return-1280.png",
+        "sha256": "951aaeb15b7f892d6c9b1972ed84d8478dceba80485a9ef36ff724c32dbab44e"
+      },
+      {
+        "path": "round148-luyten/restricted-unpaid-recovery-1280.png",
+        "sha256": "5a16ace4518c8693a4bbe4037e0e4fcfa70648f871175387dec84eeeef364bde"
+      },
+      {
+        "path": "round151-corner-before/split-1280x720.png",
+        "sha256": "7fdc6c3e49e121c3ce63bdd8f8e563a0e02ce7cecca8f047b0149ca373c7f036"
+      },
+      {
+        "path": "round151-corner-after-final/partial-1280x640.png",
+        "sha256": "0ac7d3aaaae26057e564d02deb15eb410601525ab4be20c997c5d1f48f910e2c"
+      },
+      {
+        "path": "round151-corner-after-final/split-1280x720.png",
+        "sha256": "b8ff0cd89f0679512ef5c7fec25b02b5415081cb438ae8bb860c3b1205e573fe"
+      },
+      {
+        "path": "round151-corner-after-final/split-1280x640.png",
+        "sha256": "24e010c015008f974b057ec4a4d5528c42f5460907cc8bff2223904d379a6cd9"
+      },
+      {
+        "path": "round151-corner-after-final/split-3840x2160.png",
+        "sha256": "712e74e801f46239cceedb6aef4c2a0e90601f5b8831e48e08005dd665da3028"
+      },
+      {
+        "path": "round151-corner-after-final/endpoint-focus-return-1280.png",
+        "sha256": "b020d22ec046756d1f83e5be53532d3260cef04f86e9eac1486a8d5a81eba4e4"
+      },
+      {
+        "path": "round151-keyboard-commit/complete-route-view-1280x640.png",
+        "sha256": "e88318899cfb46dee6d67d99fe667054a33d601ec1eadf3b6e133c11fdd36f73"
+      },
+      {
+        "path": "round151-keyboard-commit/keyboard-commit-1280x640.png",
+        "sha256": "aafd73a2012578610a57e7f1322fac77b6824fa972f16fe720643a4887e5cd0e"
+      },
+      {
+        "path": "round151-keyboard-commit/production-reloaded-1280x640.png",
+        "sha256": "5e56947ca90f8afa48b6cbbe15abde87dd01547332eebfd5ebca79689b8121cf"
+      },
+      {
+        "path": "round151-remote-regression/route-editor-393.png",
+        "sha256": "26e20bad39c332e2eb17f34c8f9bc851c57849375fdd344c4eaaaff45af7f054"
+      }
+    ],
+    "source_sha256": {
+      "src/lib/game/JumpPlan.svelte": "b21d125fb2db0d26f96d4b9c8ebe332c908f585798fd9747148485fddfe2cad0",
+      "src/lib/game/jump-preview.ts": "29afa0b3c8fd07cf183aa7276ff9a65b9627265d55c5aef0bccdbae6f257e3a3",
+      "src/lib/game/DiscoveryChoices.svelte": "03df33a7b4192a9fd358fe73dcd2079765b3d16883cc6810698493582a0f4993",
+      "src/lib/game/TurnInstrument.svelte": "d3091040bd1753c94b6eb1648c4e56be6df3abb5ad08e026f6b5a03113c0121b",
+      "tests/backend/jump-preview.test.ts": "437c15b584946bf8abd31c2efff29887c628792a82432888a67338c850bb0b29",
+      "tests/backend/discovery-security.test.ts": "06dfb63dccfa58aa1fe1b38a0a3873c3147fe060ba900de07387ca88accd559d"
+    }
+  },
+  "checks": {
+    "backend": "216/216,3240assertions, latest150 full isolated run. No backend change since.",
+    "types": "151:0errors/0warnings",
+    "exploratory_ui": "151 stricter initial route context, original geometry/touch guards, modal12Tab containment, Escape exact opener, Remove/Clear/unpaid reload, keyboard commit/Production reload, remote393 four-jump/observer regression PASS.",
+    "policy_and_diff": "Pass; no helper/guard/deadline changes.",
+    "formal_TestStepHelper_and_exact": "Not started for011; awaiting explicit release. Exploratory PNGs are not formal exact evidence.",
+    "sparse": "12148 committed references retained with skip-worktree; no staged changes or unstaged deletions."
+  },
+  "source_limit": "Successful Luyten entry after acquiring twoLevelIII is outside available phase011 actions; actual blocked entry and forged-write denial covered. No future card/deck inspection.",
+  "ci": {
+    "current_head": "65cb4a49befe99ea26ece29233ba32013db5dfd1",
+    "verify": 39585195254,
+    "status": "pending at checkpoint",
+    "publisher": 119172247756,
+    "result": "exact current503; no duplicate investigation",
+    "independent_log_equal_retained": true
+  },
+  "boundaries": "No publication, baseline generation,012, merge, reviewer room/controller access or service restart."
+}

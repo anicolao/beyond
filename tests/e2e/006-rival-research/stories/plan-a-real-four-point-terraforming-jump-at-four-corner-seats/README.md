@@ -1082,17 +1082,37 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 55. Select the actual owned ship whose path will be planned
+## 55. Open the actual connected-destination view
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/054-ship-selected-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/054-ship-selected-desktop-darwin.png) |
+| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/054-action-route-editor-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/054-action-route-editor-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/054-ship-selected-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/054-ship-selected-tabletop-4k-darwin.png)
+[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/054-action-route-editor-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/054-action-route-editor-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Open the actual connected-destination view
+- [x] Canonical effects settle before capture.
+- [x] Any printed Action plan is ready.
+- [x] Public compact topology remains physically separated.
+- [x] The gameplay shell fits the actual viewport.
+
+## 56. Select the actual owned ship whose path will be planned
+
+Viewpoint: **Ada · South West · one shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/055-ship-selected-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/055-ship-selected-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/055-ship-selected-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/055-ship-selected-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1102,17 +1122,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 56. Plan the first unpaid leg from Deep Space to the Northern shipyard
+## 57. Plan the first unpaid leg from Deep Space to the Northern shipyard
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/055-circuit-out-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/055-circuit-out-desktop-darwin.png) |
+| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/056-circuit-out-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/056-circuit-out-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/055-circuit-out-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/055-circuit-out-tabletop-4k-darwin.png)
+[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/056-circuit-out-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/056-circuit-out-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1122,17 +1142,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 57. A circuit returning every ship to its origin cannot spend this free Action
+## 58. A circuit returning every ship to its origin cannot spend this free Action
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/056-circuit-blocked-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/056-circuit-blocked-desktop-darwin.png) |
+| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/057-circuit-blocked-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/057-circuit-blocked-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/056-circuit-blocked-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/056-circuit-blocked-tabletop-4k-darwin.png)
+[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/057-circuit-blocked-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/057-circuit-blocked-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1142,17 +1162,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 58. Clear the unpaid circuit without moving a ship
+## 59. Clear the unpaid circuit without moving a ship
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/057-circuit-cleared-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/057-circuit-cleared-desktop-darwin.png) |
+| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/058-circuit-cleared-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/058-circuit-cleared-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/057-circuit-cleared-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/057-circuit-cleared-tabletop-4k-darwin.png)
+[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/058-circuit-cleared-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/058-circuit-cleared-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1162,17 +1182,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 59. Choose the Terraforming ship for a real relocation
+## 60. Choose the Terraforming ship for a real relocation
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/058-real-ship-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/058-real-ship-desktop-darwin.png) |
+| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/059-real-ship-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/059-real-ship-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/058-real-ship-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/058-real-ship-tabletop-4k-darwin.png)
+[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/059-real-ship-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/059-real-ship-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1182,17 +1202,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 60. Plan leg 1 of the printed 4-point budget without early payment or movement
+## 61. Plan leg 1 of the printed 4-point budget without early payment or movement
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/059-leg-1-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/059-leg-1-desktop-darwin.png) |
+| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/060-leg-1-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/060-leg-1-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/059-leg-1-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/059-leg-1-tabletop-4k-darwin.png)
+[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/060-leg-1-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/060-leg-1-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1202,17 +1222,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 61. Plan leg 2 of the printed 4-point budget without early payment or movement
+## 62. Plan leg 2 of the printed 4-point budget without early payment or movement
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/060-leg-2-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/060-leg-2-desktop-darwin.png) |
+| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/061-leg-2-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/061-leg-2-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/060-leg-2-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/060-leg-2-tabletop-4k-darwin.png)
+[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/061-leg-2-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/061-leg-2-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1222,17 +1242,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 62. Plan leg 3 of the printed 4-point budget without early payment or movement
+## 63. Plan leg 3 of the printed 4-point budget without early payment or movement
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/061-leg-3-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/061-leg-3-desktop-darwin.png) |
+| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/062-leg-3-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/062-leg-3-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/061-leg-3-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/061-leg-3-tabletop-4k-darwin.png)
+[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/062-leg-3-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/062-leg-3-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1242,17 +1262,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 63. Plan leg 4 of the printed 4-point budget without early payment or movement
+## 64. Plan leg 4 of the printed 4-point budget without early payment or movement
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/062-leg-4-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/062-leg-4-desktop-darwin.png) |
+| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/063-leg-4-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/063-leg-4-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/062-leg-4-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/062-leg-4-tabletop-4k-darwin.png)
+[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/063-leg-4-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/063-leg-4-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1262,17 +1282,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 64. Commit the complete path atomically before any actual gain-control bonus
+## 65. Commit the complete path atomically before any actual gain-control bonus
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/063-jump-committed-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/063-jump-committed-desktop-darwin.png) |
+| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/064-jump-committed-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/064-jump-committed-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/063-jump-committed-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/063-jump-committed-tabletop-4k-darwin.png)
+[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/064-jump-committed-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/064-jump-committed-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1282,17 +1302,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 65. Ada completes production and hands off to Bora
+## 66. Ada completes production and hands off to Bora
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/064-printed-action-handoff-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/064-printed-action-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/065-printed-action-handoff-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/065-printed-action-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/064-printed-action-handoff-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/064-printed-action-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/065-printed-action-handoff-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/065-printed-action-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1302,17 +1322,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 66. The printed Action, final ship location and Bora handoff survive reload
+## 67. The printed Action, final ship location and Bora handoff survive reload
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/065-handoff-restored-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/065-handoff-restored-desktop-darwin.png) |
+| [![desktop](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/066-handoff-restored-desktop-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/066-handoff-restored-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/065-handoff-restored-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/065-handoff-restored-tabletop-4k-darwin.png)
+[![4K](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/066-handoff-restored-tabletop-4k-darwin.png)](../../screenshots/plan-a-real-four-point-terraforming-jump-at-four-corner-seats/066-handoff-restored-tabletop-4k-darwin.png)
 
 </details>
 

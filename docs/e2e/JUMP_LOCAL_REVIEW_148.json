@@ -1,0 +1,216 @@
+{
+  "prompt": 148,
+  "status": "Current exploratory packet for independent review; no whole011 acceptance claimed",
+  "localURL": "http://127.0.0.1:5206/",
+  "protectedRecovery": "Reviewer147 independently supersedes146 stuck-room finding; original room/controller never opened or modified by agent. Temporary146 probes removed.",
+  "visualScope": "Reviewer148 accepts only specified older144 contrast/legend/endpoint-arrow corrections. Current map adds original production System-art medallions without changing full-width titles/touch dimensions; occupied locations retain numbered level cubes. Current endpoint readers use real shared CardFace.",
+  "completedFlows": {
+    "fourJump": "Fresh ordinary remote Terraforming turn; four connected edges through System and Northern shipyard to Deep Space; no pass-through outposts/rewards, two ships end Deep Space; Production/reload. Complete source face/End/Escape exact opener, unpaid draft reset and distinct observer isolation.",
+    "multiOrigin": "Same ordinary shared Rift history, legal paid Basic build creates second ship at Sol while original is at Epsilon Indi. Both move one edge to Lalande; final Ada2 vs Bora1 changes control, returns rival Food disc, places own disc once, retains empty Rift outpost. Canonical public before/after and Production reload equality checked.",
+    "rift": "Predeclared initial entropy selects printed Event through ordinary setup/preparatory turns. Concealed System deck selected before reveal, actual Epsilon inspected, reload retains pending attachment; actual attached edge used by real Basic jump, unpaid route reload, saved optional bonus and Production reload. No injected history.",
+    "solar": "Predeclared initial entropy selects printed Solar Event through ordinary setup/preparatory turns. Public Lalande target and candidate/printed ship+jump bonus resolved. Later real Basic jump preview charges1Ore; unpaid reload charges nothing; committed arrival and Production reload retain exactly1Ore payment.",
+    "expiry": "One of two Basic jump points intentionally unused. Real Production/handoff/intervening Gather/Production; same actor next Action has2 not3 points, unchanged on reload.",
+    "modes": "Remote separate desktop393px observer/actor, shared2 and four-cardinal/four-corner; current map audits1280/1124/640/393/native3840, fresh four-corner source/System inspection and exact focus restoration.",
+    "luyten": "Predeclared rare entropy reaches real Rift deckB/Luyten through ordinary setup/turns/discovery. Inspect printed two-LevelIII restriction, retain attachment/reload, then later Basic route is blocked before commit; resources untouched, inspector exact focus and unpaid recovery. No LevelIII acquisition added."
+  },
+  "bugFixed": "Rare System-bonus thumbnail incorrectly requested astronomy.png. Reuse OriginalCardArt for astronomy exactly as CardFace does. Retained Epsilon screenshot now decodes and passes full guards. No rules/backend/state changes.",
+  "validation": {
+    "backend": "Current148 full216 PASS /3240 assertions /78.82s, isolated8597, original5s test/hook limits; includes new legal-history Luyten regression",
+    "types": "Current148 including new test:0 errors/0 warnings",
+    "sourcePolicy": "PASS",
+    "diffCheck": "PASS",
+    "guards": "Original predicates/touch sizes/deadlines unchanged; no formal011 references or helper changes",
+    "newLuytenSecurity": "Targeted1/8 PASS and included in full216/3240 PASS",
+    "logs": {
+      "jumps148-backend.log": {
+        "bytes": 1173512,
+        "sha256": "8d768aff36d3fd2c577dd9b94fa86ba7c1826539d33787d78f48b99332e73d6e"
+      },
+      "jumps148-types-security.log": {
+        "bytes": 199,
+        "sha256": "1c1ac57edb961236a615c2680e5d95e3baddee91c6d7618166089923f7f4deb4"
+      },
+      "jumps148-luyten-security.log": {
+        "bytes": 1209,
+        "sha256": "3984a181ff49a24300b6af193346ba32cd99106ff9a7340b62094e06f1c88cc6"
+      }
+    }
+  },
+  "preservedFailures": [
+    "Initial exploratory148 remote capture reported overlap before later correctly acknowledged/five-viewport captures passed; original failure retained, transient cause not established. Formal exact still required.",
+    "Rift private script first attempted optional build with0Population; corrected via ordinary no-build control without state changes.",
+    "Rift/Solar scripts first expected Production before actual optional bonus/jump/outpost choices; continued each saved real choice on same own controller.",
+    "Nested source inspector private script used rotated-game audit mode; corrected to actual topmost normal dialog mode, matching existing official journey. No guard predicate changed.",
+    "Original Epsilon astronomy.png decode failure fixed in renderer and retained."
+  ],
+  "pending": [
+    "Independent current whole011 live/visual review",
+    "Formal TestStepHelper stories, reviewed candidate generation/full independent exact and required gates after reviewer release",
+    "Older PR8\u201312 per-head Linux/static/publication/hosted gates remain separate"
+  ],
+  "images": [
+    {
+      "path": "round148-map/map-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "87a363097d044c41a682a856a1832d6555c2d56c8eb36d94f427f3952b28aa3e"
+    },
+    {
+      "path": "round148-map/map-393x852.png",
+      "width": 393,
+      "height": 852,
+      "sha256": "47224187e7d33048aca50c011936a9cc9a3c9755a0961e364d3c7991e2efd930"
+    },
+    {
+      "path": "round148-terraforming-ready/route-editor-393.png",
+      "width": 393,
+      "height": 852,
+      "sha256": "157e8e646b95f767ba7de808a6cafd61a3d028367b7a3563cb4a63e636a28ee4"
+    },
+    {
+      "path": "round148-terraforming-ready/source-effect-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "8266aa46f29b829705939f22e6f5a57fe563c07669e6f83e64d697875a353251"
+    },
+    {
+      "path": "round148-terraforming-ready/source-complete-rules-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "f4093211f913d15ace7f66a780e20de4ab9b48667f6c61f19e50de847b662378"
+    },
+    {
+      "path": "round148-terraforming-ready/source-focus-return-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "9b0b0cca2d07e3f734fd1f74f01e4538c474a0acf183ad801b74533e8287db6a"
+    },
+    {
+      "path": "round147-paid-remote-final3/observer-393.png",
+      "width": 393,
+      "height": 852,
+      "sha256": "958b37a56ef38c409d94d4cfdfe8f6362f349dbfcb47e16bb85e5f69b66150e0"
+    },
+    {
+      "path": "round148-paid-four-corner-final/exploration-1280x640.png",
+      "width": 1280,
+      "height": 640,
+      "sha256": "dd9229fac05abce92163ca39d028983425907391ca494ff7b13639e7342c8474"
+    },
+    {
+      "path": "round148-paid-four-corner-final/exploration-3840.png",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "a4de79559650cd427d2c84958db929c8e4659cc10ef19b497cfcb44af5b20c3d"
+    },
+    {
+      "path": "round148-paid-four-corner-final/arrival-consequence-3840.png",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "9e1a88c4087fdea5d15f04229169c5601d0afaf747a496e7921137df6686b4fb"
+    },
+    {
+      "path": "round148-paid-four-corner-final/system-focus-return-3840.png",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "4488eb085a11e849a3f8d734a7364237e785b60e1bbd2734441c819aeb82b94a"
+    },
+    {
+      "path": "round148-rift/rift-same-system.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "39cc20acadde876d66b2b330e19812b027659aaec8af26f07cc8bd7af737c589"
+    },
+    {
+      "path": "round148-rift-continuation/actual-rift-route-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "97b6db2e309e37ca083d6f1e05acb7fd276fde354aed65926f6b6a470ac473c9"
+    },
+    {
+      "path": "round148-rift-continuation/rift-pending-recovered-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "751528072929ae4653a1f4c59b194028474ba94578069e8bd044c06b687dd7fa"
+    },
+    {
+      "path": "round148-rift-finish/retained-real-epsilon-bonus-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "5bbc2724dab797a75d0b89a44f099aea898aa85d42aa03ee058718c2be4bdf0b"
+    },
+    {
+      "path": "round148-rift-finish/rift-production-reloaded-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "65b3ccfe36940a725e63e21979109e6235c64a959330e900373eb18e1413bb0c"
+    },
+    {
+      "path": "round148-expiry/no-carry-reloaded-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "b3c662c86cc7bffb518626a1388ca8caf26374b94b2dd5ccd3ec3b4aee8ecb74"
+    },
+    {
+      "path": "round148-multi-origin/two-origin-plan-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "a607bef1a3682fa0252c3a599fc8b845022e057068ab7570d8c1fb3b7d8fb6a0"
+    },
+    {
+      "path": "round148-multi-origin/rival-control-transfer-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "fbd96fa24cdc168ed725286b046b25f23f044fce4d731c265870c52b4648f73b"
+    },
+    {
+      "path": "round148-multi-origin/transfer-reloaded-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "c5d886a60b7e9d8f62b0873f08de2bd8c0dfd2971fb72e2dbea1f21e43a69155"
+    },
+    {
+      "path": "round148-solar-finish/solar-exact-arrival-cost-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "cc4a5b4a43aaaa2910d4233cdbb29889712ebd202521dde16f2d70155c514743"
+    },
+    {
+      "path": "round148-solar-finish/solar-unpaid-reload-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "231e64187ff66520bd74c3652db214b5c4a4994b71c0fa3d4ec89ea24408af2b"
+    },
+    {
+      "path": "round148-solar-finish/solar-paid-reloaded-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "2601674c96dadc1041758ad49f3f6e3a1ffbb9741121daf5c3b09c196899d081"
+    },
+    {
+      "path": "round148-luyten/actual-entry-blocked-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "d604dd15287138811df05c575bcc6df7ad4d2ad89bf00b23ec6b77dd1395d8d7"
+    },
+    {
+      "path": "round148-luyten/full-printed-entry-rule-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "81e75661b7a2df307ac08071a02326fc5b702f863600efe0dcacfbc6351d99eb"
+    },
+    {
+      "path": "round148-luyten/blocked-inspection-focus-return-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "951aaeb15b7f892d6c9b1972ed84d8478dceba80485a9ef36ff724c32dbab44e"
+    },
+    {
+      "path": "round148-luyten/restricted-unpaid-recovery-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "5a16ace4518c8693a4bbe4037e0e4fcfa70648f871175387dec84eeeef364bde"
+    }
+  ],
+  "services": "5206/9397/8297 preserved; all reviewer rooms/controllers untouched; no012, baseline publication or merge"
+}

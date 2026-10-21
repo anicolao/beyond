@@ -1,0 +1,66 @@
+{
+  "prompt": 157,
+  "status": "Auto-pass restored and targeted regression complete; no whole011 acceptance inferred.",
+  "corrected_finding": "Original Routes handler could dereference undefined for an empty fleet if invoked, but the ordinary legal replay auto-passes optional no-ship jumps. No reachable ordinary-flow crash was established.156 introduced a confirmation to expose that state; this was unnecessary and is reverted. Historical156 confirmation screenshots are not current production-flow evidence.",
+  "source": {
+    "reverted": "Removed showJumpPlanner and both automatic-send/render suppression conditions. Original canAdvanceDiscovery client behavior restored.",
+    "retained": "No-ship Routes omits previous/next navigation and displays no-ships state. Single-ship arrows disabled. Actual handler delegates to tested safe cycleRouteShipId, returning empty selection for empty fleet; no modulo by zero or invented ships.",
+    "canonical": "No change to movement validators, automatic continuation, required-jump rules, Firestore policy or identity/persistence."
+  },
+  "checks": {
+    "helper": "12/12 PASS,54 assertions; empty/single/multiple route navigation, optional canonical auto-pass\u2192resume\u2192Production, required no-movement rejection.",
+    "ordinary_shared": "Normal setup\u2192Gather\u2192Trade\u2192last-ship decommission\u2192Finish\u2192rival legal Robotics/Ore\u2192Basic optional build unchecked and real valid space. Existing jump auto-passes to Production with empty queue/no planner; ships0, Population/Ore/Supply preserved; reload retained. No page exceptions/alerts; original guards.",
+    "ordinary_remote": "Same ordinary flow with separate host/guest identities, desktop/393phone Production and reload; guest cannot produce for actor. No forced planner, injected ships/history or state mutations.",
+    "types": "0errors/0warnings",
+    "policy": "PASS",
+    "diff": "PASS",
+    "security": "156 targeted existing required-jump model/atomic rejection and legal alternative passed; canonical source unchanged, no redundant rerun claimed.",
+    "helper_guards": "No E2E helper, guard predicate, timing budget, exact reference or screenshot baseline changed."
+  },
+  "images": [
+    {
+      "path": "round157-auto-pass-shared/auto-passed-production-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "ab94b4028cbfb94019e57995ba6e282fa29976c1ef175a673f0f468390e7ae5b"
+    },
+    {
+      "path": "round157-auto-pass-shared/auto-passed-production-reloaded.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "ab94b4028cbfb94019e57995ba6e282fa29976c1ef175a673f0f468390e7ae5b"
+    },
+    {
+      "path": "round157-auto-pass-shared/ordinary-last-ship-decommissioned-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "1335342f4bffa25dfd9003aaa1bcd2f4442f259f65984444e5c4d740d4f44b87"
+    },
+    {
+      "path": "round157-auto-pass-remote/auto-passed-production-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "dd4186984373ee7069ce3b05f964b4e94b0b2a78c2f152e591566c0cc3b1ee9e"
+    },
+    {
+      "path": "round157-auto-pass-remote/auto-passed-production-393.png",
+      "width": 393,
+      "height": 852,
+      "sha256": "7f679dbf69bd30f53cecd995baf3c954bc66e581da8a46e4bffc3474e7cd83ce"
+    },
+    {
+      "path": "round157-auto-pass-remote/auto-passed-production-reloaded.png",
+      "width": 393,
+      "height": 852,
+      "sha256": "7f679dbf69bd30f53cecd995baf3c954bc66e581da8a46e4bffc3474e7cd83ce"
+    },
+    {
+      "path": "round157-auto-pass-remote/ordinary-last-ship-decommissioned-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "b541cc8fb2ea773b4e48ce9151bdaa6f34ac9fa5c034278ee1d8fea622227ce1"
+    }
+  ],
+  "pending": "Independent scope review and whole011 review/formal verification release. No baselines, publication,012 or merge.",
+  "services": "5206/9397/8297 unchanged; all reviewer rooms/controllers untouched."
+}

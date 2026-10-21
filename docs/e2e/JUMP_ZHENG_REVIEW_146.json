@@ -1,0 +1,64 @@
+{
+  "prompt": 146,
+  "reviewerRoom": "Not opened, read, modified or used for identity. Its independent failure remains unresolved until current diagnostic evidence.",
+  "localSource": "Current011 local source including Prompt144 read-only opponent-power correction; no new rules changes",
+  "separateReproduction": {
+    "setup": "Ordinary shared2 UI, Ada south Zheng-Yi, Bora north UN, Basic Space1 optional build adds third Sol ship. Plan/remove/clear/rebuild two original ships Sol to Barnard\u2019s Star.",
+    "publicCardSelection": "Nine separate ordinary setups; only already-visible starting destination checked. Original rooms retained; no seed/fixture injection or concealed deck inspection.",
+    "room": "a81d8eed-c90c-463d-a39d-a4a28565c8fb",
+    "outcome": "Current source completed normally: saved Production cursor12, empty queue, south powers Sol1/A1=2/total3, third ship remains Sol, Food outpost7 remaining, Population2/SupplyA3/Ore1.",
+    "reload": "Own original controller reloaded twice, Production/no alerts/diagnostic146 marker verified. No production move submitted.",
+    "causeConclusion": "Cannot reproduce reviewer failure on current source; do not claim reviewer room repaired or assume same cause as144."
+  },
+  "rulesRegression": {
+    "scenarios": [
+      "move ships0+1",
+      "move ships0+2",
+      "move ships1+2"
+    ],
+    "source": "Unchanged current rules on isolated8597; ordinary legal setup/build/jump/every continuation/persisted readback.",
+    "result": "10 tests/51 assertions PASS including three new Zheng/Barnard scenarios; original5s budgets unchanged."
+  },
+  "legend": {
+    "viewport": "1124x720",
+    "result": "Current selected split-plan screenshot visually inspected and original full screen-fit guard passes. Explicit legend bottom439.594 <=scroll bottom450.594 and action top474.984; not clipped. No layout/source change needed for this current reproduction.",
+    "proof": "round146-legend/legend-geometry.json",
+    "screenshot": "round146-legend/legend-1124.png"
+  },
+  "temporaryDiagnostic": {
+    "component": "TurnInstrument.svelte",
+    "ready": "[jump-review146] diagnostic ready",
+    "failure": "[jump-review146] save rejected",
+    "fields": [
+      "move kind",
+      "phase",
+      "cursor",
+      "queue kind",
+      "printed source",
+      "location",
+      "index",
+      "ship count",
+      "error code"
+    ],
+    "exclusions": [
+      "UIDs",
+      "tokens",
+      "raw error messages",
+      "hidden storage",
+      "ownership changes"
+    ],
+    "removeBeforePublication": true,
+    "requested": "If original failure persists, reviewer can report sanitized line without sharing identity or permitting agent room access."
+  },
+  "evidence": [
+    "round146-barnard/8/initial-1124.png",
+    "round146-barnard/8/split-1124.png",
+    "round146-barnard/8/after-commit.png",
+    "round146-barnard/8/production-reloaded-1124.png",
+    "round146-barnard/8/own-public-state.json",
+    "round146-barnard/8/reload-proof.json",
+    "round146-legend/legend-1124.png"
+  ],
+  "types": "0 errors/0 warnings",
+  "gates": "No011 acceptance requested; no baselines, publication,012 or merges; live services and protected controllers preserved."
+}

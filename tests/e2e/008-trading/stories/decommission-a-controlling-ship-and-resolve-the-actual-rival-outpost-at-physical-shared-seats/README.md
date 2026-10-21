@@ -632,21 +632,21 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 31. Plan an actual adjacent jump without premature movement or control
+## 31. Open the actual connected-destination view
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/030-laser-leg-0-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/030-laser-leg-0-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/030-laser-route-editor-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/030-laser-route-editor-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/030-laser-leg-0-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/030-laser-leg-0-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/030-laser-route-editor-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/030-laser-route-editor-tabletop-4k-darwin.png)
 
 </details>
 
-- [x] Plan an actual adjacent jump without premature movement or control
+- [x] Open the actual connected-destination view
 - [x] Canonical effects settle before capture.
 - [x] Any printed Action plan is ready.
 - [x] The rotated trade explanation stays above the opaque footer.
@@ -659,11 +659,11 @@ Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/031-laser-leg-1-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/031-laser-leg-1-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/031-laser-leg-0-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/031-laser-leg-0-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/031-laser-leg-1-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/031-laser-leg-1-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/031-laser-leg-0-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/031-laser-leg-0-tabletop-4k-darwin.png)
 
 </details>
 
@@ -680,11 +680,11 @@ Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/032-laser-leg-2-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/032-laser-leg-2-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/032-laser-leg-1-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/032-laser-leg-1-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/032-laser-leg-2-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/032-laser-leg-2-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/032-laser-leg-1-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/032-laser-leg-1-tabletop-4k-darwin.png)
 
 </details>
 
@@ -695,17 +695,38 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 34. The complete jump reaches Northern shipyard and offers its real outpost tracks
+## 34. Plan an actual adjacent jump without premature movement or control
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/033-ada-control-choice-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/033-ada-control-choice-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/033-laser-leg-2-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/033-laser-leg-2-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/033-ada-control-choice-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/033-ada-control-choice-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/033-laser-leg-2-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/033-laser-leg-2-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Plan an actual adjacent jump without premature movement or control
+- [x] Canonical effects settle before capture.
+- [x] Any printed Action plan is ready.
+- [x] The rotated trade explanation stays above the opaque footer.
+- [x] Public compact topology remains physically separated.
+- [x] The gameplay shell fits the actual viewport.
+
+## 35. The complete jump reaches Northern shipyard and offers its real outpost tracks
+
+Viewpoint: **Ada · South West · one shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/034-ada-control-choice-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/034-ada-control-choice-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/034-ada-control-choice-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/034-ada-control-choice-tabletop-4k-darwin.png)
 
 </details>
 
@@ -716,17 +737,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 35. Ada controls Northern shipyard with an actual Food disc
+## 36. Ada controls Northern shipyard with an actual Food disc
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/034-ada-control-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/034-ada-control-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/035-ada-control-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/035-ada-control-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/034-ada-control-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/034-ada-control-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/035-ada-control-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/035-ada-control-tabletop-4k-darwin.png)
 
 </details>
 
@@ -737,17 +758,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 36. Ada completes production and hands off to Bora
+## 37. Ada completes production and hands off to Bora
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/035-ada-yard-handoff-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/035-ada-yard-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/036-ada-yard-handoff-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/036-ada-yard-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/035-ada-yard-handoff-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/035-ada-yard-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/036-ada-yard-handoff-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/036-ada-yard-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -758,17 +779,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 37. Bora opens the actual research and Action instrument
+## 38. Bora opens the actual research and Action instrument
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/036-bora-action-plan-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/036-bora-action-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/037-bora-action-plan-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/037-bora-action-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/036-bora-action-plan-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/036-bora-action-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/037-bora-action-plan-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/037-bora-action-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -779,17 +800,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 38. Bora selects printed technology Actions
+## 39. Bora selects printed technology Actions
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/037-bora-action-kind-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/037-bora-action-kind-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/038-bora-action-kind-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/038-bora-action-kind-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/037-bora-action-kind-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/037-bora-action-kind-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/038-bora-action-kind-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/038-bora-action-kind-tabletop-4k-darwin.png)
 
 </details>
 
@@ -800,17 +821,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 39. Read Terraforming's actual research requirement, payment and exclusive pawn space
+## 40. Read Terraforming's actual research requirement, payment and exclusive pawn space
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/038-bora-action-face-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/038-bora-action-face-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/039-bora-action-face-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/039-bora-action-face-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/038-bora-action-face-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/038-bora-action-face-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/039-bora-action-face-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/039-bora-action-face-tabletop-4k-darwin.png)
 
 </details>
 
@@ -821,17 +842,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 40. The free printed Terraforming Action permits exactly four jumps shared by owned ships
+## 41. The free printed Terraforming Action permits exactly four jumps shared by owned ships
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/039-bora-four-jump-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/039-bora-four-jump-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/040-bora-four-jump-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/040-bora-four-jump-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/039-bora-four-jump-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/039-bora-four-jump-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/040-bora-four-jump-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/040-bora-four-jump-tabletop-4k-darwin.png)
 
 </details>
 
@@ -842,17 +863,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 41. Choose the second original level1 Sol ship
+## 42. Choose the second original level1 Sol ship
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/040-bora-sol-ship-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/040-bora-sol-ship-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/041-bora-sol-ship-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/041-bora-sol-ship-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/040-bora-sol-ship-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/040-bora-sol-ship-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/041-bora-sol-ship-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/041-bora-sol-ship-tabletop-4k-darwin.png)
 
 </details>
 
@@ -863,42 +884,21 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 42. Plan the first ship path while control remains unchanged
+## 43. Open the actual connected-destination view
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/041-bora-leg-0-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/041-bora-leg-0-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/042-bora-route-editor-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/042-bora-route-editor-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/041-bora-leg-0-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/041-bora-leg-0-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/042-bora-route-editor-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/042-bora-route-editor-tabletop-4k-darwin.png)
 
 </details>
 
-- [x] Plan the first ship path while control remains unchanged
-- [x] Canonical effects settle before capture.
-- [x] Any printed Action plan is ready.
-- [x] The rotated trade explanation stays above the opaque footer.
-- [x] Public compact topology remains physically separated.
-- [x] The gameplay shell fits the actual viewport.
-
-## 43. Plan the first ship path while control remains unchanged
-
-Viewpoint: **Bora · North East · one shared controller**.
-
-| desktop · 1440 × 1000 |
-| --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/042-bora-leg-1-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/042-bora-leg-1-desktop-darwin.png) |
-
-<details><summary>tabletop-4k · 3840 × 2160</summary>
-
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/042-bora-leg-1-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/042-bora-leg-1-tabletop-4k-darwin.png)
-
-</details>
-
-- [x] Plan the first ship path while control remains unchanged
+- [x] Open the actual connected-destination view
 - [x] Canonical effects settle before capture.
 - [x] Any printed Action plan is ready.
 - [x] The rotated trade explanation stays above the opaque footer.
@@ -911,11 +911,11 @@ Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/043-bora-leg-2-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/043-bora-leg-2-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/043-bora-leg-0-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/043-bora-leg-0-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/043-bora-leg-2-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/043-bora-leg-2-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/043-bora-leg-0-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/043-bora-leg-0-tabletop-4k-darwin.png)
 
 </details>
 
@@ -926,17 +926,59 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 45. Allocate the remaining jump to the distinct Terraforming ship in Deep Space
+## 45. Plan the first ship path while control remains unchanged
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/044-bora-deep-ship-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/044-bora-deep-ship-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/044-bora-leg-1-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/044-bora-leg-1-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/044-bora-deep-ship-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/044-bora-deep-ship-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/044-bora-leg-1-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/044-bora-leg-1-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Plan the first ship path while control remains unchanged
+- [x] Canonical effects settle before capture.
+- [x] Any printed Action plan is ready.
+- [x] The rotated trade explanation stays above the opaque footer.
+- [x] Public compact topology remains physically separated.
+- [x] The gameplay shell fits the actual viewport.
+
+## 46. Plan the first ship path while control remains unchanged
+
+Viewpoint: **Bora · North East · one shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/045-bora-leg-2-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/045-bora-leg-2-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/045-bora-leg-2-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/045-bora-leg-2-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Plan the first ship path while control remains unchanged
+- [x] Canonical effects settle before capture.
+- [x] Any printed Action plan is ready.
+- [x] The rotated trade explanation stays above the opaque footer.
+- [x] Public compact topology remains physically separated.
+- [x] The gameplay shell fits the actual viewport.
+
+## 47. Allocate the remaining jump to the distinct Terraforming ship in Deep Space
+
+Viewpoint: **Bora · North East · one shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/046-bora-deep-ship-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/046-bora-deep-ship-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/046-bora-deep-ship-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/046-bora-deep-ship-tabletop-4k-darwin.png)
 
 </details>
 
@@ -947,17 +989,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 46. Both level1 ships will finish at the same actual shipyard
+## 48. Both level1 ships will finish at the same actual shipyard
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/045-bora-final-leg-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/045-bora-final-leg-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/047-bora-final-leg-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/047-bora-final-leg-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/045-bora-final-leg-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/045-bora-final-leg-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/047-bora-final-leg-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/047-bora-final-leg-tabletop-4k-darwin.png)
 
 </details>
 
@@ -968,17 +1010,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 47. Equal2 power preserves Ada as the existing owner before decommission
+## 49. Equal2 power preserves Ada as the existing owner before decommission
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/046-tie-preserves-owner-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/046-tie-preserves-owner-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/048-tie-preserves-owner-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/048-tie-preserves-owner-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/046-tie-preserves-owner-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/046-tie-preserves-owner-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/048-tie-preserves-owner-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/048-tie-preserves-owner-tabletop-4k-darwin.png)
 
 </details>
 
@@ -989,17 +1031,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 48. Bora completes production and hands off to Ada
+## 50. Bora completes production and hands off to Ada
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/047-bora-yard-handoff-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/047-bora-yard-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/049-bora-yard-handoff-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/049-bora-yard-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/047-bora-yard-handoff-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/047-bora-yard-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/049-bora-yard-handoff-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/049-bora-yard-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1010,17 +1052,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 49. Ada opens the actual research and Action instrument
+## 51. Ada opens the actual research and Action instrument
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/048-ada-next-plan-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/048-ada-next-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/050-ada-next-plan-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/050-ada-next-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/048-ada-next-plan-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/048-ada-next-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/050-ada-next-plan-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/050-ada-next-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1031,17 +1073,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 50. Ada selects ordinary gathering
+## 52. Ada selects ordinary gathering
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/049-ada-next-kind-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/049-ada-next-kind-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/051-ada-next-kind-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/051-ada-next-kind-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/049-ada-next-kind-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/049-ada-next-kind-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/051-ada-next-kind-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/051-ada-next-kind-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1052,17 +1094,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 51. Receive the printed gather resources before ordinary production
+## 53. Receive the printed gather resources before ordinary production
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/050-ada-next-gathered-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/050-ada-next-gathered-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/052-ada-next-gathered-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/052-ada-next-gathered-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/050-ada-next-gathered-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/050-ada-next-gathered-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/052-ada-next-gathered-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/052-ada-next-gathered-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1073,17 +1115,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 52. Trade replaces ordinary growth and Ore production without changing the balance
+## 54. Trade replaces ordinary growth and Ore production without changing the balance
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/051-decommission-trade-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/051-decommission-trade-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/053-decommission-trade-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/053-decommission-trade-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/051-decommission-trade-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/051-decommission-trade-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/053-decommission-trade-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/053-decommission-trade-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1094,17 +1136,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 53. Inspect the named exchange without committing a resource
+## 55. Inspect the named exchange without committing a resource
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/052-control-ship-route-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/052-control-ship-route-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/054-control-ship-route-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/054-control-ship-route-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/052-control-ship-route-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/052-control-ship-route-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/054-control-ship-route-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/054-control-ship-route-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1115,17 +1157,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 54. Inspect the exact ship, payment and public power/control change without committing
+## 56. Inspect the exact ship, payment and public power/control change without committing
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/053-control-ship-selected-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/053-control-ship-selected-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/055-control-ship-selected-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/055-control-ship-selected-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/053-control-ship-selected-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/053-control-ship-selected-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/055-control-ship-selected-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/055-control-ship-selected-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1136,17 +1178,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 55. Decommission is saved once; the resulting outpost choice belongs to Bora
+## 57. Decommission is saved once; the resulting outpost choice belongs to Bora
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/054-control-transfer-pending-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/054-control-transfer-pending-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/056-control-transfer-pending-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/056-control-transfer-pending-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/054-control-transfer-pending-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/054-control-transfer-pending-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/056-control-transfer-pending-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/056-control-transfer-pending-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1157,17 +1199,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 56. The actual responder chooses a real outpost without any discovery or reveal claim
+## 58. The actual responder chooses a real outpost without any discovery or reveal claim
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/055-bora-outpost-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/055-bora-outpost-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/057-bora-outpost-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/057-bora-outpost-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/055-bora-outpost-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/055-bora-outpost-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/057-bora-outpost-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/057-bora-outpost-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1178,17 +1220,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 57. Reload retains the outpost responder and never replays the decommission
+## 59. Reload retains the outpost responder and never replays the decommission
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/056-bora-choice-retained-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/056-bora-choice-retained-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/058-bora-choice-retained-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/058-bora-choice-retained-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/056-bora-choice-retained-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/056-bora-choice-retained-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/058-bora-choice-retained-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/058-bora-choice-retained-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1199,17 +1241,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 58. Reopen the same saved control-transfer decision
+## 60. Reopen the same saved control-transfer decision
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/057-bora-choice-reopened-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/057-bora-choice-reopened-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/059-bora-choice-reopened-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/059-bora-choice-reopened-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/057-bora-choice-reopened-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/057-bora-choice-reopened-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/059-bora-choice-reopened-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/059-bora-choice-reopened-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1220,17 +1262,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 59. The outpost choice settles and returns the original actor to trading
+## 61. The outpost choice settles and returns the original actor to trading
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/058-control-complete-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/058-control-complete-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/060-control-complete-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/060-control-complete-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/058-control-complete-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/058-control-complete-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/060-control-complete-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/060-control-complete-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1241,17 +1283,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 60. Reload retains the current identity, accepted exchanges and pending trading phase
+## 62. Reload retains the current identity, accepted exchanges and pending trading phase
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/059-control-trade-retained-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/059-control-trade-retained-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/061-control-trade-retained-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/061-control-trade-retained-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/059-control-trade-retained-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/059-control-trade-retained-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/061-control-trade-retained-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/061-control-trade-retained-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1262,17 +1304,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 61. Open the same retained trade without duplicating a payment
+## 63. Open the same retained trade without duplicating a payment
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/060-control-trade-reopened-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/060-control-trade-reopened-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/062-control-trade-reopened-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/062-control-trade-reopened-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/060-control-trade-reopened-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/060-control-trade-reopened-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/062-control-trade-reopened-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/062-control-trade-reopened-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1283,17 +1325,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 62. The original actor gains exactly one Population and pays exactly one Ore
+## 64. The original actor gains exactly one Population and pays exactly one Ore
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/061-exact-decommission-cost-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/061-exact-decommission-cost-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/063-exact-decommission-cost-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/063-exact-decommission-cost-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/061-exact-decommission-cost-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/061-exact-decommission-cost-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/063-exact-decommission-cost-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/063-exact-decommission-cost-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1304,17 +1346,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 63. Inspect all twenty cubes in their current public locations
+## 65. Inspect all twenty cubes in their current public locations
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/062-trade-cycle-open-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/062-trade-cycle-open-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/064-trade-cycle-open-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/064-trade-cycle-open-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/062-trade-cycle-open-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/062-trade-cycle-open-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/064-trade-cycle-open-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/064-trade-cycle-open-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1325,17 +1367,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 64. Forward Tab stays inside the native cube reader
+## 66. Forward Tab stays inside the native cube reader
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/063-trade-cycle-tab-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/063-trade-cycle-tab-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/065-trade-cycle-tab-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/065-trade-cycle-tab-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/063-trade-cycle-tab-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/063-trade-cycle-tab-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/065-trade-cycle-tab-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/065-trade-cycle-tab-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1346,17 +1388,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 65. Reverse Tab also stays inside the native reader
+## 67. Reverse Tab also stays inside the native reader
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/064-trade-cycle-reverse-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/064-trade-cycle-reverse-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/066-trade-cycle-reverse-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/066-trade-cycle-reverse-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/064-trade-cycle-reverse-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/064-trade-cycle-reverse-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/066-trade-cycle-reverse-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/066-trade-cycle-reverse-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1367,17 +1409,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 66. Escape restores the exact inspector opener without committing a trade
+## 68. Escape restores the exact inspector opener without committing a trade
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/065-trade-cycle-return-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/065-trade-cycle-return-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/067-trade-cycle-return-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/067-trade-cycle-return-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/065-trade-cycle-return-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/065-trade-cycle-return-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/067-trade-cycle-return-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/067-trade-cycle-return-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1388,17 +1430,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 67. Finish trading passes to the next player without adding growth or Ore production
+## 69. Finish trading passes to the next player without adding growth or Ore production
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/066-control-finished-passed-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/066-control-finished-passed-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/068-control-finished-passed-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/068-control-finished-passed-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/066-control-finished-passed-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/066-control-finished-passed-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/068-control-finished-passed-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/068-control-finished-passed-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1409,17 +1451,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 68. The public faction mat retains the final exact trade balance after handoff
+## 70. The public faction mat retains the final exact trade balance after handoff
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/067-control-finished-proof-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/067-control-finished-proof-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/069-control-finished-proof-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/069-control-finished-proof-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/067-control-finished-proof-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/067-control-finished-proof-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/069-control-finished-proof-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/069-control-finished-proof-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1430,17 +1472,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 69. Escape returns from the actual mat to the handed-off board
+## 71. Escape returns from the actual mat to the handed-off board
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/068-control-finished-return-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/068-control-finished-return-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/070-control-finished-return-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/070-control-finished-return-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/068-control-finished-return-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/068-control-finished-return-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/070-control-finished-return-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/070-control-finished-return-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1451,17 +1493,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 70. Reload retains the finished trading turn and leaves no orphaned inspector
+## 72. Reload retains the finished trading turn and leaves no orphaned inspector
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/069-control-finished-restored-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/069-control-finished-restored-desktop-darwin.png) |
+| [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/071-control-finished-restored-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/071-control-finished-restored-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/069-control-finished-restored-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/069-control-finished-restored-tabletop-4k-darwin.png)
+[![4K](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/071-control-finished-restored-tabletop-4k-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-at-physical-shared-seats/071-control-finished-restored-tabletop-4k-darwin.png)
 
 </details>
 

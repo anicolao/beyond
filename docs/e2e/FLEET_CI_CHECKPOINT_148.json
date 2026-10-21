@@ -1,0 +1,52 @@
+{
+  "prompt": 148,
+  "PR": 12,
+  "head": "7b42cd410818a99d3acd3ff2bcb0792678c490a2",
+  "parent9018Run": 39562980280,
+  "native": {
+    "job": 119119913057,
+    "result": "116/118 PASS1.1h,51guards PASS",
+    "failures": [
+      "007 four-corner120s story deadline while awaiting Gather production",
+      "007 four-cardinal120s story deadline during capture; detach closed-page error is secondary"
+    ],
+    "cohortAccepted": false
+  },
+  "comparison": {
+    "job": 119119913405,
+    "result": "16/118 PASS15.6m;56 pixel mismatches and46 missing references; no capture/story timing error found"
+  },
+  "artifact": {
+    "id": 12335965392,
+    "name": "candidate-failure-evidence",
+    "size": 25261229,
+    "digest": "sha256:bdd42c11ee4ae4630a9319ecaf85ca66024e2aa717b6024a88f3a084fa40ffda",
+    "local": "tmp/fleet148-native-failure-evidence",
+    "scope": "Downloaded only small failure evidence; no reference adoption.20.76GB full candidate archive not downloaded."
+  },
+  "traceObservation": {
+    "cardinal": "213waitForFunction calls total9868ms;106newCDPSession72ms;106mouseMove21935ms",
+    "corner": "208waitForFunction8181ms;104newCDPSession74ms;104mouseMove21965ms",
+    "conclusion": "Aggregate native capture/pointer cost persists; session creation is minor. Prior132 findings corroborated, no performance repair claimed/adopted."
+  },
+  "currentHead": "7b42cd4 static204/206 FAIL: remote3 compatibility5013.99ms and remote45002.99ms; browser/native still running. Publication exact-source503; docs pending. No final010 acceptance.",
+  "guardChanges": false,
+  "logs": {
+    "fleet148-pr12-native-parent.log": {
+      "bytes": 273188,
+      "sha256": "8cbef634495e80fcd5a08b309385f625b63cd7e9d966aeeb16a02b8a3129b180"
+    },
+    "fleet148-pr12-comparison-parent.log": {
+      "bytes": 679866,
+      "sha256": "31b634300585c7c53faccc080dfff5771b145aed87b94ae258d3db026925d6a1"
+    },
+    "fleet148-trace-timings.json": {
+      "bytes": 12743,
+      "sha256": "51099d681322efc2ec0d76ea968c17bbc8db28f2ed8e5c1d79d4329c4e9ee502"
+    },
+    "fleet148-pr12-static-current.log": {
+      "bytes": 1886337,
+      "sha256": "8f07a4ed212cda11a25046bbb30df9e2434402e37ef4f57dcd86d95a3f78bb78"
+    }
+  }
+}

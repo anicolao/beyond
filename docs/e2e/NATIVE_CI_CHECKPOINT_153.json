@@ -1,0 +1,51 @@
+{
+  "prompt": 153,
+  "parent_native": {
+    "head": "9018b9f2476a942d16089160a8caf43c69ac0409",
+    "job": 119119913057,
+    "result": "116/118 PASS in1.1h",
+    "failures": [
+      {
+        "phase": "007-production four-corner/cardinal shared-table",
+        "primary": "Unchanged120000ms story deadline; gather awaited Choose your production"
+      },
+      {
+        "phase": "007-production other four-seat shared-table variant",
+        "primary": "Unchanged120000ms story deadline",
+        "secondary": "camera.detach after page closed; not a separate baseline mismatch"
+      }
+    ],
+    "cohort_accepted": false,
+    "reference_imports": 0,
+    "reviewer_log": "/tmp/beyond-review-pr12-native-9018b9f.log",
+    "preserved_log": "/Users/anicolao/projects/games/beyond/tmp/fleet153-pr12-native-9018b9f.log",
+    "bytes": 273188,
+    "sha256": "8cbef634495e80fcd5a08b309385f625b63cd7e9d966aeeb16a02b8a3129b180"
+  },
+  "separate_7b42_run": {
+    "run": 39576797656,
+    "head": "7b42cd410818a99d3acd3ff2bcb0792678c490a2",
+    "static": {
+      "job": 119154497018,
+      "status": "completed failure",
+      "result": "204/206; remote3/4 five-second test deadlines"
+    },
+    "native": {
+      "job": 119154497318,
+      "status": "in_progress"
+    },
+    "comparison": {
+      "job": 119154497427,
+      "status": "completed failure",
+      "result": "16/118;56pixels46missing; no timing failures"
+    }
+  },
+  "current_65cb_run": {
+    "run": 39585195254,
+    "head": "65cb4a49befe99ea26ece29233ba32013db5dfd1",
+    "status": "pending",
+    "purpose": "Suite-process isolation candidate; Linux improvement not yet established"
+  },
+  "local011": "151 route-context evidence awaits independent review; no formal baseline generation or012 release. Persistent services/controllers untouched.",
+  "guards": "No timing, comparison, guard, test, policy or reference changes."
+}

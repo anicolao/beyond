@@ -1,0 +1,36 @@
+{
+  "prompt": 147,
+  "PR": 12,
+  "head": "7b42cd410818a99d3acd3ff2bcb0792678c490a2",
+  "base": "feat/automation@029449dccb7c4458f5e75aa0c018b80ec5d538b7",
+  "repairScope": "Only nonmutating control lookup, six actual-rules regressions and logs/docs; no011 UI, PNGs or rules source",
+  "local": "206 backend /3197 assertions; types0/0, policy/diff pass; accepted parent118/118 exact unchanged UI not rerun",
+  "parent9018": {
+    "comparison": "119098339638:16/118 pass;56 pixel,46 missing; zero capture/story errors; artifact12331321678 not downloaded/adopted",
+    "staticSecond": "119119913489:198 pass/2 fail; remote3 5018.02ms and remote4 5014.02ms; original5s limits",
+    "native": "Old generation remains separate, no cancellation or cohort acceptance"
+  },
+  "currentPublisher": {
+    "run": 39576797444,
+    "result": "FAIL: exact current118531-byte rules POST503, diagnostic current503 versus frozenPR5 200. No fallback deployed.",
+    "rulesSha256": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67"
+  },
+  "pending": [
+    "Current head static/Linux exact",
+    "Exact current-source publication and matching hosted revision/UI"
+  ],
+  "logs": {
+    "fleet147-pr12-comparison-first.log": {
+      "bytes": 679848,
+      "sha256": "79a167e842bc6fb486ac9dc984ffdab1f644e09355dec71afef0fb863a6db917"
+    },
+    "fleet147-pr12-static-second.log": {
+      "bytes": 1882183,
+      "sha256": "27c5b69d140761d38ee65aa5ead7a710a72fc3a73bec1aecffa96365682bdb70"
+    },
+    "fleet147-publish-new.log": {
+      "bytes": 6547,
+      "sha256": "304cae219d9257ad2d08c075fd22e65604887ed9c79dee1c3bd467e2d3801fc4"
+    }
+  }
+}

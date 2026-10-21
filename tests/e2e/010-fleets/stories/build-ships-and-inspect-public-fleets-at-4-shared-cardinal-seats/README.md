@@ -686,17 +686,36 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 37. Decline optional movement without undoing the ship or Action cost
+## 37. Read the actual optional movement controls before declining every jump
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/036-ada-no-move-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/036-ada-no-move-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/036-ada-optional-jump-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/036-ada-optional-jump-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/036-ada-no-move-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/036-ada-no-move-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/036-ada-optional-jump-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/036-ada-optional-jump-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Read the actual optional movement controls before declining every jump
+- [x] The actual canonical effect and backend acknowledgement settle.
+- [x] Public technology topology retains physical separation.
+- [x] The actual viewport fits without page scrolling.
+
+## 38. Decline optional movement without undoing the ship or Action cost
+
+Viewpoint: **Ada · South · one shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/037-ada-no-move-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/037-ada-no-move-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/037-ada-no-move-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/037-ada-no-move-tabletop-4k-darwin.png)
 
 </details>
 
@@ -705,17 +724,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 38. Ada completes ordinary production and hands off
+## 39. Ada completes ordinary production and hands off
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/037-ada-handoff-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/037-ada-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/038-ada-handoff-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/038-ada-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/037-ada-handoff-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/037-ada-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/038-ada-handoff-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/038-ada-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -724,17 +743,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 39. Bora opens the actual Action instrument
+## 40. Bora opens the actual Action instrument
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/038-bora-build-plan-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/038-bora-build-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/039-bora-build-plan-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/039-bora-build-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/038-bora-build-plan-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/038-bora-build-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/039-bora-build-plan-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/039-bora-build-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -743,17 +762,17 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 40. Bora selects Basic construction
+## 41. Bora selects Basic construction
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/039-bora-build-kind-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/039-bora-build-kind-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/040-bora-build-kind-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/040-bora-build-kind-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/039-bora-build-kind-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/039-bora-build-kind-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/040-bora-build-kind-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/040-bora-build-kind-tabletop-4k-darwin.png)
 
 </details>
 
@@ -762,17 +781,17 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 41. Ada’s occupied Basic space prevents a second pawn from using it
+## 42. Ada’s occupied Basic space prevents a second pawn from using it
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/040-bora-occupied-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/040-bora-occupied-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/041-bora-occupied-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/041-bora-occupied-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/040-bora-occupied-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/040-bora-occupied-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/041-bora-occupied-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/041-bora-occupied-tabletop-4k-darwin.png)
 
 </details>
 
@@ -781,17 +800,17 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 42. Choose the second printed space with zero Ore surcharge
+## 43. Choose the second printed space with zero Ore surcharge
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/041-bora-second-space-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/041-bora-second-space-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/042-bora-second-space-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/042-bora-second-space-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/041-bora-second-space-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/041-bora-second-space-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/042-bora-second-space-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/042-bora-second-space-tabletop-4k-darwin.png)
 
 </details>
 
@@ -800,17 +819,17 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 43. Build from Population at Sol and retain the exact second-space charge
+## 44. Build from Population at Sol and retain the exact second-space charge
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/042-bora-built-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/042-bora-built-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/043-bora-built-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/043-bora-built-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/042-bora-built-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/042-bora-built-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/043-bora-built-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/043-bora-built-tabletop-4k-darwin.png)
 
 </details>
 
@@ -819,17 +838,36 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 44. Decline optional movement without undoing the ship or Action cost
+## 45. Read the actual optional movement controls before declining every jump
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/043-bora-no-move-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/043-bora-no-move-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/044-bora-optional-jump-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/044-bora-optional-jump-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/043-bora-no-move-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/043-bora-no-move-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/044-bora-optional-jump-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/044-bora-optional-jump-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Read the actual optional movement controls before declining every jump
+- [x] The actual canonical effect and backend acknowledgement settle.
+- [x] Public technology topology retains physical separation.
+- [x] The actual viewport fits without page scrolling.
+
+## 46. Decline optional movement without undoing the ship or Action cost
+
+Viewpoint: **Bora · West · one shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/045-bora-no-move-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/045-bora-no-move-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/045-bora-no-move-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/045-bora-no-move-tabletop-4k-darwin.png)
 
 </details>
 
@@ -838,17 +876,17 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 45. Bora completes ordinary production and hands off
+## 47. Bora completes ordinary production and hands off
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/044-bora-handoff-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/044-bora-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/046-bora-handoff-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/046-bora-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/044-bora-handoff-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/044-bora-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/046-bora-handoff-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/046-bora-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -857,17 +895,17 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 46. Open the retained faction economy and physical fleet register
+## 48. Open the retained faction economy and physical fleet register
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/045-bora-register-mat-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/045-bora-register-mat-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/047-bora-register-mat-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/047-bora-register-mat-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/045-bora-register-mat-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/045-bora-register-mat-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/047-bora-register-mat-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/047-bora-register-mat-tabletop-4k-darwin.png)
 
 </details>
 
@@ -876,17 +914,17 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 47. Inspect 3 real ships with explicit levels and public summed power
+## 49. Inspect 3 real ships with explicit levels and public summed power
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/046-bora-register-ships-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/046-bora-register-ships-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/048-bora-register-ships-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/048-bora-register-ships-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/046-bora-register-ships-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/046-bora-register-ships-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/048-bora-register-ships-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/048-bora-register-ships-tabletop-4k-darwin.png)
 
 </details>
 
@@ -895,17 +933,17 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 48. Open the paged public location register
+## 50. Open the paged public location register
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/047-bora-register-power-initial-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/047-bora-register-power-initial-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/049-bora-register-power-initial-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/049-bora-register-power-initial-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/047-bora-register-power-initial-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/047-bora-register-power-initial-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/049-bora-register-power-initial-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/049-bora-register-power-initial-tabletop-4k-darwin.png)
 
 </details>
 
@@ -914,17 +952,17 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 49. Inspect Bora's actual power at Sol
+## 51. Inspect Bora's actual power at Sol
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/048-bora-register-power-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/048-bora-register-power-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/050-bora-register-power-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/050-bora-register-power-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/048-bora-register-power-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/048-bora-register-power-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/050-bora-register-power-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/050-bora-register-power-tabletop-4k-darwin.png)
 
 </details>
 
@@ -933,17 +971,17 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 50. The register explains levels, location-specific power and incumbent ties without taking a turn
+## 52. The register explains levels, location-specific power and incumbent ties without taking a turn
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/049-bora-register-rules-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/049-bora-register-rules-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/051-bora-register-rules-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/051-bora-register-rules-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/049-bora-register-rules-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/049-bora-register-rules-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/051-bora-register-rules-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/051-bora-register-rules-tabletop-4k-darwin.png)
 
 </details>
 
@@ -952,17 +990,17 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 51. Keyboard reaches the bounded fleet details
+## 53. Keyboard reaches the bounded fleet details
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/050-bora-register-keyboard-region-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/050-bora-register-keyboard-region-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/052-bora-register-keyboard-region-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/052-bora-register-keyboard-region-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/050-bora-register-keyboard-region-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/050-bora-register-keyboard-region-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/052-bora-register-keyboard-region-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/052-bora-register-keyboard-region-tabletop-4k-darwin.png)
 
 </details>
 
@@ -971,17 +1009,17 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 52. Reverse Tab stays within the fleet reader
+## 54. Reverse Tab stays within the fleet reader
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/051-bora-register-reverse-tab-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/051-bora-register-reverse-tab-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/053-bora-register-reverse-tab-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/053-bora-register-reverse-tab-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/051-bora-register-reverse-tab-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/051-bora-register-reverse-tab-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/053-bora-register-reverse-tab-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/053-bora-register-reverse-tab-tabletop-4k-darwin.png)
 
 </details>
 
@@ -990,17 +1028,17 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 53. Forward Tab wraps back to persistent Close
+## 55. Forward Tab wraps back to persistent Close
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/052-bora-register-tab-wrap-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/052-bora-register-tab-wrap-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/054-bora-register-tab-wrap-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/054-bora-register-tab-wrap-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/052-bora-register-tab-wrap-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/052-bora-register-tab-wrap-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/054-bora-register-tab-wrap-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/054-bora-register-tab-wrap-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1009,17 +1047,17 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 54. Escape restores the actual Fleet opener
+## 56. Escape restores the actual Fleet opener
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/053-bora-register-return-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/053-bora-register-return-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/055-bora-register-return-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/055-bora-register-return-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/053-bora-register-return-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/053-bora-register-return-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/055-bora-register-return-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/055-bora-register-return-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1028,17 +1066,17 @@ Viewpoint: **Bora · West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 55. Close the mat and restore its physical opener
+## 57. Close the mat and restore its physical opener
 
 Viewpoint: **Bora · West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/054-bora-register-mat-return-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/054-bora-register-mat-return-desktop-darwin.png) |
+| [![desktop](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/056-bora-register-mat-return-desktop-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/056-bora-register-mat-return-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/054-bora-register-mat-return-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/054-bora-register-mat-return-tabletop-4k-darwin.png)
+[![4K](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/056-bora-register-mat-return-tabletop-4k-darwin.png)](../../screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/056-bora-register-mat-return-tabletop-4k-darwin.png)
 
 </details>
 

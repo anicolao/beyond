@@ -1,0 +1,26 @@
+{
+  "prompt": 154,
+  "static": {
+    "head": "7b42cd410818a99d3acd3ff2bcb0792678c490a2",
+    "job": 119154497018,
+    "pass": 204,
+    "total": 206,
+    "remote3_ms": 5013.99,
+    "remote4_ms": 5002.99,
+    "limit_ms": 5000,
+    "local_pass_does_not_close_ci": true,
+    "reviewer_log_sha256": "8f07a4ed212cda11a25046bbb30df9e2434402e37ef4f57dcd86d95a3f78bb78",
+    "retained_log_byte_equal": true
+  },
+  "visual": {
+    "cited": "round148-paid-four-corner-final/split-multi-hop-1280.png",
+    "cited_defect_acknowledged": true,
+    "correction": "Local151 correction follows the cited148 image; no independent acceptance claimed. Reopened current720/640 PNGs for native visual inspection; selected ship cube, identity, full route and next legal destination/allocation notice visible.",
+    "fresh": [
+      "round151-corner-after-final/split-1280x720.png",
+      "round151-corner-after-final/partial-1280x640.png"
+    ],
+    "verification": "JUMP_CORNER_REVIEW_151.json; unchanged guards plus stricter initial-context checks; no new baseline generation"
+  },
+  "gates": "7b42 native running; comparison completed failure16/118. Current65cb process-isolation proof pending. Whole011 acceptance/012 held."
+}

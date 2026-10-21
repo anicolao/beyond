@@ -1182,21 +1182,21 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 60. Plan the next adjacent system without moving or paying again
+## 60. Open the actual connected-destination view
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/059-r4-ada-leg-0-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/059-r4-ada-leg-0-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/059-r4-ada-route-editor-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/059-r4-ada-route-editor-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/059-r4-ada-leg-0-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/059-r4-ada-leg-0-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/059-r4-ada-route-editor-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/059-r4-ada-route-editor-tabletop-4k-darwin.png)
 
 </details>
 
-- [x] Plan the next adjacent system without moving or paying again
+- [x] Open the actual connected-destination view
 - [x] Canonical effects settle before capture.
 - [x] Any printed Action plan is ready.
 - [x] Public compact topology remains physically separated.
@@ -1208,11 +1208,11 @@ Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/060-r4-ada-leg-1-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/060-r4-ada-leg-1-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/060-r4-ada-leg-0-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/060-r4-ada-leg-0-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/060-r4-ada-leg-1-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/060-r4-ada-leg-1-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/060-r4-ada-leg-0-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/060-r4-ada-leg-0-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1228,11 +1228,11 @@ Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/061-r4-ada-leg-2-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/061-r4-ada-leg-2-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/061-r4-ada-leg-1-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/061-r4-ada-leg-1-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/061-r4-ada-leg-2-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/061-r4-ada-leg-2-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/061-r4-ada-leg-1-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/061-r4-ada-leg-1-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1242,17 +1242,37 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 63. Resolve the complete real path atomically
+## 63. Plan the next adjacent system without moving or paying again
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/062-r4-ada-committed-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/062-r4-ada-committed-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/062-r4-ada-leg-2-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/062-r4-ada-leg-2-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/062-r4-ada-committed-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/062-r4-ada-committed-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/062-r4-ada-leg-2-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/062-r4-ada-leg-2-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Plan the next adjacent system without moving or paying again
+- [x] Canonical effects settle before capture.
+- [x] Any printed Action plan is ready.
+- [x] Public compact topology remains physically separated.
+- [x] The gameplay shell fits the actual viewport.
+
+## 64. Resolve the complete real path atomically
+
+Viewpoint: **Ada · South · one shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/063-r4-ada-committed-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/063-r4-ada-committed-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/063-r4-ada-committed-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/063-r4-ada-committed-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1262,17 +1282,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 64. Place an actual Food outpost and expose the second matching column
+## 65. Place an actual Food outpost and expose the second matching column
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/063-r4-ada-food-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/063-r4-ada-food-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/064-r4-ada-food-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/064-r4-ada-food-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/063-r4-ada-food-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/063-r4-ada-food-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/064-r4-ada-food-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/064-r4-ada-food-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1282,17 +1302,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 65. Food now exposes A and B, each of which contributes one real matching cube
+## 66. Food now exposes A and B, each of which contributes one real matching cube
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/064-two-columns-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/064-two-columns-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/065-two-columns-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/065-two-columns-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/064-two-columns-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/064-two-columns-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/065-two-columns-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/065-two-columns-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1302,17 +1322,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 66. Ada completes production and hands off to Bora
+## 67. Ada completes production and hands off to Bora
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/065-r4-ada-handoff-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/065-r4-ada-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/066-r4-ada-handoff-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/066-r4-ada-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/065-r4-ada-handoff-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/065-r4-ada-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/066-r4-ada-handoff-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/066-r4-ada-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1322,17 +1342,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 67. Bora opens the actual research and Action instrument
+## 68. Bora opens the actual research and Action instrument
 
 Viewpoint: **Bora · North · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/066-r4-bora-plan-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/066-r4-bora-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/067-r4-bora-plan-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/067-r4-bora-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/066-r4-bora-plan-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/066-r4-bora-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/067-r4-bora-plan-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/067-r4-bora-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1342,17 +1362,17 @@ Viewpoint: **Bora · North · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 68. Bora selects the legal printed space 1
+## 69. Bora selects the legal printed space 1
 
 Viewpoint: **Bora · North · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/067-r4-bora-space-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/067-r4-bora-space-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/068-r4-bora-space-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/068-r4-bora-space-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/067-r4-bora-space-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/067-r4-bora-space-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/068-r4-bora-space-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/068-r4-bora-space-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1362,17 +1382,17 @@ Viewpoint: **Bora · North · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 69. Select Advanced Genetics with its printed cost and consequence
+## 70. Select Advanced Genetics with its printed cost and consequence
 
 Viewpoint: **Bora · North · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/068-r4-bora-card-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/068-r4-bora-card-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/069-r4-bora-card-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/069-r4-bora-card-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/068-r4-bora-card-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/068-r4-bora-card-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/069-r4-bora-card-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/069-r4-bora-card-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1382,17 +1402,17 @@ Viewpoint: **Bora · North · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 70. Pay once and receive Advanced Genetics's immediate bonus
+## 71. Pay once and receive Advanced Genetics's immediate bonus
 
 Viewpoint: **Bora · North · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/069-r4-bora-researched-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/069-r4-bora-researched-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/070-r4-bora-researched-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/070-r4-bora-researched-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/069-r4-bora-researched-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/069-r4-bora-researched-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/070-r4-bora-researched-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/070-r4-bora-researched-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1402,17 +1422,17 @@ Viewpoint: **Bora · North · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 71. Bora completes production and hands off to Ada
+## 72. Bora completes production and hands off to Ada
 
 Viewpoint: **Bora · North · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/070-r4-bora-handoff-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/070-r4-bora-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/071-r4-bora-handoff-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/071-r4-bora-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/070-r4-bora-handoff-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/070-r4-bora-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/071-r4-bora-handoff-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/071-r4-bora-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1422,17 +1442,17 @@ Viewpoint: **Bora · North · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 72. Ada opens the actual research and Action instrument
+## 73. Ada opens the actual research and Action instrument
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/071-r5-ada-plan-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/071-r5-ada-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/072-r5-ada-plan-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/072-r5-ada-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/071-r5-ada-plan-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/071-r5-ada-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/072-r5-ada-plan-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/072-r5-ada-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1442,17 +1462,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 73. Ada selects ordinary gathering
+## 74. Ada selects ordinary gathering
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/072-r5-ada-kind-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/072-r5-ada-kind-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/073-r5-ada-kind-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/073-r5-ada-kind-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/072-r5-ada-kind-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/072-r5-ada-kind-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/073-r5-ada-kind-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/073-r5-ada-kind-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1462,17 +1482,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 74. Receive the printed gather resources before ordinary production
+## 75. Receive the printed gather resources before ordinary production
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/073-r5-ada-gathered-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/073-r5-ada-gathered-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/074-r5-ada-gathered-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/074-r5-ada-gathered-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/073-r5-ada-gathered-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/073-r5-ada-gathered-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/074-r5-ada-gathered-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/074-r5-ada-gathered-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1482,17 +1502,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 75. An exposed but empty A column cannot substitute cubes from covered columns
+## 76. An exposed but empty A column cannot substitute cubes from covered columns
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1280 × 640 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/074-empty-matching-column-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/074-empty-matching-column-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/075-empty-matching-column-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/075-empty-matching-column-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/074-empty-matching-column-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/074-empty-matching-column-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/075-empty-matching-column-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/075-empty-matching-column-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1502,17 +1522,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 76. Inspect all twenty conserved cubes in their actual current locations
+## 77. Inspect all twenty conserved cubes in their actual current locations
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1280 × 640 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/075-conservation-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/075-conservation-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/076-conservation-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/076-conservation-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/075-conservation-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/075-conservation-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/076-conservation-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/076-conservation-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1522,17 +1542,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 77. Tab remains in the modal reader
+## 78. Tab remains in the modal reader
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1280 × 640 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/076-cycle-keyboard-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/076-cycle-keyboard-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/077-cycle-keyboard-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/077-cycle-keyboard-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/076-cycle-keyboard-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/076-cycle-keyboard-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/077-cycle-keyboard-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/077-cycle-keyboard-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1542,17 +1562,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 78. Reverse Tab remains in the same accessible reader
+## 79. Reverse Tab remains in the same accessible reader
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1280 × 640 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/077-cycle-reverse-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/077-cycle-reverse-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/078-cycle-reverse-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/078-cycle-reverse-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/077-cycle-reverse-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/077-cycle-reverse-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/078-cycle-reverse-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/078-cycle-reverse-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1562,17 +1582,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 79. Escape restores the actual opener without choosing production
+## 80. Escape restores the actual opener without choosing production
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1280 × 640 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/078-cycle-return-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/078-cycle-return-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/079-cycle-return-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/079-cycle-return-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/078-cycle-return-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/078-cycle-return-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/079-cycle-return-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/079-cycle-return-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1582,17 +1602,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 80. Reload retains the production decision and current controller
+## 81. Reload retains the production decision and current controller
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1280 × 640 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/079-pending-restored-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/079-pending-restored-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/080-pending-restored-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/080-pending-restored-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/079-pending-restored-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/079-pending-restored-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/080-pending-restored-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/080-pending-restored-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1602,17 +1622,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 81. Reopened production still has A zero and B two; no bonus replay
+## 82. Reopened production still has A zero and B two; no bonus replay
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1280 × 640 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/080-empty-restored-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/080-empty-restored-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/081-empty-restored-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/081-empty-restored-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/080-empty-restored-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/080-empty-restored-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/081-empty-restored-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/081-empty-restored-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1622,17 +1642,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 82. The same real production remains complete in the current table viewport
+## 83. The same real production remains complete in the current table viewport
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/081-compact-720-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/081-compact-720-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/082-compact-720-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/082-compact-720-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/081-compact-720-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/081-compact-720-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/082-compact-720-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/082-compact-720-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1642,17 +1662,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 83. Only B loses one cube; empty A stays empty and Bora receives the turn
+## 84. Only B loses one cube; empty A stays empty and Bora receives the turn
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/082-only-b-consumed-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/082-only-b-consumed-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/083-only-b-consumed-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/083-only-b-consumed-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/082-only-b-consumed-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/082-only-b-consumed-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/083-only-b-consumed-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/083-only-b-consumed-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1662,17 +1682,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 84. The saved public mat proves A remains zero and only B went from two to one
+## 85. The saved public mat proves A remains zero and only B went from two to one
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/083-only-b-proof-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/083-only-b-proof-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/084-only-b-proof-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/084-only-b-proof-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/083-only-b-proof-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/083-only-b-proof-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/084-only-b-proof-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/084-only-b-proof-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1682,17 +1702,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 85. Return from the actual faction mat to the handed-off board
+## 86. Return from the actual faction mat to the handed-off board
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/084-mat-return-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/084-mat-return-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/085-mat-return-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/085-mat-return-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/084-mat-return-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/084-mat-return-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/085-mat-return-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/085-mat-return-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1702,17 +1722,17 @@ Viewpoint: **Ada · South · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 86. The full growth and handoff remain after reload
+## 87. The full growth and handoff remain after reload
 
 Viewpoint: **Ada · South · one shared controller**.
 
 | desktop · 1280 × 720 |
 | --- |
-| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/085-growth-handoff-retained-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/085-growth-handoff-retained-desktop-darwin.png) |
+| [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/086-growth-handoff-retained-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/086-growth-handoff-retained-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/085-growth-handoff-retained-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/085-growth-handoff-retained-tabletop-4k-darwin.png)
+[![4K](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/086-growth-handoff-retained-tabletop-4k-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-at-two-cardinal-seats/086-growth-handoff-retained-tabletop-4k-darwin.png)
 
 </details>
 
