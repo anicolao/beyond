@@ -1,0 +1,299 @@
+{
+  "reviewerPrompt": 140,
+  "correctedFailingPaths": [
+    {
+      "phase": "003-basic-setup",
+      "project": "desktop",
+      "title": "Begin and recover an exact 2-player compact shared Basic table",
+      "source": "tests/e2e/003-basic-setup/setup-shared-compact.spec.ts",
+      "sourceSha256": "8f67db8c727372725ce859b370477e2fd9e6e0999879b3702b51abbeb30e6634",
+      "originalFailureLog": "/Users/anicolao/projects/games/beyond/tmp/fleet133-candidates/003-basic-setup/exact.log",
+      "finalFullRun": "PASS",
+      "generating": false,
+      "steps": 30,
+      "record": "/tmp/beyond-fleet123/test-results/003-basic-setup-setup-shar-a0315--compact-shared-Basic-table-desktop/story.json",
+      "images": [
+        {
+          "label": "reader",
+          "step": "compact-mat",
+          "description": "The complete seat-facing faction mat fits its compact landscape reader",
+          "assertions": [
+            "The complete seat-facing faction mat fits its compact landscape reader",
+            "The shared display fits without page scrolling."
+          ],
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round140/003-compact-desktop-reader.png",
+          "source": "/tmp/beyond-fleet123/tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-compact-shared-basic-table/022-compact-mat-desktop-darwin.png",
+          "sha256": "a9bd96581daff3588283c265748cb6c2a3f07e2a289a6d49a6eb799319041e58",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        {
+          "label": "focus-return",
+          "step": "compact-mat-return",
+          "description": "Close the compact reader and restore the seat-facing control focus",
+          "assertions": [
+            "Close the compact reader and restore the seat-facing control focus",
+            "The shared display fits without page scrolling."
+          ],
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round140/003-compact-desktop-focus-return.png",
+          "source": "/tmp/beyond-fleet123/tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-compact-shared-basic-table/023-compact-mat-return-desktop-darwin.png",
+          "sha256": "2567988f44b0bf9d3df77deb51df2ea0721a4c8faf5ed1c5106732303a6ea3ca",
+          "dimensions": [
+            1280,
+            720
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "003-basic-setup",
+      "project": "desktop",
+      "title": "Begin and recover an exact 2-player shared Basic table",
+      "source": "tests/e2e/003-basic-setup/setup-tabletop.spec.ts",
+      "sourceSha256": "8ecb20e9f9b0a5a3f4bca6490cf10224883afb1b66c0105badeafbf8a324c3d4",
+      "originalFailureLog": "/Users/anicolao/projects/games/beyond/tmp/fleet133-candidates/003-basic-setup/exact.log",
+      "finalFullRun": "PASS",
+      "generating": false,
+      "steps": 24,
+      "record": "/tmp/beyond-fleet123/test-results/003-basic-setup-setup-tabl-4803e-2-player-shared-Basic-table-desktop/story.json",
+      "images": [
+        {
+          "label": "reader",
+          "step": "ada-mat",
+          "description": "Ada\u2019s complete mat shows Ore by actual turn order and the Basic bonus",
+          "assertions": [
+            "Ada\u2019s complete mat shows Ore by actual turn order and the Basic bonus",
+            "The shared display fits without page scrolling."
+          ],
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round140/003-shared-desktop-reader.png",
+          "source": "/tmp/beyond-fleet123/tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-shared-basic-table/016-ada-mat-desktop-darwin.png",
+          "sha256": "33e2e665eae1cda999a441f51f6d44473888d427669f8750c6828ee7cfb3d569",
+          "dimensions": [
+            1440,
+            1000
+          ]
+        },
+        {
+          "label": "focus-return",
+          "step": "mat-closed",
+          "description": "Close the inspection and restore the physical mat\u2019s control focus",
+          "assertions": [
+            "Close the inspection and restore the physical mat\u2019s control focus",
+            "The shared display fits without page scrolling."
+          ],
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round140/003-shared-desktop-focus-return.png",
+          "source": "/tmp/beyond-fleet123/tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-shared-basic-table/017-mat-closed-desktop-darwin.png",
+          "sha256": "a114f2ad24e66a5447b7501bf1e6b4b88680f28d6f0d853c741206871ac18770",
+          "dimensions": [
+            1440,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "003-basic-setup",
+      "project": "tabletop-4k",
+      "title": "Begin and recover an exact 2-player shared Basic table",
+      "source": "tests/e2e/003-basic-setup/setup-tabletop.spec.ts",
+      "sourceSha256": "8ecb20e9f9b0a5a3f4bca6490cf10224883afb1b66c0105badeafbf8a324c3d4",
+      "originalFailureLog": "/Users/anicolao/projects/games/beyond/tmp/fleet133-candidates/003-basic-setup/exact.log",
+      "finalFullRun": "PASS",
+      "generating": false,
+      "steps": 24,
+      "record": "/tmp/beyond-fleet123/test-results/003-basic-setup-setup-tabl-4803e-2-player-shared-Basic-table-tabletop-4k/story.json",
+      "images": [
+        {
+          "label": "reader",
+          "step": "ada-mat",
+          "description": "Ada\u2019s complete mat shows Ore by actual turn order and the Basic bonus",
+          "assertions": [
+            "Ada\u2019s complete mat shows Ore by actual turn order and the Basic bonus",
+            "The shared display fits without page scrolling."
+          ],
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round140/003-shared-tabletop-4k-reader.png",
+          "source": "/tmp/beyond-fleet123/tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-shared-basic-table/016-ada-mat-tabletop-4k-darwin.png",
+          "sha256": "c204a531b8ffea70748fad100fad5a117f080d46d5faf70d1c81a65ccf4435f8",
+          "dimensions": [
+            3840,
+            2160
+          ]
+        },
+        {
+          "label": "focus-return",
+          "step": "mat-closed",
+          "description": "Close the inspection and restore the physical mat\u2019s control focus",
+          "assertions": [
+            "Close the inspection and restore the physical mat\u2019s control focus",
+            "The shared display fits without page scrolling."
+          ],
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round140/003-shared-tabletop-4k-focus-return.png",
+          "source": "/tmp/beyond-fleet123/tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-shared-basic-table/017-mat-closed-tabletop-4k-darwin.png",
+          "sha256": "94763e62fee74426da9b2db6d2fee12ac8647d8b159711addc6c4803713c321d",
+          "dimensions": [
+            3840,
+            2160
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "004-first-research",
+      "project": "desktop",
+      "title": "Finish a compact 4-player shared corner research round",
+      "source": "tests/e2e/004-first-research/research-shared-compact.spec.ts",
+      "sourceSha256": "45a6aa8d27f62bc40978facdf1cdf5e4b00f6857bc3e122a946ce14cda18d46d",
+      "originalFailureLog": "/Users/anicolao/projects/games/beyond/tmp/fleet133-candidates/004-first-research/exact.log",
+      "finalFullRun": "PASS",
+      "generating": false,
+      "steps": 74,
+      "record": "/tmp/beyond-fleet123/test-results/004-first-research-researc-e17ed-hared-corner-research-round-desktop/story.json",
+      "images": [
+        {
+          "label": "reader",
+          "step": "supply-overflow",
+          "description": "The complete mat shows the actual sixth Supply cube",
+          "assertions": [
+            "The complete mat shows the actual sixth Supply cube",
+            "Public Technology headings have physical clearance above their cards.",
+            "The game stays within its actual viewport without page scrolling."
+          ],
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round140/004-compact-desktop-reader.png",
+          "source": "/tmp/beyond-fleet123/tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/058-supply-overflow-desktop-darwin.png",
+          "sha256": "6fa03a384e9f2ea5e35ec09e1273497cad5e35c4dd1828ab574c631cbb49b203",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        {
+          "label": "focus-return",
+          "step": "mat-return",
+          "description": "Return from the public mat inspection with the trade phase retained",
+          "assertions": [
+            "Return from the public mat inspection with the trade phase retained",
+            "Public Technology headings have physical clearance above their cards.",
+            "The game stays within its actual viewport without page scrolling."
+          ],
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round140/004-compact-desktop-focus-return.png",
+          "source": "/tmp/beyond-fleet123/tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/059-mat-return-desktop-darwin.png",
+          "sha256": "e3062613a9478939698e7a514cf2158c99bd02e9f25a40608e3fa8fff0b76667",
+          "dimensions": [
+            1280,
+            720
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "004-first-research",
+      "project": "desktop",
+      "title": "Research and recover a 4-player shared corner first round",
+      "source": "tests/e2e/004-first-research/research-tabletop.spec.ts",
+      "sourceSha256": "c96204835a8e4395fa9557ed7617873e41242f7da73efa940812ffbc5cb4ba5e",
+      "originalFailureLog": "/Users/anicolao/projects/games/beyond/tmp/fleet133-candidates/004-first-research/exact.log",
+      "finalFullRun": "PASS",
+      "generating": false,
+      "steps": 74,
+      "record": "/tmp/beyond-fleet123/test-results/004-first-research-researc-ec3b1-r-shared-corner-first-round-desktop/story.json",
+      "images": [
+        {
+          "label": "reader",
+          "step": "supply-overflow",
+          "description": "The complete mat shows the actual sixth Supply cube",
+          "assertions": [
+            "The complete mat shows the actual sixth Supply cube",
+            "Public Technology headings have physical clearance above their cards.",
+            "The game stays within its actual viewport without page scrolling."
+          ],
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round140/004-shared-desktop-reader.png",
+          "source": "/tmp/beyond-fleet123/tests/e2e/004-first-research/screenshots/research-and-recover-a-4-player-shared-corner-first-round/058-supply-overflow-desktop-darwin.png",
+          "sha256": "d0299f2154d422eab714b01a2c3af7630dbf4e26b46c13a07f29199e9ec2cbc0",
+          "dimensions": [
+            1440,
+            1000
+          ]
+        },
+        {
+          "label": "focus-return",
+          "step": "mat-return",
+          "description": "Return from the public mat inspection with the trade phase retained",
+          "assertions": [
+            "Return from the public mat inspection with the trade phase retained",
+            "Public Technology headings have physical clearance above their cards.",
+            "The game stays within its actual viewport without page scrolling."
+          ],
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round140/004-shared-desktop-focus-return.png",
+          "source": "/tmp/beyond-fleet123/tests/e2e/004-first-research/screenshots/research-and-recover-a-4-player-shared-corner-first-round/059-mat-return-desktop-darwin.png",
+          "sha256": "534a1e27bdbbc83a3ce9d039667dd6be5d0d61074d07852c50e4243e6d25f2f1",
+          "dimensions": [
+            1440,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "004-first-research",
+      "project": "tabletop-4k",
+      "title": "Research and recover a 4-player shared corner first round",
+      "source": "tests/e2e/004-first-research/research-tabletop.spec.ts",
+      "sourceSha256": "c96204835a8e4395fa9557ed7617873e41242f7da73efa940812ffbc5cb4ba5e",
+      "originalFailureLog": "/Users/anicolao/projects/games/beyond/tmp/fleet133-candidates/004-first-research/exact.log",
+      "finalFullRun": "PASS",
+      "generating": false,
+      "steps": 74,
+      "record": "/tmp/beyond-fleet123/test-results/004-first-research-researc-ec3b1-r-shared-corner-first-round-tabletop-4k/story.json",
+      "images": [
+        {
+          "label": "reader",
+          "step": "supply-overflow",
+          "description": "The complete mat shows the actual sixth Supply cube",
+          "assertions": [
+            "The complete mat shows the actual sixth Supply cube",
+            "Public Technology headings have physical clearance above their cards.",
+            "The game stays within its actual viewport without page scrolling."
+          ],
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round140/004-shared-tabletop-4k-reader.png",
+          "source": "/tmp/beyond-fleet123/tests/e2e/004-first-research/screenshots/research-and-recover-a-4-player-shared-corner-first-round/058-supply-overflow-tabletop-4k-darwin.png",
+          "sha256": "3ffbb4f7d4645b4fc32fa88a11f86b0cc740b2c14d34546c510b0963e0d11546",
+          "dimensions": [
+            3840,
+            2160
+          ]
+        },
+        {
+          "label": "focus-return",
+          "step": "mat-return",
+          "description": "Return from the public mat inspection with the trade phase retained",
+          "assertions": [
+            "Return from the public mat inspection with the trade phase retained",
+            "Public Technology headings have physical clearance above their cards.",
+            "The game stays within its actual viewport without page scrolling."
+          ],
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-fleet-review/round140/004-shared-tabletop-4k-focus-return.png",
+          "source": "/tmp/beyond-fleet123/tests/e2e/004-first-research/screenshots/research-and-recover-a-4-player-shared-corner-first-round/059-mat-return-tabletop-4k-darwin.png",
+          "sha256": "3a29f2e5ff70d032aff5d0b376b53919ff7b24cee81e7a39f166215426fa3648",
+          "dimensions": [
+            3840,
+            2160
+          ]
+        }
+      ]
+    }
+  ],
+  "fullExact": {
+    "passed": 118,
+    "frames": 8011,
+    "snapshotUpdateArgument": false,
+    "log": "/Users/anicolao/projects/games/beyond/tmp/fleet133-final-exact2.log",
+    "sha256": "0a5407ba1ac21f49fac06d6214ab4b51c3b196e44c6ee6fbed4234b56f02db4a",
+    "records": "/Users/anicolao/projects/games/beyond/tmp/fleet133-final-story-records.json"
+  },
+  "change": "Existing polygon mode selected for rotated readers; helper/predicate/budgets unchanged. No product geometry or new reference changes at139/140.",
+  "focusInertnessAdditionalProof": "tmp/local-fleet-review/round139/REVIEW.md:9 ordinary-UI player-count/viewport cases pass background inertness,Tab containment and Escape restoration.",
+  "independentVisualAndModeAcceptance": "pending",
+  "phase011Released": false
+}

@@ -314,7 +314,7 @@ service cloud.firestore {
       function initialShipAllowed(ships,index) { return index>=ships.size()||ships[index].location in ['sol','deep-space']; }
       function initialShipPower(ships,index,location) { return index<ships.size()&&ships[index].location==location?ships[index].level:0; }
       function initialPowerFor(b,d,p) {
-        let ships=b.play.players[p].ships;
+        let ships=initialOrCurrent(b,p).ships;
         return ships.size()<=3 && initialShipAllowed(ships,0)&&initialShipAllowed(ships,1)&&initialShipAllowed(ships,2) && d.powers[p]=={'sol':initialShipPower(ships,0,'sol')+initialShipPower(ships,1,'sol')+initialShipPower(ships,2,'sol'),'deep-space':initialShipPower(ships,0,'deep-space')+initialShipPower(ships,1,'deep-space')+initialShipPower(ships,2,'deep-space'),'*':shipLevel(ships,0)+shipLevel(ships,1)+shipLevel(ships,2)};
       }
       function powerAt(d,p,location) { return d.powers[p].get(location,0); }
@@ -949,7 +949,7 @@ service cloud.firestore {
             : extraManualEffect(b,old,d,q,m,before,after))));
       }
       function prepareDiscoveryTransition(b,e,s,t) {
-        return e.move.keys().hasOnly(['kind']) && actorAllowed(b,e.position) && s.phase in ['action','achievement'] && s.turn>=b.seats.size() && t.phase==s.phase && !('discovery' in s)
+        return e.move.keys().hasOnly(['kind']) && actorAllowed(b,e.position) && s.phase in ['action','achievement'] && t.phase==s.phase && !('discovery' in s)
           && t.diff(s).affectedKeys().hasOnly(['discovery']) && initialDiscoveryValid(b,t.discovery)
           && t.discovery.records==[] && t.discovery.events==[] && t.discovery.reservations==[] && t.discovery.queue==[] && !('revealBoundary' in t.discovery);
       }
@@ -1017,7 +1017,7 @@ service cloud.firestore {
       }
       function prepareFleetPowerTransition(b,e,s,t,before,after) {
         let target=e.move.position;let old=s.discovery;let d=t.discovery;let powers=old.get('powers',{});
-        return actorAllowed(b,e.position) && e.move.keys().hasOnly(['kind','position']) && s.phase in ['action','achievement'] && t.phase==s.phase && s.turn>=b.seats.size() && target in b.seats
+        return actorAllowed(b,e.position) && e.move.keys().hasOnly(['kind','position']) && s.phase in ['action','achievement'] && t.phase==s.phase && target in b.seats
           && (!(target in powers)||!('*' in powers[target])) && after==before && t.players==s.players && t.diff(s).affectedKeys().hasOnly(['discovery'])
           && d.diff(old).affectedKeys().hasOnly(['powers']) && d.powers.diff(powers).affectedKeys().hasOnly([target]) && initialPowerFor(b,d,target);
       }
@@ -1049,6 +1049,24 @@ service cloud.firestore {
           || card=='android-destroyers' && queue==[oneEffect('effect',p,card,{'kind':'ship','level':paidOre,'location':destination}),oneEffect('effect',p,card,{'kind':'jump','amount':3})].concat(tail)
           || card in ['narrow-beam-lasers','plasma-cannon'] && queue==[oneEffect('effect',p,card,{'kind':'ship','level':{'narrow-beam-lasers':2,'plasma-cannon':3}[card],'cube':'population','location':destination}),oneEffect('effect',p,card,{'kind':'jump','amount':3})].concat(tail);
       }
+      function basicFleetPayment(b,a,e) {
+        let s=b.play;let t=a.play;let m=e.move;let p=e.position;let before=initialOrCurrent(b,p);let after=t.players[p];
+        let location='build-jump:'+string(m.space);let cost=b.seats.size()==2&&m.space==1?1:0;
+        return m.keys().hasOnly(['kind','space','build','destination']) && m.space is int && m.space>=0 && m.space<2 && m.build is bool && m.destination is string
+          && p==s.activePosition && s.phase=='action' && t.phase=='discovery' && t.turn==s.turn && t.activePosition==s.activePosition
+          && t.keys().hasOnly(['turn','activePosition','phase','players','discovery']) && discoveryOthers(s,t,p)
+          && spaceOpen(s,location) && (!m.build||before.population>=1)
+          && after.diff(before).affectedKeys().hasOnly(['ore','actionLocation']) && after.actionLocation==location && after.ore==before.ore-cost && after.ore>=0;
+      }
+      function basicFleetTransition(b,a,e) {
+        let m=e.move;let old=b.play.discovery;let d=a.play.discovery;let p=e.position;
+        let source='basic-spacefaring';let tail=[oneEffect('effect',p,source,{'kind':'jump','amount':2}),{'kind':'resume','responder':p,'returnTo':'production'}];
+        let head=m.build?[oneEffect('effect',p,source,{'kind':'ship','level':1,'cube':'population','location':m.destination})]:[];
+        return m.keys().hasOnly(['kind','space','build','destination']) && m.build is bool && old.queue==[]
+          && old.powers.keys().toSet()==b.seats.keys().toSet() && old.powers[p].get('*',-1)>=0
+          && (m.destination=='sol'||m.destination in ['shipyard-west','shipyard-east','shipyard-north']&&old.outposts.get(m.destination,{}).get('owner','')==p)
+          && d.diff(old).affectedKeys().hasOnly(['queue']) && d.queue==head.concat(tail);
+      }
       function technologyActionTransition(b,a,e) {
         let m=e.move;let old=b.play.discovery;let d=a.play.discovery;let p=e.position;let card=m.card;let destination=m.get('destination','');
         return m.keys().hasOnly(['kind','card','action','space','destination']) && card in ['terraforming','narrow-beam-lasers','human-experiments','plasma-cannon','android-destroyers','supply-outpost']
@@ -1059,8 +1077,10 @@ service cloud.firestore {
           && technologyActionQueueMatches(card,p,destination,b.play.players[p].ore-a.play.players[p].ore,d.queue,b.play.players[p]);
       }
       function discoveryTransition(b,a,e) {
-        let kind=e.move.kind;let s=b.play;let t=a.play;let p=e.position;let before=s.players.get(p,{});let after=t.players.get(p,before);
-        return kind in ['discovery-choice','discovery-advance'] && discoveryStep(b,e,s,t,before,after) || kind=='technology-action' && technologyActionTransition(b,a,e) || kind=='research-II' && newResearchII(b,e,s,t,before,after) || !(kind in ['research-II','technology-action','discovery-choice','discovery-advance']) && sameTurnRoot(b,a) && t.keys().hasOnly(['turn','activePosition','phase','players','discovery']) && t.turn==s.turn && t.activePosition==s.activePosition
+        // A fresh game has no play map yet. The explicit initial actor is still
+        // checked against firstPosition by actorAllowed in preparation.
+        let kind=e.move.kind;let s=b.get('play',{'turn':0,'activePosition':e.position,'phase':'action','players':{}});let t=a.play;let p=e.position;let before=s.players.get(p,{});let after=t.players.get(p,before);
+        return kind in ['discovery-choice','discovery-advance'] && discoveryStep(b,e,s,t,before,after) || kind=='build-jump' && basicFleetTransition(b,a,e) || kind=='technology-action' && technologyActionTransition(b,a,e) || kind=='research-II' && newResearchII(b,e,s,t,before,after) || !(kind in ['research-II','build-jump','technology-action','discovery-choice','discovery-advance']) && sameTurnRoot(b,a) && t.keys().hasOnly(['turn','activePosition','phase','players','discovery']) && t.turn==s.turn && t.activePosition==s.activePosition
           && discoveryOthers(s,t,p)
           && ((kind=='prepare-fleet-power' && prepareFleetPowerTransition(b,e,s,t,before,after)) || (kind=='claim-achievement' && achievementClaimTransition(b,e,s,t,before,after)) || (kind=='black-market' && blackMarketTransition(b,e,s,t,before,after)) || (kind=='prepare-discovery' && prepareDiscoveryTransition(b,e,s,t)));
       }
@@ -1120,14 +1140,16 @@ service cloud.firestore {
         let event=getAfter(/databases/$(database)/documents/games/$(game)/events/$(a.lastCommand)).data;
         return event.type=='game-move' && event.actorUid==request.auth.uid && event.revision==a.revision
           && (event.move.kind!='research-II' || researchIIPlayerTransition(b,a,event))
+          && (event.move.kind!='build-jump' || basicFleetPayment(b,a,event))
           && (event.move.kind!='technology-action' || technologyActionPayment(b,a,event))
           && (!(event.move.kind in ['discovery-choice','discovery-advance']) || wideJumpProjection(b,a,event));
       }
+
       allow update: if signedIn() && ('play' in request.resource.data) && sameTurnRoot(resource.data,request.resource.data)
         && validTurnProjection(resource.data,request.resource.data);
       match /events/{event} {
         function turnEvent() {
-          let e=request.resource.data;let m=e.get('move',null);let discoveryMove=m.get('kind','') in ['technology-action','prepare-discovery','prepare-fleet-power','research-II','discovery-choice','discovery-advance','black-market','claim-achievement']; let b=get(gamePath()).data; let a=getAfter(gamePath()).data;
+          let e=request.resource.data;let m=e.get('move',null);let discoveryMove=m.get('kind','') in ['build-jump','technology-action','prepare-discovery','prepare-fleet-power','research-II','discovery-choice','discovery-advance','black-market','claim-achievement']; let b=get(gamePath()).data; let a=getAfter(gamePath()).data;
           return e.type == 'game-move' && m is map && m.get('kind','') is string && e.schema == 1 && e.actorUid == request.auth.uid && e.commandId == event && e.revision == a.revision && a.lastCommand == event && e.name == ''
             && discoveryMember(b,e.position)
             && (b.mode == 'tabletop' ? e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','move']) : e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','move','ready','configVersion','settings','code']) && !e.ready && e.configVersion == b.configVersion && e.settings == b.settings && e.code == b.code)

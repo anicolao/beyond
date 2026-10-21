@@ -19,7 +19,7 @@ async function fixture(seed=start.seed,settings=defaultSettings){
  const id=crypto.randomUUID(),host=`discovery-host-${id}`,guest=`discovery-guest-${id}`,code=Array.from(crypto.getRandomValues(new Uint8Array(5)),n=>String.fromCharCode(65+n%26)).join('');let current:RemoteRoom|undefined;
  const make=(extra:Partial<RemoteEvent>):RemoteEvent=>({schema:1,type:'remote-created',actorUid:host,revision:current?current.revision+1:0,commandId:crypto.randomUUID(),position:'p1',name:'Ada',ready:false,code,settings,configVersion:current?current.configVersion+1:0,...extra});
  const write=async(e:RemoteEvent,after:RemoteRoom,uid=e.actorUid)=>{const db=env.authenticatedContext(uid).firestore(),batch=writeBatch(db);batch.set(doc(db,`games/${id}`),after);batch.set(doc(db,`games/${id}/events/${e.commandId}`),e);if(!current)batch.set(doc(db,`invites/${code}`),{gameId:id,ownerUid:host});return batch.commit();};
- const append=async(extra:Partial<RemoteEvent>)=>{const e=make(extra),after=applyRemote(current,e);await assertSucceeds(write(e,after));current=after;};
+ const append=async(extra:Partial<RemoteEvent>)=>{const e=make(extra),after=applyRemote(current,e);try{await assertSucceeds(write(e,after));}catch(error){throw new Error(`Rejected fixture setup ${e.type} revision${e.revision}`,{cause:error});}current=after;};
  const positions=['p1','p2','p3','p4'].slice(0,settings.capacity),controllers:Record<string,string>={p1:host,p2:guest,p3:`discovery-third-${id}`,p4:`discovery-fourth-${id}`},names=['Ada','Bora','Cleo','Dara'],factions=['nishida','zheng','disciples','united-nations'];
  await append({});for(let i=1;i<positions.length;i++)await append({type:'remote-seat-claimed',actorUid:controllers[positions[i]],position:positions[i] as 'p2',name:names[i]});
  for(let i=0;i<positions.length;i++)await append({type:'remote-faction-selected',actorUid:controllers[positions[i]],position:positions[i] as 'p1',name:'',faction:factions[i] as 'nishida'});
@@ -456,4 +456,17 @@ for(const stage of ['plan','apply','power-first','power-last'] as const)test(`se
  expect((await getDoc(root)).data()).toEqual(f.current);expect((await getDoc(event)).exists()).toBe(false);
  await f.commit(move);expect((await getDoc(root)).data()).toEqual(after);expect((await getDoc(event)).data()).toEqual(move);
  await assertFails(f.write(move,after));
+});
+
+for(const count of [2,3,4] as const)test(`fleet010: first-turn ${count}-player Basic build couples paid Action and exact queued fleet effects`,async()=>{
+ const f=await fixture(start.seed,{...defaultSettings,capacity:count});await f.command({kind:'prepare-discovery'});expect(f.current.play!.players).toEqual({});
+ const power=f.move({kind:'prepare-fleet-power',position:'p1'}),powered=applyRemote(f.current,power),badPower=structuredClone(powered);badPower.play!.discovery!.powers.p1['*']++;
+ await assertFails(f.write(power,badPower));await f.commit(power);for(const p of f.setup.players.slice(1))await f.command({kind:'prepare-fleet-power',position:p.position});expect(f.current.play!.players).toEqual({});
+ const e=f.move({kind:'build-jump',space:1,build:true,destination:'sol'}),after=applyRemote(f.current,e),free=structuredClone(after);free.play!.players.p1.ore++;
+ await assertFails(f.write(e,free));await assertFails(f.write({...e,actorUid:f.guest},after,f.guest));
+ const injected=structuredClone(after);(injected.play!.discovery!.queue[0] as any).effect.level=4;await assertFails(f.write(e,injected));
+ const standalone=env.authenticatedContext(f.host).firestore();await assertFails(setDoc(doc(standalone,`games/${f.id}`),after));await assertFails(setDoc(doc(standalone,`games/${f.id}/events/${e.commandId}`),e));
+ const wrongYard={...e,move:{kind:'build-jump',space:1,build:true,destination:'shipyard-north'}};await assertFails(f.write(wrongYard as any,after));
+ await f.commit(e);expect(f.current.play!.players.p1.ore).toBe(count===2?2:3);await f.automatic();expect(f.current.play!.players.p1.population).toBe(1);expect(f.current.play!.players.p1.ships).toHaveLength(2);
+ await assertFails(f.write(e,after));await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'jump',legs:[]});await f.automatic();expect(f.current.play!.phase).toBe('production');expect(f.current.play!.players.p1.population).toBe(1);
 });

@@ -200,7 +200,7 @@ export function applyAutomaticDiscovery(initial:PublicSetup,state:PlayState,game
 }
 
 export function prepareDiscovery(initial:PublicSetup,state:PlayState,position:string,seed:string){
- if(!['action','achievement'].includes(state.phase)||state.activePosition!==position||state.discovery||state.turn<initial.count)throw new Error('Discovery is already prepared, or another faction is acting.');
+ if(!['action','achievement'].includes(state.phase)||state.activePosition!==position||state.discovery)throw new Error('Discovery is already prepared, or another faction is acting.');
  state.discovery=initialDiscovery(seed,initial.count,state.turn,initial.achievements);return state;
 }
 
@@ -210,8 +210,8 @@ function automaticShipAvailable(d:import('./discovery').PublicDiscovery,p:TurnPl
 }
 
 export function prepareFleetPower(initial:PublicSetup,state:PlayState,position:string,target:string){
- if(state.activePosition!==position||!['action','achievement'].includes(state.phase)||!state.discovery||state.turn<initial.count)throw new Error('The retained board cannot be prepared now.');
- const p=player(initial,state,target);state.discovery.powers??={};
+ if(state.activePosition!==position||!['action','achievement'].includes(state.phase)||!state.discovery)throw new Error('The retained board cannot be prepared now.');
+ const p=state.players[target]??initial.players.find(p=>p.position===target)!;state.discovery.powers??={};
  if(target in state.discovery.powers&&'*' in state.discovery.powers[target])throw new Error('This faction power is already prepared.');
  if(p.ships.length>3||p.ships.some(s=>!['sol','deep-space'].includes(s.location)))throw new Error('This saved fleet needs its matching game version. Use Recovery options.');
  state.discovery.powers[target]={sol:p.ships.filter(s=>s.location==='sol').reduce((n,s)=>n+s.level,0),'deep-space':p.ships.filter(s=>s.location==='deep-space').reduce((n,s)=>n+s.level,0),'*':p.ships.reduce((n,s)=>n+s.level,0)};

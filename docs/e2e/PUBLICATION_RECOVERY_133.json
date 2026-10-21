@@ -1,0 +1,79 @@
+{
+  "phase": "010 verification checkpoint; older stack recovery separately tracked",
+  "sourceSha256": "7f0576786d8be232e4214b07c113a7f343436b392d940de9ca141cf2b07928e3",
+  "firstCompile": {
+    "pr": 10,
+    "head": "3b3c148c2d481c9b88818d408839bf557a4f3284",
+    "publisherJob": 118997884164,
+    "publisher": "SUCCESS",
+    "hostedRevisionMatches": true,
+    "rulesSourceSha256": "7f0576786d8be232e4214b07c113a7f343436b392d940de9ca141cf2b07928e3",
+    "immutableRuleset": "projects/beyond-20261018/rulesets/aa718f0f-59bf-40cf-b2fc-06609dc8f31d",
+    "reuseExactActive": false,
+    "remaining": "Linux exact/timing and independent current-head hosted functional review; no final acceptance implied.",
+    "log": "tmp/fleet133-ci/pr10-3b3c148-publish.log",
+    "logSha256": "559b5e79c85789e6afa57869fe9243e87a294392463d85cefbffa188e3a44b22",
+    "logBytes": 153785,
+    "independentReviewerConfirmation138": {
+      "publisherJob": 118997884164,
+      "verified": true,
+      "reusedActive": false,
+      "hostedRevisionMatches": true,
+      "final008Acceptance": false,
+      "report": "docs/e2e/TRADE_CI_CHECKPOINT_138.json"
+    }
+  },
+  "exactActiveReuse": {
+    "006": {
+      "pr": 8,
+      "head": "0c4421b5ce95d4d599e81e7016f9963a30684f05",
+      "publisherJob": 119028616162,
+      "publisher": "SUCCESS",
+      "hostedRevisionMatches": true,
+      "rulesSourceSha256": "7f0576786d8be232e4214b07c113a7f343436b392d940de9ca141cf2b07928e3",
+      "immutableRuleset": "projects/beyond-20261018/rulesets/aa718f0f-59bf-40cf-b2fc-06609dc8f31d",
+      "reuseExactActive": true,
+      "remaining": "Linux exact/timing and independent current-head hosted functional review; no final acceptance implied.",
+      "log": "tmp/fleet133-ci/pr8-publication-attempt2.log",
+      "logSha256": "1c2c572752ed6c33d5aaa8337550195b6a0954bbbf7ea5ebc7a15955a0e0861d",
+      "logBytes": 155984
+    },
+    "007": {
+      "pr": 9,
+      "head": "5ba1cbee114d5ba9ac9732ccf1262f15ef96fb7f",
+      "publisherJob": 119030278009,
+      "publisher": "SUCCESS",
+      "hostedRevisionMatches": true,
+      "rulesSourceSha256": "7f0576786d8be232e4214b07c113a7f343436b392d940de9ca141cf2b07928e3",
+      "immutableRuleset": "projects/beyond-20261018/rulesets/aa718f0f-59bf-40cf-b2fc-06609dc8f31d",
+      "reuseExactActive": true,
+      "remaining": "Linux exact/timing and independent current-head hosted functional review; no final acceptance implied.",
+      "log": "tmp/fleet133-ci/pr9-publication-attempt2.log",
+      "logSha256": "2b69f386610e6b209adac4225a292790550e1cdc0ef318a7d4490266a27f0592",
+      "logBytes": 155420
+    },
+    "009": {
+      "pr": 11,
+      "head": "029449dccb7c4458f5e75aa0c018b80ec5d538b7",
+      "publisherJob": 119032086246,
+      "publisher": "SUCCESS",
+      "hostedRevisionMatches": true,
+      "rulesSourceSha256": "7f0576786d8be232e4214b07c113a7f343436b392d940de9ca141cf2b07928e3",
+      "immutableRuleset": "projects/beyond-20261018/rulesets/aa718f0f-59bf-40cf-b2fc-06609dc8f31d",
+      "reuseExactActive": true,
+      "remaining": "Linux exact/timing and independent current-head hosted functional review; no final acceptance implied.",
+      "log": "tmp/fleet133-ci/pr11-publication-attempt2.log",
+      "logSha256": "13083dede0d7127126e2892d5b4027b427a5e27bb3eaf24bb34aa2f6a7c32742",
+      "logBytes": 155735
+    }
+  },
+  "security": "Current single-file filename/full-byte identity and stable immutable ACTIVE ruleset are required, with second source/release readback. Any different source must compile. No fallback, compiler bypass, rules or reference change.",
+  "pastFailures": "All prior503s, timing failures and rejected candidate cohorts retained. One successful exact-source compilation is not a claim that every different policy now compiles.",
+  "finalAcceptance": false,
+  "readOnlyActiveProof": {
+    "path": "/Users/anicolao/projects/games/beyond/tmp/fleet133-ci/active-rules-readback.json",
+    "sha256": "96c07639a6b947fb8c3fced9f5598fb509904ef29663ab795574fbb532c6d91b",
+    "note": "Two complete source/release GET readbacks; no runtime installation, compiler fallback, identity reset or release write from this probe."
+  },
+  "nextPolicy": "010 differs from this7f source and therefore requires its own exact current-source compilation or a separately proven exact ACTIVE identity; success here does not preapprove010 deployment."
+}

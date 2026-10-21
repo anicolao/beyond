@@ -1,0 +1,148 @@
+{
+  "phase": "010",
+  "status": "Full local verification PASS; reviewer139 physical reader/audit-mode correction evidence awaits independent acceptance;011 held",
+  "firstExact": {
+    "variants": 16,
+    "frames": 1182,
+    "comparisonMode": true,
+    "log": "tmp/fleet133-exact1.log",
+    "snapshotUpdateArgument": false,
+    "note": "Four-player story titles corrected afterward to state construction/inspection coverage accurately; image bytes/actions/step IDs unchanged. Final complete regression includes all16 again."
+  },
+  "metadataMigration": [
+    {
+      "old": "build-upgrade-and-inspect-4-shared-cardinal-fleets",
+      "new": "build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats",
+      "change": "Accurate story title; no image bytes, actions, assertions or step IDs change."
+    },
+    {
+      "old": "build-upgrade-and-inspect-4-shared-corner-fleets",
+      "new": "build-ships-and-inspect-public-fleets-at-4-shared-corner-seats",
+      "change": "Accurate story title; no image bytes, actions, assertions or step IDs change."
+    }
+  ],
+  "backend": {
+    "fresh": {
+      "tests": 200,
+      "assertions": 3158,
+      "failed": 0,
+      "seconds": 71.93,
+      "log": "tmp/fleet133-backend-fresh.log"
+    },
+    "priorFailedRunPreserved": {
+      "testsPassed": 199,
+      "testsFailed": 1,
+      "case": "optional ad-leonis pass is paid once and responder-bound",
+      "error": "permission-denied",
+      "log": "tmp/fleet133-backend.log"
+    },
+    "targetedRetest": "1pass/2assertions; cause not established. Isolated8597 contained3117 prior synthetic invitations; fresh full-run reset touched only that test namespace, not reviewer data. Added setup-event error attribution without changing assertions or requests."
+  },
+  "otherChecks": {
+    "captureGuards": 51,
+    "tooling": 56,
+    "typesErrors": 0,
+    "typesWarnings": 0,
+    "sourcePolicy": "PASS",
+    "clientBuilds": "preview+production PASS within ordinary browser server startup",
+    "finalLogs": {
+      "captureGuards": "tmp/fleet133-capture-post-exact.log:51PASS2.4s",
+      "tooling": "tmp/fleet133-tooling-post-exact.log:56PASS",
+      "types": "tmp/fleet133-types-post-exact.log:0errors/0warnings",
+      "sourcePolicy": "tmp/fleet133-policy-post-exact.log:PASS",
+      "backend": "tmp/fleet133-backend-fresh.log:200PASS3158assertions; unchanged product/rules source since run"
+    },
+    "finalPostChecks": {
+      "allPassed": true,
+      "report": "tmp/fleet133-post-checks.json",
+      "sha256": "b0377649d5f2116c3e6c527128bf53b2f44860f44014f6d976a91d2d8172d697",
+      "fullDiffCheck": "PASS",
+      "finalDocumentationDiffCheck": "PASS"
+    }
+  },
+  "infrastructure": {
+    "tests/e2e/helpers/test-step-helper.ts": {
+      "sha256": "7c84d3bbece76973487ec253dc014fedf405841bdf34f44c132c6d724dee3b1a",
+      "unchangedFromParent": true
+    },
+    "tests/e2e/helpers/screen-fit.ts": {
+      "sha256": "a653831c59375ba60fe5ac6965066ea6f0bd30f873001d1580bd6991d8425f86",
+      "unchangedFromParent": true
+    },
+    "tests/e2e/helpers/exact-pixels.ts": {
+      "sha256": "6ba35ef309a4d18d6d783380f3ab2c31bce2d3292d3dc6e8c6bf2e177735616c",
+      "unchangedFromParent": true
+    },
+    "playwright.infrastructure.config.ts": {
+      "sha256": "694233832c68f19d5f13252cc0ddd4468860d9de2e979adc92ff4f8d78e5638b",
+      "unchangedFromParent": true
+    }
+  },
+  "budgets": {
+    "captureAndOperationMs": 2000,
+    "backendTestsAndHooksMs": 5000,
+    "storyMs": 120000,
+    "retries": 0,
+    "maxDiffPixels": 0,
+    "threshold": 0
+  },
+  "regression": "Complete independent118/118 PASS after narrow deterministic invitation-fixture correction; no updates. First full116/118 and earlier32/118 parent-reference classification preserved separately. All8011 frames and required project pairs audited.",
+  "protectedRemoteRoom": "59eab1a7-e09d-484f-85b4-64fee991314d; no controller used/reset/transferred",
+  "reviewUrl": "http://127.0.0.1:5205/",
+  "phase011Released": false,
+  "mergeAllowed": false,
+  "candidateRefresh": {
+    "variants": 102,
+    "frames": 7453,
+    "allPassed": true,
+    "recordInventory": "tmp/fleet133-complete-candidate-records.json",
+    "runs": [
+      "tmp/fleet133-candidates/",
+      "tmp/fleet133-followup/",
+      "tmp/fleet133-arms-refresh/candidates.log"
+    ],
+    "note": "Latest passing records composed per variant. Candidate generation is not an exact comparison pass."
+  },
+  "finalComparison": {
+    "status": "PASS",
+    "variantsExpected": 118,
+    "framesExpected": 8011,
+    "command": "PUBLIC_FIREBASE_EMULATORS=true PUBLIC_AUTH_EMULATOR_PORT=9697 PUBLIC_FIRESTORE_EMULATOR_PORT=8797 bunx playwright test",
+    "snapshotUpdateArgument": false,
+    "log": "tmp/fleet133-final-exact2.log",
+    "passed": 118,
+    "failed": 0,
+    "minutes": 28.6,
+    "frames": 8011,
+    "fleetVariants": 16,
+    "fleetFrames": 1182,
+    "generating": false,
+    "audit": "docs/e2e/FLEET_FINAL_AUDIT_010.json",
+    "records": "tmp/fleet133-final-story-records.json",
+    "preservedResults": "tmp/fleet133-final-exact2-results/",
+    "logSha256": "0a5407ba1ac21f49fac06d6214ab4b51c3b196e44c6ee6fbed4234b56f02db4a",
+    "fullWalkthroughIndexStories": 8
+  },
+  "reviewPacket": "tmp/local-fleet-review/round133/REVIEW.md",
+  "fixtureCollisionReport": "docs/e2e/FLEET_INVITATION_FIXTURE_010.json",
+  "firstFullComparison": {
+    "passed": 116,
+    "failed": 2,
+    "minutes": 28.7,
+    "failure": "Proven006/010 Basic remote deterministic invitation-code collision; no pixel or capture-guard failure",
+    "evidence": "tmp/fleet133-first-full-exact/",
+    "preserved": true
+  },
+  "fixtureCorrection": {
+    "scope": "Only010 Basic remote deterministic UUID prefix; setup seed, source rules, budgets, guards and product code unchanged.",
+    "narrowCandidateVariants": 2,
+    "passed": 2,
+    "seconds": 19.0,
+    "log": "tmp/fleet133-basic-code-candidates.log",
+    "fullStoryIndexPreserved": true
+  },
+  "publication": "010 remains local pending independent final evidence review; no011 or merge. Parent feat/automation029449d. Older PR8\u2013PR11 successful exact-head publishers and matching revisions are tracked separately in PUBLICATION_RECOVERY_133.json; their Linux/final hosted gates remain open.",
+  "readerReview139": "docs/e2e/FLEET_READER_CHECKPOINT_139.json",
+  "correctedReaderPathProof140": "docs/e2e/FLEET_READER_PATH_PROOF_140.json",
+  "readerReviewPacket140": "tmp/local-fleet-review/round140/REVIEW.md"
+}

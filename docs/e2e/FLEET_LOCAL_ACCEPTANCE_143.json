@@ -1,0 +1,40 @@
+{
+  "phase": "010",
+  "acceptance": "FULL LOCAL ACCEPTANCE",
+  "reviewerPrompt": 143,
+  "baseBranch": "feat/automation",
+  "baseHead": "029449dccb7c4458f5e75aa0c018b80ec5d538b7",
+  "exact": {
+    "pass": 118,
+    "frames": 8011,
+    "generating": false
+  },
+  "checks": {
+    "backend": 200,
+    "assertions": 3158,
+    "captureGuards": 51,
+    "tooling": 56,
+    "typesErrors": 0,
+    "typesWarnings": 0
+  },
+  "referenceReview": {
+    "audit": 142,
+    "acceptedGroups": [
+      "096",
+      "038",
+      "040",
+      "041",
+      "080",
+      "088",
+      "119"
+    ],
+    "limitation": "Selective review, not exhaustive per-image certification"
+  },
+  "next": "011 authorized, new branch stacked on010; UI review before baselines",
+  "pending": [
+    "010 Linux exact and all required CI",
+    "010 matching-head hosted revision and independent UI review",
+    "PR8\u201311 unresolved Linux and hosted UI gates"
+  ],
+  "merge": false
+}

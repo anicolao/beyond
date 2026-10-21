@@ -1,0 +1,39 @@
+{
+  "finding": "003 two-player rotated mats were sent through document-view AABB hit rectangles. Both1280/4K reproduce false overlap and pass the existing exact polygon audit on the same DOM. No product geometry change and no guard/helper/predicate/budget change.",
+  "correction": "Use existing game-view rotated-reader mode for the two affected setup specs\u2019 mat steps, as those specs already do for diagonal faction choices. All caption/resource/focus and screenshot assertions remain.",
+  "repro": "Ordinary fresh local shared setup with a new controller. No identity injection or protected reviewer room/controller reuse.",
+  "cases": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "gameAudit": "PASS",
+      "documentAudit": "Error: evaluate: Error: Controls overlap: button.fleet-opener svelte-t189bs (Inspect Ada fleet) / button.svelte-jpcb9b (Close tray)\n    at assertScreenFit (eval at evaluate (:303:30), <anonymous>:153:15)\n    at async <anonymous>:329:30",
+      "numericEvidenceSha256": "998254b6ddd16ed617b440feecccea18fc310e24405995334bdd14ad25b40b8e",
+      "png": "/Users/anicolao/projects/games/beyond/tmp/fleet133-mat-header/mat-1280.png",
+      "pngSha256": "986758cd0b6adce6b53e573a1b326e351fc1643a8cc15ffe5169f56f2083486b"
+    },
+    {
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "gameAudit": "PASS",
+      "documentAudit": "Error: evaluate: Error: Controls overlap: button.fleet-opener svelte-t189bs (Inspect Ada fleet) / button.svelte-jpcb9b (Close tray)\n    at assertScreenFit (eval at evaluate (:303:30), <anonymous>:153:15)\n    at async <anonymous>:329:30",
+      "numericEvidenceSha256": "e12b4533ec36b5eaf2610b34f0e2f19c4c135da36beab963542158f20e4a7ddf",
+      "png": "/Users/anicolao/projects/games/beyond/tmp/fleet133-mat-header/mat-3840.png",
+      "pngSha256": "be11075a6584f078eaf453ceb0036fab03c740abdce9cae40f90927b960e879d"
+    }
+  ],
+  "formalAffectedRefresh": {
+    "003": "15/15 candidate variants pass",
+    "004": "17/17 candidate variants pass",
+    "note": "Both affected phases and complete118 independent exact comparison passed; independent audit-mode/reader visual review is pending under139."
+  },
+  "independentReaderReview139": {
+    "report": "docs/e2e/FLEET_READER_CHECKPOINT_139.json",
+    "freshCases": 9,
+    "status": "Awaiting independent review; no new refs or CSS changes"
+  }
+}

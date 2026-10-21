@@ -1,0 +1,35 @@
+{
+  "reviewerPrompt": 130,
+  "phase": "005",
+  "pr": 7,
+  "head": "2d3e8d1e4704227f0d5dd0ef9d0818445e1b7a77",
+  "base": "feat/first-research-turn",
+  "state": "OPEN",
+  "merged": false,
+  "finalAcceptance": "Reviewer130 FINALLY ACCEPTED this exact repair head",
+  "linux": {
+    "job": 118979007160,
+    "exactPassed": 62,
+    "minutes": 24.8,
+    "guardsPassed": 45,
+    "reviewerLog": "/tmp/beyond-review-pr7-linux-2d3e8d1.log",
+    "retainedLog": "tmp/fleet123-ci/pr7-118979007160.log",
+    "byteIdentical": true,
+    "sha256": "0c3e788421f75875520623d2d1a53338007e33e936ead0a553b55a1cae2250c7"
+  },
+  "requiredChecks": "static/browser/publish/documentation PASS",
+  "hosted": {
+    "revision": "2d3e8d1e4704227f0d5dd0ef9d0818445e1b7a77",
+    "supervisorOrdinaryReview": "01:31 retained hosted reload and board preserve Android Destroyers, level2+3 ships, resources and Production; exact revision independently reverified01:41",
+    "implementationReadOnlyRevisionCheck": "Matched at reviewer129 checkpoint; no controller access or data/identity changes"
+  },
+  "remainingGates": {
+    "006": "open",
+    "007": "open",
+    "008": "open",
+    "009": "open",
+    "010": "open; independent local review/baselines held",
+    "011": "not released"
+  },
+  "earlierFailureEvidencePreserved": true
+}

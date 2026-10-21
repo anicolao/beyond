@@ -472,3 +472,65 @@ Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | 
 Prompt 112 | 8a063e14627321e4e3d6ea70390e02d79b7293ba57354d358f62cdd4ca749e4a | Inherit reviewer129 status-entry diagnostics through trade, preserving every supplied guard/pixel/budget and independently pending Linux/compiler gates.
 
 Prompt 123 | 7570576836119c35ecc52228c7761696bdcf616d9ed179d4308e1a3cc7f5b862 | Inherit reviewer129 acknowledgement telemetry through automation; preserve source-reviewed009 behavior and all references, guards, deadlines and prior failed evidence.
+
+Prompt 123 | 7570576836119c35ecc52228c7761696bdcf616d9ed179d4308e1a3cc7f5b862 | Begin010 on a separate fleet-management worktree from committed009; keep5204 untouched and use5205 with the existing9397/8297 review backend.
+
+Prompt 124 | a9614ee4eebbe8344a0e4783b8d8857500ce5319e2de5bdff59410ce03f89f1c | Compare early fleet captures with current persistent-commit UI, tighten remaining selector/source/power composition, and verify fresh ordinary desktop/phone flows locally.
+
+Prompt 125 | 448204fdc020882dd0818c621f128b19b1c0e8d6cc094e5e0b069cec6a841311 | Record independent final005 acceptance at060cfb8 only; retain later-head gates,006–009 outstanding checks,010 visual hold and no011 or merge.
+
+Prompt 126 | 96d1ec723495dc93c2d8d78276d4a3a86ad3815f5f33fd028f0eb5f12b8d1f88 | Pin349a261 sole2013.825ms capture failure, compare reviewer and retained logs, and inspect primary stages without reruns or budget/reference changes.
+
+Prompt 127 | b0a1fc575c1b823a68052a499f89d171964c07ba5633e693efcf7d75a29a3480 | Compare second07cbf3d hook failure with preserved123 evidence and current repair checks; retain original budgets, first-pass history and pending009 gates.
+
+Prompt 128 | 7952a8265a5bd1c7fcf7bd13bffd0f6cacb1ac15bf036eb6bf0ebbd958400908 | Record scoped round124-c approval and independent retained-table proof; reconcile07cbf3d native98/102 failure log without baselines, budget changes or controller access.
+
+Prompt 129 | 957445beb7104bc93adeb68e0898d06d61f4bc7f0812d117ffa2367e99edc6d6 | Classify6a45 comparison and diagnose acknowledgement/story costs plus strict differing-policy compiler failure, preserving review services and original guards.
+
+Prompt 130 | f4dc50f02c425c53db5be3d91bf1dafb4867c90bb9af366ece33f005d7511efd | Pin final005 acceptance at2d3e8d1, reconcile independent Linux log and hosted proof, retain open006–010 gates and continue scoped CI diagnosis.
+
+Prompt 131 | 14885615617a1dc4ab0f800a655efcd94a10270efd506c40cfabc11b3a9982ea | Inspect b969feb remote3/4 compatibility operation timing separately from hook failures, preserving5s deadlines and every identity/security assertion.
+
+Prompt 131 | 14885615617a1dc4ab0f800a655efcd94a10270efd506c40cfabc11b3a9982ea | Pin unchanged-source176/176 CI pass against failed remote3/4 timings; reject unproven duplicate transport probe and preserve all budgets and phase holds.
+
+Prompt 132 | f73a7e46af07e0f86e5cb29dbf1160acb7b18ed10280903ccf0007dd7e04576b | Preserve PR9 native77/80 primary failures and scoped corner planner approval; compare timing evidence without accepting cohort or changing phase holds.
+
+Prompt 132 | f73a7e46af07e0f86e5cb29dbf1160acb7b18ed10280903ccf0007dd7e04576b | Verify small native artifact hash, quantify capture/pointer costs and preserve77/80 cohort rejection separately from scoped corner visual approval.
+
+Prompt 133 | 10f4d720c0cbbe2bf3fc799330a28a2693f79be5f00ed914d0f3729c2c3d0999 | Prepare ordinary fleet illustrated journeys and independent exact checks under reviewed010 release; preserve guards, protected controllers and011 hold.
+
+Prompt 133 | 10f4d720c0cbbe2bf3fc799330a28a2693f79be5f00ed914d0f3729c2c3d0999 | Implement16 ordinary fleet variants/1182 exact frames, correct real upgrade-location labels and summary, and verify200backend/51guards before prior-phase regression.
+
+Prompt 133 | 10f4d720c0cbbe2bf3fc799330a28a2693f79be5f00ed914d0f3729c2c3d0999 | Classify32/118 first comparisons and86 pixel deltas; restore printed2-player +1Ore socket mark and add native UI assertion before scoped gameplay candidates.
+
+Prompt 133 | 10f4d720c0cbbe2bf3fc799330a28a2693f79be5f00ed914d0f3729c2c3d0999 | Reproduce003 rotated header at1280/4K in both audit modes; correct mat-step document metadata to existing polygon mode without changing any guard or product layout.
+
+Prompt 133 | 10f4d720c0cbbe2bf3fc799330a28a2693f79be5f00ed914d0f3729c2c3d0999 | Adapt completed004–006 stories to real rotated-mat audit mode and owned-ship checkbox renderer, preserving exact payments, optional/mandatory selection and responder/reload assertions.
+
+Prompt 133 | 10f4d720c0cbbe2bf3fc799330a28a2693f79be5f00ed914d0f3729c2c3d0999 | Complete102 candidate variants/7453 frames, preserve rotated polygon guards, start full118 independent exact run and verify exact-ACTIVE preview recovery.
+
+Prompt 133 | 10f4d720c0cbbe2bf3fc799330a28a2693f79be5f00ed914d0f3729c2c3d0999 | Pin successful PR8–PR11 exact-source publications and deduplicated older Linux failures; assemble native fleet review packet with actual image dimensions.
+
+Prompt 133 | 10f4d720c0cbbe2bf3fc799330a28a2693f79be5f00ed914d0f3729c2c3d0999 | Preserve116/118 first full comparison and correct proven006/010 deterministic invitation-code collision; refresh only two Basic remote fixtures, then independent full exact.
+
+Prompt 133 | 10f4d720c0cbbe2bf3fc799330a28a2693f79be5f00ed914d0f3729c2c3d0999 | Pin118/118 independent exact PASS with8011 audited frames,16 fleet variants/1182frames,51guards and56tooling; preserve failed history and hold011 for final evidence review.
+
+Prompt 134 | fad68d151fac308e3ea4305e8b68da941eaa70c05b352456a9d7f97004c7d31c | Verify PR9 comparison log byte equality and separate41 pixels/8 missing/1 capture failure; record later native77/80 without adopting references or releasing011.
+
+Prompt 135 | 5bca2e4db1b35e99c47abf1efd169e025cba8b1e4ab008e40f8403587d6563f6 | Verify PR8 reviewer-log equality and correct six-failure split to five capture deadlines plus one120s story timeout; preserve all guards and unaccepted references.
+
+Prompt 136 | 4f515604dc2c357aff35eb7d20bc957ad7e0f9540ca33e3c06693c43c244c0b5 | Pin PR11 comparison equality and later native98/102; preserve199/200 backend denial alongside targeted/fresh passes and completed118/118 formal010 evidence.
+
+Prompt 137 | 9c1a7795e78f89b7c82c4e8446c9054a8ab469a9f6366827d086df6c8a440ca6 | Pin independent PR9 native77/80 log equality,36.5m/46guards and three timing failures separately; retain full010 checks and Northern-location evidence for review.
+
+Prompt 138 | 4c8495ff12c6e7348258aba8918dd8dab1a5a596b00c67eaff498ecd77139688 | Pin independent PR10 strict publication/revision proof and comparison-log equality; track later native90/92 separately and retain008/011 holds after full010 local pass.
+
+Prompt 139 | 6ef6b376573fb7a94b041a4c5c7275f9f5292c43dcc44a4c9d46964f6ab5b4f1 | Inspect all2/3/4-player readers and9 fresh viewport cases; prove physical separation and nested-modal focus/inertness, expose AABB-mode correction for review without new refs.
+
+Prompt 140 | 007645edcc2dd60b8d8282be78c18fe3ba050207d216b099fdd855e909a1eec7 | Map all six corrected003/004 failures to full exact PASS, literal resource/focus assertions and native PNGs; pin PR10 native90/92/51guards separately without new refs.
+
+Prompt 141 | 0df7e3d83f885572c64a79dd583da48513be085d45288abaa817d14baf268cbb | Pin both failed first-run traces and partial records, confirmed post-run fixture collision and fresh118/118 exact audit; retain independent reader/reference acceptance hold.
+
+Prompt 142 | 2dccfccd49fd3eb4eb33cc401673b241b03e3b823bd2748c13af0dcee125ad69 | Audit3014 prior PNG deltas against parent native pixels; inspect16 pairs, index174 patterns/unchanged frames and flag78 collateral4K board changes before publication.
+
+Prompt 143 | f8bc83525348789a3a9396916c84ef8db79471f083063917ceacd4d2dc32665a | Record full local010 acceptance and selective delta review; publish against latest009 ancestry and release011 with independent Linux/hosted gates preserved.

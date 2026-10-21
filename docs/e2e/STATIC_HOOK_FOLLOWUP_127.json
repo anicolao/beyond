@@ -1,0 +1,55 @@
+{
+  "reviewerInstruction": 127,
+  "originalHead": "07cbf3df956221c00c25a85ab86a35a713aeae8d",
+  "firstRun": {
+    "job": 118946268384,
+    "conclusion": "SUCCESS",
+    "totals": [
+      "2026-10-20T23:54:07.4836094Z  192 pass",
+      "2026-10-20T23:54:07.4836362Z  0 fail",
+      "2026-10-20T23:54:07.4836897Z  3102 expect() calls"
+    ],
+    "logSHA256": "e83a684828aa4fcc00ee28ce5662c27448b2bcb9d02a63182276c1e6dfe736c2"
+  },
+  "secondRun": {
+    "job": 118955392937,
+    "result": "182pass,2initialization-hook failures; no individual game command timeout",
+    "suites": [
+      {
+        "suite": "rules.test.ts",
+        "ms": 5001.02
+      },
+      {
+        "suite": "remote.test.ts",
+        "ms": 5000.02
+      }
+    ],
+    "logSHA256": "7b504e0946a779e59e474d8ee10ad60b22d9dec13c4e2b280f11a7d21bc57055",
+    "reviewerLogByteIdentical": true
+  },
+  "diagnosis": {
+    "mechanism": "Separate Node prepare step already proves installed exact source. Fresh Bun initializer digest cache starts empty and asks SDK to upload identical policy again; failed initialization cannot populate cache, exposing the next suite to another upload. Original log confirms the two initialization-hook timeouts but does not directly time the cold compiler; keep causation bounded.",
+    "repair": "Every fresh isolated SDK environment reads installed single-file source; exact equality and noERROR may skip redundant upload. Different or missing source compiles actual requested bytes. Failed/malformed/503 readback fails closed. Fresh contexts, identities, assertions and original5s external hook remain.",
+    "source": "scripts/backend-rules-environment.mjs",
+    "existingProof": "docs/e2e/EXACT_EMULATOR_READBACK_123.json"
+  },
+  "currentEvidence": {
+    "phase005": {
+      "head": "2d3e8d1e4704227f0d5dd0ef9d0818445e1b7a77",
+      "staticJob": 118979006810,
+      "result": "SUCCESS;157backend/2884assertions",
+      "logSHA256": "1e50bc90cd845470dd1377f951406a4fd09221ff533cf72f541f4584cbad1d91",
+      "scope": "Mechanism operational at005 source; not proof of009 policy or final acceptance."
+    },
+    "phase009": {
+      "head": "6a45f0d7cce0977434aac1cc80f766b59502c3ef",
+      "staticJob": 118977526019,
+      "lastObserved": "Types/policy/toolingPASS; test:rules step running, not accepted."
+    }
+  },
+  "budgetChanges": false,
+  "referenceChanges": false,
+  "extraReruns": false,
+  "final009Acceptance": false,
+  "phase010": "Persistent local5205, visual feedback pending; no baseline request, interruption,011 or merge."
+}

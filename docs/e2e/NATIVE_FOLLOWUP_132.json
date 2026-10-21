@@ -1,0 +1,461 @@
+{
+  "reviewerPrompt": 132,
+  "pr": 9,
+  "head": "5b772ec7e12131675ad0a37a6c3f1a3d27c88e96",
+  "job": 118972236608,
+  "run": 39523251609,
+  "cohortAccepted": false,
+  "result": {
+    "passed": 77,
+    "failed": 3,
+    "durationMinutes": 39.8,
+    "captureGuards": 45
+  },
+  "log": {
+    "path": "tmp/native132/reviewer-native.log",
+    "sha256": "cda7c2bc0a96e164528c54dd217e153ac5f463093b2a0384cbd83a2c7466e647"
+  },
+  "artifact": {
+    "id": 12314885343,
+    "bytes": 15246087,
+    "sha256": "752d83938b589ececcfc9ee8890286c45907040ef90ca912fff0f925462ee392",
+    "verifiedAgainstGitHubDigest": true
+  },
+  "candidateArchive": {
+    "id": 12314940900,
+    "bytes": 12434154562,
+    "downloaded": false,
+    "accepted": false
+  },
+  "failures": [
+    {
+      "story": "003 shared3-player4K Basic setup",
+      "primary": "Shared capture deadline",
+      "elapsedMs": 2032.4216029999952,
+      "limitMs": 2000,
+      "lastPreparation": {
+        "warmRPCMs": 675.83,
+        "initialAcknowledgementRPCMs": 675.66,
+        "postWarmAcknowledgementAndAuditRPCMs": 926.35
+      },
+      "interpretation": "RPC duration does not isolate actual status polling from decode/audit or scheduler delay; source predates129 entry telemetry."
+    },
+    {
+      "story": "007 four-corner production",
+      "primary": "120000ms complete-story timeout",
+      "secondary": "capture then detach target/page closure",
+      "limitMs": 120000
+    },
+    {
+      "story": "007 four-cardinal production",
+      "primary": "120000ms complete-story timeout",
+      "secondary": "CDP detach No session with given id",
+      "limitMs": 120000
+    }
+  ],
+  "traceStages": [
+    {
+      "story": "007-production-production--877e4-elds-at-four-cardinal-seats-tabletop-4k",
+      "traceSha256": "4652747871fece7bab841480742264207c8a42a3a029c930430c3a6a2cd6b93d",
+      "stages": {
+        "test.trace": {
+          "Send CDP command": {
+            "calls": 100,
+            "completedMs": 74883.95000000112,
+            "failed": 0,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 452.20200000004843,
+                "error": false
+              },
+              {
+                "ms": 1012.2489999998361,
+                "error": false
+              },
+              {
+                "ms": 605.4809999996796,
+                "error": false
+              }
+            ]
+          },
+          "Detach CDP session": {
+            "calls": 100,
+            "completedMs": 482.42100000055507,
+            "failed": 1,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 1.121999999973923,
+                "error": false
+              },
+              {
+                "ms": 7.1019999999552965,
+                "error": false
+              },
+              {
+                "ms": 16.611000000033528,
+                "error": true
+              }
+            ]
+          }
+        },
+        "0-trace.trace": {
+          "evaluateExpression": {
+            "calls": 200,
+            "completedMs": 3035.591999997385,
+            "failed": 0,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 3.259000000078231,
+                "error": false
+              },
+              {
+                "ms": 0.7650000001303852,
+                "error": false
+              },
+              {
+                "ms": 2.8500000000931323,
+                "error": false
+              }
+            ]
+          },
+          "waitForFunction": {
+            "calls": 200,
+            "completedMs": 9224.100000000093,
+            "failed": 0,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 52.5910000000149,
+                "error": false
+              },
+              {
+                "ms": 2.8009999999776483,
+                "error": false
+              },
+              {
+                "ms": 4.091000000014901,
+                "error": false
+              }
+            ]
+          },
+          "mouseMove": {
+            "calls": 100,
+            "completedMs": 22676.072000002023,
+            "failed": 0,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 195.42299999995157,
+                "error": false
+              },
+              {
+                "ms": 1.7349999998696148,
+                "error": false
+              },
+              {
+                "ms": 381.9700000002049,
+                "error": false
+              }
+            ]
+          },
+          "newCDPSession": {
+            "calls": 100,
+            "completedMs": 75.80900000501424,
+            "failed": 0,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 2.7770000002346933,
+                "error": false
+              },
+              {
+                "ms": 0.7970000002533197,
+                "error": false
+              },
+              {
+                "ms": 0.8859999999403954,
+                "error": false
+              }
+            ]
+          }
+        }
+      },
+      "completedStoryFrames": null
+    },
+    {
+      "story": "003-basic-setup-setup-tabl-4da41-3-player-shared-Basic-table-tabletop-4k",
+      "traceSha256": "aa7db58b0ff3bb5f90164a0b9421153cc96b6946e05d58cbd4430eccb096510e",
+      "stages": {
+        "test.trace": {
+          "Send CDP command": {
+            "calls": 9,
+            "completedMs": 3893.958999999799,
+            "failed": 0,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 444.22299999999814,
+                "error": false
+              },
+              {
+                "ms": 405.2299999999814,
+                "error": false
+              },
+              {
+                "ms": 400.11000000010245,
+                "error": false
+              }
+            ]
+          },
+          "Detach CDP session": {
+            "calls": 9,
+            "completedMs": 40.9839999997057,
+            "failed": 0,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 1.0420000001322478,
+                "error": false
+              },
+              {
+                "ms": 7.108000000007451,
+                "error": false
+              },
+              {
+                "ms": 15.547000000020489,
+                "error": false
+              }
+            ]
+          }
+        },
+        "0-trace.trace": {
+          "evaluateExpression": {
+            "calls": 18,
+            "completedMs": 719.3159999994095,
+            "failed": 0,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 2.9869999999646097,
+                "error": false
+              },
+              {
+                "ms": 0.9429999999701977,
+                "error": false
+              },
+              {
+                "ms": 675.8349999999627,
+                "error": false
+              }
+            ]
+          },
+          "waitForFunction": {
+            "calls": 18,
+            "completedMs": 3781.2730000000447,
+            "failed": 0,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 6.63800000003539,
+                "error": false
+              },
+              {
+                "ms": 675.6589999999851,
+                "error": false
+              },
+              {
+                "ms": 926.347000000067,
+                "error": false
+              }
+            ]
+          },
+          "mouseMove": {
+            "calls": 9,
+            "completedMs": 1549.5519999999087,
+            "failed": 0,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 20.15100000007078,
+                "error": false
+              },
+              {
+                "ms": 1.8240000000223517,
+                "error": false
+              },
+              {
+                "ms": 672.6969999999274,
+                "error": false
+              }
+            ]
+          },
+          "newCDPSession": {
+            "calls": 9,
+            "completedMs": 5.64600000041537,
+            "failed": 0,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 1.127000000094995,
+                "error": false
+              },
+              {
+                "ms": 0.5430000000633299,
+                "error": false
+              },
+              {
+                "ms": 0.5420000001322478,
+                "error": false
+              }
+            ]
+          }
+        }
+      },
+      "completedStoryFrames": null
+    },
+    {
+      "story": "007-production-production--1e213-yields-at-four-corner-seats-tabletop-4k",
+      "traceSha256": "ef2a2296af496e3d2827e444eaef14d6270b5a5e1a8aafc48e43439bd728bd20",
+      "stages": {
+        "test.trace": {
+          "Send CDP command": {
+            "calls": 98,
+            "completedMs": 74570.078000003,
+            "failed": 1,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 1037.4750000000931,
+                "error": false
+              },
+              {
+                "ms": 644.6320000002161,
+                "error": false
+              },
+              {
+                "ms": 121.56400000024587,
+                "error": true
+              }
+            ]
+          },
+          "Detach CDP session": {
+            "calls": 98,
+            "completedMs": 674.4709999975748,
+            "failed": 1,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 1.046000000089407,
+                "error": false
+              },
+              {
+                "ms": 1.2209999999031425,
+                "error": false
+              },
+              {
+                "ms": 1.0899999998509884,
+                "error": true
+              }
+            ]
+          }
+        },
+        "0-trace.trace": {
+          "evaluateExpression": {
+            "calls": 271,
+            "completedMs": 1987.8779999976978,
+            "failed": 0,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 0.8689999999478459,
+                "error": false
+              },
+              {
+                "ms": 1.5919999997131526,
+                "error": false
+              },
+              {
+                "ms": 7.464000000152737,
+                "error": false
+              }
+            ]
+          },
+          "waitForFunction": {
+            "calls": 195,
+            "completedMs": 8517.6139999968,
+            "failed": 0,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 3.5559999998658895,
+                "error": false
+              },
+              {
+                "ms": 5.751999999862164,
+                "error": false
+              },
+              {
+                "ms": 4.458000000100583,
+                "error": false
+              }
+            ]
+          },
+          "mouseMove": {
+            "calls": 98,
+            "completedMs": 22529.19099999871,
+            "failed": 0,
+            "unfinished": 1,
+            "last": [
+              {
+                "ms": 16.20699999993667,
+                "error": false
+              },
+              {
+                "ms": 368.29400000022724,
+                "error": false
+              },
+              {
+                "ms": null,
+                "error": false
+              }
+            ]
+          },
+          "newCDPSession": {
+            "calls": 97,
+            "completedMs": 65.70899999793619,
+            "failed": 0,
+            "unfinished": 0,
+            "last": [
+              {
+                "ms": 0.7269999999552965,
+                "error": false
+              },
+              {
+                "ms": 0.6729999999515712,
+                "error": false
+              },
+              {
+                "ms": 0.6320000002160668,
+                "error": false
+              }
+            ]
+          }
+        }
+      },
+      "completedStoryFrames": null
+    }
+  ],
+  "conclusion": "Repeated evidence of aggregate native capture and pointer costs; session creation/detach are a small fraction. No repair established. Do not suppress later errors as substitute for fixing primary story/capture deadlines. Existing129 diagnostics await exact-source Linux evidence.",
+  "scopedVisualApproval": {
+    "image": "tmp/local-fleet-review/round124-four-g/corner/bora-plan-3840.png",
+    "reviewer": "rotated planner fully contained, source-to-ship preview and commit readable",
+    "fullPhase010Accepted": false
+  },
+  "guardsAndPixelsUnchanged": true,
+  "phase010BaselinesHeld": true,
+  "phase011Released": false,
+  "reviewerControllersUntouched": true
+}

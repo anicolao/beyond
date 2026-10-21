@@ -1,0 +1,49 @@
+{
+  "finding": "Deterministic010 basic remote UUID prefixes collide with006 paid remote invitation codes after the production modulo26 projection, although UUIDs themselves differ. All five retries increment only a UUID suffix outside the five consumed bytes, so this fixture cannot escape the collision.",
+  "source": "src/lib/remote/backend.ts createRemote; tests/e2e/006-rival-research/journey.ts and010-fleets/journey.ts entropy",
+  "cases": [
+    {
+      "project": "phone",
+      "fleetPrefix": "0xa0121000",
+      "paidRivalPrefix": "0x86121000",
+      "bothCodes": "ESQAE",
+      "assertEqual": true,
+      "newFleetPrefix": "0xab121000",
+      "newCode": "PSQAE"
+    },
+    {
+      "project": "desktop",
+      "fleetPrefix": "0xa0122000",
+      "paidRivalPrefix": "0x86122000",
+      "bothCodes": "ESGAE",
+      "assertEqual": true,
+      "newFleetPrefix": "0xab122000",
+      "newCode": "PSGAE"
+    }
+  ],
+  "plannedCorrection": "Allocate a disjoint deterministic prefix only for010 basic remote identities, preserving production invitation reservation/security and setup seed/gameplay. Refresh those two remote variants, then full independent exact comparison.",
+  "productionChanges": false,
+  "budgetsChanged": false,
+  "protectedReviewServicesAndControllers": "untouched",
+  "firstFullRun": "116/118PASS; both failures are010 Basic remote invitation collisions. Full log/report/traces/records preserved at tmp/fleet133-first-full-exact.",
+  "correctionApplied": true,
+  "candidateRefresh": {
+    "variants": 2,
+    "passed": 2,
+    "seconds": 19.0,
+    "snapshotChanges": "Only010 Basic remote fixture evidence regenerated; ordinary gameplay and seed unchanged.",
+    "fullIndexPreserved": true,
+    "log": "tmp/fleet133-basic-code-candidates.log"
+  },
+  "inSequencePhoneProof": "Second full comparison case21 passes after006 paid-rival story; desktop and complete final suite still required.",
+  "inSequenceDesktopProof": "Second full comparison case76 passes after006 paid-rival story; both formerly failing variants now pass in original full-suite order. Complete final suite still required.",
+  "finalFullComparison": {
+    "passed": 118,
+    "failed": 0,
+    "minutes": 28.6,
+    "frames": 8011,
+    "snapshotUpdateArgument": false,
+    "log": "tmp/fleet133-final-exact2.log",
+    "logSha256": "0a5407ba1ac21f49fac06d6214ab4b51c3b196e44c6ee6fbed4234b56f02db4a"
+  }
+}

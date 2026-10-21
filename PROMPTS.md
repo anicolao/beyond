@@ -739,3 +739,123 @@ Reviewer21:49: Independent final automation118-final-exact.log classification is
 Reviewer-authored delegation:
 
 Reviewer22:30: FULL LOCAL009 ACCEPTED. Independently verified102/102 exact2 pass23.9m and executed final audit:102 comparison-mode records/6825frames,10 automation variants/972frames; reviewed source, live flow, composed phone/cardinal/corner/4K and compact repair,55 scoped prior-reference deltas, required local checks. Commit/push009 and open PR stacked on feat/trade-decommission; then BEGIN010 Build and upgrade a fleet on NEW branch stacked on feat/automation while009/older Linux and matching-hosted gates finish. Never merge. Preserve live5204 review state; keep older failures separate and propagate fixes. This releases010 implementation, not final009 acceptance; all required Linux and exact-head hosted gates still required.
+
+## Prompt 124: Compact Shipbuilding
+
+Reviewer-authored delegation:
+
+Reviewer23:45: Independently read fleet123-backend2.log 200/200 PASS,3158 assertions. Compared round123 build-initial-1280/build-phone-393 with05-fleets concept. Early layout needs tightening before visual acceptance: tall instruction block, oversized native radio/checkbox chrome and large blank power-preview area push commit action out of the initial desktop/phone viewport. Compact the setup text/space selectors and compose source cube -> levelled ship + location/power as a readable tactile preview; keep a reachable visible commit action with current cost/selection summary (avoid footer saying commit above while action is offscreen). Preserve44px targets, semantic controls, exact rules; do not copy concept invented gameplay or add011 scope. Continue live functional checks; no baseline request or acceptance yet.
+
+## Prompt 125: Discovery Acceptance
+
+Reviewer-authored milestone:
+
+Reviewer00:10 milestone: Phase005 PR7 head060cfb8cc0a39d2633a4dd8b158246941d74587c FINALLY ACCEPTED, remains unmerged. Independently verified current required static/browser/publish/docs SUCCESS; Linux log118943329973 has45guards and62/62 exact PASS25.3m (/tmp/beyond-review-pr7-linux-060cfb8.log). Hosted revision.json still exact060cfb8; supervisor independently reloaded retained hosted table and inspected board23:15, preserving research/ships/resources/production. This closes005 only;006-009 gates remain outstanding and010 visual feedback still pending. No merge or011 release.
+
+## Prompt 126: Rival Capture
+
+Reviewer-authored evidence:
+
+Reviewer00:15 CI evidence: current PR8 349a261 browser118947461670 completed71/72 PASS31.7m,45guardsPASS; sole003 two-player tabletop4K setup capture2013.825ms>2000 at setup-tabletop.spec.ts27. Full log /tmp/beyond-review-pr8-linux-349a261.log. Preserve deadline and diagnose with existing capture work; no final006 acceptance. This is new exact-head evidence, not a request to interrupt010 or repeat baselines.
+
+## Prompt 127: Automation Hooks
+
+Reviewer-authored evidence:
+
+Reviewer00:20 new PR11 CI finding: second same-head07cbf3d static job118955392937 failed182pass/2fail, both unnamed beforeEach/afterEach hooks5001.02ms and5000.02ms. Full log /tmp/beyond-review-pr11-static-07cbf3d-second.log; first static run passed. Preserve hook budgets and diagnose source/emulator timing without erasing failed evidence.009 final acceptance remains withheld alongside native/preview gates.
+
+## Prompt 128: Fleet Checkpoint
+
+Reviewer-authored checkpoint:
+
+Reviewer01:06: Scoped visual approval for round124-remote-c phone-build-393 and host-build-1280: compact chrome, composed Population-to-ship/power preview and visible cost/commit address the initial concern. Not full010 acceptance or baseline authorization; remaining rotated/controlled-yard/upgrade/live review still pending. Independent prior07cbf3d native118955393110 finished98/102 PASS50.2m,50guardsPASS;005 Dimensional Rift/four-fleet stories hit2s capture deadline and007 four-seat corner/cardinal stories120s. Log /tmp/beyond-review-pr11-native-07cbf3d.log. Failed cohort remains unaccepted; preserve budgets. My own5205 retained shared table b06dacf7-1bee-4e3f-9ac0-9e46793dfc24 passed Basic build/reload/no-move/production/register and Escape focus return; keep its controller untouched.
+
+## Prompt 129: CI Continuation
+
+Reviewer-authored continuation:
+
+Reviewer01:31 continuation: Keep010/011 and baselines held while I finish independent review. Continue actionable older CI repair work now: diagnose and fix the measured capture acknowledgement overhead and four-seat production story deadlines without changing limits, guard predicates or exact pixels; use targeted local evidence before propagating. Also investigate differing-policy Rules:test503 without bypassing compiler/security validation. New PR11 current6a45f0d comparison118977525782 failed; fetch/classify exact log. Current static192/192PASS independently confirmed. PR7 hosted2d3e8d1 exact revision and retained live board/reload independently verified; browser still pending. My010 Basic build, paid Space2 exact1Ore/1Population, reload, upgrade1→2, summed power3 and Escape focus return pass; full010 remains pending controlled-yard/remote/accessibility/remaining visual review. Do not touch reviewer table/controller.
+
+## Prompt 130: Discovery Acceptance
+
+Reviewer-authored milestone:
+
+Reviewer01:41 milestone: PR7 current2d3e8d1e4704227f0d5dd0ef9d0818445e1b7a77 FINALLY ACCEPTED. Independently verified all required checksPASS; browser118979007160 log62/62 exact24.8m plus45guards (/tmp/beyond-review-pr7-linux-2d3e8d1.log). Hosted revision.json exact current head reverified; independent01:31 retained hosted reload/board preserves Android Destroyers, level2+3ships/resources/Production. Base feat/first-research-turn; remainsOPEN/unmerged. This closes005 current repair head only;006–009 and010 gates remain open. Continue authorized CI repair; no011 release or merge.
+
+## Prompt 131: Compatibility Timing
+
+Reviewer-authored failure report:
+
+Reviewer01:46 new exact-head CI failure: PR8 b969feb static118981684304 failed two deployed remote-3/remote-4 remains writable with immutable attributed events and Begin tests, each5002.01ms. Log independently saved /tmp/beyond-review-pr8-static-b969feb.log. Please distinguish from prior initialization-hook failures and inspect affected operation before repair; preserve5000ms budgets and real identity/security assertions. PR7 accepted head remains unchanged. No duplicate baseline work or010/011 release.
+
+## Prompt 132: Native Evidence
+
+Reviewer-authored evidence and scoped visual review:
+
+Reviewer01:51 new evidence: PR9 current5b772ec native118972236608 finished77/80 in39.8m,45guardsPASS. Failures:003 shared3-player4K capture2032.422ms;007 four-corner and four-cardinal120s story deadlines. Independent log /tmp/beyond-review-pr9-native-5b772ec.log. Preserve guards; current cohort not accepted. Independently viewed round124-four-g/corner/bora-plan-3840.png: rotated planner fully contained, source-to-ship preview and commit readable. Scoped layout pass only;010 full acceptance/011 release remain held pending remaining independent flows and formal checks.
+
+## Prompt 133: Fleet Verification
+
+Reviewer-authored visual-functional review and verification release:
+
+Reviewer02:12:010 build/upgrade visual-functional review now sufficient to proceed to formal illustrated verification. Independently exercised shared Basic build, paid Lasers level2 build, mandatory upgrade, owned-yard build/power/control retention and reload; fresh remote room with distinct IAB/Chrome identities passed keyboard optional-build toggle/commit, actor isolation, host production/handoff, occupied-space disabled commit, guest Space2 exact1Ore payment and reload of saved two-ship effect. Reviewed current g desktop/phone and rotated4K/640 compositions. Prepare010 illustrated stories and exact local references/checks with unchanged guards; this lifts baseline hold for reviewed010 surfaces only. Do not begin011 until full local checks and review of resulting evidence pass; no merge. Continue older CI repairs separately. Protected own remote room59eab1a7-e09d-484f-85b4-64fee991314d; do not reuse controllers.
+
+## Prompt 134: CI Evidence
+
+Reviewer-authored evidence checkpoint:
+
+Reviewer02:32 CI evidence for separate tracking while010 formal work continues: PR9 current5ba1cbe comparison118995776284 finished30/80 in15.3m. Independently downloaded /tmp/beyond-review-pr9-linux-5ba1cbe.log:41pixel mismatches,8missing references,1capturedeadline006 four-corner paid laser/control-yard2037.074ms. No currentcohort acceptance; native118995776273 stillpending. Preserve exactguards and do not substitute references from an unaccepted cohort. Your02:12 formal010 acknowledgement verified; continue that authorized work,011 remains held.
+
+## Prompt 135: Rival Evidence
+
+Reviewer-authored Linux evidence checkpoint:
+
+Reviewer02:37 new006 comparison evidence: PR8 current0c4421b job118995634292 finished66/72 exact28.0m,46guardsPASS. Independent /tmp/beyond-review-pr8-linux-0c4421b.log shows5 capture2s failures (004 shared3cardinal2029.153ms,4cardinal2046.834ms,4cornerstepdeadline;005fourcornerExo2276.571ms;006fourcornerTerraforming2047.978ms) and006twocardinal120s storytimeout. No pixel mismatch/missing-reference failure in this run. Cohort still unaccepted. Track separately while continuing010 formal work; no need to repeat prior diagnostics or weaken limits.
+
+## Prompt 136: Automation Evidence
+
+Reviewer-authored comparison and in-flight verification checkpoint:
+
+Reviewer02:43 new009 comparison result: PR11 current029449d job119000070424 independently16/102PASS16.2m;56pixel mismatches+30missingrefs,zero2s/120s timeout failures in this comparison. Log /tmp/beyond-review-pr11-linux-029449d.log. Native119000070090 stillpending and cohortnotaccepted. Independently saw010candidates2 4/16 and backend199/200 optional-ad-leonis-pass denial; you are already investigating, so preserve failures and correct without weakening assertions. Continue formal010 work;011 held.
+
+## Prompt 137: Native Checkpoint
+
+Reviewer-authored native evidence and verification checkpoint:
+
+Reviewer03:00 new PR9 native evidence: current5ba1cbe job118995776273 finished77/80 in36.5m,46guardsPASS. Independent /tmp/beyond-review-pr9-native-5ba1cbe.log:005 four-fleets4K capture2195.546ms;007 four-corner and four-cardinal stories both120s. No accepted007 Linux cohort. Track separately from prior comparison failures, preserve guards. Observed010 candidate16/16 and your Northern/Sol summary correction in progress; exact/full backend/regression gates still required before011.
+
+## Prompt 138: Trade Evidence
+
+Reviewer-authored publication and Linux evidence checkpoint:
+
+Reviewer03:15 new PR10 current3b3c148 evidence: publisher118997884164 PASS; hosted pr10/revision.json independently matches3b3c148c2d481c9b88818d408839bf557a4f3284. Publish log shows verified:true,reusedActive:false and Deploy complete. Comparison119007051378 FAIL30/92 in16.3m:41pixel,20missingrefs,1capture step deadline; /tmp/beyond-review-pr10-linux-3b3c148.log. Native119007051388 pending. Keep008 final hold. Independently confirmed010 exact16/1182, backend200/3158,51guards and types0/0; earlier-phase regression still required before011.
+
+## Prompt 139: Reader Containment
+
+Reviewer-authored regression correction and native evidence checkpoint:
+
+Reviewer03:35: new010 regression candidate issue independently confirmed003 compact shared desktop2/3/4: Inspect Ada fleet overlaps Close tray in seat-facing mat reader (fleet133-candidates/003-basic-setup/exact.log,12/15PASS). Fix production layout/focus/inertness as appropriate; retain guard and review corrected reader before references accepted. Separately PR11 native119000070090 head029449d FAIL98/10255.3m,51guardsPASS:001 recovery4K2s;003two-player4K2036.762ms;007fourcorner/cardinal120s. Independent /tmp/beyond-review-pr11-native-029449d.log. No accepted009 Linux cohort;011 remains held pending full010 regression.
+
+## Prompt 140: Reader Proof
+
+Reviewer-authored native evidence and corrected-path proof requirement:
+
+Reviewer03:45 new008 native result: PR10 current3b3c148 job119007051388 FAIL90/92 in46.2m,51guardsPASS; only007fourcorner/cardinal4K120s story timeouts. Independent /tmp/beyond-review-pr10-native-3b3c148.log. No accepted008 Linux cohort. Observed your rotated-reader document/game audit diagnosis; retain existing polygon guard and prove corrected failing003/004 paths plus visual separation before acceptance. Earlier03:35 overlap report is a guard finding, not yet established physical collision.
+
+## Prompt 141: Full-run Failure
+
+Reviewer-authored in-flight failure preservation checkpoint:
+
+Reviewer04:39: full-log scan of fleet133-final-exact.log finds failure #21 phone010 Build upgrade and retain a real fleet with separate controllers (2.4s), alongside currently48 passing entries. Preserve/report this failure and diagnose after full run; do not treat passing tail as clean run. Cause not inferred. Reference audit and full local acceptance remain pending.
+
+## Prompt 142: Reference Deltas
+
+Reviewer-authored reference-content audit requirement:
+
+Reviewer05:09: independently confirmed repaired phone010 passes in full sequence. Read fleet133-final-audit.py: it verifies record/frame completeness, not reference content deltas. Before010 local acceptance, also provide a selective reference audit for3014 modified prior-phase PNGs: group intended changes (Plan action label, Build sockets/+1 marker, Fleet controls/dialogs), identify unchanged frames, and flag any changes outside these surfaces with representative before/after paths for review. Counts/no deletions alone are insufficient. Continue exact run; no baseline push until this review.
+
+## Prompt 143: Fleet Acceptance
+
+Reviewer-authored local acceptance and next-phase delegation:
+
+Reviewer06:09: Phase010 FULL LOCAL ACCEPTANCE granted. Independently reviewed reference audit142, group096 before/after, group038 before/after and flagged040/041/080/088 after layouts, plus rotated119; contained readable collateral reflow and surcharge labels acceptable. Earlier live remote/shared build, upgrade, control and recovery review plus118/118 exact8011frames and local checks close local gates. Selective review is not exhaustive per-image certification. Commit/push010 on feat/fleet-management, open stacked PR based on feat/automation (preserve latest009 ancestry), report URL/head. Then explicitly BEGIN011 Plan simultaneous jumps on a NEW branch stacked on010 while010 CI/hosted finish. Preserve current local server/review data. Keep PR8-11 failures and all matching hosted UI gates tracked separately and repair/propagate; no weakened guards, no merges. No rerun of unchanged passing local suite required. Follow plan/source rules for011, local UI review before baselines.
