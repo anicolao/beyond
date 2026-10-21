@@ -574,6 +574,9 @@ service cloud.firestore {
           .concat(!(locations[2] in [locations[0],locations[1]])?checkAt(root,d,locations[2],q):[])
           .concat(locations.size()>3&&!(locations[3] in [locations[0],locations[1],locations[2]])?checkAt(root,d,locations[3],q):[]);
       }
+      function firstLocation(locations,index) {
+        return (index==0||locations[index]!=locations[0]) && (index<2||locations[index]!=locations[1]) && (index<3||locations[index]!=locations[2]) && (index<4||locations[index]!=locations[3]) && (index<5||locations[index]!=locations[4]) && (index<6||locations[index]!=locations[5]) && (index<7||locations[index]!=locations[6]);
+      }
       function regularAdjacent(count,from,to) {
         return from=='sol'?to=='a-1'||count>2&&to=='a-2'
           :from=='a-1'?to in ['sol','deep-space']||count>2&&to in ['a-2','shipyard-west']
@@ -592,7 +595,7 @@ service cloud.firestore {
           && leg.ship==ship.id && leg.path[0]==ship.location;
       }
       function ownedJumpLeg(b,leg) {
-        return ownedJumpStart(b,leg) && leg.path.size()>=2 && leg.path.size()<=3;
+        return ownedJumpStart(b,leg) && leg.path.size()>=2 && leg.path.size()<=5;
       }
       function legalJumpHop(root,d,from,to) {
         // This increment has no Level III acquisition; entry to Luyten is unavailable.
@@ -600,7 +603,7 @@ service cloud.firestore {
           && !(d.systems.size()>0 && d.systems[0].card=='luytens-star' && d.systems[0].slot==to);
       }
       function legalJumpPath(root,d,path) {
-        return legalJumpHop(root,d,path[0],path[1]) && (path.size()<3||legalJumpHop(root,d,path[1],path[2]));
+        return legalJumpHop(root,d,path[0],path[1]) && (path.size()<3||legalJumpHop(root,d,path[1],path[2])) && (path.size()<4||legalJumpHop(root,d,path[2],path[3])) && (path.size()<5||legalJumpHop(root,d,path[3],path[4]));
       }
       function jumpLegDelta(leg,level,location) {
         let path=leg.path;
@@ -646,21 +649,61 @@ service cloud.firestore {
           && legalJumpHop(root,old,first.path[0],first.path[1]) && (second.path==first.path||legalJumpHop(root,old,second.path[0],second.path[1]))
           && (b.ore>=2 || affordableSolarJump(old,first,second,true,b.ore));
       }
+      function jumpSpentAt(legs,index) { return index<legs.size()?legs[index].path.size()-1:0; }
+      function jumpFeeAt(legs,index,target) { return index<legs.size()?solarLegCost(legs[index],target):0; }
+      function jumpCost(legs,old) { let target=old.events.size()==0?'':solarTarget(old);return jumpFeeAt(legs,0,target)+jumpFeeAt(legs,1,target)+jumpFeeAt(legs,2,target)+jumpFeeAt(legs,3,target); }
+      function jumpLegValidAt(root,old,legs,b,index) { return index>=legs.size()||ownedJumpLeg(b,legs[index])&&legalJumpPath(root,old,legs[index].path); }
+      function wideJumpBudget(old,q,m,b) {
+        let legs=m.legs;let ids=[legs[0].ship].concat(legs.size()>1?[legs[1].ship]:[]).concat(legs.size()>2?[legs[2].ship]:[]).concat(legs.size()>3?[legs[3].ship]:[]);
+        return legs.size()>=1&&legs.size()<=4&&ids.toSet().size()==legs.size()&&jumpSpentAt(legs,0)+jumpSpentAt(legs,1)+jumpSpentAt(legs,2)+jumpSpentAt(legs,3)<=q.effect.amount&&(b.ore>=legs.size()||b.ore>=jumpCost(legs,old));
+      }
+      function wideJumpPlan(root,old,m,b) { return (m.legs.size()==4||jumpLegValidAt(root,old,m.legs,b,1))&&jumpLegValidAt(root,old,m.legs,b,2)&&jumpLegValidAt(root,old,m.legs,b,3); }
+      function jumpShipAt(ships,legs,index) { return index<legs.size()?[ships[legs[index].index]]:[]; }
+      function movingShips(ships,legs) { return jumpShipAt(ships,legs,0).concat(jumpShipAt(ships,legs,1)).concat(jumpShipAt(ships,legs,2)).concat(jumpShipAt(ships,legs,3)); }
+      function appliedLegAt(before,after,legs,index) {
+        return index>=legs.size()||after.ships[legs[index].index]=={'id':legs[index].ship,'level':before.ships[legs[index].index].level,'location':legs[index].path[legs[index].path.size()-1]};
+      }
+      function wideJumpApplied(old,d,q,b,a) {
+        let cost=jumpCost(q.legs,old);
+        return appliedLegAt(b,a,q.legs,2)&&appliedLegAt(b,a,q.legs,3)&&a.ships.size()==b.ships.size()&&a.ships.removeAll(movingShips(a.ships,q.legs))==b.ships.removeAll(movingShips(b.ships,q.legs))
+          && a.diff(b).affectedKeys().hasOnly(['ships','ore'])&&b.ore>=cost&&a.ore==b.ore-cost
+          && d.queue==[{'kind':'jump-power','responder':q.responder,'amount':q.amount,'legs':q.legs,'index':0}].concat(rest(old.queue));
+      }
+      // The root proves the budget/first half of a wide plan/apply; its linked
+      // event proves the remainder, frame, unchanged ships and exact queue. Both
+      // atomic documents are required, as for research payment/reveal proofs.
+      function wideJumpChoiceProjection(b,a,e,old,q) {
+        let before=b.play.players[e.position];let legs=e.move.legs;
+        return wideJumpBudget(old,q,e.move,before)&&jumpLegValidAt(b,old,legs,before,0)&&(legs.size()!=4||jumpLegValidAt(b,old,legs,before,1));
+      }
+      function wideJumpAdvanceProjection(b,a,e,old,q) {
+        let before=b.play.players[e.position];let after=a.play.players[e.position];
+        return q.kind=='jump-apply'?appliedLegAt(before,after,q.legs,0)&&appliedLegAt(before,after,q.legs,1):widePowerProjection(b,old,a.play.discovery,q,before);
+      }
+      function wideJumpProjection(b,a,e) {
+        let old=b.play.discovery;let q=old.queue.size()>0?old.queue[0]:{};let m=e.move;
+        return m.kind=='discovery-choice'&&q.get('kind','')=='effect'&&q.get('effect',{}).get('kind','')=='jump'&&q.effect.amount>2&&m.get('legs',[]).size()>0
+          ?wideJumpChoiceProjection(b,a,e,old,q)
+          :continuationFrame(b,a,e)&&(!(m.kind=='discovery-advance'&&q.get('kind','') in ['jump-apply','jump-power']&&q.amount>2)||wideJumpAdvanceProjection(b,a,e,old,q));
+      }
       function plannedJump(root,old,q,m,b,a) {
         let legs=m.legs;let first=legs[0];
-        return legs.size()==2?plannedJumpPair(root,old,q,legs,b):legs.size()==1 && first.path.size()-1<=q.effect.amount
+        return q.effect.amount>2?wideJumpPlan(root,old,m,b):legs.size()==2?plannedJumpPair(root,old,q,legs,b):legs.size()==1 && first.path.size()-1<=q.effect.amount
           && ownedJumpLeg(b,first) && legalJumpPath(root,old,first.path)
           && (b.ore>=1 || affordableSolarJump(old,first,first,false,b.ore));
       }
       function manualJump(root,old,d,q,m,b,a) {
-        return q.effect.kind=='jump' && m.option=='jump' && a==b && d.diff(old).affectedKeys().hasOnly(['cursor','queue'])
+        return q.effect.kind=='jump' && m.option=='jump' && a==b
+          && (!q.effect.get('required',false)||m.legs.size()>0&&(m.legs[0].path[0]!=m.legs[0].path[m.legs[0].path.size()-1]||m.legs.size()>1&&m.legs[1].path[0]!=m.legs[1].path[m.legs[1].path.size()-1])) && d.diff(old).affectedKeys().hasOnly(['cursor','queue'])
           && (m.legs.size()==0 ? d.queue==rest(old.queue) : plannedJump(root,old,q,m,b,a)
             && d.queue==[{'kind':'jump-apply','responder':q.responder,'amount':q.effect.amount,'legs':m.legs}].concat(rest(old.queue)));
       }
       function applyJump(root,old,d,q,b,a) {
-        return d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && (q.legs.size()==1?jumpedOne(root,old,d,q,q.legs[0],b,a):jumpedPair(root,old,d,q,{'legs':q.legs},b,a));
+        return d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && (q.amount>2?wideJumpApplied(old,d,q,b,a):q.legs.size()==1?jumpedOne(root,old,d,q,q.legs[0],b,a):jumpedPair(root,old,d,q,{'legs':q.legs},b,a));
       }
-      function settleJumpPower(root,old,d,q,b,a) {
+      function jumpLocations(legs,index) { return index<legs.size()?[legs[index].path[0],legs[index].path[legs[index].path.size()-1]]:[]; }
+      function legPowerDelta(legs,ships,index,location) { return index<legs.size()?jumpLegDelta(legs[index],ships[legs[index].index].level,location):0; }
+      function smallSettleJumpPower(root,old,d,q,b,a) {
         let first=q.legs[0];let second=q.legs.size()>1?q.legs[1]:first;
         let locations=[first.path[0],first.path[first.path.size()-1]].concat(q.legs.size()>1?[second.path[0],second.path[second.path.size()-1]]:[]);
         let location=locations[q.index];let p=q.responder;
@@ -671,6 +714,20 @@ service cloud.firestore {
           && powerAt(d,p,location)==powerAt(old,p,location)+delta
           && d.queue==(q.index+1<locations.size()?[{'kind':'jump-power','responder':p,'amount':q.amount,'legs':q.legs,'index':q.index+1}]:checksFor(root,old,locations,{'responder':p,'source':'Jump'})).concat(rest(old.queue));
       }
+      // Accumulate one exact unique control check with each power update; no
+      // control/bonus resolves until the entire simultaneous fleet is indexed.
+      function widePowerProjection(root,old,d,q,b) {
+        let locations=jumpLocations(q.legs,0).concat(jumpLocations(q.legs,1)).concat(jumpLocations(q.legs,2)).concat(jumpLocations(q.legs,3));let location=locations[q.index];let p=q.responder;
+        let first=firstLocation(locations,q.index);let delta=first?legPowerDelta(q.legs,b.ships,0,location)+legPowerDelta(q.legs,b.ships,1,location)+legPowerDelta(q.legs,b.ships,2,location)+legPowerDelta(q.legs,b.ships,3,location):0;
+        return d.powers.diff(old.powers).affectedKeys().hasOnly([p])&&d.powers[p].diff(old.powers[p]).affectedKeys().hasOnly([location])&&powerAt(d,p,location)==powerAt(old,p,location)+delta
+          && d.jumpControlChecks==(q.index==0?[]:old.jumpControlChecks).concat(first?checkAt(root,old,location,{'responder':p,'source':'Jump'}):[]);
+      }
+      function widePowerQueue(root,old,d,q,b,a) {
+        let locations=jumpLocations(q.legs,0).concat(jumpLocations(q.legs,1)).concat(jumpLocations(q.legs,2)).concat(jumpLocations(q.legs,3));let more=q.index+1<locations.size();
+        return a==b&&d.diff(old).affectedKeys().hasOnly(['cursor','queue','powers','jumpControlChecks'])
+          && d.queue==(more?[{'kind':'jump-power','responder':q.responder,'amount':q.amount,'legs':q.legs,'index':q.index+1}]:d.jumpControlChecks).concat(rest(old.queue));
+      }
+      function settleJumpPower(root,old,d,q,b,a) { return q.amount<=2?smallSettleJumpPower(root,old,d,q,b,a):widePowerQueue(root,old,d,q,b,a); }
       function controlEntry(kind,q,p) { return {'kind':kind,'responder':p,'location':q.location,'source':q.source}; }
       function fleetAt(d,p,location) { return d.powers.get(p,{}).get(location,0); }
       function uniquePowerOwner(positions,values,highest) {
@@ -698,7 +755,8 @@ service cloud.firestore {
       function gainControlCard(id) { return id in ['alpha-centauri','barnards-star','61-cygni','epsilon-indi','gj-1061','groombridge-34','sirius','teegardens-star','ad-leonis','dx-cancri','kruger-60','ross-154','tau-ceti']; }
       function isControlAt(queue,index) { return index<queue.size() && queue[index].kind in ['control-check','control-loss','control']; }
       function gainAfterControls(tail,gain) {
-        let prefix=[tail[0]].concat(isControlAt(tail,1)?[tail[1]]:[]).concat(isControlAt(tail,1)&&isControlAt(tail,2)?[tail[2]]:[]);
+        let one=isControlAt(tail,1);let two=one&&isControlAt(tail,2);let three=two&&isControlAt(tail,3);let four=three&&isControlAt(tail,4);let five=four&&isControlAt(tail,5);let six=five&&isControlAt(tail,6);
+        let prefix=[tail[0]].concat(one?[tail[1]]:[]).concat(two?[tail[2]]:[]).concat(three?[tail[3]]:[]).concat(four?[tail[4]]:[]).concat(five?[tail[5]]:[]).concat(six?[tail[6]]:[]);
         return prefix.concat([gain]).concat(tail.removeAll(prefix));
       }
       function addGain(old,q) {
@@ -842,14 +900,14 @@ service cloud.firestore {
           || (q.event=='experimental-prototypes' && cubeResponse(old,d,q,m,b,a,root.play));
       }
       function noOtherYard(d,p) { return d.outposts.get('shipyard-north',{}).get('owner','')!=p && d.outposts.get('shipyard-west',{}).get('owner','')!=p && d.outposts.get('shipyard-east',{}).get('owner','')!=p; }
-      function automaticBonusShip(old,d,q,b,a,s,t) {
+      function automaticBonusShip(root,old,d,q,b,a,t) {
         let effect=q.get('effect',{});let location=effect.get('location','sol');
         return t.phase=='discovery' && q.kind=='effect' && effect.kind=='ship'
-          && (effect.get('location','') in ['sol','deep-space'] || !('location' in effect) && noOtherYard(old,q.responder))
-          && d.diff(old).affectedKeys().hasOnly(['cursor','queue','sequence','powers']) && d.queue==rest(old.queue) && d.sequence==old.sequence+1
+          && (effect.get('location','') in ['sol','deep-space'] || ('location' in effect)&&permittedYard(old,q.responder,location) || !('location' in effect) && noOtherYard(old,q.responder))
+          && d.diff(old).affectedKeys().hasOnly(['cursor','queue','sequence','powers']) && d.queue==checksFor(root,old,[location],q).concat(rest(old.queue)) && d.sequence==old.sequence+1
           && a.diff(b).affectedKeys().hasOnly(['supply','population','ships'])
           && (effect.get('cube','')=='population' ? b.population>0 && a.population==b.population-1 && a.supply==b.supply : resourceCubeSpent(b,a,{'usePopulation':false},effect.get('side','left')=='right'))
-          && discoveryShip(b,a,effect.level,location,q.responder,old.sequence,s.turn) && singlePowerDelta(old,d,q.responder,location,effect.level);
+          && discoveryShip(b,a,effect.level,location,q.responder,old.sequence,root.play.turn) && singlePowerDelta(old,d,q.responder,location,effect.level);
       }
       function noUpgradeAt(ships,index,effect) {
         return index>=ships.size() || ships[index].level==4 || ('location' in effect && ships[index].location!=effect.location);
@@ -858,7 +916,7 @@ service cloud.firestore {
       function exhaustedFleetEffect(old,d,q,b,a,t) {
         let effect=q.effect;
         return t.phase=='discovery' && a==b && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && d.queue==rest(old.queue)
-          && (effect.kind=='jump' && b.ships.size()==0 || effect.kind=='upgrade' && noEligibleUpgrade(b.ships,effect));
+          && (effect.kind=='jump' && !effect.get('required',false) && b.ships.size()==0 || effect.kind=='upgrade' && noEligibleUpgrade(b.ships,effect));
       }
       function prototypeDispatch(root,old,d,q,b,a,t) {
         return t.phase=='discovery' && a==b && d.diff(old).affectedKeys().hasOnly(['cursor','queue']) && expandedEvent(root,old,d,q,'roll','',[]);
@@ -871,7 +929,7 @@ service cloud.firestore {
           : q.kind=='control-loss' ? t.phase=='discovery' && loseControl(old,d,q,b,a)
           : q.kind=='control' ? t.phase=='discovery' && automaticControl(old,d,q,b,a)
           : q.kind=='gain-bonus' ? t.phase=='discovery' && ownGains(old,q.responder)==1 && gainControlBonus(old,d,q,b,a,q.location)
-          : q.kind=='effect' ? (q.effect.kind=='ship' ? automaticBonusShip(old,d,q,b,a,s,t) : q.effect.kind in ['upgrade','jump'] ? exhaustedFleetEffect(old,d,q,b,a,t) : ordinaryDiscoveryAdvance(old,d,q,b,a,s,t))
+          : q.kind=='effect' ? (q.effect.kind=='ship' ? automaticBonusShip(root,old,d,q,b,a,t) : q.effect.kind in ['upgrade','jump'] ? exhaustedFleetEffect(old,d,q,b,a,t) : ordinaryDiscoveryAdvance(old,d,q,b,a,s,t))
           : q.kind=='event' ? (q.get('stage','')=='dispatch' ? sharedEventDispatch(root,old,d,q,b,a,t)
             : q.event=='experimental-prototypes' && q.get('stage','')=='roll' ? t.phase=='discovery' && advanceCube(old,d,q,b,a)
             : q.event=='experimental-prototypes' && !('stage' in q) ? prototypeDispatch(root,old,d,q,b,a,t) : ordinaryDiscoveryAdvance(old,d,q,b,a,s,t) || additionalEventAdvance(root,old,d,q,b,a,t))
@@ -882,7 +940,7 @@ service cloud.firestore {
         return pendingDiscoveryEnvelope(b,e,s,t) && (
           (m.kind=='discovery-advance' && m.keys().hasOnly(['kind','at']) && automaticDiscoveryStep(b,q,before,after,s,t))
           || (m.kind=='discovery-choice' && m.keys().hasOnly(['kind','at','option','target','ships','track','destination','usePopulation','legs']) && t.phase=='discovery' && (
-            q.kind=='effect' && q.effect.kind=='jump' ? manualJump(b,old,d,q,m,before,after)
+            q.kind=='effect' && q.effect.kind=='jump' ? (q.effect.amount<=2||continuationPlayFrame(s,t,e.position))&&manualJump(b,old,d,q,m,before,after)
             : q.kind=='candidate' ? discoverCandidate(old,d,q,m,before,after)
             : q.kind=='type' ? revealCandidates(old,d,q,m.option,before,after,s.turn)
             : q.kind=='control' ? matchesSpecialty(old,q.location,'food')&&matchesSpecialty(old,q.location,'ore')&&takeControl(old,d,q,before,after,m.option)
@@ -963,11 +1021,48 @@ service cloud.firestore {
           && (!(target in powers)||!('*' in powers[target])) && after==before && t.players==s.players && t.diff(s).affectedKeys().hasOnly(['discovery'])
           && d.diff(old).affectedKeys().hasOnly(['powers']) && d.powers.diff(powers).affectedKeys().hasOnly([target]) && initialPowerFor(b,d,target);
       }
+      // Printed technology Actions spend the separate Action pawn. Research
+      // cubes grant personal access but never occupy or duplicate this space.
+      function technologyActionLevelIs(research,level) {
+        let four=research.hasAny(['technological-singularity', 'giga-corporations', 'parallel-universe-generator', 'neo-industrial-revolution', 'megafleet-construction', 'mind-machine-assimilation', 'new-golden-age', 'galactic-empire', 'android-independence', 'ministry-of-colonies']);let three=research.hasAny(['transdimensional-ai', 'planetary-scale-research', 'metahuman-chambers', 'hivemind-computing', 'deep-space-megastructures', 'capital-ship', 'android-armada', 'mercenary-fleet', 'cerebral-implants', 'manufacturing-orbitals', 'android-rights-movement', 'subatomic-fabrication', 'quantum-data-exchange', 'hyperdrive-boosters', 'wormhole-technology', 'stealth-terraformers']);let two=research.hasAny(secondLevelCards());
+        return level==4&&four || level==3&&!four&&three || level==2&&!four&&!three&&two || level==1&&!four&&!three&&!two;
+      }
+      function technologyActionOre(card) { return {'narrow-beam-lasers':1,'plasma-cannon':2}.get(card,0); }
+      function technologyActionPopulation(card) { return {'human-experiments':2,'narrow-beam-lasers':1,'plasma-cannon':1}.get(card,0); }
+      function technologyActionBuild(card) { return card in ['narrow-beam-lasers','plasma-cannon','human-experiments','android-destroyers']; }
+      function technologyActionPayment(b,a,e) {
+        let s=b.play;let t=a.play;let m=e.move;let p=e.position;let before=s.players[p];let after=t.players[p];let card=m.card;
+        let location='technology:'+card+':'+string(m.action)+':0';
+        return p==s.activePosition && s.phase=='action' && t.phase=='discovery' && t.turn==s.turn && t.activePosition==s.activePosition
+          && t.keys().hasOnly(['turn','activePosition','phase','players','discovery']) && discoveryOthers(s,t,p)
+          && before.research.hasAny([card]) && spaceOpen(s,location)
+          && (card!='terraforming'||before.ships.size()>0) && (card!='supply-outpost'||before.supply!=[0,0,0,0,0]||before.ships.size()>0)
+          && after.ore>=0 && before.population>=technologyActionPopulation(card)
+          && after.diff(before).affectedKeys().hasOnly(['ore','actionLocation']) && after.actionLocation==location
+          && (card=='android-destroyers' && technologyActionLevelIs(before.research,before.ore-after.ore) || card!='android-destroyers' && after.ore==before.ore-technologyActionOre(card));
+      }
+      function technologyActionQueueMatches(card,p,destination,paidOre,queue,before) {
+        let tail=[{'kind':'resume','responder':p,'returnTo':'production'}];
+        return card=='terraforming' && queue==[oneEffect('effect',p,card,{'kind':'jump','amount':4,'required':true})].concat(tail)
+          || card=='supply-outpost' && queue==[oneEffect('effect',p,card,{'kind':'population','amount':1}),oneEffect('effect',p,card,{'kind':'upgrade','levels':1,'ships':1}),oneEffect('effect',p,card,{'kind':'jump','amount':1,'required':before.supply==[0,0,0,0,0]&&noEligibleUpgrade(before.ships,{'ships':1})})].concat(tail)
+          || card=='human-experiments' && queue==[oneEffect('effect',p,card,{'kind':'return-population','amount':1}),oneEffect('effect',p,card,{'kind':'ship','level':3,'cube':'population','location':destination}),oneEffect('effect',p,card,{'kind':'jump','amount':2})].concat(tail)
+          || card=='android-destroyers' && queue==[oneEffect('effect',p,card,{'kind':'ship','level':paidOre,'location':destination}),oneEffect('effect',p,card,{'kind':'jump','amount':3})].concat(tail)
+          || card in ['narrow-beam-lasers','plasma-cannon'] && queue==[oneEffect('effect',p,card,{'kind':'ship','level':{'narrow-beam-lasers':2,'plasma-cannon':3}[card],'cube':'population','location':destination}),oneEffect('effect',p,card,{'kind':'jump','amount':3})].concat(tail);
+      }
+      function technologyActionTransition(b,a,e) {
+        let m=e.move;let old=b.play.discovery;let d=a.play.discovery;let p=e.position;let card=m.card;let destination=m.get('destination','');
+        return m.keys().hasOnly(['kind','card','action','space','destination']) && card in ['terraforming','narrow-beam-lasers','human-experiments','plasma-cannon','android-destroyers','supply-outpost']
+          && m.action is int && m.space is int && m.action=={'human-experiments':1}.get(card,0) && m.space==0 && old.queue==[]
+          && old.powers.keys().toSet()==b.seats.keys().toSet() && old.powers[p].get('*',-1)>=0
+          && (technologyActionBuild(card)&&(destination=='sol'||destination in ['shipyard-west','shipyard-east','shipyard-north']&&old.outposts.get(destination,{}).get('owner','')==p)||!technologyActionBuild(card)&&!('destination' in m))
+          && d.diff(old).affectedKeys().hasOnly(['queue'])
+          && technologyActionQueueMatches(card,p,destination,b.play.players[p].ore-a.play.players[p].ore,d.queue,b.play.players[p]);
+      }
       function discoveryTransition(b,a,e) {
         let kind=e.move.kind;let s=b.play;let t=a.play;let p=e.position;let before=s.players.get(p,{});let after=t.players.get(p,before);
-        return kind=='research-II' && newResearchII(b,e,s,t,before,after) || kind!='research-II' && sameTurnRoot(b,a) && t.keys().hasOnly(['turn','activePosition','phase','players','discovery']) && t.turn==s.turn && t.activePosition==s.activePosition
+        return kind in ['discovery-choice','discovery-advance'] && discoveryStep(b,e,s,t,before,after) || kind=='technology-action' && technologyActionTransition(b,a,e) || kind=='research-II' && newResearchII(b,e,s,t,before,after) || !(kind in ['research-II','technology-action','discovery-choice','discovery-advance']) && sameTurnRoot(b,a) && t.keys().hasOnly(['turn','activePosition','phase','players','discovery']) && t.turn==s.turn && t.activePosition==s.activePosition
           && discoveryOthers(s,t,p)
-          && ((kind=='prepare-fleet-power' && prepareFleetPowerTransition(b,e,s,t,before,after)) || (kind=='claim-achievement' && achievementClaimTransition(b,e,s,t,before,after)) || (kind=='black-market' && blackMarketTransition(b,e,s,t,before,after)) || (kind=='prepare-discovery' && prepareDiscoveryTransition(b,e,s,t)) || (kind in ['discovery-choice','discovery-advance'] && discoveryStep(b,e,s,t,before,after)));
+          && ((kind=='prepare-fleet-power' && prepareFleetPowerTransition(b,e,s,t,before,after)) || (kind=='claim-achievement' && achievementClaimTransition(b,e,s,t,before,after)) || (kind=='black-market' && blackMarketTransition(b,e,s,t,before,after)) || (kind=='prepare-discovery' && prepareDiscoveryTransition(b,e,s,t)));
       }
 
       // Ordinary Level I bonuses and decommissioning remain legal after the
@@ -1017,16 +1112,22 @@ service cloud.firestore {
             ? (p in s.discovery.get('powers',{}) ? ordinaryFleetChange(b,s,t,before,after,m,p) : unpreparedFleetChange(s,t,before,after,m,p,b.seats.size()))
             : t.get('discovery',null)==s.get('discovery',null) && turnEffect(m,s,t,before,after,p,b.seats.size()));
       }
+      function continuationPlayFrame(s,t,p) {
+        return t.keys().hasOnly(['turn','activePosition','phase','players','discovery']) && t.turn==s.turn && t.activePosition==s.activePosition && discoveryOthers(s,t,p);
+      }
+      function continuationFrame(b,a,e) { return continuationPlayFrame(b.play,a.play,e.position); }
       function validTurnProjection(b,a) {
         let event=getAfter(/databases/$(database)/documents/games/$(game)/events/$(a.lastCommand)).data;
         return event.type=='game-move' && event.actorUid==request.auth.uid && event.revision==a.revision
-          && (event.move.kind!='research-II' || researchIIPlayerTransition(b,a,event));
+          && (event.move.kind!='research-II' || researchIIPlayerTransition(b,a,event))
+          && (event.move.kind!='technology-action' || technologyActionPayment(b,a,event))
+          && (!(event.move.kind in ['discovery-choice','discovery-advance']) || wideJumpProjection(b,a,event));
       }
       allow update: if signedIn() && ('play' in request.resource.data) && sameTurnRoot(resource.data,request.resource.data)
         && validTurnProjection(resource.data,request.resource.data);
       match /events/{event} {
         function turnEvent() {
-          let e=request.resource.data;let m=e.get('move',null);let discoveryMove=m.get('kind','') in ['prepare-discovery','prepare-fleet-power','research-II','discovery-choice','discovery-advance','black-market','claim-achievement']; let b=get(gamePath()).data; let a=getAfter(gamePath()).data;
+          let e=request.resource.data;let m=e.get('move',null);let discoveryMove=m.get('kind','') in ['technology-action','prepare-discovery','prepare-fleet-power','research-II','discovery-choice','discovery-advance','black-market','claim-achievement']; let b=get(gamePath()).data; let a=getAfter(gamePath()).data;
           return e.type == 'game-move' && m is map && m.get('kind','') is string && e.schema == 1 && e.actorUid == request.auth.uid && e.commandId == event && e.revision == a.revision && a.lastCommand == event && e.name == ''
             && discoveryMember(b,e.position)
             && (b.mode == 'tabletop' ? e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','move']) : e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','move','ready','configVersion','settings','code']) && !e.ready && e.configVersion == b.configVersion && e.settings == b.settings && e.code == b.code)

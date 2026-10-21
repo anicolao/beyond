@@ -1,0 +1,390 @@
+{
+  "comparison": {
+    "head": "6a45f0d7cce0977434aac1cc80f766b59502c3ef",
+    "job": 118977525782,
+    "logSha256": "d046ec3e0a4fca96c7a1d448d8ed951eed748440a0243bd164dccdc1d8e5592e",
+    "passed": 16,
+    "failed": 86,
+    "pixelMismatches": 54,
+    "missingReferences": 30,
+    "captureDeadlineErrors": 2,
+    "componentClippedErrors": 0,
+    "wholeStoryTimeouts": 0,
+    "captureGuardsPassed": 50,
+    "referenceAdoption": false,
+    "timingFailures": [
+      {
+        "story": "003 two-player shared Basic tabletop-4k",
+        "captureMs": 2025.282692000008,
+        "limitMs": 2000
+      },
+      {
+        "story": "004 three-player shared cardinal first round tabletop-4k",
+        "captureMs": 2015.3896459999996,
+        "limitMs": 2000
+      }
+    ],
+    "artifact": {
+      "id": 12312789622,
+      "bytes": 1427164955,
+      "apiDigest": "sha256:4d3c6ed9508d56c5fdf70e1086096cb7c80ee66e211abaae496b3186f52244b2",
+      "fullArchiveDownloaded": false,
+      "selectedTraceEntries": "tmp/capture129-ci/selected-manifest.json",
+      "validation": "HTTP bounded ranges and ZIP entry CRCs; individual extracted SHA256s pinned. API archive digest is not claimed as locally verified."
+    }
+  },
+  "primaryTiming": {
+    "trace": "003-basic-setup-setup-tabl-4803e-2-player-shared-Basic-table-tabletop-4k",
+    "failedStep": "Commit Ada\u2019s unique Basic faction",
+    "imageWarmMs": 667.1,
+    "postWarmWaitMs": 909.021,
+    "postWarmAuditActual": {
+      "fontsMs": 0,
+      "imagesMs": 5,
+      "animationsMs": 0,
+      "geometryMs": 3.7
+    },
+    "nativeCaptureRPCMs": 404.877,
+    "interpretation": "Post-warm900ms residual not attributed to geometry; original trace lacks entry-status telemetry and network frames. Distinguish true pending acknowledgement from scheduling before proposing a fix."
+  },
+  "localProbes": [
+    {
+      "name": "front",
+      "resultSHA256": "a6503a2f4a82bf0dd80bdf51eb008128599637f3bb1770f4ccfaf3f8bd84c6f7",
+      "fullViewport": "3840x2160",
+      "allNativeRGBAEqual": true,
+      "measurements": [
+        {
+          "state": "board",
+          "variant": false,
+          "medianTotalMs": 197.742,
+          "medianCaptureMs": 187.475
+        },
+        {
+          "state": "board",
+          "variant": true,
+          "medianTotalMs": 197.762,
+          "medianCaptureMs": 187.307
+        },
+        {
+          "state": "planner",
+          "variant": false,
+          "medianTotalMs": 225.47,
+          "medianCaptureMs": 217.059
+        },
+        {
+          "state": "planner",
+          "variant": true,
+          "medianTotalMs": 226.218,
+          "medianCaptureMs": 214.419
+        }
+      ],
+      "adopted": false,
+      "purpose": "No reliable improvement; rejected or held, not propagated"
+    },
+    {
+      "name": "pointer",
+      "resultSHA256": "c51d9b69359389a26afff99b41a7517034dd06d1339a027e3a3b9263bc7c027d",
+      "fullViewport": "3840x2160",
+      "allNativeRGBAEqual": true,
+      "measurements": [
+        {
+          "state": "board",
+          "variant": false,
+          "medianTotalMs": 204.053,
+          "medianCaptureMs": 188.578
+        },
+        {
+          "state": "board",
+          "variant": true,
+          "medianTotalMs": 198.694,
+          "medianCaptureMs": 182.282
+        },
+        {
+          "state": "planner",
+          "variant": false,
+          "medianTotalMs": 216.878,
+          "medianCaptureMs": 206.137
+        },
+        {
+          "state": "planner",
+          "variant": true,
+          "medianTotalMs": 219.053,
+          "medianCaptureMs": 208.666
+        }
+      ],
+      "adopted": false,
+      "purpose": "No reliable improvement; rejected or held, not propagated"
+    },
+    {
+      "name": "clip",
+      "resultSHA256": "9518ea948c6e71022eab00b8a0f4541dbad9aab722a14d59c0c5d21604423ee1",
+      "fullViewport": "3840x2160",
+      "allNativeRGBAEqual": true,
+      "measurements": [
+        {
+          "state": "board",
+          "variant": false,
+          "medianTotalMs": 199.056,
+          "medianCaptureMs": 184.483
+        },
+        {
+          "state": "board",
+          "variant": true,
+          "medianTotalMs": 202.723,
+          "medianCaptureMs": 188.33
+        },
+        {
+          "state": "planner",
+          "variant": false,
+          "medianTotalMs": 218.101,
+          "medianCaptureMs": 206.796
+        },
+        {
+          "state": "planner",
+          "variant": true,
+          "medianTotalMs": 210.187,
+          "medianCaptureMs": 206.166
+        }
+      ],
+      "adopted": false,
+      "purpose": "No reliable improvement; rejected or held, not propagated"
+    },
+    {
+      "name": "screencast",
+      "resultSHA256": "fcd97e60a257efd3bb9e5d4b0a6a3395fca03c248df8e2e537ddcb816cf19fbe",
+      "fullViewport": "3840x2160",
+      "allNativeRGBAEqual": true,
+      "measurements": [
+        {
+          "state": "board",
+          "variant": false,
+          "medianTotalMs": 200.747,
+          "medianCaptureMs": 187.135
+        },
+        {
+          "state": "board",
+          "variant": true,
+          "medianTotalMs": 195.549,
+          "medianCaptureMs": 182.226
+        },
+        {
+          "state": "planner",
+          "variant": false,
+          "medianTotalMs": 219.177,
+          "medianCaptureMs": 208.112
+        },
+        {
+          "state": "planner",
+          "variant": true,
+          "medianTotalMs": 212.91,
+          "medianCaptureMs": 205.444
+        }
+      ],
+      "adopted": false,
+      "purpose": "No reliable improvement; rejected or held, not propagated"
+    },
+    {
+      "name": "evaluate-poll2",
+      "resultSHA256": "92c139128314c7e295e410d4188bae1ee9fa536986c9be5eb9be1eaf67516855",
+      "fullViewport": "3840x2160",
+      "allNativeRGBAEqual": true,
+      "measurements": [
+        {
+          "state": "board",
+          "variant": false,
+          "medianTotalMs": 205.234,
+          "medianCaptureMs": 190.944
+        },
+        {
+          "state": "board",
+          "variant": true,
+          "medianTotalMs": 203.31,
+          "medianCaptureMs": 188.432
+        },
+        {
+          "state": "planner",
+          "variant": false,
+          "medianTotalMs": 216.688,
+          "medianCaptureMs": 206.65
+        },
+        {
+          "state": "planner",
+          "variant": true,
+          "medianTotalMs": 218.783,
+          "medianCaptureMs": 208.417
+        }
+      ],
+      "adopted": false,
+      "purpose": "No reliable improvement; rejected or held, not propagated"
+    },
+    {
+      "name": "direct-cdp2",
+      "resultSHA256": "bfed3635e887470e4946d4ef5b76bd43ce4da1a38fa9b4f9959fb050bca7ecc9",
+      "fullViewport": "3840x2160",
+      "allNativeRGBAEqual": true,
+      "measurements": [
+        {
+          "state": "board",
+          "variant": false,
+          "medianTotalMs": 198.006,
+          "medianCaptureMs": 188.801
+        },
+        {
+          "state": "board",
+          "variant": true,
+          "medianTotalMs": 439.676,
+          "medianCaptureMs": 426.602
+        },
+        {
+          "state": "planner",
+          "variant": false,
+          "medianTotalMs": 217.433,
+          "medianCaptureMs": 209.179
+        },
+        {
+          "state": "planner",
+          "variant": true,
+          "medianTotalMs": 337.666,
+          "medianCaptureMs": 332.091
+        }
+      ],
+      "adopted": false,
+      "purpose": "No reliable improvement; rejected or held, not propagated"
+    },
+    {
+      "name": "diagnostics",
+      "resultSHA256": "806a46b006a02456f6c52bd86da9cdb93ee0e6063e270f6f3c81749e253d4839",
+      "fullViewport": "3840x2160",
+      "allNativeRGBAEqual": true,
+      "measurements": [
+        {
+          "state": "board",
+          "variant": false,
+          "medianTotalMs": 192.709,
+          "medianCaptureMs": 182.645
+        },
+        {
+          "state": "board",
+          "variant": true,
+          "medianTotalMs": 193.247,
+          "medianCaptureMs": 180.826
+        },
+        {
+          "state": "planner",
+          "variant": false,
+          "medianTotalMs": 213.556,
+          "medianCaptureMs": 207.404
+        },
+        {
+          "state": "planner",
+          "variant": true,
+          "medianTotalMs": 214.159,
+          "medianCaptureMs": 205.904
+        }
+      ],
+      "adopted": true,
+      "purpose": "Tracing only, no performance repair claimed"
+    }
+  ],
+  "compiler": {
+    "canonicalSourceSHA256": "7f0576786d8be232e4214b07c113a7f343436b392d940de9ca141cf2b07928e3",
+    "documentation": "https://firebase.google.com/docs/rules/rules-language#functions",
+    "interpretation": "Official guidance identifies expression/scope complexity as a503 cause; specific internal stack/complexity failure remains unproved for this source.",
+    "probes": [
+      {
+        "status": 503,
+        "name": "minimal-read-fallback",
+        "bytes": 116417,
+        "sha256": "8f8572b357a70bd6203c1d10a913f064971c18a16027e9646712bffe27d8cfa1",
+        "ms": 5425.728292,
+        "deployed": false,
+        "liveEmulatorChanged": false,
+        "scope": "Read-only compiler diagnostic, not adopted; only fallback map fields read by the two existing expressions remain."
+      },
+      {
+        "status": 503,
+        "name": "reversible-function-alpha-renaming",
+        "bytes": 108716,
+        "sha256": "807c72eec9fd5da029544c31ac88cd4df74cbcccfec15e930fc888b1f7ac49da",
+        "ms": 5295.178208,
+        "deployed": false,
+        "liveEmulatorChanged": false,
+        "scope": "Read-only compiler diagnostic, not adopted; all function declaration/call identifiers reversibly renamed; literals/properties/predicates unchanged."
+      },
+      {
+        "status": 503,
+        "name": "static-adjacency-membership",
+        "abstractCases": 1014,
+        "bytes": 116224,
+        "sha256": "6ae4105ef9d129a9dec8d458f17327030d4132ded8bf98580e2fe5fe7987df5c",
+        "ms": 5418.3174579999995,
+        "deployed": false,
+        "liveEmulatorChanged": false
+      },
+      {
+        "status": 503,
+        "name": "ordered-boolean-helper-split",
+        "bytes": 119904,
+        "sha256": "d68a439b24e0b576a59a0d66793ea875dbd94b825745b840d53246984944b48d",
+        "ms": 5429.833125,
+        "deployed": false,
+        "liveEmulatorChanged": false,
+        "scope": "Read-only compiler diagnostic, not adopted; Original ordered boolean leaves distributed into helper functions; no predicates removed; not adopted pending full equivalence/security review."
+      },
+      {
+        "status": 503,
+        "name": "ordered-boolean-helper-split",
+        "bytes": 145925,
+        "sha256": "b2b3d9f7b6fbe36cbe524a972a0ffea9c2cdd4a2d3dfe17b6871432f4c6cdbbf",
+        "ms": 5956.621917,
+        "deployed": false,
+        "liveEmulatorChanged": false,
+        "scope": "Read-only compiler diagnostic, not adopted; Original ordered boolean leaves distributed into helper functions; no predicates removed; not adopted pending full equivalence/security review."
+      },
+      {
+        "status": 503,
+        "name": "single-flat-event-scope",
+        "bytes": 118251,
+        "sha256": "c0d5831c4af4726868c35a14201d0d000831f96e61a6875761b428650a5b26b8",
+        "ms": 5661.9490829999995,
+        "deployed": false,
+        "liveEmulatorChanged": false,
+        "scope": "Read-only compiler diagnostic, not adopted; Exact current006 dependency closures in separate root projection and single flat event match; no helper bodies or allow predicate changed."
+      }
+    ],
+    "deployed": false,
+    "emulatorPolicyChanged": false,
+    "fallbackAllowed": false
+  },
+  "diagnosticChange": {
+    "expectedAndObservedStatusOnly": true,
+    "initialAndPostWarmEntry": true,
+    "originalGuardPredicatesPreserved": true,
+    "pollingMs": 20,
+    "captureBudgetMs": 2000,
+    "storyBudgetMs": 120000,
+    "nativeSettingsUnchanged": true,
+    "newRegression": "False acknowledgement remains false; acknowledged undersized control still throws; diagnostic omits fixture text.",
+    "localCaptureGuards": "All original50 +1 focused diagnostic regression PASS",
+    "types": "0errors/0warnings",
+    "sourcePolicy": "PASS",
+    "beforeAfterNativeProbe": "16/16 full4K captures retain exact RGBA; no baseline generated or changed",
+    "performanceFixProven": false
+  },
+  "phase007StoryDeadlines": {
+    "originalFailuresPreserved": true,
+    "primaryCosts": "Previously pinned native capture~73\u201375s and pointer~22s for104\u2013108 completed frames.",
+    "currentStatus": "Unresolved; no frames dropped, story splitting, timing-limit increase or renderer flag change."
+  },
+  "phase005Current": {
+    "head": "2d3e8d1e4704227f0d5dd0ef9d0818445e1b7a77",
+    "static": "SUCCESS",
+    "browserJob": 118979007160,
+    "browser": "SUCCESS",
+    "publish": "SUCCESS",
+    "documentation": "SUCCESS",
+    "reviewerHosted": "Matching revision and retained board/reload independently confirmed in reviewer129",
+    "finalAcceptance": "Reviewer decision remains separate; prior final acceptance060cfb8 preserved."
+  }
+}

@@ -1,13 +1,14 @@
 import {initializeBackendTestEnvironment} from '../../scripts/backend-rules-environment.mjs';
 import {beforeAll,afterAll,test,expect} from 'bun:test';
 import {assertFails,assertSucceeds,type RulesTestEnvironment} from '@firebase/rules-unit-testing';
-import {doc,writeBatch,updateDoc,setDoc} from 'firebase/firestore';
+import {doc,getDoc,writeBatch,updateDoc,setDoc} from 'firebase/firestore';
 import {readFileSync} from 'node:fs';
 import {applyRemote,defaultSettings,type RemoteEvent,type RemoteRoom} from '../../src/lib/remote/model';
 import {canAdvanceDiscovery} from '../../src/lib/game/discovery-resolution';
 import {projectGame,initialPlay,economy,type PlayState,type TurnMove} from '../../src/lib/game/turn';
 import {syncFleetPowers} from '../../src/lib/game/discovery-economy';
 import {initialDiscovery} from '../../src/lib/game/discovery';
+import type {JumpLeg} from '../../src/lib/game/discovery-movement';
 import {startingSetup} from '../../src/lib/game/setup';
 const start={version:'basic-2020-v1' as const,seed:'11111111-1111-4111-8111-000000000007'};
 let env:RulesTestEnvironment;
@@ -316,4 +317,143 @@ test('security: split Level II proofs require both linked atomic documents and p
  await assertFails(setDoc(doc(db,`games/${f.id}`),after));await assertFails(setDoc(doc(db,`games/${f.id}/events/${move.commandId}`),move));
  for(const corrupt of [(a:RemoteRoom)=>{a.play!.turn++;},(a:RemoteRoom)=>{a.play!.activePosition='p2';},(a:RemoteRoom)=>{a.play!.players.p2.ore++;},(a:RemoteRoom)=>{a.play!.players.p1.ore++;},(a:RemoteRoom)=>{a.play!.players.p1.research.reverse();},(a:RemoteRoom)=>{a.play!.discovery!.deckII.reverse();}]){const forged=structuredClone(after);corrupt(forged);await assertFails(f.write(move,forged));}
  await f.commit(move);expect(f.current.play!.discovery!.records).toHaveLength(1);expect(f.current.play!.players.p1.ore).toBe(8);
+});
+
+// Backend-only action authorization fixtures: these do not replace the ordinary
+// rival-research browser stories. Every paid continuation is still submitted
+// as the real linked atomic event/projection transaction under its controller.
+for(const card of ['terraforming','narrow-beam-lasers','human-experiments','plasma-cannon','android-destroyers','supply-outpost'])test(`printed technology Action security: ${card} pays exactly, requires personal research and resumes once`,async()=>{
+ const f=await fixture('55555555-5555-4555-8555-000000000002');
+ const state=initialPlay(f.setup);state.turn=2;state.players=Object.fromEntries(f.setup.players.map(p=>[p.position,economy(p)]));state.discovery=initialDiscovery('55555555-5555-4555-8555-000000000002',2,2,f.setup.achievements);
+ const p=state.players.p1;p.ore=10;p.supply[0]-=2;p.population+=2;
+ if(!state.discovery.basis.includes(card)){state.discovery.technologies=[{slot:'II-3',card}];state.discovery.deckII=state.discovery.deckII.filter(id=>id!==card);}
+ await f.integrationSnapshot(state);
+ const action=card==='human-experiments'?1:0,build=!['terraforming','supply-outpost'].includes(card);
+ const move:TurnMove={kind:'technology-action',card,action,space:0,...(build?{destination:'sol'}:{})};
+ expect(()=>applyRemote(f.current,f.move(move))).toThrow('Research');
+ const owned=structuredClone(f.current.play!);owned.players.p1.research.push(card);owned.players.p1.population--;await f.integrationSnapshot(owned);
+ const e=f.move(move),after=applyRemote(f.current,e),poison=structuredClone(after);poison.play!.discovery!.queue.push({kind:'effect',responder:'p1',source:card,effect:{kind:'ore',amount:999}});
+ await assertFails(f.write(e,poison));await assertFails(f.write({...e,actorUid:f.guest},after,f.guest));
+ const free=structuredClone(after);free.play!.players.p1.ore++;
+ await assertFails(f.write(e,free));
+ const db=env.authenticatedContext(f.host).firestore();await assertFails(setDoc(doc(db,`games/${f.id}`),after));await assertFails(setDoc(doc(db,`games/${f.id}/events/${e.commandId}`),e));
+ await f.commit(e);expect(f.current.play!.players.p1.actionLocation).toBe(`technology:${card}:${action}:0`);
+ await f.automatic();
+ for(let i=0;i<8&&f.current.play!.phase==='discovery';i++){
+  const q=f.current.play!.discovery!.queue[0];
+  if(q.kind==='effect'&&q.effect.kind==='upgrade')await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'upgrade',ships:['p1-ship-1']});
+  else if(q.kind==='effect'&&q.effect.kind==='jump'){if(q.effect.required)expect(()=>applyRemote(f.current,f.move({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'jump',legs:[]}))).toThrow('different location');await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'jump',legs:q.effect.required?[{index:0,ship:'p1-ship-1',path:['sol','a-1']}]:[]});}
+  else if(q.kind==='control')await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'food'});
+  else if(q.kind==='effect'&&q.effect.kind==='system-bonus')await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'pass'});
+  else throw new Error('Unexpected action continuation '+JSON.stringify(q));
+  await f.automatic();
+ }
+ expect(f.current.play!.phase).toBe('production');expect(f.current.play!.discovery!.queue).toEqual([]);
+ await assertFails(f.write(e,after));expect(()=>applyRemote(f.current,f.move(move))).toThrow('phase');
+ const ships=f.current.play!.players.p1.ships.length;
+ await f.command({kind:'ore'});await f.command({kind:'end-turn'});
+ expect(f.current.play!.players.p1.ships).toHaveLength(ships);
+ const blocked=structuredClone(f.current.play!);blocked.players.p2.research.push(card);blocked.players.p2.population--;blocked.players.p2.ore=10;await f.integrationSnapshot(blocked);
+ expect(()=>applyRemote(f.current,f.move(move,'p2'))).toThrow('Occupied by Ada');
+});
+
+test('printed technology Action: a controlled shipyard build preserves its owner and queues real control checks',async()=>{
+ const f=await fixture();const state=initialPlay(f.setup);state.turn=2;state.players=Object.fromEntries(f.setup.players.map(p=>[p.position,economy(p)]));state.discovery=initialDiscovery(start.seed,2,2,f.setup.achievements);
+ state.players.p1.research=['narrow-beam-lasers'];state.players.p1.population--;state.players.p1.foodDiscs--;state.discovery.outposts['shipyard-north']={owner:'p1',track:'food'};await f.integrationSnapshot(state);
+ const move=f.move({kind:'technology-action',card:'narrow-beam-lasers',action:0,space:0,destination:'shipyard-north'});await f.commit(move);await f.automatic();
+ expect(f.current.play!.players.p1.ships.at(-1)).toMatchObject({level:2,location:'shipyard-north'});expect(f.current.play!.discovery!.outposts['shipyard-north']).toEqual({owner:'p1',track:'food'});
+ await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'jump',legs:[]});await f.automatic();expect(f.current.play!.phase).toBe('production');
+});
+
+for(const pattern of ['four-ships','three-ships','long-route','two-routes'])test(`printed technology Action movement: ${pattern} preserves full four-point simultaneous semantics and rejects forged halves`,async()=>{
+ const f=await fixture();const state=initialPlay(f.setup);state.turn=2;state.players=Object.fromEntries(f.setup.players.map(p=>[p.position,economy(p)]));state.discovery=initialDiscovery(start.seed,2,2,f.setup.achievements);
+ const p=state.players.p1;p.research=['terraforming'];p.population--;p.ore=10;p.supply[0]-=3;for(let i=2;i<=4;i++)p.ships.push({id:`p1-extra-${i}`,level:1,location:'sol'});await f.integrationSnapshot(state);
+ await f.command({kind:'technology-action',card:'terraforming',action:0,space:0});
+ const ships=f.current.play!.players.p1.ships;
+ const legs=pattern==='long-route'?[{index:0,ship:ships[0].id,path:['sol','a-1','deep-space','b-1','shipyard-north']}]:pattern==='two-routes'?[0,1].map(index=>({index,ship:ships[index].id,path:['sol','a-1','deep-space']})):ships.slice(0,pattern==='three-ships'?3:4).map((ship,index)=>({index,ship:ship.id,path:['sol','a-1']}));
+ const event=f.move({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'jump',legs}),after=applyRemote(f.current,event);
+ for(const index of new Set([0,legs.length-1])){
+  const badEvent=structuredClone(event),badAfter=structuredClone(after);(badEvent.move as any).legs[index].path=['sol','b-1'];(badAfter.play!.discovery!.queue[0] as any).legs[index].path=['sol','b-1'];await assertFails(f.write(badEvent,badAfter));
+ }
+ await f.commit(event);
+ const apply=f.move({kind:'discovery-advance',at:f.current.play!.discovery!.cursor}),moved=applyRemote(f.current,apply);
+ for(const index of new Set([0,legs.at(-1)!.index])){const forged=structuredClone(moved);forged.play!.players.p1.ships[index].level=4;await assertFails(f.write(apply,forged));}
+ await f.commit(apply);await f.automatic();
+ for(let i=0;i<10&&f.current.play!.phase==='discovery';i++){
+  const q=f.current.play!.discovery!.queue[0];if(q.kind==='control')await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'food'});else if(q.kind==='effect'&&q.effect.kind==='system-bonus')await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'pass'});else throw Error('Unexpected movement continuation '+JSON.stringify(q));await f.automatic();
+ }
+ expect(f.current.play!.phase).toBe('production');for(const leg of legs)expect(f.current.play!.players.p1.ships[leg.index].location).toBe(leg.path.at(-1)!);
+ const power=f.current.play!.discovery!.powers.p1;expect(power['*']).toBe(4);expect(power.sol??0).toBe(4-legs.length);
+});
+
+test('printed technology Action movement: four distinct routes settle all eight endpoints and six control checks',async()=>{
+ const {specialty}=await import('../../src/lib/game/discovery-movement');const f=await fixture(start.seed,{...defaultSettings,capacity:4});const state=initialPlay(f.setup);state.turn=4;state.players=Object.fromEntries(f.setup.players.map(p=>[p.position,economy(p)]));state.discovery=initialDiscovery(start.seed,4,4,f.setup.achievements);
+ const p=state.players.p1;p.research=['terraforming'];p.population--;p.ore=10;p.supply[0]-=3;p.ships=[p.ships[0],{id:'p1-wide-deep',level:1,location:'deep-space'},{id:'p1-wide-a',level:1,location:'a-1'},{id:'p1-wide-b',level:1,location:'b-1'}];
+ state.players.p2.ships=[{...state.players.p2.ships[0],location:'a-1'},{id:'p2-contesting',level:1,location:'b-1'}];
+ for(const location of ['a-1','b-1']){const track=specialty(f.setup,state,location)==='ore'?'ore':'food';state.discovery.outposts[location]={owner:'p1',track};p[track==='food'?'foodDiscs':'oreDiscs']--;}
+ await f.integrationSnapshot(state);await f.command({kind:'technology-action',card:'terraforming',action:0,space:0});
+ const paths=[['sol','a-2'],['deep-space','b-2'],['a-1','shipyard-west'],['b-1','shipyard-north']],legs=paths.map((path,index)=>({index,ship:p.ships[index].id,path}));
+ await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'jump',legs});await f.automatic();
+ for(let i=0;i<20&&f.current.play!.phase==='discovery';i++){
+  const q=f.current.play!.discovery!.queue[0];if(q.kind==='control')await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'food'},q.responder);else if(q.kind==='effect'&&q.effect.kind==='system-bonus')await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'pass'},q.responder);else throw Error('Unexpected wide control continuation '+JSON.stringify(q));await f.automatic();
+ }
+ expect(f.current.play!.phase).toBe('production');expect(f.current.play!.discovery!.outposts['a-1']?.owner).toBe('p2');expect(f.current.play!.discovery!.outposts['b-1']?.owner).toBe('p2');for(const path of paths)expect(f.current.play!.discovery!.outposts[path[1]]?.owner).toBe('p1');
+});
+
+test('printed technology Action movement: four solar arrivals charge all four ships and preserve the exact paid plan',async()=>{
+ const f=await fixture();const state=initialPlay(f.setup);state.turn=2;state.players=Object.fromEntries(f.setup.players.map(p=>[p.position,economy(p)]));state.discovery=initialDiscovery(start.seed,2,2,f.setup.achievements);const p=state.players.p1;p.research=['terraforming'];p.population--;p.ore=4;p.supply[0]-=3;for(let i=2;i<=4;i++)p.ships.push({id:`p1-solar-${i}`,level:1,location:'sol'});state.discovery.events=[{id:'erratic-solar-activity',slot:'II-3',resolved:true,target:'a-1'}];await f.integrationSnapshot(state);await f.command({kind:'technology-action',card:'terraforming',action:0,space:0});const legs=p.ships.map((ship,index)=>({index,ship:ship.id,path:['sol','a-1']}));await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'jump',legs});
+ const move=f.move({kind:'discovery-advance',at:f.current.play!.discovery!.cursor}),after=applyRemote(f.current,move),free=structuredClone(after);free.play!.players.p1.ore++;
+ await assertFails(f.write(move,free));await f.commit(move);expect(f.current.play!.players.p1.ore).toBe(0);expect(f.current.play!.players.p1.ships.every(ship=>ship.location==='a-1')).toBe(true);
+});
+
+test('printed technology Action: jump-only Terraforming rejects both passing and a no-change circuit in model and atomic rules',async()=>{
+ const f=await fixture(),state=initialPlay(f.setup);state.turn=2;state.players=Object.fromEntries(f.setup.players.map(p=>[p.position,economy(p)]));state.discovery=initialDiscovery(start.seed,2,2,f.setup.achievements);state.players.p1.research=['terraforming'];state.players.p1.population--;await f.integrationSnapshot(state);await f.command({kind:'technology-action',card:'terraforming',action:0,space:0});
+ for(const legs of [[],[{index:0,ship:state.players.p1.ships[0].id,path:['sol','a-1','sol']}]] as JumpLeg[][]){
+  const move=f.move({kind:'discovery-choice',at:0,option:'jump',legs:structuredClone([...legs])});expect(()=>applyRemote(f.current,move)).toThrow('different location');const forged=structuredClone(f.current);forged.revision=move.revision;forged.lastCommand=move.commandId;forged.play!.discovery!.cursor++;forged.play!.discovery!.queue.shift();await assertFails(f.write(move,forged));
+ }
+ const legs=[{index:0,ship:state.players.p1.ships[0].id,path:['sol','a-1']}];await f.command({kind:'discovery-choice',at:0,option:'jump',legs});await f.command({kind:'discovery-advance',at:1});const event=f.move({kind:'discovery-advance',at:2}),after=applyRemote(f.current,event),forged=structuredClone(after);forged.play!.discovery!.jumpControlChecks=[{kind:'control-check',responder:'p1',location:'shipyard-north',source:'Jump'}];await assertFails(f.write(event,forged));await f.commit(event);
+});
+
+test('printed technology Action: Android Destroyers still pays its highest-level Ore cost when exhausted Supply is explicitly skipped',async()=>{
+ const f=await fixture(),state=initialPlay(f.setup);state.turn=2;state.players=Object.fromEntries(f.setup.players.map(p=>[p.position,economy(p)]));state.discovery=initialDiscovery(start.seed,2,2,f.setup.achievements);const p=state.players.p1;p.research=['android-destroyers'];p.ore=3;p.population=0;p.supply=[0,0,0,0,0];p.ships=Array.from({length:19},(_,i)=>({id:`exhausted-${i}`,level:1 as const,location:'sol'}));state.discovery.technologies=[{slot:'II-3',card:'android-destroyers'}];state.discovery.deckII=state.discovery.deckII.filter(id=>id!=='android-destroyers');await f.integrationSnapshot(state);
+ await f.command({kind:'technology-action',card:'android-destroyers',action:0,space:0,destination:'sol'});await f.automatic();expect(f.current.play!.players.p1.ore).toBe(1);expect(f.current.play!.discovery!.queue[0].kind).toBe('effect');await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'pass'});await f.command({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'jump',legs:[]});await f.automatic();expect(f.current.play!.phase).toBe('production');expect(f.current.play!.players.p1.ships).toHaveLength(19);expect(f.current.play!.players.p1.population).toBe(0);
+});
+
+
+// Each split wide-Jump phase is exercised as its actual linked transaction.
+// Constructed fleet positions isolate authorization; ordinary setup and the
+// complete remote/shared browser flows remain separate production evidence.
+for(const stage of ['plan','apply','power-first','power-last'] as const)test(`security: wide Jump ${stage} requires both atomic documents with exact identity revision and command linkage`,async()=>{
+ const f=await fixture(start.seed,{...defaultSettings,capacity:4}),state=initialPlay(f.setup);state.turn=4;state.players=Object.fromEntries(f.setup.players.map(p=>[p.position,economy(p)]));state.discovery=initialDiscovery(start.seed,4,4,f.setup.achievements);
+ const p=state.players.p1;p.research=['terraforming'];p.population--;p.ore=10;p.supply[0]-=3;p.ships=[p.ships[0],{id:'coupled-deep',level:1,location:'deep-space'},{id:'coupled-a',level:1,location:'a-1'},{id:'coupled-b',level:1,location:'b-1'}];await f.integrationSnapshot(state);await f.command({kind:'technology-action',card:'terraforming',action:0,space:0});
+ const legs=[['sol','a-2'],['deep-space','b-2'],['a-1','shipyard-west'],['b-1','shipyard-north']].map((path,index)=>({index,ship:p.ships[index].id,path}));
+ const plan=f.move({kind:'discovery-choice',at:f.current.play!.discovery!.cursor,option:'jump',legs});
+ if(stage!=='plan')await f.commit(plan);
+ if(stage.startsWith('power'))await f.command({kind:'discovery-advance',at:f.current.play!.discovery!.cursor});
+ if(stage==='power-last')for(let index=0;index<7;index++)await f.command({kind:'discovery-advance',at:f.current.play!.discovery!.cursor});
+ const move=stage==='plan'?plan:f.move({kind:'discovery-advance',at:f.current.play!.discovery!.cursor}),after=applyRemote(f.current,move),db=env.authenticatedContext(f.host).firestore(),root=doc(db,`games/${f.id}`),event=doc(db,`games/${f.id}/events/${move.commandId}`);
+ // Neither half may authorize the other by referring to a missing write.
+ await assertFails(setDoc(root,after));await assertFails(setDoc(event,move));
+ // Both documents are present, but must agree on the exact command/revision.
+ await assertFails(f.write({...move,commandId:crypto.randomUUID()},after));
+ await assertFails(f.write({...move,revision:move.revision+1},after));
+ const detached=structuredClone(after);detached.lastCommand=crypto.randomUUID();await assertFails(f.write(move,detached));
+ await assertFails(f.write({...move,actorUid:f.guest},after,f.guest));await assertFails(f.write({...move,position:'p2'},after));
+ const changedOther=structuredClone(after);changedOther.play!.players.p2.ore++;await assertFails(f.write(move,changedOther));
+ if(stage==='plan'){
+  const over=structuredClone(move);
+  if(over.move?.kind!=='discovery-choice')throw Error('Expected Jump choice');
+  over.move.legs![3].path.push('deep-space');
+  const forged=structuredClone(after),q=forged.play!.discovery!.queue[0];
+  if(q.kind!=='jump-apply')throw Error('Expected Jump apply');
+  q.legs=structuredClone(over.move.legs!);
+  await assertFails(f.write(over,forged));
+ }
+ if(stage.startsWith('power')){
+  const poisoned=structuredClone(after);poisoned.play!.discovery!.jumpControlChecks=[{kind:'control-check',responder:'p1',location:'shipyard-east',source:'Jump'}];await assertFails(f.write(move,poisoned));
+  const skipped=structuredClone(after),q=skipped.play!.discovery!.queue[0];if(q.kind==='jump-power')q.index++;else skipped.play!.discovery!.queue.shift();await assertFails(f.write(move,skipped));
+ }
+ expect((await getDoc(root)).data()).toEqual(f.current);expect((await getDoc(event)).exists()).toBe(false);
+ await f.commit(move);expect((await getDoc(root)).data()).toEqual(after);expect((await getDoc(event)).data()).toEqual(move);
+ await assertFails(f.write(move,after));
 });

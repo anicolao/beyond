@@ -58,8 +58,25 @@ try {
     const oldWork = base ? trackedAt(base, 'PROMPT_WORK.md') : '';
     let lines;
     if (!args.length) {
-      if (!work.startsWith(oldWork)) fail('Preserve existing continuation history.');
-      lines = work.slice(oldWork.length).trim().split('\n').filter(Boolean);
+      const merging = spawnSync('git', ['rev-parse', '--verify', 'MERGE_HEAD'], { encoding: 'utf8', stdio: ['ignore','pipe','ignore'] });
+      if (merging.status !== 0) {
+        if (!work.startsWith(oldWork)) fail('Preserve existing continuation history.');
+        lines = work.slice(oldWork.length).trim().split('\n').filter(Boolean);
+      } else {
+        // A real merge interleaves committed history, while preserving each
+        // parent's exact records in order. Only one newly authored step is allowed.
+        const parentPrompts = trackedAt(merging.stdout.trim(), 'PROMPTS.md');
+        if (!staged.startsWith(parentPrompts)) fail('Preserve incoming prompt history byte for byte.');
+        const parents = [oldWork, trackedAt(merging.stdout.trim(), 'PROMPT_WORK.md')].map(text=>text.split('\n').filter(Boolean));
+        const current = work.split('\n').filter(Boolean);
+        for (const prior of parents) {
+          let cursor=0;
+          for (const line of current) if (line===prior[cursor]) cursor++;
+          if (cursor!==prior.length) fail('Preserve both continuation histories.');
+        }
+        const committed = new Set(parents.flat());
+        lines = current.filter(line=>!committed.has(line));
+      }
     } else {
       // A stacked merge keeps each parent's records verbatim and in order,
       // while its other branch can contribute intervening continuation entries.
@@ -73,9 +90,30 @@ try {
     if (!lines.length || (!args.length && lines.length !== 1)) fail('Append one unique continuation per commit.');
     const digest = createHash('sha256').update(staged).digest('hex');
     const seen = new Set(oldWork.split('\n'));
+    let history, promptHistory;
+    function inheritedRecord(line, parts) {
+      if (!args.length || !base) return false;
+      history ??= git(['log','--format=%H',`${base}..HEAD`,'--','PROMPT_WORK.md']).trim().split('\n').filter(Boolean).map(ref=>({
+        work:trackedAt(ref,'PROMPT_WORK.md').split('\n'), prompts:trackedAt(ref,'PROMPTS.md')
+      }));
+      if (!history.some(record=>record.work.includes(line))) return false;
+      // Work may be recorded before the next reviewer prompt, then committed
+      // together. Prove both the committed record and its exact prior prompt bytes.
+      promptHistory ??= git(['log','--format=%H','HEAD','--','PROMPTS.md']).trim().split('\n').filter(Boolean).map(ref=>trackedAt(ref,'PROMPTS.md'));
+      return promptHistory.some(prompts=>{
+        const headings=[...prompts.matchAll(/^## Prompt ([1-9][0-9]*): /gm)];
+        const index=headings.findIndex(entry=>parts[0]===`Prompt ${entry[1]}`);
+        if(index<0)return false;
+        const prefix=prompts.slice(0,headings[index+1]?.index??prompts.length);
+        // Appending a heading can add separator newlines to the old log. The
+        // record's hash must still prove an exact preserved prefix, never altered text.
+        const separators=prefix.match(/\n*$/)[0].length;
+        return Array.from({length:separators+1},(_,trim)=>prefix.slice(0,prefix.length-trim)).some(text=>parts[1]===createHash('sha256').update(text).digest('hex'));
+      });
+    }
     for (const line of lines) {
       const parts = line.split(' | ');
-      if (parts.length !== 3 || parts[0] !== `Prompt ${latest}` || parts[1] !== digest
+      if (parts.length !== 3 || (!(parts[0] === `Prompt ${latest}` && parts[1] === digest) && !inheritedRecord(line,parts))
           || !/^[^\r\n]{10,200}$/.test(parts[2]) || seen.has(line)) {
         fail('Append a unique continuation for the latest prompt and exact staged log SHA-256.');
       }

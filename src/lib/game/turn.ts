@@ -1,3 +1,4 @@
+import {beginTechnologyAction,type TechnologyActionMove} from './technology-actions';
 import {updateControl} from './discovery-movement';
 import {syncFleetPowers} from './discovery-economy';
 import {beginLevelTwo,respondToDiscovery,applyAutomaticDiscovery,prepareDiscovery,prepareFleetPower,type DiscoveryMove} from './discovery-resolution';
@@ -9,7 +10,7 @@ import type { PlayerState, PublicSetup } from './setup';
 /** Durable public turn state; unrevealed decks never enter this projection. */
 export type TurnPlayer = Omit<PlayerState, 'position' | 'name' | 'faction'>;
 export type PlayState = { turn:number; activePosition:string; phase:PublicSetup['phase']; players:Record<string,TurnPlayer>; discovery?:DiscoveryState };
-export type TurnMove = DiscoveryMove
+export type TurnMove = DiscoveryMove | TechnologyActionMove
   | { kind:'research-I'; space:number; card:typeof levelOne[number]; ship?:string; supplyFallback?:'population'|'skip' }
   | { kind:'grow'|'ore'|'trade'|'buy-population'|'sell-population'|'finish-trading' }
   | {kind:'end-turn'}
@@ -54,13 +55,14 @@ function returnSupply(p:TurnPlayer) {
 }
 function validPayload(move:TurnMove) {
   if(!move || typeof move!=='object')throw new Error('Choose a supported turn command.');
-  const keys=move.kind==='prepare-fleet-power'?['kind','position']:move.kind==='black-market'?['kind','track']:move.kind==='claim-achievement'?['kind','card']:move.kind==='research-II'?['kind','space','slot']:move.kind==='discovery-advance'?['kind','at']:move.kind==='discovery-choice'?['kind','at','option','target','ships','track','destination','usePopulation','legs']:move.kind==='gather'?['kind','supplyFallback']:move.kind==='research-I'?['kind','space','card','ship','supplyFallback']:move.kind==='decommission'?['kind','ship']:['kind'];
+  const keys=move.kind==='technology-action'?['kind','card','action','space','destination']:move.kind==='prepare-fleet-power'?['kind','position']:move.kind==='black-market'?['kind','track']:move.kind==='claim-achievement'?['kind','card']:move.kind==='research-II'?['kind','space','slot']:move.kind==='discovery-advance'?['kind','at']:move.kind==='discovery-choice'?['kind','at','option','target','ships','track','destination','usePopulation','legs']:move.kind==='gather'?['kind','supplyFallback']:move.kind==='research-I'?['kind','space','card','ship','supplyFallback']:move.kind==='decommission'?['kind','ship']:['kind'];
   if(Object.keys(move).some(key=>!keys.includes(key)))throw new Error('Unsupported turn payload.');
 }
 export function applyTurn(initial:PublicSetup,before:PlayState|undefined,position:string,move:TurnMove,seed?:string):PlayState {
   validPayload(move);
-  if(move.kind==='prepare-discovery'||move.kind==='prepare-fleet-power'||move.kind==='research-II'||move.kind==='discovery-choice'||move.kind==='discovery-advance'){
+  if(move.kind==='technology-action'||move.kind==='prepare-discovery'||move.kind==='prepare-fleet-power'||move.kind==='research-II'||move.kind==='discovery-choice'||move.kind==='discovery-advance'){
     const state=structuredClone(before??initialPlay(initial));
+    if(move.kind==='technology-action')return syncFleetPowers(initial,beginTechnologyAction(initial,projectGame(initial,state),state,position,move));
     if(move.kind==='discovery-advance')return syncFleetPowers(initial,applyAutomaticDiscovery(initial,state,projectGame(initial,state),position,move.at));
     if(move.kind==='discovery-choice')return syncFleetPowers(initial,respondToDiscovery(initial,state,position,move));
     if(!seed)throw new Error('The retained setup random input is required for discovery.');

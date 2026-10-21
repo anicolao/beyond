@@ -4,8 +4,8 @@ export type BonusEffect=
  | {kind:'population';amount:number;side?:'left'|'right'}
  | {kind:'automate';track:'food'|'ore'|'either'}
  | {kind:'upgrade';levels:number;ships:number;optional?:boolean;location?:string}
- | {kind:'ship';level:1|2|3|4;side?:'left'|'right';location?:'sol'|'deep-space';cube?:'population'}
- | {kind:'jump';amount:number}
+ | {kind:'ship';level:1|2|3|4;side?:'left'|'right';location?:string;cube?:'population'}
+ | {kind:'jump';amount:number;required?:boolean}
  | {kind:'return-population';amount:number}
  | {kind:'research-I';cost:number;fromSupply?:boolean}
  | {kind:'system-bonus';id:string;location:string}

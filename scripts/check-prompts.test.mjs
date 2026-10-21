@@ -133,3 +133,39 @@ test('stacked PR-base comparison preserves both append-only branch histories wit
  f.write(first+child+parent,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.equal(f.check(),0);assert.equal(f.check('--base',base),0);
  for(const invalid of [first+child,child+parent,first+child+parent+child]){f.write(invalid,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check('--base',base),0);}
 });
+
+test('real stacked merge preserves both parents and requires exactly one newly authored continuation',t=>{
+ const f=fixture(t);f.seed();const digest=createHash('sha256').update(initial).digest('hex');
+ const row=label=>`Prompt 1 | ${digest} | ${label} logical continuation\n`;
+ const common=row('Common'),parent=row('Parent'),child=row('Child'),merge=row('Merge');
+ f.write(common,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Common');const base=f.git('rev-parse','HEAD').trim();
+ f.write(common+parent,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Parent');const incoming=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',base);f.write(common+child,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Child');
+ const cwd=f.git('rev-parse','--show-toplevel').trim();spawnSync('git',['merge','--no-commit',incoming],{cwd,stdio:'pipe'});
+ for(const [text,valid]of [[common+child+parent,false],[common+child+parent+merge,true],[common+child+merge,false],[common+child+parent+merge+row('Extra'),false]]){
+  f.write(text,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.equal(f.check()===0,valid,text);
+ }
+});
+
+test('advanced stacked base accepts an older continuation only with its exact committed prompt proof',t=>{
+ const f=fixture(t);f.seed();const common=f.git('rev-parse','HEAD').trim();
+ const oldDigest=createHash('sha256').update(initial).digest('hex');
+ const old=`Prompt 1 | ${oldDigest} | Child implementation before next prompt\n`;
+ f.write(old,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Earlier child work');const child=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',common);f.write(initial+next);f.git('add','PROMPTS.md');f.git('commit','-qm','Advanced parent prompt');const parent=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',child);const cwd=f.git('rev-parse','--show-toplevel').trim();spawnSync('git',['merge','--no-commit',parent],{cwd,stdio:'pipe'});
+ const digest=createHash('sha256').update(initial+next).digest('hex'),step=`Prompt 2 | ${digest} | Merge the reviewed stacked implementation\n`;
+ f.write(old+step,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');f.git('commit','-qm','Merge parent');
+ assert.equal(f.check('--base',parent),0);
+ f.write(old+step+`Prompt 1 | ${oldDigest} | Invented uncommitted historical continuation\n`,'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check('--base',parent),0);
+});
+
+test('committed earlier work can cite its preserved prompt snapshot after a later prompt is bundled',t=>{
+ const f=fixture(t);f.seed();const common=f.git('rev-parse','HEAD').trim();const digest=createHash('sha256').update(initial).digest('hex');
+ const boundaryDigest=createHash('sha256').update(initial+'\n').digest('hex');
+ const record=`Prompt 1 | ${boundaryDigest} | Work recorded before the later reviewer prompt\n`;
+ f.write(initial+next);f.write(record,'PROMPT_WORK.md');f.git('add','PROMPTS.md','PROMPT_WORK.md');f.git('commit','-qm','Bundle prior work and later prompt');const child=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',common);f.write(initial+next);f.git('add','PROMPTS.md');f.git('commit','-qm','Parent advances prompt');const parent=f.git('rev-parse','HEAD').trim();
+ f.git('checkout','--detach',child);assert.equal(f.check('--base',parent),0);
+ f.write(record.replace(boundaryDigest,'0'.repeat(64)),'PROMPT_WORK.md');f.git('add','PROMPT_WORK.md');assert.notEqual(f.check('--base',parent),0);
+});

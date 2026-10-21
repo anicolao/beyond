@@ -45,7 +45,7 @@ export function placeOutpost(initial:PublicSetup,state:PlayState,position:string
 }
 export function validateJump(initial:PublicSetup,state:PlayState,position:string,amount:number,legs:JumpLeg[]){
  const d=state.discovery!,p=player(initial,state,position),map=discoveryMap({...initial,discovery:d}),used=new Set<string>();let spent=0;
- if(!Array.isArray(legs)||legs.length>2)throw new Error('Choose a finite jump plan.');
+ if(!Array.isArray(legs)||legs.length>4)throw new Error('Choose a finite jump plan.');
  for(const leg of legs){
   const ship=Number.isInteger(leg.index)?p.ships[leg.index]:undefined;
   if(!ship||ship.id!==leg.ship||used.has(ship.id)||!Array.isArray(leg.path)||leg.path.length<2||leg.path[0]!==ship.location)throw new Error('Choose each owned ship once, starting at its current location.');used.add(ship.id);
