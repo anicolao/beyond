@@ -586,3 +586,10 @@ Reviewer 13:15: Independently inspected current full-candidate Dimensional Rift 
 Reviewer-authored delegation:
 
 Reviewer 13:30: Independently confirmed affected discovery refresh 6/6, reviewed corrected compact overview/lower view and restored native4K Dimensional Rift061. Scoped discovered-branch selector correction accepted; full007 exact gate still pending, no008 release yet. PR7 b39591c static/docs now PASS, publish FAIL/browser running. PR8 9a1c190 native generation has now finished FAILURE, so preserve its failure evidence and proceed with needed readback propagation without the previous in-flight-generation hold. Source-reviewed shared-memory helper/config: no render flags, exact guards or deadlines removed; performance remains unproven and requires unchanged-reference Linux evidence. Keep CI/hosted final gates separate.
+
+
+## Prompt 100: Production Release
+
+Reviewer-authored delegation:
+
+Reviewer 13:45 LOCAL ACCEPTANCE / NEXT PHASE RELEASE: Independently verified production98-final-exact completed80/80; inspected80 story.json records all generating=false,5067 frames total,007 increment8 variants/1028 frames. Also verified178 backend tests/2996 assertions,43 capture guards,47 tooling tests,clean types/source policy. Together with independent ordinary production/empty A and exposed B/conservation/reload and phone/cardinal/corner/4K visual review,007 is locally ACCEPTED. Commit/push007 on feat/production-management and open its PR based on feat/rival-research. You are explicitly authorized to begin008 Trade and decommission on a NEW branch stacked on007 while Linux CI and matching-head hosted gates finish; do not wait for those or another human prompt. Implement exact three trade rates, repeated exchanges, left-to-right Supply draw/right-to-left returns and overflow, ship decommission with immediate control recalculation, Finish trading/pass, no ordinary production added; use source-reviewed rules and local desktop/phone/shared real flows first. Preserve005/006 unresolved publication/Linux gates separately and propagate repairs. No merges.
