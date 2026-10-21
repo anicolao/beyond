@@ -297,3 +297,6 @@ CI118 checkout repair: exclude only unused Darwin screenshot blobs from pinned L
 
 
 Reviewer120 approved exact-ACTIVE immutable-source reuse (delegation logged in009 PROMPTS): apply reviewed discovery117 patch. Verify complete filename/content equality before and after a no-op; changed source still requires compiler/upload/release readback. All13 deployer tests pass; actual CI/hosted revision/functional proof remains pending per head. No historical fallback, rules changes,010 or merges.
+
+
+Separate123 startup repair: PR11 same-head static succeeds once but another run loses rules/remote beforeAll hooks at5001/5000ms; preserve both outcomes. Node startup exact-source proof does not populate Bun’s in-process compiler cache. Read exact installed emulator source for each fresh SDK environment, avoid only byte-identical redundant upload, and retain actual compilation for differing/missing/error source. Fail closed on transport/readback errors. Local phase005157/2884 and8 tooling tests pass; CI proof remains pending. Policies, identities, assertions and all original deadlines stay unchanged. Evidence: docs/e2e/EXACT_EMULATOR_READBACK_123.json.
