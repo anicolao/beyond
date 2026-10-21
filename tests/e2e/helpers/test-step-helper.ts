@@ -35,7 +35,11 @@ export class TestStepHelper {
         const [, , ready] = await Promise.all([
           (async () => { await page.bringToFront(); await page.mouse.move(0, 0); })(),
           page.evaluate(warmVisibleImages),
-          page.waitForFunction(({ status }) => document.querySelector('[data-backend-status]')?.getAttribute('data-backend-status') === status, { status: view.status ?? 'synced' }, { timeout: remaining(), polling: 20 })
+          page.waitForFunction(({ status }) => {
+            const observed=document.querySelector('[data-backend-status]')?.getAttribute('data-backend-status');
+            console.info('beyond-capture-ack',JSON.stringify({phase:'initial',expected:status,observed:observed??null}));
+            return observed === status;
+          }, { status: view.status ?? 'synced' }, { timeout: remaining(), polling: 20 })
         ]);
         await ready.dispose();
         // Warming may finish after the first acknowledgement; retain an exact
