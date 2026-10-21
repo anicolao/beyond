@@ -1,0 +1,130 @@
+{
+  "prompt": 151,
+  "status": "New scoped feedback corrected locally; fresh captures for independent visual review. No whole011 acceptance claimed.",
+  "server": "http://127.0.0.1:5206/",
+  "diagnosis": {
+    "currentReproduction": "Older147 defect remains in148 current capture; not dismissed as stale evidence.",
+    "before640": "Reader40 logical px; compact cube omitted/identity hidden, path replaced by14px End summary; budget55/nav57/footer107 consume the available area.",
+    "before720": "Reader95 logical px but same hidden identity/cube/abbreviated route.",
+    "after640": {
+      "reader": 96,
+      "scroll": 0,
+      "route": {
+        "top": 3,
+        "bottom": 47,
+        "height": 44
+      },
+      "choice": {
+        "top": 47,
+        "bottom": 93,
+        "height": 46
+      },
+      "identity": "block",
+      "path": "Sol \u2192 Lalande 21185 \u2192 Deep Space",
+      "cube": "grid"
+    },
+    "after720": {
+      "reader": 152,
+      "scroll": 0,
+      "route": {
+        "top": 3,
+        "bottom": 51,
+        "height": 48
+      },
+      "choice": {
+        "top": 55,
+        "bottom": 69,
+        "height": 14
+      },
+      "identity": "block",
+      "path": "Sol \u2192 Lalande 21185",
+      "cube": "grid"
+    }
+  },
+  "correction": [
+    "Reuse one selected-route snippet in editor and dedicated Routes view: level cube, semantic ship identity, complete actual path and original production endpoint art/inspection.",
+    "Put compact budget/source on one row, reduce navigation padding and compose Remove/Clear/Commit as one44px action row with exact summary above; preserve all controls/semantics.",
+    "Keep a legal next destination visible before allocation. Once all points are allocated, explicitly say remove a leg to reroute, rather than inventing enabled movement.",
+    "Preserve complete route browsing, native selection, full source/System inspection, exact opener focus return, edit/reset, canonical commit and unpaid reload."
+  ],
+  "verification": {
+    "viewports": "1280x720,1124x720,1280x640,native3840x2160; phone393x852 regression",
+    "newContextChecks": "Cube/identity displayed, full route min44 high and fully inside initial reader; first destination or allocation notice also fully inside. Original viewport/clipping/touch/overlap guards additionally pass.",
+    "firstAttempt": "Strict640 check caught93>92 by1px. Failure/log retained; footer padding reduced6\u21924 to gain4px, no tolerance/guard change.",
+    "functional": "Same own ordinary four-corner paid room; endpoint inspection/Escape exact focus, Remove/Clear/unpaid reload, complete Routes/previous ship,12Tab modal containment and keyboard Enter real commit/outpost/Production/reload PASS. Distinct-identity phone Terraforming4/observer/reload regression PASS.",
+    "types": "0 errors/0 warnings",
+    "sourcePolicy": "PASS",
+    "diffCheck": "PASS",
+    "backend": "Unchanged by151: latest216/3240 full isolated run under150; no redundant rerun claimed.",
+    "formalBaselinesGenerated": false,
+    "independentVisualAcceptance": false
+  },
+  "storageIncident": {
+    "blocker": "Filesystem full blocked heredoc/log creation. No source change applied by failed shell command.",
+    "cleanup": "Removed only ignored/inactive /tmp/beyond-fleet123/build-e2e-preview and build-e2e-production (about412MiB). Verified no4197/4198 listeners first.",
+    "preserved": "Source/dependencies/all screenshots and traces/user files/reviewer services/auth and game data;5206/9397/8297 remain alive."
+  },
+  "images": [
+    {
+      "path": "round151-corner-before/split-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "7fdc6c3e49e121c3ce63bdd8f8e563a0e02ce7cecca8f047b0149ca373c7f036"
+    },
+    {
+      "path": "round151-corner-after-final/partial-1280x640.png",
+      "width": 1280,
+      "height": 640,
+      "sha256": "0ac7d3aaaae26057e564d02deb15eb410601525ab4be20c997c5d1f48f910e2c"
+    },
+    {
+      "path": "round151-corner-after-final/split-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "b8ff0cd89f0679512ef5c7fec25b02b5415081cb438ae8bb860c3b1205e573fe"
+    },
+    {
+      "path": "round151-corner-after-final/split-1280x640.png",
+      "width": 1280,
+      "height": 640,
+      "sha256": "24e010c015008f974b057ec4a4d5528c42f5460907cc8bff2223904d379a6cd9"
+    },
+    {
+      "path": "round151-corner-after-final/split-3840x2160.png",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "712e74e801f46239cceedb6aef4c2a0e90601f5b8831e48e08005dd665da3028"
+    },
+    {
+      "path": "round151-corner-after-final/endpoint-focus-return-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "b020d22ec046756d1f83e5be53532d3260cef04f86e9eac1486a8d5a81eba4e4"
+    },
+    {
+      "path": "round151-keyboard-commit/complete-route-view-1280x640.png",
+      "width": 1280,
+      "height": 640,
+      "sha256": "e88318899cfb46dee6d67d99fe667054a33d601ec1eadf3b6e133c11fdd36f73"
+    },
+    {
+      "path": "round151-keyboard-commit/keyboard-commit-1280x640.png",
+      "width": 1280,
+      "height": 640,
+      "sha256": "aafd73a2012578610a57e7f1322fac77b6824fa972f16fe720643a4887e5cd0e"
+    },
+    {
+      "path": "round151-keyboard-commit/production-reloaded-1280x640.png",
+      "width": 1280,
+      "height": 640,
+      "sha256": "5e56947ca90f8afa48b6cbbe15abde87dd01547332eebfd5ebca79689b8121cf"
+    },
+    {
+      "path": "round151-remote-regression/route-editor-393.png",
+      "width": 393,
+      "height": 852,
+      "sha256": "26e20bad39c332e2eb17f34c8f9bc851c57849375fdd344c4eaaaff45af7f054"
+    }
+  ],
+  "boundaries": "No011 publication/formal candidates, no012, no merge; PR12 CI/static/native/publisher gates remain separate."
+}

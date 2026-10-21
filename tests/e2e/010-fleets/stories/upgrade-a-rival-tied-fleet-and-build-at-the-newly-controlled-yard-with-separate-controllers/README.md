@@ -482,13 +482,28 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 33. Add the next adjacent system to the explicit path
+## 33. Open the actual connected-destination view
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/032-ada-yard-leg-0-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/032-ada-yard-leg-0-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/032-ada-yard-leg-0-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/032-ada-yard-leg-0-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/032-ada-yard-route-editor-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/032-ada-yard-route-editor-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/032-ada-yard-route-editor-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/032-ada-yard-route-editor-desktop-darwin.png) |
+
+
+
+- [x] Open the actual connected-destination view
+- [x] The actual canonical effect and backend acknowledgement settle.
+- [x] Public technology topology retains physical separation.
+- [x] The actual viewport fits without page scrolling.
+
+## 34. Add the next adjacent system to the explicit path
+
+Viewpoint: **Ada · separate host controller**.
+
+| phone · 393 × 852 | desktop · 1440 × 1000 |
+| --- | --- |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/033-ada-yard-leg-0-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/033-ada-yard-leg-0-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/033-ada-yard-leg-0-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/033-ada-yard-leg-0-desktop-darwin.png) |
 
 
 
@@ -497,13 +512,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 34. Arrive with uncontested power and resolve the actual outpost
+## 35. Arrive with uncontested power and resolve the actual outpost
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/033-ada-yard-arrival-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/033-ada-yard-arrival-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/033-ada-yard-arrival-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/033-ada-yard-arrival-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/034-ada-yard-arrival-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/034-ada-yard-arrival-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/034-ada-yard-arrival-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/034-ada-yard-arrival-desktop-darwin.png) |
 
 
 
@@ -512,13 +527,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 35. Place a real Food outpost before production
+## 36. Place a real Food outpost before production
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/034-ada-yard-food-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/034-ada-yard-food-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/034-ada-yard-food-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/034-ada-yard-food-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/035-ada-yard-food-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/035-ada-yard-food-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/035-ada-yard-food-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/035-ada-yard-food-desktop-darwin.png) |
 
 
 
@@ -527,13 +542,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 36. Ada completes ordinary production and hands off
+## 37. Ada completes ordinary production and hands off
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/035-ada-yard-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/035-ada-yard-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/035-ada-yard-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/035-ada-yard-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/036-ada-yard-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/036-ada-yard-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/036-ada-yard-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/036-ada-yard-handoff-desktop-darwin.png) |
 
 
 
@@ -542,13 +557,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 37. The next independent controller sees the saved handoff
+## 38. The next independent controller sees the saved handoff
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/036-ada-yard-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/036-ada-yard-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/036-ada-yard-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/036-ada-yard-next-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/037-ada-yard-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/037-ada-yard-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/037-ada-yard-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/037-ada-yard-next-desktop-darwin.png) |
 
 
 
@@ -557,13 +572,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 38. Bora opens the actual Action instrument
+## 39. Bora opens the actual Action instrument
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/037-bora-before-tie-plan-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/037-bora-before-tie-plan-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/037-bora-before-tie-plan-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/037-bora-before-tie-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/038-bora-before-tie-plan-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/038-bora-before-tie-plan-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/038-bora-before-tie-plan-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/038-bora-before-tie-plan-desktop-darwin.png) |
 
 
 
@@ -572,13 +587,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 39. Bora selects ordinary gathering
+## 40. Bora selects ordinary gathering
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/038-bora-before-tie-kind-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/038-bora-before-tie-kind-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/038-bora-before-tie-kind-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/038-bora-before-tie-kind-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/039-bora-before-tie-kind-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/039-bora-before-tie-kind-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/039-bora-before-tie-kind-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/039-bora-before-tie-kind-desktop-darwin.png) |
 
 
 
@@ -587,13 +602,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 40. Receive actual Gather resources before production
+## 41. Receive actual Gather resources before production
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/039-bora-before-tie-gathered-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/039-bora-before-tie-gathered-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/039-bora-before-tie-gathered-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/039-bora-before-tie-gathered-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/040-bora-before-tie-gathered-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/040-bora-before-tie-gathered-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/040-bora-before-tie-gathered-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/040-bora-before-tie-gathered-desktop-darwin.png) |
 
 
 
@@ -602,13 +617,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 41. Bora completes ordinary production and hands off
+## 42. Bora completes ordinary production and hands off
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/040-bora-before-tie-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/040-bora-before-tie-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/040-bora-before-tie-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/040-bora-before-tie-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/041-bora-before-tie-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/041-bora-before-tie-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/041-bora-before-tie-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/041-bora-before-tie-handoff-desktop-darwin.png) |
 
 
 
@@ -617,13 +632,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 42. The next independent controller sees the saved handoff
+## 43. The next independent controller sees the saved handoff
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/041-bora-before-tie-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/041-bora-before-tie-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/041-bora-before-tie-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/041-bora-before-tie-next-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/042-bora-before-tie-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/042-bora-before-tie-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/042-bora-before-tie-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/042-bora-before-tie-next-desktop-darwin.png) |
 
 
 
@@ -632,13 +647,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 43. Ada opens the actual Action instrument
+## 44. Ada opens the actual Action instrument
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/042-ada-vacates-path-plan-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/042-ada-vacates-path-plan-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/042-ada-vacates-path-plan-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/042-ada-vacates-path-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/043-ada-vacates-path-plan-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/043-ada-vacates-path-plan-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/043-ada-vacates-path-plan-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/043-ada-vacates-path-plan-desktop-darwin.png) |
 
 
 
@@ -647,13 +662,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 44. Ada chooses the unoccupied printed research space
+## 45. Ada chooses the unoccupied printed research space
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/043-ada-vacates-path-space-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/043-ada-vacates-path-space-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/043-ada-vacates-path-space-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/043-ada-vacates-path-space-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/044-ada-vacates-path-space-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/044-ada-vacates-path-space-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/044-ada-vacates-path-space-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/044-ada-vacates-path-space-desktop-darwin.png) |
 
 
 
@@ -662,13 +677,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 45. Choose the public Advanced Robotics face and read its printed effect
+## 46. Choose the public Advanced Robotics face and read its printed effect
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/044-ada-vacates-path-card-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/044-ada-vacates-path-card-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/044-ada-vacates-path-card-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/044-ada-vacates-path-card-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/045-ada-vacates-path-card-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/045-ada-vacates-path-card-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/045-ada-vacates-path-card-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/045-ada-vacates-path-card-desktop-darwin.png) |
 
 
 
@@ -677,13 +692,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 46. Ada pays permanent research Population and resolves the printed bonus
+## 47. Ada pays permanent research Population and resolves the printed bonus
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/045-ada-vacates-path-paid-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/045-ada-vacates-path-paid-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/045-ada-vacates-path-paid-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/045-ada-vacates-path-paid-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/046-ada-vacates-path-paid-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/046-ada-vacates-path-paid-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/046-ada-vacates-path-paid-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/046-ada-vacates-path-paid-desktop-darwin.png) |
 
 
 
@@ -692,13 +707,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 47. Ada completes ordinary production and hands off
+## 48. Ada completes ordinary production and hands off
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/046-ada-vacates-path-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/046-ada-vacates-path-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/046-ada-vacates-path-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/046-ada-vacates-path-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/047-ada-vacates-path-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/047-ada-vacates-path-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/047-ada-vacates-path-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/047-ada-vacates-path-handoff-desktop-darwin.png) |
 
 
 
@@ -707,13 +722,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 48. The next independent controller sees the saved handoff
+## 49. The next independent controller sees the saved handoff
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/047-ada-vacates-path-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/047-ada-vacates-path-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/047-ada-vacates-path-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/047-ada-vacates-path-next-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/048-ada-vacates-path-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/048-ada-vacates-path-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/048-ada-vacates-path-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/048-ada-vacates-path-next-desktop-darwin.png) |
 
 
 
@@ -722,13 +737,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 49. Bora opens the actual Action instrument
+## 50. Bora opens the actual Action instrument
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/048-bora-tie-plan-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/048-bora-tie-plan-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/048-bora-tie-plan-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/048-bora-tie-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/049-bora-tie-plan-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/049-bora-tie-plan-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/049-bora-tie-plan-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/049-bora-tie-plan-desktop-darwin.png) |
 
 
 
@@ -737,13 +752,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 50. Bora selects a printed Technology Action
+## 51. Bora selects a printed Technology Action
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/049-bora-tie-kind-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/049-bora-tie-kind-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/049-bora-tie-kind-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/049-bora-tie-kind-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/050-bora-tie-kind-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/050-bora-tie-kind-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/050-bora-tie-kind-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/050-bora-tie-kind-desktop-darwin.png) |
 
 
 
@@ -752,13 +767,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 51. Pay the actual printed Action before selecting an owned ship
+## 52. Pay the actual printed Action before selecting an owned ship
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/050-bora-tie-paid-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/050-bora-tie-paid-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/050-bora-tie-paid-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/050-bora-tie-paid-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/051-bora-tie-paid-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/051-bora-tie-paid-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/051-bora-tie-paid-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/051-bora-tie-paid-desktop-darwin.png) |
 
 
 
@@ -767,13 +782,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 52. Select the existing level-one ship; construction is not part of this Action
+## 53. Select the existing level-one ship; construction is not part of this Action
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/051-bora-tie-ship-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/051-bora-tie-ship-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/051-bora-tie-ship-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/051-bora-tie-ship-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/052-bora-tie-ship-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/052-bora-tie-ship-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/052-bora-tie-ship-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/052-bora-tie-ship-desktop-darwin.png) |
 
 
 
@@ -782,13 +797,28 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 53. Add the next adjacent system to the explicit path
+## 54. Open the actual connected-destination view
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/052-bora-tie-leg-0-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/052-bora-tie-leg-0-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/052-bora-tie-leg-0-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/052-bora-tie-leg-0-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/053-bora-tie-route-editor-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/053-bora-tie-route-editor-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/053-bora-tie-route-editor-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/053-bora-tie-route-editor-desktop-darwin.png) |
+
+
+
+- [x] Open the actual connected-destination view
+- [x] The actual canonical effect and backend acknowledgement settle.
+- [x] Public technology topology retains physical separation.
+- [x] The actual viewport fits without page scrolling.
+
+## 55. Add the next adjacent system to the explicit path
+
+Viewpoint: **Bora · separate guest controller**.
+
+| phone · 1440 × 1000 | desktop · 393 × 852 |
+| --- | --- |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/054-bora-tie-leg-0-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/054-bora-tie-leg-0-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/054-bora-tie-leg-0-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/054-bora-tie-leg-0-desktop-darwin.png) |
 
 
 
@@ -797,13 +827,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 54. Equal incoming power preserves Ada’s incumbent outpost
+## 56. Equal incoming power preserves Ada’s incumbent outpost
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/053-bora-tie-arrival-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/053-bora-tie-arrival-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/053-bora-tie-arrival-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/053-bora-tie-arrival-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/055-bora-tie-arrival-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/055-bora-tie-arrival-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/055-bora-tie-arrival-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/055-bora-tie-arrival-desktop-darwin.png) |
 
 
 
@@ -812,13 +842,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 55. Bora completes ordinary production and hands off
+## 57. Bora completes ordinary production and hands off
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/054-bora-tie-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/054-bora-tie-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/054-bora-tie-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/054-bora-tie-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/056-bora-tie-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/056-bora-tie-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/056-bora-tie-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/056-bora-tie-handoff-desktop-darwin.png) |
 
 
 
@@ -827,13 +857,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 56. The next independent controller sees the saved handoff
+## 58. The next independent controller sees the saved handoff
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/055-bora-tie-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/055-bora-tie-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/055-bora-tie-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/055-bora-tie-next-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/057-bora-tie-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/057-bora-tie-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/057-bora-tie-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/057-bora-tie-next-desktop-darwin.png) |
 
 
 
@@ -842,13 +872,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 57. Ada opens the actual Action instrument
+## 59. Ada opens the actual Action instrument
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/056-ada-vacate-plan-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/056-ada-vacate-plan-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/056-ada-vacate-plan-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/056-ada-vacate-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/058-ada-vacate-plan-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/058-ada-vacate-plan-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/058-ada-vacate-plan-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/058-ada-vacate-plan-desktop-darwin.png) |
 
 
 
@@ -857,13 +887,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 58. Ada selects ordinary gathering
+## 60. Ada selects ordinary gathering
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/057-ada-vacate-kind-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/057-ada-vacate-kind-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/057-ada-vacate-kind-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/057-ada-vacate-kind-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/059-ada-vacate-kind-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/059-ada-vacate-kind-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/059-ada-vacate-kind-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/059-ada-vacate-kind-desktop-darwin.png) |
 
 
 
@@ -872,13 +902,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 59. Receive actual Gather resources before production
+## 61. Receive actual Gather resources before production
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/058-ada-vacate-gathered-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/058-ada-vacate-gathered-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/058-ada-vacate-gathered-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/058-ada-vacate-gathered-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/060-ada-vacate-gathered-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/060-ada-vacate-gathered-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/060-ada-vacate-gathered-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/060-ada-vacate-gathered-desktop-darwin.png) |
 
 
 
@@ -887,13 +917,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 60. Ada completes ordinary production and hands off
+## 62. Ada completes ordinary production and hands off
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/059-ada-vacate-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/059-ada-vacate-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/059-ada-vacate-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/059-ada-vacate-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/061-ada-vacate-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/061-ada-vacate-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/061-ada-vacate-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/061-ada-vacate-handoff-desktop-darwin.png) |
 
 
 
@@ -902,13 +932,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 61. The next independent controller sees the saved handoff
+## 63. The next independent controller sees the saved handoff
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/060-ada-vacate-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/060-ada-vacate-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/060-ada-vacate-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/060-ada-vacate-next-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/062-ada-vacate-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/062-ada-vacate-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/062-ada-vacate-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/062-ada-vacate-next-desktop-darwin.png) |
 
 
 
@@ -917,13 +947,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 62. Bora opens the actual Action instrument
+## 64. Bora opens the actual Action instrument
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/061-bora-control-upgrade-plan-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/061-bora-control-upgrade-plan-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/061-bora-control-upgrade-plan-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/061-bora-control-upgrade-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/063-bora-control-upgrade-plan-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/063-bora-control-upgrade-plan-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/063-bora-control-upgrade-plan-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/063-bora-control-upgrade-plan-desktop-darwin.png) |
 
 
 
@@ -932,13 +962,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 63. Bora chooses the unoccupied printed research space
+## 65. Bora chooses the unoccupied printed research space
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/062-bora-control-upgrade-space-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/062-bora-control-upgrade-space-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/062-bora-control-upgrade-space-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/062-bora-control-upgrade-space-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/064-bora-control-upgrade-space-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/064-bora-control-upgrade-space-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/064-bora-control-upgrade-space-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/064-bora-control-upgrade-space-desktop-darwin.png) |
 
 
 
@@ -947,13 +977,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 64. Choose the public Narrow Beam Lasers face and read its printed effect
+## 66. Choose the public Narrow Beam Lasers face and read its printed effect
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/063-bora-control-upgrade-card-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/063-bora-control-upgrade-card-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/063-bora-control-upgrade-card-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/063-bora-control-upgrade-card-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/065-bora-control-upgrade-card-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/065-bora-control-upgrade-card-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/065-bora-control-upgrade-card-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/065-bora-control-upgrade-card-desktop-darwin.png) |
 
 
 
@@ -962,13 +992,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 65. The mandatory one-level upgrade needs an explicit owned ship
+## 67. The mandatory one-level upgrade needs an explicit owned ship
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/064-bora-control-upgrade-target-required-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/064-bora-control-upgrade-target-required-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/064-bora-control-upgrade-target-required-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/064-bora-control-upgrade-target-required-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/066-bora-control-upgrade-target-required-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/066-bora-control-upgrade-target-required-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/066-bora-control-upgrade-target-required-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/066-bora-control-upgrade-target-required-desktop-darwin.png) |
 
 
 
@@ -977,13 +1007,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 66. Select the owned ship and inspect the exact level change
+## 68. Select the owned ship and inspect the exact level change
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/065-bora-control-upgrade-target-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/065-bora-control-upgrade-target-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/065-bora-control-upgrade-target-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/065-bora-control-upgrade-target-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/067-bora-control-upgrade-target-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/067-bora-control-upgrade-target-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/067-bora-control-upgrade-target-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/067-bora-control-upgrade-target-desktop-darwin.png) |
 
 
 
@@ -992,13 +1022,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 67. Bora pays permanent research Population and resolves the printed bonus
+## 69. Bora pays permanent research Population and resolves the printed bonus
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/066-bora-control-upgrade-paid-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/066-bora-control-upgrade-paid-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/066-bora-control-upgrade-paid-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/066-bora-control-upgrade-paid-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/068-bora-control-upgrade-paid-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/068-bora-control-upgrade-paid-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/068-bora-control-upgrade-paid-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/068-bora-control-upgrade-paid-desktop-darwin.png) |
 
 
 
@@ -1007,13 +1037,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 68. Reload retains the upgraded ship and outstanding control-transfer choice
+## 70. Reload retains the upgraded ship and outstanding control-transfer choice
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/067-control-upgrade-retained-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/067-control-upgrade-retained-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/067-control-upgrade-retained-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/067-control-upgrade-retained-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/069-control-upgrade-retained-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/069-control-upgrade-retained-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/069-control-upgrade-retained-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/069-control-upgrade-retained-desktop-darwin.png) |
 
 
 
@@ -1022,13 +1052,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 69. Reopen the real control-transfer response after the upgrade
+## 71. Reopen the real control-transfer response after the upgrade
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/068-control-choice-restored-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/068-control-choice-restored-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/068-control-choice-restored-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/068-control-choice-restored-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/070-control-choice-restored-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/070-control-choice-restored-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/070-control-choice-restored-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/070-control-choice-restored-desktop-darwin.png) |
 
 
 
@@ -1037,13 +1067,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 70. Bora’s greater power replaces the incumbent before production
+## 72. Bora’s greater power replaces the incumbent before production
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/069-new-incumbent-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/069-new-incumbent-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/069-new-incumbent-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/069-new-incumbent-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/071-new-incumbent-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/071-new-incumbent-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/071-new-incumbent-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/071-new-incumbent-desktop-darwin.png) |
 
 
 
@@ -1052,13 +1082,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 71. Bora completes ordinary production and hands off
+## 73. Bora completes ordinary production and hands off
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/070-bora-control-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/070-bora-control-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/070-bora-control-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/070-bora-control-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/072-bora-control-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/072-bora-control-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/072-bora-control-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/072-bora-control-handoff-desktop-darwin.png) |
 
 
 
@@ -1067,13 +1097,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 72. The next independent controller sees the saved handoff
+## 74. The next independent controller sees the saved handoff
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/071-bora-control-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/071-bora-control-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/071-bora-control-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/071-bora-control-next-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/073-bora-control-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/073-bora-control-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/073-bora-control-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/073-bora-control-next-desktop-darwin.png) |
 
 
 
@@ -1082,13 +1112,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 73. Ada opens the actual Action instrument
+## 75. Ada opens the actual Action instrument
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/072-ada-after-control-plan-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/072-ada-after-control-plan-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/072-ada-after-control-plan-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/072-ada-after-control-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/074-ada-after-control-plan-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/074-ada-after-control-plan-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/074-ada-after-control-plan-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/074-ada-after-control-plan-desktop-darwin.png) |
 
 
 
@@ -1097,13 +1127,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 74. Ada chooses the unoccupied printed research space
+## 76. Ada chooses the unoccupied printed research space
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/073-ada-after-control-space-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/073-ada-after-control-space-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/073-ada-after-control-space-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/073-ada-after-control-space-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/075-ada-after-control-space-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/075-ada-after-control-space-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/075-ada-after-control-space-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/075-ada-after-control-space-desktop-darwin.png) |
 
 
 
@@ -1112,13 +1142,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 75. Choose the public Advanced Genetics face and read its printed effect
+## 77. Choose the public Advanced Genetics face and read its printed effect
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/074-ada-after-control-card-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/074-ada-after-control-card-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/074-ada-after-control-card-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/074-ada-after-control-card-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/076-ada-after-control-card-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/076-ada-after-control-card-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/076-ada-after-control-card-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/076-ada-after-control-card-desktop-darwin.png) |
 
 
 
@@ -1127,13 +1157,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 76. Ada pays permanent research Population and resolves the printed bonus
+## 78. Ada pays permanent research Population and resolves the printed bonus
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/075-ada-after-control-paid-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/075-ada-after-control-paid-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/075-ada-after-control-paid-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/075-ada-after-control-paid-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/077-ada-after-control-paid-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/077-ada-after-control-paid-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/077-ada-after-control-paid-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/077-ada-after-control-paid-desktop-darwin.png) |
 
 
 
@@ -1142,13 +1172,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 77. Ada completes ordinary production and hands off
+## 79. Ada completes ordinary production and hands off
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/076-ada-after-control-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/076-ada-after-control-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/076-ada-after-control-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/076-ada-after-control-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/078-ada-after-control-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/078-ada-after-control-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/078-ada-after-control-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/078-ada-after-control-handoff-desktop-darwin.png) |
 
 
 
@@ -1157,13 +1187,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 78. The next independent controller sees the saved handoff
+## 80. The next independent controller sees the saved handoff
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/077-ada-after-control-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/077-ada-after-control-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/077-ada-after-control-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/077-ada-after-control-next-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/079-ada-after-control-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/079-ada-after-control-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/079-ada-after-control-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/079-ada-after-control-next-desktop-darwin.png) |
 
 
 
@@ -1172,13 +1202,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 79. Bora opens the actual Action instrument
+## 81. Bora opens the actual Action instrument
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/078-bora-owned-yard-plan-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/078-bora-owned-yard-plan-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/078-bora-owned-yard-plan-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/078-bora-owned-yard-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/080-bora-owned-yard-plan-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/080-bora-owned-yard-plan-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/080-bora-owned-yard-plan-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/080-bora-owned-yard-plan-desktop-darwin.png) |
 
 
 
@@ -1187,13 +1217,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 80. Bora selects Basic construction
+## 82. Bora selects Basic construction
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/079-bora-owned-yard-kind-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/079-bora-owned-yard-kind-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/079-bora-owned-yard-kind-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/079-bora-owned-yard-kind-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/081-bora-owned-yard-kind-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/081-bora-owned-yard-kind-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/081-bora-owned-yard-kind-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/081-bora-owned-yard-kind-desktop-darwin.png) |
 
 
 
@@ -1202,13 +1232,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 81. Select the actually controlled Northern shipyard and review power two to three
+## 83. Select the actually controlled Northern shipyard and review power two to three
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/080-owned-yard-selected-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/080-owned-yard-selected-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/080-owned-yard-selected-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/080-owned-yard-selected-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/082-owned-yard-selected-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/082-owned-yard-selected-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/082-owned-yard-selected-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/082-owned-yard-selected-desktop-darwin.png) |
 
 
 
@@ -1217,13 +1247,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 82. Convert one Population cube into a level-one ship at the controlled yard
+## 84. Convert one Population cube into a level-one ship at the controlled yard
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/081-owned-yard-built-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/081-owned-yard-built-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/081-owned-yard-built-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/081-owned-yard-built-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/083-owned-yard-built-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/083-owned-yard-built-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/083-owned-yard-built-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/083-owned-yard-built-desktop-darwin.png) |
 
 
 
@@ -1232,13 +1262,28 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 83. Decline optional movement without undoing the ship or Action cost
+## 85. Read the actual optional movement controls before declining every jump
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/082-owned-yard-no-move-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/082-owned-yard-no-move-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/082-owned-yard-no-move-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/082-owned-yard-no-move-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/084-owned-yard-optional-jump-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/084-owned-yard-optional-jump-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/084-owned-yard-optional-jump-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/084-owned-yard-optional-jump-desktop-darwin.png) |
+
+
+
+- [x] Read the actual optional movement controls before declining every jump
+- [x] The actual canonical effect and backend acknowledgement settle.
+- [x] Public technology topology retains physical separation.
+- [x] The actual viewport fits without page scrolling.
+
+## 86. Decline optional movement without undoing the ship or Action cost
+
+Viewpoint: **Bora · separate guest controller**.
+
+| phone · 1440 × 1000 | desktop · 393 × 852 |
+| --- | --- |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/085-owned-yard-no-move-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/085-owned-yard-no-move-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/085-owned-yard-no-move-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/085-owned-yard-no-move-desktop-darwin.png) |
 
 
 
@@ -1247,13 +1292,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 84. Bora completes ordinary production and hands off
+## 87. Bora completes ordinary production and hands off
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/083-owned-yard-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/083-owned-yard-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/083-owned-yard-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/083-owned-yard-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/086-owned-yard-handoff-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/086-owned-yard-handoff-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/086-owned-yard-handoff-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/086-owned-yard-handoff-desktop-darwin.png) |
 
 
 
@@ -1262,13 +1307,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 85. The next independent controller sees the saved handoff
+## 88. The next independent controller sees the saved handoff
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/084-owned-yard-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/084-owned-yard-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/084-owned-yard-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/084-owned-yard-next-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/087-owned-yard-next-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/087-owned-yard-next-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/087-owned-yard-next-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/087-owned-yard-next-desktop-darwin.png) |
 
 
 
@@ -1277,13 +1322,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 86. Open the retained faction economy and physical fleet register
+## 89. Open the retained faction economy and physical fleet register
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/085-yard-register-mat-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/085-yard-register-mat-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/085-yard-register-mat-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/085-yard-register-mat-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/088-yard-register-mat-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/088-yard-register-mat-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/088-yard-register-mat-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/088-yard-register-mat-desktop-darwin.png) |
 
 
 
@@ -1292,13 +1337,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 87. Inspect 3 real ships with explicit levels and public summed power
+## 90. Inspect 3 real ships with explicit levels and public summed power
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/086-yard-register-ships-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/086-yard-register-ships-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/086-yard-register-ships-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/086-yard-register-ships-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/089-yard-register-ships-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/089-yard-register-ships-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/089-yard-register-ships-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/089-yard-register-ships-desktop-darwin.png) |
 
 
 
@@ -1307,13 +1352,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 88. Inspect Bora's actual power at Northern shipyard
+## 91. Inspect Bora's actual power at Northern shipyard
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/087-yard-register-power-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/087-yard-register-power-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/087-yard-register-power-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/087-yard-register-power-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/090-yard-register-power-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/090-yard-register-power-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/090-yard-register-power-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/090-yard-register-power-desktop-darwin.png) |
 
 
 
@@ -1322,13 +1367,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 89. The register explains levels, location-specific power and incumbent ties without taking a turn
+## 92. The register explains levels, location-specific power and incumbent ties without taking a turn
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/088-yard-register-rules-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/088-yard-register-rules-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/088-yard-register-rules-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/088-yard-register-rules-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/091-yard-register-rules-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/091-yard-register-rules-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/091-yard-register-rules-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/091-yard-register-rules-desktop-darwin.png) |
 
 
 
@@ -1337,13 +1382,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 90. Keyboard reaches the bounded fleet details
+## 93. Keyboard reaches the bounded fleet details
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/089-yard-register-keyboard-region-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/089-yard-register-keyboard-region-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/089-yard-register-keyboard-region-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/089-yard-register-keyboard-region-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/092-yard-register-keyboard-region-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/092-yard-register-keyboard-region-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/092-yard-register-keyboard-region-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/092-yard-register-keyboard-region-desktop-darwin.png) |
 
 
 
@@ -1352,13 +1397,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 91. Reverse Tab stays within the fleet reader
+## 94. Reverse Tab stays within the fleet reader
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/090-yard-register-reverse-tab-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/090-yard-register-reverse-tab-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/090-yard-register-reverse-tab-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/090-yard-register-reverse-tab-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/093-yard-register-reverse-tab-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/093-yard-register-reverse-tab-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/093-yard-register-reverse-tab-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/093-yard-register-reverse-tab-desktop-darwin.png) |
 
 
 
@@ -1367,13 +1412,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 92. Forward Tab wraps back to persistent Close
+## 95. Forward Tab wraps back to persistent Close
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/091-yard-register-tab-wrap-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/091-yard-register-tab-wrap-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/091-yard-register-tab-wrap-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/091-yard-register-tab-wrap-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/094-yard-register-tab-wrap-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/094-yard-register-tab-wrap-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/094-yard-register-tab-wrap-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/094-yard-register-tab-wrap-desktop-darwin.png) |
 
 
 
@@ -1382,13 +1427,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 93. Escape restores the actual Fleet opener
+## 96. Escape restores the actual Fleet opener
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/092-yard-register-return-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/092-yard-register-return-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/092-yard-register-return-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/092-yard-register-return-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/095-yard-register-return-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/095-yard-register-return-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/095-yard-register-return-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/095-yard-register-return-desktop-darwin.png) |
 
 
 
@@ -1397,13 +1442,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 94. Close the mat and restore its physical opener
+## 97. Close the mat and restore its physical opener
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/093-yard-register-mat-return-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/093-yard-register-mat-return-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/093-yard-register-mat-return-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/093-yard-register-mat-return-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/096-yard-register-mat-return-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/096-yard-register-mat-return-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/096-yard-register-mat-return-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/096-yard-register-mat-return-desktop-darwin.png) |
 
 
 
@@ -1412,13 +1457,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 95. Reload retains upgraded and new ships, control and automatic handoff
+## 98. Reload retains upgraded and new ships, control and automatic handoff
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/094-yard-retained-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/094-yard-retained-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/094-yard-retained-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/094-yard-retained-desktop-darwin.png) |
+| [![phone](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/097-yard-retained-phone-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/097-yard-retained-phone-darwin.png) | [![desktop](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/097-yard-retained-desktop-darwin.png)](../../screenshots/upgrade-a-rival-tied-fleet-and-build-at-the-newly-controlled-yard-with-separate-controllers/097-yard-retained-desktop-darwin.png) |
 
 
 

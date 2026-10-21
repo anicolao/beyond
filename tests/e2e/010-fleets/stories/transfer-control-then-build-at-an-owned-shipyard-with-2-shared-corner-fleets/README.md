@@ -496,17 +496,36 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 27. Add the next adjacent system to the explicit path
+## 27. Open the actual connected-destination view
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/026-ada-yard-leg-0-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/026-ada-yard-leg-0-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/026-ada-yard-route-editor-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/026-ada-yard-route-editor-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/026-ada-yard-leg-0-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/026-ada-yard-leg-0-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/026-ada-yard-route-editor-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/026-ada-yard-route-editor-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Open the actual connected-destination view
+- [x] The actual canonical effect and backend acknowledgement settle.
+- [x] Public technology topology retains physical separation.
+- [x] The actual viewport fits without page scrolling.
+
+## 28. Add the next adjacent system to the explicit path
+
+Viewpoint: **Ada · South West · one shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/027-ada-yard-leg-0-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/027-ada-yard-leg-0-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/027-ada-yard-leg-0-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/027-ada-yard-leg-0-tabletop-4k-darwin.png)
 
 </details>
 
@@ -515,17 +534,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 28. Arrive with uncontested power and resolve the actual outpost
+## 29. Arrive with uncontested power and resolve the actual outpost
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/027-ada-yard-arrival-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/027-ada-yard-arrival-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/028-ada-yard-arrival-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/028-ada-yard-arrival-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/027-ada-yard-arrival-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/027-ada-yard-arrival-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/028-ada-yard-arrival-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/028-ada-yard-arrival-tabletop-4k-darwin.png)
 
 </details>
 
@@ -534,17 +553,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 29. Place a real Food outpost before production
+## 30. Place a real Food outpost before production
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/028-ada-yard-food-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/028-ada-yard-food-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/029-ada-yard-food-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/029-ada-yard-food-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/028-ada-yard-food-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/028-ada-yard-food-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/029-ada-yard-food-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/029-ada-yard-food-tabletop-4k-darwin.png)
 
 </details>
 
@@ -553,17 +572,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 30. Ada completes ordinary production and hands off
+## 31. Ada completes ordinary production and hands off
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/029-ada-yard-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/029-ada-yard-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/030-ada-yard-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/030-ada-yard-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/029-ada-yard-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/029-ada-yard-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/030-ada-yard-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/030-ada-yard-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -572,17 +591,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 31. Bora opens the actual Action instrument
+## 32. Bora opens the actual Action instrument
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/030-bora-before-tie-plan-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/030-bora-before-tie-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/031-bora-before-tie-plan-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/031-bora-before-tie-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/030-bora-before-tie-plan-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/030-bora-before-tie-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/031-bora-before-tie-plan-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/031-bora-before-tie-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -591,17 +610,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 32. Bora selects ordinary gathering
+## 33. Bora selects ordinary gathering
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/031-bora-before-tie-kind-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/031-bora-before-tie-kind-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/032-bora-before-tie-kind-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/032-bora-before-tie-kind-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/031-bora-before-tie-kind-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/031-bora-before-tie-kind-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/032-bora-before-tie-kind-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/032-bora-before-tie-kind-tabletop-4k-darwin.png)
 
 </details>
 
@@ -610,17 +629,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 33. Receive actual Gather resources before production
+## 34. Receive actual Gather resources before production
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/032-bora-before-tie-gathered-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/032-bora-before-tie-gathered-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/033-bora-before-tie-gathered-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/033-bora-before-tie-gathered-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/032-bora-before-tie-gathered-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/032-bora-before-tie-gathered-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/033-bora-before-tie-gathered-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/033-bora-before-tie-gathered-tabletop-4k-darwin.png)
 
 </details>
 
@@ -629,17 +648,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 34. Bora completes ordinary production and hands off
+## 35. Bora completes ordinary production and hands off
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/033-bora-before-tie-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/033-bora-before-tie-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/034-bora-before-tie-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/034-bora-before-tie-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/033-bora-before-tie-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/033-bora-before-tie-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/034-bora-before-tie-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/034-bora-before-tie-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -648,17 +667,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 35. Ada opens the actual Action instrument
+## 36. Ada opens the actual Action instrument
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/034-ada-vacates-path-plan-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/034-ada-vacates-path-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/035-ada-vacates-path-plan-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/035-ada-vacates-path-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/034-ada-vacates-path-plan-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/034-ada-vacates-path-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/035-ada-vacates-path-plan-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/035-ada-vacates-path-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -667,40 +686,21 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 36. Ada chooses the unoccupied printed research space
+## 37. Ada chooses the unoccupied printed research space
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/035-ada-vacates-path-space-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/035-ada-vacates-path-space-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/036-ada-vacates-path-space-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/036-ada-vacates-path-space-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/035-ada-vacates-path-space-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/035-ada-vacates-path-space-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/036-ada-vacates-path-space-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/036-ada-vacates-path-space-tabletop-4k-darwin.png)
 
 </details>
 
 - [x] Ada chooses the unoccupied printed research space
-- [x] The actual canonical effect and backend acknowledgement settle.
-- [x] Public technology topology retains physical separation.
-- [x] The actual viewport fits without page scrolling.
-
-## 37. Browse the next public Technology without paying
-
-Viewpoint: **Ada · South West · one shared controller**.
-
-| desktop · 1440 × 1000 |
-| --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/036-ada-vacates-path-browse-0-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/036-ada-vacates-path-browse-0-desktop-darwin.png) |
-
-<details><summary>tabletop-4k · 3840 × 2160</summary>
-
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/036-ada-vacates-path-browse-0-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/036-ada-vacates-path-browse-0-tabletop-4k-darwin.png)
-
-</details>
-
-- [x] Browse the next public Technology without paying
 - [x] The actual canonical effect and backend acknowledgement settle.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
@@ -711,11 +711,11 @@ Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/037-ada-vacates-path-browse-1-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/037-ada-vacates-path-browse-1-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/037-ada-vacates-path-browse-0-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/037-ada-vacates-path-browse-0-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/037-ada-vacates-path-browse-1-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/037-ada-vacates-path-browse-1-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/037-ada-vacates-path-browse-0-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/037-ada-vacates-path-browse-0-tabletop-4k-darwin.png)
 
 </details>
 
@@ -730,11 +730,11 @@ Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/038-ada-vacates-path-browse-2-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/038-ada-vacates-path-browse-2-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/038-ada-vacates-path-browse-1-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/038-ada-vacates-path-browse-1-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/038-ada-vacates-path-browse-2-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/038-ada-vacates-path-browse-2-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/038-ada-vacates-path-browse-1-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/038-ada-vacates-path-browse-1-tabletop-4k-darwin.png)
 
 </details>
 
@@ -743,17 +743,36 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 40. Ada pays permanent research Population and resolves the printed bonus
+## 40. Browse the next public Technology without paying
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/039-ada-vacates-path-paid-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/039-ada-vacates-path-paid-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/039-ada-vacates-path-browse-2-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/039-ada-vacates-path-browse-2-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/039-ada-vacates-path-paid-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/039-ada-vacates-path-paid-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/039-ada-vacates-path-browse-2-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/039-ada-vacates-path-browse-2-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Browse the next public Technology without paying
+- [x] The actual canonical effect and backend acknowledgement settle.
+- [x] Public technology topology retains physical separation.
+- [x] The actual viewport fits without page scrolling.
+
+## 41. Ada pays permanent research Population and resolves the printed bonus
+
+Viewpoint: **Ada · South West · one shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/040-ada-vacates-path-paid-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/040-ada-vacates-path-paid-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/040-ada-vacates-path-paid-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/040-ada-vacates-path-paid-tabletop-4k-darwin.png)
 
 </details>
 
@@ -762,17 +781,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 41. Ada completes ordinary production and hands off
+## 42. Ada completes ordinary production and hands off
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/040-ada-vacates-path-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/040-ada-vacates-path-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/041-ada-vacates-path-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/041-ada-vacates-path-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/040-ada-vacates-path-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/040-ada-vacates-path-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/041-ada-vacates-path-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/041-ada-vacates-path-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -781,17 +800,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 42. Bora opens the actual Action instrument
+## 43. Bora opens the actual Action instrument
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/041-bora-tie-plan-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/041-bora-tie-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/042-bora-tie-plan-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/042-bora-tie-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/041-bora-tie-plan-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/041-bora-tie-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/042-bora-tie-plan-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/042-bora-tie-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -800,17 +819,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 43. Bora selects a printed Technology Action
+## 44. Bora selects a printed Technology Action
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/042-bora-tie-kind-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/042-bora-tie-kind-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/043-bora-tie-kind-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/043-bora-tie-kind-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/042-bora-tie-kind-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/042-bora-tie-kind-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/043-bora-tie-kind-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/043-bora-tie-kind-tabletop-4k-darwin.png)
 
 </details>
 
@@ -819,17 +838,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 44. Pay the actual printed Action before selecting an owned ship
+## 45. Pay the actual printed Action before selecting an owned ship
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/043-bora-tie-paid-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/043-bora-tie-paid-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/044-bora-tie-paid-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/044-bora-tie-paid-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/043-bora-tie-paid-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/043-bora-tie-paid-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/044-bora-tie-paid-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/044-bora-tie-paid-tabletop-4k-darwin.png)
 
 </details>
 
@@ -838,17 +857,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 45. Select the existing level-one ship; construction is not part of this Action
+## 46. Select the existing level-one ship; construction is not part of this Action
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/044-bora-tie-ship-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/044-bora-tie-ship-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/045-bora-tie-ship-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/045-bora-tie-ship-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/044-bora-tie-ship-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/044-bora-tie-ship-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/045-bora-tie-ship-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/045-bora-tie-ship-tabletop-4k-darwin.png)
 
 </details>
 
@@ -857,17 +876,36 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 46. Add the next adjacent system to the explicit path
+## 47. Open the actual connected-destination view
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/045-bora-tie-leg-0-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/045-bora-tie-leg-0-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/046-bora-tie-route-editor-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/046-bora-tie-route-editor-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/045-bora-tie-leg-0-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/045-bora-tie-leg-0-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/046-bora-tie-route-editor-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/046-bora-tie-route-editor-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Open the actual connected-destination view
+- [x] The actual canonical effect and backend acknowledgement settle.
+- [x] Public technology topology retains physical separation.
+- [x] The actual viewport fits without page scrolling.
+
+## 48. Add the next adjacent system to the explicit path
+
+Viewpoint: **Bora · North East · one shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/047-bora-tie-leg-0-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/047-bora-tie-leg-0-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/047-bora-tie-leg-0-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/047-bora-tie-leg-0-tabletop-4k-darwin.png)
 
 </details>
 
@@ -876,17 +914,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 47. Equal incoming power preserves Ada’s incumbent outpost
+## 49. Equal incoming power preserves Ada’s incumbent outpost
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/046-bora-tie-arrival-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/046-bora-tie-arrival-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/048-bora-tie-arrival-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/048-bora-tie-arrival-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/046-bora-tie-arrival-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/046-bora-tie-arrival-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/048-bora-tie-arrival-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/048-bora-tie-arrival-tabletop-4k-darwin.png)
 
 </details>
 
@@ -895,17 +933,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 48. Bora completes ordinary production and hands off
+## 50. Bora completes ordinary production and hands off
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/047-bora-tie-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/047-bora-tie-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/049-bora-tie-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/049-bora-tie-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/047-bora-tie-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/047-bora-tie-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/049-bora-tie-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/049-bora-tie-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -914,17 +952,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 49. Ada opens the actual Action instrument
+## 51. Ada opens the actual Action instrument
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/048-ada-vacate-plan-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/048-ada-vacate-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/050-ada-vacate-plan-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/050-ada-vacate-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/048-ada-vacate-plan-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/048-ada-vacate-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/050-ada-vacate-plan-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/050-ada-vacate-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -933,17 +971,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 50. Ada selects ordinary gathering
+## 52. Ada selects ordinary gathering
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/049-ada-vacate-kind-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/049-ada-vacate-kind-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/051-ada-vacate-kind-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/051-ada-vacate-kind-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/049-ada-vacate-kind-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/049-ada-vacate-kind-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/051-ada-vacate-kind-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/051-ada-vacate-kind-tabletop-4k-darwin.png)
 
 </details>
 
@@ -952,17 +990,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 51. Receive actual Gather resources before production
+## 53. Receive actual Gather resources before production
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/050-ada-vacate-gathered-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/050-ada-vacate-gathered-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/052-ada-vacate-gathered-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/052-ada-vacate-gathered-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/050-ada-vacate-gathered-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/050-ada-vacate-gathered-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/052-ada-vacate-gathered-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/052-ada-vacate-gathered-tabletop-4k-darwin.png)
 
 </details>
 
@@ -971,17 +1009,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 52. Ada completes ordinary production and hands off
+## 54. Ada completes ordinary production and hands off
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/051-ada-vacate-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/051-ada-vacate-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/053-ada-vacate-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/053-ada-vacate-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/051-ada-vacate-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/051-ada-vacate-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/053-ada-vacate-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/053-ada-vacate-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -990,17 +1028,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 53. Bora opens the actual Action instrument
+## 55. Bora opens the actual Action instrument
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/052-bora-control-upgrade-plan-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/052-bora-control-upgrade-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/054-bora-control-upgrade-plan-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/054-bora-control-upgrade-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/052-bora-control-upgrade-plan-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/052-bora-control-upgrade-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/054-bora-control-upgrade-plan-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/054-bora-control-upgrade-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1009,17 +1047,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 54. Bora chooses the unoccupied printed research space
+## 56. Bora chooses the unoccupied printed research space
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/053-bora-control-upgrade-space-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/053-bora-control-upgrade-space-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/055-bora-control-upgrade-space-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/055-bora-control-upgrade-space-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/053-bora-control-upgrade-space-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/053-bora-control-upgrade-space-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/055-bora-control-upgrade-space-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/055-bora-control-upgrade-space-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1028,17 +1066,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 55. Browse the next public Technology without paying
+## 57. Browse the next public Technology without paying
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/054-bora-control-upgrade-browse-0-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/054-bora-control-upgrade-browse-0-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/056-bora-control-upgrade-browse-0-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/056-bora-control-upgrade-browse-0-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/054-bora-control-upgrade-browse-0-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/054-bora-control-upgrade-browse-0-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/056-bora-control-upgrade-browse-0-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/056-bora-control-upgrade-browse-0-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1047,17 +1085,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 56. The mandatory one-level upgrade needs an explicit owned ship
+## 58. The mandatory one-level upgrade needs an explicit owned ship
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/055-bora-control-upgrade-target-required-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/055-bora-control-upgrade-target-required-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/057-bora-control-upgrade-target-required-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/057-bora-control-upgrade-target-required-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/055-bora-control-upgrade-target-required-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/055-bora-control-upgrade-target-required-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/057-bora-control-upgrade-target-required-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/057-bora-control-upgrade-target-required-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1066,17 +1104,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 57. Select the owned ship and inspect the exact level change
+## 59. Select the owned ship and inspect the exact level change
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/056-bora-control-upgrade-target-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/056-bora-control-upgrade-target-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/058-bora-control-upgrade-target-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/058-bora-control-upgrade-target-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/056-bora-control-upgrade-target-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/056-bora-control-upgrade-target-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/058-bora-control-upgrade-target-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/058-bora-control-upgrade-target-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1085,17 +1123,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 58. Bora pays permanent research Population and resolves the printed bonus
+## 60. Bora pays permanent research Population and resolves the printed bonus
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/057-bora-control-upgrade-paid-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/057-bora-control-upgrade-paid-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/059-bora-control-upgrade-paid-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/059-bora-control-upgrade-paid-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/057-bora-control-upgrade-paid-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/057-bora-control-upgrade-paid-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/059-bora-control-upgrade-paid-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/059-bora-control-upgrade-paid-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1104,17 +1142,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 59. Reload retains the upgraded ship and outstanding control-transfer choice
+## 61. Reload retains the upgraded ship and outstanding control-transfer choice
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/058-control-upgrade-retained-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/058-control-upgrade-retained-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/060-control-upgrade-retained-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/060-control-upgrade-retained-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/058-control-upgrade-retained-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/058-control-upgrade-retained-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/060-control-upgrade-retained-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/060-control-upgrade-retained-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1123,17 +1161,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 60. Reopen the real control-transfer response after the upgrade
+## 62. Reopen the real control-transfer response after the upgrade
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/059-control-choice-restored-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/059-control-choice-restored-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/061-control-choice-restored-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/061-control-choice-restored-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/059-control-choice-restored-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/059-control-choice-restored-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/061-control-choice-restored-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/061-control-choice-restored-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1142,17 +1180,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 61. Bora’s greater power replaces the incumbent before production
+## 63. Bora’s greater power replaces the incumbent before production
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/060-new-incumbent-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/060-new-incumbent-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/062-new-incumbent-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/062-new-incumbent-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/060-new-incumbent-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/060-new-incumbent-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/062-new-incumbent-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/062-new-incumbent-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1161,17 +1199,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 62. Bora completes ordinary production and hands off
+## 64. Bora completes ordinary production and hands off
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/061-bora-control-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/061-bora-control-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/063-bora-control-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/063-bora-control-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/061-bora-control-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/061-bora-control-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/063-bora-control-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/063-bora-control-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1180,17 +1218,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 63. Ada opens the actual Action instrument
+## 65. Ada opens the actual Action instrument
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/062-ada-after-control-plan-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/062-ada-after-control-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/064-ada-after-control-plan-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/064-ada-after-control-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/062-ada-after-control-plan-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/062-ada-after-control-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/064-ada-after-control-plan-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/064-ada-after-control-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1199,17 +1237,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 64. Ada chooses the unoccupied printed research space
+## 66. Ada chooses the unoccupied printed research space
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/063-ada-after-control-space-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/063-ada-after-control-space-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/065-ada-after-control-space-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/065-ada-after-control-space-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/063-ada-after-control-space-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/063-ada-after-control-space-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/065-ada-after-control-space-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/065-ada-after-control-space-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1218,17 +1256,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 65. Browse the next public Technology without paying
+## 67. Browse the next public Technology without paying
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/064-ada-after-control-browse-0-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/064-ada-after-control-browse-0-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/066-ada-after-control-browse-0-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/066-ada-after-control-browse-0-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/064-ada-after-control-browse-0-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/064-ada-after-control-browse-0-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/066-ada-after-control-browse-0-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/066-ada-after-control-browse-0-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1237,17 +1275,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 66. Browse the next public Technology without paying
+## 68. Browse the next public Technology without paying
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/065-ada-after-control-browse-1-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/065-ada-after-control-browse-1-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/067-ada-after-control-browse-1-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/067-ada-after-control-browse-1-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/065-ada-after-control-browse-1-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/065-ada-after-control-browse-1-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/067-ada-after-control-browse-1-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/067-ada-after-control-browse-1-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1256,17 +1294,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 67. Ada pays permanent research Population and resolves the printed bonus
+## 69. Ada pays permanent research Population and resolves the printed bonus
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/066-ada-after-control-paid-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/066-ada-after-control-paid-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/068-ada-after-control-paid-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/068-ada-after-control-paid-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/066-ada-after-control-paid-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/066-ada-after-control-paid-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/068-ada-after-control-paid-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/068-ada-after-control-paid-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1275,17 +1313,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 68. Ada completes ordinary production and hands off
+## 70. Ada completes ordinary production and hands off
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/067-ada-after-control-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/067-ada-after-control-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/069-ada-after-control-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/069-ada-after-control-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/067-ada-after-control-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/067-ada-after-control-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/069-ada-after-control-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/069-ada-after-control-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1294,17 +1332,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 69. Bora opens the actual Action instrument
+## 71. Bora opens the actual Action instrument
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/068-bora-owned-yard-plan-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/068-bora-owned-yard-plan-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/070-bora-owned-yard-plan-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/070-bora-owned-yard-plan-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/068-bora-owned-yard-plan-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/068-bora-owned-yard-plan-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/070-bora-owned-yard-plan-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/070-bora-owned-yard-plan-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1313,17 +1351,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 70. Bora selects Basic construction
+## 72. Bora selects Basic construction
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/069-bora-owned-yard-kind-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/069-bora-owned-yard-kind-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/071-bora-owned-yard-kind-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/071-bora-owned-yard-kind-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/069-bora-owned-yard-kind-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/069-bora-owned-yard-kind-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/071-bora-owned-yard-kind-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/071-bora-owned-yard-kind-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1332,17 +1370,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 71. Select the actually controlled Northern shipyard and review power two to three
+## 73. Select the actually controlled Northern shipyard and review power two to three
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/070-owned-yard-selected-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/070-owned-yard-selected-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/072-owned-yard-selected-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/072-owned-yard-selected-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/070-owned-yard-selected-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/070-owned-yard-selected-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/072-owned-yard-selected-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/072-owned-yard-selected-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1351,17 +1389,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 72. Convert one Population cube into a level-one ship at the controlled yard
+## 74. Convert one Population cube into a level-one ship at the controlled yard
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/071-owned-yard-built-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/071-owned-yard-built-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/073-owned-yard-built-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/073-owned-yard-built-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/071-owned-yard-built-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/071-owned-yard-built-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/073-owned-yard-built-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/073-owned-yard-built-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1370,17 +1408,36 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 73. Decline optional movement without undoing the ship or Action cost
+## 75. Read the actual optional movement controls before declining every jump
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/072-owned-yard-no-move-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/072-owned-yard-no-move-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/074-owned-yard-optional-jump-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/074-owned-yard-optional-jump-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/072-owned-yard-no-move-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/072-owned-yard-no-move-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/074-owned-yard-optional-jump-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/074-owned-yard-optional-jump-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Read the actual optional movement controls before declining every jump
+- [x] The actual canonical effect and backend acknowledgement settle.
+- [x] Public technology topology retains physical separation.
+- [x] The actual viewport fits without page scrolling.
+
+## 76. Decline optional movement without undoing the ship or Action cost
+
+Viewpoint: **Bora · North East · one shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/075-owned-yard-no-move-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/075-owned-yard-no-move-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/075-owned-yard-no-move-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/075-owned-yard-no-move-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1389,17 +1446,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 74. Bora completes ordinary production and hands off
+## 77. Bora completes ordinary production and hands off
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/073-owned-yard-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/073-owned-yard-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/076-owned-yard-handoff-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/076-owned-yard-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/073-owned-yard-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/073-owned-yard-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/076-owned-yard-handoff-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/076-owned-yard-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1408,17 +1465,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 75. Open the retained faction economy and physical fleet register
+## 78. Open the retained faction economy and physical fleet register
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/074-yard-register-mat-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/074-yard-register-mat-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/077-yard-register-mat-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/077-yard-register-mat-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/074-yard-register-mat-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/074-yard-register-mat-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/077-yard-register-mat-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/077-yard-register-mat-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1427,17 +1484,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 76. Inspect 3 real ships with explicit levels and public summed power
+## 79. Inspect 3 real ships with explicit levels and public summed power
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/075-yard-register-ships-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/075-yard-register-ships-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/078-yard-register-ships-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/078-yard-register-ships-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/075-yard-register-ships-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/075-yard-register-ships-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/078-yard-register-ships-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/078-yard-register-ships-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1446,17 +1503,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 77. Open the paged public location register
+## 80. Open the paged public location register
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/076-yard-register-power-initial-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/076-yard-register-power-initial-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/079-yard-register-power-initial-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/079-yard-register-power-initial-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/076-yard-register-power-initial-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/076-yard-register-power-initial-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/079-yard-register-power-initial-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/079-yard-register-power-initial-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1465,17 +1522,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 78. Browse the next actual occupied location
+## 81. Browse the next actual occupied location
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/077-yard-register-power-browse-0-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/077-yard-register-power-browse-0-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/080-yard-register-power-browse-0-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/080-yard-register-power-browse-0-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/077-yard-register-power-browse-0-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/077-yard-register-power-browse-0-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/080-yard-register-power-browse-0-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/080-yard-register-power-browse-0-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1484,17 +1541,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 79. Inspect Bora's actual power at Northern shipyard
+## 82. Inspect Bora's actual power at Northern shipyard
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/078-yard-register-power-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/078-yard-register-power-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/081-yard-register-power-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/081-yard-register-power-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/078-yard-register-power-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/078-yard-register-power-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/081-yard-register-power-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/081-yard-register-power-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1503,17 +1560,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 80. The register explains levels, location-specific power and incumbent ties without taking a turn
+## 83. The register explains levels, location-specific power and incumbent ties without taking a turn
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/079-yard-register-rules-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/079-yard-register-rules-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/082-yard-register-rules-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/082-yard-register-rules-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/079-yard-register-rules-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/079-yard-register-rules-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/082-yard-register-rules-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/082-yard-register-rules-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1522,17 +1579,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 81. Keyboard reaches the bounded fleet details
+## 84. Keyboard reaches the bounded fleet details
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/080-yard-register-keyboard-region-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/080-yard-register-keyboard-region-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/083-yard-register-keyboard-region-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/083-yard-register-keyboard-region-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/080-yard-register-keyboard-region-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/080-yard-register-keyboard-region-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/083-yard-register-keyboard-region-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/083-yard-register-keyboard-region-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1541,17 +1598,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 82. Reverse Tab stays within the fleet reader
+## 85. Reverse Tab stays within the fleet reader
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/081-yard-register-reverse-tab-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/081-yard-register-reverse-tab-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/084-yard-register-reverse-tab-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/084-yard-register-reverse-tab-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/081-yard-register-reverse-tab-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/081-yard-register-reverse-tab-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/084-yard-register-reverse-tab-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/084-yard-register-reverse-tab-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1560,17 +1617,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 83. Forward Tab wraps back to persistent Close
+## 86. Forward Tab wraps back to persistent Close
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/082-yard-register-tab-wrap-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/082-yard-register-tab-wrap-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/085-yard-register-tab-wrap-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/085-yard-register-tab-wrap-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/082-yard-register-tab-wrap-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/082-yard-register-tab-wrap-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/085-yard-register-tab-wrap-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/085-yard-register-tab-wrap-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1579,17 +1636,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 84. Escape restores the actual Fleet opener
+## 87. Escape restores the actual Fleet opener
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/083-yard-register-return-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/083-yard-register-return-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/086-yard-register-return-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/086-yard-register-return-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/083-yard-register-return-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/083-yard-register-return-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/086-yard-register-return-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/086-yard-register-return-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1598,17 +1655,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 85. Close the mat and restore its physical opener
+## 88. Close the mat and restore its physical opener
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/084-yard-register-mat-return-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/084-yard-register-mat-return-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/087-yard-register-mat-return-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/087-yard-register-mat-return-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/084-yard-register-mat-return-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/084-yard-register-mat-return-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/087-yard-register-mat-return-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/087-yard-register-mat-return-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1617,17 +1674,17 @@ Viewpoint: **Bora · North East · one shared controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 86. Reload retains upgraded and new ships, control and automatic handoff
+## 89. Reload retains upgraded and new ships, control and automatic handoff
 
 Viewpoint: **Bora · North East · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/085-yard-retained-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/085-yard-retained-desktop-darwin.png) |
+| [![desktop](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/088-yard-retained-desktop-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/088-yard-retained-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/085-yard-retained-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/085-yard-retained-tabletop-4k-darwin.png)
+[![4K](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/088-yard-retained-tabletop-4k-darwin.png)](../../screenshots/transfer-control-then-build-at-an-owned-shipyard-with-2-shared-corner-fleets/088-yard-retained-tabletop-4k-darwin.png)
 
 </details>
 

@@ -1,0 +1,16 @@
+{
+  "canonicalReadOnly": "/private/tmp/beyond-discovery55/tests/e2e",
+  "scope": [
+    "/Users/anicolao/projects/games/beyond/tmp/discovery80-linux-candidates3a6",
+    "/Users/anicolao/projects/games/beyond/tmp/basic-linux-candidates-32bdfdb"
+  ],
+  "files_reflinked": 1587,
+  "matching_logical_bytes": 4474655096,
+  "available_before": 3893805056,
+  "available_after": 6664241152,
+  "invariant": "Every original PNG path and full bytes, mode, owner/group, empty xattrs and mtime retained; attributed files skipped; independent COW writes, not hardlinks. No candidate adoption, pixel transform or source/dependency/service changes.",
+  "fullManifestSha256": "a3fc0646306322dfd7fa80298e0a974cb39ba8446bca9d2d967869d240c1d88b",
+  "canonicalReferenceMutation": false,
+  "failedCohortAdoption": false,
+  "linuxSkipWorktreeReferences": 4105
+}

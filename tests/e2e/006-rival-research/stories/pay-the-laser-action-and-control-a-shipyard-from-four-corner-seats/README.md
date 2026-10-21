@@ -1102,17 +1102,37 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 56. Select the actual owned ship whose path will be planned
+## 56. Open the actual connected-destination view
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/055-ship-selected-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/055-ship-selected-desktop-darwin.png) |
+| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/055-action-route-editor-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/055-action-route-editor-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/055-ship-selected-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/055-ship-selected-tabletop-4k-darwin.png)
+[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/055-action-route-editor-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/055-action-route-editor-tabletop-4k-darwin.png)
+
+</details>
+
+- [x] Open the actual connected-destination view
+- [x] Canonical effects settle before capture.
+- [x] Any printed Action plan is ready.
+- [x] Public compact topology remains physically separated.
+- [x] The gameplay shell fits the actual viewport.
+
+## 57. Select the actual owned ship whose path will be planned
+
+Viewpoint: **Ada · South West · one shared controller**.
+
+| desktop · 1440 × 1000 |
+| --- |
+| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/056-ship-selected-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/056-ship-selected-desktop-darwin.png) |
+
+<details><summary>tabletop-4k · 3840 × 2160</summary>
+
+[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/056-ship-selected-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/056-ship-selected-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1122,17 +1142,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 57. Plan leg 1 of the printed 3-point budget without early payment or movement
+## 58. Plan leg 1 of the printed 3-point budget without early payment or movement
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/056-leg-1-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/056-leg-1-desktop-darwin.png) |
+| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/057-leg-1-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/057-leg-1-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/056-leg-1-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/056-leg-1-tabletop-4k-darwin.png)
+[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/057-leg-1-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/057-leg-1-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1142,17 +1162,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 58. Plan leg 2 of the printed 3-point budget without early payment or movement
+## 59. Plan leg 2 of the printed 3-point budget without early payment or movement
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/057-leg-2-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/057-leg-2-desktop-darwin.png) |
+| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/058-leg-2-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/058-leg-2-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/057-leg-2-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/057-leg-2-tabletop-4k-darwin.png)
+[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/058-leg-2-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/058-leg-2-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1162,17 +1182,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 59. Plan leg 3 of the printed 3-point budget without early payment or movement
+## 60. Plan leg 3 of the printed 3-point budget without early payment or movement
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/058-leg-3-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/058-leg-3-desktop-darwin.png) |
+| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/059-leg-3-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/059-leg-3-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/058-leg-3-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/058-leg-3-tabletop-4k-darwin.png)
+[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/059-leg-3-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/059-leg-3-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1182,17 +1202,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 60. Commit the complete path atomically before any actual gain-control bonus
+## 61. Commit the complete path atomically before any actual gain-control bonus
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/059-jump-committed-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/059-jump-committed-desktop-darwin.png) |
+| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/060-jump-committed-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/060-jump-committed-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/059-jump-committed-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/059-jump-committed-tabletop-4k-darwin.png)
+[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/060-jump-committed-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/060-jump-committed-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1202,17 +1222,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 61. The actual Northern shipyard Food control disc and printed Ore bonus resolve before Production
+## 62. The actual Northern shipyard Food control disc and printed Ore bonus resolve before Production
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/060-yard-controlled-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/060-yard-controlled-desktop-darwin.png) |
+| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/061-yard-controlled-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/061-yard-controlled-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/060-yard-controlled-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/060-yard-controlled-tabletop-4k-darwin.png)
+[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/061-yard-controlled-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/061-yard-controlled-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1222,17 +1242,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 62. Ada completes production and hands off to Bora
+## 63. Ada completes production and hands off to Bora
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/061-printed-action-handoff-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/061-printed-action-handoff-desktop-darwin.png) |
+| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/062-printed-action-handoff-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/062-printed-action-handoff-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/061-printed-action-handoff-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/061-printed-action-handoff-tabletop-4k-darwin.png)
+[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/062-printed-action-handoff-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/062-printed-action-handoff-tabletop-4k-darwin.png)
 
 </details>
 
@@ -1242,17 +1262,17 @@ Viewpoint: **Ada · South West · one shared controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 63. The printed Action, final ship location and Bora handoff survive reload
+## 64. The printed Action, final ship location and Bora handoff survive reload
 
 Viewpoint: **Ada · South West · one shared controller**.
 
 | desktop · 1440 × 1000 |
 | --- |
-| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/062-handoff-restored-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/062-handoff-restored-desktop-darwin.png) |
+| [![desktop](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/063-handoff-restored-desktop-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/063-handoff-restored-desktop-darwin.png) |
 
 <details><summary>tabletop-4k · 3840 × 2160</summary>
 
-[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/062-handoff-restored-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/062-handoff-restored-tabletop-4k-darwin.png)
+[![4K](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/063-handoff-restored-tabletop-4k-darwin.png)](../../screenshots/pay-the-laser-action-and-control-a-shipyard-from-four-corner-seats/063-handoff-restored-tabletop-4k-darwin.png)
 
 </details>
 

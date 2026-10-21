@@ -1,0 +1,96 @@
+{
+  "prompt": 147,
+  "status": "Exploratory local review ready; not independent whole011 acceptance or formal TestStepHelper evidence",
+  "localURL": "http://127.0.0.1:5206/",
+  "branch": "feat/jump-planning",
+  "base": "feat/fleet-management@7b42cd410818a99d3acd3ff2bcb0792678c490a2",
+  "reviewerRecovery": "Reviewer independently confirmed protected retained Zheng/Barnard room Production and correct ships/outpost/bonus. Agent did not open/read/mutate room or use its controller. Temporary146 diagnostic removed.",
+  "visualChanges": [
+    "Legend and endpoint navigation outside internal scroll area; visible scroll cue and persistent edit/commit controls",
+    "Ivory/brass connected map nodes, visible routes and numbered level cubes; actual reusable original System art/full CardFace inspection",
+    "Dense short-desktop map focus with full topology; phone decision views and rotated native4K illustrated endpoint consequences"
+  ],
+  "flows": {
+    "paidThreeJump": "Ordinary researched Lasers, paid build, multi-origin split three-point route, full source inspection/Escape focus, unpaid reload resets draft without duplicate payment/ship, endpoint-only control/bonus, Production/reload; remote distinct identities and shared2/four-cardinal/four-corner",
+    "terraformingFourJump": "Ordinary researched Terraforming mandatory move; Sol\u2192public A1\u2192Deep Space\u2192Northern shipyard\u2192Deep Space uses four points; final two ships Deep Space, no pass-through outposts/bonus or resource changes; observer isolated, unpaid reload/reset and saved Production reload pass",
+    "keyboard": "Actual source/System inspection, exact Escape opener return, contained Tab cycle and retained draft tested"
+  },
+  "validation": {
+    "backend": "215 pass / 3232 assertions, isolated8597, original five-second limits",
+    "types": "0 errors / 0 warnings",
+    "sourcePolicy": "PASS",
+    "diffCheck": "PASS",
+    "formal011BaselinesGenerated": false,
+    "guardsOrBudgetsChanged": false
+  },
+  "images": [
+    {
+      "path": "round147-paid-four-corner-illustrated-fixed/full-card-and-power-3840.png",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "e6c563b9409f1dfb7306b2fadd4622b076a9038f0bb0cd566c2405c1810789d1"
+    },
+    {
+      "path": "round147-paid-four-corner-illustrated-fixed/inspection-focus-return-3840.png",
+      "width": 3840,
+      "height": 2160,
+      "sha256": "75c3cd8320bf2aaaccb40fd1b41bd1bdc2d5e85ca732fe3cf7376125ea99cbff"
+    },
+    {
+      "path": "round147-paid-remote-final3/exploration-393.png",
+      "width": 393,
+      "height": 852,
+      "sha256": "5647eeddc38a4820f8019fe68501e13254a6a68eff4ea46e8a47a992a0f23f78"
+    },
+    {
+      "path": "round147-paid-remote-final3/route-editor-393.png",
+      "width": 393,
+      "height": 852,
+      "sha256": "8332f24362554ee22144e238ad9324ce84da7968c3eacb6c2661043cd163476b"
+    },
+    {
+      "path": "round147-paid-remote-final3/arrival-complete-scrolled-393.png",
+      "width": 393,
+      "height": 852,
+      "sha256": "a4e3c411613e878489738036864248e89765072db44ff3db1da4b4a9768b0abc"
+    },
+    {
+      "path": "round147-terraforming/route-editor-393.png",
+      "width": 393,
+      "height": 852,
+      "sha256": "5ad07459db1378fb137564de8ae645bf78466569c7481e934fd896661f70702d"
+    },
+    {
+      "path": "round147-terraforming/production-reloaded-1280.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "c8933ca5ffcd7ba68994d2049c96127ca9dd955a2a743b46afc897465705bfae"
+    },
+    {
+      "path": "round147-paid-four-cardinal-final/exploration-1280x640.png",
+      "width": 1280,
+      "height": 640,
+      "sha256": "b9553dd156146b1a3cba60a4a407a33888df224c4e8334de36028b575845a20d"
+    },
+    {
+      "path": "round147-paid-four-corner-final/exploration-1280x640.png",
+      "width": 1280,
+      "height": 640,
+      "sha256": "a0d604d6df64b5f746c3262eb37ea8e60882766081e3b83113f0a30de3984638"
+    }
+  ],
+  "pending": [
+    "Independent current visual/live review",
+    "Actual ordinary Rift and restricted/solar entry UI coverage beyond pure projections",
+    "Ordinary unused allowance expiry across subsequent actions",
+    "Required illustrated TestStepHelper stories, reviewed candidates and full independent exact/required checks",
+    "Older PR8\u201312 Linux/publication/hosted gates separately open"
+  ],
+  "preservedFailures": [
+    "Same-document parallel denial experiment reverted after contention; original compatibility suite restored9/112",
+    "Earlier native illustrated-reader overflow fixed by removing redundant padding; original guard retained",
+    "Earlier private remote replay failure retained, cause unestablished; fresh replay passes",
+    "No failed Linux cohort/reference accepted"
+  ],
+  "services": "5206 and Auth9397/Firestore8297 retained; no resets or controller changes; no012/merge/publication"
+}

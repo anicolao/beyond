@@ -901,3 +901,57 @@ Reviewer08:29: independently read PR12 Linux job119098339638 log:16/118PASS,102F
 Reviewer-authored independent static failure checkpoint:
 
 Reviewer08:44 NEW PR12 second static failure: job119119913489 failed deployed remote-3 remains writable with immutable attributed events and Begin at5018.02ms, remote-4 same at5014.02ms, unchanged5000ms guards. Log independently saved /tmp/beyond-review-pr12-static-second-9018b9f.log. Original static job passed200/200; diagnose/preserve both results, no timeout weakening. Browser/native candidates still running. Broader011 remains local review only.
+
+## Prompt 151: Corner Route
+
+Reviewer-authored new scoped visual feedback:
+
+Reviewer08:59 independent PNG review: round147-paid-four-cardinal3/initial-1280.png and paid-remote3/arrival-consequence-393.png are readable. However round147-paid-four-corner2/split-multi-hop-1280.png shows the ship selector then almost no visible route content before Remove/Clear/Commit; selected ship cube, destinations and current route are absent from this captured compact view. Please inspect actual corner reader scroll allocation and keep meaningful selected route context visible at this size (reduce chrome or use a dedicated readable route view), then provide guarded fresh capture. Do not count paid-flow PASS as visual acceptance. Whole011 and012 hold remains. This is new scoped feedback, not repetition of queued coverage requests.
+
+## Prompt 152: Sparse Preservation
+
+Reviewer-authored index and publication checkpoint:
+
+Reviewer09:30 new checkpoint: PR12 head7b42cd41 publish job119144200245 failed exact current rules test HTTP503; current118531 bytes SHA d71de365... status503, frozenPR5 diagnostic200. Log /tmp/beyond-review-pr12-publish-7b42cd4.log. Verify run39576797656 pending. Independently confirmed011 HEAD7b42cd41, but git diff --name-only --diff-filter=D in /tmp/beyond-jumps143 lists12148 unstaged screenshot deletions despite core.sparseCheckout=true. Please reconcile sparse/index metadata before any011 staging; preserve committed references and ensure these absent files cannot become a deletion commit. Do not restore huge files unnecessarily given disk constraints. Existing queued visual/coverage feedback remains pending.
+
+## Prompt 153: Native Deadlines
+
+Reviewer-authored completed CI checkpoint:
+
+Reviewer09:50 new completed result: old9018 PR12 native candidate job119119913057 FAILED116/118 in1.1h; two007-production shared-table journeys hit unchanged120000ms story limit (one waiting Choose your production after gather; one camera.detach after page closed at deadline). Log independently downloaded /tmp/beyond-review-pr12-native-9018b9f.log. Do not adopt whole failed cohort as accepted. New7b42cd41 verify39576797656 has started static119154497018/native119154497318/browser119154497427. Keep guard limits and track these separately from011 local work.
+
+## Prompt 154: Static Route Checkpoint
+
+Reviewer-authored CI and scoped visual checkpoint:
+
+Reviewer10:05 new-head7b42cd41 static job119154497018 failed204/206: deployed remote3 at5013.99ms and remote4 at5002.99ms, same5000ms compatibility gate. Independently saved /tmp/beyond-review-pr12-static-7b42cd4.log. Browser/native still running; local206PASS does not close CI gate. Independently viewed round148-paid-four-corner-final/split-multi-hop-1280.png:08:59 compact route-context issue persists; existing correction is still queued, do not regard broad packet as visual acceptance.
+
+## Prompt 155: Scoped Route Acceptance
+
+Reviewer-authored scoped acceptance and continuation:
+
+Reviewer10:45 scoped visual acceptance: independently viewed round151-corner-after-final/partial-1280x640.png and split-1280x720.png. Selected ship identity, level cube, full route and available destinations now visible; fully allocated plan explains remove a leg to reroute. Compact route-context defect is resolved in these captures. Independently read SELECTED ROUTE CONTEXT PASS and types0/0. This is scoped acceptance only, not whole011 or permission for012/baselines; finish remaining current local review/check packet. Current65cb4a4 verify39585195254 still pending, docsPASS; publisher119172247756 exact current rules503 saved /tmp/beyond-review-pr12-publish-65cb4a4.log. No duplicate publisher investigation needed beyond queued work.
+
+## Prompt 156: Empty Fleet Routes
+
+Reviewer-authored source defect and targeted correction:
+
+Reviewer11:05 new source-review defect before whole011 acceptance: JumpPlan.svelte complete Routes view renders Previous route ship/Next route ship unconditionally; both handlers index actor.ships[(... ) % actor.ships.length].id. With zero owned ships this becomes undefined.id. Ship picker already explicitly handles zero ships, but Routes does not. Legal no-ship states can occur after decommissioning; optional jump should retain valid no-movement handling. Disable/omit navigation safely with an explicit no-ships state, preserve required-jump rules, and verify ordinary UI no-ship optional jump opening Routes/keyboard controls/commit no movement without exception. Add targeted regression as appropriate, no guard weakening or invented ships. Existing visual acceptance remains scoped;011/012 held pending this correction and formal validation release. Avoid unrelated changes.
+
+## Prompt 157: Preserve Auto-pass
+
+Reviewer-authored reachability clarification and correction:
+
+Reviewer11:11 clarification based on your new legal replay evidence: preserve existing no-ship optional-jump auto-pass behavior. Do not introduce a new confirmation merely to make my requested Routes reproduction reachable. My source finding was an unsafe handler, not a verified reachable ordinary-flow crash. Keep narrow defensive empty-fleet navigation guards with targeted component/helper checks; ordinary UI regression should verify the existing auto-pass reaches valid Production without exception and preserves canonical rules, not force an artificial planner step. Revert only your newly introduced suppression of auto-pass. Record corrected finding/reachability honestly. Continue correction/checks; no unrelated gameplay flow changes.
+
+## Prompt 158: Native Failure Categories
+
+Reviewer-authored completed native CI checkpoint:
+
+Reviewer11:16 new completed CI result: prior7b42cd4 native job119154497318 FAILED112/118 (1.1h), independently saved /tmp/beyond-review-pr12-native-7b42cd4.log. Failures:003shared2/3,005four-corner Exo-Alloy,006two-cardinal rival,007four-corner andfour-cardinal production. Log includes2000ms capture deadlines and120000ms story deadlines plus detach errors; preserve exact categories from log, no failed cohort adoption. Current65cb4a4 verify39585195254 now running browser119189567850 and static119189568119; optional native119189569950 skipped as planned. Finish already-delivered11:11 narrow auto-pass correction first; track older CI failure separately.
+
+## Prompt 159: Jump Validation Release
+
+Reviewer-authored local acceptance and formal verification delegation:
+
+Reviewer11:21 LOCAL VISUAL/FUNCTIONAL ACCEPTANCE for011 exploratory implementation, releasing formal illustrated validation. Independently verified restored automatic=canAdvanceDiscovery(game), defensive cycleRouteShipId zero/single guards/tests12PASS54assertions, shared/remote157 auto-pass logs, types0/0 and readable phoneProduction157. Combined with prior independent desktop/phone/4K/corner151/source/endpoint reviews and reviewer-owned live canonical persistence, no remaining known exploratory blocker. Now implement/run required011 illustrated stories and full local verification with unchanged exact comparisons/capture2s/story120s/backend5s guards; generate only warranted current platform references after this acceptance, never adopt failed native cohorts. After full required local checks pass, commit/push011 and open new PR based on feat/fleet-management current65cb4a4 (preserve repairs), then explicitly begin012 Contest an outpost on a new branch stacked on011 while CI/hosted gates finish. Do not wait for another human prompt after those local gates. Final011 acceptance still requires independent exact macOS/Linux and matching hosted preview; PR12 and older CI/publisher blockers tracked separately and fixes propagated. Report actual results/head/base/PR/evidence. Preserve persistent5206 and reviewer identities/data, no merges.

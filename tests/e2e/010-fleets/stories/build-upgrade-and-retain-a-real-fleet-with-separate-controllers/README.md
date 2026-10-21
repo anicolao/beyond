@@ -407,13 +407,28 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 28. Decline optional movement without undoing the ship or Action cost
+## 28. Read the actual optional movement controls before declining every jump
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/027-ada-no-move-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/027-ada-no-move-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/027-ada-no-move-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/027-ada-no-move-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/027-ada-optional-jump-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/027-ada-optional-jump-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/027-ada-optional-jump-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/027-ada-optional-jump-desktop-darwin.png) |
+
+
+
+- [x] Read the actual optional movement controls before declining every jump
+- [x] The actual canonical effect and backend acknowledgement settle.
+- [x] Public technology topology retains physical separation.
+- [x] The actual viewport fits without page scrolling.
+
+## 29. Decline optional movement without undoing the ship or Action cost
+
+Viewpoint: **Ada · separate host controller**.
+
+| phone · 393 × 852 | desktop · 1440 × 1000 |
+| --- | --- |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/028-ada-no-move-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/028-ada-no-move-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/028-ada-no-move-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/028-ada-no-move-desktop-darwin.png) |
 
 
 
@@ -422,13 +437,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 29. Ada completes ordinary production and hands off
+## 30. Ada completes ordinary production and hands off
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/028-ada-handoff-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/028-ada-handoff-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/028-ada-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/028-ada-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/029-ada-handoff-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/029-ada-handoff-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/029-ada-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/029-ada-handoff-desktop-darwin.png) |
 
 
 
@@ -437,13 +452,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 30. The next independent controller sees the saved handoff
+## 31. The next independent controller sees the saved handoff
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/029-ada-next-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/029-ada-next-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/029-ada-next-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/029-ada-next-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/030-ada-next-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/030-ada-next-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/030-ada-next-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/030-ada-next-desktop-darwin.png) |
 
 
 
@@ -452,13 +467,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 31. Bora opens the actual Action instrument
+## 32. Bora opens the actual Action instrument
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/030-bora-build-plan-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/030-bora-build-plan-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/030-bora-build-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/030-bora-build-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/031-bora-build-plan-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/031-bora-build-plan-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/031-bora-build-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/031-bora-build-plan-desktop-darwin.png) |
 
 
 
@@ -467,13 +482,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 32. Bora selects Basic construction
+## 33. Bora selects Basic construction
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/031-bora-build-kind-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/031-bora-build-kind-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/031-bora-build-kind-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/031-bora-build-kind-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/032-bora-build-kind-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/032-bora-build-kind-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/032-bora-build-kind-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/032-bora-build-kind-desktop-darwin.png) |
 
 
 
@@ -482,13 +497,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 33. Ada’s occupied Basic space prevents a second pawn from using it
+## 34. Ada’s occupied Basic space prevents a second pawn from using it
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/032-bora-occupied-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/032-bora-occupied-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/032-bora-occupied-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/032-bora-occupied-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/033-bora-occupied-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/033-bora-occupied-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/033-bora-occupied-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/033-bora-occupied-desktop-darwin.png) |
 
 
 
@@ -497,13 +512,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 34. Choose the second printed space with one Ore surcharge
+## 35. Choose the second printed space with one Ore surcharge
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/033-bora-second-space-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/033-bora-second-space-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/033-bora-second-space-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/033-bora-second-space-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/034-bora-second-space-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/034-bora-second-space-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/034-bora-second-space-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/034-bora-second-space-desktop-darwin.png) |
 
 
 
@@ -512,13 +527,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 35. Build from Population at Sol and retain the exact second-space charge
+## 36. Build from Population at Sol and retain the exact second-space charge
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/034-bora-built-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/034-bora-built-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/034-bora-built-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/034-bora-built-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/035-bora-built-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/035-bora-built-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/035-bora-built-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/035-bora-built-desktop-darwin.png) |
 
 
 
@@ -527,13 +542,28 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 36. Decline optional movement without undoing the ship or Action cost
+## 37. Read the actual optional movement controls before declining every jump
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/035-bora-no-move-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/035-bora-no-move-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/035-bora-no-move-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/035-bora-no-move-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/036-bora-optional-jump-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/036-bora-optional-jump-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/036-bora-optional-jump-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/036-bora-optional-jump-desktop-darwin.png) |
+
+
+
+- [x] Read the actual optional movement controls before declining every jump
+- [x] The actual canonical effect and backend acknowledgement settle.
+- [x] Public technology topology retains physical separation.
+- [x] The actual viewport fits without page scrolling.
+
+## 38. Decline optional movement without undoing the ship or Action cost
+
+Viewpoint: **Bora · separate guest controller**.
+
+| phone · 1440 × 1000 | desktop · 393 × 852 |
+| --- | --- |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/037-bora-no-move-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/037-bora-no-move-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/037-bora-no-move-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/037-bora-no-move-desktop-darwin.png) |
 
 
 
@@ -542,13 +572,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 37. Bora completes ordinary production and hands off
+## 39. Bora completes ordinary production and hands off
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/036-bora-handoff-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/036-bora-handoff-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/036-bora-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/036-bora-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/038-bora-handoff-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/038-bora-handoff-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/038-bora-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/038-bora-handoff-desktop-darwin.png) |
 
 
 
@@ -557,13 +587,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 38. The next independent controller sees the saved handoff
+## 40. The next independent controller sees the saved handoff
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/037-bora-next-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/037-bora-next-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/037-bora-next-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/037-bora-next-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/039-bora-next-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/039-bora-next-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/039-bora-next-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/039-bora-next-desktop-darwin.png) |
 
 
 
@@ -572,13 +602,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 39. Open the retained faction economy and physical fleet register
+## 41. Open the retained faction economy and physical fleet register
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/038-bora-register-mat-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/038-bora-register-mat-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/038-bora-register-mat-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/038-bora-register-mat-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/040-bora-register-mat-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/040-bora-register-mat-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/040-bora-register-mat-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/040-bora-register-mat-desktop-darwin.png) |
 
 
 
@@ -587,13 +617,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 40. Inspect 2 real ships with explicit levels and public summed power
+## 42. Inspect 2 real ships with explicit levels and public summed power
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/039-bora-register-ships-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/039-bora-register-ships-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/039-bora-register-ships-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/039-bora-register-ships-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/041-bora-register-ships-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/041-bora-register-ships-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/041-bora-register-ships-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/041-bora-register-ships-desktop-darwin.png) |
 
 
 
@@ -602,13 +632,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 41. Inspect Bora's actual power at Sol
+## 43. Inspect Bora's actual power at Sol
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/040-bora-register-power-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/040-bora-register-power-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/040-bora-register-power-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/040-bora-register-power-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/042-bora-register-power-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/042-bora-register-power-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/042-bora-register-power-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/042-bora-register-power-desktop-darwin.png) |
 
 
 
@@ -617,13 +647,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 42. The register explains levels, location-specific power and incumbent ties without taking a turn
+## 44. The register explains levels, location-specific power and incumbent ties without taking a turn
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/041-bora-register-rules-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/041-bora-register-rules-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/041-bora-register-rules-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/041-bora-register-rules-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/043-bora-register-rules-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/043-bora-register-rules-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/043-bora-register-rules-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/043-bora-register-rules-desktop-darwin.png) |
 
 
 
@@ -632,13 +662,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 43. Keyboard reaches the bounded fleet details
+## 45. Keyboard reaches the bounded fleet details
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/042-bora-register-keyboard-region-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/042-bora-register-keyboard-region-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/042-bora-register-keyboard-region-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/042-bora-register-keyboard-region-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/044-bora-register-keyboard-region-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/044-bora-register-keyboard-region-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/044-bora-register-keyboard-region-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/044-bora-register-keyboard-region-desktop-darwin.png) |
 
 
 
@@ -647,13 +677,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 44. Reverse Tab stays within the fleet reader
+## 46. Reverse Tab stays within the fleet reader
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/043-bora-register-reverse-tab-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/043-bora-register-reverse-tab-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/043-bora-register-reverse-tab-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/043-bora-register-reverse-tab-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/045-bora-register-reverse-tab-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/045-bora-register-reverse-tab-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/045-bora-register-reverse-tab-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/045-bora-register-reverse-tab-desktop-darwin.png) |
 
 
 
@@ -662,13 +692,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 45. Forward Tab wraps back to persistent Close
+## 47. Forward Tab wraps back to persistent Close
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/044-bora-register-tab-wrap-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/044-bora-register-tab-wrap-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/044-bora-register-tab-wrap-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/044-bora-register-tab-wrap-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/046-bora-register-tab-wrap-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/046-bora-register-tab-wrap-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/046-bora-register-tab-wrap-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/046-bora-register-tab-wrap-desktop-darwin.png) |
 
 
 
@@ -677,13 +707,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 46. Escape restores the actual Fleet opener
+## 48. Escape restores the actual Fleet opener
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/045-bora-register-return-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/045-bora-register-return-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/045-bora-register-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/045-bora-register-return-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/047-bora-register-return-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/047-bora-register-return-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/047-bora-register-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/047-bora-register-return-desktop-darwin.png) |
 
 
 
@@ -692,13 +722,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 47. Close the mat and restore its physical opener
+## 49. Close the mat and restore its physical opener
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/046-bora-register-mat-return-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/046-bora-register-mat-return-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/046-bora-register-mat-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/046-bora-register-mat-return-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/048-bora-register-mat-return-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/048-bora-register-mat-return-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/048-bora-register-mat-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/048-bora-register-mat-return-desktop-darwin.png) |
 
 
 
@@ -707,13 +737,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 48. Ada opens the actual Action instrument
+## 50. Ada opens the actual Action instrument
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/047-ada-lasers-plan-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/047-ada-lasers-plan-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/047-ada-lasers-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/047-ada-lasers-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/049-ada-lasers-plan-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/049-ada-lasers-plan-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/049-ada-lasers-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/049-ada-lasers-plan-desktop-darwin.png) |
 
 
 
@@ -722,13 +752,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 49. Ada chooses the unoccupied printed research space
+## 51. Ada chooses the unoccupied printed research space
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/048-ada-lasers-space-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/048-ada-lasers-space-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/048-ada-lasers-space-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/048-ada-lasers-space-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/050-ada-lasers-space-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/050-ada-lasers-space-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/050-ada-lasers-space-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/050-ada-lasers-space-desktop-darwin.png) |
 
 
 
@@ -737,13 +767,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 50. Choose the public Narrow Beam Lasers face and read its printed effect
+## 52. Choose the public Narrow Beam Lasers face and read its printed effect
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/049-ada-lasers-card-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/049-ada-lasers-card-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/049-ada-lasers-card-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/049-ada-lasers-card-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/051-ada-lasers-card-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/051-ada-lasers-card-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/051-ada-lasers-card-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/051-ada-lasers-card-desktop-darwin.png) |
 
 
 
@@ -752,13 +782,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 51. The mandatory one-level upgrade needs an explicit owned ship
+## 53. The mandatory one-level upgrade needs an explicit owned ship
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/050-ada-lasers-target-required-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/050-ada-lasers-target-required-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/050-ada-lasers-target-required-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/050-ada-lasers-target-required-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/052-ada-lasers-target-required-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/052-ada-lasers-target-required-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/052-ada-lasers-target-required-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/052-ada-lasers-target-required-desktop-darwin.png) |
 
 
 
@@ -767,13 +797,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 52. Select the owned ship and inspect the exact level change
+## 54. Select the owned ship and inspect the exact level change
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/051-ada-lasers-target-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/051-ada-lasers-target-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/051-ada-lasers-target-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/051-ada-lasers-target-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/053-ada-lasers-target-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/053-ada-lasers-target-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/053-ada-lasers-target-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/053-ada-lasers-target-desktop-darwin.png) |
 
 
 
@@ -782,13 +812,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 53. Ada pays permanent research Population and resolves the printed bonus
+## 55. Ada pays permanent research Population and resolves the printed bonus
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/052-ada-lasers-paid-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/052-ada-lasers-paid-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/052-ada-lasers-paid-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/052-ada-lasers-paid-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/054-ada-lasers-paid-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/054-ada-lasers-paid-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/054-ada-lasers-paid-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/054-ada-lasers-paid-desktop-darwin.png) |
 
 
 
@@ -797,13 +827,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 54. Ada completes ordinary production and hands off
+## 56. Ada completes ordinary production and hands off
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/053-ada-lasers-handoff-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/053-ada-lasers-handoff-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/053-ada-lasers-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/053-ada-lasers-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/055-ada-lasers-handoff-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/055-ada-lasers-handoff-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/055-ada-lasers-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/055-ada-lasers-handoff-desktop-darwin.png) |
 
 
 
@@ -812,13 +842,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 55. The next independent controller sees the saved handoff
+## 57. The next independent controller sees the saved handoff
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/054-ada-lasers-next-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/054-ada-lasers-next-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/054-ada-lasers-next-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/054-ada-lasers-next-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/056-ada-lasers-next-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/056-ada-lasers-next-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/056-ada-lasers-next-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/056-ada-lasers-next-desktop-darwin.png) |
 
 
 
@@ -827,13 +857,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 56. Bora opens the actual Action instrument
+## 58. Bora opens the actual Action instrument
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/055-bora-gather-plan-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/055-bora-gather-plan-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/055-bora-gather-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/055-bora-gather-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/057-bora-gather-plan-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/057-bora-gather-plan-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/057-bora-gather-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/057-bora-gather-plan-desktop-darwin.png) |
 
 
 
@@ -842,13 +872,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 57. Bora selects ordinary gathering
+## 59. Bora selects ordinary gathering
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/056-bora-gather-kind-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/056-bora-gather-kind-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/056-bora-gather-kind-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/056-bora-gather-kind-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/058-bora-gather-kind-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/058-bora-gather-kind-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/058-bora-gather-kind-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/058-bora-gather-kind-desktop-darwin.png) |
 
 
 
@@ -857,13 +887,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 58. Receive actual Gather resources before production
+## 60. Receive actual Gather resources before production
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/057-bora-gather-gathered-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/057-bora-gather-gathered-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/057-bora-gather-gathered-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/057-bora-gather-gathered-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/059-bora-gather-gathered-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/059-bora-gather-gathered-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/059-bora-gather-gathered-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/059-bora-gather-gathered-desktop-darwin.png) |
 
 
 
@@ -872,13 +902,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 59. Bora completes ordinary production and hands off
+## 61. Bora completes ordinary production and hands off
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/058-bora-gather-handoff-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/058-bora-gather-handoff-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/058-bora-gather-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/058-bora-gather-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/060-bora-gather-handoff-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/060-bora-gather-handoff-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/060-bora-gather-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/060-bora-gather-handoff-desktop-darwin.png) |
 
 
 
@@ -887,13 +917,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 60. The next independent controller sees the saved handoff
+## 62. The next independent controller sees the saved handoff
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/059-bora-gather-next-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/059-bora-gather-next-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/059-bora-gather-next-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/059-bora-gather-next-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/061-bora-gather-next-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/061-bora-gather-next-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/061-bora-gather-next-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/061-bora-gather-next-desktop-darwin.png) |
 
 
 
@@ -902,13 +932,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 61. Ada opens the actual Action instrument
+## 63. Ada opens the actual Action instrument
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/060-paid-lasers-plan-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/060-paid-lasers-plan-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/060-paid-lasers-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/060-paid-lasers-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/062-paid-lasers-plan-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/062-paid-lasers-plan-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/062-paid-lasers-plan-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/062-paid-lasers-plan-desktop-darwin.png) |
 
 
 
@@ -917,13 +947,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 62. Ada selects a printed Technology Action
+## 64. Ada selects a printed Technology Action
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/061-paid-lasers-kind-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/061-paid-lasers-kind-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/061-paid-lasers-kind-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/061-paid-lasers-kind-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/063-paid-lasers-kind-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/063-paid-lasers-kind-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/063-paid-lasers-kind-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/063-paid-lasers-kind-desktop-darwin.png) |
 
 
 
@@ -932,13 +962,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 63. Read the personally available printed cost before committing
+## 65. Read the personally available printed cost before committing
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/062-paid-level-two-cost-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/062-paid-level-two-cost-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/062-paid-level-two-cost-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/062-paid-level-two-cost-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/064-paid-level-two-cost-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/064-paid-level-two-cost-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/064-paid-level-two-cost-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/064-paid-level-two-cost-desktop-darwin.png) |
 
 
 
@@ -947,13 +977,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 64. The paid Action automatically builds level two at its sole permitted yard before optional movement
+## 66. The paid Action automatically builds level two at its sole permitted yard before optional movement
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/063-paid-level-two-built-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/063-paid-level-two-built-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/063-paid-level-two-built-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/063-paid-level-two-built-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/065-paid-level-two-built-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/065-paid-level-two-built-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/065-paid-level-two-built-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/065-paid-level-two-built-desktop-darwin.png) |
 
 
 
@@ -962,13 +992,28 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 65. Decline optional movement without undoing the ship or Action cost
+## 67. Read the actual optional movement controls before declining every jump
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/064-paid-level-two-no-move-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/064-paid-level-two-no-move-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/064-paid-level-two-no-move-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/064-paid-level-two-no-move-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/066-paid-level-two-optional-jump-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/066-paid-level-two-optional-jump-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/066-paid-level-two-optional-jump-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/066-paid-level-two-optional-jump-desktop-darwin.png) |
+
+
+
+- [x] Read the actual optional movement controls before declining every jump
+- [x] The actual canonical effect and backend acknowledgement settle.
+- [x] Public technology topology retains physical separation.
+- [x] The actual viewport fits without page scrolling.
+
+## 68. Decline optional movement without undoing the ship or Action cost
+
+Viewpoint: **Ada · separate host controller**.
+
+| phone · 393 × 852 | desktop · 1440 × 1000 |
+| --- | --- |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/067-paid-level-two-no-move-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/067-paid-level-two-no-move-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/067-paid-level-two-no-move-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/067-paid-level-two-no-move-desktop-darwin.png) |
 
 
 
@@ -977,13 +1022,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 66. Ada completes ordinary production and hands off
+## 69. Ada completes ordinary production and hands off
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/065-paid-level-two-handoff-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/065-paid-level-two-handoff-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/065-paid-level-two-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/065-paid-level-two-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/068-paid-level-two-handoff-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/068-paid-level-two-handoff-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/068-paid-level-two-handoff-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/068-paid-level-two-handoff-desktop-darwin.png) |
 
 
 
@@ -992,13 +1037,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 67. The next independent controller sees the saved handoff
+## 70. The next independent controller sees the saved handoff
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/066-paid-level-two-next-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/066-paid-level-two-next-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/066-paid-level-two-next-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/066-paid-level-two-next-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/069-paid-level-two-next-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/069-paid-level-two-next-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/069-paid-level-two-next-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/069-paid-level-two-next-desktop-darwin.png) |
 
 
 
@@ -1007,13 +1052,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 68. Open the retained faction economy and physical fleet register
+## 71. Open the retained faction economy and physical fleet register
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/067-ada-upgraded-register-mat-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/067-ada-upgraded-register-mat-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/067-ada-upgraded-register-mat-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/067-ada-upgraded-register-mat-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/070-ada-upgraded-register-mat-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/070-ada-upgraded-register-mat-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/070-ada-upgraded-register-mat-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/070-ada-upgraded-register-mat-desktop-darwin.png) |
 
 
 
@@ -1022,13 +1067,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 69. Inspect 3 real ships with explicit levels and public summed power
+## 72. Inspect 3 real ships with explicit levels and public summed power
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/068-ada-upgraded-register-ships-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/068-ada-upgraded-register-ships-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/068-ada-upgraded-register-ships-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/068-ada-upgraded-register-ships-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/071-ada-upgraded-register-ships-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/071-ada-upgraded-register-ships-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/071-ada-upgraded-register-ships-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/071-ada-upgraded-register-ships-desktop-darwin.png) |
 
 
 
@@ -1037,13 +1082,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 70. Inspect Ada's actual power at Sol
+## 73. Inspect Ada's actual power at Sol
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/069-ada-upgraded-register-power-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/069-ada-upgraded-register-power-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/069-ada-upgraded-register-power-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/069-ada-upgraded-register-power-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/072-ada-upgraded-register-power-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/072-ada-upgraded-register-power-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/072-ada-upgraded-register-power-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/072-ada-upgraded-register-power-desktop-darwin.png) |
 
 
 
@@ -1052,13 +1097,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 71. The register explains levels, location-specific power and incumbent ties without taking a turn
+## 74. The register explains levels, location-specific power and incumbent ties without taking a turn
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/070-ada-upgraded-register-rules-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/070-ada-upgraded-register-rules-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/070-ada-upgraded-register-rules-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/070-ada-upgraded-register-rules-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/073-ada-upgraded-register-rules-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/073-ada-upgraded-register-rules-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/073-ada-upgraded-register-rules-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/073-ada-upgraded-register-rules-desktop-darwin.png) |
 
 
 
@@ -1067,13 +1112,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 72. Keyboard reaches the bounded fleet details
+## 75. Keyboard reaches the bounded fleet details
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/071-ada-upgraded-register-keyboard-region-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/071-ada-upgraded-register-keyboard-region-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/071-ada-upgraded-register-keyboard-region-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/071-ada-upgraded-register-keyboard-region-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/074-ada-upgraded-register-keyboard-region-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/074-ada-upgraded-register-keyboard-region-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/074-ada-upgraded-register-keyboard-region-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/074-ada-upgraded-register-keyboard-region-desktop-darwin.png) |
 
 
 
@@ -1082,13 +1127,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 73. Reverse Tab stays within the fleet reader
+## 76. Reverse Tab stays within the fleet reader
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/072-ada-upgraded-register-reverse-tab-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/072-ada-upgraded-register-reverse-tab-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/072-ada-upgraded-register-reverse-tab-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/072-ada-upgraded-register-reverse-tab-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/075-ada-upgraded-register-reverse-tab-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/075-ada-upgraded-register-reverse-tab-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/075-ada-upgraded-register-reverse-tab-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/075-ada-upgraded-register-reverse-tab-desktop-darwin.png) |
 
 
 
@@ -1097,13 +1142,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 74. Forward Tab wraps back to persistent Close
+## 77. Forward Tab wraps back to persistent Close
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/073-ada-upgraded-register-tab-wrap-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/073-ada-upgraded-register-tab-wrap-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/073-ada-upgraded-register-tab-wrap-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/073-ada-upgraded-register-tab-wrap-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/076-ada-upgraded-register-tab-wrap-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/076-ada-upgraded-register-tab-wrap-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/076-ada-upgraded-register-tab-wrap-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/076-ada-upgraded-register-tab-wrap-desktop-darwin.png) |
 
 
 
@@ -1112,13 +1157,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 75. Escape restores the actual Fleet opener
+## 78. Escape restores the actual Fleet opener
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/074-ada-upgraded-register-return-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/074-ada-upgraded-register-return-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/074-ada-upgraded-register-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/074-ada-upgraded-register-return-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/077-ada-upgraded-register-return-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/077-ada-upgraded-register-return-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/077-ada-upgraded-register-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/077-ada-upgraded-register-return-desktop-darwin.png) |
 
 
 
@@ -1127,13 +1172,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public technology topology retains physical separation.
 - [x] The actual viewport fits without page scrolling.
 
-## 76. Close the mat and restore its physical opener
+## 79. Close the mat and restore its physical opener
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/075-ada-upgraded-register-mat-return-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/075-ada-upgraded-register-mat-return-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/075-ada-upgraded-register-mat-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/075-ada-upgraded-register-mat-return-desktop-darwin.png) |
+| [![phone](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/078-ada-upgraded-register-mat-return-phone-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/078-ada-upgraded-register-mat-return-phone-darwin.png) | [![desktop](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/078-ada-upgraded-register-mat-return-desktop-darwin.png)](../../screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/078-ada-upgraded-register-mat-return-desktop-darwin.png) |
 
 
 

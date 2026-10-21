@@ -1,6 +1,6 @@
 import { expect, test, type Page, type TestInfo } from '@playwright/test';
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { dirname } from 'node:path';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import {writeBaseline} from '../../../scripts/write-baseline.mjs';
 import { identicalPixels, preparePixels } from './exact-pixels';
 import { assertScreenFit, warmVisibleImages } from './screen-fit';
 
@@ -54,7 +54,7 @@ export class TestStepHelper {
         let image: Buffer;
         try { image = Buffer.from((await camera.send('Page.captureScreenshot', { format: 'png', fromSurface: true, captureBeyondViewport: false, optimizeForSpeed: true })).data, 'base64'); }
         finally { await camera.detach(); }
-        if (updating) { mkdirSync(dirname(path), { recursive: true }); writeFileSync(path, image); }
+        if (updating) writeBaseline(path, image);
         else {
           const same = reference !== undefined && await identicalPixels(image, reference);
           if (!same) {

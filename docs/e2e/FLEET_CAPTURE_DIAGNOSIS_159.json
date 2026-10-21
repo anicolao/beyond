@@ -1,0 +1,38 @@
+{
+  "phase": "010; separate from011 local formal gate",
+  "head": "65cb4a49befe99ea26ece29233ba32013db5dfd1",
+  "job": 119189567850,
+  "artifact": 12343376274,
+  "traceSha256": "4d4c6c79cf401408cdb9acb6eb001ada3770d099234a0b96dcd1eff7be99ad64",
+  "failure": "003 four-player shared native4K;2048.236758ms exceeds unchanged2000ms",
+  "measuredApiMilliseconds": {
+    "parallelWarmCriticalPath": 654.323,
+    "postWarmWait": 948.619,
+    "newCdpSession": 1.192,
+    "nativePngCapture": 403.349,
+    "detach": 7.671
+  },
+  "browserDiagnostics": {
+    "initialAcknowledgement": "already synced",
+    "imageWarm": 646.6,
+    "postWarmBrowserSchedulingBeforePredicate": 909.566,
+    "finalPredicateWork": {
+      "fonts": 0,
+      "images": 35.3,
+      "animations": 0.1,
+      "audit": 2.5,
+      "elements": 189,
+      "controls": 16
+    }
+  },
+  "conclusion": "Measured image warming and delayed browser predicate scheduling dominate; session attach/detach is not the primary cost. No relaxation, rendering-flag change, reference refresh or production fix inferred from this trace alone.",
+  "storage": "Selected trace fetched by212687 bytes of HTTP ranges from2487413847-byte artifact; archive entry CRC verified. No full archive adoption.",
+  "status": "Diagnosis recorded; Linux deadline repair remains open. Local full exact2 has separate010 responsive test assertion failure; no final gate claimed.",
+  "failingStep": "Bora joins the real physical seat at North, before Begin",
+  "remainingUncertainty": "Trace measures waiting/critical paths, not CPU attribution to image decode, paint, compositor or browser scheduling. No speculative renderer fix or camera reuse adopted.",
+  "readOnlyFollowup": {
+    "asset": "The root environment asset is1672x941 WebP,1801600bytes; source confirms it is present before Begin. This alone does not attribute the observed scheduling delay to decode.",
+    "transportHypothesis": "Source inspection confirms this helper explicitly uses20ms polling, not the Playwright default animation-frame polling. The observed910ms scheduling gap therefore cannot be attributed to an implicit requestAnimationFrame boundary. Immediate evaluation versus predicate setup remains only an unproven transport experiment; no implementation change or claimed repair.",
+    "invariants": "Keep the same predicate and complete image/font/animation/layout checks, absolute capture deadline, native screenshot and exact reference. No cached/skipped decode, render flags, rule changes or timing allowance."
+  }
+}

@@ -1106,17 +1106,17 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 70. Plan the next adjacent system without moving or paying again
+## 70. Open the actual connected-destination view
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/069-r4-ada-leg-0-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/069-r4-ada-leg-0-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/069-r4-ada-leg-0-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/069-r4-ada-leg-0-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/069-r4-ada-route-editor-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/069-r4-ada-route-editor-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/069-r4-ada-route-editor-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/069-r4-ada-route-editor-desktop-darwin.png) |
 
 
 
-- [x] Plan the next adjacent system without moving or paying again
+- [x] Open the actual connected-destination view
 - [x] Canonical effects settle before capture.
 - [x] Any printed Action plan is ready.
 - [x] Public compact topology remains physically separated.
@@ -1128,7 +1128,7 @@ Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/070-r4-ada-leg-1-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/070-r4-ada-leg-1-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/070-r4-ada-leg-1-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/070-r4-ada-leg-1-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/070-r4-ada-leg-0-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/070-r4-ada-leg-0-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/070-r4-ada-leg-0-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/070-r4-ada-leg-0-desktop-darwin.png) |
 
 
 
@@ -1144,7 +1144,7 @@ Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/071-r4-ada-leg-2-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/071-r4-ada-leg-2-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/071-r4-ada-leg-2-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/071-r4-ada-leg-2-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/071-r4-ada-leg-1-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/071-r4-ada-leg-1-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/071-r4-ada-leg-1-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/071-r4-ada-leg-1-desktop-darwin.png) |
 
 
 
@@ -1154,13 +1154,29 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 73. Resolve the complete real path atomically
+## 73. Plan the next adjacent system without moving or paying again
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/072-r4-ada-committed-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/072-r4-ada-committed-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/072-r4-ada-committed-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/072-r4-ada-committed-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/072-r4-ada-leg-2-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/072-r4-ada-leg-2-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/072-r4-ada-leg-2-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/072-r4-ada-leg-2-desktop-darwin.png) |
+
+
+
+- [x] Plan the next adjacent system without moving or paying again
+- [x] Canonical effects settle before capture.
+- [x] Any printed Action plan is ready.
+- [x] Public compact topology remains physically separated.
+- [x] The gameplay shell fits the actual viewport.
+
+## 74. Resolve the complete real path atomically
+
+Viewpoint: **Ada · separate host controller**.
+
+| phone · 393 × 852 | desktop · 1440 × 1000 |
+| --- | --- |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/073-r4-ada-committed-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/073-r4-ada-committed-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/073-r4-ada-committed-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/073-r4-ada-committed-desktop-darwin.png) |
 
 
 
@@ -1170,13 +1186,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 74. Place an actual Food outpost and expose the second matching column
+## 75. Place an actual Food outpost and expose the second matching column
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/073-r4-ada-food-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/073-r4-ada-food-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/073-r4-ada-food-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/073-r4-ada-food-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/074-r4-ada-food-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/074-r4-ada-food-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/074-r4-ada-food-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/074-r4-ada-food-desktop-darwin.png) |
 
 
 
@@ -1186,13 +1202,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 75. Food now exposes A and B, each of which contributes one real matching cube
+## 76. Food now exposes A and B, each of which contributes one real matching cube
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/074-two-columns-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/074-two-columns-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/074-two-columns-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/074-two-columns-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/075-two-columns-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/075-two-columns-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/075-two-columns-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/075-two-columns-desktop-darwin.png) |
 
 
 
@@ -1202,13 +1218,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 76. Ada completes production and hands off to Bora
+## 77. Ada completes production and hands off to Bora
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/075-r4-ada-handoff-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/075-r4-ada-handoff-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/075-r4-ada-handoff-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/075-r4-ada-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/076-r4-ada-handoff-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/076-r4-ada-handoff-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/076-r4-ada-handoff-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/076-r4-ada-handoff-desktop-darwin.png) |
 
 
 
@@ -1218,13 +1234,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 77. The independent next controller sees the canonical handoff
+## 78. The independent next controller sees the canonical handoff
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/076-r4-ada-next-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/076-r4-ada-next-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/076-r4-ada-next-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/076-r4-ada-next-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/077-r4-ada-next-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/077-r4-ada-next-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/077-r4-ada-next-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/077-r4-ada-next-desktop-darwin.png) |
 
 
 
@@ -1234,13 +1250,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 78. Bora opens the actual research and Action instrument
+## 79. Bora opens the actual research and Action instrument
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/077-r4-bora-plan-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/077-r4-bora-plan-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/077-r4-bora-plan-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/077-r4-bora-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/078-r4-bora-plan-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/078-r4-bora-plan-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/078-r4-bora-plan-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/078-r4-bora-plan-desktop-darwin.png) |
 
 
 
@@ -1250,13 +1266,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 79. Bora selects the legal printed space 1
+## 80. Bora selects the legal printed space 1
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/078-r4-bora-space-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/078-r4-bora-space-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/078-r4-bora-space-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/078-r4-bora-space-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/079-r4-bora-space-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/079-r4-bora-space-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/079-r4-bora-space-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/079-r4-bora-space-desktop-darwin.png) |
 
 
 
@@ -1266,13 +1282,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 80. Select Advanced Genetics with its printed cost and consequence
+## 81. Select Advanced Genetics with its printed cost and consequence
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/079-r4-bora-card-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/079-r4-bora-card-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/079-r4-bora-card-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/079-r4-bora-card-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/080-r4-bora-card-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/080-r4-bora-card-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/080-r4-bora-card-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/080-r4-bora-card-desktop-darwin.png) |
 
 
 
@@ -1282,13 +1298,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 81. Pay once and receive Advanced Genetics's immediate bonus
+## 82. Pay once and receive Advanced Genetics's immediate bonus
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/080-r4-bora-researched-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/080-r4-bora-researched-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/080-r4-bora-researched-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/080-r4-bora-researched-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/081-r4-bora-researched-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/081-r4-bora-researched-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/081-r4-bora-researched-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/081-r4-bora-researched-desktop-darwin.png) |
 
 
 
@@ -1298,13 +1314,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 82. Bora completes production and hands off to Ada
+## 83. Bora completes production and hands off to Ada
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/081-r4-bora-handoff-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/081-r4-bora-handoff-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/081-r4-bora-handoff-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/081-r4-bora-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/082-r4-bora-handoff-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/082-r4-bora-handoff-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/082-r4-bora-handoff-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/082-r4-bora-handoff-desktop-darwin.png) |
 
 
 
@@ -1314,13 +1330,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 83. The independent next controller sees the canonical handoff
+## 84. The independent next controller sees the canonical handoff
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/082-r4-bora-next-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/082-r4-bora-next-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/082-r4-bora-next-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/082-r4-bora-next-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/083-r4-bora-next-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/083-r4-bora-next-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/083-r4-bora-next-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/083-r4-bora-next-desktop-darwin.png) |
 
 
 
@@ -1330,13 +1346,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 84. Ada opens the actual research and Action instrument
+## 85. Ada opens the actual research and Action instrument
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/083-r5-ada-plan-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/083-r5-ada-plan-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/083-r5-ada-plan-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/083-r5-ada-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/084-r5-ada-plan-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/084-r5-ada-plan-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/084-r5-ada-plan-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/084-r5-ada-plan-desktop-darwin.png) |
 
 
 
@@ -1346,13 +1362,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 85. Ada selects ordinary gathering
+## 86. Ada selects ordinary gathering
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/084-r5-ada-kind-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/084-r5-ada-kind-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/084-r5-ada-kind-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/084-r5-ada-kind-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/085-r5-ada-kind-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/085-r5-ada-kind-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/085-r5-ada-kind-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/085-r5-ada-kind-desktop-darwin.png) |
 
 
 
@@ -1362,13 +1378,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 86. Receive the printed gather resources before ordinary production
+## 87. Receive the printed gather resources before ordinary production
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/085-r5-ada-gathered-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/085-r5-ada-gathered-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/085-r5-ada-gathered-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/085-r5-ada-gathered-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/086-r5-ada-gathered-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/086-r5-ada-gathered-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/086-r5-ada-gathered-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/086-r5-ada-gathered-desktop-darwin.png) |
 
 
 
@@ -1378,13 +1394,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 87. An exposed but empty A column cannot substitute cubes from covered columns
+## 88. An exposed but empty A column cannot substitute cubes from covered columns
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/086-empty-matching-column-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/086-empty-matching-column-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/086-empty-matching-column-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/086-empty-matching-column-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/087-empty-matching-column-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/087-empty-matching-column-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/087-empty-matching-column-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/087-empty-matching-column-desktop-darwin.png) |
 
 
 
@@ -1394,13 +1410,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 88. Inspect all twenty conserved cubes in their actual current locations
+## 89. Inspect all twenty conserved cubes in their actual current locations
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/087-conservation-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/087-conservation-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/087-conservation-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/087-conservation-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/088-conservation-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/088-conservation-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/088-conservation-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/088-conservation-desktop-darwin.png) |
 
 
 
@@ -1410,13 +1426,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 89. Tab remains in the modal reader
+## 90. Tab remains in the modal reader
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/088-cycle-keyboard-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/088-cycle-keyboard-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/088-cycle-keyboard-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/088-cycle-keyboard-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/089-cycle-keyboard-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/089-cycle-keyboard-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/089-cycle-keyboard-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/089-cycle-keyboard-desktop-darwin.png) |
 
 
 
@@ -1426,13 +1442,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 90. Reverse Tab remains in the same accessible reader
+## 91. Reverse Tab remains in the same accessible reader
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/089-cycle-reverse-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/089-cycle-reverse-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/089-cycle-reverse-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/089-cycle-reverse-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/090-cycle-reverse-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/090-cycle-reverse-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/090-cycle-reverse-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/090-cycle-reverse-desktop-darwin.png) |
 
 
 
@@ -1442,13 +1458,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 91. Escape restores the actual opener without choosing production
+## 92. Escape restores the actual opener without choosing production
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/090-cycle-return-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/090-cycle-return-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/090-cycle-return-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/090-cycle-return-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/091-cycle-return-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/091-cycle-return-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/091-cycle-return-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/091-cycle-return-desktop-darwin.png) |
 
 
 
@@ -1458,13 +1474,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 92. Reload retains the production decision and current controller
+## 93. Reload retains the production decision and current controller
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/091-pending-restored-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/091-pending-restored-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/091-pending-restored-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/091-pending-restored-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/092-pending-restored-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/092-pending-restored-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/092-pending-restored-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/092-pending-restored-desktop-darwin.png) |
 
 
 
@@ -1474,13 +1490,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 93. Reopened production still has A zero and B two; no bonus replay
+## 94. Reopened production still has A zero and B two; no bonus replay
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/092-empty-restored-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/092-empty-restored-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/092-empty-restored-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/092-empty-restored-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/093-empty-restored-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/093-empty-restored-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/093-empty-restored-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/093-empty-restored-desktop-darwin.png) |
 
 
 
@@ -1490,13 +1506,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 94. The other controller observes public pending production and cannot submit a choice
+## 95. The other controller observes public pending production and cannot submit a choice
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/093-observer-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/093-observer-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/093-observer-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/093-observer-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/094-observer-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/094-observer-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/094-observer-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/094-observer-desktop-darwin.png) |
 
 
 
@@ -1506,13 +1522,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 95. Only B loses one cube; empty A stays empty and Bora receives the turn
+## 96. Only B loses one cube; empty A stays empty and Bora receives the turn
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/094-only-b-consumed-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/094-only-b-consumed-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/094-only-b-consumed-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/094-only-b-consumed-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/095-only-b-consumed-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/095-only-b-consumed-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/095-only-b-consumed-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/095-only-b-consumed-desktop-darwin.png) |
 
 
 
@@ -1522,13 +1538,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 96. The saved public mat proves A remains zero and only B went from two to one
+## 97. The saved public mat proves A remains zero and only B went from two to one
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/095-only-b-proof-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/095-only-b-proof-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/095-only-b-proof-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/095-only-b-proof-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/096-only-b-proof-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/096-only-b-proof-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/096-only-b-proof-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/096-only-b-proof-desktop-darwin.png) |
 
 
 
@@ -1538,13 +1554,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 97. Return from the actual faction mat to the handed-off board
+## 98. Return from the actual faction mat to the handed-off board
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/096-mat-return-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/096-mat-return-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/096-mat-return-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/096-mat-return-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/097-mat-return-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/097-mat-return-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/097-mat-return-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/097-mat-return-desktop-darwin.png) |
 
 
 
@@ -1554,13 +1570,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 98. The full growth and handoff remain after reload
+## 99. The full growth and handoff remain after reload
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/097-growth-handoff-retained-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/097-growth-handoff-retained-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/097-growth-handoff-retained-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/097-growth-handoff-retained-desktop-darwin.png) |
+| [![phone](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/098-growth-handoff-retained-phone-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/098-growth-handoff-retained-phone-darwin.png) | [![desktop](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/098-growth-handoff-retained-desktop-darwin.png)](../../screenshots/manage-matching-supply-and-full-ore-yields-with-separate-controllers/098-growth-handoff-retained-desktop-darwin.png) |
 
 
 

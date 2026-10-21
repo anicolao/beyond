@@ -1,0 +1,46 @@
+{
+  "phase": "011",
+  "branch": "feat/jump-planning",
+  "base": "feat/fleet-management",
+  "baseHead": "9018b9f2476a942d16089160a8caf43c69ac0409",
+  "localUrl": "http://127.0.0.1:5206/",
+  "review": "/Users/anicolao/projects/games/beyond/tmp/local-jump-review/REVIEW.md",
+  "checks": {
+    "projectionTests": 6,
+    "projectionAssertions": 23,
+    "typesErrors": 0,
+    "typesWarnings": 0,
+    "sourcePolicy": "PASS",
+    "logs": {
+      "types": {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/jumps143-types9.log",
+        "sha256": "1c1ac57edb961236a615c2680e5d95e3baddee91c6d7618166089923f7f4deb4"
+      },
+      "projection": {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/jumps143-preview-current.log",
+        "sha256": "00c0924c76e5bec02b149d0f86999288fe08a67e699d08359ef5f342dd25236f"
+      },
+      "remote": {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/jumps143-remote-final2.log",
+        "sha256": "112b06f160dede6055f9c2c4cb9071704ad1cc40163bd4f7dca11b7243926a7e"
+      },
+      "sharedCorner": {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/jumps143-corner-final.log",
+        "sha256": "10ea69ab37dd674e5ecd01168df10c88fcbbfa4096faf5f2bc7123c7ccaa716e"
+      },
+      "keyboard": {
+        "path": "/Users/anicolao/projects/games/beyond/tmp/jumps143-keyboard-final.log",
+        "sha256": "da3c039e4ccf7d4b17fee2d89e0fb1897fd6676e0dbc1be8ab5edf79d90d041a"
+      }
+    }
+  },
+  "independentLocalAcceptance": false,
+  "baselineGeneration": false,
+  "rulesChanged": false,
+  "guardsChanged": false,
+  "existingServicesPreserved": true,
+  "phase012": "held",
+  "basePr": 12,
+  "basePrUrl": "https://github.com/anicolao/beyond/pull/12",
+  "basePublication": "Exact branch published,21 native object batches/temporary refs cleaned; CI/hosted pending"
+}

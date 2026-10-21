@@ -1,0 +1,104 @@
+{
+  "prompt": 159,
+  "status": "Full current-source local verification and selective reference audit PASS; Linux and matching-head hosted final gates pending",
+  "base": "65cb4a49befe99ea26ece29233ba32013db5dfd1",
+  "current_checks": {
+    "backend": "219PASS,3259assertions,17isolated suites; original5s budgets",
+    "tooling": "64PASS including3 byte-identical candidate-writer tests",
+    "guards": "51PASS, unchanged predicates and deadlines",
+    "types": "0errors/0warnings",
+    "policy": "PASS"
+  },
+  "candidates": {
+    "remote": "6/6 generation PASS; phone+desktop stable step sequences",
+    "shared_first": "3/4 generation PASS; actual2corner1440 endpoint-edge clipping repaired by2px inset",
+    "all_first": "12/14 generation PASS; remaining4cardinal desktop/4K assertion is in hidden Exploration budget, corrected to verify opening map and exact allowance/commit state in visible Route editor",
+    "not_final": "Independent whole-suite exact still pending; no generation claimed as comparison."
+  },
+  "new_helper_scope": "Generation only: skip disk write when full PNG bytes identical. Capture/readiness/layout/decode/timing unchanged; errors still fail. Independent pixel comparison branch untouched.",
+  "storage": {
+    "materialization": "8043 HEAD-matching macOS refs APFS-cloned;0mismatches/fallback; no accidental deletions",
+    "historical_evidence": "2831 PNGs safely reflinked after full-byte equality; names/bytes/mode/uid/gid/empty-xattrs/mtime preserved, attributed files skipped;6.67GB duplicated logical payload now shared",
+    "reindex": "1188 old semantic-step PNG paths APFS-primed for new counters before guarded generation; no acceptance implied"
+  },
+  "ci_separate": {
+    "PR12": "65cb static119189568119SUCCESS; browser11918956785016/118 with55pixel/46missing/one003shared4 native capture2048.236758ms; publisher119172247756503; skipped redundant native119189569950"
+  },
+  "phase012": "Authorized only after all local011 gates and publication; not begun.",
+  "services": "5206/9397/8297 retained; test-only8497/9497 and backend8597; no reviewer identities/rooms touched.",
+  "followup": {
+    "first_full": "129/132 generation; desktop0104cardinal missing explicit Route editor before optional pass; desktop/native0114cardinal recovery checks used hidden budget/options and short reader clipped its Prev route control. Failed logs/records preserved.",
+    "affected": "28/30 generation; remaining2cardinal checks corrected; subsequent target2 reached real short Routes clipping, not timing/pixel mismatch.",
+    "dense_fix": "40px reader had105px content. Apply accepted compact arrangement to dense cardinal only;44px controls, original guards, full initial route and nav fit640/720/1000/4K. Native images visually inspected.",
+    "endpoint": "Add actual full System face/complete rules/Escape exact opener and unchanged paid resources/allocated route to formal split stories.",
+    "next": "Fresh independent full132 exact is running, command has no snapshot update argument. Guard/source byte equality and final0error0warning type check verified; no local gate claimed yet.",
+    "cardinal_refresh": "4/4 fleet/jump cardinal generation passed, including native4K after explicit responsive navigation.",
+    "short_power": "Additional1280x640 four-seat power coverage exposed a59px heading-only reader and compact118px content in112px window. Remove duplicate dense heading/edit controls, reduce compact redundant padding/border; preserve44px actions and all text. Fresh own normal-UI native640/720/1000/4K guards pass; images inspected. Formal new steps check endpoint identity and all power rows within reader.",
+    "latest_generation": "11/14, preserved3 failures:2 actual compact4corner short-power clipping and1 native-to-dense navigation race in story. Narrow repairs underway with affected4 shared variants, then full independent132 exact required.",
+    "last_refresh": "After preserving short-power3/4 and its recovery visibility-race failure, target2 cardinal generation passed56s. Exact allowance/paid resources/ship IDs remain asserted; visible recovered editor follows immediately. Four-corner power captures pass unchanged guard640/720/1000/4K."
+  },
+  "first_independent_full_exact": {
+    "result": "130/132 in30.4m",
+    "failures": [
+      "007 four-cardinal desktop Cleo paid JumpPlan: dense budget/footer reference predates correction",
+      "011 two-corner desktop Final power: reference predates compact padding correction"
+    ],
+    "all_native_4k": "39/39PASS; original2s capture/120s story limits; no failed native archive adopted",
+    "history": "tmp/jumps159-first-full-exact-evidence and jumps159-final-exact.log retained",
+    "next": "Scoped approved current-platform reference refresh, then fresh full independent132 exact"
+  },
+  "scoped_refresh": {
+    "result": "4/4PASS in2.3m",
+    "scope": "007four-cardinal and011two-corner, desktop/native4K pairs",
+    "review": "Actual refreshed desktop images opened and inspected against intended dense/compact composition; no further source edits",
+    "comparison": "Fresh full132 exact2 running without update-snapshots"
+  },
+  "second_independent_full_exact": {
+    "status": "131/132 in30.6m; sole responsive010 recovery assertion failure preserved",
+    "failure": "Visible-then-enabled split check crossed responsive opening transition; the commit belongs to Route editor, not Exploration. Assert exact saved2-point budget and same actual balance plus visible editor/commit affordance, then open editor and retain enabled Commit proof. No production UI/policy/guard-predicate/deadline change.",
+    "next": "Preserve full run, rerun repaired existing journey and fresh full exact before local acceptance.",
+    "allNative4K": "39/39PASS again; no pixel/capture/story-budget failure"
+  },
+  "recovery_exact_proof": "2/2PASS35.0s; desktop/native4K, original references, no snapshot updates. Types0/0 and source policy pass after narrow story correction.",
+  "contract_audit_finding": {
+    "finding": "UX_DESIGN103 requires remaining allowance to stay visible; dense Exploration hid its budget. Found by actual before/after frame inspection.",
+    "fix": "Retain existing compact budget in dense Exploration; fit full map to short reader, preserving180px minimum and prior240px maximum. No gameplay or guard change.",
+    "preCorrectionJumpPlanSha256": "d0f8a63025b17204dd1089a745b1d2e301c83002d4be0bd89a26b94b6afdfb98",
+    "validation": "Local native screenshots/geometry before warranted reference refresh; in-flight exact3 static build continues unchanged and is not final evidence for this correction."
+  },
+  "third_independent_full_exact": {
+    "result": "131/132 in30.9m on pre-visible-budget static build",
+    "failure": "007four-cardinal native4K r4-ada-paid:70RGBA differences (61Playwright mismatch pixels), isolatedx1797..1821/y1159..1172 to original System thumbnail. No functional, clipping or deadline failure. Investigating before any reference change.",
+    "history": "tmp/jumps159-third-full-exact-evidence; jumps159-final-exact3.log; jumps159-exact3-small-diff.json",
+    "currentLocalCorrection": "Exploration retains visible budget; short corner map bands separated with unchanged canonical edges and44px controls; explicit formal Exploration frame added. Local map guards pass640/720/1000/4K, references not yet regenerated."
+  },
+  "current_map_correction": {
+    "local": "Budget visible and all node title/art/type/cube rows contained; guarded own ordinary four-seat cardinal/corner maps640/720/1000/4K pass. Original canonical IDs and edges retained.",
+    "formalTargeted": "Phone/desktop split candidates2/2PASS20.3s; explicit Exploration frame, exact6/9 public nodes and per-node scroll/client containment; first phone strict-selector ambiguity preserved and corrected by named planner navigation.",
+    "types": "0errors/0warnings after current production map correction",
+    "finalGate": "Full132 exact4 and final selective content audit PASS; no further unchanged local rerun needed.",
+    "space": "Available capacity recovered to6.2GiB before the current full candidate run; source/dependencies/evidence/auth/game data retained. Continue monitoring storage through refresh/comparison/staging.",
+    "publication": "No011 commit/push/new PR yet;012 not begun; persistent5206/9397/8297 unchanged.",
+    "formalRun": "Full132 current-platform candidate generation running; independent exact4 and final selective content audit follow only after successful generation.",
+    "fullGeneration": {
+      "result": "132/132PASS30.9m",
+      "records": 132,
+      "frames": 9141,
+      "generating": true,
+      "sourceFreeze": "70 hashes unchanged; current phone/desktop/cardinal/corner/native4K maps visually inspected",
+      "comparison": "Full independent exact4 follows; no comparison acceptance claimed from generation"
+    }
+  },
+  "final_independent_full_exact": {
+    "result": "132/132PASS31.2m",
+    "records": 132,
+    "frames": 9141,
+    "generating": false,
+    "new011Variants": 14,
+    "new011Frames": 1054,
+    "sourceFreeze": "All70 production/test/config/rules hashes unchanged",
+    "contentAudit": "7741 prior byte-identical;270 changed planner frames,76 new navigation frames; no unexpected changes; all8011 base frames accounted for",
+    "checks": "219backend/3259assertions,64tooling,51captureguards,types0/0,policy/builds/diffPASS",
+    "publication": "Localgate complete; commit/push/new stacked PR next; Linux exact/matching-head hosted remain pending,012 starts after publication"
+  }
+}

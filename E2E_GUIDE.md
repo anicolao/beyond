@@ -27,6 +27,8 @@ Adopt Pantheon's strict visual contract:
 
 Pin the actual browser image and architecture when the scaffold is built; do not copy a stale sibling version into a new lockfile. Keep reviewed macOS and Linux baselines separately. Linux CI and Linux baseline generation use the same immutable image and architecture. A runtime/image update needs reviewed fresh baselines and a complete comparison run.
 
+Explicit candidate generation leaves a baseline file untouched when the captured PNG bytes are identical. Every frame still completes the same capture/readiness/layout deadline and is recorded as generation. Any byte or length difference is written; filesystem errors fail the run. This conserves shared filesystem blocks without normalizing images, accepting mismatches, or replacing the required independent exact-comparison run.
+
 Capture finite motion only after it settles. Reduced-motion tests still prove the actual state transitions. Never substitute an animation lab state or skip rules effects for a screenshot.
 
 ## Viewport contract

@@ -597,17 +597,17 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 36. Plan an actual adjacent jump without premature movement or control
+## 36. Open the actual connected-destination view
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/035-laser-leg-0-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/035-laser-leg-0-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/035-laser-leg-0-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/035-laser-leg-0-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/035-laser-route-editor-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/035-laser-route-editor-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/035-laser-route-editor-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/035-laser-route-editor-desktop-darwin.png) |
 
 
 
-- [x] Plan an actual adjacent jump without premature movement or control
+- [x] Open the actual connected-destination view
 - [x] Canonical effects settle before capture.
 - [x] Any printed Action plan is ready.
 - [x] The rotated trade explanation stays above the opaque footer.
@@ -620,7 +620,7 @@ Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/036-laser-leg-1-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/036-laser-leg-1-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/036-laser-leg-1-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/036-laser-leg-1-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/036-laser-leg-0-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/036-laser-leg-0-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/036-laser-leg-0-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/036-laser-leg-0-desktop-darwin.png) |
 
 
 
@@ -637,7 +637,7 @@ Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/037-laser-leg-2-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/037-laser-leg-2-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/037-laser-leg-2-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/037-laser-leg-2-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/037-laser-leg-1-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/037-laser-leg-1-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/037-laser-leg-1-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/037-laser-leg-1-desktop-darwin.png) |
 
 
 
@@ -648,13 +648,30 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 39. The complete jump reaches Northern shipyard and offers its real outpost tracks
+## 39. Plan an actual adjacent jump without premature movement or control
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/038-ada-control-choice-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/038-ada-control-choice-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/038-ada-control-choice-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/038-ada-control-choice-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/038-laser-leg-2-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/038-laser-leg-2-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/038-laser-leg-2-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/038-laser-leg-2-desktop-darwin.png) |
+
+
+
+- [x] Plan an actual adjacent jump without premature movement or control
+- [x] Canonical effects settle before capture.
+- [x] Any printed Action plan is ready.
+- [x] The rotated trade explanation stays above the opaque footer.
+- [x] Public compact topology remains physically separated.
+- [x] The gameplay shell fits the actual viewport.
+
+## 40. The complete jump reaches Northern shipyard and offers its real outpost tracks
+
+Viewpoint: **Ada · separate host controller**.
+
+| phone · 393 × 852 | desktop · 1440 × 1000 |
+| --- | --- |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/039-ada-control-choice-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/039-ada-control-choice-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/039-ada-control-choice-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/039-ada-control-choice-desktop-darwin.png) |
 
 
 
@@ -665,13 +682,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 40. Ada controls Northern shipyard with an actual Food disc
+## 41. Ada controls Northern shipyard with an actual Food disc
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/039-ada-control-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/039-ada-control-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/039-ada-control-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/039-ada-control-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/040-ada-control-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/040-ada-control-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/040-ada-control-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/040-ada-control-desktop-darwin.png) |
 
 
 
@@ -682,13 +699,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 41. Ada completes production and hands off to Bora
+## 42. Ada completes production and hands off to Bora
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/040-ada-yard-handoff-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/040-ada-yard-handoff-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/040-ada-yard-handoff-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/040-ada-yard-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/041-ada-yard-handoff-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/041-ada-yard-handoff-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/041-ada-yard-handoff-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/041-ada-yard-handoff-desktop-darwin.png) |
 
 
 
@@ -699,13 +716,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 42. The independent next controller sees the canonical handoff
+## 43. The independent next controller sees the canonical handoff
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/041-ada-yard-next-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/041-ada-yard-next-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/041-ada-yard-next-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/041-ada-yard-next-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/042-ada-yard-next-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/042-ada-yard-next-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/042-ada-yard-next-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/042-ada-yard-next-desktop-darwin.png) |
 
 
 
@@ -716,13 +733,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 43. Bora opens the actual research and Action instrument
+## 44. Bora opens the actual research and Action instrument
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/042-bora-action-plan-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/042-bora-action-plan-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/042-bora-action-plan-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/042-bora-action-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/043-bora-action-plan-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/043-bora-action-plan-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/043-bora-action-plan-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/043-bora-action-plan-desktop-darwin.png) |
 
 
 
@@ -733,13 +750,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 44. Bora selects printed technology Actions
+## 45. Bora selects printed technology Actions
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/043-bora-action-kind-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/043-bora-action-kind-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/043-bora-action-kind-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/043-bora-action-kind-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/044-bora-action-kind-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/044-bora-action-kind-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/044-bora-action-kind-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/044-bora-action-kind-desktop-darwin.png) |
 
 
 
@@ -750,13 +767,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 45. Read Terraforming's actual research requirement, payment and exclusive pawn space
+## 46. Read Terraforming's actual research requirement, payment and exclusive pawn space
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/044-bora-action-face-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/044-bora-action-face-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/044-bora-action-face-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/044-bora-action-face-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/045-bora-action-face-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/045-bora-action-face-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/045-bora-action-face-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/045-bora-action-face-desktop-darwin.png) |
 
 
 
@@ -767,13 +784,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 46. The free printed Terraforming Action permits exactly four jumps shared by owned ships
+## 47. The free printed Terraforming Action permits exactly four jumps shared by owned ships
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/045-bora-four-jump-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/045-bora-four-jump-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/045-bora-four-jump-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/045-bora-four-jump-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/046-bora-four-jump-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/046-bora-four-jump-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/046-bora-four-jump-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/046-bora-four-jump-desktop-darwin.png) |
 
 
 
@@ -784,13 +801,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 47. Choose the second original level1 Sol ship
+## 48. Choose the second original level1 Sol ship
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/046-bora-sol-ship-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/046-bora-sol-ship-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/046-bora-sol-ship-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/046-bora-sol-ship-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/047-bora-sol-ship-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/047-bora-sol-ship-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/047-bora-sol-ship-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/047-bora-sol-ship-desktop-darwin.png) |
 
 
 
@@ -801,34 +818,17 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 48. Plan the first ship path while control remains unchanged
+## 49. Open the actual connected-destination view
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/047-bora-leg-0-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/047-bora-leg-0-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/047-bora-leg-0-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/047-bora-leg-0-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/048-bora-route-editor-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/048-bora-route-editor-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/048-bora-route-editor-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/048-bora-route-editor-desktop-darwin.png) |
 
 
 
-- [x] Plan the first ship path while control remains unchanged
-- [x] Canonical effects settle before capture.
-- [x] Any printed Action plan is ready.
-- [x] The rotated trade explanation stays above the opaque footer.
-- [x] Public compact topology remains physically separated.
-- [x] The gameplay shell fits the actual viewport.
-
-## 49. Plan the first ship path while control remains unchanged
-
-Viewpoint: **Bora · separate guest controller**.
-
-| phone · 1440 × 1000 | desktop · 393 × 852 |
-| --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/048-bora-leg-1-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/048-bora-leg-1-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/048-bora-leg-1-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/048-bora-leg-1-desktop-darwin.png) |
-
-
-
-- [x] Plan the first ship path while control remains unchanged
+- [x] Open the actual connected-destination view
 - [x] Canonical effects settle before capture.
 - [x] Any printed Action plan is ready.
 - [x] The rotated trade explanation stays above the opaque footer.
@@ -841,7 +841,7 @@ Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/049-bora-leg-2-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/049-bora-leg-2-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/049-bora-leg-2-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/049-bora-leg-2-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/049-bora-leg-0-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/049-bora-leg-0-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/049-bora-leg-0-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/049-bora-leg-0-desktop-darwin.png) |
 
 
 
@@ -852,13 +852,47 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 51. Allocate the remaining jump to the distinct Terraforming ship in Deep Space
+## 51. Plan the first ship path while control remains unchanged
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/050-bora-deep-ship-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/050-bora-deep-ship-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/050-bora-deep-ship-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/050-bora-deep-ship-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/050-bora-leg-1-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/050-bora-leg-1-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/050-bora-leg-1-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/050-bora-leg-1-desktop-darwin.png) |
+
+
+
+- [x] Plan the first ship path while control remains unchanged
+- [x] Canonical effects settle before capture.
+- [x] Any printed Action plan is ready.
+- [x] The rotated trade explanation stays above the opaque footer.
+- [x] Public compact topology remains physically separated.
+- [x] The gameplay shell fits the actual viewport.
+
+## 52. Plan the first ship path while control remains unchanged
+
+Viewpoint: **Bora · separate guest controller**.
+
+| phone · 1440 × 1000 | desktop · 393 × 852 |
+| --- | --- |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/051-bora-leg-2-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/051-bora-leg-2-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/051-bora-leg-2-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/051-bora-leg-2-desktop-darwin.png) |
+
+
+
+- [x] Plan the first ship path while control remains unchanged
+- [x] Canonical effects settle before capture.
+- [x] Any printed Action plan is ready.
+- [x] The rotated trade explanation stays above the opaque footer.
+- [x] Public compact topology remains physically separated.
+- [x] The gameplay shell fits the actual viewport.
+
+## 53. Allocate the remaining jump to the distinct Terraforming ship in Deep Space
+
+Viewpoint: **Bora · separate guest controller**.
+
+| phone · 1440 × 1000 | desktop · 393 × 852 |
+| --- | --- |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/052-bora-deep-ship-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/052-bora-deep-ship-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/052-bora-deep-ship-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/052-bora-deep-ship-desktop-darwin.png) |
 
 
 
@@ -869,13 +903,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 52. Both level1 ships will finish at the same actual shipyard
+## 54. Both level1 ships will finish at the same actual shipyard
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/051-bora-final-leg-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/051-bora-final-leg-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/051-bora-final-leg-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/051-bora-final-leg-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/053-bora-final-leg-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/053-bora-final-leg-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/053-bora-final-leg-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/053-bora-final-leg-desktop-darwin.png) |
 
 
 
@@ -886,13 +920,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 53. Equal2 power preserves Ada as the existing owner before decommission
+## 55. Equal2 power preserves Ada as the existing owner before decommission
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/052-tie-preserves-owner-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/052-tie-preserves-owner-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/052-tie-preserves-owner-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/052-tie-preserves-owner-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/054-tie-preserves-owner-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/054-tie-preserves-owner-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/054-tie-preserves-owner-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/054-tie-preserves-owner-desktop-darwin.png) |
 
 
 
@@ -903,13 +937,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 54. Bora completes production and hands off to Ada
+## 56. Bora completes production and hands off to Ada
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/053-bora-yard-handoff-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/053-bora-yard-handoff-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/053-bora-yard-handoff-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/053-bora-yard-handoff-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/055-bora-yard-handoff-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/055-bora-yard-handoff-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/055-bora-yard-handoff-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/055-bora-yard-handoff-desktop-darwin.png) |
 
 
 
@@ -920,13 +954,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 55. The independent next controller sees the canonical handoff
+## 57. The independent next controller sees the canonical handoff
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/054-bora-yard-next-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/054-bora-yard-next-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/054-bora-yard-next-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/054-bora-yard-next-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/056-bora-yard-next-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/056-bora-yard-next-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/056-bora-yard-next-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/056-bora-yard-next-desktop-darwin.png) |
 
 
 
@@ -937,13 +971,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 56. Ada opens the actual research and Action instrument
+## 58. Ada opens the actual research and Action instrument
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/055-ada-next-plan-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/055-ada-next-plan-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/055-ada-next-plan-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/055-ada-next-plan-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/057-ada-next-plan-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/057-ada-next-plan-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/057-ada-next-plan-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/057-ada-next-plan-desktop-darwin.png) |
 
 
 
@@ -954,13 +988,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 57. Ada selects ordinary gathering
+## 59. Ada selects ordinary gathering
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/056-ada-next-kind-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/056-ada-next-kind-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/056-ada-next-kind-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/056-ada-next-kind-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/058-ada-next-kind-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/058-ada-next-kind-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/058-ada-next-kind-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/058-ada-next-kind-desktop-darwin.png) |
 
 
 
@@ -971,13 +1005,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 58. Receive the printed gather resources before ordinary production
+## 60. Receive the printed gather resources before ordinary production
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/057-ada-next-gathered-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/057-ada-next-gathered-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/057-ada-next-gathered-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/057-ada-next-gathered-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/059-ada-next-gathered-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/059-ada-next-gathered-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/059-ada-next-gathered-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/059-ada-next-gathered-desktop-darwin.png) |
 
 
 
@@ -988,13 +1022,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 59. Trade replaces ordinary growth and Ore production without changing the balance
+## 61. Trade replaces ordinary growth and Ore production without changing the balance
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/058-decommission-trade-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/058-decommission-trade-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/058-decommission-trade-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/058-decommission-trade-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/060-decommission-trade-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/060-decommission-trade-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/060-decommission-trade-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/060-decommission-trade-desktop-darwin.png) |
 
 
 
@@ -1005,13 +1039,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 60. Inspect the named exchange without committing a resource
+## 62. Inspect the named exchange without committing a resource
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/059-control-ship-route-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/059-control-ship-route-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/059-control-ship-route-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/059-control-ship-route-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/061-control-ship-route-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/061-control-ship-route-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/061-control-ship-route-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/061-control-ship-route-desktop-darwin.png) |
 
 
 
@@ -1022,13 +1056,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 61. Inspect the exact ship, payment and public power/control change without committing
+## 63. Inspect the exact ship, payment and public power/control change without committing
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/060-control-ship-selected-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/060-control-ship-selected-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/060-control-ship-selected-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/060-control-ship-selected-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/062-control-ship-selected-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/062-control-ship-selected-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/062-control-ship-selected-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/062-control-ship-selected-desktop-darwin.png) |
 
 
 
@@ -1039,13 +1073,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 62. Decommission is saved once; the resulting outpost choice belongs to Bora
+## 64. Decommission is saved once; the resulting outpost choice belongs to Bora
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/061-control-transfer-pending-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/061-control-transfer-pending-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/061-control-transfer-pending-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/061-control-transfer-pending-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/063-control-transfer-pending-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/063-control-transfer-pending-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/063-control-transfer-pending-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/063-control-transfer-pending-desktop-darwin.png) |
 
 
 
@@ -1056,13 +1090,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 63. Ada observes public control but cannot place Bora’s disc
+## 65. Ada observes public control but cannot place Bora’s disc
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/062-observer-disabled-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/062-observer-disabled-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/062-observer-disabled-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/062-observer-disabled-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/064-observer-disabled-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/064-observer-disabled-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/064-observer-disabled-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/064-observer-disabled-desktop-darwin.png) |
 
 
 
@@ -1073,13 +1107,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 64. The separate Bora identity sees its own contextual continuation
+## 66. The separate Bora identity sees its own contextual continuation
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/063-bora-control-entry-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/063-bora-control-entry-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/063-bora-control-entry-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/063-bora-control-entry-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/065-bora-control-entry-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/065-bora-control-entry-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/065-bora-control-entry-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/065-bora-control-entry-desktop-darwin.png) |
 
 
 
@@ -1090,13 +1124,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 65. The actual responder chooses a real outpost without any discovery or reveal claim
+## 67. The actual responder chooses a real outpost without any discovery or reveal claim
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/064-bora-outpost-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/064-bora-outpost-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/064-bora-outpost-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/064-bora-outpost-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/066-bora-outpost-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/066-bora-outpost-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/066-bora-outpost-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/066-bora-outpost-desktop-darwin.png) |
 
 
 
@@ -1107,13 +1141,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 66. Reload retains the outpost responder and never replays the decommission
+## 68. Reload retains the outpost responder and never replays the decommission
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/065-bora-choice-retained-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/065-bora-choice-retained-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/065-bora-choice-retained-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/065-bora-choice-retained-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/067-bora-choice-retained-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/067-bora-choice-retained-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/067-bora-choice-retained-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/067-bora-choice-retained-desktop-darwin.png) |
 
 
 
@@ -1124,13 +1158,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 67. Reopen the same saved control-transfer decision
+## 69. Reopen the same saved control-transfer decision
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/066-bora-choice-reopened-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/066-bora-choice-reopened-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/066-bora-choice-reopened-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/066-bora-choice-reopened-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/068-bora-choice-reopened-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/068-bora-choice-reopened-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/068-bora-choice-reopened-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/068-bora-choice-reopened-desktop-darwin.png) |
 
 
 
@@ -1141,13 +1175,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 68. The outpost choice settles and returns the original actor to trading
+## 70. The outpost choice settles and returns the original actor to trading
 
 Viewpoint: **Bora · separate guest controller**.
 
 | phone · 1440 × 1000 | desktop · 393 × 852 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/067-control-complete-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/067-control-complete-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/067-control-complete-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/067-control-complete-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/069-control-complete-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/069-control-complete-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/069-control-complete-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/069-control-complete-desktop-darwin.png) |
 
 
 
@@ -1158,13 +1192,13 @@ Viewpoint: **Bora · separate guest controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 69. Reload retains the current identity, accepted exchanges and pending trading phase
+## 71. Reload retains the current identity, accepted exchanges and pending trading phase
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/068-control-trade-retained-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/068-control-trade-retained-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/068-control-trade-retained-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/068-control-trade-retained-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/070-control-trade-retained-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/070-control-trade-retained-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/070-control-trade-retained-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/070-control-trade-retained-desktop-darwin.png) |
 
 
 
@@ -1175,13 +1209,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 70. Open the same retained trade without duplicating a payment
+## 72. Open the same retained trade without duplicating a payment
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/069-control-trade-reopened-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/069-control-trade-reopened-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/069-control-trade-reopened-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/069-control-trade-reopened-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/071-control-trade-reopened-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/071-control-trade-reopened-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/071-control-trade-reopened-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/071-control-trade-reopened-desktop-darwin.png) |
 
 
 
@@ -1192,13 +1226,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 71. The original actor gains exactly one Population and pays exactly one Ore
+## 73. The original actor gains exactly one Population and pays exactly one Ore
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/070-exact-decommission-cost-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/070-exact-decommission-cost-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/070-exact-decommission-cost-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/070-exact-decommission-cost-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/072-exact-decommission-cost-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/072-exact-decommission-cost-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/072-exact-decommission-cost-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/072-exact-decommission-cost-desktop-darwin.png) |
 
 
 
@@ -1209,13 +1243,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 72. Inspect all twenty cubes in their current public locations
+## 74. Inspect all twenty cubes in their current public locations
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/071-trade-cycle-open-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/071-trade-cycle-open-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/071-trade-cycle-open-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/071-trade-cycle-open-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/073-trade-cycle-open-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/073-trade-cycle-open-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/073-trade-cycle-open-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/073-trade-cycle-open-desktop-darwin.png) |
 
 
 
@@ -1226,13 +1260,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 73. Forward Tab stays inside the native cube reader
+## 75. Forward Tab stays inside the native cube reader
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/072-trade-cycle-tab-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/072-trade-cycle-tab-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/072-trade-cycle-tab-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/072-trade-cycle-tab-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/074-trade-cycle-tab-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/074-trade-cycle-tab-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/074-trade-cycle-tab-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/074-trade-cycle-tab-desktop-darwin.png) |
 
 
 
@@ -1243,13 +1277,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 74. Reverse Tab also stays inside the native reader
+## 76. Reverse Tab also stays inside the native reader
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/073-trade-cycle-reverse-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/073-trade-cycle-reverse-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/073-trade-cycle-reverse-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/073-trade-cycle-reverse-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/075-trade-cycle-reverse-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/075-trade-cycle-reverse-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/075-trade-cycle-reverse-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/075-trade-cycle-reverse-desktop-darwin.png) |
 
 
 
@@ -1260,13 +1294,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 75. Escape restores the exact inspector opener without committing a trade
+## 77. Escape restores the exact inspector opener without committing a trade
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/074-trade-cycle-return-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/074-trade-cycle-return-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/074-trade-cycle-return-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/074-trade-cycle-return-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/076-trade-cycle-return-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/076-trade-cycle-return-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/076-trade-cycle-return-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/076-trade-cycle-return-desktop-darwin.png) |
 
 
 
@@ -1277,13 +1311,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 76. Finish trading passes to the next player without adding growth or Ore production
+## 78. Finish trading passes to the next player without adding growth or Ore production
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/075-control-finished-passed-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/075-control-finished-passed-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/075-control-finished-passed-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/075-control-finished-passed-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/077-control-finished-passed-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/077-control-finished-passed-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/077-control-finished-passed-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/077-control-finished-passed-desktop-darwin.png) |
 
 
 
@@ -1294,13 +1328,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 77. The public faction mat retains the final exact trade balance after handoff
+## 79. The public faction mat retains the final exact trade balance after handoff
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/076-control-finished-proof-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/076-control-finished-proof-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/076-control-finished-proof-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/076-control-finished-proof-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/078-control-finished-proof-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/078-control-finished-proof-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/078-control-finished-proof-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/078-control-finished-proof-desktop-darwin.png) |
 
 
 
@@ -1311,13 +1345,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 78. Escape returns from the actual mat to the handed-off board
+## 80. Escape returns from the actual mat to the handed-off board
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/077-control-finished-return-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/077-control-finished-return-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/077-control-finished-return-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/077-control-finished-return-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/079-control-finished-return-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/079-control-finished-return-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/079-control-finished-return-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/079-control-finished-return-desktop-darwin.png) |
 
 
 
@@ -1328,13 +1362,13 @@ Viewpoint: **Ada · separate host controller**.
 - [x] Public compact topology remains physically separated.
 - [x] The gameplay shell fits the actual viewport.
 
-## 79. Reload retains the finished trading turn and leaves no orphaned inspector
+## 81. Reload retains the finished trading turn and leaves no orphaned inspector
 
 Viewpoint: **Ada · separate host controller**.
 
 | phone · 393 × 852 | desktop · 1440 × 1000 |
 | --- | --- |
-| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/078-control-finished-restored-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/078-control-finished-restored-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/078-control-finished-restored-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/078-control-finished-restored-desktop-darwin.png) |
+| [![phone](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/080-control-finished-restored-phone-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/080-control-finished-restored-phone-darwin.png) | [![desktop](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/080-control-finished-restored-desktop-darwin.png)](../../screenshots/decommission-a-controlling-ship-and-resolve-the-actual-rival-outpost-with-separate-controllers/080-control-finished-restored-desktop-darwin.png) |
 
 
 
