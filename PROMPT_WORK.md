@@ -456,3 +456,13 @@ Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | 
 Prompt 112 | 8a063e14627321e4e3d6ea70390e02d79b7293ba57354d358f62cdd4ca749e4a | Carry exact emulator source readback through trade; preserve policy, original hook/test budgets and all reference/capture inputs.
 
 Prompt 123 | 7570576836119c35ecc52228c7761696bdcf616d9ed179d4308e1a3cc7f5b862 | Propagate exact emulator readback into accepted automation without application, policy, native-reference or capture-guard changes; CI proof remains pending.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Narrow optional SDK configuration before exact readback; restore clean checked-JavaScript types with all eight identity and fail-closed tests passing.
+
+Prompt 99 | dcfc592ddf0ea84f29a243934abad3eb74bc0f0af525130890b37a4deb9dc8fb | Propagate checked-JavaScript readback narrowing through rival research; preserve exact source checks, SDK contexts, assertions and unchanged deadlines.
+
+Prompt 100 | c3daf6e6c5c20ea323d8b7761ed3c9c209532ae67fbe5b475580e2b0030235a3 | Propagate checked-JavaScript readback narrowing through production; preserve exact source checks, SDK contexts, assertions and unchanged deadlines.
+
+Prompt 112 | 8a063e14627321e4e3d6ea70390e02d79b7293ba57354d358f62cdd4ca749e4a | Propagate checked-JavaScript readback narrowing through trade; preserve exact source checks, SDK contexts, assertions and unchanged deadlines.
+
+Prompt 123 | 7570576836119c35ecc52228c7761696bdcf616d9ed179d4308e1a3cc7f5b862 | Propagate checked-JavaScript readback narrowing through automation; preserve exact source checks, SDK contexts, assertions and unchanged deadlines.

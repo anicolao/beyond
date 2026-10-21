@@ -7,12 +7,14 @@ export function backendRulesInitializer(initialize=initializeTestEnvironment,req
  return async function initializeBackendRules(config){
   const {rules,...firestore}=config.firestore??{};
   if(typeof rules!=='string'||!rules)throw new Error('Backend suites must supply the exact source rules.');
-  if(!/^(127\.0\.0\.1|localhost)$/.test(firestore.host??'')||!Number.isInteger(firestore.port)||firestore.port<1024||firestore.port>65535)throw new Error('Backend source readback requires an explicit local emulator endpoint.');
-  if(!/^[a-z][a-z0-9-]*$/.test(config.projectId))throw new Error('Backend source readback requires an explicit project.');
+  if(!('host' in firestore)||!('port' in firestore))throw new Error('Backend source readback requires an explicit local emulator endpoint.');
+  if(typeof firestore.host!=='string'||typeof firestore.port!=='number'||!/^(127\.0\.0\.1|localhost)$/.test(firestore.host??'')||!Number.isInteger(firestore.port)||firestore.port<1024||firestore.port>65535)throw new Error('Backend source readback requires an explicit local emulator endpoint.');
+  if(typeof config.projectId!=='string'||!/^[a-z][a-z0-9-]*$/.test(config.projectId))throw new Error('Backend source readback requires an explicit project.');
   // Remain within the original external5s hook budget. No retries or fresh
   // per-request deadline can extend the caller's initialization allowance.
   const response=await request(`http://${firestore.host}:${firestore.port}/emulator/v1/projects/${config.projectId}:securityRules`,{signal:AbortSignal.timeout(5000)});
   if(!response.ok&&response.status!==404)throw new Error(`Backend exact-source readback failed (${response.status}).`);
+  /** @type {{rules?:{files?:{content?:string}[]};issues?:{severity?:string}[]}|undefined} */
   const installed=response.ok?await response.json():undefined;
   const same=installed?.rules?.files?.length===1&&installed.rules.files[0].content===rules&&!(installed.issues??[]).some(issue=>issue.severity==='ERROR');
   // A mismatch always supplies the full requested source to the real compiler.
