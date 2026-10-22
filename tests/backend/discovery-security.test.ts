@@ -1,5 +1,5 @@
 import {initializeBackendTestEnvironment} from '../../scripts/backend-rules-environment.mjs';
-import {beforeAll,afterAll,test,expect} from 'bun:test';
+import {beforeEach,afterEach,test,expect} from 'bun:test';
 import {assertFails,assertSucceeds,type RulesTestEnvironment} from '@firebase/rules-unit-testing';
 import {doc,getDoc,writeBatch,updateDoc,setDoc} from 'firebase/firestore';
 import {readFileSync} from 'node:fs';
@@ -11,14 +11,20 @@ import {initialDiscovery} from '../../src/lib/game/discovery';
 import type {JumpLeg} from '../../src/lib/game/discovery-movement';
 import {startingSetup} from '../../src/lib/game/setup';
 const start={version:'basic-2020-v1' as const,seed:'11111111-1111-4111-8111-000000000007'};
+// Release every completed test’s SDK clients, retaining emulator data and exact policy.
+// Test and hook deadlines remain the original five seconds.
 let env:RulesTestEnvironment;
-beforeAll(async()=>{env=await initializeBackendTestEnvironment({projectId:'demo-beyond',firestore:{host:'127.0.0.1',port:Number(process.env.DISCOVERY_RULES_TEST_PORT??process.env.RULES_TEST_PORT??8197),rules:readFileSync(process.env.RULES_SOURCE_PATH??'firestore.rules','utf8')}});});
-afterAll(async()=>{await env?.cleanup();});
+beforeEach(async()=>{env=await initializeBackendTestEnvironment({projectId:'demo-beyond',firestore:{host:'127.0.0.1',port:Number(process.env.DISCOVERY_RULES_TEST_PORT??process.env.RULES_TEST_PORT??8197),rules:readFileSync(process.env.RULES_SOURCE_PATH??'firestore.rules','utf8')}});});
+afterEach(async()=>{await env?.cleanup();});
 async function fixture(seed=start.seed,settings=defaultSettings){
  const gameStart={...start,seed};
  const id=crypto.randomUUID(),host=`discovery-host-${id}`,guest=`discovery-guest-${id}`,code=Array.from(crypto.getRandomValues(new Uint8Array(5)),n=>String.fromCharCode(65+n%26)).join('');let current:RemoteRoom|undefined;
  const make=(extra:Partial<RemoteEvent>):RemoteEvent=>({schema:1,type:'remote-created',actorUid:host,revision:current?current.revision+1:0,commandId:crypto.randomUUID(),position:'p1',name:'Ada',ready:false,code,settings,configVersion:current?current.configVersion+1:0,...extra});
- const write=async(e:RemoteEvent,after:RemoteRoom,uid=e.actorUid)=>{const db=env.authenticatedContext(uid).firestore(),batch=writeBatch(db);batch.set(doc(db,`games/${id}`),after);batch.set(doc(db,`games/${id}/events/${e.commandId}`),e);if(!current)batch.set(doc(db,`invites/${code}`),{gameId:id,ownerUid:host});return batch.commit();};
+ // Reuse the real SDK connection for each distinct controller in this room.
+ // Every command still executes the same atomic batch and authorization checks.
+ const clients=new Map<string,ReturnType<ReturnType<RulesTestEnvironment['authenticatedContext']>['firestore']>>();
+ const database=(uid:string)=>{let db=clients.get(uid);if(!db){db=env.authenticatedContext(uid).firestore();clients.set(uid,db);}return db;};
+ const write=async(e:RemoteEvent,after:RemoteRoom,uid=e.actorUid)=>{const db=database(uid),batch=writeBatch(db);batch.set(doc(db,`games/${id}`),after);batch.set(doc(db,`games/${id}/events/${e.commandId}`),e);if(!current)batch.set(doc(db,`invites/${code}`),{gameId:id,ownerUid:host});return batch.commit();};
  const append=async(extra:Partial<RemoteEvent>)=>{const e=make(extra),after=applyRemote(current,e);try{await assertSucceeds(write(e,after));}catch(error){throw new Error(`Rejected fixture setup ${e.type} revision${e.revision}`,{cause:error});}current=after;};
  const positions=['p1','p2','p3','p4'].slice(0,settings.capacity),controllers:Record<string,string>={p1:host,p2:guest,p3:`discovery-third-${id}`,p4:`discovery-fourth-${id}`},names=['Ada','Bora','Cleo','Dara'],factions=['nishida','zheng','disciples','united-nations'];
  await append({});for(let i=1;i<positions.length;i++)await append({type:'remote-seat-claimed',actorUid:controllers[positions[i]],position:positions[i] as 'p2',name:names[i]});

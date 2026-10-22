@@ -1,0 +1,196 @@
+{
+  "reviewerInstruction": "Prompt189",
+  "base": "feat/outpost-control at1a7f02100fdf20076317d3cfa6804bc486ad7ebf",
+  "preview": "http://127.0.0.1:5208/",
+  "formalGeneration": {
+    "log": "/Users/anicolao/projects/games/beyond/tmp/colonies189-candidates4.log",
+    "variants": 20,
+    "frames": 2000,
+    "viewportParity": "PASS",
+    "inactiveIterationImagesPreserved": 245,
+    "audit": "/Users/anicolao/projects/games/beyond/tmp/colonies189-candidate-audit.json"
+  },
+  "fullExact": {
+    "status": "PASS",
+    "expectedJourneys": 184,
+    "log": "/Users/anicolao/projects/games/beyond/tmp/colonies189-final-exact.log",
+    "commandRecord": "/Users/anicolao/projects/games/beyond/tmp/colonies189-final-exact-command.json",
+    "updatesSnapshots": false,
+    "sourceFrozen": "/Users/anicolao/projects/games/beyond/tmp/colonies189-final-source.json",
+    "journeys": 184,
+    "frames": 13399,
+    "duration": "47.0m",
+    "exitCode": 0,
+    "storyAudit": "/Users/anicolao/projects/games/beyond/tmp/colonies189-final-story-audit.json",
+    "everyRecordGeneratingFalse": true,
+    "matchingViewportStepIds": true,
+    "allImagesExist": true,
+    "colonyJourneys": 20,
+    "colonyFrames": 2000
+  },
+  "localChecks": {
+    "backend": {
+      "tests": 263,
+      "assertions": 3588,
+      "failed": 0,
+      "suites": 24,
+      "log": "/Users/anicolao/projects/games/beyond/tmp/colonies189-backend-all.log"
+    },
+    "tooling": 64,
+    "captureGuards": 51,
+    "types": "0 errors / 0 warnings",
+    "sourcePolicy": "PASS",
+    "staticBuilds": "PASS production and preview builds from exact source"
+  },
+  "limits": {
+    "captureAndOperationMs": 2000,
+    "storyMs": 120000,
+    "backendAndHookMs": 5000,
+    "maxDiffPixels": 0,
+    "threshold": 0,
+    "retries": 0,
+    "guardFilesChanged": false
+  },
+  "scope": {
+    "ordinaryUI": [
+      "real setup and preparatory research/movement",
+      "exact power and legal upgraded overpayment",
+      "printed costs, ordered Supply returns and actual rival exile",
+      "replacement public before extra-disc choice",
+      "owner-only mixed specialty and sole-yard printed ship bonus",
+      "reload, 20-cube conservation, disc exposure, automation0, permanent register",
+      "full-card inspection, named scroll reader and exact opener focus"
+    ],
+    "integrationSecurityOnly": [
+      "matching-deck fallback and both-deck exhaustion",
+      "attached location removal without refill",
+      "solar retention",
+      "permanent placeholders",
+      "Android/Terranova/Guild costs and exceptions",
+      "maximal settlement/exile and atomic document/controller denials"
+    ],
+    "availableSystemBenefits": 12,
+    "unsupportedEffects": "Blocked before payment, full printed rules inspectable; no invented result. Personal technology014, distinct effect families016; passive endgame data only. WISE edition-name limitation retained."
+  },
+  "preservedFailureRuns": [
+    "/Users/anicolao/projects/games/beyond/tmp/colonies189-phone-candidates1.log",
+    "/Users/anicolao/projects/games/beyond/tmp/colonies189-candidates2.log",
+    "/Users/anicolao/projects/games/beyond/tmp/colonies189-candidates3.log"
+  ],
+  "newCompactResponder": {
+    "finding": "Formal guard found previously unreviewed corner mixed-disc overflow; narrow compact correction only. Fresh diagnostics and formal images visually inspected locally; independent evidence review remains required.",
+    "diagnosticDirectory": "/Users/anicolao/projects/games/beyond/tmp/local-colony-review/round189-corner-mixed",
+    "room": "http://127.0.0.1:5208/?table=0fc91eb4-e320-4bb0-aec5-beb1e6e6038e"
+  },
+  "PR14": {
+    "head": "1a7f02100fdf20076317d3cfa6804bc486ad7ebf",
+    "static": "PASS",
+    "docs": "PASS",
+    "comparison": "FAIL16/164:56pixel,92missing references; no accepted cohort",
+    "nativeGeneration": "FAIL159/164:two2000ms capture failures and three120000ms story deadlines; no accepted cohort",
+    "publisher": "FAIL exact-source503, frozenPR5 diagnostic200; no fallback",
+    "hostedAccepted": false,
+    "latestChecks": [
+      {
+        "link": "https://github.com/anicolao/beyond/actions/runs/39708605168/job/119594352475",
+        "name": "generate-candidates",
+        "state": "FAILURE"
+      },
+      {
+        "link": "https://github.com/anicolao/beyond/actions/runs/39708605196/job/119594351938",
+        "name": "documentation",
+        "state": "SUCCESS"
+      },
+      {
+        "link": "https://github.com/anicolao/beyond/actions/runs/39708605168/job/119594352353",
+        "name": "browser-comparison",
+        "state": "FAILURE"
+      },
+      {
+        "link": "https://github.com/anicolao/beyond/actions/runs/39708605168/job/119594352189",
+        "name": "static-and-rules",
+        "state": "SUCCESS"
+      },
+      {
+        "link": "https://github.com/anicolao/beyond/actions/runs/39708605167/job/119594352411",
+        "name": "publish",
+        "state": "FAILURE"
+      },
+      {
+        "link": "https://github.com/anicolao/beyond/actions/runs/39708605703/job/119594355583",
+        "name": "stage",
+        "state": "SKIPPED"
+      }
+    ],
+    "nativeStep": {
+      "status": "completed",
+      "conclusion": "failure",
+      "job": 119594352475
+    },
+    "reviewerCheckpoint190": {
+      "instruction": "Prompt190 (reviewer-authored)",
+      "browserJob": 119594352353,
+      "passed": 16,
+      "failed": 148,
+      "missingLinuxSnapshots": 92,
+      "pixelMismatchErrors": 56,
+      "reviewerLog": "/tmp/beyond-pr14-linux-review.log",
+      "retainedLog": "/Users/anicolao/projects/games/beyond/tmp/colonies189-pr14-linux.log",
+      "nativeJob": 119594352475,
+      "nativeStatus": "Explicit job-step readback: test:e2e:update in_progress; artifact upload pending. No accepted cohort.",
+      "disposition": "Separate failed012 final gate; no reference adoption, guard changes or duplicate013 full run."
+    },
+    "nativeCheckpoint193": "docs/e2e/OUTPOST_NATIVE_CHECKPOINT_193.json"
+  },
+  "publicationHeld": false,
+  "phase014Held": false,
+  "merged": false,
+  "finalAudits": {
+    "frozenSourceFiles": 177,
+    "sourceChangedDuringExact": false,
+    "all2000ColonyReferenceBytesUnchanged": true,
+    "walkthroughLinks": 4010,
+    "missingLinks": 0,
+    "deletedTrackedFiles": 0,
+    "priorPhaseReferenceUpdates": 0,
+    "inactiveIterationImagesPreserved": 245
+  },
+  "localGate": "LOCAL ACCEPTANCE granted by Reviewer192: final184/184 exact, audited evidence and required checks independently verified.",
+  "reviewerCheckpoint191": {
+    "instruction": "Prompt191 (reviewer-authored)",
+    "scopedVisualAcceptance": [
+      "round189-corner-mixed/pending-disc-1280x640.png",
+      "round189-corner-mixed/pending-disc-3840x2160.png"
+    ],
+    "scope": "Corrected corner responder only; original candidates2 remains pre-fix evidence.",
+    "phoneFailureDisposition": [
+      "Initial new assertion expected 1 ship; existing UI says 1 ships. Assertion corrected to actual existing UI.",
+      "Two reused isolated test-room invitation collisions corrected by test-only document reset; live backend and Auth identities untouched."
+    ],
+    "cornerFailureDisposition": "Four candidate3 assertions expected an upright ship button in the turned reader; corrected to assert actual selected ship article identity/level/location.",
+    "subsequentVerification": "Entire corrected candidate4:20/20; independent current-source full exact184/184 including both remote phone and all8 corner variants.",
+    "guards": "Unchanged; no duplicate full run, copies or reference generation for this delayed checkpoint.",
+    "remainingGate": "Independent final evidence review before013 publication or014."
+  },
+  "publicationStatus": "Authorized; storage restored by Reviewer194, publication in progress with bounded transport.",
+  "finalAcceptance": "Pending required Linux CI and independently verified matching-head hosted preview.",
+  "reviewerCheckpoint192": {
+    "instruction": "Prompt192 (reviewer-authored)",
+    "localAcceptance": true,
+    "publication": "Commit/push013 feat/colonization; PR base feat/outpost-control exact1a7f021",
+    "nextPhase": "After committed013, begin014 on a new stacked branch; local preview first; no merge."
+  },
+  "publicationStorageBlocker": {
+    "acceptedPNGs": 2000,
+    "rawBytes": 6078015518,
+    "existingGitObjects": 232,
+    "missingGitObjects": 1768,
+    "missingObjectRawBytes": 4892954574,
+    "freeBytesAtCheck": 544174080,
+    "evidence": "/Users/anicolao/projects/games/beyond/tmp/colonies192-publication-storage.json",
+    "action": "Requested15\u201320GiB free or writable alternate volume; no evidence/user files/dependencies deleted.",
+    "personalTechnologyAudit": "/Users/anicolao/projects/games/beyond/tmp/personal192-source-audit.json",
+    "resolvedBy": "Reviewer194:Data volume rechecked17GiB free; preserve historical blocker measurements.",
+    "freeBytesBeforeStaging": 18493038592
+  }
+}

@@ -1116,3 +1116,52 @@ Reviewer23:50: Independently viewed fresh MapMiniature source captures phone1792
 Reviewer-authored phase012 local acceptance, stacked publication and phase013 implementation release:
 
 Reviewer01:10: Phase012 LOCAL ACCEPTANCE granted. Independent live outpost flows, remote/shared/corner/4K collateral and new formal3-player079/4-player092 phone Rift views satisfy local review. Independently confirmed full160/160 plus affected18/18, reporter parity/links, unchanged111 production files and1058 prior discovery frames; supporting types/builds/backend/tooling/51guards pass. Prior23:15 and23:50 messages are historical and now closed by182/183; preserve failure evidence, do not restart resolved iterations. Commit/push012 feat/outpost-control, open stacked PR against feat/jump-planning, report URL/head. Then begin013 Establish a colony on a new branch stacked on committed012 while Linux exact and hosted gates finish. Review UX06-colonization and source rules before implementation; real ordered settlement/returns/exile/refill/disc/bonus, deck exhaustion, no duplicate gain-control bonus, canonical persistence/mode isolation. Keep5207 review server; new phase persistent server. Final012 acceptance remains pending Linux checks and independently verified matching-head hosted preview. Track older PR13 compiler503/CI separately; no diagnostic rules deployment, no merges. Log this as reviewer-authored.
+
+## Prompt 187: Regression Reconciliation
+
+Reviewer-authored continuation, prior failure review and separate publisher gate:
+
+Reviewer03:24: Resume current013 work when workspace routing reconnects; preserve existing progress and original limits. New independently verified PR14 publisher39708605167 failed03:18: exact118531-byte rules d71de365... test HTTP503; frozenPR5 control200. Same priorPR13 compiler blocker, not a hosted pass; no fallback rules deployment. Remaining PR14 jobs still queued. Also independently extracted colonies186-backend-all1 failures: printed technology Action four solar arrivals paid-plan test, and integration all outposts precede simultaneous owner-ordered gain bonuses. Resolve and verify affected regressions before013 local acceptance, then continue canonical planner UI on5208. PR14 attached and local012acceptance remains; finalLinux/hosted pending. No duplicate full runs without reason, no merges. Log reviewer-authored.
+
+## Prompt 188: Phone Planner Density
+
+Reviewer-authored visual finding and local iteration instruction:
+
+Reviewer04:44: Independently inspected round186-remote-phone initial/acquired images and remote-replay2 PASS. Phone planner is not visually accepted: at393x852 only Ship1 is fully visible, Ship2 clipped, because header/action selectors/world block occupy most viewport above fixed receipt/footer. Compact header and selector spacing, shrink the world summary while preserving art/title/full-card access, and reclaim receipt/footer whitespace so several selectable ships and selected/required power can be read together. Preserve semantic touch sizes and scroll access for large fleets. Acquired production image is readable. Still need independent live flow, selected/overpay/exile intermediate phone states and shared orientations before013 local acceptance; no014/baseline churn yet. Log as reviewer-authored; no duplicate full backend run solely for this layout feedback.
+
+## Prompt 189: Colony Validation Release
+
+Reviewer-authored scoped local visual/functional acceptance and formal validation release:
+
+Reviewer05:28: Scoped phase013 local VISUAL/FUNCTIONAL acceptance granted for reviewed colony UI. Independently played own normal random shared room5860f561-1e1d-41b7-abc1-39a86e411449 via CUA: researchTerraforming, all3ships toBarnard, legal trades to3Ore1Pop, rivalBora arrival, exact3power settlement. Verified cost,3returns/Supply overflow, rivalexile, newly revealedProcyon, retained+additionalFood discs, automation0, exact1Pop2Ore printedbonus, Production, reload and permanent register. Revised188phone density and overpay/exile images, remote multi-specialty/observer and guarded rotated evidence reviewed. Proceed formal013 illustrated TestStepHelper stories/current-source exact macOS and required local checks with unchanged guards; no publication/014 until passing required local checks and reviewer check of evidence. Preserve source limitations explicitly, no fake unsupported effects. PR14 publisher503/Linux gates remain outstanding separately. Do not merge. Log reviewer-authored.
+
+
+## Prompt 190: Outpost Linux Checkpoint
+
+Reviewer-authored final012 CI failure and continued013 validation instruction:
+
+Reviewer05:31 CI update: PR14 exact head1a7f021 Linux browser job119594352353 nowFAILED:16passed148failed, independently counted92missing Linux snapshots and56pixel mismatch errors from job log /tmp/beyond-pr14-linux-review.log. Documentation nowPASS;staticPASS;publisher503unchanged;candidate generation stillpending. Track this failed final012gate separately, inspect eventual successful candidate evidence before adoption; never adopt failed-run references or weaken guards. Continue authorized013formal stories/localchecks; no duplicate unchanged full run. Log reviewer-authored.
+
+## Prompt 191: Corner Responder Acceptance
+
+Reviewer-authored scoped corner responder acceptance and continued formal validation:
+
+Reviewer05:42: Independently inspected round189-corner-mixed pending-disc-1280x640.png and pending-disc-3840x2160.png. Scoped visual acceptance for corrected corner responder: acquired Wolf359, revealed Sirius inspection, Food/Ore choices and subsequent ship benefit are contained/readable in both. Original candidates2 remains pre-fix evidence, not acceptance. Continue corrected targeted phone/corner checks then required current-source exact/full local checks with unchanged guards; resolve phone failures as well. No013 publication or014 until passing checks and reviewer evidence check. Preserve failed evidence; avoid redundant large copies given disk pressure. Prior05:31 PR14 message remains queued; no need to duplicate its work.
+
+## Prompt 192: Personal Technology Release
+
+Reviewer-authored phase013 local acceptance, stacked publication and phase014 release:
+
+Reviewer06:57: Phase013 LOCAL ACCEPTANCE granted. Independently verified final-exact184/184 PASS47.0m, final audit184variants13399frames including20colony/2000frames, generatingFalse and all image links/parity; all177 frozen source hashes match. Supporting24backend suites0failed,64tooling,51guards,types0/0,policyPASS verified. Earlier independent random live settlement/reload/register and corrected phone/corner/4K visual reviews stand. Commit/push013 feat/colonization and open new PR based on feat/outpost-control exact1a7f021; report head/URL. Then explicitly begin014 Use a personal technology on a NEW branch stacked on reviewed013 while013 CI/hosted verification finish. Preserve source-reviewed rules, canonical persistence and identity isolation; ordinary colony acquisition, immediate benefit, exclusive personal action/no cube/copy restrictions/scoring. Persistent local review first; no invented effects. Track012/013 Linux and hosted gates separately; address/propagate failures without weakening guards or adopting failed candidates. No phase FINAL acceptance until matching hosted preview and required CI pass. Never merge. Log as reviewer-authored; do not duplicate human prompts.
+
+## Prompt 193: Native Candidate Failure
+
+Reviewer-authored PR14 failed native cohort and read-only investigation instruction:
+
+Reviewer07:22 CI update: independently verified PR14 native candidate job119594352475 completedFAIL159passed5failed1.6h; log /tmp/beyond-pr14-candidate-review.log. Do not adopt this failed cohort. New pull_request run39708605667 at same head1a7f021 is queued (browser119692435931,candidates119692436215,static119692436259); not a successful retry. Publisher503 unchanged. Storage still440MiB; do not stage or discard evidence. Log this new gate result and inspect failure details read-only while awaiting storage; avoid duplicate runs.013localacceptance and authorized publication then stacked014 remain valid once storage resolved. Nevermerge.
+
+## Prompt 194: Storage Publication Resume
+
+Reviewer-authored storage update and authorized stacked publication continuation:
+
+Reviewer07:36 storage update: independent df now reports17GiB free (previous338MiB). Recheck actual Data-volume capacity and safely resume already authorized013 commit/push/new PR based on feat/outpost-control1a7f021, using bounded transport if necessary and preserving all accepted source/PNG bytes, failed evidence, services and adequate disk headroom. Once published, begin014 on a NEW branch stacked on reviewed013 as authorized06:57; report PR/head so supervisor can attach. Local013 acceptance stands. Track012/013 CI/hosted gates separately, never merge or weaken guards. Log as reviewer-authored.

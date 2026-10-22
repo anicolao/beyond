@@ -1,3 +1,4 @@
+import type {Colony,ColonyStep} from './colonization';
 import type {AchievementClaim} from './achievements';
 import type {BonusEffect} from './discovery-effects';
 import {canonicalCard} from '../cards/catalog';
@@ -9,6 +10,7 @@ export type DiscoveryRecord={slot:string;event:string;type?:TechnologyType;revea
 export type ResearchReservation={position:string;slot:string};
 export type RevealedEvent={id:string;slot:string;resolved:boolean;target?:string;choice?:string;rolls?:{position:string;face:number;attempts:number}[]};
 export type DiscoveryChoice=
+ | ColonyStep
  | {kind:'event';event:string;responder:string;slot:string;stage?:string;value?:string;face?:number;rolls?:number}
  | {kind:'type';responder:string;slot:string;types:TechnologyType[]}
  | {kind:'candidate';responder:string;slot:string;cards:string[];revealed:string[];type:TechnologyType}
@@ -23,10 +25,10 @@ export type DiscoveryChoice=
  | {kind:'event-complete';responder:string;event:string}
  | {kind:'resume';responder:string;card?:string;slot?:string;event?:string;returnTo?:'production'|'trade'};
 /** Internal canonical state. Deck order is deliberately absent from PublicDiscovery. */
-export type DiscoveryState={jumpControlChecks?:DiscoveryChoice[];deckII:string[];records:DiscoveryRecord[];technologies:{slot:string;card:string}[];events:RevealedEvent[];guilds:string[];queue:DiscoveryChoice[];reservations:ResearchReservation[];revealBoundary?:{turn:number;reason:'Event reveal'|'Technology reveal'};seed:string;achievements:string[];claims:AchievementClaim[];basis:string[];eventDeck:string[];cursor:number;sequence:number;rollIndex:number;systems:{slot:string;card:string;parent:string}[];systemDecks:{A:string[];B:string[]};systemBasis:Record<string,string>;outposts:Record<string,{owner:string;track:'food'|'ore';placeholder?:boolean}>;industry:string[];powers:Record<string,Record<string,number>>;completed?:{turn:number;card:string}};
+export type DiscoveryState={colonies?:Colony[];jumpControlChecks?:DiscoveryChoice[];deckII:string[];records:DiscoveryRecord[];technologies:{slot:string;card:string}[];events:RevealedEvent[];guilds:string[];queue:DiscoveryChoice[];reservations:ResearchReservation[];revealBoundary?:{turn:number;reason:'Event reveal'|'Technology reveal'|'System reveal'};seed:string;achievements:string[];claims:AchievementClaim[];basis:string[];eventDeck:string[];cursor:number;sequence:number;rollIndex:number;systems:{slot:string;card:string;parent:string}[];systemDecks:{A:string[];B:string[]};systemBasis:Record<string,string>;outposts:Record<string,{owner:string;track:'food'|'ore';placeholder?:boolean}>;industry:string[];powers:Record<string,Record<string,number>>;completed?:{turn:number;card:string}};
 export type PublicDiscovery=Omit<DiscoveryState,'deckII'|'seed'|'systemDecks'|'basis'|'eventDeck'|'achievements'|'rollIndex'|'systemBasis'|'powers'|'jumpControlChecks'>&{powerReady?:boolean;powerPositions?:string[]};
 export function publicDiscovery(state:DiscoveryState,count?:number):PublicDiscovery{
- return JSON.parse(JSON.stringify({powerReady:count!==undefined&&Object.values(state.powers??{}).filter(power=>'*' in power).length===count,powerPositions:Object.entries(state.powers??{}).filter(([,power])=>'*' in power).map(([position])=>position),records:state.records,technologies:state.technologies,events:state.events,guilds:state.guilds,queue:state.queue,reservations:state.reservations,...(state.revealBoundary?{revealBoundary:state.revealBoundary}:{}),claims:state.claims??[],cursor:state.cursor,sequence:state.sequence,systems:state.systems,outposts:state.outposts,industry:state.industry,...(state.completed?{completed:state.completed}:{})}));
+ return JSON.parse(JSON.stringify({...((state.colonies?.length)?{colonies:state.colonies}:{}),powerReady:count!==undefined&&Object.values(state.powers??{}).filter(power=>'*' in power).length===count,powerPositions:Object.entries(state.powers??{}).filter(([,power])=>'*' in power).map(([position])=>position),records:state.records,technologies:state.technologies,events:state.events,guilds:state.guilds,queue:state.queue,reservations:state.reservations,...(state.revealBoundary?{revealBoundary:state.revealBoundary}:{}),claims:state.claims??[],cursor:state.cursor,sequence:state.sequence,systems:state.systems,outposts:state.outposts,industry:state.industry,...(state.completed?{completed:state.completed}:{})}));
 }
 export function initialDiscovery(seed:string,count:PlayerCount,turn:number,achievements:readonly string[]=['transcendence','empire','technologist','warlord']):DiscoveryState{
  const decks=setupDecks(seed,count);const systemBasis=Object.fromEntries([...decks.startingA.map((card,i)=>[`a-${i+1}`,card]),...decks.systemsB.slice(0,2).map((card,i)=>[`b-${i+1}`,card])]);return {seed,achievements:[...achievements],claims:[],basis:decks.technologies.I,eventDeck:decks.events.II,cursor:0,sequence:0,rollIndex:0,systems:[],systemDecks:{A:decks.systemsA,B:decks.systemsB.slice(2)},systemBasis,outposts:{},industry:[],powers:{},deckII:decks.technologies.II,records:[],technologies:[],events:[],guilds:[],queue:[],reservations:[]};

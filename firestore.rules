@@ -681,10 +681,10 @@ service cloud.firestore {
         return q.kind=='jump-apply'?appliedLegAt(before,after,q.legs,0)&&appliedLegAt(before,after,q.legs,1):widePowerProjection(b,old,a.play.discovery,q,before);
       }
       function wideJumpProjection(b,a,e) {
-        let old=b.play.discovery;let q=old.queue.size()>0?old.queue[0]:{};let m=e.move;
-        return m.kind=='discovery-choice'&&q.get('kind','')=='effect'&&q.get('effect',{}).get('kind','')=='jump'&&q.effect.amount>2&&m.get('legs',[]).size()>0
+        let old=b.play.discovery;let q=old.queue.size()>0?old.queue[0]:{};let m=e.move;let queueKind=q.get('kind','');
+        return m.kind=='discovery-choice'&&queueKind=='effect'&&q.get('effect',{}).get('kind','')=='jump'&&q.effect.amount>2&&m.get('legs',[]).size()>0
           ?wideJumpChoiceProjection(b,a,e,old,q)
-          :continuationFrame(b,a,e)&&(!(m.kind=='discovery-advance'&&q.get('kind','') in ['jump-apply','jump-power']&&q.amount>2)||wideJumpAdvanceProjection(b,a,e,old,q));
+          :queueKind=='colony'?colonyFrame(b,a,e,q):continuationFrame(b,a,e)&&(!(m.kind=='discovery-advance'&&queueKind in ['jump-apply','jump-power']&&q.amount>2)||wideJumpAdvanceProjection(b,a,e,old,q));
       }
       function plannedJump(root,old,q,m,b,a) {
         let legs=m.legs;let first=legs[0];
@@ -933,14 +933,14 @@ service cloud.firestore {
           : q.kind=='event' ? (q.get('stage','')=='dispatch' ? sharedEventDispatch(root,old,d,q,b,a,t)
             : q.event=='experimental-prototypes' && q.get('stage','')=='roll' ? t.phase=='discovery' && advanceCube(old,d,q,b,a)
             : q.event=='experimental-prototypes' && !('stage' in q) ? prototypeDispatch(root,old,d,q,b,a,t) : ordinaryDiscoveryAdvance(old,d,q,b,a,s,t) || additionalEventAdvance(root,old,d,q,b,a,t))
-          : ordinaryDiscoveryAdvance(old,d,q,b,a,s,t) || additionalEventAdvance(root,old,d,q,b,a,t);
+          : q.kind=='colony'?colonyAutomatic(root,s,t,q,b,a):ordinaryDiscoveryAdvance(old,d,q,b,a,s,t) || additionalEventAdvance(root,old,d,q,b,a,t);
       }
       function discoveryStep(b,e,s,t,before,after) {
         let old=s.discovery;let d=t.discovery;let q=old.queue[0];let m=e.move;
         return pendingDiscoveryEnvelope(b,e,s,t) && (
           (m.kind=='discovery-advance' && m.keys().hasOnly(['kind','at']) && automaticDiscoveryStep(b,q,before,after,s,t))
           || (m.kind=='discovery-choice' && m.keys().hasOnly(['kind','at','option','target','ships','track','destination','usePopulation','legs']) && t.phase=='discovery' && (
-            q.kind=='effect' && q.effect.kind=='jump' ? (q.effect.amount<=2||continuationPlayFrame(s,t,e.position))&&manualJump(b,old,d,q,m,before,after)
+            q.kind=='colony'?q.stage=='disc'&&colonyAddDisc(old,d,q,before,after,m.option):q.kind=='effect' && q.effect.kind=='jump' ? (q.effect.amount<=2||continuationPlayFrame(s,t,e.position))&&manualJump(b,old,d,q,m,before,after)
             : q.kind=='candidate' ? discoverCandidate(old,d,q,m,before,after)
             : q.kind=='type' ? revealCandidates(old,d,q,m.option,before,after,s.turn)
             : q.kind=='control' ? matchesSpecialty(old,q.location,'food')&&matchesSpecialty(old,q.location,'ore')&&takeControl(old,d,q,before,after,m.option)
@@ -1023,6 +1023,119 @@ service cloud.firestore {
       }
       // Printed technology Actions spend the separate Action pawn. Research
       // cubes grant personal access but never occupy or duplicate this space.
+      // Ordinary colonies retain their original outpost and use one bounded
+      // cursor per selected settler and exiled faction. No gain-control replay.
+      function colonyPower(card) { return card in ['alpha-centauri','barnards-star','61-cygni','epsilon-indi','lalande-21185','procyon','sirius','struve-2398','teegardens-star','wolf-359','tau-ceti','tz-arietis']?3:card in ['gj-1061','groombridge-34','ad-leonis','den-0255-4700','dx-cancri','kapteyns-star','kruger-60','ross-154']?4:5; }
+      function colonyOre(source) { return source=='terraforming'?3:4; }
+      function colonyPopulation(source) { return source=='android-surveyors'?0:1; }
+      function colonyAction(source) { return source=='terraforming-guild'?'guild:terraforming-guild:0':'technology:'+source+':'+(source=='terraforming'?'1':'0')+':0'; }
+      function colonyBenefitReady(card) { return card in ['barnards-star','sirius','gj-1061','kapteyns-star','struve-2398','wolf-359','ad-leonis','alpha-centauri','kruger-60','tau-ceti','tz-arietis','luytens-star']; }
+      function colonySelectionAt(ships,slot,i) { return i>=ships.size()||ships[i].location==slot; }
+      function colonySelectedLevel(ships,i) { return i<ships.size()?ships[i].level:0; }
+      function colonyQueue(q,stage,index) { return {'kind':'colony','responder':q.responder,'source':q.source,'slot':q.slot,'card':q.card,'settlers':q.settlers,'power':q.power,'actors':q.actors,'stage':stage,'index':index}; }
+      // Root payment and attributed event queue prove one atomic initiation.
+      // Neither half authorizes independently; retain full player/source checks.
+      function colonyPayment(b,a,e) {
+        let s=b.play;let t=a.play;let m=e.move;let p=e.position;let before=s.players[p];let after=t.players[p];
+        return actorAllowed(b,p)&&s.phase=='action'&&continuationPlayFrame(s,t,p)&&t.phase=='discovery'
+          && (m.source=='terraforming-guild'?'terraforming-guild' in s.discovery.guilds:m.source in before.research)
+          && spaceOpen(s,colonyAction(m.source))&&before.ore>=colonyOre(m.source)&&before.population>=colonyPopulation(m.source)
+          && after.diff(before).affectedKeys().hasOnly(['ore','population','supply','actionLocation'])&&after.ore==before.ore-colonyOre(m.source)&&after.population==before.population-colonyPopulation(m.source)&&after.actionLocation==colonyAction(m.source)
+          && (colonyPopulation(m.source)==0?after.supply==before.supply:supplyDelta(before.supply,after.supply,rightSupply(before.supply),1));
+      }
+      function colonyTransition(b,a,e) {
+        let s=b.play;let t=a.play;let old=s.discovery;let d=t.discovery;let m=e.move;let p=e.position;let before=s.players[p];let after=t.players[p];let q=d.queue[0];let full=m.ships==before.ships;let remaining=full?[]:before.ships.removeAll(q.settlers);
+        return m.keys().hasOnly(['kind','source','slot','ships'])&&m.source in ['terraforming','android-surveyors','terranova-cruisers','terraforming-guild']&&m.ships is list&&m.ships.size()>0&&m.ships.size()<=20&&(full||m.ships.toSet().size()==m.ships.size())
+          && old.queue==[]
+          && old.outposts.get(m.slot,{}).get('owner','')==p&&q.card==currentSystem(old,m.slot)&&colonyBenefitReady(q.card)
+          && q.keys().hasOnly(['kind','responder','source','slot','card','settlers','power','actors','stage','index'])&&q.kind=='colony'&&q.stage=='settle'&&q.index==0&&q.responder==p&&q.source==m.source&&q.slot==m.slot
+          && q.actors is list&&q.actors.size()==b.seats.size()&&q.actors.toSet()==b.seats.keys().toSet()
+          && old.powers.keys().toSet()==b.seats.keys().toSet()&&old.powers[q.actors[0]].get('*',-1)>=0&&old.powers[q.actors[1]].get('*',-1)>=0&&(q.actors.size()<3||old.powers[q.actors[2]].get('*',-1)>=0)&&(q.actors.size()<4||old.powers[q.actors[3]].get('*',-1)>=0)
+          && q.settlers==m.ships&&(full||m.ships.toSet().hasOnly(before.ships.toSet()))
+          && (fleetAt(old,p,q.slot)==fleetAt(old,p,'*')||colonySelectedAll(q.settlers,m.slot))&&q.power==(full?fleetAt(old,p,q.slot):q.settlers.size()<=remaining.size()?colonySelectedPower(q.settlers,q.slot):fleetAt(old,p,q.slot)-colonySelectedPower(remaining,q.slot))
+          && q.power>= (m.source=='terranova-cruisers'?colonyPower(q.card)-1:colonyPower(q.card))
+          && d.diff(old).affectedKeys().hasOnly(['queue'])&&d.queue.size()==2&&d.queue[1]=={'kind':'resume','responder':p,'returnTo':'production'}
+          ;
+      }
+      function colonyFrame(b,a,e,q) {
+        let s=b.play;let t=a.play;let target=q.stage=='exile'?q.actors[q.index]:e.position;
+        return t.keys().hasOnly(['turn','activePosition','phase','players','discovery'])&&t.turn==s.turn&&t.activePosition==s.activePosition&&t.phase=='discovery'&&t.players.diff(s.players).affectedKeys().hasOnly([target])
+          && (q.stage!='exile'||colonyExileFirst(initialOrCurrent(b,target).ships,t.players[target].ships,q.slot));
+      }
+      function colonySettle(root,old,d,q,b,a) {
+        let ship=q.settlers[q.index];let population=q.source=='android-surveyors'&&q.power>colonyPower(q.card)&&q.index==0;let more=q.index+1<q.settlers.size();
+        return ship in b.ships&&ship.location==q.slot&&a.ships==b.ships.removeAll([ship])&&a.diff(b).affectedKeys().hasOnly(['ships','population','supply'])
+          && (population?a.population==b.population+1&&a.supply==b.supply:a.population==b.population&&supplyDelta(b.supply,a.supply,rightSupply(b.supply),1))
+          && d.diff(old).affectedKeys().hasOnly(['cursor','queue','powers'])&&singlePowerDelta(old,d,q.responder,q.slot,-ship.level)
+          && d.queue==[colonyQueue(q,more?'settle':'exile',more?q.index+1:0)].concat(rest(old.queue));
+      }
+      function colonyExileAt(before,after,slot,i) { return i>=before.size()||after[i]==(before[i].location==slot?{'id':before[i].id,'level':before[i].level,'location':'deep-space'}:before[i]); }
+      function colonyExile(root,s,t,q) {
+        let old=s.discovery;let d=t.discovery;let target=q.actors[q.index];let b=initialOrCurrent(root,target);let a=t.players[target];let prior=old.powers[target];let power=d.powers[target];let moved=prior.get(q.slot,0);let more=q.index+1<q.actors.size();
+        return a.diff(b).affectedKeys().hasOnly(['ships'])&&a.ships.size()==b.ships.size()&&colonyExileRemainder(b.ships,a.ships,q.slot)
+          && d.diff(old).affectedKeys().hasOnly(['cursor','queue','powers'])&&d.powers.diff(old.powers).affectedKeys().hasOnly([target])&&power.diff(prior).affectedKeys().hasOnly([q.slot,'deep-space'])&&power.get(q.slot,0)==0&&power.get('deep-space',0)==prior.get('deep-space',0)+moved
+          && d.queue==[colonyQueue(q,more?'exile':'acquire',more?q.index+1:0)].concat(rest(old.queue));
+      }
+      function colonyDiscData(track,placeholder) { return placeholder?{'track':track,'placeholder':true}:{'track':track}; }
+      function colonySpecialty(card) { return card in ['lalande-21185','procyon','struve-2398','wolf-359','kapteyns-star','luytens-star','ross-154','tau-ceti']?'either':card in ['barnards-star','epsilon-indi','teegardens-star','ad-leonis','den-0255-4700','kruger-60','lacaille-9352','wise-1541-2250']?'food':'ore'; }
+      function colonyNewRecord(old,q,turn) {
+        let disc=old.outposts[q.slot];let record={'owner':q.responder,'card':q.card,'origin':q.slot,'discs':[colonyDiscData(disc.track,disc.get('placeholder',false))],'turn':turn,'settledPower':q.power};
+        return solarTarget(old)==q.slot?{'owner':q.responder,'card':q.card,'origin':q.slot,'discs':record.discs,'turn':turn,'settledPower':q.power,'solar':true}:record;
+      }
+      function colonySolar(old,d,q) { return solarTarget(old)!=q.slot?d.events==old.events:eventChanged(old,d,'erratic-solar-activity',['target'])&&d.events.removeAll(old.events)[0].target=='colony:'+q.card; }
+      function colonyRefill(old,d,q,turn) {
+        let attached=old.systems.size()>0&&old.systems[0].slot==q.slot;let deck=q.card in systemCardsA()?'A':'B';let selected=old.systemDecks[deck].size()>0?deck:deck=='A'?'B':'A';let cards=old.systemDecks[selected];
+        return attached?d.systems==[]&&d.systemBasis==old.systemBasis&&d.systemDecks==old.systemDecks&&d.get('revealBoundary',null)==old.get('revealBoundary',null)
+          :d.systems==old.systems&&d.systemBasis.diff(old.systemBasis).affectedKeys().hasOnly([q.slot])&&d.systemBasis.size()==old.systemBasis.size()&&d.systemBasis[q.slot]==(cards.size()>0?cards[0]:'')
+           && (cards.size()==0?d.systemDecks==old.systemDecks&&d.get('revealBoundary',null)==old.get('revealBoundary',null):d.systemDecks.diff(old.systemDecks).affectedKeys().hasOnly([selected])&&d.systemDecks[selected]==rest(cards)&&d.revealBoundary=={'turn':turn,'reason':'System reveal'});
+      }
+      function colonyAcquire(old,d,q,b,a,turn) {
+        return a==b&&d.diff(old).affectedKeys().hasOnly(['cursor','queue','colonies','outposts','systemBasis','systemDecks','systems','revealBoundary','events'])
+          && d.colonies==old.get('colonies',[]).concat([colonyNewRecord(old,q,turn)])&&d.outposts.diff(old.outposts).affectedKeys().hasOnly([q.slot])&&!(q.slot in d.outposts)&&d.outposts.size()==old.outposts.size()-1
+          && colonyRefill(old,d,q,turn)&&colonySolar(old,d,q)&&d.queue==[colonyQueue(q,'disc',0)].concat(rest(old.queue));
+      }
+      function colonyAddDisc(old,d,q,b,a,track) {
+        let i=old.colonies.size()-1;let colony=old.colonies[i];let field=track=='food'?'foodDiscs':'oreDiscs';let available=b[field]>0;let added=d.colonies[i];
+        return track in ['food','ore']&&colonySpecialty(q.card) in [track,'either']&&colony.owner==q.responder&&colony.card==q.card&&colony.discs.size()==1
+          && a.diff(b).affectedKeys().hasOnly([field])&&a[field]==b[field]-(available?1:0)
+          && d.diff(old).affectedKeys().hasOnly(['cursor','queue','colonies'])&&d.colonies.size()==old.colonies.size()&&d.colonies.removeAll([added])==old.colonies.removeAll([colony])&&added.diff(colony).affectedKeys().hasOnly(['discs'])&&added.discs==colony.discs.concat([colonyDiscData(track,!available)])
+          && d.queue==[colonyQueue(q,'bonus',0)].concat(rest(old.queue));
+      }
+      function colonyBonus(q,p) {
+        return q.card=='barnards-star'?[oneEffect('effect',q.responder,q.card,{'kind':'population','amount':1}),oneEffect('effect',q.responder,q.card,{'kind':'ore','amount':2})]
+          :q.card=='sirius'?[oneEffect('effect',q.responder,q.card,{'kind':'upgrade','levels':1,'ships':2,'optional':true})]
+          :q.card in ['gj-1061','kapteyns-star']?[oneEffect('effect',q.responder,q.card,{'kind':'ship','level':q.card=='gj-1061'?3:4,'location':'deep-space'})]
+          :q.card=='wolf-359'?[oneEffect('effect',q.responder,q.card,{'kind':'ship','level':2,'side':'right'})]
+          :q.card=='struve-2398'?[oneEffect('effect',q.responder,q.card,{'kind':'automate','track':'either'})]
+          :q.card=='ad-leonis'?[oneEffect('effect',q.responder,q.card,{'kind':'ore','amount':('terraforming' in p.research?1:0)+('advanced-genetics' in p.research?1:0)+('advanced-robotics' in p.research?1:0)+('narrow-beam-lasers' in p.research?1:0)})]:[];
+      }
+      function colonyAutomatic(root,s,t,q,b,a) {
+        let old=s.discovery;let d=t.discovery;
+        return q.stage=='settle'?colonySettle(root,old,d,q,b,a):q.stage=='exile'?colonyExile(root,s,t,q):q.stage=='acquire'?colonyAcquire(old,d,q,b,a,s.turn)
+          :q.stage=='disc'?colonySpecialty(q.card)!='either'&&colonyAddDisc(old,d,q,b,a,colonySpecialty(q.card))
+          :q.stage=='bonus'&&a==b&&d.diff(old).affectedKeys().hasOnly(['cursor','queue'])&&d.queue==colonyBonus(q,b).concat(rest(old.queue));
+      }
+      function colonyGroup0(ships,slot) { return colonySelectionAt(ships,slot,0)&&colonySelectionAt(ships,slot,1)&&colonySelectionAt(ships,slot,2)&&colonySelectionAt(ships,slot,3); }
+      function colonyPowerGroup0(ships,slot) { return levelAt(ships,0,slot)+levelAt(ships,1,slot)+levelAt(ships,2,slot)+levelAt(ships,3,slot); }
+      function colonyGroup1(ships,slot) { return colonySelectionAt(ships,slot,4)&&colonySelectionAt(ships,slot,5)&&colonySelectionAt(ships,slot,6)&&colonySelectionAt(ships,slot,7); }
+      function colonyPowerGroup1(ships,slot) { return levelAt(ships,4,slot)+levelAt(ships,5,slot)+levelAt(ships,6,slot)+levelAt(ships,7,slot); }
+      function colonyGroup2(ships,slot) { return colonySelectionAt(ships,slot,8)&&colonySelectionAt(ships,slot,9)&&colonySelectionAt(ships,slot,10)&&colonySelectionAt(ships,slot,11); }
+      function colonyPowerGroup2(ships,slot) { return levelAt(ships,8,slot)+levelAt(ships,9,slot)+levelAt(ships,10,slot)+levelAt(ships,11,slot); }
+      function colonyGroup3(ships,slot) { return colonySelectionAt(ships,slot,12)&&colonySelectionAt(ships,slot,13)&&colonySelectionAt(ships,slot,14)&&colonySelectionAt(ships,slot,15); }
+      function colonyPowerGroup3(ships,slot) { return levelAt(ships,12,slot)+levelAt(ships,13,slot)+levelAt(ships,14,slot)+levelAt(ships,15,slot); }
+      function colonyGroup4(ships,slot) { return colonySelectionAt(ships,slot,16)&&colonySelectionAt(ships,slot,17)&&colonySelectionAt(ships,slot,18)&&colonySelectionAt(ships,slot,19); }
+      function colonyPowerGroup4(ships,slot) { return levelAt(ships,16,slot)+levelAt(ships,17,slot)+levelAt(ships,18,slot)+levelAt(ships,19,slot); }
+      function colonySelectedAll(ships,slot) { return colonyGroup0(ships,slot)&&(ships.size()<=4||colonyGroup1(ships,slot))&&(ships.size()<=8||colonyGroup2(ships,slot))&&(ships.size()<=12||colonyGroup3(ships,slot))&&(ships.size()<=16||colonyGroup4(ships,slot)); }
+      function colonySelectedPower(ships,slot) { return colonyPowerGroup0(ships,slot)+(ships.size()<=4?0:colonyPowerGroup1(ships,slot))+(ships.size()<=8?0:colonyPowerGroup2(ships,slot))+(ships.size()<=12?0:colonyPowerGroup3(ships,slot))+(ships.size()<=16?0:colonyPowerGroup4(ships,slot)); }
+      function colonyExileGroup0(before,after,slot) { return colonyExileAt(before,after,slot,0)&&colonyExileAt(before,after,slot,1)&&colonyExileAt(before,after,slot,2)&&colonyExileAt(before,after,slot,3); }
+      function colonyExileGroup1(before,after,slot) { return colonyExileAt(before,after,slot,4)&&colonyExileAt(before,after,slot,5)&&colonyExileAt(before,after,slot,6)&&colonyExileAt(before,after,slot,7); }
+      function colonyExileGroup2(before,after,slot) { return colonyExileAt(before,after,slot,8)&&colonyExileAt(before,after,slot,9)&&colonyExileAt(before,after,slot,10)&&colonyExileAt(before,after,slot,11); }
+      function colonyExileGroup3(before,after,slot) { return colonyExileAt(before,after,slot,12)&&colonyExileAt(before,after,slot,13)&&colonyExileAt(before,after,slot,14)&&colonyExileAt(before,after,slot,15); }
+      function colonyExileGroup4(before,after,slot) { return colonyExileAt(before,after,slot,16)&&colonyExileAt(before,after,slot,17)&&colonyExileAt(before,after,slot,18)&&colonyExileAt(before,after,slot,19); }
+      // Root projection proves entries0–11; its atomically linked event proves
+      // entries12–19 plus resources, power and queue. Every original entry is checked.
+      function colonyExileFirst(before,after,slot) { return colonyExileGroup0(before,after,slot)&&(before.size()<=4||colonyExileGroup1(before,after,slot))&&(before.size()<=8||colonyExileGroup2(before,after,slot)); }
+      function colonyExileRemainder(before,after,slot) { return (before.size()<=12||colonyExileGroup3(before,after,slot))&&(before.size()<=16||colonyExileGroup4(before,after,slot)); }
       function technologyActionLevelIs(research,level) {
         let four=research.hasAny(['technological-singularity', 'giga-corporations', 'parallel-universe-generator', 'neo-industrial-revolution', 'megafleet-construction', 'mind-machine-assimilation', 'new-golden-age', 'galactic-empire', 'android-independence', 'ministry-of-colonies']);let three=research.hasAny(['transdimensional-ai', 'planetary-scale-research', 'metahuman-chambers', 'hivemind-computing', 'deep-space-megastructures', 'capital-ship', 'android-armada', 'mercenary-fleet', 'cerebral-implants', 'manufacturing-orbitals', 'android-rights-movement', 'subatomic-fabrication', 'quantum-data-exchange', 'hyperdrive-boosters', 'wormhole-technology', 'stealth-terraformers']);let two=research.hasAny(secondLevelCards());
         return level==4&&four || level==3&&!four&&three || level==2&&!four&&!three&&two || level==1&&!four&&!three&&!two;
@@ -1080,7 +1193,7 @@ service cloud.firestore {
         // A fresh game has no play map yet. The explicit initial actor is still
         // checked against firstPosition by actorAllowed in preparation.
         let kind=e.move.kind;let s=b.get('play',{'turn':0,'activePosition':e.position,'phase':'action','players':{}});let t=a.play;let p=e.position;let before=s.players.get(p,{});let after=t.players.get(p,before);
-        return kind in ['discovery-choice','discovery-advance'] && discoveryStep(b,e,s,t,before,after) || kind=='build-jump' && basicFleetTransition(b,a,e) || kind=='technology-action' && technologyActionTransition(b,a,e) || kind=='research-II' && newResearchII(b,e,s,t,before,after) || !(kind in ['research-II','build-jump','technology-action','discovery-choice','discovery-advance']) && sameTurnRoot(b,a) && t.keys().hasOnly(['turn','activePosition','phase','players','discovery']) && t.turn==s.turn && t.activePosition==s.activePosition
+        return kind in ['discovery-choice','discovery-advance'] && discoveryStep(b,e,s,t,before,after) || kind=='build-jump' && basicFleetTransition(b,a,e) || kind=='technology-action' && technologyActionTransition(b,a,e) || kind=='research-II' && newResearchII(b,e,s,t,before,after) || kind=='colonize'&&colonyTransition(b,a,e) || !(kind in ['colonize','research-II','build-jump','technology-action','discovery-choice','discovery-advance']) && sameTurnRoot(b,a) && t.keys().hasOnly(['turn','activePosition','phase','players','discovery']) && t.turn==s.turn && t.activePosition==s.activePosition
           && discoveryOthers(s,t,p)
           && ((kind=='prepare-fleet-power' && prepareFleetPowerTransition(b,e,s,t,before,after)) || (kind=='claim-achievement' && achievementClaimTransition(b,e,s,t,before,after)) || (kind=='black-market' && blackMarketTransition(b,e,s,t,before,after)) || (kind=='prepare-discovery' && prepareDiscoveryTransition(b,e,s,t)));
       }
@@ -1142,6 +1255,7 @@ service cloud.firestore {
           && (event.move.kind!='research-II' || researchIIPlayerTransition(b,a,event))
           && (event.move.kind!='build-jump' || basicFleetPayment(b,a,event))
           && (event.move.kind!='technology-action' || technologyActionPayment(b,a,event))
+          && (event.move.kind!='colonize' || colonyPayment(b,a,event))
           && (!(event.move.kind in ['discovery-choice','discovery-advance']) || wideJumpProjection(b,a,event));
       }
 
@@ -1149,7 +1263,7 @@ service cloud.firestore {
         && validTurnProjection(resource.data,request.resource.data);
       match /events/{event} {
         function turnEvent() {
-          let e=request.resource.data;let m=e.get('move',null);let discoveryMove=m.get('kind','') in ['build-jump','technology-action','prepare-discovery','prepare-fleet-power','research-II','discovery-choice','discovery-advance','black-market','claim-achievement']; let b=get(gamePath()).data; let a=getAfter(gamePath()).data;
+          let e=request.resource.data;let m=e.get('move',null);let discoveryMove=m.get('kind','') in ['colonize','build-jump','technology-action','prepare-discovery','prepare-fleet-power','research-II','discovery-choice','discovery-advance','black-market','claim-achievement']; let b=get(gamePath()).data; let a=getAfter(gamePath()).data;
           return e.type == 'game-move' && m is map && m.get('kind','') is string && e.schema == 1 && e.actorUid == request.auth.uid && e.commandId == event && e.revision == a.revision && a.lastCommand == event && e.name == ''
             && discoveryMember(b,e.position)
             && (b.mode == 'tabletop' ? e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','move']) : e.keys().hasOnly(['schema','type','actorUid','revision','commandId','position','name','move','ready','configVersion','settings','code']) && !e.ready && e.configVersion == b.configVersion && e.settings == b.settings && e.code == b.code)

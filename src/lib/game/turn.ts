@@ -1,3 +1,4 @@
+import {beginColonization,currentSystems,type ColonizeMove} from './colonization';
 import {beginBasicFleet,type BasicFleetMove} from './basic-fleet-action';
 import {beginTechnologyAction,type TechnologyActionMove} from './technology-actions';
 import {updateControl} from './discovery-movement';
@@ -11,7 +12,7 @@ import type { PlayerState, PublicSetup } from './setup';
 /** Durable public turn state; unrevealed decks never enter this projection. */
 export type TurnPlayer = Omit<PlayerState, 'position' | 'name' | 'faction'>;
 export type PlayState = { turn:number; activePosition:string; phase:PublicSetup['phase']; players:Record<string,TurnPlayer>; discovery?:DiscoveryState };
-export type TurnMove = DiscoveryMove | TechnologyActionMove | BasicFleetMove
+export type TurnMove = ColonizeMove | DiscoveryMove | TechnologyActionMove | BasicFleetMove
   | { kind:'research-I'; space:number; card:typeof levelOne[number]; ship?:string; supplyFallback?:'population'|'skip' }
   | { kind:'grow'|'ore'|'trade'|'buy-population'|'sell-population'|'finish-trading' }
   | {kind:'end-turn'}
@@ -26,7 +27,7 @@ export function economy(p:PlayerState):TurnPlayer {
 }
 export function projectGame(initial:PublicSetup, play?:PlayState):PublicSetup {
   if(!play)return initial;
-  return {...initial,phase:play.phase,turn:play.turn,achievementClaims:play.discovery?.claims?.length??0,activePosition:play.activePosition,players:initial.players.map(p=>({...p,...play.players[p.position]})),...(play.discovery?{discovery:publicDiscovery(play.discovery,initial.count),technologies:[...initial.technologies,...play.discovery.technologies],eventCovers:initial.eventCovers.filter(c=>!play.discovery!.events.some(e=>e.slot===c.slot)),systems:[...initial.systems,...play.discovery.systems.map(({slot,card})=>({slot,card}))],deckCounts:{...initial.deckCounts,II:play.discovery.deckII.length,A:play.discovery.systemDecks.A.length,B:play.discovery.systemDecks.B.length}}:{})};
+  return {...initial,phase:play.phase,turn:play.turn,achievementClaims:play.discovery?.claims?.length??0,activePosition:play.activePosition,players:initial.players.map(p=>({...p,...play.players[p.position]})),...(play.discovery?{discovery:publicDiscovery(play.discovery,initial.count),technologies:[...initial.technologies,...play.discovery.technologies],eventCovers:initial.eventCovers.filter(c=>!play.discovery!.events.some(e=>e.slot===c.slot)),systems:currentSystems(initial,play.discovery),deckCounts:{...initial.deckCounts,II:play.discovery.deckII.length,A:play.discovery.systemDecks.A.length,B:play.discovery.systemDecks.B.length}}:{})};
 }
 export function growthColumns(p:TurnPlayer) {
   return foodColumns.slice(0,9-p.foodDiscs).flatMap((letter)=>letter?[{letter,index:letter.charCodeAt(0)-65,available:p.supply[letter.charCodeAt(0)-65]>0}]:[]);
@@ -56,13 +57,14 @@ function returnSupply(p:TurnPlayer) {
 }
 function validPayload(move:TurnMove) {
   if(!move || typeof move!=='object')throw new Error('Choose a supported turn command.');
-  const keys=move.kind==='build-jump'?['kind','space','build','destination']:move.kind==='technology-action'?['kind','card','action','space','destination']:move.kind==='prepare-fleet-power'?['kind','position']:move.kind==='black-market'?['kind','track']:move.kind==='claim-achievement'?['kind','card']:move.kind==='research-II'?['kind','space','slot']:move.kind==='discovery-advance'?['kind','at']:move.kind==='discovery-choice'?['kind','at','option','target','ships','track','destination','usePopulation','legs']:move.kind==='gather'?['kind','supplyFallback']:move.kind==='research-I'?['kind','space','card','ship','supplyFallback']:move.kind==='decommission'?['kind','ship']:['kind'];
+  const keys=move.kind==='colonize'?['kind','source','slot','ships']:move.kind==='build-jump'?['kind','space','build','destination']:move.kind==='technology-action'?['kind','card','action','space','destination']:move.kind==='prepare-fleet-power'?['kind','position']:move.kind==='black-market'?['kind','track']:move.kind==='claim-achievement'?['kind','card']:move.kind==='research-II'?['kind','space','slot']:move.kind==='discovery-advance'?['kind','at']:move.kind==='discovery-choice'?['kind','at','option','target','ships','track','destination','usePopulation','legs']:move.kind==='gather'?['kind','supplyFallback']:move.kind==='research-I'?['kind','space','card','ship','supplyFallback']:move.kind==='decommission'?['kind','ship']:['kind'];
   if(Object.keys(move).some(key=>!keys.includes(key)))throw new Error('Unsupported turn payload.');
 }
 export function applyTurn(initial:PublicSetup,before:PlayState|undefined,position:string,move:TurnMove,seed?:string):PlayState {
   validPayload(move);
-  if(move.kind==='build-jump'||move.kind==='technology-action'||move.kind==='prepare-discovery'||move.kind==='prepare-fleet-power'||move.kind==='research-II'||move.kind==='discovery-choice'||move.kind==='discovery-advance'){
+  if(move.kind==='colonize'||move.kind==='build-jump'||move.kind==='technology-action'||move.kind==='prepare-discovery'||move.kind==='prepare-fleet-power'||move.kind==='research-II'||move.kind==='discovery-choice'||move.kind==='discovery-advance'){
     const state=structuredClone(before??initialPlay(initial));
+    if(move.kind==='colonize')return syncFleetPowers(initial,beginColonization(initial,projectGame(initial,state),state,position,move));
     if(move.kind==='build-jump')return syncFleetPowers(initial,beginBasicFleet(initial,projectGame(initial,state),state,position,move));
     if(move.kind==='technology-action')return syncFleetPowers(initial,beginTechnologyAction(initial,projectGame(initial,state),state,position,move));
     if(move.kind==='discovery-advance')return syncFleetPowers(initial,applyAutomaticDiscovery(initial,state,projectGame(initial,state),position,move.at));
