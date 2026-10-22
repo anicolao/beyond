@@ -1,0 +1,76 @@
+{
+  "purpose": "Decorative navigation thumbnails, not additional cards or replacement full-size illustrations.",
+  "originalProvenance": "docs/content/card-art-provenance.json",
+  "generator": "scripts/generate-map-thumbnails.mjs",
+  "tool": "sharp@0.34.5",
+  "filter": "Lanczos3, centered cover, losslessPNG",
+  "semanticContent": "Live System titles, levels, routes and rules remain DOM text; full-size production CardFace is unchanged.",
+  "derivatives": [
+    {
+      "path": "static/art/card-thumbnails/system-20x12.png",
+      "width": 20,
+      "height": 12,
+      "contentWidth": 20,
+      "contentHeight": 12,
+      "density": 1,
+      "sha256": "1a99ee18d02def3f30965b76b1bab282534e595f1c154ba43647d91a0152d0dd",
+      "source": "static/art/cards/system.png",
+      "sourceSha256": "db6124c6a44a73434c235729812cfaddac1b799e75fbc69b5fdb0e6e6cf4ae64"
+    },
+    {
+      "path": "static/art/card-thumbnails/system-40x24.png",
+      "width": 40,
+      "height": 24,
+      "contentWidth": 20,
+      "contentHeight": 12,
+      "density": 2,
+      "sha256": "8db8dffffc9bac0bd8341b01597c668ddd5ba89da04fed2ab67a0ab3774e48d3",
+      "source": "static/art/cards/system.png",
+      "sourceSha256": "db6124c6a44a73434c235729812cfaddac1b799e75fbc69b5fdb0e6e6cf4ae64"
+    },
+    {
+      "path": "static/art/card-thumbnails/system-60x36.png",
+      "width": 60,
+      "height": 36,
+      "contentWidth": 20,
+      "contentHeight": 12,
+      "density": 3,
+      "sha256": "c94bf2a69d47890fe7c3ddc62680245337cdeb2f6db443bed760eed02f1cc56e",
+      "source": "static/art/cards/system.png",
+      "sourceSha256": "db6124c6a44a73434c235729812cfaddac1b799e75fbc69b5fdb0e6e6cf4ae64"
+    },
+    {
+      "path": "static/art/card-thumbnails/system-23x12.png",
+      "width": 23,
+      "height": 12,
+      "contentWidth": 23,
+      "contentHeight": 12,
+      "density": 1,
+      "sha256": "702ac6b958430b0d239362439ca0a5fd4f6de4b2fd093abd24715024ba4b9b59",
+      "source": "static/art/cards/system.png",
+      "sourceSha256": "db6124c6a44a73434c235729812cfaddac1b799e75fbc69b5fdb0e6e6cf4ae64"
+    },
+    {
+      "path": "static/art/card-thumbnails/system-46x24.png",
+      "width": 46,
+      "height": 24,
+      "contentWidth": 23,
+      "contentHeight": 12,
+      "density": 2,
+      "sha256": "d7e2ede9127cf41e4707f0cdc90051675cf6b207d415f99d500ff629dfe1dda0",
+      "source": "static/art/cards/system.png",
+      "sourceSha256": "db6124c6a44a73434c235729812cfaddac1b799e75fbc69b5fdb0e6e6cf4ae64"
+    },
+    {
+      "path": "static/art/card-thumbnails/system-69x36.png",
+      "width": 69,
+      "height": 36,
+      "contentWidth": 23,
+      "contentHeight": 12,
+      "density": 3,
+      "sha256": "809abac1f774d20bdf32fc9d98ac64a2a7df5c1a6ca0c2b01b0b7e8d44487d4c",
+      "source": "static/art/cards/system.png",
+      "sourceSha256": "db6124c6a44a73434c235729812cfaddac1b799e75fbc69b5fdb0e6e6cf4ae64"
+    }
+  ]
+}

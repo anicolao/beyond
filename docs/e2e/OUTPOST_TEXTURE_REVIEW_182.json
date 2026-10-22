@@ -1,0 +1,300 @@
+{
+  "diagnosticOnly": true,
+  "formalGate": false,
+  "freshBrowsers": 12,
+  "samples": 60,
+  "perViewPngByteIdentity": {
+    "corner": [
+      "0310d59ebab3e00c52040db8255394ed01444d97ce3b78706a8c37ec15ce1f66"
+    ],
+    "native": [
+      "0c21dc9d113a4984ef1724d1c28d07e9670be2803f9ba92a50cecda0a01251a6"
+    ],
+    "phone": [
+      "66f2b2baad77a53e85fd7743fee689a433790d941c307f061bfe8b6a7531a4eb"
+    ],
+    "remote": [
+      "5743ffcc74d3502b28d7b220699d453dfa96b048372e3dad58b071b88a46d7ef"
+    ]
+  },
+  "resourceChecks": "Every tile backgroundURLequalsdecodedIMGcurrentSrc; preload passes unchanged checkVisibility predicate, natural dimensions positive.",
+  "captureHelpersUnchanged": true,
+  "sourceFiles": {
+    "src/lib/game/MapMiniature.svelte": "c21059593da3d3078aaa7bbfa918e93584431d50e32da9091e2dae1af15ddbda",
+    "src/lib/game/JumpPlan.svelte": "55c424ad41703e43eb75cf651382b66dea598dc609084d96b0e84d224e4f60ce"
+  },
+  "reviewPacket": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/round182-texture/REVIEW.md",
+  "referenceAudit": {
+    "diagnosticAudit": true,
+    "records": 8,
+    "frames": 664,
+    "unchanged": 652,
+    "changed": [
+      {
+        "phase": "012-outposts",
+        "project": "desktop",
+        "id": "split-build-map",
+        "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-texture-refresh/012-outposts/choose-two-system-bonus-rewards-at-four-shared-corner-seats/027-split-build-map-desktop-darwin.png",
+        "after": "tests/e2e/012-outposts/screenshots/choose-two-system-bonus-rewards-at-four-shared-corner-seats/027-split-build-map-desktop-darwin.png",
+        "beforeSha256": "f2102bc93c1e924aa825bce6df5f7fbafb215c956a112d1e56c2d62ba5422287",
+        "afterSha256": "0310d59ebab3e00c52040db8255394ed01444d97ce3b78706a8c37ec15ce1f66",
+        "pixels": 151,
+        "bounds": {
+          "x0": 770,
+          "y0": 604,
+          "x1": 793,
+          "y1": 626
+        },
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "phase": "007-production",
+        "project": "tabletop-4k",
+        "id": "r1-cleo-paid",
+        "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-texture-refresh/007-production/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/061-r1-cleo-paid-tabletop-4k-darwin.png",
+        "after": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/061-r1-cleo-paid-tabletop-4k-darwin.png",
+        "beforeSha256": "0924bfdadab03aea8ce36421cd0320667b337646bbca2cc0663ae3de93d8e01c",
+        "afterSha256": "e742229d4223b158cd4a30e013147ff4355e7da48f4e2e03f9262ffe6b24aa45",
+        "pixels": 256,
+        "bounds": {
+          "x0": 2020,
+          "y0": 992,
+          "x1": 2042,
+          "y1": 1003
+        },
+        "width": 3840,
+        "height": 2160
+      },
+      {
+        "phase": "007-production",
+        "project": "tabletop-4k",
+        "id": "r1-cleo-ship",
+        "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-texture-refresh/007-production/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/062-r1-cleo-ship-tabletop-4k-darwin.png",
+        "after": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/062-r1-cleo-ship-tabletop-4k-darwin.png",
+        "beforeSha256": "0924bfdadab03aea8ce36421cd0320667b337646bbca2cc0663ae3de93d8e01c",
+        "afterSha256": "e742229d4223b158cd4a30e013147ff4355e7da48f4e2e03f9262ffe6b24aa45",
+        "pixels": 256,
+        "bounds": {
+          "x0": 2020,
+          "y0": 992,
+          "x1": 2042,
+          "y1": 1003
+        },
+        "width": 3840,
+        "height": 2160
+      },
+      {
+        "phase": "007-production",
+        "project": "tabletop-4k",
+        "id": "r1-cleo-route-editor",
+        "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-texture-refresh/007-production/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/063-r1-cleo-route-editor-tabletop-4k-darwin.png",
+        "after": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/063-r1-cleo-route-editor-tabletop-4k-darwin.png",
+        "beforeSha256": "0924bfdadab03aea8ce36421cd0320667b337646bbca2cc0663ae3de93d8e01c",
+        "afterSha256": "e742229d4223b158cd4a30e013147ff4355e7da48f4e2e03f9262ffe6b24aa45",
+        "pixels": 256,
+        "bounds": {
+          "x0": 2020,
+          "y0": 992,
+          "x1": 2042,
+          "y1": 1003
+        },
+        "width": 3840,
+        "height": 2160
+      },
+      {
+        "phase": "007-production",
+        "project": "tabletop-4k",
+        "id": "r1-cleo-leg-0",
+        "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-texture-refresh/007-production/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/064-r1-cleo-leg-0-tabletop-4k-darwin.png",
+        "after": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/064-r1-cleo-leg-0-tabletop-4k-darwin.png",
+        "beforeSha256": "a9fb49e56d755290a0a3370b87eda3898ccd60449974bf2d514dbb874b67aec7",
+        "afterSha256": "a8c7dadc0d08c509f6cfe7cec0dabbf5a2e80c132d3da8c06755af01207c899e",
+        "pixels": 256,
+        "bounds": {
+          "x0": 2020,
+          "y0": 992,
+          "x1": 2042,
+          "y1": 1003
+        },
+        "width": 3840,
+        "height": 2160
+      },
+      {
+        "phase": "007-production",
+        "project": "tabletop-4k",
+        "id": "r1-cleo-leg-1",
+        "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-texture-refresh/007-production/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/065-r1-cleo-leg-1-tabletop-4k-darwin.png",
+        "after": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/065-r1-cleo-leg-1-tabletop-4k-darwin.png",
+        "beforeSha256": "2016494c458d6aace9c8fadd7bfc3d53bd41c41a8027c1ff363ac529e657736a",
+        "afterSha256": "c91807b32e830c4ab02947c505c4a68012b7df8b5681006a940d52e6cbc2bf36",
+        "pixels": 256,
+        "bounds": {
+          "x0": 2020,
+          "y0": 992,
+          "x1": 2042,
+          "y1": 1003
+        },
+        "width": 3840,
+        "height": 2160
+      },
+      {
+        "phase": "007-production",
+        "project": "tabletop-4k",
+        "id": "r4-ada-paid",
+        "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-texture-refresh/007-production/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/117-r4-ada-paid-tabletop-4k-darwin.png",
+        "after": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/117-r4-ada-paid-tabletop-4k-darwin.png",
+        "beforeSha256": "a24a69982e765ce334be024be6fa7b763570bfc38be244e83ab1456e11ab88bc",
+        "afterSha256": "c4d8ae85deaee56a6c14d69dec86a15a64f04056e985b540c9ae6f3044a9aa3d",
+        "pixels": 256,
+        "bounds": {
+          "x0": 1797,
+          "y0": 1156,
+          "x1": 1819,
+          "y1": 1167
+        },
+        "width": 3840,
+        "height": 2160
+      },
+      {
+        "phase": "007-production",
+        "project": "tabletop-4k",
+        "id": "r4-ada-ship",
+        "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-texture-refresh/007-production/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/118-r4-ada-ship-tabletop-4k-darwin.png",
+        "after": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/118-r4-ada-ship-tabletop-4k-darwin.png",
+        "beforeSha256": "a24a69982e765ce334be024be6fa7b763570bfc38be244e83ab1456e11ab88bc",
+        "afterSha256": "c4d8ae85deaee56a6c14d69dec86a15a64f04056e985b540c9ae6f3044a9aa3d",
+        "pixels": 256,
+        "bounds": {
+          "x0": 1797,
+          "y0": 1156,
+          "x1": 1819,
+          "y1": 1167
+        },
+        "width": 3840,
+        "height": 2160
+      },
+      {
+        "phase": "007-production",
+        "project": "tabletop-4k",
+        "id": "r4-ada-route-editor",
+        "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-texture-refresh/007-production/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/119-r4-ada-route-editor-tabletop-4k-darwin.png",
+        "after": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/119-r4-ada-route-editor-tabletop-4k-darwin.png",
+        "beforeSha256": "a24a69982e765ce334be024be6fa7b763570bfc38be244e83ab1456e11ab88bc",
+        "afterSha256": "c4d8ae85deaee56a6c14d69dec86a15a64f04056e985b540c9ae6f3044a9aa3d",
+        "pixels": 256,
+        "bounds": {
+          "x0": 1797,
+          "y0": 1156,
+          "x1": 1819,
+          "y1": 1167
+        },
+        "width": 3840,
+        "height": 2160
+      },
+      {
+        "phase": "007-production",
+        "project": "tabletop-4k",
+        "id": "r4-ada-leg-0",
+        "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-texture-refresh/007-production/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/120-r4-ada-leg-0-tabletop-4k-darwin.png",
+        "after": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/120-r4-ada-leg-0-tabletop-4k-darwin.png",
+        "beforeSha256": "5054955023c81e90d7f9764eaa18c88f734c392578a86e9311c7aaccc61fbf4f",
+        "afterSha256": "d4d902605f9947b393926d43b1b33cb5c864868d58add9210886b4e1ac9366de",
+        "pixels": 256,
+        "bounds": {
+          "x0": 1797,
+          "y0": 1156,
+          "x1": 1819,
+          "y1": 1167
+        },
+        "width": 3840,
+        "height": 2160
+      },
+      {
+        "phase": "007-production",
+        "project": "tabletop-4k",
+        "id": "r4-ada-leg-1",
+        "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-texture-refresh/007-production/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/121-r4-ada-leg-1-tabletop-4k-darwin.png",
+        "after": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/121-r4-ada-leg-1-tabletop-4k-darwin.png",
+        "beforeSha256": "330c850838846f398523456bee0b156be42234e03df9641f6860364847a91d58",
+        "afterSha256": "f5c6c3c8de5ccee21ea67f655403ee909ff9300628669c73a945081ad00d724d",
+        "pixels": 256,
+        "bounds": {
+          "x0": 1797,
+          "y0": 1156,
+          "x1": 1819,
+          "y1": 1167
+        },
+        "width": 3840,
+        "height": 2160
+      },
+      {
+        "phase": "007-production",
+        "project": "tabletop-4k",
+        "id": "r4-ada-leg-2",
+        "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-texture-refresh/007-production/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/122-r4-ada-leg-2-tabletop-4k-darwin.png",
+        "after": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/122-r4-ada-leg-2-tabletop-4k-darwin.png",
+        "beforeSha256": "d3741cb12b3cc8c57b1764a52eb55cfe4ff8155ff5d5211ee9bcbca7e3d98825",
+        "afterSha256": "216cc0a532ff34143c17c9648ca856fb7dae808d62e3b4dc6523fe32da67332a",
+        "pixels": 290,
+        "bounds": {
+          "x0": 1796,
+          "y0": 1155,
+          "x1": 1820,
+          "y1": 1168
+        },
+        "width": 3840,
+        "height": 2160
+      }
+    ],
+    "completeIndexesPreserved": true,
+    "method": "ExactSHA of all captured before/after references; decode every changed frame, compare allRGBAbytes with no masks/tolerances/transforms. Entire frame dimensions retained. Independent exact comparison remains required."
+  },
+  "affectedExact": {
+    "result": "8/8PASS2.9m",
+    "frames": 664,
+    "allGeneratingFalse": true,
+    "log": "/Users/anicolao/projects/games/beyond/tmp/outposts182-texture-exact.log",
+    "updateSnapshots": false
+  },
+  "fullExact": "160/160 PASS in 39.0 minutes; 160 comparison records and 11001 frames, reporter completed.",
+  "parentReferenceAudit": {
+    "base": "02a5496174a051f7f7986219696143b0617c1645",
+    "method": "SHA256 of every9141 active parent PNG and current file; clean parent flat checkout is immutable base source",
+    "total": 9141,
+    "unchanged": 8948,
+    "missing": [],
+    "changedByPhase": {
+      "005-technology-discovery": 2,
+      "007-production": 11,
+      "010-fleets": 150,
+      "011-jump-planning": 30
+    },
+    "visualAcceptance": false
+  },
+  "historicalFrameProvenance": {
+    "phase": "007-production",
+    "project": "tabletop-4k",
+    "id": "r4-ada-paid",
+    "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-texture-refresh/007-production/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/117-r4-ada-paid-tabletop-4k-darwin.png",
+    "after": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/117-r4-ada-paid-tabletop-4k-darwin.png",
+    "beforeSha256": "a24a69982e765ce334be024be6fa7b763570bfc38be244e83ab1456e11ab88bc",
+    "afterSha256": "c4d8ae85deaee56a6c14d69dec86a15a64f04056e985b540c9ae6f3044a9aa3d",
+    "pixels": 256,
+    "bounds": {
+      "x0": 1797,
+      "y0": 1156,
+      "x1": 1819,
+      "y1": 1167
+    },
+    "width": 3840,
+    "height": 2160
+  },
+  "limits": [
+    "Historicalvariance remains preserved; no universal or Linuxcure claimed.",
+    "No helper/guard/deadline/rules change.",
+    "PR13failed native cohort excluded; publisher503 remains open.",
+    "No012acceptance/013release or publication."
+  ],
+  "finalVerification": "OUTPOST_FINAL_182.json"
+}

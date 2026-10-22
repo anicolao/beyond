@@ -1,0 +1,28 @@
+{
+  "prompt": 164,
+  "reviewerAuthored": true,
+  "reportedEvidence": "/Users/anicolao/projects/games/beyond/tmp/jumps159-cardinal-candidates-final.log",
+  "reportedResult": "2 failures: actual Previous route ship clipping by plan-scroll on desktop640; Commit absent after native4K resize",
+  "distinctCorrections": {
+    "production": "Dense cardinal reader uses the compact control allocation: reduced redundant budget/padding and one row of44px actions with full commitment summary; selected route identity/level/path retained",
+    "navigation": "Explicit wait/click Routes after viewport resize, and restore intended reader on native return; unpaid legs retained"
+  },
+  "publishedHead": "02a5496174a051f7f7986219696143b0617c1645",
+  "evidenceAfterFix": [
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/jumps159-cardinal-routes-after.log",
+      "result": "CARDINAL COMPLETE ROUTES640/720/1000/4K PASS"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/jumps159-cardinal-candidates3.log",
+      "result": "4/4 fleet/jump cardinal generation PASS including native4K"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/jumps159-final-exact4.log",
+      "result": "132/132 independent exact PASS31.2m;9141frames"
+    }
+  ],
+  "sourceCheck": "Current JumpPlan.svelte and011 journey byte-identical to published02a54961; no new gameplay change needed for historical finding",
+  "invariants": "Original geometry/touch/exact/deadline guards unchanged; failed cohorts retained, not blanket accepted",
+  "remaining": "PR13 Linux/native/hosted gates separate;012 local review pending before formal references"
+}

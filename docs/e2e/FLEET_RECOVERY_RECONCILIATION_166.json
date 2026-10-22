@@ -1,0 +1,14 @@
+{
+  "prompt": 166,
+  "reviewerAuthored": true,
+  "failure": "010desktop four-cardinal restored action: isVisible(commit) transiently true, then responsive effect switches to Exploration before toBeEnabled; Commit absent within original2000ms",
+  "classification": "Functional navigation/assertion race, not pixel delta; retained in final-exact2.log131/132",
+  "trace": "/Users/anicolao/projects/games/beyond/tmp/jumps159-second-full-exact-evidence/test-results/010-fleets-fleet-tabletop--c3713--at-4-shared-cardinal-seats-desktop/trace.zip",
+  "errorContext": "/Users/anicolao/projects/games/beyond/tmp/jumps159-second-full-exact-evidence/test-results/010-fleets-fleet-tabletop--c3713--at-4-shared-cardinal-seats-desktop/error-context.md",
+  "repairAlreadyPublished": "Assert retained exact2-point allowance and saved resources with visible responsive entrypoint, then explicitly open Route editor in noMovement and assert enabled Commit before clicking; no production auto-pass change",
+  "strengthenedEvidence": "Remaining allowance made visible in dense Exploration per existingUX contract; existing guards/deadlines preserved",
+  "affectedProof": "2/2 desktop/native4K PASS35s on original references without updates after assertion correction",
+  "finalCurrentSource": "132/132 exact PASS31.2m/9141frames at published02a54961, after warranted visible-budget references; failed evidence retained",
+  "notClaimed": "No retry-only diagnosis, no baseline adoption to conceal functional failure, no finalLinux/hosted acceptance",
+  "pending": "012 exploratory only; final011 CI/hosted gates separate"
+}

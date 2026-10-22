@@ -1,0 +1,56 @@
+{
+  "paths": {
+    "reference": "/Users/anicolao/projects/games/beyond/tmp/jumps159-third-full-exact-evidence/test-results/007-production-production--877e4-elds-at-four-cardinal-seats-tabletop-4k/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/117-r4-ada-paid-tabletop-4k-darwin-expected.png",
+    "actual": "/Users/anicolao/projects/games/beyond/tmp/jumps159-third-full-exact-evidence/test-results/007-production-production--877e4-elds-at-four-cardinal-seats-tabletop-4k/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/117-r4-ada-paid-tabletop-4k-darwin-actual.png",
+    "final": "/private/tmp/beyond-jumps143/tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/117-r4-ada-paid-tabletop-4k-darwin.png"
+  },
+  "rgba": {
+    "reference": {
+      "sha": "e07c96bcd65597b11956b208c8dab5bfc1c2cf2ed470674a65f8f55d09c9f9aa",
+      "width": 3840,
+      "height": 2160
+    },
+    "actual": {
+      "sha": "16e8f5dd2f0ddd9ec1cd3765089bdabb6a4da79845cd0e3f8fbbf8c949d7386a",
+      "width": 3840,
+      "height": 2160
+    },
+    "final": {
+      "sha": "d7733d841e6ff3052afbd65c3d1e9337cdc0c103315d8ccfd61830589b35a3d9",
+      "width": 3840,
+      "height": 2160
+    }
+  },
+  "pairs": {
+    "referenceActual": {
+      "count": 70,
+      "originalRegionChangedPixels": 70,
+      "bounds": {
+        "x0": 1797,
+        "y0": 1159,
+        "x1": 1821,
+        "y1": 1172
+      }
+    },
+    "referenceFinal": {
+      "count": 46632,
+      "originalRegionChangedPixels": 346,
+      "bounds": {
+        "x0": 1366,
+        "y0": 894,
+        "x1": 1929,
+        "y1": 1221
+      }
+    },
+    "actualFinal": {
+      "count": 46632,
+      "originalRegionChangedPixels": 346,
+      "bounds": {
+        "x0": 1366,
+        "y0": 894,
+        "x1": 1929,
+        "y1": 1221
+      }
+    }
+  }
+}

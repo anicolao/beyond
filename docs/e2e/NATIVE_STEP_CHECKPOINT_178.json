@@ -1,0 +1,25 @@
+{
+  "prompt": 178,
+  "reviewerAuthored": true,
+  "pr": 13,
+  "head": "02a5496174a051f7f7986219696143b0617c1645",
+  "job": 119386320287,
+  "generationStep": {
+    "result": "FAIL",
+    "reviewerCompletedAt": "19:14:58",
+    "reviewerDuration": "72m11s"
+  },
+  "reviewerJobStillRunning": "Artifact upload since19:15:01, not test execution or successful generation",
+  "laterDirectInspection176": "Completed job log available,128/132PASS,4fail;51guardsPASS; two2scaptures005Rift/008coveredSupply, two120s007fourcorner/cardinalstories",
+  "preserved": {
+    "log": "/Users/anicolao/projects/games/beyond/tmp/jumps176-pr13-native.log",
+    "failureArtifact": "/Users/anicolao/projects/games/beyond/tmp/jumps176-pr13-candidate-failure-evidence.zip",
+    "artifactId": 12374240009,
+    "bytes": 29237570,
+    "sha256": "fc55fb76dc59e8180c5ff151dddd49f283357c54291c9ad2f4537e4b1f592f1c",
+    "crc": "PASS431entries"
+  },
+  "referenceAdoption": false,
+  "otherGates": "static/docsPASS;comparisonFAIL16/132;exact-sourcepublisher503FAIL;nohostedacceptance",
+  "phase012": "Local source/UX and remaining review gates unchanged; no013/merge"
+}

@@ -1,0 +1,271 @@
+{
+  "structuralIntegrationOnly": true,
+  "ordinaryReplay": false,
+  "method": "Execute the actual current Svelte map-presentation body against explicitly constructed public-map fixtures; independently check80x52node bounds and line/rectangle intersections with2pxstroke allowance. Original controls/edges are not changed by this diagnostic.",
+  "rows": [
+    {
+      "count": 3,
+      "parent": "a-1",
+      "width": 300,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 3,
+      "parent": "a-1",
+      "width": 320,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 3,
+      "parent": "a-1",
+      "width": 340,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 3,
+      "parent": "a-2",
+      "width": 300,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 3,
+      "parent": "a-2",
+      "width": 320,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 3,
+      "parent": "a-2",
+      "width": 340,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 3,
+      "parent": "b-1",
+      "width": 300,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 3,
+      "parent": "b-1",
+      "width": 320,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 3,
+      "parent": "b-1",
+      "width": 340,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 3,
+      "parent": "b-2",
+      "width": 300,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 3,
+      "parent": "b-2",
+      "width": 320,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 3,
+      "parent": "b-2",
+      "width": 340,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 4,
+      "parent": "a-1",
+      "width": 300,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 4,
+      "parent": "a-1",
+      "width": 320,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 4,
+      "parent": "a-1",
+      "width": 340,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 4,
+      "parent": "a-2",
+      "width": 300,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 4,
+      "parent": "a-2",
+      "width": 320,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 4,
+      "parent": "a-2",
+      "width": 340,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 4,
+      "parent": "b-1",
+      "width": 300,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 4,
+      "parent": "b-1",
+      "width": 320,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 4,
+      "parent": "b-1",
+      "width": 340,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 4,
+      "parent": "b-2",
+      "width": 300,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 4,
+      "parent": "b-2",
+      "width": 320,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    },
+    {
+      "count": 4,
+      "parent": "b-2",
+      "width": 340,
+      "height": 300,
+      "locations": 10,
+      "canonicalEdges": 15,
+      "controlsContained": true,
+      "controlsSeparated": true,
+      "connectorsClearOfUnrelatedNodes": true
+    }
+  ]
+}

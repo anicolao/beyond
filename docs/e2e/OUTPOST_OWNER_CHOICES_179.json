@@ -1,0 +1,256 @@
+{
+  "prompt": 179,
+  "reviewerAuthored": true,
+  "sourceAmbiguity": "Closed independently by reviewer; unchanged canonical resolver",
+  "source": "DennisKChan designer36483484; sixwithdrawal59assertions and combined25/205 independently reviewed",
+  "sourceChange": "Remove duplicate gain-bonus body heading; primary accessible heading and both owner choices retained. No new action, rules, guard or deadline change.",
+  "ordinaryEvidence": [
+    {
+      "directory": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/bonus179-remote-final",
+      "proof": {
+        "remote": true,
+        "before": [
+          1,
+          3
+        ],
+        "after": [
+          2,
+          4
+        ],
+        "afterReload": [
+          2,
+          4
+        ],
+        "bonusOrderFirst": "barnards-star",
+        "secondAutomatic": "sirius",
+        "guestCannotChoose": true,
+        "ordinaryUIOnly": true,
+        "seedOnlyAtBegin": "55555555-5555-4555-8555-000000000004",
+        "source": "Public setup Sirius/BarnardsStar; no future deck read"
+      },
+      "roomUrl": "http://127.0.0.1:5207/remote/?room=53e095b2-6eb1-4f99-906d-fa68f6be07e5",
+      "captures": [
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/bonus179-remote-final/01-two-public-endpoints.png",
+          "bytes": 173951,
+          "sha256": "422d1db292b0e27a834bd7567ae41dddd67d7cc67d4a5dc5dff3b84bf45199b6"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/bonus179-remote-final/02-owner-chooses-order.png",
+          "bytes": 191217,
+          "sha256": "1aeb5e4797f8faf14b1687c23dd32369403e6bab7c934c3c7451a7d98f7533d1"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/bonus179-remote-final/03-guest-cannot-resolve.png",
+          "bytes": 891812,
+          "sha256": "01b2b3b265f8925d5a2e9504cb22983900196323711f4202c60e5459f63e4c1f"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/bonus179-remote-final/04-same-owner-order-after-reload.png",
+          "bytes": 191215,
+          "sha256": "fb37c293b5bd597864fbcef9e8f40880135397542dcb99647c3521a137253272"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/bonus179-remote-final/05-both-once-production.png",
+          "bytes": 219139,
+          "sha256": "f9e3fbe4473d21411a6a1fb9196573248b23334a45ff9e0988e491cb6d205f84"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/bonus179-remote-final/06-same-resources-after-reload.png",
+          "bytes": 219772,
+          "sha256": "a90f58543aa1cc45e8e311dcbfd6ddb1a86d10cfab311570dbb8ba2f4466b5d0"
+        }
+      ]
+    },
+    {
+      "directory": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/bonus179-corner-final",
+      "proof": {
+        "remote": false,
+        "before": [
+          1,
+          3
+        ],
+        "after": [
+          2,
+          4
+        ],
+        "afterReload": [
+          2,
+          4
+        ],
+        "bonusOrderFirst": "barnards-star",
+        "secondAutomatic": "sirius",
+        "guestCannotChoose": false,
+        "ordinaryUIOnly": true,
+        "seedOnlyAtBegin": "55555555-5555-4555-8555-000000000004",
+        "source": "Public setup Sirius/BarnardsStar; no future deck read"
+      },
+      "roomUrl": "http://127.0.0.1:5207/?table=e6f48a78-51bd-415d-8f21-708b4d3a0153",
+      "captures": [
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/bonus179-corner-final/01-two-public-endpoints.png",
+          "bytes": 2995934,
+          "sha256": "0506461708425ecf92bfbaa69d7c0d3149bd162976b34d870f556a51f9401172"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/bonus179-corner-final/02-owner-chooses-order.png",
+          "bytes": 2921380,
+          "sha256": "9827d1367ddcdffc6152bb3cde4edd5583cf55ebf29b5ae1bf9bbe796d8aa504"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/bonus179-corner-final/04-same-owner-order-after-reload.png",
+          "bytes": 2921703,
+          "sha256": "c26b9aceef199ee469c41209ba91f576bdb122f7547c4358f8f7ff3cae54fba9"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/bonus179-corner-final/05-both-once-production.png",
+          "bytes": 3202886,
+          "sha256": "66623c7b28ac4619b2780751b1223afb43fcc48ecb135b33d5fa6a6b811cb2c7"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/bonus179-corner-final/06-same-resources-after-reload.png",
+          "bytes": 3210137,
+          "sha256": "8bb8d1414181c2f7e7d090a36471cd5d15cb3ef2305e763fa8a19268ff22491b"
+        }
+      ]
+    },
+    {
+      "directory": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/specialty179-remote-final",
+      "proof": {
+        "remote": true,
+        "before": [
+          1,
+          3
+        ],
+        "after": [
+          1,
+          4
+        ],
+        "specialtyChosen": "food",
+        "siriusBonusOre": 1,
+        "noPopulationBonus": true,
+        "reloadUnchanged": true,
+        "guestCannotChoose": true,
+        "ordinaryUIOnly": true,
+        "seedOnlyAtBegin": "55555555-5555-4555-8555-000000000002",
+        "foodExposedSlots": 2,
+        "oreExposedSlots": 2,
+        "actualPopulationGrowth": 1,
+        "actualOreProduction": 2,
+        "yieldNote": "The second exposed Food position adds no Supply column; disc placement is not itself a Population payout."
+      },
+      "roomUrl": "http://127.0.0.1:5207/remote/?room=ab4f4bdd-2e01-4dfe-811d-8126422cb154",
+      "captures": [
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/specialty179-remote-final/01-two-public-endpoints.png",
+          "bytes": 171250,
+          "sha256": "471ac51e28cf3784223853555775602b3da090d990dffb9bf7ae80c4ed950e82"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/specialty179-remote-final/02-owner-specialty-choice.png",
+          "bytes": 186658,
+          "sha256": "e352998234cbca2292683f518a41266033facde1b481fdc7611693a12f8502fc"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/specialty179-remote-final/03-guest-cannot-place.png",
+          "bytes": 890617,
+          "sha256": "1d8f20b612129ff90f1833e606127fe4fb6387bfa1ac2f0c26c1dd0c3aa33093"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/specialty179-remote-final/04-specialty-retained.png",
+          "bytes": 186657,
+          "sha256": "4d192625207bfecfe50d9e319bfc44f0e0e610d0ed1b504463729fcb2c2ff0c6"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/specialty179-remote-final/05-food-outpost-sirius-bonus.png",
+          "bytes": 219332,
+          "sha256": "09a8d62e44e9697ef0f94bd27cd878dca343c8d015f685bb9b1e7522c2ad3860"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/specialty179-remote-final/06-production-reload.png",
+          "bytes": 219974,
+          "sha256": "864df62a7baadd4911c6c988e97e3600ad35a4e30f6ba67e071a5cd85e6f0e27"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/specialty179-remote-final/07-chosen-food-disc.png",
+          "bytes": 148556,
+          "sha256": "db55fb28352bcf26654b7ec6b55fe651c05a76aa0213cda4d4e53c52d3ace66b"
+        }
+      ]
+    },
+    {
+      "directory": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/specialty179-corner-final",
+      "proof": {
+        "remote": false,
+        "before": [
+          1,
+          3
+        ],
+        "after": [
+          1,
+          4
+        ],
+        "specialtyChosen": "food",
+        "siriusBonusOre": 1,
+        "noPopulationBonus": true,
+        "reloadUnchanged": true,
+        "guestCannotChoose": false,
+        "ordinaryUIOnly": true,
+        "seedOnlyAtBegin": "55555555-5555-4555-8555-000000000002",
+        "foodExposedSlots": 2,
+        "oreExposedSlots": 2,
+        "actualPopulationGrowth": 1,
+        "actualOreProduction": 2,
+        "yieldNote": "The second exposed Food position adds no Supply column; disc placement is not itself a Population payout."
+      },
+      "roomUrl": "http://127.0.0.1:5207/?table=96c65ce6-c4d6-4b0d-859c-e2af4475b856",
+      "captures": [
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/specialty179-corner-final/01-two-public-endpoints.png",
+          "bytes": 2984350,
+          "sha256": "d0bd8b1ee46d0a2af94f730d235ea5eaeff6c43f682df79a07d4499261224b4f"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/specialty179-corner-final/02-owner-specialty-choice.png",
+          "bytes": 2880458,
+          "sha256": "d9c803fdf3a6197d30b038253dfbb8d4c36b458cb1207151226e5bfd91b2aed7"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/specialty179-corner-final/04-specialty-retained.png",
+          "bytes": 2880791,
+          "sha256": "d54a90ab22fa14aea7f7740c5ee510844b3d380cd3838a8e1d0e52d55ff38a99"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/specialty179-corner-final/05-food-outpost-sirius-bonus.png",
+          "bytes": 3203610,
+          "sha256": "e851f5d76bbbdb39a5e4a1d652687a93f878912455e90c0007b3aacd67729ae4"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/specialty179-corner-final/06-production-reload.png",
+          "bytes": 3210461,
+          "sha256": "a8400dfab5c1bd13ed74a63d0d6941da6211ac8a5fa7825ad093ebada919c8b3"
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/specialty179-corner-final/07-chosen-food-disc.png",
+          "bytes": 981388,
+          "sha256": "0ffcecb84fc0afdec7210223f41e8c2ced63c03d2d3cc0ce55a7e6dfaa7a2c68"
+        }
+      ]
+    }
+  ],
+  "checks": "Both remotephone393/distinctdesktopguest and rotatedshared3840 modes PASS for each flow; original screenfit/touch/polygon guard; keyboard selection, reload and exactonce balances",
+  "limitations": "Local exploratory evidence only, not TestStepHelper formal baselines or012full local acceptance. Shared-player power/production inspection and previous ordinary tie/transfer/offturn history separate.",
+  "preservedDriverFailures": [
+    "Initial remoteReady attempted before all faction snapshots arrived; legitimate setupchanged denial preserved, later driver waits all four public labels before Ready",
+    "First shared specialty inspector incorrectly queried Food production track instead of real Population growth track; payment and reload succeeded, diagnostic preserved",
+    "Initial bonusorder duplicate heading visually identified and removed before final two-mode replays"
+  ],
+  "nativeRepairDiagnosis": {
+    "path": "/Users/anicolao/projects/games/beyond/tmp/outposts179-native-trace-timings.json",
+    "sourceArtifact": 12374240009,
+    "observed": "Failed007 fourseat traces record108/112 mouseMove calls totaling22.4s/21.9s; nestedstep totals overlap and not treated as wallclock.2s captures measured2042.615ms/2181.669ms. No verified timing repair yet; failedcohort ineligible."
+  },
+  "persistentServer": "http://127.0.0.1:5207/",
+  "phase013": "not released",
+  "merge": false
+}

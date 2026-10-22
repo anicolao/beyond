@@ -1,0 +1,108 @@
+{
+  "prompt": 184,
+  "status": "Both desktop failures confirmed and preserved; later frozen-source full160 exact already completed PASS",
+  "originalResult": "156PASS4FAIL; never accepted as a passing cohort",
+  "log": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact.log",
+  "logSha256": "bed4154aa660c629590a978eb7f1d5a051deec212fb63a71f366177cb5cf1dea",
+  "desktopLines": [
+    {
+      "line": 139,
+      "text": "  \u2718  100 [desktop] \u203a tests/e2e/012-outposts/outpost-remote.spec.ts:5:83 \u203a Choose the order of two gained System bonuses with separate remote controllers (4.9s)"
+    },
+    {
+      "line": 151,
+      "text": "  \u2718  110 [desktop] \u203a tests/e2e/012-outposts/outpost-tabletop.spec.ts:5:160 \u203a Choose two System bonus rewards at four shared corner seats (4.5s)"
+    }
+  ],
+  "allFourOriginalFailures": [
+    {
+      "frame": "choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/026-split-build-built-tabletop-4k-darwin.png",
+      "originalExpected": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/012-outposts-outpost-table-8f3a7--four-shared-cardinal-seats-tabletop-4k/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/026-split-build-built-tabletop-4k-darwin-expected.png",
+      "originalActual": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/012-outposts-outpost-table-8f3a7--four-shared-cardinal-seats-tabletop-4k/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/026-split-build-built-tabletop-4k-darwin-actual.png",
+      "preservedExpectedSha256": "0c21dc9d113a4984ef1724d1c28d07e9670be2803f9ba92a50cecda0a01251a6",
+      "preservedActualSha256": "20e0cb8c7477aabd6d8ec7d38f6216351dc35edfe3248c6d353887188e3da26b",
+      "originalRgbaPixelDelta": 70,
+      "bounds": {
+        "x0": 1796,
+        "y0": 1145,
+        "x1": 1820,
+        "y1": 1158
+      },
+      "finalReference": "tests/e2e/012-outposts/screenshots/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/026-split-build-built-tabletop-4k-darwin.png",
+      "finalReferenceSha256": "0c21dc9d113a4984ef1724d1c28d07e9670be2803f9ba92a50cecda0a01251a6",
+      "finalReferencePixelsEqualOriginalExpected": true,
+      "finalReferencePixelsEqualFailedActual": false,
+      "finalFullExactPassed": true
+    },
+    {
+      "frame": "choose-two-system-bonus-rewards-at-four-shared-corner-seats/027-split-build-map-desktop-darwin.png",
+      "originalExpected": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/012-outposts-outpost-table-87e0f-at-four-shared-corner-seats-desktop/choose-two-system-bonus-rewards-at-four-shared-corner-seats/027-split-build-map-desktop-darwin-expected.png",
+      "originalActual": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/012-outposts-outpost-table-87e0f-at-four-shared-corner-seats-desktop/choose-two-system-bonus-rewards-at-four-shared-corner-seats/027-split-build-map-desktop-darwin-actual.png",
+      "preservedExpectedSha256": "f2102bc93c1e924aa825bce6df5f7fbafb215c956a112d1e56c2d62ba5422287",
+      "preservedActualSha256": "0310d59ebab3e00c52040db8255394ed01444d97ce3b78706a8c37ec15ce1f66",
+      "originalRgbaPixelDelta": 151,
+      "bounds": {
+        "x0": 770,
+        "y0": 604,
+        "x1": 793,
+        "y1": 626
+      },
+      "finalReference": "tests/e2e/012-outposts/screenshots/choose-two-system-bonus-rewards-at-four-shared-corner-seats/027-split-build-map-desktop-darwin.png",
+      "finalReferenceSha256": "0310d59ebab3e00c52040db8255394ed01444d97ce3b78706a8c37ec15ce1f66",
+      "finalReferencePixelsEqualOriginalExpected": false,
+      "finalReferencePixelsEqualFailedActual": true,
+      "finalFullExactPassed": true
+    },
+    {
+      "frame": "manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/061-r1-cleo-paid-tabletop-4k-darwin.png",
+      "originalExpected": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/007-production-production--877e4-elds-at-four-cardinal-seats-tabletop-4k/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/061-r1-cleo-paid-tabletop-4k-darwin-expected.png",
+      "originalActual": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/007-production-production--877e4-elds-at-four-cardinal-seats-tabletop-4k/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/061-r1-cleo-paid-tabletop-4k-darwin-actual.png",
+      "preservedExpectedSha256": "0924bfdadab03aea8ce36421cd0320667b337646bbca2cc0663ae3de93d8e01c",
+      "preservedActualSha256": "e1c27030c3fff076f71b28f112228cba8f86d5cead1faff6ef186e93ca9c0298",
+      "originalRgbaPixelDelta": 290,
+      "bounds": {
+        "x0": 2019,
+        "y0": 991,
+        "x1": 2043,
+        "y1": 1004
+      },
+      "finalReference": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/061-r1-cleo-paid-tabletop-4k-darwin.png",
+      "finalReferenceSha256": "e742229d4223b158cd4a30e013147ff4355e7da48f4e2e03f9262ffe6b24aa45",
+      "finalReferencePixelsEqualOriginalExpected": false,
+      "finalReferencePixelsEqualFailedActual": false,
+      "finalFullExactPassed": true
+    },
+    {
+      "frame": "choose-the-order-of-two-gained-system-bonuses-with-separate-remote-controllers/034-split-build-map-desktop-darwin.png",
+      "originalExpected": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/012-outposts-outpost-remot-00937-separate-remote-controllers-desktop/choose-the-order-of-two-gained-system-bonuses-with-separate-remote-controllers/034-split-build-map-desktop-darwin-expected.png",
+      "originalActual": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/012-outposts-outpost-remot-00937-separate-remote-controllers-desktop/choose-the-order-of-two-gained-system-bonuses-with-separate-remote-controllers/034-split-build-map-desktop-darwin-actual.png",
+      "preservedExpectedSha256": "5743ffcc74d3502b28d7b220699d453dfa96b048372e3dad58b071b88a46d7ef",
+      "preservedActualSha256": "77bf82b3bc16de3dd4b5323d1eb31a7db4037e17cb930d1cf38c4fec13a963fb",
+      "originalRgbaPixelDelta": 70,
+      "bounds": {
+        "x0": 928,
+        "y0": 436,
+        "x1": 952,
+        "y1": 449
+      },
+      "finalReference": "tests/e2e/012-outposts/screenshots/choose-the-order-of-two-gained-system-bonuses-with-separate-remote-controllers/034-split-build-map-desktop-darwin.png",
+      "finalReferenceSha256": "5743ffcc74d3502b28d7b220699d453dfa96b048372e3dad58b071b88a46d7ef",
+      "finalReferencePixelsEqualOriginalExpected": true,
+      "finalReferencePixelsEqualFailedActual": false,
+      "finalFullExactPassed": true
+    }
+  ],
+  "subsequentVerification": {
+    "full": "outposts182-full-exact2.log:160/160PASS39.0m;11001frames",
+    "affected": "outposts182-texture-exact.log:8/8PASS664frames",
+    "newCoverage": "outposts183-exact.log:18/18PASS4.9m;1456frames including398new",
+    "coverage183": "Completed, not queued;3/4playerphone393x852 Exploration and real attachedTeegardenSystem"
+  },
+  "repair": "Shared MapMiniature decoded original-art texture, retaining responsiveIMG preload/layout and original decode guards. The remote baseline is checked separately from corner; no failed actual blindly adopted.",
+  "notes": "Earlier corner-only commentary was incomplete. This ledger preserves both desktop failures and both later native failures. No rerun, source edit, baseline generation, guard change, publication, service restart or phase013 release required for this historical reconciliation.",
+  "repairDetail": {
+    "remote100": "Final pixels equal original expected, not the failed actual; original reference remained unchanged.",
+    "corner110": "Final pixels equal the old failed actual, but were independently source-generated after texture correction, not copied from failure. Twelve fresh browsers/60 source captures and 8 affected exact plus160 full exact preserved separately. Equality alone is not asserted as provenance.",
+    "nativeFailures": "Both later native failures remain recorded; full original run156/160 stays failed."
+  }
+}

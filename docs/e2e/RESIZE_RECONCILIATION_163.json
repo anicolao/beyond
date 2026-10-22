@@ -1,0 +1,12 @@
+{
+  "prompt": 163,
+  "reviewerAuthored": true,
+  "historicalFailure": "jumps159-full-candidates.log129/132: native four-cardinal resize640 left intended route reader; Commit jumps absent, not classified as simple clipping",
+  "diagnosis": "Responsive single/dense view resets to Exploration, whose action strip is intentionally hidden. Unpaid routes are retained. Explicitly wait for and click Routes after resizing before asserting Commit; restore reader again on return to native viewport.",
+  "currentCode": "tests/e2e/011-jump-planning/journey.ts:84",
+  "alreadyPublishedFix": "02a5496174a051f7f7986219696143b0617c1645",
+  "verification": "Subsequent complete current generation132/132 followed by independent exact132/13231.2m,9141frames; compact640/native-return retained; unchanged guards and deadlines",
+  "scope": "No duplicate production change or rerun; historical failed cohort preserved, never adopted wholesale. Later actual compact control/power clipping fixed separately and verified before final local gate.",
+  "reviewerVisual": "Two-corner4K Sirius endpoint scoped readable; not finalLinux/hosted acceptance",
+  "remaining": "PR13 Linux/native review and hosted exact-source503 pending;012 exploratory only"
+}

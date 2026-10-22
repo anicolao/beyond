@@ -1,0 +1,16 @@
+# Illustrated production walkthroughs
+
+- [Contest an Ore outpost and return the former owner’s disc with separate remote controllers](stories/contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers/README.md)
+- [Choose the order of two gained System bonuses with separate remote controllers](stories/choose-the-order-of-two-gained-system-bonuses-with-separate-remote-controllers/README.md)
+- [Choose the gaining owner’s multi-specialty disc with separate remote controllers](stories/choose-the-gaining-owner-s-multi-specialty-disc-with-separate-remote-controllers/README.md)
+- [Retain an empty outpost without any owned ships with separate remote controllers](stories/retain-an-empty-outpost-without-any-owned-ships-with-separate-remote-controllers/README.md)
+- [Lose control during a rival trade while keeping permanent automation with separate remote controllers](stories/lose-control-during-a-rival-trade-while-keeping-permanent-automation-with-separate-remote-controllers/README.md)
+- [Contest an Ore outpost at two shared cardinal seats](stories/contest-an-ore-outpost-at-two-shared-cardinal-seats/README.md)
+- [Choose two System bonus rewards at four shared cardinal seats](stories/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/README.md)
+- [Choose a multi-specialty outpost at four shared cardinal seats](stories/choose-a-multi-specialty-outpost-at-four-shared-cardinal-seats/README.md)
+- [Retain an empty outpost without ships at two shared cardinal seats](stories/retain-an-empty-outpost-without-ships-at-two-shared-cardinal-seats/README.md)
+- [Return an outpost during rival trade and retain automation at two shared cardinal seats](stories/return-an-outpost-during-rival-trade-and-retain-automation-at-two-shared-cardinal-seats/README.md)
+- [Contest an Ore outpost at two shared corner seats](stories/contest-an-ore-outpost-at-two-shared-corner-seats/README.md)
+- [Choose two System bonus rewards at four shared corner seats](stories/choose-two-system-bonus-rewards-at-four-shared-corner-seats/README.md)
+- [Choose a multi-specialty outpost at four shared corner seats](stories/choose-a-multi-specialty-outpost-at-four-shared-corner-seats/README.md)
+- [Retain an empty outpost without ships at two shared corner seats](stories/retain-an-empty-outpost-without-ships-at-two-shared-corner-seats/README.md)

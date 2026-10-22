@@ -1,0 +1,22 @@
+{
+  "prompt": 160,
+  "reviewerAuthored": true,
+  "phase": "010",
+  "pr": 12,
+  "head": "65cb4a4",
+  "static": {
+    "job": 119189568119,
+    "result": "SUCCESS",
+    "isolatedSuites": 16,
+    "failedSuites": 0,
+    "frozenCompatibility": "last9 PASS,6.68s",
+    "independentLog": "/tmp/beyond-review-pr12-static-65cb4a4.log"
+  },
+  "scope": "First independent Linux confirmation of runner repair; no browser or hosted acceptance",
+  "browser": {
+    "job": 119189567850,
+    "statusAtReviewerCheckpoint": "running"
+  },
+  "publisher": "Exact-source503 remains separate",
+  "action": "Record only; no duplicate rerun. Existing011 local132/132 and PR13 publication stand;012 local review underway."
+}

@@ -955,3 +955,164 @@ Reviewer11:16 new completed CI result: prior7b42cd4 native job119154497318 FAILE
 Reviewer-authored local acceptance and formal verification delegation:
 
 Reviewer11:21 LOCAL VISUAL/FUNCTIONAL ACCEPTANCE for011 exploratory implementation, releasing formal illustrated validation. Independently verified restored automatic=canAdvanceDiscovery(game), defensive cycleRouteShipId zero/single guards/tests12PASS54assertions, shared/remote157 auto-pass logs, types0/0 and readable phoneProduction157. Combined with prior independent desktop/phone/4K/corner151/source/endpoint reviews and reviewer-owned live canonical persistence, no remaining known exploratory blocker. Now implement/run required011 illustrated stories and full local verification with unchanged exact comparisons/capture2s/story120s/backend5s guards; generate only warranted current platform references after this acceptance, never adopt failed native cohorts. After full required local checks pass, commit/push011 and open new PR based on feat/fleet-management current65cb4a4 (preserve repairs), then explicitly begin012 Contest an outpost on a new branch stacked on011 while CI/hosted gates finish. Do not wait for another human prompt after those local gates. Final011 acceptance still requires independent exact macOS/Linux and matching hosted preview; PR12 and older CI/publisher blockers tracked separately and fixes propagated. Report actual results/head/base/PR/evidence. Preserve persistent5206 and reviewer identities/data, no merges.
+
+## Prompt 160: Runner Repair Confirmation
+
+Reviewer-authored Linux static checkpoint:
+
+Reviewer11:31 milestone: independently verified current65cb4a4 static job119189568119 SUCCESS, log /tmp/beyond-review-pr12-static-65cb4a4.log. All16 isolated backend suites completed with0failed; frozen compatibility last9PASS6.68s. This supplies first Linux confirmation for runner repair, not browser/hosted acceptance. Browser119189567850 still running, publisher503 remains separate. Continue authorized011 formal validation; no duplicate rerun solely for this success.
+
+## Prompt 161: Preserve Disk Evidence
+
+Reviewer-authored storage and workflow checkpoint:
+
+Reviewer11:36 disk blocker surfaced to human via pending text question: free15-20GiB or specify writable alternate volume. No answer yet; do not infer approval or delete preserved evidence/user files. Continue safe story/check work within available space, retain failed-run diagnostics, and avoid filling disk. Current CI static PASS already queued; browser still running. No need to repeat question.
+
+## Prompt 162: Browser Failure Checkpoint
+
+Reviewer-authored CI and local correction checkpoint:
+
+Reviewer11:46 new CI status: current65cb4a4 browser job119189567850 test:e2e step FAILED at11:46:06; artifact upload still running, detailed log endpoint not yet available (404), so failure counts not yet known. Static remainsPASS; preserve separate gates. Independently read shared2 candidate3/4 failure and viewed round159 failure-1440 image; you are already investigating final-power clipping, no duplicate fix request. Full local validation/publication/012 remain gated on correction and original checks.
+
+## Prompt 163: Compact Resize Context
+
+Reviewer-authored candidate failure and scoped visual checkpoint:
+
+Reviewer12:31 independently confirmed full candidates129/132, three failures. Additional011four-cardinal4K error at jump-compact640 says Commit jumps element not found after viewport resize (not merely clipped). Prepared navigation-fix.py covers desktop recovery/fleet navigation but not this resize transition. Inspect whether resize resets to Exploration and explicitly restore intended reader before asserting, or fix production if route/context is lost. Retain compact640 coverage and original guards; no failed cohort acceptance. Scoped two-corner4K Sirius endpoint image independently inspected and readable.
+
+## Prompt 164: Cardinal Route Clipping
+
+Reviewer-authored concrete geometry and responsive-context finding:
+
+Reviewer12:46 new evidence from jumps159-cardinal-candidates-final.log: recovery now progresses, but desktop compact640 has actual Previous route ship clipping by plan-scroll; 4K still has Commit absent after resize. Source JumpPlan.svelte line15 effect resets view=map when single and noncompact change, supporting the latter diagnosis. Fix/verify compact cardinal route controls against unchanged geometry guards; retain route identity and unpaid plan across resize, then rerun affected checks before exact validation. This is additional concrete clipping evidence, not acceptance of either failed case.
+
+## Prompt 165: Cardinal Scoped Acceptance
+
+Reviewer-authored scoped visual acceptance and verification direction:
+
+Reviewer12:56 scoped visual pass: independently inspected round159-cardinal-routes-after/guarded-1280x640.png and context JSON. Full selected ship/path,44px route navigation and all three action controls readable and contained (reader116px). Read CARDINAL COMPLETE ROUTES640/720/1000/4K PASS script/log; it explicitly restores Routes after resize and asserts Deep Space route continuity. CSS reuse for dense/compact is appropriate. Proceed with corrected affected stories and full independent exact checks; this is not full local-check acceptance or012release.
+
+## Prompt 166: Fleet Navigation Race
+
+Reviewer-authored functional failure and evidence-preservation checkpoint:
+
+Reviewer14:06: final-exact2 now has a new functional failure in010desktop four-cardinal (entry85), not a pixel delta. Independently read error-context: Commit no movement absent in toBeEnabled within unchanged2000ms. Preserve trace and investigate recurring focus/navigation race despite prior pass; do not adopt references or retry away this failure. Full local acceptance/012 remains gated. Prior two visual deltas were independently reviewed in supervisor ledger.
+
+## Prompt 167: Visible Budget Review
+
+Reviewer-authored scoped visual acceptance and source-provenance checkpoint:
+
+Reviewer14:47 scoped visual review: independently inspected round159-visible-budget/budget-and-map-1280x640.png; remaining3 budget stays readable above tabs and complete map remains contained/readable. This correction looks acceptable at640; retain broader guarded viewport evidence and refresh affected references only after review. In-flight exact3 predates this production correction and cannot validate final source; fresh final checks remain required before011publication/012.
+
+## Prompt 168: Map Tile Labels
+
+Reviewer-authored internal text containment finding:
+
+Reviewer15:02: independently viewed round159-corner-map-budget/budget-and-map-1280x640.png. Budget nowvisible and nodes separated, but secondary labels overflow card bottoms: Northern/Western/Eastern shipyard and Barnards Star System visibly extend beyond ivory tiles. Screen-fit PASS is insufficient for composed card text. Fit full labels within each tile (or remove redundant type labels where identity already says shipyard), preserve readable text/44px controls and graph edges; fresh scoped capture before acceptance.
+
+## Prompt 169: Tile Labels Accepted
+
+Reviewer-authored scoped label acceptance and remaining-gate checkpoint:
+
+Reviewer15:22 scoped visual acceptance: independently inspected refreshed round159-corner-map-budget/budget-and-map-1280x640.png and1280x720.png. Secondary shipyard/System labels now contained within ivory tiles; remaining3 budget and complete connected map readable. This supersedes15:02 scoped label rejection. Proceed with affected formal budget/map captures and current-source validation with original guards. Does not accept unresolved0074K61pixel full-run failure or release012 yet.
+
+## Prompt 170: Scope Exploration Locator
+
+Reviewer-authored strict-locator failure and targeted verification instruction:
+
+Reviewer15:42: independently read map-remote-candidates: desktopPASS, phoneFAIL at journey.ts73 because global Exploration button locator matches both Board view and jump panel. Scope to the jump-planning region/production panel, not first()/nth(), then rerun affected phone/desktop captures with guards unchanged. No current-source full pass yet. Existing disk-space question remains unanswered; preserve evidence.
+
+## Prompt 171: Recheck Available Capacity
+
+Reviewer-authored observed storage and verification checkpoint:
+
+Reviewer15:57 fresh independent df -h /tmp now shows8.4GiB available, increased from2.3GiB. Recheck capacity and proceed with corrected affected captures/current-source validation where safe; this is observed headroom, not permission to delete evidence. No phase012 release until local acceptance/checks complete.
+
+## Prompt 172: Pixel Provenance Audit
+
+Reviewer-authored targeted final reference and inactive-path audit:
+
+Reviewer17:22 independently confirmed exact4 132/132PASS and inspected final desktop multi-fleet planner plus phone laser recovery references: scoped visual pass. Final audit leaves a specific provenance question: earlier 007 four-cardinal 117-r4-ada-paid-tabletop-4k replay/reference SHA was e07c96bcd65597b11956b208c8dab5bfc1c2cf2ed470674a65f8f55d09c9f9aa (12 identical replays), but final content-audit afterSha is a24a69982e765ce334be024be6fa7b763570bfc38be244e83ab1456e11ab88bc. Compare preserved exact3 reference/actual with final frame and document whether original 61-pixel region changed, why, and corresponding source change; parent-to-final audit alone cannot resolve that variance. Do not regenerate blindly or weaken guards. Also document disposition of 15 modified inactive tracked PNGs in inactive-reference-path-audit. Current commit02a5496 observed; no012 release until this targeted evidence closes. Preserve running push and diagnostics; no duplicate full run requested.
+
+## Prompt 173: Jump Local Acceptance
+
+Reviewer-authored full local acceptance and next-phase release:
+
+Reviewer17:35 LOCAL ACCEPTANCE for011. Independently compared preserved pre-fix native-0 and final007four-cardinal117 frame:46,632 changed RGBA pixels are bounded to map tiles/labels/thumbnails; side-by-side crops /tmp/beyond-review-raster-0.png and -1.png show previously overflowing labels/thumbnails now contained in taller tiles. This is the reviewed15:22 map containment correction and explains changed reference placement, not blind adoption of61-pixel variance. Final132/132 exact plus prior12stable replays support local release; historical variance remains recorded, not claimed universally cured. Independently verified15inactive references restored/preserved. Complete current011 push and open stacked PR based feat/fleet-management; then begin012 Contest an outpost on a NEW branch stacked on011 while Linux/hosted gates finish. Keep5206 review server/evidence and guards intact; source-review control ties/withdrawal/empty retained outposts/gain-control and responder-owned choices, ordinary remote/phone/shared flows. No merges. Log this as reviewer instruction and report011PR/base/head and012branch.17:22 provenance question is now closed by independent review; do not duplicate runs just for it.
+
+## Prompt 174: Publisher Gate Separate
+
+Reviewer-authored exact-source publication failure and authorized overlap checkpoint:
+
+Reviewer18:00 verified PR13 publish39647354205/job119386320225 FAILED: current118531-byte rules SHA d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67 returns503; frozenPR5 diagnostic18480bytes returns200. Log /tmp/beyond-review-pr13-publish.log. No matching hosted acceptance. DocumentationPASS; static/browser/candidates still running. Confirmed new012feat/outpost-control at /tmp/beyond-outposts012 based exactly02a5496, consistent with authorized overlap. Continue012local source/UX work and track compiler repair separately; no weakened/fallback policy deployment or merges.
+
+## Prompt 175: Outpost Contrast Review
+
+Reviewer-authored local visual finding and real-mode coverage requirements:
+
+Reviewer18:10 inspected initial012 tie-keeps-ada-1280: tied2vs2 ownership verdict, ship levels and ore disc are readable. New issue: OUTPOST CONTROL eyebrow is pale gold on ivory, visibly low contrast; give this label an explicit accessible dark color and verify computed contrast. Production changes below fold still need scroll/keyboard review. continuation-phone-shared-blocked-393 shows overlapping shared mats intercepting Inspect mat; this is not evidence of remote phone coverage. Preserve failure and exercise real remote phone identity flow separately plus desktop/4K shared seats, without forced clicks/state injection. No012 acceptance yet; continue local iterations.
+
+## Prompt 176: Reader Clipping Gate
+
+Reviewer-authored Linux classification and local reader containment checkpoint:
+
+Reviewer18:25 independently fetched PR13 browser119386319822 completed log /tmp/beyond-review-pr13-browser.log: guards51PASS; exact browser16PASS116FAIL15.4m, categorized56pixel mismatches +60missing Linux snapshots, no test Timeout entries. Candidate generation still running; do not adopt failed cohorts or weaken guards. Track current02a5496 Linux failure separately from local acceptance and propagate reviewed native references only after successful candidates/exact validation.012readers log also shows outpost-ledger clipped by fleet-body after north640/4K captures; preserve and resolve before local acceptance. Existing contrast feedback remains queued, no need duplicate full runs.
+
+## Prompt 177: Withdrawal Tie Authority
+
+Reviewer-authored independent scoped play review and rules-source question:
+
+Reviewer19:11 independent live012 scoped pass in own5207table b4e9abc4: ordinary claim, incoming2vs2tie, then rival upgrade3vs2transfer; former owner Food return lowers growth2to1 while permanent automation1 stays. Dark outpost eyebrow now readable at1280x720. Not full acceptance. Read publisher second-print PDF p19: when some/all incumbent ships leave and multiple remaining factions tie highest, incumbent loses control. Current control-table tests only final powers and resolver always keeps incumbent among leaders. Please explicitly source-justify incumbent-withdrawal-into-tie case (e.g.3vs2 becomes2vs2), distinguish incoming tie from withdrawal, and add before/after fixture if required; do not guess. Also retain explicit owner-controlled specialty/bonus-order evidence and source review012 before local gate. Existing feedback remains queued; no013 release.
+
+## Prompt 178: Native Cohort Failed
+
+Reviewer-authored native-step failure and artifact-upload distinction:
+
+Reviewer19:26 new PR13 gate: independently read job119386320287 step metadata. test:e2e:update FAILED at19:14:58 after72m11s; current job still in_progress only because artifact upload has run since19:15:01. Native candidates are therefore not a successful cohort. Preserve artifacts, inspect failure categories when logs available, no adoption of failed references. Static/docs remainPASS, exact/publisherFAIL;012 local source/remaining gates unchanged.
+
+## Prompt 179: Bonus Order Replay
+
+Reviewer-authored source closure and ordinary UI continuation:
+
+Reviewer19:36: Independently read Dennis K. Chan Verified Designer Dec10 2020 clarification at https://boardgamegeek.com/thread/2557491/article/36483484#36483484 in browser. Confirms incumbent still tied strongest retains control; neutral withdrawal clause applies when leaving faction no longer among highest. Source ambiguity CLOSED; resolver unchanged is correct. Independently read outposts177-types2.log 0 errors/0 warnings and withdrawal3.log six PASS/59 assertions; combined25/205 recorded. Continue012 ordinary bonus-order UI coverage and remaining local gates on persistent5207; report concrete evidence for independent review. No full012 acceptance or013 release yet. PR13 failed native cohort remains ineligible for adoption; address recorded failures with guards unchanged and preserve provenance.
+
+## Prompt 180: Outpost Formal Validation
+
+Reviewer-authored scoped choice acceptance and formal verification release:
+
+Reviewer19:46 scoped pass: independently read all four179 final replay logs and remote proof JSON, plus types0/0. Viewed bonus remote choice, specialty remote choice, bonus native4K corner choice: legible text/buttons/orientation. Ordinary ordering and specialty owner isolation/reload/once-only evidence accepted for these scenarios (bonus1,3->2,4 retained; specialty1,3->1,4 food disc/no invented Pop reward). Continue remaining012 formal illustrated stories and required local validation with guards intact; provide final candidate evidence for phase acceptance. This scoped pass does not release013. Keep PR13 failed candidate cohort excluded and diagnose timing failures separately.
+## Prompt 181: Reporter Parity Checkpoint
+
+Reviewer-authored illustrated output failure and unchanged parity requirement:
+
+Reviewer20:31: Independently read affected-candidates4 end:60 browser stories PASS15.1m, followed by StoryReporter.onEnd failure Viewport story steps differ. Treat overall run/report generation as failed until corrected; preserve per-viewport records and diagnose differing steps without weakening reporter parity guard. Scoped visual evidence remains accepted; full012 acceptance/013 release still pending repaired illustrated output plus full exact validation. No duplicate browser rerun needed merely for known passing paths unless parity correction changes their steps.
+
+## Prompt 182: Thumbnail Scoped Acceptance
+
+Reviewer-authored thumbnail acceptance and bounded validation release:
+
+Reviewer21:51 scoped thumbnail review: independently compared prefiltered expected/actual crops and full 026-split-build-built 4K actual; read generator provenance and JumpPlan src/srcset diff. Badge retains original art character and readable adjacent title; scoped visual acceptance for this thumbnail change. Proceed with bounded affected reference generation and exact validation, retaining before/after provenance and unchanged guards; audit collateral map-frame differences. This is not phase012 acceptance or013 release. Earlier20:31 parity finding was independently closed by candidate5/6 successful reporters; preserve history, no need to redo that repair.
+
+## Prompt 183: Narrow Map Coverage
+
+Reviewer-authored scoped diagnostic acceptance and formal coverage requirement:
+
+Reviewer22:06: Independently viewed round180-thumbnail phone393x852 and corner1280x640 captures plus proof JSON. Scoped visual pass: phone destinations separated, readable labels/routes and footer; corner reader contained with seat-facing orientation. These are diagnostic captures, not formal exact gates. Include Exploration-tab checks in formal phone3/4-player stories and cover the attached discovered System when validating the narrow coordinate fallback; then proceed with affected generation/exact under unchanged guards. No phase012 acceptance or013 release yet.
+
+## Prompt 184: Failure Ledger Correction
+
+Reviewer-authored full-log correction and evidence preservation:
+
+Reviewer23:15: Full-log scan shows TWO failures in outposts182-full-exact.log: desktop remote bonus-order journey100 (line139), plus shared-corner bonus journey110 (line151). Your latest commentary says only corner mismatch; investigate and preserve both failures after current frozen-source run completes, with guards unchanged. My23:10 tail-only status also missed100; ledger corrected. Existing22:06 coverage instruction remains queued; this message only flags the additional failure, not duplicate visual feedback.
+
+## Prompt 185: Texture Scoped Acceptance
+
+Reviewer-authored source-capture acceptance and bounded validation release:
+
+Reviewer23:50: Independently viewed fresh MapMiniature source captures phone1792626499579/source-0.png and corner1792626476696/source-0.png. Scoped visual pass: original badge art, readable separated nodes/routes, controls, footer and seat orientation preserved. This permits bounded affected exact validation with unchanged guards and collateral audit; diagnostics alone do not close four full-run failures or phase012. Existing ordinary3-player/attached phone coverage requirement remains open; no013 release.
+
+## Prompt 186: Colony Phase Release
+
+Reviewer-authored phase012 local acceptance, stacked publication and phase013 implementation release:
+
+Reviewer01:10: Phase012 LOCAL ACCEPTANCE granted. Independent live outpost flows, remote/shared/corner/4K collateral and new formal3-player079/4-player092 phone Rift views satisfy local review. Independently confirmed full160/160 plus affected18/18, reporter parity/links, unchanged111 production files and1058 prior discovery frames; supporting types/builds/backend/tooling/51guards pass. Prior23:15 and23:50 messages are historical and now closed by182/183; preserve failure evidence, do not restart resolved iterations. Commit/push012 feat/outpost-control, open stacked PR against feat/jump-planning, report URL/head. Then begin013 Establish a colony on a new branch stacked on committed012 while Linux exact and hosted gates finish. Review UX06-colonization and source rules before implementation; real ordered settlement/returns/exile/refill/disc/bonus, deck exhaustion, no duplicate gain-control bonus, canonical persistence/mode isolation. Keep5207 review server; new phase persistent server. Final012 acceptance remains pending Linux checks and independently verified matching-head hosted preview. Track older PR13 compiler503/CI separately; no diagnostic rules deployment, no merges. Log this as reviewer-authored.

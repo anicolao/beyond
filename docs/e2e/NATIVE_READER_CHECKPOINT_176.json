@@ -1,0 +1,52 @@
+{
+  "prompt": 176,
+  "reviewerAuthored": true,
+  "pr": 13,
+  "head": "02a5496174a051f7f7986219696143b0617c1645",
+  "comparison": {
+    "job": 119386319822,
+    "passed": 16,
+    "failed": 116,
+    "duration": "15.4m",
+    "pixelMismatches": 56,
+    "missingLinuxReferences": 60,
+    "testTimeoutEntries": 0,
+    "guards": 51,
+    "localAcceptanceSeparate": true
+  },
+  "native": {
+    "job": 119386320287,
+    "status": "completedFAIL",
+    "passed": 128,
+    "failed": 4,
+    "duration": "1.2h",
+    "guards": 51,
+    "primaryFailures": [
+      "2026-10-21T19:14:52.1784666Z   1) [tabletop-4k] \u203a tests/e2e/005-technology-discovery/discovery-tabletop.spec.ts:4:430 \u203a Reveal attach and recover a real Dimensional Rift System ",
+      "2026-10-21T19:14:52.1805799Z   2) [tabletop-4k] \u203a tests/e2e/007-production/production-tabletop.spec.ts:5:299 \u203a Manage matching Supply and full Ore yields at four corner seats \u203a Cleo selects the legal printed space 3 \u203a Ready, unclipped, photographed, and compared within 2,000 ms ",
+      "2026-10-21T19:14:52.1822390Z   3) [tabletop-4k] \u203a tests/e2e/007-production/production-tabletop.spec.ts:5:299 \u203a Manage matching Supply and full Ore yields at four cardinal seats ",
+      "2026-10-21T19:14:52.1849731Z   4) [tabletop-4k] \u203a tests/e2e/008-trading/trading-tabletop.spec.ts:6:308 \u203a Trade from a Food-covered Supply column without ordinary production at physical shared seats "
+    ],
+    "categories": {
+      "capture2000ms": 2,
+      "story120000ms": 2
+    },
+    "log": "/Users/anicolao/projects/games/beyond/tmp/jumps176-pr13-native.log",
+    "adopted": false
+  },
+  "reader": {
+    "originalFailure": "/Users/anicolao/projects/games/beyond/tmp/outposts012-readers.log",
+    "classification": "Actual outpost-ledger root overflow in corner after successful north640/4K; preserve as failure",
+    "productionCorrection": "Compact reader presents native Power/control,Track yields,Rule/bonus pages; preserve full semantics and44px controls; no global geometry predicate change",
+    "separateLaterFailure": "/Users/anicolao/projects/games/beyond/tmp/outposts012-readers3.log",
+    "laterClassification": "Rotated Close/Rules AABB document audit; caller now uses existing angled polygon contract, not new relaxed predicate",
+    "freshVerification": [
+      "/Users/anicolao/projects/games/beyond/tmp/outposts175-readers.log",
+      "/Users/anicolao/projects/games/beyond/tmp/outposts175-corner.log"
+    ],
+    "freshResult": "PASS real remotephone/desktop and sharednorth/corner640/native4K; allpages+keyboardEndscroll+Tabloop+Escapeexactreturn",
+    "remaining": "Independent012 local acceptance and formal validation pending"
+  },
+  "publisher": "Exact current-source503 remains separate; no fallback policy or hosted acceptance",
+  "noMerge": true
+}

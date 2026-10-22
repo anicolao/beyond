@@ -1,0 +1,26 @@
+{
+  "prompt": 170,
+  "reviewerAuthored": true,
+  "failure": {
+    "log": "/Users/anicolao/projects/games/beyond/tmp/jumps159-map-remote-candidates.log",
+    "result": "desktopPASS/phoneFAIL strict mode: two global Exploration buttons"
+  },
+  "publishedCorrection": {
+    "head": "02a5496174a051f7f7986219696143b0617c1645",
+    "file": "tests/e2e/011-jump-planning/journey.ts:73",
+    "selector": "getByRole('navigation',{name:'Jump planning views',exact:true}).getByRole('button',{name:'Exploration',exact:true})",
+    "positionalSelector": false
+  },
+  "subsequentAffectedEvidence": {
+    "log": "/Users/anicolao/projects/games/beyond/tmp/jumps159-map-remote-candidates2.log",
+    "result": "phone/desktop2/2PASS20.3s; original geometry/exact/capture guards"
+  },
+  "subsequentFullEvidence": {
+    "generation": "/Users/anicolao/projects/games/beyond/tmp/jumps159-current-map-full-candidates.log",
+    "generationResult": "132/132",
+    "comparison": "/Users/anicolao/projects/games/beyond/tmp/jumps159-final-exact4.log",
+    "comparisonResult": "132/13231.2m9141frames;70sourcehashesunchanged"
+  },
+  "storage": "No answer or approval inferred; failed logs/images retained; no new full run or deletion needed for this retrospective checkpoint",
+  "acceptance": "This log does not claim independent full acceptance or new012formal release"
+}

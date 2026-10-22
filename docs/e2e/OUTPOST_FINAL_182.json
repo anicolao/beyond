@@ -1,0 +1,88 @@
+{
+  "prompt": 182,
+  "status": "Current macOS illustrated verification complete; independent phase012acceptance pending",
+  "branch": "feat/outpost-control",
+  "head": "02a5496174a051f7f7986219696143b0617c1645 plus uncommitted012",
+  "exact": {
+    "result": "160/160PASS39.0m",
+    "records": 160,
+    "frames": 11001,
+    "allGeneratingFalse": true,
+    "byProject": {
+      "desktop": 81,
+      "phone": 30,
+      "tabletop-4k": 48,
+      "desktop-compact": 1
+    },
+    "new012variants": 28,
+    "new012frames": 1860,
+    "log": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact2.log",
+    "report": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact2-report",
+    "audit": "/Users/anicolao/projects/games/beyond/tmp/outposts182-final-story-audit.json",
+    "updateSnapshots": false,
+    "reporterCompleted": true,
+    "walkthroughLinksVerified": true
+  },
+  "supportingChecks": {
+    "types": "0errors0warnings",
+    "previewAndProductionBuilds": "PASS current source",
+    "tooling": 64,
+    "unchangedCaptureGuards": 51,
+    "policy": "PASS",
+    "backend": "244PASS3464assertions21isolatedsuites; prior canonical run retained, allTypeScript and rules bytes unchanged by frontendpaint correction",
+    "diffCheck": "PASS",
+    "frozenSourceFiles": 115,
+    "sourceFreeze": "/Users/anicolao/projects/games/beyond/tmp/outposts182-texture-source-freeze.json"
+  },
+  "referenceAudit": {
+    "parentActive": 9141,
+    "unchanged": 8948,
+    "changed": 193,
+    "missing": [],
+    "earlier182HashesRemainIdentical": true,
+    "newParentGroup": "11production badge-only frames",
+    "affected664Frames": {
+      "unchanged": 652,
+      "badgeOnlyChanges": 12,
+      "exact": "8/8PASS"
+    },
+    "inactive": {
+      "count": 15,
+      "preserved": true,
+      "deletedTrackedReferences": 0
+    }
+  },
+  "historical117": {
+    "phase": "007-production",
+    "project": "tabletop-4k",
+    "id": "r4-ada-paid",
+    "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-texture-refresh/007-production/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/117-r4-ada-paid-tabletop-4k-darwin.png",
+    "after": "tests/e2e/007-production/screenshots/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/117-r4-ada-paid-tabletop-4k-darwin.png",
+    "beforeSha256": "a24a69982e765ce334be024be6fa7b763570bfc38be244e83ab1456e11ab88bc",
+    "afterSha256": "c4d8ae85deaee56a6c14d69dec86a15a64f04056e985b540c9ae6f3044a9aa3d",
+    "pixels": 256,
+    "bounds": {
+      "x0": 1797,
+      "y0": 1156,
+      "x1": 1819,
+      "y1": 1167
+    },
+    "width": 3840,
+    "height": 2160
+  },
+  "originalFailure": "156/160FAIL39.2m retained with four expected/actual pairs/traces; never adopted as cleanrun",
+  "originalParityFailure": "60browserPASS/reportFAILED retained; unchanged reporter repaired by aligned012checkpoints; candidates5/6pass independently closed by182",
+  "reviewPacket": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/round182-texture/REVIEW.md",
+  "preview": "http://127.0.0.1:5207/",
+  "services": "5207/9397/8297originalprocessesalive; no live data/auth/controller reset. Test resets only8497.",
+  "remaining": [
+    "Independent final phase 012 review; phase 013 remains held.",
+    "No successful current Linux cohort or matching hosted acceptance claimed. PR13failednative128/132cohortexcluded.",
+    "Exact-source compiler503 and older stackedCI/hostedgates remain separately open; no fallback policy."
+  ],
+  "committed": false,
+  "pushed": false,
+  "merged": false,
+  "phase013Released": false,
+  "coverageLimit": "The attached-System presentation has 24 structural geometry cases. No ordinary four-player phone Rift replay is claimed; the old discovery bootstrap supports two remote players. This limitation remains documented in OUTPOST_MAP_REVIEW_180.json."
+}

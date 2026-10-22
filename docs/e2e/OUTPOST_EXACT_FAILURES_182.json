@@ -1,0 +1,100 @@
+{
+  "prompt": 182,
+  "status": "FAILED;156PASS4FAIL39.2m",
+  "command": [
+    "bun",
+    "x",
+    "playwright",
+    "test"
+  ],
+  "updateSnapshots": false,
+  "records": 160,
+  "recordedFramesIncludingPartialFailedStories": 10817,
+  "completeFrameAcceptance": false,
+  "onlyGeneratingFalse": true,
+  "failures": [
+    {
+      "expected": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/012-outposts-outpost-table-8f3a7--four-shared-cardinal-seats-tabletop-4k/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/026-split-build-built-tabletop-4k-darwin-expected.png",
+      "actual": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/012-outposts-outpost-table-8f3a7--four-shared-cardinal-seats-tabletop-4k/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/026-split-build-built-tabletop-4k-darwin-actual.png",
+      "pixels": 70,
+      "bounds": {
+        "x0": 1796,
+        "y0": 1145,
+        "x1": 1820,
+        "y1": 1158
+      },
+      "crop": {
+        "left": 1776,
+        "top": 1125,
+        "width": 65,
+        "height": 54
+      },
+      "reviewCrop": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-failure-pixels/026-split-build-built-tabletop-4k-darwin",
+      "classification": "New012 badge raster mismatch; no reference adoption"
+    },
+    {
+      "expected": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/012-outposts-outpost-table-87e0f-at-four-shared-corner-seats-desktop/choose-two-system-bonus-rewards-at-four-shared-corner-seats/027-split-build-map-desktop-darwin-expected.png",
+      "actual": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/012-outposts-outpost-table-87e0f-at-four-shared-corner-seats-desktop/choose-two-system-bonus-rewards-at-four-shared-corner-seats/027-split-build-map-desktop-darwin-actual.png",
+      "pixels": 151,
+      "bounds": {
+        "x0": 770,
+        "y0": 604,
+        "x1": 793,
+        "y1": 626
+      },
+      "crop": {
+        "left": 750,
+        "top": 584,
+        "width": 64,
+        "height": 63
+      },
+      "reviewCrop": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-failure-pixels/027-split-build-map-desktop-darwin",
+      "classification": "New012 badge raster mismatch; no reference adoption"
+    },
+    {
+      "expected": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/007-production-production--877e4-elds-at-four-cardinal-seats-tabletop-4k/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/061-r1-cleo-paid-tabletop-4k-darwin-expected.png",
+      "actual": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/007-production-production--877e4-elds-at-four-cardinal-seats-tabletop-4k/manage-matching-supply-and-full-ore-yields-at-four-cardinal-seats/061-r1-cleo-paid-tabletop-4k-darwin-actual.png",
+      "pixels": 290,
+      "bounds": {
+        "x0": 2019,
+        "y0": 991,
+        "x1": 2043,
+        "y1": 1004
+      },
+      "crop": {
+        "left": 1999,
+        "top": 971,
+        "width": 65,
+        "height": 54
+      },
+      "reviewCrop": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-failure-pixels/061-r1-cleo-paid-tabletop-4k-darwin",
+      "classification": "Source thumbnail collateral delta in prior007"
+    },
+    {
+      "expected": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/012-outposts-outpost-remot-00937-separate-remote-controllers-desktop/choose-the-order-of-two-gained-system-bonuses-with-separate-remote-controllers/034-split-build-map-desktop-darwin-expected.png",
+      "actual": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-evidence/012-outposts-outpost-remot-00937-separate-remote-controllers-desktop/choose-the-order-of-two-gained-system-bonuses-with-separate-remote-controllers/034-split-build-map-desktop-darwin-actual.png",
+      "pixels": 70,
+      "bounds": {
+        "x0": 928,
+        "y0": 436,
+        "x1": 952,
+        "y1": 449
+      },
+      "crop": {
+        "left": 908,
+        "top": 416,
+        "width": 65,
+        "height": 54
+      },
+      "reviewCrop": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-failure-pixels/034-split-build-map-desktop-darwin",
+      "classification": "New012 badge raster mismatch; no reference adoption"
+    }
+  ],
+  "timingOrContainmentFailures": 0,
+  "report": "/Users/anicolao/projects/games/beyond/tmp/outposts182-full-exact-report",
+  "sourceFreeze": "/Users/anicolao/projects/games/beyond/tmp/outposts182-source-freeze.json",
+  "newReferenceGeneration": "28PASS1860frames; reporterPASS, generation only",
+  "ineligibleLinuxCohort": "PR13candidate128/132still excluded; no nativeLinuxreference adoption",
+  "diagnostics": "Selected1x20/23assets confirmed only in fresh isolated captures; failed-run networktrace empty, cause not established. Compositing probe rejected because81459pixels outside badge change; no source/helper/guard modified.",
+  "next": "Resolve new badge raster mismatch, preserve source/asset provenance and audit warranted affected frames before another full exact. No012acceptance/013release."
+}

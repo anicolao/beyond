@@ -1,0 +1,67 @@
+{
+  "prompt": 180,
+  "reviewerAuthored": true,
+  "release": "Formal illustrated012 validation only; no013",
+  "implementation": "Required TestStepHelper28ordinary variants: five remote scenariosphone/desktop, five cardinal shared desktop/native4K, four corner shared desktop/native4K. Every meaningful setup/action/inspection/reload/keyboard/observer state captured.",
+  "firstCandidates": {
+    "result": "6/18PASS,12sharedFAIL",
+    "reason": "Story incorrectly expected faction choice enabled immediately after first local seat joined; actual production intentionally requires two. Corrected semantic step assertion to visible named seat, not enable a disabled production flow.",
+    "evidence": "tmp/outposts180-first-candidates-evidence",
+    "log": "tmp/outposts180-new-candidates1.log",
+    "adoptedAsCohort": false
+  },
+  "remaining": "Independent narrow correction review; explicit TestStepHelper Map checkpoint is implemented, current types clean. Warranted affected captures and full current-source exact/story/reference audits follow review. Older Linux/publisher failures remain separate.",
+  "services": "5206/5207/9397/8297 preserved; tests9497/8497separate",
+  "publisherRepair": "Read-only boolean grouping candidate237returns/246chains, nonparenthesis token sequence identical,120877bytesSHA9914f66c... compiler5035370ms; no canonical change or deployment",
+  "failedNative": "PR13 cohort remains excluded,diagnostics preserved; no guard weakening",
+  "currentBackend": "244PASS3464assertions;21isolatedsuites0failed,original5sbudgets",
+  "currentTooling": "64PASS",
+  "newVariants": 28,
+  "thirdCandidates": {
+    "result": "18/28PASS;10newempty/offturnFAIL",
+    "reason": "Immediate balance read after decommission raced pending write while Trade heading was already visible; assertions now poll exact same balances within original2s.",
+    "evidence": "tmp/outposts180-third-candidates-evidence",
+    "log": "tmp/outposts180-new-candidates3.log",
+    "cohortAdopted": false
+  },
+  "affectedCurrent": "Full160variant independent exact running without update-snapshots; no failed cohort accepted, production/helper source frozen.",
+  "materialization": "9141 parentDarwin references APFScloned,23.9GBlogicalshared;Linux sparseflags preserved;0materializedmissingpaths. Read-only redundant Gitdiff scans interrupted due memory, bounded metadata refresh complete without staging/deletion.",
+  "fourthCandidates": {
+    "log": "tmp/outposts180-affected-candidates4.log",
+    "journeys": "60/60PASS",
+    "overallExit": 1,
+    "reason": "Unchanged walkthrough reporter rejected viewport step-list differences caused by responsive optional editors/selectors. Not a complete formal pass. Corrected new-story checkpoints to photograph equivalent decision boundaries in all viewports; every meaningful editor/selection action remains captured. No reporter/guard/production change.",
+    "evidence": "tmp/outposts180-affected-candidates4-evidence",
+    "cohortAdopted": false
+  },
+  "fifthCandidates": {
+    "result": "28/28PASS6.0m;1714frames;walkthrough reporterPASS",
+    "log": "tmp/outposts180-new-candidates5.log",
+    "evidence": "tmp/outposts180-new-candidates5-evidence",
+    "meaning": "Generation only, independent exact gate still pending"
+  },
+  "guards": "51/51PASS2.5s, original predicates and budgets unchanged",
+  "types": "0errors0warnings after responsive-checkpoint correction",
+  "referenceAudit": {
+    "total": 9141,
+    "unchanged": 8959,
+    "changed": 182,
+    "missing": 0,
+    "changedPhase005": 2,
+    "changedPhase010": 150,
+    "changedPhase011": 30,
+    "report": "OUTPOST_REFERENCE_AUDIT_180.json",
+    "meaning": "Full SHA/dimension/native RGBA audit plus representative before/after visual review; not exhaustive per-image visual certification"
+  },
+  "firstExact": {
+    "status": "completed153/160PASS37.2m,7FAIL; all132prior phasesPASS",
+    "log": "tmp/outposts180-final-exact.log",
+    "knownFailures": "Seven new keyboard-End scroll comparison failures so far:three remotephone,three remotedesktop(actual guest phone where applicable),one shared cardinaldesktop. Same UI/state with1\u20132px scroll offsets; original note-visibility assertion did not require native scroll completion. Current source frozen until run ends; narrow native scrollend patch prepared outside checkout, original2s/zeroRGBA unchanged.",
+    "failureScope": "All seven new012keyboard-End scroll reference mismatches; no failing cohort acceptance",
+    "preservedEvidence": "tmp/outposts180-first-exact-evidence and tmp/outposts180-first-exact-report; all pre-fix012 PNGs APFScloned to tmp/outposts180-baselines-before-scroll-correction",
+    "correction": "New-story check observes real scrollend before photography, asserts bottom and final note inside existing2s verification; additional Rules\u2192Ships navigation captures. Canonical production/helpers/guards unchanged.",
+    "next": "28affected candidate variants then independent full exact; no013"
+  },
+  "secondCandidateCheckpoint": "Generation in progress; cardinaldesktop/native pass so far; corner wrapper uses rectangle audit on rotated seat-reader, diagnosing against established polygon contract; no guard predicate change.",
+  "current": "OUTPOST_MAP_REVIEW_180.json: corrected-scroll generation28PASS, affected exact9/10; separate native bitmap resampling and four-player phone node overlap corrected locally, guarded captures/21bounded stable samples ready for review. No current-source full gate or013."
+}

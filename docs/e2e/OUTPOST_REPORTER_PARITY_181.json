@@ -1,0 +1,100 @@
+{
+  "instruction": "Reviewer181",
+  "guard": "Unmodified production StoryReporter; preserved records, no browser or screenshot writes",
+  "runs": [
+    {
+      "label": "affected-candidates4",
+      "records": 60,
+      "stories": 30,
+      "frames": 4153,
+      "reporterStatus": "failed",
+      "expected": "failed",
+      "mismatches": [
+        {
+          "slug": "choose-a-multi-specialty-outpost-at-four-shared-cardinal-seats",
+          "project": "tabletop-4k",
+          "missing": [],
+          "desktopOnly": [
+            "split-build-editor"
+          ]
+        },
+        {
+          "slug": "contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers",
+          "project": "phone",
+          "missing": [
+            "ada-build-editor"
+          ],
+          "desktopOnly": [
+            "bora-build-editor",
+            "bora-exceed-editor"
+          ]
+        },
+        {
+          "slug": "choose-two-system-bonus-rewards-at-four-shared-cardinal-seats",
+          "project": "tabletop-4k",
+          "missing": [],
+          "desktopOnly": [
+            "split-build-editor"
+          ]
+        },
+        {
+          "slug": "retain-an-empty-outpost-without-any-owned-ships-with-separate-remote-controllers",
+          "project": "phone",
+          "missing": [
+            "claim-single-editor",
+            "empty-depart-editor",
+            "empty-last-ship-exchange",
+            "empty-last-ship-selected"
+          ],
+          "desktopOnly": []
+        },
+        {
+          "slug": "lose-control-during-a-rival-trade-while-keeping-permanent-automation-with-separate-remote-controllers",
+          "project": "phone",
+          "missing": [
+            "offturn-ada-editor"
+          ],
+          "desktopOnly": [
+            "offturn-bora-editor",
+            "offturn-first-return-exchange",
+            "offturn-first-return-selected",
+            "offturn-second-return-exchange",
+            "offturn-second-return-selected"
+          ]
+        }
+      ],
+      "output": "/Users/anicolao/projects/games/beyond/tmp/outposts181-reporter-replay-affected-candidates4",
+      "comparisonAcceptance": false
+    },
+    {
+      "label": "new-candidates5",
+      "records": 28,
+      "stories": 14,
+      "frames": 1714,
+      "reporterStatus": "passed",
+      "expected": "passed",
+      "mismatches": [],
+      "output": "/Users/anicolao/projects/games/beyond/tmp/outposts181-reporter-replay-new-candidates5",
+      "comparisonAcceptance": false
+    },
+    {
+      "label": "scroll-candidates6",
+      "records": 28,
+      "stories": 14,
+      "frames": 1810,
+      "reporterStatus": "passed",
+      "expected": "passed",
+      "mismatches": [],
+      "output": "/Users/anicolao/projects/games/beyond/tmp/outposts181-reporter-replay-scroll-candidates6",
+      "comparisonAcceptance": false
+    }
+  ],
+  "overallOldRun": "FAILED despite60 browser passes; original per-viewport records and report retained unchanged.",
+  "diagnosis": "Responsive editor/exchange controls conditionally added screenshot checkpoints. Capture equivalent decision boundaries on all required viewports; conditional actual UI actions remain.",
+  "fixScope": "Only new012 journey checkpoint ordering; production reporter and TestStepHelper unchanged.",
+  "replayMethod": "Invoke actual unchanged StoryReporter against preserved story attachments; write regenerated walkthroughs in isolated tmp output using read-only baseline symlinks. Old failure reproduced; both later outputs pass. No browser rerun or baseline generation.",
+  "latestSourceCaveat": "Later thumbnail/narrow-map corrections and explicit Map checkpoint are not covered by these preserved generation records. Current-source affected capture refresh and full160 exact remain pending the narrow visual checkpoint. No full012 acceptance or013 release claimed.",
+  "reviewPacket": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/round180-thumbnail/REVIEW.md",
+  "preview": "http://127.0.0.1:5207/",
+  "noPublication": true
+}

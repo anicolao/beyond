@@ -578,3 +578,30 @@ Prompt 159 | 51d46d8370c77a115954ce1ade589e2430aca6ecb813530bf3ae6eb20dbabc81 | 
 Prompt 159 | 51d46d8370c77a115954ce1ade589e2430aca6ecb813530bf3ae6eb20dbabc81 | Expose Exploration allowance and contain node text; verify real cardinal/corner and phone maps; retain three full-run failures and unchanged-reference raster diagnosis
 
 Prompt 159 | 51d46d8370c77a115954ce1ade589e2430aca6ecb813530bf3ae6eb20dbabc81 | Complete132 exact journeys and9141 frames; audit7741 unchanged and270 planner deltas; preserve15 inactive captures; publish011 before authorized012
+
+Prompt 159 | 51d46d8370c77a115954ce1ade589e2430aca6ecb813530bf3ae6eb20dbabc81 | Publish011asPR13 at02a54961; begin012 on feat/outpost-control, preserve5206 and canonical identities; track pending Linux/hosted and compiler diagnostics separately
+
+Prompt 159 | 51d46d8370c77a115954ce1ade589e2430aca6ecb813530bf3ae6eb20dbabc81 | Verify012 ordinary tie/exceed/off-turn loss/empty retention and responsive inspection; record17tests/122assertions and separate PR13 Linux/publisher gates before local review
+
+Prompt 172 | c79ef786be1da6e36fe896a7e4f42b709dd138540cf1e984206028acc4ce6f9d | Compare preserved exact3 reference/actual with final map, distinguish PNG/RGBA hashes, and verify all15 inactive preserved copies and published base blobs
+
+Prompt 173 | 5895a7a83a6b24c3ac05723f3651814efb800f7cc78b160f72d355714ec3bf4c | Record independent011 local acceptance and closed provenance; verify PR13 head/base, preserve5206 and continue separate012 local branch/server
+
+Prompt 174 | fb4ca27d53fcba64985a523d796757262783d3d72b36dbb4b4b92428dddc588d | Track exact-source PR13 compiler503 separately; verify persisted outpost specialty and bonus-order responder ownership, stale rejection and once-only rewards
+
+Prompt 175 | d016cece56b520f2d5c78c29fbaa86d2c9a2c61e16c9c60c4b535118b2aca3d0 | Measure outpost eyebrow contrast5.04:1 minimum and verify fresh real remote phone/desktop plus shared north/corner640/4K keyboard scroll and exact focus return
+
+Prompt 177 | d5c9ec007e456520d1100c3a24e5b17b1858be86b0af3012b8dcc1fbef298db5 | Verify designer withdrawal clarification against pinnedPDF; add six persisted before/after jump fixtures, preserve failed fixtures and retain unchanged canonical control policy
+
+Prompt 179 | ee39639706f0d25d84027bed043b3821bcf700656298e7351ac6971e83fcbb6a | Close sourced withdrawal issue; replay ordinary owner bonus-order and specialty choices across remote phone and shared4K, reload/isolation/once-only rewards; preserve native timing diagnosis
+Prompt 180 | 7b23858692af615d2a07f22b34ca6ef071cb65b80735372af618e5edbf9a773c | Generate 28 outpost variants, audit 182 prior frames, preserve exact scroll failures and isolate compiler diagnostics.
+Prompt 180 | 7b23858692af615d2a07f22b34ca6ef071cb65b80735372af618e5edbf9a773c | Bound native End scrolling; isolate map resampling, prepare original-art derivatives and correct guarded four-player phone map spacing.
+Prompt 181 | c04726196d68376f43fffa6debe156e8eda0eba7a492bbcfab2c753518d4a7af | Reconcile preserved reporter parity failure with later aligned checkpoint runs; retain unchanged reporter and complete current-source illustrated validation.
+Prompt 182 | e14e0478392ed75c1af4e3702a73f313a321107081cf0ed5b2c22b2aee9144fb | Refresh warranted original-art map references, audit collateral pixels and run independent current-source exact validation with unchanged guards.
+Prompt 182 | e14e0478392ed75c1af4e3702a73f313a321107081cf0ed5b2c22b2aee9144fb | Preserve156/160pixel failures; reject broad compositing and validate original-art tile texture with retained responsive decode lifecycle and unchanged guards.
+Prompt 182 | e14e0478392ed75c1af4e3702a73f313a321107081cf0ed5b2c22b2aee9144fb | Complete 160/160 exact journeys and 11001 frames; audit 193 prior references; preserve 15 inactive files, failure history and services; hold 013.
+Prompt 183 | c3cde7d1807922033ce250eef6e0a1374aa1efb8bd4381e447d0e951d599babc | Add ordinary three/four-player phone Exploration and attached-System coverage; preserve reviewed captures and unchanged formal guards.
+Prompt 183 | c3cde7d1807922033ce250eef6e0a1374aa1efb8bd4381e447d0e951d599babc | Verify four new attached-System variants and all fourteen inherited discovery variants exactly; preserve prior references, failed evidence and live services; hold013.
+Prompt 184 | 9d9d9f62991715af5564be96466eba79c7e8fdd998eb3bd20d8a782755b2b82a | Reconcile both desktop bonus failures with preserved full-run evidence and later frozen-source exact; retain all four original failures and unchanged guards.
+Prompt 185 | 90a9190812dd7ba51ee3843f485cd856ef48dbabdd2ce24654c1c1e9f869e6d2 | Link scoped texture approval to preserved affected/full exact results and completed ordinary3/4-player attached-phone evidence; keep independent012 gate held.
+Prompt 186 | cc13051d2b8945aa7cfb52a8f1c9a32f35ef47309f3fda5732e5a9f4f7311063 | Record independent012 local acceptance, publish reviewed stack and preserve evidence/services; begin source-reviewed013 on a new stacked branch.

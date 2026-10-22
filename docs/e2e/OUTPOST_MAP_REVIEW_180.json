@@ -1,0 +1,188 @@
+{
+  "prompt": 180,
+  "status": "Current source ready for narrow visual review; no final012local gate or013 release",
+  "baselineHold": "No baseline generation after thumbnail/phone-map source changes. Existing baselines and all failed records preserved.",
+  "scrollCorrection": {
+    "generation": "28/28PASS6.5m,1810frames before thumbnail change",
+    "independentAffectedExact": "9/10PASS; all7previously failing End-scroll cases pass. Tenth fails earlier native map badge, not scroll.",
+    "readiness": "Observe native scrollend and assert terminal bottom plus visible note within original2s; Rules\u2192Ships captured; no helper predicate/deadline change"
+  },
+  "originalRasterFailure": {
+    "playwrightPixels": 60,
+    "rawRgbaPixels": 70,
+    "bounds": {
+      "x0": 1796,
+      "y0": 1145,
+      "x1": 1820,
+      "y1": 1158
+    },
+    "preserved": "tmp/outposts180-scroll-affected-exact-evidence",
+    "interpretation": "Scaled original PNG badge, not title/route/control geometry. This recurrence does not erase historical variance."
+  },
+  "thumbnailCorrection": {
+    "artwork": "Same untouched original system.png;6pre-filtered thumbnails with losslessPNG encoding at20x12/23x12 and2x/3x densities. Full-size cards/source catalog unchanged.",
+    "provenance": "docs/content/map-art-derivatives.json",
+    "sourceComparison": "Desktop storyPASS; native comparison intentionally rejects changed badge against old reference (280Playwright/290RGBApixels); not a formal pass or accepted baseline.",
+    "newBounds": {
+      "x0": 1796,
+      "y0": 1145,
+      "x1": 1820,
+      "y1": 1158
+    },
+    "stability": {
+      "freshBrowsers": 9,
+      "samples": 27,
+      "exactCandidateMatches": 27,
+      "formalGate": false,
+      "candidateSource": "tmp/outposts180-thumbnail-source-comparison-evidence",
+      "records": [
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/outposts180-map-quality-control-1792619265051/results.json",
+          "samples": 3,
+          "allExactCandidatePixels": true
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/outposts180-map-quality-control-1792619242425/results.json",
+          "samples": 3,
+          "allExactCandidatePixels": true
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/outposts180-map-quality-control-1792619249722/results.json",
+          "samples": 3,
+          "allExactCandidatePixels": true
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/outposts180-map-quality-control-1792619272592/results.json",
+          "samples": 3,
+          "allExactCandidatePixels": true
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/outposts180-map-quality-control-1792619257414/results.json",
+          "samples": 3,
+          "allExactCandidatePixels": true
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/outposts180-map-quality-control-1792620091413/results.json",
+          "samples": 3,
+          "allExactCandidatePixels": true
+        },
+        {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/outposts180-map-quality-control-1792619234818/results.json",
+          "samples": 3,
+          "allExactCandidatePixels": true
+        }
+      ],
+      "limit": "Bounded macOS diagnostics only; no universal or Linux cure claimed.",
+      "independentFullRgbaAudit": "tmp/outposts180-independent-map-pixel-audit.json",
+      "originalColdControlReproducesFailure": "18/18",
+      "rawReferenceLabelCorrection": "Earlier raw results.json baseline field retained the default path label although MAP_ART_REFERENCE selected the source-built candidate. Commands/code record the override. This independent file decode explicitly identifies the actual compared reference and preserves the raw records unchanged."
+    }
+  },
+  "narrowMapCorrection": {
+    "finding": "Real four-player remote phone Map view exposed disabled/public node overlap not exercised by previous route-editor frames. Original guard rejected it.",
+    "fix": "Three separated columns/four bands in narrow unrotated3/4-player maps; same canonical locations/edges,52pxobjects/44pxtargets, no font shrink. Wide and rotated coordinates unchanged.",
+    "phone": {
+      "diagnosticReviewCapture": true,
+      "formalGate": false,
+      "setup": "Ordinary UI own shared controller or four independent remote controllers; Basic factions/Ready/Begin and legal paid Basic build. Actual Exploration control, no injected game state/identity or forced click.",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "elapsedMs": 23.227208000000246,
+      "originalGuardPassed": true,
+      "sourceArtworkPreserved": true,
+      "noReferenceWrites": true,
+      "thumbnails": [
+        {
+          "src": "http://127.0.0.1:4297/beyond/pr2/art/card-thumbnails/system-23x12.png",
+          "naturalWidth": 23,
+          "naturalHeight": 12,
+          "width": 23,
+          "height": 12
+        }
+      ]
+    },
+    "corner": {
+      "diagnosticReviewCapture": true,
+      "formalGate": false,
+      "setup": "Ordinary UI own shared controller or four independent remote controllers; Basic factions/Ready/Begin and legal paid Basic build. Actual Exploration control, no injected game state/identity or forced click.",
+      "viewport": {
+        "width": 1280,
+        "height": 640
+      },
+      "elapsedMs": 50.24429200000009,
+      "originalGuardPassed": true,
+      "sourceArtworkPreserved": true,
+      "noReferenceWrites": true,
+      "thumbnails": [
+        {
+          "src": "http://127.0.0.1:4297/beyond/pr2/art/card-thumbnails/system-20x12.png",
+          "naturalWidth": 20,
+          "naturalHeight": 12,
+          "width": 22.62738037109375,
+          "height": 22.62744140625
+        }
+      ]
+    },
+    "priorFailure": {
+      "diagnosticReviewCapture": true,
+      "formalGate": false,
+      "setup": "Ordinary UI own shared controller or four independent remote controllers; Basic factions/Ready/Begin and legal paid Basic build. Actual Exploration control, no injected game state/identity or forced click.",
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "elapsedMs": 31.057083000000148,
+      "originalGuardPassed": false,
+      "guardError": "Error: evaluate: Error: Controls overlap: button.node svelte-kcbp23 (Map jump to DEN 0255-4700) / button.node svelte-kcbp23 (Map jump to Northern shipyard)\n    at assertScreenFit (eval at evaluate (:303:30), <anonymous>:153:15)\n    at async <anonymous>:329:30",
+      "sourceArtworkPreserved": true,
+      "noReferenceWrites": true,
+      "thumbnails": [
+        {
+          "src": "http://127.0.0.1:4297/beyond/pr2/art/card-thumbnails/system-23x12.png",
+          "naturalWidth": 23,
+          "naturalHeight": 12,
+          "width": 23,
+          "height": 12
+        }
+      ]
+    },
+    "attachedSystemStructuralCoverage": {
+      "cases": 24,
+      "result": "PASS",
+      "record": "OUTPOST_ATTACHED_MAP_GEOMETRY_180.json",
+      "scope": "Constructed public view fixtures only:3/4players,four real printed parent slots,widths300/320/340. Actual presentation/routing function bodies,80x52controls and2pxline clearance. One canonical edge is drawn continuously around the outside gutter; no new location or jump cost. Not an ordinary Event replay or a formal gate.",
+      "initialFailedAudit": "tmp/outposts180-attached-map-geometry.log preserved; direct opposite-side connector passed an unrelated rectangle. Current gutter routing resolves that structural finding."
+    }
+  },
+  "supportingChecks": {
+    "types": "0errors0warnings after explicit Map checkpoint",
+    "captureGuards": "51PASS, unchanged",
+    "tooling": "64PASS",
+    "policy": "PASS",
+    "backend": "244PASS3464assertions21suites, canonical/backend source unchanged by artwork/layout correction",
+    "builds": "Current preview and production paths both build successfully after final routing correction."
+  },
+  "firstFullExact": "153/160PASS37.2m before scroll correction,132/132prior phasesPASS; failed run retained, not accepted. Current full160 exact remains mandatory after review/affected refresh.",
+  "olderGates": "PR13 failed native128/132cohort excluded; Linuxcomparison/publisher failures remain separate. No policy fallback/deployment, no merge.",
+  "preview": "http://127.0.0.1:5207/",
+  "services": "5206/5207/9397/8297 preserved; captures/test resets only9497/8497; no reviewer identity access",
+  "propagation": "Isolate map renderer/assets/generator/provenance and ordinary4-player map regression into ancestor011 repair; carry through012. No OutpostInspection/gameplay files into ancestor repair. Publish only after reviewed local checks; Linux and matching hosted gates remain separate.",
+  "liveModuleVerified": "5207compiledmodule includes current thumbnail source and narrow-map branch; static23x12asset SHA equals checked-in derivative. No room/controller requests.",
+  "formalCoverageReady": "Added required TestStepHelper map checkpoint after each real Basic build, checking all6/9printed locations and7/14canonical edges before opening the connected-route editor. Capture generation remains held for new-map/thumbnail review.",
+  "next": "Independent narrow visual review; warranted affected generation, then full current-source exact and story/reference audit. No013 release.",
+  "instructionReviewerAuthored": true,
+  "implementationEvidenceAuthor": "Implementation agent; independent visual review of these new corrections is pending.",
+  "limitations": [
+    "Current full160exact and warranted references remain pending this independent visual checkpoint.",
+    "Supplemental four-player remote Rift attempt used the existing two-player discovery bootstrap and stopped before Cleo could be seated. Its logs are preserved; it is a harness limitation, not product evidence. No ordinary four-player Rift-map replay is claimed.",
+    "No accepted Linux cohort, matching hosted acceptance or universal image-variance/timing cure is claimed."
+  ],
+  "sourceFreeze": "tmp/outposts180-map-review-source-final.json",
+  "reviewer182": {
+    "thumbnail": "Independently accepted badge character, adjacent title and provenance/source diff; bounded affected generation/exact released.",
+    "parity": "Reviewer closes old181 finding from candidate5/6 successful reporters; no redo.",
+    "scope": "No phase012 acceptance or013 release; collateral map-frame audit and full current-source exact still mandatory."
+  }
+}

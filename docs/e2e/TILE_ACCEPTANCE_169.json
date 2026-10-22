@@ -1,0 +1,20 @@
+{
+  "prompt": 169,
+  "reviewerAuthored": true,
+  "acceptedScope": "Corner640/720 full secondary tile labels, visible remaining3 budget and connected map; supersedes168 scoped rejection",
+  "notAcceptedByCheckpoint": "007four-cardinal native4K61Playwright-pixel failure; no new012release",
+  "pixelFailurePreserved": {
+    "run": "/Users/anicolao/projects/games/beyond/tmp/jumps159-final-exact3.log",
+    "evidence": "/Users/anicolao/projects/games/beyond/tmp/jumps159-third-full-exact-evidence",
+    "analysis": "/Users/anicolao/projects/games/beyond/tmp/jumps159-exact3-small-diff.json",
+    "difference": "70 exactRGBA pixels,61Playwright mismatch count, small original System thumbnail regionx1797..1821/y1159..1172",
+    "rootCause": "Not established conclusively; do not call visual acceptance or solved by retry"
+  },
+  "subsequentDiagnostic": {
+    "log": "/Users/anicolao/projects/games/beyond/tmp/jumps159-thumbnail-raster.log",
+    "evidence": "/Users/anicolao/projects/games/beyond/tmp/local-jump-review/round159-thumbnail-raster",
+    "result": "12 diagnostic native captures0exactRGBA differences against prior expected image; variance-only reference not adopted"
+  },
+  "currentSourceGate": "After approved visible-budget/node correction and warranted formal map capture updates: current generation132/132 then independent exact4132/132,70sourcehashesunchanged. Exact3 remains failed and predates final source.",
+  "remaining": "Final independent011Linux/hosted acceptance separate;012 stays exploratory with no formal baselines; no later release or merge"
+}

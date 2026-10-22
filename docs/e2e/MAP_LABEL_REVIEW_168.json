@@ -1,0 +1,17 @@
+{
+  "prompt": 168,
+  "reviewerAuthored": true,
+  "finding": "Secondary System/Shipyard text overflowed historical compact ivory node bottoms despite outer screen-fit pass",
+  "publishedCorrection": "JumpPlan.svelte final node sizing52px high; compact width70px; internal type/cube row flex-centered. Full labels retained, original graph edges unchanged.",
+  "head": "02a5496174a051f7f7986219696143b0617c1645",
+  "freshVerification": {
+    "log": "/Users/anicolao/projects/games/beyond/tmp/jumps168-corner-labels.log",
+    "result": "VISIBLE BUDGET + COMPLETE MAP640/720/1000/4K PASS",
+    "directory": "/Users/anicolao/projects/games/beyond/tmp/local-jump-review/round168-corner-labels",
+    "checks": "Every node scrollHeight<=clientHeight and scrollWidth<=clientWidth; complete map/node bounds; visible remaining3; original assertScreenFit/touch guards; screenshots native viewport",
+    "visuallyOpened": "budget-and-map-1280x640.png: full Northern/Western/Eastern shipyard and Barnards Star/System labels remain inside ivory tiles",
+    "controller": "Existing agent-owned review identity/room; read-only navigation, no paid move or reviewer identity access"
+  },
+  "references": "No new regeneration or adoption. Published formal map step already asserts internal node containment; final132/132 exact includes current52px correction.",
+  "acceptance": "Fresh scoped capture ready for independent review; no new reviewer acceptance claimed"
+}

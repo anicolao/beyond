@@ -1,0 +1,72 @@
+{
+  "canonicalSha256": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67",
+  "method": "GET readback only; no upload, restart, data/identity access or mutation",
+  "rows": [
+    {
+      "port": 8497,
+      "status": "read",
+      "files": 1,
+      "sha256": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67",
+      "exactCanonicalBytes": true,
+      "issues": [
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING"
+      ]
+    },
+    {
+      "port": 8597,
+      "status": "read",
+      "files": 1,
+      "sha256": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67",
+      "exactCanonicalBytes": true,
+      "issues": [
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING"
+      ]
+    },
+    {
+      "port": 8297,
+      "status": "read",
+      "files": 1,
+      "sha256": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67",
+      "exactCanonicalBytes": true,
+      "issues": [
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING",
+        "WARNING"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "count": 15,
+  "allPreserved": true,
+  "allPublishedRestoredToBase": true,
+  "activeFramesTouched": 0,
+  "disposition": "Inactive counters from intermediate story versions preserved byte-for-byte outside checkout; tracked paths restored to exact65cb4a4 content before011 commit. No deletion and no active frame changed.",
+  "rows": [
+    {
+      "inactivePath": "tests/e2e/010-fleets/screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/042-bora-built-tabletop-4k-darwin.png",
+      "preservedSha256": "1eb8b5358aedce5a3b2c3165853fd1220b0a32af771a070384b3d8a3fb9491a0",
+      "restoredBaseOid": "656cd1f3c039fda42a387bd51cfb665f07f95fc8",
+      "preservedPath": "/Users/anicolao/projects/games/beyond/tmp/jumps159-inactive-reference-evidence/tests/e2e/010-fleets/screenshots/build-ships-and-inspect-public-fleets-at-4-shared-cardinal-seats/042-bora-built-tabletop-4k-darwin.png",
+      "preservedBytes": 3790594,
+      "preservedHashVerified": true,
+      "publishedEqualsBase": true,
+      "publishedSha256": "0cc83be3aa975d7d7ebca6b94ca5bbd552add1e73948f3fce3b13b7f76358cb9",
+      "publishedOid": "656cd1f3c039fda42a387bd51cfb665f07f95fc8"
+    },
+    {
+      "inactivePath": "tests/e2e/010-fleets/screenshots/build-ships-and-inspect-public-fleets-at-4-shared-corner-seats/042-bora-built-desktop-darwin.png",
+      "preservedSha256": "cc0bdaf1abcae6a8c1ff76078634ff7dd73a1f892b75b6e4c5a9ebac38105f8e",
+      "restoredBaseOid": "1e1fbc161517607bcdeda13e7b42f7010899d227",
+      "preservedPath": "/Users/anicolao/projects/games/beyond/tmp/jumps159-inactive-reference-evidence/tests/e2e/010-fleets/screenshots/build-ships-and-inspect-public-fleets-at-4-shared-corner-seats/042-bora-built-desktop-darwin.png",
+      "preservedBytes": 1007843,
+      "preservedHashVerified": true,
+      "publishedEqualsBase": true,
+      "publishedSha256": "6f5b638a222b3af8012881c4e908212990c336d11d3615a07b586e3a2e79214f",
+      "publishedOid": "1e1fbc161517607bcdeda13e7b42f7010899d227"
+    },
+    {
+      "inactivePath": "tests/e2e/010-fleets/screenshots/build-ships-and-inspect-public-fleets-at-4-shared-corner-seats/042-bora-built-tabletop-4k-darwin.png",
+      "preservedSha256": "cb4789b68bd97e435c4ab8d01cd645dd330d6f1e2d1183d7b88702064aeed44a",
+      "restoredBaseOid": "234d473591e07d616f90af2fa88e7fdc837af1fe",
+      "preservedPath": "/Users/anicolao/projects/games/beyond/tmp/jumps159-inactive-reference-evidence/tests/e2e/010-fleets/screenshots/build-ships-and-inspect-public-fleets-at-4-shared-corner-seats/042-bora-built-tabletop-4k-darwin.png",
+      "preservedBytes": 4627363,
+      "preservedHashVerified": true,
+      "publishedEqualsBase": true,
+      "publishedSha256": "1c67f284985c08f998fa68af71a4b53e496aa46576f2430d638acf2922907176",
+      "publishedOid": "234d473591e07d616f90af2fa88e7fdc837af1fe"
+    },
+    {
+      "inactivePath": "tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-cardinal-fleets/030-bora-built-desktop-darwin.png",
+      "preservedSha256": "24303c320a3f30d7f5afff8fbacb19c1612ce1e00712ee43e3928afccf8baeee",
+      "restoredBaseOid": "bfb3b14f9e248b81de67170188e179e8bf792c45",
+      "preservedPath": "/Users/anicolao/projects/games/beyond/tmp/jumps159-inactive-reference-evidence/tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-cardinal-fleets/030-bora-built-desktop-darwin.png",
+      "preservedBytes": 1035640,
+      "preservedHashVerified": true,
+      "publishedEqualsBase": true,
+      "publishedSha256": "036bd1e02d7a6bf11f966370c32821a063406f9f5787905162e4b7db580e7088",
+      "publishedOid": "bfb3b14f9e248b81de67170188e179e8bf792c45"
+    },
+    {
+      "inactivePath": "tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-cardinal-fleets/030-bora-built-tabletop-4k-darwin.png",
+      "preservedSha256": "d5631a07dd0efe97781b092ed2cb20abe85e530d298015a8f517d16eb4b53332",
+      "restoredBaseOid": "053fe56e05b14cb957acd1c223007f0bd3b580ad",
+      "preservedPath": "/Users/anicolao/projects/games/beyond/tmp/jumps159-inactive-reference-evidence/tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-cardinal-fleets/030-bora-built-tabletop-4k-darwin.png",
+      "preservedBytes": 3788542,
+      "preservedHashVerified": true,
+      "publishedEqualsBase": true,
+      "publishedSha256": "2eca46e311ac1b7d5c772adaf0550d64447df6be8cd1482e2ece8a101195de9b",
+      "publishedOid": "053fe56e05b14cb957acd1c223007f0bd3b580ad"
+    },
+    {
+      "inactivePath": "tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-cardinal-fleets/057-paid-level-two-built-desktop-darwin.png",
+      "preservedSha256": "f1a8cb0e3d7fc1e6bce6c41c646e66223165e72f8864ff01639e2a126eb6a2b5",
+      "restoredBaseOid": "22e41f04acedd3eec1dc76bc39ab366cbae441fa",
+      "preservedPath": "/Users/anicolao/projects/games/beyond/tmp/jumps159-inactive-reference-evidence/tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-cardinal-fleets/057-paid-level-two-built-desktop-darwin.png",
+      "preservedBytes": 1019859,
+      "preservedHashVerified": true,
+      "publishedEqualsBase": true,
+      "publishedSha256": "7d6ed6cfc354cd45ee6dcb82ac52b163cc2fe6fb4d65dae1f354e04c9ca0ae8a",
+      "publishedOid": "22e41f04acedd3eec1dc76bc39ab366cbae441fa"
+    },
+    {
+      "inactivePath": "tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-cardinal-fleets/057-paid-level-two-built-tabletop-4k-darwin.png",
+      "preservedSha256": "413adfde6547a09bd416ca9590f4792738659884341d0d5179af81d54b553529",
+      "restoredBaseOid": "fd48c804a6fa08abe226b8248550e9fedc599f85",
+      "preservedPath": "/Users/anicolao/projects/games/beyond/tmp/jumps159-inactive-reference-evidence/tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-cardinal-fleets/057-paid-level-two-built-tabletop-4k-darwin.png",
+      "preservedBytes": 3765693,
+      "preservedHashVerified": true,
+      "publishedEqualsBase": true,
+      "publishedSha256": "b66c8eba0bc4431e51e91650e5266689cacf7c82cce2c9be742d97a77f735dc1",
+      "publishedOid": "fd48c804a6fa08abe226b8248550e9fedc599f85"
+    },
+    {
+      "inactivePath": "tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/030-bora-built-desktop-darwin.png",
+      "preservedSha256": "b056397f3d75c0db1d84435d906f4a8b55ac7b646b19c4356da2601e4b7cc83c",
+      "restoredBaseOid": "1245f67620bdad30efb1fd54eb11ca95cad8957a",
+      "preservedPath": "/Users/anicolao/projects/games/beyond/tmp/jumps159-inactive-reference-evidence/tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/030-bora-built-desktop-darwin.png",
+      "preservedBytes": 951699,
+      "preservedHashVerified": true,
+      "publishedEqualsBase": true,
+      "publishedSha256": "9ab9165846ae044df9ef74a86056cfdf9c9922cc206a626ab116656eacbb6feb",
+      "publishedOid": "1245f67620bdad30efb1fd54eb11ca95cad8957a"
+    },
+    {
+      "inactivePath": "tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/030-bora-built-tabletop-4k-darwin.png",
+      "preservedSha256": "8d7487ede0169ec8f4e244f70522dfed76f47e8e646bc5ff831297e017456dfe",
+      "restoredBaseOid": "10b0efe82f987ec17a1383450c4262abb2dcde1b",
+      "preservedPath": "/Users/anicolao/projects/games/beyond/tmp/jumps159-inactive-reference-evidence/tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/030-bora-built-tabletop-4k-darwin.png",
+      "preservedBytes": 4474897,
+      "preservedHashVerified": true,
+      "publishedEqualsBase": true,
+      "publishedSha256": "aa88c536c9e0e19c2679c9aba8980c28133361f72614b62e5335aec43505ccdc",
+      "publishedOid": "10b0efe82f987ec17a1383450c4262abb2dcde1b"
+    },
+    {
+      "inactivePath": "tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/057-paid-level-two-built-desktop-darwin.png",
+      "preservedSha256": "1cd9b3aaecc8c7dcd5fe5361ca6161fb1b2bc9839d466c64792fbbb23115e628",
+      "restoredBaseOid": "fedc03ec6213e1ea8db1bd425d392efb3268dd8a",
+      "preservedPath": "/Users/anicolao/projects/games/beyond/tmp/jumps159-inactive-reference-evidence/tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/057-paid-level-two-built-desktop-darwin.png",
+      "preservedBytes": 959173,
+      "preservedHashVerified": true,
+      "publishedEqualsBase": true,
+      "publishedSha256": "87f85b1633dab4ca25916650dbb7468c6699b114ed2384d64cf2b1b7510222f4",
+      "publishedOid": "fedc03ec6213e1ea8db1bd425d392efb3268dd8a"
+    },
+    {
+      "inactivePath": "tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/057-paid-level-two-built-tabletop-4k-darwin.png",
+      "preservedSha256": "eebf40d547705a8df1ddaaf4d30f530a71719b5e9e756ab9a1697998d5caafc8",
+      "restoredBaseOid": "32c129ac50145b8ac57ca509d3af7ee2801d5f9a",
+      "preservedPath": "/Users/anicolao/projects/games/beyond/tmp/jumps159-inactive-reference-evidence/tests/e2e/010-fleets/screenshots/build-upgrade-and-inspect-2-shared-corner-fleets/057-paid-level-two-built-tabletop-4k-darwin.png",
+      "preservedBytes": 4515925,
+      "preservedHashVerified": true,
+      "publishedEqualsBase": true,
+      "publishedSha256": "fccc6a9e2d62e007942958e47446984a958b945dc445fb4e3fc3bd3bda9db788",
+      "publishedOid": "32c129ac50145b8ac57ca509d3af7ee2801d5f9a"
+    },
+    {
+      "inactivePath": "tests/e2e/010-fleets/screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/034-bora-built-desktop-darwin.png",
+      "preservedSha256": "94482f300cf050ab519c3802959feed91f1e93840561312eec82e24a0907069c",
+      "restoredBaseOid": "8a4d546177ebb0b45ce704205a78f565e0b10699",
+      "preservedPath": "/Users/anicolao/projects/games/beyond/tmp/jumps159-inactive-reference-evidence/tests/e2e/010-fleets/screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/034-bora-built-desktop-darwin.png",
+      "preservedBytes": 259776,
+      "preservedHashVerified": true,
+      "publishedEqualsBase": true,
+      "publishedSha256": "d679c3940dd6088694a47ce761ad71ec752b65e9f06bae9b9d4c4c8ce13e739a",
+      "publishedOid": "8a4d546177ebb0b45ce704205a78f565e0b10699"
+    },
+    {
+      "inactivePath": "tests/e2e/010-fleets/screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/034-bora-built-phone-darwin.png",
+      "preservedSha256": "5b4517784f07fca054cb65010235343133b2b0c8f609a4f1f7e9163f91b37a56",
+      "restoredBaseOid": "d1fafb522d487486765dffee64eaa15b3b2e49d2",
+      "preservedPath": "/Users/anicolao/projects/games/beyond/tmp/jumps159-inactive-reference-evidence/tests/e2e/010-fleets/screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/034-bora-built-phone-darwin.png",
+      "preservedBytes": 1030732,
+      "preservedHashVerified": true,
+      "publishedEqualsBase": true,
+      "publishedSha256": "2c6aa62bfa55e1c32d7e79b120b9b06d017651375ceb5024ba5af5266a988c94",
+      "publishedOid": "d1fafb522d487486765dffee64eaa15b3b2e49d2"
+    },
+    {
+      "inactivePath": "tests/e2e/010-fleets/screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/063-paid-level-two-built-desktop-darwin.png",
+      "preservedSha256": "158b8a27dbbb8d4b3afd3c077b06222a5f28e7d11a822557a0ae3fe3f470a255",
+      "restoredBaseOid": "e1dcf825f40cae0e8eecfb247f99f24a6fc4bf5e",
+      "preservedPath": "/Users/anicolao/projects/games/beyond/tmp/jumps159-inactive-reference-evidence/tests/e2e/010-fleets/screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/063-paid-level-two-built-desktop-darwin.png",
+      "preservedBytes": 1014923,
+      "preservedHashVerified": true,
+      "publishedEqualsBase": true,
+      "publishedSha256": "225ce2c075e758160a003f44647485a156d2ea2ca59f938d9c215a0757eaeb4e",
+      "publishedOid": "e1dcf825f40cae0e8eecfb247f99f24a6fc4bf5e"
+    },
+    {
+      "inactivePath": "tests/e2e/010-fleets/screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/063-paid-level-two-built-phone-darwin.png",
+      "preservedSha256": "315056c9af8d1dfd2200806783e3473a4012dd4746ccadd25ce4458e4b1c2886",
+      "restoredBaseOid": "350a508c21d8d11fb3ba7bf5877b2e0bc80a44ff",
+      "preservedPath": "/Users/anicolao/projects/games/beyond/tmp/jumps159-inactive-reference-evidence/tests/e2e/010-fleets/screenshots/build-upgrade-and-retain-a-real-fleet-with-separate-controllers/063-paid-level-two-built-phone-darwin.png",
+      "preservedBytes": 258667,
+      "preservedHashVerified": true,
+      "publishedEqualsBase": true,
+      "publishedSha256": "d16596c44be6619bea0dac96e47e3392340d9bc0761a9aebdddc8b55d29dcea1",
+      "publishedOid": "350a508c21d8d11fb3ba7bf5877b2e0bc80a44ff"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 <script lang="ts">
+ import MapMiniature from './MapMiniature.svelte';
  import {base} from '$app/paths';
  import OriginalCardArt from '$lib/cards/OriginalCardArt.svelte';
  import CardFace from '$lib/cards/CardFace.svelte';
@@ -12,6 +13,7 @@
  const nativePower=$derived(compact&&viewportWidth>=2200);
  const dense=$derived(!compact&&game.count>2&&width>=640&&width<1100);
  const single=$derived(compact||dense||width>0&&width<640);
+ const narrowMap=$derived(!compact&&width>0&&width<640&&game.count>2);
  $effect(()=>{if(single&&!compact)view='map';});
  let selected=$state(''),legs=$state<JumpLeg[]>([]),view=$state<'map'|'route'|'routes'|'power'>('route'),locationIndex=$state(0),powerDetail=$state<'power'|'outpost'|'bonus'|'card'>('power');
  const actor=$derived(game.players.find(p=>p.position===position)!);
@@ -19,6 +21,22 @@
   // Spread the flanking System/shipyard bands in the short physical reader.
   // Only presentation coordinates change; canonical locations and edges do not.
   const rows:Record<string,number>={'b-1':10,'b-2':10,'shipyard-north':10,'shipyard-west':45,'shipyard-east':45,'a-1':80,'a-2':80};
+  // A phone-sized four-player map needs three separated columns and four
+  // bands. These are presentation coordinates; all printed edges stay intact.
+  if(narrowMap){
+   const positions:Record<string,{x:number;y:number}>={
+    'b-1':{x:10,y:10},'shipyard-north':{x:50,y:10},'b-2':{x:90,y:10},
+    'shipyard-west':{x:15,y:42},'deep-space':{x:50,y:42},'shipyard-east':{x:85,y:42},
+    'a-1':{x:10,y:70},'a-2':{x:90,y:70},sol:{x:50,y:96}
+   };
+   return {...publicMap,locations:publicMap.locations.map(location=>{
+    const attached=game.discovery?.systems.find(system=>system.slot===location.id);
+    // The attached System occupies a spare bottom slot, off the printed A-to-A
+    // edge; its single connector follows the outside gutter below.
+    const point=positions[location.id]??(attached?{x:['b-1','a-1'].includes(attached.parent)?10:90,y:96}:undefined);
+    return point?{...location,...point}:location;
+   })};
+  }
   return {...publicMap,locations:publicMap.locations.map(location=>(compact||dense)&&game.count>2&&game.discovery?.systems.some(s=>s.slot===location.id)?{...location,x:2,y:shortShared?85:70}:shortShared&&rows[location.id]!==undefined?{...location,y:rows[location.id]}:game.count===2&&location.id==='a-1'?{...location,x:85}:game.count===2&&location.id==='b-1'?{...location,x:15}:game.count===2&&location.id==='b-2'?{...location,x:85}:game.count===2&&location.id==='shipyard-north'?{...location,y:10}:location)};});
  const preview=$derived(jumpPreview(game,position,amount,legs));
  const ship=$derived(actor.ships.find(s=>s.id===selected));
@@ -26,6 +44,12 @@
  const destinations=$derived(map.edges.filter(([a,b])=>a===path.at(-1)||b===path.at(-1)).map(([a,b])=>a===path.at(-1)?b:a));
  const point=(id:string)=>map.locations.find(l=>l.id===id)!;
  const xy=(n:number)=>8+n*.84;
+ function attachmentPoints(a:string,b:string){
+  const attached=game.discovery?.systems.find(system=>system.slot===a||system.slot===b);
+  if(!narrowMap||!attached)return;
+  const gutter=point(attached.slot).x<50?-8:108,from=point(a),to=point(b);
+  return `${xy(from.x)},${xy(from.y)} ${xy(gutter)},${xy(from.y)} ${xy(gutter)},${xy(to.y)} ${xy(to.x)},${xy(to.y)}`;
+ }
  $effect(()=>{const key=JSON.stringify({position,at:game.discovery?.cursor});if(key){selected=actor.ships[0]?.id??'';legs=[];view='route';locationIndex=0;}});
  function cycleRouteShip(direction:1|-1){selected=cycleRouteShipId(actor.ships,selected,direction);}
  function add(id:string){if(!ship||!destinations.includes(id)||!preview.remaining)return;legs=[...legs.filter(l=>l.ship!==selected),{ship:selected,index:actor.ships.findIndex(s=>s.id===selected),path:[...path,id]}];}
@@ -40,11 +64,11 @@
 {/snippet}
 {#snippet routeMap()}
    <div class="map" style={`--space-art:url('${base}/art/cards/system.png')`} aria-label="Public exploration route map">
-    <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><defs><marker id="jump-route-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z"/></marker></defs>{#each map.edges as [a,b]}<line class="connection" x1={xy(point(a).x)} y1={xy(point(a).y)} x2={xy(point(b).x)} y2={xy(point(b).y)}/>{/each}{#each legs as leg}{#each leg.path.slice(1) as to,i}<line class="planned" class:other={leg.ship!==selected} x1={xy(point(leg.path[i]).x)} y1={xy(point(leg.path[i]).y)} x2={xy(point(to).x)} y2={xy(point(to).y)} marker-end="url(#jump-route-arrow)"/>{/each}{/each}</svg>
-    {#each map.locations as location}{@const face=system(location.id)}<button class="node" class:attached={!!game.discovery?.systems.some(s=>s.slot===location.id)} class:reachable={destinations.includes(location.id)} class:current={path.at(-1)===location.id} style={`left:${xy(location.x)}%;top:${xy(location.y)}%;${face&&cardById(face.card).art!=='astronomy'?`--location-art:url('${base}/art/cards/${cardById(face.card).art}.png')`:''}`} disabled={!allowed||busy||!preview.remaining||!destinations.includes(location.id)} aria-label={`Map jump to ${location.title}`} onclick={()=>add(location.id)}><span>{location.title}</span><small>{#if face&&!preview.ships.some(s=>s.location===location.id)}<span class="map-system-art" aria-hidden="true">{#if cardById(face.card).art==='astronomy'}<OriginalCardArt id={face.card}/>{:else}<img src={`${base}/art/cards/${cardById(face.card).art}.png`} alt=""/>{/if}</span>{/if}{#if preview.ships.some(s=>s.location===location.id)}{#each preview.ships.filter(s=>s.location===location.id).slice(0,3) as s}<i class="map-cube" aria-hidden="true">{s.level}</i>{/each}{#if preview.ships.filter(s=>s.location===location.id).length>3}+{preview.ships.filter(s=>s.location===location.id).length-3}{/if}{:else}{location.kind==='shipyard'?'Shipyard':location.kind==='sol'?'Home':location.kind==='deep-space'?'Open space':'System'}{/if}</small></button>{/each}
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><defs><marker id="jump-route-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z"/></marker></defs>{#each map.edges as [a,b]}{@const bend=attachmentPoints(a,b)}{#if bend}<polyline class="connection" points={bend} fill="none" stroke-linejoin="round"/>{:else}<line class="connection" x1={xy(point(a).x)} y1={xy(point(a).y)} x2={xy(point(b).x)} y2={xy(point(b).y)}/>{/if}{/each}{#each legs as leg}{#each leg.path.slice(1) as to,i}{@const bend=attachmentPoints(leg.path[i],to)}{#if bend}<polyline class="planned" class:other={leg.ship!==selected} points={bend} fill="none" stroke-linejoin="round" marker-end="url(#jump-route-arrow)"/>{:else}<line class="planned" class:other={leg.ship!==selected} x1={xy(point(leg.path[i]).x)} y1={xy(point(leg.path[i]).y)} x2={xy(point(to).x)} y2={xy(point(to).y)} marker-end="url(#jump-route-arrow)"/>{/if}{/each}{/each}</svg>
+    {#each map.locations as location}{@const face=system(location.id)}{@const faceArt=face?cardById(face.card).art:null}<button class="node" class:attached={!!game.discovery?.systems.some(s=>s.slot===location.id)} class:reachable={destinations.includes(location.id)} class:current={path.at(-1)===location.id} style={`left:${xy(location.x)}%;top:${xy(location.y)}%;${faceArt&&faceArt!=='astronomy'?`--location-art:url('${base}/art/cards/${faceArt}.png')`:''}`} disabled={!allowed||busy||!preview.remaining||!destinations.includes(location.id)} aria-label={`Map jump to ${location.title}`} onclick={()=>add(location.id)}><span>{location.title}</span><small>{#if face&&!preview.ships.some(s=>s.location===location.id)}<span class="map-system-art" aria-hidden="true">{#if faceArt==='astronomy'}<OriginalCardArt id={face.card}/>{:else if faceArt}<MapMiniature art={faceArt} width={compact?20:23}/>{/if}</span>{/if}{#if preview.ships.some(s=>s.location===location.id)}{#each preview.ships.filter(s=>s.location===location.id).slice(0,3) as s}<i class="map-cube" aria-hidden="true">{s.level}</i>{/each}{#if preview.ships.filter(s=>s.location===location.id).length>3}+{preview.ships.filter(s=>s.location===location.id).length-3}{/if}{:else}{location.kind==='shipyard'?'Shipyard':location.kind==='sol'?'Home':location.kind==='deep-space'?'Open space':'System'}{/if}</small></button>{/each}
    </div>
 {/snippet}
-<section class="jump-plan" bind:clientWidth={width} class:compact class:single class:dense class:native-read={nativePower} class:power-view={view==='power'} class:map-view={single&&view==='map'} aria-label="Simultaneous jump planner">
+<section class="jump-plan" bind:clientWidth={width} class:compact class:single class:dense class:narrow-map={narrowMap} class:native-read={nativePower} class:power-view={view==='power'} class:map-view={single&&view==='map'} aria-label="Simultaneous jump planner">
  <div class="budget" aria-live="polite"><strong>Jump {amount}</strong><span>Planned {preview.spent}</span><b>{preview.remaining} remaining</b>{#if compact&&source}<span class="source-identity">{cardById(source).title}</span>{/if}<small>Unspent points expire · nothing moves until commit</small>{#if !single}<button class="consequence-toggle" onclick={()=>view=view==='power'?'route':'power'}>{view==='power'?'Map & routes':`After all jumps · ${preview.locations.length} endpoints`}</button>{/if}{#if source&&!single}<button onclick={()=>inspect(source!)}>Read effect ↗</button>{/if}</div>
 
  {#if single}<nav class="view-tabs" aria-label="Jump planning views"><button aria-pressed={view==='map'} onclick={()=>view='map'}>Exploration</button><button aria-pressed={view==='route'} onclick={()=>view='route'}>Route editor</button><button aria-pressed={view==='routes'} onclick={()=>view='routes'}>Routes</button><button aria-pressed={view==='power'} onclick={()=>view='power'}>Final power · {preview.locations.length}</button>{#if source}<button onclick={()=>inspect(source!)}>Read effect ↗</button>{/if}</nav>{/if}
@@ -100,7 +124,7 @@
 /* Use the same original illustration as the production System face; retain the
    full-width semantic title and existing numbered fleet cubes at occupied nodes. */
 .node .map-system-art{position:relative;display:inline-block;width:25px;height:14px;vertical-align:middle;margin-right:3px;overflow:hidden;border:1px solid #ad945d;border-radius:7px;background:#102f37;pointer-events:none}
-.map-system-art :global(svg),.map-system-art img{display:block;width:100%;height:100%;object-fit:cover}
+.map-system-art :global(svg){display:block;width:100%;height:100%;object-fit:cover}
 
 /* Short corner and cardinal editors reserve its reader for the actual selected ship/path.
    Keep all44px actions in one row, with the exact commitment summary above. */
@@ -132,4 +156,5 @@
 .node{height:52px}.compact .node,.compact .node.attached{width:70px}.node small{display:flex;align-items:center;justify-content:center;gap:1px}
 .compact .node .map-system-art{width:22px;margin-right:2px;flex:none}.compact .node .map-cube{width:16px}
 .compact.map-view .budget{padding:4px 8px}.compact.map-view .view-tabs{padding:2px 0}
+.narrow-map .map{height:300px;min-height:300px}
 </style>

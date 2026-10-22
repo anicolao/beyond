@@ -1,0 +1,23 @@
+{
+  "prompt": 174,
+  "reviewerAuthored": true,
+  "pr": 13,
+  "head": "02a5496174a051f7f7986219696143b0617c1645",
+  "publisher": {
+    "run": 39647354205,
+    "job": 119386320225,
+    "result": "FAIL",
+    "currentBytes": 118531,
+    "currentSha256": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67",
+    "currentTestStatus": 503,
+    "frozenDiagnosticBytes": 18480,
+    "frozenDiagnosticStatus": 200,
+    "supervisorLog": "/tmp/beyond-review-pr13-publish.log",
+    "fallbackDeployed": false
+  },
+  "hostedAcceptance": false,
+  "otherGates": "DocumentationPASS; static independently alreadyPASS, browser comparison16/132FAIL and native generation running per newer direct job metadata; preserve checkpoint timing separately",
+  "phase012": "Branch verified exact02a5496; local source/UX work continues independently, no formal baseline release",
+  "currentWork": "Two canonical persisted responder tests2PASS24assertions: foreign/stale specialty choice rejected; owner-only bonus ordering and once-only reward, active turn unchanged; not ordinary UI proof",
+  "compiler": "Four distinct read-only equivalent candidate experiments503; unchanged current policy and no fallback publication. Root compiler cause remains unproven."
+}

@@ -1,0 +1,201 @@
+{
+  "prompt": 180,
+  "status": "Prior corrected-scroll generation28/28PASS6.5m1810frames, before thumbnail/narrow-map source corrections. Not final current-source acceptance.",
+  "variants": 28,
+  "frames": 1810,
+  "projects": {
+    "phone": 5,
+    "tabletop-4k": 9,
+    "desktop": 14
+  },
+  "log": "tmp/outposts180-scroll-candidates6.log",
+  "exit": 0,
+  "requiredHelper": "TestStepHelper",
+  "comparison": "full160variant run, updateSnapshots=none",
+  "guards": "51PASS; capture2000ms/story120000ms unchanged",
+  "sourceFreezeFiles": 178,
+  "services": "5206/5207/9397/8297 retained; all formal tests9497/8497",
+  "stories": [
+    {
+      "title": "Lose control during a rival trade while keeping permanent automation with separate remote controllers",
+      "project": "phone",
+      "steps": 87,
+      "slug": "lose-control-during-a-rival-trade-while-keeping-permanent-automation-with-separate-remote-controllers"
+    },
+    {
+      "title": "Retain an empty outpost without ships at two shared corner seats",
+      "project": "tabletop-4k",
+      "steps": 54,
+      "slug": "retain-an-empty-outpost-without-ships-at-two-shared-corner-seats"
+    },
+    {
+      "title": "Contest an Ore outpost at two shared corner seats",
+      "project": "desktop",
+      "steps": 81,
+      "slug": "contest-an-ore-outpost-at-two-shared-corner-seats"
+    },
+    {
+      "title": "Return an outpost during rival trade and retain automation at two shared cardinal seats",
+      "project": "desktop",
+      "steps": 84,
+      "slug": "return-an-outpost-during-rival-trade-and-retain-automation-at-two-shared-cardinal-seats"
+    },
+    {
+      "title": "Choose the order of two gained System bonuses with separate remote controllers",
+      "project": "desktop",
+      "steps": 60,
+      "slug": "choose-the-order-of-two-gained-system-bonuses-with-separate-remote-controllers"
+    },
+    {
+      "title": "Choose the gaining owner\u2019s multi-specialty disc with separate remote controllers",
+      "project": "phone",
+      "steps": 60,
+      "slug": "choose-the-gaining-owner-s-multi-specialty-disc-with-separate-remote-controllers"
+    },
+    {
+      "title": "Contest an Ore outpost at two shared cardinal seats",
+      "project": "desktop",
+      "steps": 79,
+      "slug": "contest-an-ore-outpost-at-two-shared-cardinal-seats"
+    },
+    {
+      "title": "Choose a multi-specialty outpost at four shared corner seats",
+      "project": "desktop",
+      "steps": 52,
+      "slug": "choose-a-multi-specialty-outpost-at-four-shared-corner-seats"
+    },
+    {
+      "title": "Choose two System bonus rewards at four shared cardinal seats",
+      "project": "desktop",
+      "steps": 51,
+      "slug": "choose-two-system-bonus-rewards-at-four-shared-cardinal-seats"
+    },
+    {
+      "title": "Choose a multi-specialty outpost at four shared corner seats",
+      "project": "tabletop-4k",
+      "steps": 52,
+      "slug": "choose-a-multi-specialty-outpost-at-four-shared-corner-seats"
+    },
+    {
+      "title": "Retain an empty outpost without ships at two shared cardinal seats",
+      "project": "desktop",
+      "steps": 53,
+      "slug": "retain-an-empty-outpost-without-ships-at-two-shared-cardinal-seats"
+    },
+    {
+      "title": "Choose the gaining owner\u2019s multi-specialty disc with separate remote controllers",
+      "project": "desktop",
+      "steps": 60,
+      "slug": "choose-the-gaining-owner-s-multi-specialty-disc-with-separate-remote-controllers"
+    },
+    {
+      "title": "Lose control during a rival trade while keeping permanent automation with separate remote controllers",
+      "project": "desktop",
+      "steps": 87,
+      "slug": "lose-control-during-a-rival-trade-while-keeping-permanent-automation-with-separate-remote-controllers"
+    },
+    {
+      "title": "Contest an Ore outpost at two shared corner seats",
+      "project": "tabletop-4k",
+      "steps": 81,
+      "slug": "contest-an-ore-outpost-at-two-shared-corner-seats"
+    },
+    {
+      "title": "Retain an empty outpost without ships at two shared cardinal seats",
+      "project": "tabletop-4k",
+      "steps": 53,
+      "slug": "retain-an-empty-outpost-without-ships-at-two-shared-cardinal-seats"
+    },
+    {
+      "title": "Retain an empty outpost without any owned ships with separate remote controllers",
+      "project": "desktop",
+      "steps": 57,
+      "slug": "retain-an-empty-outpost-without-any-owned-ships-with-separate-remote-controllers"
+    },
+    {
+      "title": "Choose two System bonus rewards at four shared corner seats",
+      "project": "tabletop-4k",
+      "steps": 52,
+      "slug": "choose-two-system-bonus-rewards-at-four-shared-corner-seats"
+    },
+    {
+      "title": "Return an outpost during rival trade and retain automation at two shared cardinal seats",
+      "project": "tabletop-4k",
+      "steps": 84,
+      "slug": "return-an-outpost-during-rival-trade-and-retain-automation-at-two-shared-cardinal-seats"
+    },
+    {
+      "title": "Choose two System bonus rewards at four shared corner seats",
+      "project": "desktop",
+      "steps": 52,
+      "slug": "choose-two-system-bonus-rewards-at-four-shared-corner-seats"
+    },
+    {
+      "title": "Contest an Ore outpost and return the former owner\u2019s disc with separate remote controllers",
+      "project": "desktop",
+      "steps": 84,
+      "slug": "contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers"
+    },
+    {
+      "title": "Retain an empty outpost without any owned ships with separate remote controllers",
+      "project": "phone",
+      "steps": 57,
+      "slug": "retain-an-empty-outpost-without-any-owned-ships-with-separate-remote-controllers"
+    },
+    {
+      "title": "Retain an empty outpost without ships at two shared corner seats",
+      "project": "desktop",
+      "steps": 54,
+      "slug": "retain-an-empty-outpost-without-ships-at-two-shared-corner-seats"
+    },
+    {
+      "title": "Choose a multi-specialty outpost at four shared cardinal seats",
+      "project": "desktop",
+      "steps": 51,
+      "slug": "choose-a-multi-specialty-outpost-at-four-shared-cardinal-seats"
+    },
+    {
+      "title": "Choose two System bonus rewards at four shared cardinal seats",
+      "project": "tabletop-4k",
+      "steps": 51,
+      "slug": "choose-two-system-bonus-rewards-at-four-shared-cardinal-seats"
+    },
+    {
+      "title": "Choose the order of two gained System bonuses with separate remote controllers",
+      "project": "phone",
+      "steps": 60,
+      "slug": "choose-the-order-of-two-gained-system-bonuses-with-separate-remote-controllers"
+    },
+    {
+      "title": "Contest an Ore outpost and return the former owner\u2019s disc with separate remote controllers",
+      "project": "phone",
+      "steps": 84,
+      "slug": "contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers"
+    },
+    {
+      "title": "Choose a multi-specialty outpost at four shared cardinal seats",
+      "project": "tabletop-4k",
+      "steps": 51,
+      "slug": "choose-a-multi-specialty-outpost-at-four-shared-cardinal-seats"
+    },
+    {
+      "title": "Contest an Ore outpost at two shared cardinal seats",
+      "project": "tabletop-4k",
+      "steps": 79,
+      "slug": "contest-an-ore-outpost-at-two-shared-cardinal-seats"
+    }
+  ],
+  "priorReferences": {
+    "total": 9141,
+    "unchanged": 8959,
+    "changed": 182,
+    "missing": 0,
+    "scope": "180FleetInspection,2bonus-orderheading; full native RGBA decode/dimensions and representative visual before/after audit",
+    "audit": "OUTPOST_REFERENCE_AUDIT_180.json"
+  },
+  "failedPR13CohortAdopted": false,
+  "phase013Released": false,
+  "evidence": "tmp/outposts180-scroll-candidates6-evidence",
+  "readiness": "Observe native scrollend, assert terminal bottom plus note visibility in original2s; no sleep, forced scroll, tolerance/mask or timer increase. Rules\u2192Ships states add96frames.",
+  "currentReview": "OUTPOST_MAP_REVIEW_180.json; no new baselines until review"
+}

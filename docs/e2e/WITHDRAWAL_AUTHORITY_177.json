@@ -1,0 +1,32 @@
+{
+  "prompt": 177,
+  "reviewerAuthored": true,
+  "scopedLiveReview": "Reviewer own5207tableb4e9abc4:claim,incoming2vs2,upgrade3vs2transfer,formerFoodreturn2\u21921,permanentautomation1retained; darkeyebrowreadable; notfullacceptance",
+  "sources": {
+    "publisherPdf": "/Users/anicolao/projects/games/beyond/tmp/automation117-publisher-second-print.pdf",
+    "sha256": "85fbf08a21f7753331c3a89896deee55b6b0690c59b70d32ca42e7839d24fcdc",
+    "controlPrintedPage": 18,
+    "bonusPrintedPage": 19,
+    "designerDirect": "https://boardgamegeek.com/thread/2557491/article/36483484#36483484",
+    "designerAuthor": "Dennis K. Chan @onetrueking, Designer attribution verified",
+    "designerDate": "2020-12-10",
+    "followup": "https://boardgamegeek.com/thread/2592977/article/36899378#36899378",
+    "followupDate": "2021-02-02",
+    "access": "Read public posts in new Chrome research tab after automatic verification, no CAPTCHA interaction/login/messages; primary designer source, not Reddit paraphrase"
+  },
+  "conclusion": "Current retain-incumbent-among-leaders resolver matches designer clarification.3/2\u21922/2 retains;3/2/2\u21921/2/2 neutral. No guessed withdrawal-sensitive rule change.",
+  "newTests": "6before/after realjump/persistedqueue fixtures59assertions",
+  "allOutpostTests": "25PASS205assertions",
+  "types": "0errors0warnings",
+  "preservedFailures": [
+    "outposts177-withdrawal.log invalidfixture",
+    "outposts177-types.log undefined expected type assertion"
+  ],
+  "passingEvidence": [
+    "outposts177-all.log",
+    "outposts177-withdrawal3.log",
+    "outposts177-types2.log"
+  ],
+  "policyChange": false,
+  "remaining": "Ordinary UI specialty/bonus-order explicit evidence and independent012local gate; noformalbaselines/013/merge"
+}
