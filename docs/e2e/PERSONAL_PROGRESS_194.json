@@ -1,0 +1,30 @@
+{
+  "branch": "feat/personal-technology",
+  "base": "fecea48f259f16253566c9d894dcf0986eb4efd9",
+  "dependency": {
+    "pr": 15,
+    "url": "https://github.com/anicolao/beyond/pull/15",
+    "phase013Local": "ACCEPTED",
+    "LinuxAndHosted": "PENDING"
+  },
+  "preview": "http://127.0.0.1:5209/",
+  "preservedPreview": "http://127.0.0.1:5208/",
+  "models": {
+    "tests": 3,
+    "assertions": 25,
+    "failed": 0,
+    "log": "/Users/anicolao/projects/games/beyond/tmp/personal194-model1.log"
+  },
+  "types": "0 errors / 0 warnings",
+  "sourcePolicy": "PASS",
+  "status": "Historical initial194 model checkpoint; continued ordinary integration/checks are recorded in PERSONAL_REVIEW_195.json.",
+  "pending": [
+    "source-reviewed immediate benefit continuation",
+    "atomic Firestore proof and identity isolation",
+    "exclusive supported actions and rival research/copy/target denials",
+    "semantic personal tableau and level-based score display",
+    "ordinary remote/phone/shared review before formal evidence"
+  ],
+  "merged": false,
+  "latestReview": "PERSONAL_REVIEW_195.json"
+}

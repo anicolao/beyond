@@ -5,6 +5,8 @@
   import {continuationKind} from './continuation-kind';
   import TurnInstrument from './TurnInstrument.svelte';
   import type {TurnMove} from './turn';
+  import PersonalTechnologyTableau from './PersonalTechnologyTableau.svelte';
+  import {personalTechnologies,personalTechnologyOwner} from './personal-technologies';
   import FactionMat from './FactionMat.svelte';
   import TechnologyOverview from './TechnologyOverview.svelte';
   import { cardById } from './cards';
@@ -35,8 +37,15 @@
   let board=$state<'technology'|'exploration'>('technology'), selectedPlayer=$state('');
   const actor=$derived(game.players.find(p=>p.position===game.activePosition)??game.players[0]);
   const focused=$derived(game.players.find(p=>p.position===(selectedPlayer||ownPosition))??game.players[0]);
-  const map=$derived(discoveryMap(game));
-  const publicCards=$derived([...new Set([...game.technologies,...game.systems,...(game.discovery?.colonies?.map(c=>({card:c.card}))??[]),...game.achievements.map(card=>({card})),...(game.discovery?.events.map(e=>({card:e.id}))??[]),...(game.discovery?.records.flatMap(record=>record.revealed?.map(card=>({card}))??[])??[]),...(game.discovery?.queue[0]?.kind==='event'&&game.discovery.queue[0].event==='dimensional-rift'&&game.discovery.queue[0].stage==='attach'?[{card:game.discovery.queue[0].value!}]:[])].map(item=>item.card))]);
+  let viewportHeight=$state(1000);
+  const map=$derived.by(()=>{
+    const board=discoveryMap(game);
+    if(mode!=='tabletop'||game.count!==2||viewportHeight>650||!game.discovery?.personalTechnologies?.length)return board;
+    // Separate the right-side System objects in a short retained table. The
+    // printed graph, identities and movement distances remain unchanged.
+    return {...board,locations:board.locations.map(location=>location.id==='b-2'?{...location,y:12}:location.id==='a-1'?{...location,y:75}:location)};
+  });
+  const publicCards=$derived([...new Set([...game.technologies,...(game.discovery?.personalTechnologies??[]),...game.systems,...(game.discovery?.colonies?.map(c=>({card:c.card}))??[]),...game.achievements.map(card=>({card})),...(game.discovery?.events.map(e=>({card:e.id}))??[]),...(game.discovery?.records.flatMap(record=>record.revealed?.map(card=>({card}))??[])??[]),...(game.discovery?.queue[0]?.kind==='event'&&game.discovery.queue[0].event==='dimensional-rift'&&game.discovery.queue[0].stage==='attach'?[{card:game.discovery.queue[0].value!}]:[])].map(item=>item.card))]);
   let inspectionCards=$state<string[]>([]);
   let inspected=$state(''),dialog=$state<HTMLDialogElement>(undefined!),origin:HTMLElement|null=null;
   let tray=$state<HTMLDialogElement>(undefined!),trayKind=$state<'achievements'|'setup'|'mat'|'slot'>('setup'), inspectedSlot=$state('II-1');
@@ -54,10 +63,10 @@
   async function openTray(kind:typeof trayKind){trayOrigin=document.activeElement as HTMLElement;trayKind=kind;await tick();tray.showModal();}
   function trap(event:KeyboardEvent,d:HTMLDialogElement){if(event.key!=='Tab')return;const controls=[...d.querySelectorAll<HTMLElement>('button:not([disabled]),select,a[href],[tabindex="0"]')];if(event.shiftKey&&document.activeElement===controls[0]){event.preventDefault();controls.at(-1)?.focus();}else if(!event.shiftKey&&document.activeElement===controls.at(-1)){event.preventDefault();controls[0]?.focus();}}
 </script>
-<svelte:window onresize={()=>{void fitResizedBoard();}}/>
+<svelte:window bind:innerHeight={viewportHeight} onresize={()=>{void fitResizedBoard();}}/>
 {#snippet turnButton()}{#if mode==='tabletop'||focused.position===ownPosition}<button class="turn-control" disabled={busy||!canAct||(game.phase==='achievement'&&!claimOptions.length)} onclick={()=>{void turnInstrument.open();}}>{canAct?(game.phase==='action'?'Plan action':game.phase==='production'?'Choose production':game.phase==='trade'?'Continue trading':game.phase==='discovery'?(continuation==='colony'?'Continue colony':continuation==='control'?'Continue outpost control':continuation==='action'?'Continue action effects':continuation==='research'?'Continue research bonus':'Continue discovery'):claimOptions.length?'Claim achievement':'Completing turn…'):`${actor.name}’s turn`}</button>{/if}{/snippet}
 {#snippet matButtons()}<button data-mat-opener onclick={()=>{void openTray('mat');}}>Full faction mat</button>{#if focused.position!==(ownPosition??game.players[0].position)}<button onclick={()=>selectedPlayer=ownPosition??game.players[0].position}>{ownPosition?'Your mat':'Starting mat'}</button>{/if}{/snippet}
-<section data-e2e-layout class="game-surface" style={`--branch-rows:${branchRows.map(weight=>`calc(var(--branch-unit) * ${weight})`).join(' ')};--branch-units:${branchUnits}`} class:discovered-branches={game.technologies.some(t=>cardById(t.card).technology?.level!=='I')} class:technology-focus={compactDetail} class:shared={mode==='tabletop'} class:diagonal={mode==='tabletop'&&game.players.some(p=>p.position.includes('-'))} class:corner-only={mode==='tabletop'&&game.players.every(p=>p.position.includes('-'))} aria-label="Basic game starting position">
+<section data-e2e-layout class="game-surface" style={`--branch-rows:${branchRows.map(weight=>`calc(var(--branch-unit) * ${weight})`).join(' ')};--branch-units:${branchUnits}`} class:discovered-branches={game.technologies.some(t=>cardById(t.card).technology?.level!=='I')} class:technology-focus={compactDetail} class:shared={mode==='tabletop'} class:diagonal={mode==='tabletop'&&game.players.some(p=>p.position.includes('-'))} class:has-personal-cards={!!game.discovery?.personalTechnologies?.length} class:many-seats={game.count>2} class:corner-only={mode==='tabletop'&&game.players.every(p=>p.position.includes('-'))} aria-label="Basic game starting position">
   <header class="game-heading"><div><p class="eyebrow">BEYOND THE SUN</p><h1 tabindex="-1" bind:this={tableHeading}>{actor.name} · {phaseName} phase</h1><p>{game.count} players · Achievements {game.achievementClaims} / {game.endgameClaims} · {hasMoves?'Turn saved':'Starting position saved'}</p></div>{#if mode==='remote'}<div class="opponent-strip" aria-label="Public factions">{#each game.players.filter(p=>p.position!==focused.position) as p}<button onclick={()=>{selectedPlayer=p.position;}} aria-label={`Inspect ${p.name} resources`}><span class="opponent-emblem" aria-hidden="true">{factions.find(f=>f.id===p.faction)?.emblem}</span><strong>{p.name}</strong><span>{p.ore} Ore · {p.population} Pop</span></button>{/each}</div>{/if}<div class="game-tools">{#if game.phase==='discovery'&&mode==='remote'&&!canAct}<button class="public-discovery" onclick={()=>{void turnInstrument.open();}}>{continuation==='colony'?'Observe colony settlement':continuation==='control'?'Observe outpost control':continuation==='action'?'Observe public action effects':continuation==='research'?'Observe research bonus':'Observe public discovery'}</button>{/if}<button onclick={()=>{void openTray('achievements');}}>Achievements</button><button onclick={()=>{void openTray('setup');}}>Setup record</button><button onclick={recovery}>Recovery options</button>{#if mode==='tabletop'}<button onclick={home}>Observatory</button>{/if}</div></header>
   <div class="board-switch" role="group" aria-label="Board view"><button aria-pressed={board==='technology'} onclick={()=>board='technology'}>Technology</button><button aria-pressed={board==='exploration'} onclick={()=>board='exploration'}>Exploration</button></div>
   <div class="board-table">
@@ -66,6 +75,7 @@
       <div class="phone-technology-controls"><div role="group" aria-label="Technology level">{#each ['I','II','III','IIII'] as value}<button aria-pressed={level===value} onclick={()=>level=value}>{value}</button>{/each}</div><button onclick={()=>{void openTray('setup');}}>Basic Spacefaring &amp; guilds</button></div>
       <!-- svelte-ignore a11y_no_noninteractive_tabindex (The named overview supports bounded scrolling on short landscape screens.) -->
       <div class="compact-overview" role="region" tabindex="0" aria-label="Complete technology overview scroll area"><p class="overview-scroll-cue">Scroll the overview ↑↓ · Focus Technology for readable branches</p><TechnologyOverview {game} inspect={id=>{void inspect(id);}}/></div>
+      {#if mode==='remote'&&personalTechnologies(game,focused.position).length}<p class="personal-scroll-cue">Framed board · scroll for all public cards ↕</p>{/if}
       <!-- svelte-ignore a11y_no_noninteractive_tabindex (Named bounded board area supports keyboard scrolling on compact displays.) -->
       <div class="technology-layout" bind:this={technologyRegion} tabindex="0" role="region" aria-label="Technology board surface">
         <!-- svelte-ignore a11y_no_noninteractive_tabindex (Named board rules object has bounded keyboard scrolling.) -->
@@ -96,19 +106,20 @@
       {/each}
     </div><p class="map-key">Each line is 1 jump. Sol and Deep Space cannot be controlled.</p></section>
   </div>
-  {#if mode==='remote'}<div class="player-shelf">
+  {#if mode==='remote'}<div class="player-shelf" class:has-personal={personalTechnologies(game,focused.position).length>0}>
+    {#if personalTechnologies(game,focused.position).length}<PersonalTechnologyTableau {game} player={focused} compact inspect={id=>{void inspect(id);}}/>{/if}
     <div class="personal-mat"><FactionMat player={focused} order={game.players.indexOf(focused)+1} dock>{#snippet controls()}{@render turnButton()}{@render matButtons()}{/snippet}</FactionMat></div>
     <div class="mat-controls"><div><strong>{focused.name}</strong><span>{focused.position===ownPosition?'Your faction':'Public faction'} · {focused.ore} Ore · {focused.population} Population</span></div>{@render turnButton()}{@render matButtons()}<small>Supply {focused.supply.reduce((sum,n)=>sum+n,0)} · {hasMoves?`${focused.research.length+(focused.reservedResearch?.length??0)} research cubes`:'Starting position'}</small></div>
   </div>
-  {:else}{#each game.players as p,i}<div class="shared-mat" data-position={p.position}><FactionMat player={p} order={i+1} rim/><div class="seat-game-controls"><button onclick={()=>{selectedPlayer=p.position;void openTray('mat');}} aria-label={`Inspect ${p.name} faction mat`}>Inspect mat</button>{#if p.position===(game.phase==='discovery'?game.discovery?.queue[0]?.responder:game.activePosition)}{@render turnButton()}{/if}</div></div>{/each}{/if}
+  {:else}{#each game.players as p,i}<div class="shared-mat" data-position={p.position}><FactionMat player={p} order={i+1} rim/><div class="seat-game-controls">{#if personalTechnologies(game,p.position).length}<div class="personal-shared-pocket"><PersonalTechnologyTableau {game} player={p} compact inspect={id=>{void inspect(id);}}/></div>{/if}<button onclick={()=>{selectedPlayer=p.position;void openTray('mat');}} aria-label={`Inspect ${p.name} faction mat`}>Inspect mat</button>{#if p.position===(game.phase==='discovery'?game.discovery?.queue[0]?.responder:game.activePosition)}{@render turnButton()}{/if}</div></div>{/each}{/if}
 </section>
 
 {#if commitMove}<TurnInstrument bind:this={turnInstrument} {game} {mode} {ownPosition} {busy} commit={commitMove} fallbackFocus={()=>tableHeading.focus()} inspect={(id,collection)=>{void inspect(id,collection);}}/>{/if}
 <!-- svelte-ignore a11y_no_noninteractive_tabindex (Named region provides keyboard access to the independently scrolling card.) -->
-<dialog data-e2e-layout class="card-inspector" bind:this={dialog} aria-label="Game card inspection" onkeydown={e=>trap(e,dialog)} onclose={()=>{void returnFromInspection();}}><header><button onclick={()=>dialog.close()}>Close card</button><span>Public card · {hasMoves?'current position':'starting position'}</span></header><div class="inspection-scroll" tabindex="0" role="region" aria-label="Full card face">{#if inspected}<div class="full-card"><CardFace card={cardById(inspected)} presentation={{players:game.count,claimants:claimants(inspected),claimantTones:claimantTones(inspected),actionOccupant:game.players.find(p=>p.actionLocation?.startsWith(`technology:${inspected}:`))?.name,researchers:game.players.filter(p=>p.research.includes(inspected)).map(p=>p.name),researcherTones:game.players.filter(p=>p.research.includes(inspected)).map(p=>[170,38,8,275][game.players.indexOf(p)])}}/></div>{/if}</div><nav aria-label="Card inspection"><button onclick={()=>adjacent(-1)}>Previous card</button><button onclick={()=>adjacent(1)}>Next card</button></nav></dialog>
+<dialog data-e2e-layout class="card-inspector" bind:this={dialog} aria-label="Game card inspection" onkeydown={e=>trap(e,dialog)} onclose={()=>{void returnFromInspection();}}><header><button onclick={()=>dialog.close()}>Close card</button><span>{#if inspected&&personalTechnologyOwner(game,inspected)}Personal · {game.players.find(p=>p.position===personalTechnologyOwner(game,inspected))?.name} · public card{:else}Public card · {hasMoves?'current position':'starting position'}{/if}</span></header><div class="inspection-scroll" tabindex="0" role="region" aria-label="Full card face">{#if inspected}<div class="full-card"><CardFace card={cardById(inspected)} presentation={{personalOwner:game.players.find(p=>p.position===personalTechnologyOwner(game,inspected))?.name,players:game.count,claimants:claimants(inspected),claimantTones:claimantTones(inspected),actionOccupant:game.players.find(p=>p.actionLocation?.startsWith(`technology:${inspected}:`))?.name,researchers:game.players.filter(p=>p.research.includes(inspected)).map(p=>p.name),researcherTones:game.players.filter(p=>p.research.includes(inspected)).map(p=>[170,38,8,275][game.players.indexOf(p)])}}/></div>{/if}</div><nav aria-label="Card inspection"><button onclick={()=>adjacent(-1)}>Previous card</button><button onclick={()=>adjacent(1)}>Next card</button></nav></dialog>
 <!-- svelte-ignore a11y_no_noninteractive_tabindex (Named region provides keyboard access to independently scrolling inspection details.) -->
 <dialog data-e2e-layout class="record-tray" class:seat-reader={mode==='tabletop'&&trayKind==='mat'} style={`--reader-angle:${seatAngle}deg`} bind:this={tray} aria-label={trayKind==='mat'?'Faction mat inspection':trayKind==='achievements'?'Game achievements':trayKind==='slot'?'Technology prerequisites':'Setup record'} onkeydown={e=>trap(e,tray)} onclose={()=>{void returnFromTray();}}><header><h2>{trayKind==='mat'?focused.name:trayKind==='achievements'?'Humanity’s milestones':trayKind==='slot'?`Technology ${inspectedSlot}`:'A beginning, preserved'}</h2>{#if trayKind==='mat'}<FleetInspection {game} player={focused} inspect={id=>{void inspect(id);}}/>{/if}<button onclick={()=>tray.close()}>Close tray</button></header><div class="tray-scroll" tabindex="0" role="region" aria-label="Inspection details">
-  {#if trayKind==='mat'}<FactionMat player={focused} order={game.players.indexOf(focused)+1} expanded/><p>Supply is stored capacity; Population and Ore above are available resources. Exposed track symbols determine production. Automation remains permanent; control outposts can return.</p>
+  {#if trayKind==='mat'}{#if personalTechnologies(game,focused.position).length&&seatAngle%180===0}<div class="expanded-personal-mat has-personal"><FactionMat player={focused} order={game.players.indexOf(focused)+1} expanded/><PersonalTechnologyTableau {game} player={focused} inspect={id=>{void inspect(id);}}/></div>{:else}<FactionMat player={focused} order={game.players.indexOf(focused)+1} expanded/>{/if}<p>Supply is stored capacity; Population and Ore above are available resources. Exposed track symbols determine production. Automation remains permanent; control outposts can return.</p>
   {:else if trayKind==='achievements'}<p>{game.endgameClaims} total achievement claims trigger the final-round sequence. {game.achievementClaims?`${game.achievementClaims} achievement${game.achievementClaims===1?' has':'s have'} been claimed.`:'No achievements have been claimed.'}</p><div class="achievement-row">{#each game.achievements as id}<button class="card-button" aria-label={`Inspect ${cardById(id).title}`} onclick={()=>{void inspect(id);}}><CardFace card={cardById(id)} presentation={{players:game.count,claimants:claimants(id),claimantTones:claimantTones(id)}}/></button>{/each}</div>
   {:else if trayKind==='slot'}{@const slot=technologySlots.find(s=>s.id===inspectedSlot)!}{@const pendingDiscovery=game.discovery?.records.find(r=>r.slot===slot.id)}<p>{#if pendingDiscovery}{cardById(pendingDiscovery.event).title} is public. The research Population is committed; complete the saved public discovery to continue.{:else}{slot.level==='IIII'?'An undiscovered Level IIII technology space.':'An unrevealed Event covers this technology space.'} Its contents stay concealed until a legal discovery.{/if}</p><h3>Prerequisites · {slot.required} of {slot.prerequisites.length}</h3><ul>{#each slot.prerequisites as prerequisite}{@const known=game.technologies.find(t=>t.slot===prerequisite)}<li>{prerequisite}{known?` · ${cardById(known.card).title}`:' · undiscovered'} · {!!known&&actor.research.includes(known.card)?'researched':'not researched'}</li>{/each}</ul><p>{actor.name} has researched {slot.prerequisites.filter(p=>actor.research.includes(game.technologies.find(t=>t.slot===p)?.card??'')).length} of these prerequisites; {slot.required} {slot.required===1?'is':'are'} required. Level III and IIII research also require an enabling action. Inspection reveals no future cards; committed Event and candidate choices remain public.</p>
   {:else}<p>This starting position is saved once. Reopening this game restores the same setup.</p><dl class="setup-record"><div><dt>Players / Basic Spacefaring</dt><dd>{game.count} / {game.overlay}-player {game.count===4?'board':'overlay'}</dd></div><div><dt>Exploration</dt><dd>{game.count===2?'Two-player face · 1 starting A, 2 B':'Standard face · 2 starting A, 2 B'}</dd></div><div><dt>Technology decks</dt><dd>II: 16 · III: 16 · IIII: 10 · face down</dd></div><div><dt>Events</dt><dd>6 Level II and 6 Level III, face down. Each level contains its 2 fixed guild Events and 4 others. Unused Events are out of the game.</dd></div><div><dt>System decks remaining</dt><dd>A: {game.deckCounts.A} · B: {game.deckCounts.B} · face down</dd></div><div><dt>Achievement A second reward</dt><dd>{game.achievementSecondSlot?'Available with 4 players':'Unavailable with 2–3 players'}</dd></div></dl><h3>Basic Spacefaring · {game.count} players</h3>{#each basicActions as action}<section class="guild-record"><h4>{action.title} · {action.spaces[game.count].length} {action.spaces[game.count].length===1?'space':'spaces'}</h4><p>{action.text}{action.spaces[game.count].some(cost=>cost)?` Space surcharges, in order: ${action.spaces[game.count].map(cost=>cost?'+1 Ore':'none').join(', ')}.`: ''}</p></section>{/each}<h3>Covered guild actions</h3>{#each guilds as guild}<section class="guild-record"><h4>{guild.name} · Tier {guild.tier} · {guild.spaces} {guild.spaces===1?'space':'spaces'}</h4><p>{guild.text}</p></section>{/each}<p class="source-note">Rules: Rio Grande Games, second-print setup sheets and printed component faces. Covered decks stay concealed until a legal reveal.</p>{/if}
@@ -404,11 +415,11 @@ dialog{padding:0;background:#162c30;color:#e5d7af;border:2px solid #baa069;borde
  .game-surface.discovered-branches .technology-scroll-tools span{font-size:18px}
 }
 @media(min-width:761px) and (max-width:2199px){
- .game-surface.shared.discovered-branches .compact-overview{display:block;overflow:auto;scrollbar-color:#c8ae72 #132c32;padding-right:6px}
- .game-surface.shared.discovered-branches .overview-scroll-cue{display:block;margin:0 0 8px;font-size:10px;line-height:1.3;color:#ddcfaa}
- .game-surface.shared.discovered-branches .compact-overview :global(.technology-overview){min-height:400px}
- .game-surface.shared.discovered-branches .compact-overview :global(.overview-map){min-height:352px}
- .game-surface.shared.discovered-branches .compact-overview :global(.overview-node.known){height:44px;min-height:44px;max-height:44px}
+ .game-surface.shared.discovered-branches:not(.technology-focus) .compact-overview{display:block;overflow:auto;scrollbar-color:#c8ae72 #132c32;padding-right:6px}
+ .game-surface.shared.discovered-branches:not(.technology-focus) .overview-scroll-cue{display:block;margin:0 0 8px;font-size:10px;line-height:1.3;color:#ddcfaa}
+ .game-surface.shared.discovered-branches:not(.technology-focus) .compact-overview :global(.technology-overview){min-height:400px}
+ .game-surface.shared.discovered-branches:not(.technology-focus) .compact-overview :global(.overview-map){min-height:352px}
+ .game-surface.shared.discovered-branches:not(.technology-focus) .compact-overview :global(.overview-node.known){height:44px;min-height:44px;max-height:44px}
 }
 .rift-map .map-location.system{width:24%}
 @media(min-width:2200px){
@@ -424,4 +435,86 @@ dialog{padding:0;background:#162c30;color:#e5d7af;border:2px solid #baa069;borde
 }
 @media(min-width:2200px){.shared.corner-only.diagonal .spacefaring{min-width:260px}}
 .record-tray>header h2{flex:1;min-width:0}
+
+.record-tray:has(.expanded-personal-mat.has-personal) .tray-scroll{container-type:inline-size}
+@container(max-width:850px){.expanded-personal-mat.has-personal{grid-template-columns:minmax(0,1fr)!important}}
+.personal-scroll-cue{display:none}@media(max-width:760px){.personal-scroll-cue{display:block;font-size:10px;color:#eadab2;margin:0 0 6px;flex:none}}
+.shared.corner-only.diagonal .shared-mat[data-position='south-west'] .personal-shared-pocket,.shared.corner-only.diagonal .shared-mat[data-position='north-east'] .personal-shared-pocket{left:calc(-30% - 115px);right:auto;top:calc(50% - 13.2vw - 52px);bottom:auto}
+/* Acquired public personal cards stay physically beside their faction economy. */
+.game-surface:not(.shared) .player-shelf.has-personal{display:grid;grid-template-columns:minmax(200px,270px) minmax(0,1fr);align-items:center;gap:12px}.player-shelf.has-personal>.personal-mat{display:none}.game-surface:not(.shared) .player-shelf.has-personal>.mat-controls{display:flex;position:static;width:auto;max-width:none;min-width:0;gap:12px;padding:8px 13px;border:1px solid #b69a61;border-radius:6px;background:linear-gradient(130deg,#e9dcb9,#bda980);color:#243b33}.player-shelf.has-personal>.mat-controls>div{display:flex;flex-direction:column;gap:3px;align-items:start;margin-right:auto}.player-shelf.has-personal>.mat-controls span{color:#344e40}.player-shelf.has-personal>.mat-controls small{display:none}.expanded-personal-mat.has-personal{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(250px,1fr);gap:18px;align-items:start}.personal-shared-pocket{position:absolute;left:calc(100% + 8px);bottom:0;width:230px}.shared-mat[data-position='east'] .personal-shared-pocket,.shared-mat[data-position='north-east'] .personal-shared-pocket,.shared-mat[data-position='south-east'] .personal-shared-pocket{left:auto;right:calc(100% + 8px)}
+@media(max-width:760px){.game-surface:not(.shared) .player-shelf.has-personal{grid-template-columns:minmax(0,1fr);gap:8px}.expanded-personal-mat.has-personal{grid-template-columns:1fr}.player-shelf.has-personal :global(.personal-tableau.compact){padding:6px}.player-shelf.has-personal :global(.personal-tableau.compact header){display:none}.player-shelf.has-personal :global(.personal-tableau.compact .personal-cards article){grid-template-columns:44px minmax(0,1fr)}.player-shelf.has-personal :global(.personal-tableau.compact .personal-caption){display:grid;grid-template-columns:minmax(0,1fr);gap:3px}.player-shelf.has-personal :global(.personal-tableau.compact .personal-caption p){grid-column:1}.player-shelf.has-personal :global(.personal-tableau.compact .inspect-card){grid-column:2;grid-row:1/4}.player-shelf.has-personal :global(.personal-tableau.compact .personal-caption h3){font-size:17px}}
+@media(min-width:2200px){.personal-shared-pocket{width:400px}.shared.corner-only.diagonal .shared-mat[data-position='south-west'] .personal-shared-pocket,.shared.corner-only.diagonal .shared-mat[data-position='north-east'] .personal-shared-pocket{left:calc(-30% - 200px);top:calc(50% - 13.2vw - 160px)}.game-surface:not(.shared) .player-shelf.has-personal{grid-template-columns:minmax(0,1fr) 400px;gap:20px;align-items:stretch}.player-shelf.has-personal>.personal-mat{display:block;grid-column:1;grid-row:1}.game-surface:not(.shared) .player-shelf.has-personal>.mat-controls{display:none}.player-shelf.has-personal>:global(.personal-tableau){grid-column:2;grid-row:1}.game-surface:not(.shared):has(.player-shelf.has-personal) .technology-tree{padding-top:180px}.game-surface:not(.shared):has(.player-shelf.has-personal) .column-title{top:4px;line-height:1.2}}
+/* Keep transformed seat objects within the table canvas, rather than letting
+   their pre-transform overflow enlarge the document. Geometry guards still
+   audit every visible child against this clipping boundary. */
+.shared.has-personal-cards.many-seats.corner-only.diagonal{overflow:clip}
+@media(min-width:761px) and (max-width:2199px){
+.shared.many-seats.corner-only.diagonal .shared-mat[data-position='south-west'] .personal-shared-pocket{left:calc(100% + 45px);top:calc(50% - 12vw + 8.6px);width:120px}
+.shared.many-seats.corner-only.diagonal .personal-shared-pocket :global(.personal-tableau.compact){padding:5px}
+.shared.many-seats.corner-only.diagonal .personal-shared-pocket :global(.compact-object){grid-template-columns:26px minmax(0,1fr);gap:5px}
+.shared.many-seats.corner-only.diagonal .personal-shared-pocket :global(.compact-object .personal-caption){gap:2px}
+.shared.many-seats.corner-only.diagonal .personal-shared-pocket :global(.compact-object .personal-caption>strong){font-size:14px;line-height:1.05}
+.shared.many-seats.corner-only.diagonal .personal-shared-pocket :global(.compact-object .personal-caption>span),.shared.many-seats.corner-only.diagonal .personal-shared-pocket :global(.compact-object .personal-right){font-size:9px;line-height:1.1}
+.shared.many-seats.corner-only.diagonal .personal-shared-pocket :global(.compact-object .read-cue){display:none}
+}
+
+@media(min-width:761px) and (max-width:2199px) and (max-height:650px){
+.shared.many-seats.corner-only.diagonal .shared-mat .personal-shared-pocket{position:static;width:110px;flex:0 0 110px;order:1}
+.shared.many-seats.corner-only.diagonal .seat-game-controls{align-items:center}
+.shared.many-seats.corner-only.diagonal .personal-shared-pocket :global(.compact-object){grid-template-columns:26px minmax(0,1fr);width:100%;min-height:44px}
+.shared.many-seats.corner-only.diagonal .personal-shared-pocket :global(.compact-object .personal-caption>strong){font-size:12px}
+.shared.many-seats.corner-only.diagonal .personal-shared-pocket :global(.compact-object .personal-caption>span){display:none}
+}
+
+@media(min-width:2200px){
+.shared.many-seats.corner-only.diagonal .shared-mat[data-position='south-west'] .personal-shared-pocket{left:calc(100% + 100px);top:calc(50% - 540px);width:320px}
+.shared.many-seats.corner-only.diagonal .personal-shared-pocket :global(.compact-object){grid-template-columns:120px minmax(0,1fr);gap:12px}
+.shared.many-seats.corner-only.diagonal .personal-shared-pocket :global(.compact-object .personal-caption>strong){font-size:25px}
+.shared.many-seats.corner-only.diagonal .personal-shared-pocket :global(.compact-object .personal-caption>span){font-size:14px}
+.shared.many-seats.corner-only.diagonal .personal-shared-pocket :global(.compact-object .personal-right){font-size:12px}
+}
+
+/* A two-seat table reserves an outside rail for the acquired physical card.
+   Keep the complete panel beside the mat rather than hanging below the canvas. */
+@media(min-width:761px) and (max-width:2199px){
+.shared.has-personal-cards:not(.diagonal):not(.many-seats):has(.shared-mat[data-position='south'] .personal-shared-pocket) .board-table{right:22%}
+.shared.has-personal-cards:not(.diagonal):not(.many-seats):has(.shared-mat[data-position='north'] .personal-shared-pocket) .board-table{left:22%}
+.shared.has-personal-cards:not(.diagonal):not(.many-seats) .personal-shared-pocket{left:min(calc(100% + 110px),calc(50vw + 50% - 272px));right:auto;bottom:36px;width:260px}
+.shared.has-personal-cards:not(.diagonal):not(.many-seats) .personal-shared-pocket :global(.compact-object){grid-template-columns:110px minmax(0,1fr);gap:10px}
+.shared.has-personal-cards:not(.diagonal):not(.many-seats) .personal-shared-pocket :global(.compact-object .personal-caption>strong){font-size:20px}
+.shared.has-personal-cards:not(.diagonal):not(.many-seats) .personal-shared-pocket :global(.compact-object .personal-caption>span){font-size:12px}
+}
+
+@media(min-width:761px) and (max-width:2199px){
+.shared.corner-only.diagonal:not(.many-seats) .shared-mat[data-position='south-west'] .personal-shared-pocket,.shared.corner-only.diagonal:not(.many-seats) .shared-mat[data-position='north-east'] .personal-shared-pocket{left:calc(-30% - 126px);top:calc(50% - 13.2vw - 89px);width:280px}
+.shared.corner-only.diagonal:not(.many-seats) .personal-shared-pocket :global(.compact-object){grid-template-columns:80px minmax(0,1fr)}
+}
+
+.shared.many-seats .personal-shared-pocket :global(.personal-access){display:none}
+@media(min-width:761px) and (max-width:2199px) and (max-height:650px){
+.shared.has-personal-cards:not(.diagonal):not(.many-seats) .shared-mat[data-position='north']{--y:15%}
+.shared.has-personal-cards:not(.diagonal):not(.many-seats) .game-heading{top:22%;right:3%}
+.shared.corner-only.diagonal:not(.many-seats) .shared-mat[data-position='south-west'] .personal-shared-pocket,.shared.corner-only.diagonal:not(.many-seats) .shared-mat[data-position='north-east'] .personal-shared-pocket{left:calc(-30% - 109px);top:calc(50% - 13.2vw - 72px)}
+}
+
+/* Short four-corner tables need clearance for the complete rotated mat, not
+   only its buttons. Keep the turn heading and every starting card in the field. */
+@media(min-width:761px) and (max-width:2199px) and (max-height:650px){
+.shared.many-seats.corner-only.diagonal .board-table{left:26%}
+.shared.many-seats.corner-only.diagonal:not(.technology-focus) .board-table{grid-template-columns:minmax(0,1.9fr) minmax(170px,1fr)}
+}
+
+@media(min-width:761px) and (max-width:2199px) and (max-height:850px){
+.shared.many-seats.corner-only.diagonal .game-heading{left:29%}
+.shared.corner-only.diagonal :global(.overview-node[data-level='I'] .overview-face){padding:2px}
+.shared.corner-only.diagonal :global(.overview-node[data-level='I'] .overview-face header){padding:3px 0}
+}
+
+
+
+/* Focus has one detailed board, with room for its level labels above row0. */
+@media(min-width:761px) and (max-width:2199px){
+ .game-surface.shared.technology-focus.discovered-branches .technology-tree{height:calc(var(--branch-unit)*var(--branch-units) + 102px);min-height:calc(var(--branch-unit)*var(--branch-units) + 102px);padding-top:76px}
+ .game-surface.shared.technology-focus.discovered-branches .prerequisite-lines{inset:76px 0 26px;height:calc(var(--branch-unit)*var(--branch-units))}
+}
 </style>

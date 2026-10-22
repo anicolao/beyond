@@ -32,7 +32,7 @@
     {#if presentation.researchers?.length}<div class="researchers"><span>Researched</span>{#each presentation.researchers as name, i}<span class="researcher"><i class:gold={i === 1} style={presentation.researcherTones?`--research-tone:${presentation.researcherTones[i]}`:undefined}></i>{name}</span>{/each}</div>{/if}
     {#if presentation.actionOccupant}<p class="occupied"><span class="pawn" aria-hidden="true"></span>Action occupied · {presentation.actionOccupant}</p>{/if}
     {#if presentation.colonyOwner}<p class="colony"><span class="production-disc" aria-hidden="true"><CardSymbol kind={colonySymbol}/></span><span class="production-disc" aria-hidden="true"><CardSymbol kind={colonySymbol}/></span><span>Colony · {presentation.colonyOwner}</span></p>{/if}
-    {#if card.points !== undefined}<div class="scoring"><CardSymbol kind="star"/><span>{card.points} VP</span><span>{card.family === 'System' ? 'when colonized' : card.family === 'Event' ? 'when retained' : card.badge==='IIII'?'at game end':'when researched'}</span></div>{/if}
+    {#if card.points !== undefined}<div class="scoring"><CardSymbol kind="star"/><span>{card.points} VP</span><span>{card.family === 'System' ? 'when colonized' : card.family === 'Event' ? 'when retained' : card.badge==='IIII'||presentation.personalOwner?'at game end':'when researched'}</span></div>{/if}
     </div>
   </div>
 </article>

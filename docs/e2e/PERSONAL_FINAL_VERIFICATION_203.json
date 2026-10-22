@@ -1,0 +1,139 @@
+{
+  "base": "fecea48f259f16253566c9d894dcf0986eb4efd9",
+  "variants": 208,
+  "frames": 16307,
+  "generating": false,
+  "phases": {
+    "001-foundation": {
+      "variants": 7,
+      "frames": 102
+    },
+    "001a-card-gallery": {
+      "variants": 4,
+      "frames": 300
+    },
+    "002-remote-rooms": {
+      "variants": 5,
+      "frames": 156
+    },
+    "003-basic-setup": {
+      "variants": 15,
+      "frames": 570
+    },
+    "004-first-research": {
+      "variants": 17,
+      "frames": 1131
+    },
+    "005-technology-discovery": {
+      "variants": 18,
+      "frames": 1456
+    },
+    "006-rival-research": {
+      "variants": 10,
+      "frames": 774
+    },
+    "007-production": {
+      "variants": 8,
+      "frames": 1044
+    },
+    "008-trading": {
+      "variants": 12,
+      "frames": 754
+    },
+    "009-automation": {
+      "variants": 10,
+      "frames": 972
+    },
+    "010-fleets": {
+      "variants": 16,
+      "frames": 1226
+    },
+    "011-jump-planning": {
+      "variants": 14,
+      "frames": 1054
+    },
+    "012-outposts": {
+      "variants": 28,
+      "frames": 1860
+    },
+    "013-colonies": {
+      "variants": 20,
+      "frames": 2000
+    },
+    "014-personal-technology": {
+      "variants": 24,
+      "frames": 2908
+    }
+  },
+  "actualPngDimensions": {
+    "(1440, 1000)": 7932,
+    "(393, 852)": 2947,
+    "(3840, 2160)": 5074,
+    "(1280, 720)": 297,
+    "(1280, 640)": 57
+  },
+  "sourceFilesFrozen": 196,
+  "unchangedGuardSources": [
+    "tests/e2e/helpers/test-step-helper.ts",
+    "tests/e2e/helpers/screen-fit.ts",
+    "tests/e2e/helpers/exact-pixels.ts",
+    "tests/e2e/helpers/fixtures.ts",
+    "tests/e2e/helpers/story-reporter.ts",
+    "tests/e2e/helpers/capture-context.ts",
+    "tests/e2e/helpers/trade-containment.ts"
+  ],
+  "command": "PUBLIC_AUTH_EMULATOR_PORT=17997 PUBLIC_FIRESTORE_EMULATOR_PORT=17897 FIRESTORE_EMULATOR_HOST=127.0.0.1:17897 nix --offline develop /private/tmp/beyond-toolchain --command bunx playwright test",
+  "snapshotUpdateArgument": false,
+  "logSha256": "d571da2f29fb7d8daeb81e9a8f389c0b85b704dd887ffd995952d82804c9aeba",
+  "pending": "Independent014 local acceptance;014 publication/015 held; Linux exact and matching-head hosted gates remain separate",
+  "sourceFreeze": "PERSONAL_SOURCE_FREEZE_203.json",
+  "sourceFreezeSha256": "f0012cbe71672ad6eb2915c93f24899bbef447578621c3976fe390d6026bda6f",
+  "checks": {
+    "backend": {
+      "tests": 323,
+      "assertions": 3989,
+      "suites": 26,
+      "failed": 0,
+      "log": "personal203-nix-backend-all7.log"
+    },
+    "tooling": {
+      "passed": 65,
+      "failed": 0,
+      "log": "personal203-nix-tooling.log"
+    },
+    "captureGuards": {
+      "passed": 51,
+      "failed": 0,
+      "log": "personal203-nix-guards.log"
+    },
+    "types": "personal203-types-final8.log:0errors/0warnings",
+    "sourcePolicy": "personal203-policy-final8.log:PASS",
+    "dualStaticBuilds": "final-exact4 startup:PASS",
+    "sourceDiffCheck": "PASS"
+  },
+  "referenceByteAudit": {
+    "status": "PASS",
+    "report": "PERSONAL_REFERENCE_PROVENANCE_203.json",
+    "inheritedActive": 13399,
+    "inheritedByteIdentical": 13322,
+    "reviewedInheritedChanged": 77,
+    "activePersonal": 2908,
+    "inactivePersonalPreservedNotForStaging": 2056,
+    "allChangedInheritedBytesMatchReviewManifest": true,
+    "imageTransforms": false,
+    "failedLinuxReferencesAdopted": false
+  },
+  "rulesSha256": "eb4c4e2dc1e46282fe98ccedcc035cbcd8f04cd9d6628a470e88b116ab2feef8",
+  "currentSourceAfter206": {
+    "status": "PASS;014 locally accepted by reviewer208",
+    "prior208Pass": "Preserved pre206 full208/208 exact55.6m /16307frames; not rerun after206",
+    "currentAffected": "PERSONAL_FOCUS_VERIFICATION_207.json",
+    "referenceDelta": "32 focused upper/lower640/720 frames only;1426 other folder files byte-identical",
+    "sourceFreeze": "PERSONAL_SOURCE_FREEZE_207.json",
+    "supportingChecks": "Types0/0,policy PASS; unchanged323backend/3989,65tooling,51guards preserved",
+    "protectedHelpersUnchanged": 7,
+    "hold": "Final Linux/hosted acceptance pending; publication and stacked015 authorized by reviewer208; no merge"
+  },
+  "reviewer208LocalAcceptance": true,
+  "finalAcceptance": "Pending Linux exact and independently verified exact-head hosted"
+}

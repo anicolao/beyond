@@ -1,0 +1,85 @@
+{
+  "prompt": 204,
+  "authorship": "reviewer-authored",
+  "originalRun": {
+    "log": "personal203-final-exact3.log",
+    "passed": 200,
+    "failed": 8,
+    "accepted": false,
+    "distinctFrom": "Heap-saturated exact2 readiness failures"
+  },
+  "findings": [
+    {
+      "reference": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-compact-shared-basic-table/016-compact-overview-desktop-darwin.png",
+      "reportedPlaywrightPixels": 3370,
+      "rawRgbaChangedPixels": 3431,
+      "preservedArtifacts": {
+        "expected": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/personal203-failed-full-exact-records3/003-basic-setup-setup-shar-a0315--compact-shared-Basic-table-desktop/begin-and-recover-an-exact-2-player-compact-shared-basic-table/016-compact-overview-desktop-darwin-expected.png",
+          "sha256": "b25c13f1bbb8bc25e7f11417e719196588c598f48fb06d25c00af9f950265f1c"
+        },
+        "actual": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/personal203-failed-full-exact-records3/003-basic-setup-setup-shar-a0315--compact-shared-Basic-table-desktop/begin-and-recover-an-exact-2-player-compact-shared-basic-table/016-compact-overview-desktop-darwin-actual.png",
+          "sha256": "1c04eada72ff7e9dd5441f3a2f4a33929d7f7ad4ae6fac82185682e3ce0eeba1"
+        },
+        "diff": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/personal203-failed-full-exact-records3/003-basic-setup-setup-shar-a0315--compact-shared-Basic-table-desktop/begin-and-recover-an-exact-2-player-compact-shared-basic-table/016-compact-overview-desktop-darwin-diff.png",
+          "sha256": "a96fabbabaf52c71450e8c0e62d57c680b8a3d4daeb1860360fad59f1cd8e532"
+        }
+      },
+      "reconciliation": "Matches original exact3 evidence; post-run shared CSS title/heading/short-table review and bounded source corrections were audited before final exact4. No new reference refresh for reviewer204."
+    },
+    {
+      "reference": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/023-begun-desktop-darwin.png",
+      "reportedPlaywrightPixels": 6709,
+      "rawRgbaChangedPixels": 6798,
+      "preservedArtifacts": {
+        "expected": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/personal203-failed-full-exact-records3/004-first-research-researc-e17ed-hared-corner-research-round-desktop/finish-a-compact-4-player-shared-corner-research-round/023-begun-desktop-darwin-expected.png",
+          "sha256": "7c65d60a86e8935cb60dd0e08e0bf70df27363ed8d9b7900fead7bb91299ba71"
+        },
+        "actual": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/personal203-failed-full-exact-records3/004-first-research-researc-e17ed-hared-corner-research-round-desktop/finish-a-compact-4-player-shared-corner-research-round/023-begun-desktop-darwin-actual.png",
+          "sha256": "98f3beb539634ebdbbb3dfdb86548ac42d2b63f263d89cd2fe84ae5b52feef21"
+        },
+        "diff": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/personal203-failed-full-exact-records3/004-first-research-researc-e17ed-hared-corner-research-round-desktop/finish-a-compact-4-player-shared-corner-research-round/023-begun-desktop-darwin-diff.png",
+          "sha256": "ab1f4336559aba1598e372fb606bde43c13e8ff4601965c5de20fcff14f5de16"
+        }
+      },
+      "reconciliation": "Matches original exact3 evidence; post-run shared CSS title/heading/short-table review and bounded source corrections were audited before final exact4. No new reference refresh for reviewer204."
+    },
+    {
+      "reference": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/092-compact-overview-720-desktop-darwin.png",
+      "reportedPlaywrightPixels": 4449,
+      "rawRgbaChangedPixels": 4550,
+      "preservedArtifacts": {
+        "expected": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/personal203-failed-full-exact-records3/005-technology-discovery-d-96095-he-complete-Exo-Alloy-queue-desktop/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/092-compact-overview-720-desktop-darwin-expected.png",
+          "sha256": "d628ab5697ce50f4241534153e5dcca128763c21857909843be9238bc7cc4f7a"
+        },
+        "actual": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/personal203-failed-full-exact-records3/005-technology-discovery-d-96095-he-complete-Exo-Alloy-queue-desktop/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/092-compact-overview-720-desktop-darwin-actual.png",
+          "sha256": "5345adf02aa557e8e970513461267c8072507db43e5f07ae6f1b4fb4a4e625b8"
+        },
+        "diff": {
+          "path": "/Users/anicolao/projects/games/beyond/tmp/personal203-failed-full-exact-records3/005-technology-discovery-d-96095-he-complete-Exo-Alloy-queue-desktop/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/092-compact-overview-720-desktop-darwin-diff.png",
+          "sha256": "937b7f8f04843a2de8a65876bf8c72b144f6220c09a9ed2c618f2e50937e9dc7"
+        }
+      },
+      "reconciliation": "Matches original exact3 evidence; post-run shared CSS title/heading/short-table review and bounded source corrections were audited before final exact4. No new reference refresh for reviewer204."
+    }
+  ],
+  "laterGate": {
+    "log": "personal203-final-exact4.log",
+    "passed": 208,
+    "failed": 0,
+    "minutes": 55.6,
+    "snapshotUpdateArgument": false,
+    "frameAudit": "docs/e2e/PERSONAL_FINAL_VERIFICATION_203.json",
+    "referenceAudit": "docs/e2e/PERSONAL_REFERENCE_AUDIT_203.json"
+  },
+  "newGenerationOrSourceChanges": false,
+  "comparatorWeakened": false,
+  "hold": "Independent014 local acceptance; publication/015/merge held"
+}

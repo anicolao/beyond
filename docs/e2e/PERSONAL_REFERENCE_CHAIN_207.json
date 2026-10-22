@@ -1,0 +1,1065 @@
+{
+  "status": "PASS",
+  "scope": "Chain verification of all101 reviewed inherited changes; prior full13399 raw audit is preserved, not rerun",
+  "base": "fecea48f259f16253566c9d894dcf0986eb4efd9",
+  "pre206DistinctReviewed": 77,
+  "newDelta": 32,
+  "overlap": 8,
+  "currentDistinctReviewed": 101,
+  "remainingInheritedByteIdenticalByPreservedAuditAndBoundedDelta": 13298,
+  "currentPersonalFramesUnchanged": 2908,
+  "noTransforms": true,
+  "failedLinuxCohortsAdopted": false,
+  "changed": [
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-compact-shared-basic-table/016-compact-overview-desktop-darwin.png",
+      "baseSha256": "b25c13f1bbb8bc25e7f11417e719196588c598f48fb06d25c00af9f950265f1c",
+      "currentSha256": "77fcc3f1d67e45331b7b222633201ec2d963faffbce10ddc6763244223047c1b",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "294c7d8323ffead154a0c8033b66d4200a92294d",
+      "currentBlob": "d8fe7e6154fdd1cadfdcf84435cce03261c1b987"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-compact-shared-basic-table/021-overview-return-desktop-darwin.png",
+      "baseSha256": "ee0ef78f76d62e6d24681b869843c889b9587895bbad726ce548404e0ce8614b",
+      "currentSha256": "9e260f8c2851253fa3fd1dade8fc41e9cd307975df7f20f78b166af70269ba59",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "1f8d6d50ff2aa7f0e68d751fc16674d74fc09375",
+      "currentBlob": "3860822bd851805e840dda4a7dac2231dc7ef7f4"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-compact-shared-basic-table/022-compact-mat-desktop-darwin.png",
+      "baseSha256": "a9bd96581daff3588283c265748cb6c2a3f07e2a289a6d49a6eb799319041e58",
+      "currentSha256": "8a5f3276f56ec394a2b75f330ca24cd7a93cd9dc368edc9920eb7fff2d6cefd3",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "98de439361d32c97b1004fe31e0e55c97562d78e",
+      "currentBlob": "f7e34cb7f35d05bd6ef0248d510e5fccd40a165a"
+    },
+    {
+      "path": "tests/e2e/003-basic-setup/screenshots/begin-and-recover-an-exact-2-player-compact-shared-basic-table/023-compact-mat-return-desktop-darwin.png",
+      "baseSha256": "2567988f44b0bf9d3df77deb51df2ea0721a4c8faf5ed1c5106732303a6ea3ca",
+      "currentSha256": "3b2bdb3a0440e68a26fcb72193e5b0b84c2d3c785d2da1a755fcf94e74fd226f",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "c8fc5ec93834efee2b99479d7f9777e30a593045",
+      "currentBlob": "8dafc55ad22f68af3eafa7d8a5a766933697006e"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/023-begun-desktop-darwin.png",
+      "baseSha256": "7c65d60a86e8935cb60dd0e08e0bf70df27363ed8d9b7900fead7bb91299ba71",
+      "currentSha256": "cc50a77da1612c2e35f3bd025cc6ad2566b8a62025871e797d62d88d4852f3e6",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "2e65dda8e96793316465fcbee12d54f61e220a32",
+      "currentBlob": "5320fdbcf0888ea2efd2dfb8a2fa68063646aea2"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/024-turn-0-plan-desktop-darwin.png",
+      "baseSha256": "e9d998630bd92443107bcf765e94c5314b8558ceb4ff97c9fbfdd6dba3001fc3",
+      "currentSha256": "afa3d9b32aa2d1b65ef2cb550e1699d319146f889e2ff3b4984953062b31bc4d",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "566bc410a256b317d6bc25de873c2dda7645a485",
+      "currentBlob": "260d8e1af9fb5fb0fde9e9b7912510f85878528d"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/025-turn-0-browse-0-desktop-darwin.png",
+      "baseSha256": "004be8fc1919a3f69e8dd6eb909def975fbd37fb7360d924d1f8805854884c2f",
+      "currentSha256": "a727811d84376e62482b37da5b75eec8e5d944f06311ba37feaf80e8c3e037f5",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "cab07cb4ee2ab0b04e77004dc6c1dd5c72f8d600",
+      "currentBlob": "f44c7f62df1dacf4642ea30a6283f024113bd93e"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/026-turn-0-browse-1-desktop-darwin.png",
+      "baseSha256": "e68ffa48c284657feba00d00901c95c408f03e83dc92584d2d08f7cf7d4d9e36",
+      "currentSha256": "51989ad1ea3c150aed6bfa9f16e325a46fce532b920f1155bb529dca77522f06",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "d2dc78b295a7b021f921ff577b401e73e4c6d1cb",
+      "currentBlob": "310d843b186c9e5a8ef4033a2878513b75dde438"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/027-turn-0-browse-2-desktop-darwin.png",
+      "baseSha256": "0c10e39274f340acf6bc940701ee0867f690166d192115d426f52ea8c349058b",
+      "currentSha256": "db4af89887a94dab8402e1cf187a7dc828f0acab6c90627f3a4c4f943d22a38b",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "923a9e98caba35a1664e1b7ccca3c1dc030cc0e6",
+      "currentBlob": "a9b6709cb3561f6132e0b3ff2bf290ed83653b15"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/028-full-card-desktop-darwin.png",
+      "baseSha256": "85bafead1f7e9304e22ec7e41131d5c61020974907145fe6e8a6333ab0bf11f4",
+      "currentSha256": "e3b331d08694258272a2e944407d027c8563cc218890cf67152c9aa7e554263b",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "30f16c26fb21db3ea2392defb406cfa67e3cd8e6",
+      "currentBlob": "f051631fbab70cba7265cf68aa007d6b4b13e5ea"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/029-full-rules-desktop-darwin.png",
+      "baseSha256": "d9b9f5cb71a48c15b3acf784be8aff2345aa0ec6bd3cc49addba9e3372dcbeb3",
+      "currentSha256": "7e101379d3767d46548721cce74fd35ffe76fe6278c1549c7fd5d256850b716f",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "09eb9e97b5accca8a84438196ed653dd71fa1082",
+      "currentBlob": "d2a5415e8c362c8065a873068d7209b5e10a1656"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/030-inspection-return-desktop-darwin.png",
+      "baseSha256": "31be674705fd344dbade86a004a6b7a639becae925bf3df2e9996cdb4ad9d857",
+      "currentSha256": "40ce211da446bb77e3242329ffda4e03045250e6799d2dd68dba044a683cf1c3",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "11d551fc4a59bc421ae88cd8493ffaf1433e8234",
+      "currentBlob": "5dee5fa2c7cefdb1dc2a01307a6c40abf045989e"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/031-plan-return-desktop-darwin.png",
+      "baseSha256": "859c9640384b5e92dd912a70f611945b4b9b222833627226fe5e83f39dbe5f1b",
+      "currentSha256": "fa8864f3e6b836a3a6143790c263b27c15825414ae05a6759dc4dc4882445e4e",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "13d32e95bdcfad6ca6d9d240180e53472511066d",
+      "currentBlob": "fb052c09246ec5cd1a740541732958519141356b"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/032-reopened-plan-desktop-darwin.png",
+      "baseSha256": "e9d998630bd92443107bcf765e94c5314b8558ceb4ff97c9fbfdd6dba3001fc3",
+      "currentSha256": "afa3d9b32aa2d1b65ef2cb550e1699d319146f889e2ff3b4984953062b31bc4d",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "566bc410a256b317d6bc25de873c2dda7645a485",
+      "currentBlob": "260d8e1af9fb5fb0fde9e9b7912510f85878528d"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/033-turn-0-browse-0-reopened-desktop-darwin.png",
+      "baseSha256": "004be8fc1919a3f69e8dd6eb909def975fbd37fb7360d924d1f8805854884c2f",
+      "currentSha256": "a727811d84376e62482b37da5b75eec8e5d944f06311ba37feaf80e8c3e037f5",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "cab07cb4ee2ab0b04e77004dc6c1dd5c72f8d600",
+      "currentBlob": "f44c7f62df1dacf4642ea30a6283f024113bd93e"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/034-turn-0-browse-1-reopened-desktop-darwin.png",
+      "baseSha256": "e68ffa48c284657feba00d00901c95c408f03e83dc92584d2d08f7cf7d4d9e36",
+      "currentSha256": "51989ad1ea3c150aed6bfa9f16e325a46fce532b920f1155bb529dca77522f06",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "d2dc78b295a7b021f921ff577b401e73e4c6d1cb",
+      "currentBlob": "310d843b186c9e5a8ef4033a2878513b75dde438"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/035-turn-0-browse-2-reopened-desktop-darwin.png",
+      "baseSha256": "0c10e39274f340acf6bc940701ee0867f690166d192115d426f52ea8c349058b",
+      "currentSha256": "db4af89887a94dab8402e1cf187a7dc828f0acab6c90627f3a4c4f943d22a38b",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "923a9e98caba35a1664e1b7ccca3c1dc030cc0e6",
+      "currentBlob": "a9b6709cb3561f6132e0b3ff2bf290ed83653b15"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/036-turn-0-researched-desktop-darwin.png",
+      "baseSha256": "b917100b115a1ae450465b57c8ff007b57e88278ae76cc3fe25b05347a170207",
+      "currentSha256": "0a279333ed0daa1f3d34a877156fe0dd6c668e73104fb7b72e60471e2a21b0b5",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "d9d0f4838a4e539a36d36453bedbcd351d26ea76",
+      "currentBlob": "e47a59a82d62c81c5dd22f0601178ea5f3a1876b"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/037-turn-0-pending-restored-desktop-darwin.png",
+      "baseSha256": "7acfa634314f574e23e69b06210019208742e8e3d08d5e2a034b52a1142714fb",
+      "currentSha256": "1f48462c49052a4b6dccfc6eef1cec8a2e57415c3bcc3e99997e03b8dda9ddad",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "5828a66961ae42a13f44847b843bab364de9730c",
+      "currentBlob": "b58cfb1dc02ac48cef9a5c2c5222a8c00660a05e"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/038-turn-0-production-restored-desktop-darwin.png",
+      "baseSha256": "b917100b115a1ae450465b57c8ff007b57e88278ae76cc3fe25b05347a170207",
+      "currentSha256": "0a279333ed0daa1f3d34a877156fe0dd6c668e73104fb7b72e60471e2a21b0b5",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "d9d0f4838a4e539a36d36453bedbcd351d26ea76",
+      "currentBlob": "e47a59a82d62c81c5dd22f0601178ea5f3a1876b"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/039-turn-0-handoff-desktop-darwin.png",
+      "baseSha256": "b20c9e304739ae6bb512b1681dd508637e5b327246fd663772ee9f3449125ae7",
+      "currentSha256": "187ea493e07e1a736edd5fae57496fd7669f4d43bdd4ebc21167645edebbffd3",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "eec2aa706081eb30e0325eb299bdc6784e3b2624",
+      "currentBlob": "4fefdb3af998f7c22e4e0d010441ec36f7c2b587"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/040-turn-1-plan-desktop-darwin.png",
+      "baseSha256": "a8b2667b43d8cc8760ff8aa487ea8f90fd272bd54d51aa6f09d92d3e03ad4f9e",
+      "currentSha256": "a8ac9107b9c986a5a64ab157102393cfc284a822773254fb01fb1e6ea2ef3418",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "df1fb98ddf946481aab002b54c93b40f7432ca88",
+      "currentBlob": "271e7d252e1b0ab6c2dfcd4a0f13b7f3f72c5c60"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/041-blocked-occupied-desktop-darwin.png",
+      "baseSha256": "4173122f535dc3fb11e2cb0975ddc3a4b49b6be0c30a1c48b5574ec25f9ef512",
+      "currentSha256": "4b37f2297d67e93f86a1b12a1ffc6c94b89ec1aae2823122d4f86285b0cb7dc8",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "2c2686a82d7df944198f24f99284d96b7c4b501d",
+      "currentBlob": "141d42e8885aa2b58fb1b71bdedbb4083e34d2a1"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/042-open-second-space-desktop-darwin.png",
+      "baseSha256": "ebf9480d558f60c2e1a902d896f7177434120730ae01a869a7549754563d4a41",
+      "currentSha256": "a5e51a16f899cd44efa60828236a9e7fcbda4261ebadf7d11ae95438bf50b995",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "4b0aae67fdde1b39cb048ef7bf13a402866aa6c8",
+      "currentBlob": "c028724863e9f746d6b27a7606d42f5c4dbe16f7"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/043-turn-1-browse-0-desktop-darwin.png",
+      "baseSha256": "efb2ccddbd3869cf94f79ca8ab30e641f79b00a862ce15878de0dc035742efec",
+      "currentSha256": "d3d0e76695b4956f1db4edb2e7e8a4169520be2da879c825a12aa1f9c37d1718",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "bedb0be2497efae2f0d1a9154f37012aa4037c98",
+      "currentBlob": "28e0078df34f2f965c8d2c1120b8c0fad84516cf"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/044-turn-1-browse-1-desktop-darwin.png",
+      "baseSha256": "9c30d926b88a3447875ebc75e161129eeaa1bf37cd7c6555b7c15f88a7a00b04",
+      "currentSha256": "e9a8a8def3d4b988abc38001f8f6751244d2a730593d93cef777df5931119877",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "4e4e007d00c98d7581f2f7c857e2937b60a61ea2",
+      "currentBlob": "7e4393528c4e36f567f5d7bae47610e26e77b4a1"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/045-ship-required-desktop-darwin.png",
+      "baseSha256": "9c30d926b88a3447875ebc75e161129eeaa1bf37cd7c6555b7c15f88a7a00b04",
+      "currentSha256": "e9a8a8def3d4b988abc38001f8f6751244d2a730593d93cef777df5931119877",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "4e4e007d00c98d7581f2f7c857e2937b60a61ea2",
+      "currentBlob": "7e4393528c4e36f567f5d7bae47610e26e77b4a1"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/046-ship-selected-desktop-darwin.png",
+      "baseSha256": "9d96462f52fcf00285962cafc6a3b6c964fdfc8917774ffa2be7a32c2d95d13b",
+      "currentSha256": "908915f5a8292c30227d968ba64ee6ac5dc2dc26c963e0de9b673a8af7e02d9b",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "4473beac8e8e87f85e5f20d1ae1ff6605bfaf8df",
+      "currentBlob": "6f6ae0a78d6873c9afaac8557eabbc05f1910fae"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/047-turn-1-researched-desktop-darwin.png",
+      "baseSha256": "4a280afa06c5102e176c1f15f1099d5a6d37e84e8b1c9a4011a566447dc9c104",
+      "currentSha256": "831211a0cf06b892be47530e0d8ca1c12a4cc85f07f433661afc453b28a8e7f8",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "fdd715c0caf5e10ea6d461adfd2a5e53a1b1e026",
+      "currentBlob": "f8b257f7da1cd33e7d00205d844978e9d1785d74"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/048-turn-1-pending-restored-desktop-darwin.png",
+      "baseSha256": "8be9b5d42805c2b3f60367176369dc452fcf2e92e4843d347777e87ffe7ad530",
+      "currentSha256": "db2e2cdbc2e765dd72c9ee52165671de2625e2990685b4690b646192a4486020",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "20a5e0d7df9998fe5fb12fcfaefe3481037989ec",
+      "currentBlob": "a0ff8d59ec85fd6b33c03f4050e414445d4c7b5c"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/049-turn-1-production-restored-desktop-darwin.png",
+      "baseSha256": "4a280afa06c5102e176c1f15f1099d5a6d37e84e8b1c9a4011a566447dc9c104",
+      "currentSha256": "831211a0cf06b892be47530e0d8ca1c12a4cc85f07f433661afc453b28a8e7f8",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "fdd715c0caf5e10ea6d461adfd2a5e53a1b1e026",
+      "currentBlob": "f8b257f7da1cd33e7d00205d844978e9d1785d74"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/050-trade-selected-desktop-darwin.png",
+      "baseSha256": "2999af52f34f24378610af0a5c0f2bb282fbcb490d29ec5a9f009c91289fd400",
+      "currentSha256": "2df37ab917cb04d83b697e5e6fa688cbb2c2231c6dc91b2495d1db84dcc02041",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "c004721bfce66668c85b9b11b29853e49792a6e2",
+      "currentBlob": "e8a481101e45d082a389e8a62f627fea22ac98ac"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/051-decommission-exchange-desktop-darwin.png",
+      "baseSha256": "d7bb82503e5ffacc6d9ce04b0fd1b24b348566315db5548b852df34884dfc965",
+      "currentSha256": "5c2200748dfcd7635cd7288fae717f179cef7b554077d00ce15eef951f6579bc",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "eff4dbe0f8728ba48d2fb287cf5282d7f4def0a6",
+      "currentBlob": "7baedf7e632aaf6d35d2802b5a01ab01e68c4192"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/052-decommission-target-desktop-darwin.png",
+      "baseSha256": "33c3f59b354819363cd8de24c82b154f5da78fc3112cbf9f98a00108e5932ba6",
+      "currentSha256": "7f45b3ff922fc7c77033e78e806c44540dfddb112227d8b012946d24e3f2994f",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "5b476a2a60a553610615f90f72e90653fe0b9125",
+      "currentBlob": "051095d338fe015624f2c7a165a99d80452c5e9c"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/053-decommissioned-desktop-darwin.png",
+      "baseSha256": "b07e8c2790f49fce5390eb89ab75d4f51966d4906a6c68b2f5f4e488cef1b903",
+      "currentSha256": "20cd7d1a19e3adbf835362c4ca0879c4ec6957b60f39077eca48d82e212d6b43",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "fec9660b0e8d707ea1b66ef591c5b3e9ae747beb",
+      "currentBlob": "2f20ce307f17b6eb9f000e52efd924b5ef30b71b"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/054-return-exchange-desktop-darwin.png",
+      "baseSha256": "ce64467d972c8e6512b79ad42d00ab457b0a7f209e5f4d816c8a3942e4651b11",
+      "currentSha256": "e1b23260e53c314f30ba6ee2876156ba36a004601d4e888e0d2d7b22875efff1",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "edb0d718316ac8897372617f257e8337578c51e8",
+      "currentBlob": "e75aaffff684fdd286be65cf73722806202d2bbf"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/055-returned-0-desktop-darwin.png",
+      "baseSha256": "15990b78007e75ef7bdc29d096e9a2e346e084f244dbece79c5f374d7c4821ac",
+      "currentSha256": "7562abfdcd3031f15dd07a35538c446eb36ed628453d4cc9fd5669fbe285750d",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "617efce3e1b98277bf9d73395fead5ab3ebfd7bc",
+      "currentBlob": "9dfc80f1546b11fed8e96bd6f8737285ac17574f"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/056-returned-1-desktop-darwin.png",
+      "baseSha256": "c15a573579f3d2ab9d16dfa38e1da797727284c420791bc2530ffef767c70f5a",
+      "currentSha256": "977e5c3007d06c35298916eabd79c1b2299c606df8f1755e4d9b62da724bf8df",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "12df430121933f86637bef070d442fcfb8854225",
+      "currentBlob": "4adc8c404a338bb22e64b8a483706ce36cd65aa1"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/057-trade-table-desktop-darwin.png",
+      "baseSha256": "1ac8bce100e1cda7cd2a7a8614560ba40721a30d925c3862f1e3ba151768943f",
+      "currentSha256": "d199bfb9b74691f1e57154f1caac12799a8d3972d10cfe9109552d3bc0d12e33",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "770400409b5cd4303d178c42c0c8abf5a5c3d9f1",
+      "currentBlob": "4652fc121e8f16c7645d1b2b8a4a826174f7b543"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/058-supply-overflow-desktop-darwin.png",
+      "baseSha256": "6fa03a384e9f2ea5e35ec09e1273497cad5e35c4dd1828ab574c631cbb49b203",
+      "currentSha256": "1e8a1de6112fcc14e4363710820f9e55e1953bb4d9f7dc2020a398ba8bb48007",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "2afafc14793b599c4c0567eb42dbc8a0625c5af7",
+      "currentBlob": "1cb424e507d2df0fdbb12d444b3f7fc8cf9ede0f"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/059-mat-return-desktop-darwin.png",
+      "baseSha256": "e3062613a9478939698e7a514cf2158c99bd02e9f25a40608e3fa8fff0b76667",
+      "currentSha256": "57ae0f8365e033687e3ef90d718b29808e2b889209c3e0a5a8ed5530b1185da0",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "69495c346bc243750887bb9467b587fd5c1dffca",
+      "currentBlob": "7e5ee75e13fcf8c83f380c7985897e80e4e50326"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/060-trade-resumed-desktop-darwin.png",
+      "baseSha256": "c15a573579f3d2ab9d16dfa38e1da797727284c420791bc2530ffef767c70f5a",
+      "currentSha256": "977e5c3007d06c35298916eabd79c1b2299c606df8f1755e4d9b62da724bf8df",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "12df430121933f86637bef070d442fcfb8854225",
+      "currentBlob": "4adc8c404a338bb22e64b8a483706ce36cd65aa1"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/061-recruit-exchange-desktop-darwin.png",
+      "baseSha256": "bb195cc5f536e9536fdf198b38608921fe3b5e1d47442454b8b5bfe54697b45d",
+      "currentSha256": "c669e269e04b033421ed0eb9cbb2e62a1b8bcf4faff3c13d30e5f1fcec19bd62",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "7c01d3816541cd5e21088bcb1f537f85b7dfd59b",
+      "currentBlob": "ce072d92b60738687f27de74c4e6bb3560c3a8d6"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/062-recruited-desktop-darwin.png",
+      "baseSha256": "ab6ae1e6e0cafda4d120b2aa52f802d54b98f0f2f656bf95eb37c78a9313df10",
+      "currentSha256": "9a60577d06cf523da515960ec9da9d88d0fb6c09d332abd98c50a1a750032568",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "d5380187f094408ea4c96c4b2c211349cbe3efe6",
+      "currentBlob": "b2a06f90a6f49571efdf9fec60260740d5182bc1"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/063-retained-trade-desktop-darwin.png",
+      "baseSha256": "9edf188baad302f86d9925800b828d2f1ad07ee84258dd76a0291d0182a2f1b6",
+      "currentSha256": "0c1e447e065f3b10898d6750fadcad9f3bf12acbd438cd9500a2aab006fdeede",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "a847c2e70ef422d311560e6b9b2a7a27039a4aea",
+      "currentBlob": "5b70c9b0d82080fde932332a293a545b83d2b938"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/064-restored-trade-desktop-darwin.png",
+      "baseSha256": "ab6ae1e6e0cafda4d120b2aa52f802d54b98f0f2f656bf95eb37c78a9313df10",
+      "currentSha256": "9a60577d06cf523da515960ec9da9d88d0fb6c09d332abd98c50a1a750032568",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "d5380187f094408ea4c96c4b2c211349cbe3efe6",
+      "currentBlob": "b2a06f90a6f49571efdf9fec60260740d5182bc1"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/065-turn-1-handoff-desktop-darwin.png",
+      "baseSha256": "257139306a04cc1302fc327232afb8b782cee95aa3a4293a931b3bf96d86dbaa",
+      "currentSha256": "a8916c09289a828254cece2481f0aaaa91273ee0e9e7c047fe1882e9b97fa094",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "d9f76da48fa3dc45cf71ed82066cede72a90227d",
+      "currentBlob": "c9ae85f4a1b3aac2bf5879db10c5305c375e3488"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/066-turn-2-plan-desktop-darwin.png",
+      "baseSha256": "e8076d1df292ec1c358357ef7a90a18a4686427175ec80752f72b0f267395b4f",
+      "currentSha256": "1837931cbd1b5984aadcbbca60567c948b29696e6a83b1aed6cdd60550747f8c",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "157ea4400bf3fd1d0326ccf8b538ce9f7cd3566f",
+      "currentBlob": "7b24704488ddcd628fe0e6bf876a449e0905a8e4"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/067-turn-2-browse-0-desktop-darwin.png",
+      "baseSha256": "ece0395cc3e704ae869fcec91a2c4c975da56adc55a0169a8f60fc2a33c52538",
+      "currentSha256": "e1c8f2b88adeda647efc9012934af6497119ad95b6638357508b8df45f5a43c5",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "146d64ac4ea5a5b3fe0585c10ed9e417a191031b",
+      "currentBlob": "188f66ec4451b61aef2e19c2108e8d04bb451660"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/068-turn-2-researched-desktop-darwin.png",
+      "baseSha256": "ce45ffea0b45923d257fd95492a3afd71bb2ad3c1a4a6707f188885d31b24b39",
+      "currentSha256": "79d4c5e9d493fec25317dd23725fd298ba91eef42136c323683d2e06d1af7f5b",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "54599f1e5d2f48a545077685e06f7ae8eeb8ae2f",
+      "currentBlob": "40da1a75f35cb271d4c9f2e9457b4807ec8fec58"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/069-turn-2-handoff-desktop-darwin.png",
+      "baseSha256": "e779bbd0abf84ec56533150d8b6c30c6664b50c8e7bda76818cb785f35f57a84",
+      "currentSha256": "f1bb495ec88c787e02b0f68beb882ca2c0f104596033046a076996ffb3ddea86",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "00102618efde449c8d4aaae8a7fd6cfff89f3f20",
+      "currentBlob": "6ff916872317e0be9655e4f6a34f15628a58e4dd"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/070-turn-3-plan-desktop-darwin.png",
+      "baseSha256": "3097e884f0d453be333836291432a076c03c4b0d221ba185a8def47540665c04",
+      "currentSha256": "a6d7b4cb10f192b194a926e42819c2e1a35abaf620b7378b4fed733e32727f78",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "2aefb6fe86099cd0b7f08779892402a9645e1246",
+      "currentBlob": "85e12e42d985b720f348645be335cf4cfd34df96"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/071-turn-3-researched-desktop-darwin.png",
+      "baseSha256": "0f5e98c136946cbf663a94925b54e9df536f8be4a9bc6ef079cccbbb466db349",
+      "currentSha256": "f3f3647e48a1e93602244932f786104f094729320e0d6653d1c57dbd613795c9",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "5c98bac396dcee687060a14e0438fbad06cc5de4",
+      "currentBlob": "812736a2b91464d4c8bad4dee626a2338e0d5780"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/072-turn-3-handoff-desktop-darwin.png",
+      "baseSha256": "1afead8f3bd0a3b386a3a5d81c310a3ff61cc9066e5e09aaa906eba1b225f6ea",
+      "currentSha256": "2e9c48f287c87aa3cd97ded3ef85503bec7826e273bad116acb2932afb1b5532",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "de651b649ebb0653615c9e4614341ce1d99e3f92",
+      "currentBlob": "2e1c4e33b2b5ba9ff3e9c69aff9c4cfa956903b9"
+    },
+    {
+      "path": "tests/e2e/004-first-research/screenshots/finish-a-compact-4-player-shared-corner-research-round/073-restored-round-desktop-darwin.png",
+      "baseSha256": "1afead8f3bd0a3b386a3a5d81c310a3ff61cc9066e5e09aaa906eba1b225f6ea",
+      "currentSha256": "2e9c48f287c87aa3cd97ded3ef85503bec7826e273bad116acb2932afb1b5532",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "de651b649ebb0653615c9e4614341ce1d99e3f92",
+      "currentBlob": "2e1c4e33b2b5ba9ff3e9c69aff9c4cfa956903b9"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/058-compact-focus-720-desktop-darwin.png",
+      "baseSha256": "0501e3417428ebb5418720667e60401b63a802e64f63e3e4179ad12f88d2d5c9",
+      "currentSha256": "4c971ee6edec296340ae9ec1488e27d977d07cee7e53211fb30c5187a5a40127",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "e83212c72a211371f1358b9e0058be6d8c9bfe25",
+      "currentBlob": "4078b2ae0b3d2da1d99f4a629634af4a0a3262d8"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/058-compact-focus-720-tabletop-4k-darwin.png",
+      "baseSha256": "0501e3417428ebb5418720667e60401b63a802e64f63e3e4179ad12f88d2d5c9",
+      "currentSha256": "4c971ee6edec296340ae9ec1488e27d977d07cee7e53211fb30c5187a5a40127",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "e83212c72a211371f1358b9e0058be6d8c9bfe25",
+      "currentBlob": "4078b2ae0b3d2da1d99f4a629634af4a0a3262d8"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/059-compact-lower-720-desktop-darwin.png",
+      "baseSha256": "5ff16f3afb85c9d290ddaa788f179610f4001d8f4c01a10b58fcb783e64f3bdc",
+      "currentSha256": "36990c3918144ca42148e482907ff1d79b5a0889891c4039824ef7512dde6408",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "8032e4b63469f3a63e8842aff540f22210461483",
+      "currentBlob": "6dfed57d22e6b11d0aae5dba3359b205d7fa405d"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/059-compact-lower-720-tabletop-4k-darwin.png",
+      "baseSha256": "5ff16f3afb85c9d290ddaa788f179610f4001d8f4c01a10b58fcb783e64f3bdc",
+      "currentSha256": "36990c3918144ca42148e482907ff1d79b5a0889891c4039824ef7512dde6408",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "8032e4b63469f3a63e8842aff540f22210461483",
+      "currentBlob": "6dfed57d22e6b11d0aae5dba3359b205d7fa405d"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/062-compact-focus-640-desktop-darwin.png",
+      "baseSha256": "68adec6eef294fd5c2cb27fd0096f2341baf55fbe63bd95d07b995515bb12ac1",
+      "currentSha256": "bb917fafb478550ce2b5db8a234857dc41466a554645d4d603f29ac01f08969c",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "7f5813d65591aec6ac2aee7403f95be6f35a67d1",
+      "currentBlob": "58975d192e360df684205efe212eb0e553bc9d3d"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/062-compact-focus-640-tabletop-4k-darwin.png",
+      "baseSha256": "68adec6eef294fd5c2cb27fd0096f2341baf55fbe63bd95d07b995515bb12ac1",
+      "currentSha256": "bb917fafb478550ce2b5db8a234857dc41466a554645d4d603f29ac01f08969c",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "7f5813d65591aec6ac2aee7403f95be6f35a67d1",
+      "currentBlob": "58975d192e360df684205efe212eb0e553bc9d3d"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/063-compact-lower-640-desktop-darwin.png",
+      "baseSha256": "a11563717e52c4a7e2fc85b2d2b145b006aea30990e3610d2b690a8560ea35ac",
+      "currentSha256": "074a906fbf6e9cbf6b3ab7a3d9fb5becd8e23e0c2eb4f831ba640472139dd92b",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "0d342c3d7d37c41faa61999e48d0fe2c7d22e4e5",
+      "currentBlob": "64ce1852abd62a2407f7316cc740bf3434c5ef7e"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/063-compact-lower-640-tabletop-4k-darwin.png",
+      "baseSha256": "a11563717e52c4a7e2fc85b2d2b145b006aea30990e3610d2b690a8560ea35ac",
+      "currentSha256": "074a906fbf6e9cbf6b3ab7a3d9fb5becd8e23e0c2eb4f831ba640472139dd92b",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "0d342c3d7d37c41faa61999e48d0fe2c7d22e4e5",
+      "currentBlob": "64ce1852abd62a2407f7316cc740bf3434c5ef7e"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-focus-720-desktop-darwin.png",
+      "baseSha256": "f2c4121b72e01f67c6f377a106584d323423e69377e819300d1021d0a276e986",
+      "currentSha256": "631552213ae7eca1af70bfef6b9b69d6c5d0ebbe844be27967393bdf306514ef",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "5eebacc29a46600111af0bc01ea09f5e4d4d29f8",
+      "currentBlob": "02eabd6e7777b89214014b6f97a0ece29b594dae"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-focus-720-tabletop-4k-darwin.png",
+      "baseSha256": "f2c4121b72e01f67c6f377a106584d323423e69377e819300d1021d0a276e986",
+      "currentSha256": "631552213ae7eca1af70bfef6b9b69d6c5d0ebbe844be27967393bdf306514ef",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "5eebacc29a46600111af0bc01ea09f5e4d4d29f8",
+      "currentBlob": "02eabd6e7777b89214014b6f97a0ece29b594dae"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-lower-720-desktop-darwin.png",
+      "baseSha256": "c98b0592acc9c15fa67491ad5a3319e0a8d81e21e10a4ea83c4ac7e06241c8f2",
+      "currentSha256": "fb620345a853f5381b03a0fa3233de22b5c5c2725f3e219312964c27982b5ce6",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "884e608291da488fdc35e01dec07b03b658fb906",
+      "currentBlob": "5989d708ece3a8649bab493565c284fe1819c29a"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-lower-720-tabletop-4k-darwin.png",
+      "baseSha256": "c98b0592acc9c15fa67491ad5a3319e0a8d81e21e10a4ea83c4ac7e06241c8f2",
+      "currentSha256": "fb620345a853f5381b03a0fa3233de22b5c5c2725f3e219312964c27982b5ce6",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "884e608291da488fdc35e01dec07b03b658fb906",
+      "currentBlob": "5989d708ece3a8649bab493565c284fe1819c29a"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-compact-focus-640-desktop-darwin.png",
+      "baseSha256": "b1ee06794f3f6be11c6f5e63c95844ca93d874c36279ce7cd78a1fa0651c23e2",
+      "currentSha256": "5d6b397f4dddcf569bfe901a9aec6ad23dda619576d1911b903f42bd4b7486c7",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "3735a8f29f8ea5246b3665bc1b45c85fcb7f15cd",
+      "currentBlob": "a81ec33cbd618754bda137577fde6a1b5f083b44"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-compact-focus-640-tabletop-4k-darwin.png",
+      "baseSha256": "b1ee06794f3f6be11c6f5e63c95844ca93d874c36279ce7cd78a1fa0651c23e2",
+      "currentSha256": "5d6b397f4dddcf569bfe901a9aec6ad23dda619576d1911b903f42bd4b7486c7",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "3735a8f29f8ea5246b3665bc1b45c85fcb7f15cd",
+      "currentBlob": "a81ec33cbd618754bda137577fde6a1b5f083b44"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/097-compact-lower-640-desktop-darwin.png",
+      "baseSha256": "0992edcc59b789e1e6a11a6f020a451fde61dfc300d0d038df5af8ea6df24227",
+      "currentSha256": "96e0126d0859f804e10d119b72129029001df56084a5e67dd9bf8ea0ac2cbc1c",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "2d36bf4a9eadfb655ce374b3de45afdb45ed7d5d",
+      "currentBlob": "8784006cad874178b4663bd0483fcc1249874c19"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/097-compact-lower-640-tabletop-4k-darwin.png",
+      "baseSha256": "0992edcc59b789e1e6a11a6f020a451fde61dfc300d0d038df5af8ea6df24227",
+      "currentSha256": "96e0126d0859f804e10d119b72129029001df56084a5e67dd9bf8ea0ac2cbc1c",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "2d36bf4a9eadfb655ce374b3de45afdb45ed7d5d",
+      "currentBlob": "8784006cad874178b4663bd0483fcc1249874c19"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/092-compact-overview-720-desktop-darwin.png",
+      "baseSha256": "d628ab5697ce50f4241534153e5dcca128763c21857909843be9238bc7cc4f7a",
+      "currentSha256": "cdb1e462955700e7fc593170179b922e43f2283ba74e20fe208fac2e22d060b7",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "1ffb54e6c373a3eededf47c4f625031a27cdaf44",
+      "currentBlob": "da328c8a805b57b6c353df75014f1391d771724f"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/092-compact-overview-720-tabletop-4k-darwin.png",
+      "baseSha256": "d628ab5697ce50f4241534153e5dcca128763c21857909843be9238bc7cc4f7a",
+      "currentSha256": "cdb1e462955700e7fc593170179b922e43f2283ba74e20fe208fac2e22d060b7",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "1ffb54e6c373a3eededf47c4f625031a27cdaf44",
+      "currentBlob": "da328c8a805b57b6c353df75014f1391d771724f"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/093-compact-focus-720-desktop-darwin.png",
+      "baseSha256": "5c347cb884ad5093bda31f6ef6ff2e3d3071359c1879611c6922c2620d0d5db2",
+      "currentSha256": "43672534078dd13f8fb4b536e437ce89d9b3d91251c13bb7e6f27bf37639a4ad",
+      "reviewedStages": [
+        203,
+        206,
+        207
+      ],
+      "baseBlob": "9f39588bc1d29bca6fd28082ed79a4e2111f7446",
+      "currentBlob": "ce2aa05277bf47b38b0ff91ca0d2cccf91ccd49d"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/093-compact-focus-720-tabletop-4k-darwin.png",
+      "baseSha256": "5c347cb884ad5093bda31f6ef6ff2e3d3071359c1879611c6922c2620d0d5db2",
+      "currentSha256": "43672534078dd13f8fb4b536e437ce89d9b3d91251c13bb7e6f27bf37639a4ad",
+      "reviewedStages": [
+        203,
+        206,
+        207
+      ],
+      "baseBlob": "9f39588bc1d29bca6fd28082ed79a4e2111f7446",
+      "currentBlob": "ce2aa05277bf47b38b0ff91ca0d2cccf91ccd49d"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/094-compact-lower-720-desktop-darwin.png",
+      "baseSha256": "3e7960a7cbeeaf488b6d03858759a2d1071516a928cf1e38a39c831e02eeee49",
+      "currentSha256": "44c18f2e63dd6224758e19950682cb17536539ea21b6a45359868714e12874aa",
+      "reviewedStages": [
+        203,
+        206,
+        207
+      ],
+      "baseBlob": "3edcfd847f0b472dc9eaae6a98e8f93d58e5880f",
+      "currentBlob": "58c4e2f89f16bde6c32e56bdb597288beb6a44c0"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/094-compact-lower-720-tabletop-4k-darwin.png",
+      "baseSha256": "3e7960a7cbeeaf488b6d03858759a2d1071516a928cf1e38a39c831e02eeee49",
+      "currentSha256": "44c18f2e63dd6224758e19950682cb17536539ea21b6a45359868714e12874aa",
+      "reviewedStages": [
+        203,
+        206,
+        207
+      ],
+      "baseBlob": "3edcfd847f0b472dc9eaae6a98e8f93d58e5880f",
+      "currentBlob": "58c4e2f89f16bde6c32e56bdb597288beb6a44c0"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/095-compact-return-720-desktop-darwin.png",
+      "baseSha256": "d628ab5697ce50f4241534153e5dcca128763c21857909843be9238bc7cc4f7a",
+      "currentSha256": "cdb1e462955700e7fc593170179b922e43f2283ba74e20fe208fac2e22d060b7",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "1ffb54e6c373a3eededf47c4f625031a27cdaf44",
+      "currentBlob": "da328c8a805b57b6c353df75014f1391d771724f"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/095-compact-return-720-tabletop-4k-darwin.png",
+      "baseSha256": "d628ab5697ce50f4241534153e5dcca128763c21857909843be9238bc7cc4f7a",
+      "currentSha256": "cdb1e462955700e7fc593170179b922e43f2283ba74e20fe208fac2e22d060b7",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "1ffb54e6c373a3eededf47c4f625031a27cdaf44",
+      "currentBlob": "da328c8a805b57b6c353df75014f1391d771724f"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/096-compact-overview-640-desktop-darwin.png",
+      "baseSha256": "cd164eecaae8925e96d86dc964567a95e7b63d6c6a5ad67547d6323eccd180d8",
+      "currentSha256": "5935b9bda38e9401ad0c578a324661d977977b87211df0c4b5904a606fba4f75",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "71cf55d43b6fdaf5edffbd2c269bb5fe49653421",
+      "currentBlob": "2e59d53cc95d2d91a5498fb4fd7c5762a651dc4d"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/096-compact-overview-640-tabletop-4k-darwin.png",
+      "baseSha256": "cd164eecaae8925e96d86dc964567a95e7b63d6c6a5ad67547d6323eccd180d8",
+      "currentSha256": "5935b9bda38e9401ad0c578a324661d977977b87211df0c4b5904a606fba4f75",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "71cf55d43b6fdaf5edffbd2c269bb5fe49653421",
+      "currentBlob": "2e59d53cc95d2d91a5498fb4fd7c5762a651dc4d"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/097-compact-focus-640-desktop-darwin.png",
+      "baseSha256": "31c611cdb7c53df46b0abf5215d509a473250e67a7d2d4bbf50809c00b51b6e0",
+      "currentSha256": "424466ccc4f02dd701f2fadf477132c5c4ec7395642ade2f484d0b43cd65126f",
+      "reviewedStages": [
+        203,
+        206,
+        207
+      ],
+      "baseBlob": "17211490c169407a5b6f324708740bf6d93e3c73",
+      "currentBlob": "6807f98113f327c7414c5a15b5dec3fb8bd83a58"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/097-compact-focus-640-tabletop-4k-darwin.png",
+      "baseSha256": "31c611cdb7c53df46b0abf5215d509a473250e67a7d2d4bbf50809c00b51b6e0",
+      "currentSha256": "424466ccc4f02dd701f2fadf477132c5c4ec7395642ade2f484d0b43cd65126f",
+      "reviewedStages": [
+        203,
+        206,
+        207
+      ],
+      "baseBlob": "17211490c169407a5b6f324708740bf6d93e3c73",
+      "currentBlob": "6807f98113f327c7414c5a15b5dec3fb8bd83a58"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/098-compact-lower-640-desktop-darwin.png",
+      "baseSha256": "a3ff105d514ab2569556ff267ca552e968e04df498eb1a9e30bed562724fa6d7",
+      "currentSha256": "f3755d9813936e565cb1ee32f422d6b8b7722fe795c313a9c47bd144a8d3f5c8",
+      "reviewedStages": [
+        203,
+        206,
+        207
+      ],
+      "baseBlob": "257095538e29279176d7b9ef759a1df52f121a3e",
+      "currentBlob": "f2829ce9cdb53b787320a145fb4d12fd48167d2b"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/098-compact-lower-640-tabletop-4k-darwin.png",
+      "baseSha256": "a3ff105d514ab2569556ff267ca552e968e04df498eb1a9e30bed562724fa6d7",
+      "currentSha256": "f3755d9813936e565cb1ee32f422d6b8b7722fe795c313a9c47bd144a8d3f5c8",
+      "reviewedStages": [
+        203,
+        206,
+        207
+      ],
+      "baseBlob": "257095538e29279176d7b9ef759a1df52f121a3e",
+      "currentBlob": "f2829ce9cdb53b787320a145fb4d12fd48167d2b"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/099-compact-return-640-desktop-darwin.png",
+      "baseSha256": "cd164eecaae8925e96d86dc964567a95e7b63d6c6a5ad67547d6323eccd180d8",
+      "currentSha256": "5935b9bda38e9401ad0c578a324661d977977b87211df0c4b5904a606fba4f75",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "71cf55d43b6fdaf5edffbd2c269bb5fe49653421",
+      "currentBlob": "2e59d53cc95d2d91a5498fb4fd7c5762a651dc4d"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/099-compact-return-640-tabletop-4k-darwin.png",
+      "baseSha256": "cd164eecaae8925e96d86dc964567a95e7b63d6c6a5ad67547d6323eccd180d8",
+      "currentSha256": "5935b9bda38e9401ad0c578a324661d977977b87211df0c4b5904a606fba4f75",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "71cf55d43b6fdaf5edffbd2c269bb5fe49653421",
+      "currentBlob": "2e59d53cc95d2d91a5498fb4fd7c5762a651dc4d"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/054-compact-focus-720-desktop-darwin.png",
+      "baseSha256": "3be7c617f31c2392df3b1100ecf1a28d7954870d68dbbbbadbd24d1f6f5bbacc",
+      "currentSha256": "055009b46bff7381c5264192253f28a85eb1a09047b1ebc6a4fbcf3035f22c6a",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "434d65cea63e74db045f00aa16cec8dcae2b3cd7",
+      "currentBlob": "20b887383d68d3094290f7bd58fb8d3fa2dc06da"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/054-compact-focus-720-tabletop-4k-darwin.png",
+      "baseSha256": "3be7c617f31c2392df3b1100ecf1a28d7954870d68dbbbbadbd24d1f6f5bbacc",
+      "currentSha256": "055009b46bff7381c5264192253f28a85eb1a09047b1ebc6a4fbcf3035f22c6a",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "434d65cea63e74db045f00aa16cec8dcae2b3cd7",
+      "currentBlob": "20b887383d68d3094290f7bd58fb8d3fa2dc06da"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/055-compact-lower-720-desktop-darwin.png",
+      "baseSha256": "8a4d172cd21cdb1b99b639ac8641ccf1840bc4c50470386f78ee4204344d60e2",
+      "currentSha256": "8bb5b19c6d70498e98506a06883385d7b387d045c0e181f5ecd642bd8cb2fcad",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "02a5c48f67de227dca232fc68575b1e3aa61dbe2",
+      "currentBlob": "8c35986a3f08029d533d21775fdd0b0136f98444"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/055-compact-lower-720-tabletop-4k-darwin.png",
+      "baseSha256": "8a4d172cd21cdb1b99b639ac8641ccf1840bc4c50470386f78ee4204344d60e2",
+      "currentSha256": "8bb5b19c6d70498e98506a06883385d7b387d045c0e181f5ecd642bd8cb2fcad",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "02a5c48f67de227dca232fc68575b1e3aa61dbe2",
+      "currentBlob": "8c35986a3f08029d533d21775fdd0b0136f98444"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/058-compact-focus-640-desktop-darwin.png",
+      "baseSha256": "c1ffefccf4a7889b2f2656d9d4da6ec00668be3ccaa65fdde3b6e432b364a97f",
+      "currentSha256": "6d8a9b5a63ef056f394685e83f7aa4f42cdbc0a6a512b03ac1978c3affc5d579",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "bcd78b5ef320d00d0068c57f4bccf2d2d54803f8",
+      "currentBlob": "18d7c2d15957cdfb15ebfa1e27f768de48946ded"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/058-compact-focus-640-tabletop-4k-darwin.png",
+      "baseSha256": "c1ffefccf4a7889b2f2656d9d4da6ec00668be3ccaa65fdde3b6e432b364a97f",
+      "currentSha256": "6d8a9b5a63ef056f394685e83f7aa4f42cdbc0a6a512b03ac1978c3affc5d579",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "bcd78b5ef320d00d0068c57f4bccf2d2d54803f8",
+      "currentBlob": "18d7c2d15957cdfb15ebfa1e27f768de48946ded"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/059-compact-lower-640-desktop-darwin.png",
+      "baseSha256": "a254a19252ce89a2ece9bde519ad75d71465e706d5aa5f96e6f66a4a61ae54b7",
+      "currentSha256": "1f030929d4abe0c2bb3f22ed2f82daeea47a698fdbe55d93fb2078d1f54a2781",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "9237aae623d049580ae115d633aabc65e2e43ffe",
+      "currentBlob": "84144a560acc99e234706694d9c58a413e9c2345"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/059-compact-lower-640-tabletop-4k-darwin.png",
+      "baseSha256": "a254a19252ce89a2ece9bde519ad75d71465e706d5aa5f96e6f66a4a61ae54b7",
+      "currentSha256": "1f030929d4abe0c2bb3f22ed2f82daeea47a698fdbe55d93fb2078d1f54a2781",
+      "reviewedStages": [
+        206,
+        207
+      ],
+      "baseBlob": "9237aae623d049580ae115d633aabc65e2e43ffe",
+      "currentBlob": "84144a560acc99e234706694d9c58a413e9c2345"
+    },
+    {
+      "path": "tests/e2e/010-fleets/screenshots/build-ships-and-inspect-public-fleets-at-4-shared-corner-seats/026-compact-build-640-desktop-darwin.png",
+      "baseSha256": "677363ac845b30b3f28419ed5769c20e28dafcae09df319674f0b53f0ba9e3a4",
+      "currentSha256": "cedae04b0972db0a17d353a1c1522600e3d3c18a4eddc78a000ce47c2fec7e82",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "682e053f3ee52f2f65e6106c9557f465e9783dcf",
+      "currentBlob": "4ce12f6b28d3f5dad8b21ceccfd6cd5e5ae3de06"
+    },
+    {
+      "path": "tests/e2e/010-fleets/screenshots/build-ships-and-inspect-public-fleets-at-4-shared-corner-seats/026-compact-build-640-tabletop-4k-darwin.png",
+      "baseSha256": "677363ac845b30b3f28419ed5769c20e28dafcae09df319674f0b53f0ba9e3a4",
+      "currentSha256": "cedae04b0972db0a17d353a1c1522600e3d3c18a4eddc78a000ce47c2fec7e82",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "682e053f3ee52f2f65e6106c9557f465e9783dcf",
+      "currentBlob": "4ce12f6b28d3f5dad8b21ceccfd6cd5e5ae3de06"
+    },
+    {
+      "path": "tests/e2e/011-jump-planning/screenshots/plan-split-simultaneous-jumps-at-4-shared-corner-seats/074-jump-compact640-desktop-darwin.png",
+      "baseSha256": "5b7dee3a05eea800a079dde51b9ad80723a636a24642f47db0eba4531161015c",
+      "currentSha256": "e2b2ec9b7c9651c4dfc82a9579ad87d6648fbee34480b56993f34dd8b50d5f19",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "231c80a46f4959f030290902e3999c0b87a4d725",
+      "currentBlob": "3787779bf4a2da3ffe7165cd99dc6fb018d1e8d0"
+    },
+    {
+      "path": "tests/e2e/011-jump-planning/screenshots/plan-split-simultaneous-jumps-at-4-shared-corner-seats/074-jump-compact640-tabletop-4k-darwin.png",
+      "baseSha256": "5b7dee3a05eea800a079dde51b9ad80723a636a24642f47db0eba4531161015c",
+      "currentSha256": "e2b2ec9b7c9651c4dfc82a9579ad87d6648fbee34480b56993f34dd8b50d5f19",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "231c80a46f4959f030290902e3999c0b87a4d725",
+      "currentBlob": "3787779bf4a2da3ffe7165cd99dc6fb018d1e8d0"
+    },
+    {
+      "path": "tests/e2e/011-jump-planning/screenshots/plan-split-simultaneous-jumps-at-4-shared-corner-seats/077-jump-power640-desktop-darwin.png",
+      "baseSha256": "1c985574f047dc772a839ca7941ae915a07e236557d96a775bb80b92bc5246f2",
+      "currentSha256": "009c879ae2fb77553ad7504db949c00012a9d17667661a4e169801748aa4b393",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "65bdae38d38c4a10f323840291dd130fd424deab",
+      "currentBlob": "25d73e36a792a344095c08336bbe3b376bebc83c"
+    },
+    {
+      "path": "tests/e2e/011-jump-planning/screenshots/plan-split-simultaneous-jumps-at-4-shared-corner-seats/077-jump-power640-tabletop-4k-darwin.png",
+      "baseSha256": "1c985574f047dc772a839ca7941ae915a07e236557d96a775bb80b92bc5246f2",
+      "currentSha256": "009c879ae2fb77553ad7504db949c00012a9d17667661a4e169801748aa4b393",
+      "reviewedStages": [
+        203
+      ],
+      "baseBlob": "65bdae38d38c4a10f323840291dd130fd424deab",
+      "currentBlob": "25d73e36a792a344095c08336bbe3b376bebc83c"
+    }
+  ]
+}

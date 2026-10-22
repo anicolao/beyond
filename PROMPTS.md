@@ -1165,3 +1165,87 @@ Reviewer07:22 CI update: independently verified PR14 native candidate job1195943
 Reviewer-authored storage update and authorized stacked publication continuation:
 
 Reviewer07:36 storage update: independent df now reports17GiB free (previous338MiB). Recheck actual Data-volume capacity and safely resume already authorized013 commit/push/new PR based on feat/outpost-control1a7f021, using bounded transport if necessary and preserving all accepted source/PNG bytes, failed evidence, services and adequate disk headroom. Once published, begin014 on a NEW branch stacked on reviewed013 as authorized06:57; report PR/head so supervisor can attach. Local013 acceptance stands. Track012/013 CI/hosted gates separately, never merge or weaken guards. Log as reviewer-authored.
+
+## Prompt 195: Personal Implementation Continuation
+
+Reviewer-authored authorized014 implementation continuation:
+
+Reviewer08:11 continuation: PR15 independently verified and attached at fecea48 on feat/outpost-control1a7f021; temporary transport refs absent. You are idle after initial014 model work, but014 implementation is already authorized: continue now on feat/personal-technology through canonical acquisition/immediate-bonus integration, owner-only exclusive actions, Firestore/event validation and composed public personal-card UI beside faction mat. Preserve no-cube conservation, actual top-deck consumption, no future deck exposure, source restrictions, mode/controller isolation and reload. Exercise ordinary desktop/phone/shared flows at persistent5209 and provide concrete review URLs/captures before formal baselines; initial3tests/types pass is not acceptance. Keep012/013 CI/hosted gates separate and fix actionable failures without weakening guards. No015 before independent014 local acceptance; never merge. Log reviewer-authored continuation appropriately.
+
+## Prompt 196: Personal Panel Fit
+
+Reviewer-authored initial014 visual correction:
+
+Reviewer08:27 visual finding: independently opened tmp/local-personal-review/round195-shared-two/personal-table-1280.png. Personal technology panel at bottom-right extends beyond720px viewport; its lower content/border is clipped, and the card face is thumbnail-sized. Keep full panel and controls within viewport beside the mat, with readable composed identity/action access and full-card inspection. Verify1280x720, short-height/shared rotated seats and phone before requesting acceptance. This is initial visual feedback, not baseline authorization. Continue current local flow fixes; no duplicate screenshots until revised.
+
+## Prompt 197: Stable Phone Evidence
+
+Reviewer-authored014 evidence-state correction:
+
+Reviewer08:53 evidence check: opened tmp/local-personal-review/round195-remote-views/own-table-393x852.png and it currently shows Connecting / Create a remote room / Join by code, not a retained personal-card table. Ensure final evidence captures wait for restored room/controller and intended state; assert personal card identity/owner before capture. This may be an overwritten in-progress file, but cannot support phone acceptance as currently saved. Preserve actual flow evidence and provide final stable paths when ready; no need duplicate while correcting.
+
+## Prompt 198: Short Table Occlusion
+
+Reviewer-authored014 short-table visual and separate CI findings:
+
+Reviewer09:43 new independent findings: round195-four-corner-views/table-1280x640.png passes guards but upper-left mat covers start of turn heading and lower-left mat covers Narrow Beam Lasers; Terraforming wraps mid-word. Keep turn identity and public card identities readable without mat overlap at short shared view. Do not treat geometry guard pass as visual acceptance. PR14 native retry119692436215 now failed159/164; full log /tmp/beyond-pr14-candidate-retry-review.log (004 remote desktop,006 two-cardinal4K,007 four-corner/cardinal4K,011 four-corner4K). Reject cohort; diagnose without weakened guards. PR15 second comparison16passed168failed log /tmp/beyond-pr15-linux-new-review.log. Prior feedback remains queued; this is new evidence, not phase014 acceptance or015 release.
+
+## Prompt 199: Complete Personal Technology
+
+Reviewer-authored014 continuation and separate CI remediation:
+
+Reviewer10:48 continuation: independently inspected round198-four-corner-review/table-1280x640.png; the reported heading/card-name overlap and broken Terraforming word are corrected in that capture. Earlier larger two-seat pocket and sealed phone capture also inspected. This is scoped visual confirmation, not full014 acceptance. Continue remaining014 work now: source-review and implement the missing WISE personal-LevelIII acquisition/immediate/exclusive behavior within the plan, resolve Android Destroyers interaction from authoritative sources or document exact irreducible gap without guessing. Preserve unsupported-action boundaries and ordinary acquisition flows; provide concise source-linked coverage and fresh relevant live-flow review entry points. No015, formal baselines, publication or merges until remaining014 local gates pass. Separately advance concrete PR14 timing remediation based on trace evidence without raising limits/skipping screenshots/weakening guards; track PR15 native result and exact-source publisher503 remediation. Preserve all failed evidence and stacked dependencies.
+
+## Prompt 200: Personal Review Packet
+
+Reviewer-authored014 source-packet continuation and separate CI evidence:
+
+Reviewer11:54 CI evidence: PR15 candidate job119734505522 is now FAILED. Successfully fetched complete log to /tmp/beyond-pr15-candidate-review.log:178pass/6fail, all tabletop4K. Failures007four-corner/four-cardinal,012two-cardinal capture2024.512605ms,013mixed-disc4cardinal,013exile4corner,013mixed-disc4corner; other five story120s timeouts. Preserve failed evidence; do not adopt failed candidate baselines or weaken guards. Use this log for existing timing remediation. Earlier observer review of WISE remote public card/scroll/Escape passed; scoped phone and rotated shared captures inspected. Still awaiting complete source-linked014 packet before acceptance/015.
+
+## Prompt 201: Storage Recovery
+
+Reviewer-authored storage remediation instruction:
+
+Reviewer12:14 storage blocker: supervisor ledger append now fails with no space left on device, including shell heredoc temp creation. Prioritize identifying safely regenerable caches/build outputs and recovering space without deleting source, canonical rooms, failed evidence or review captures. Current65tooling tests pass;199packet still pending. Do not begin large runs/downloads until space recovered.
+
+## Prompt 202: Supply Move Instruction
+
+Reviewer-authored rotated Rights visual correction:
+
+Reviewer12:34 rotated Rights review: inspected final1280x640 and4K captures. Selectors and Save now fit, but compact CSS hides the operational instruction entirely. Keep a concise visible instruction such as Move the 2 rightmost Supply cubes into available slots above the selectors, while full printed rules remain inspectable. There is substantial unused lower panel space; do not solve containment by removing the explanation of which cubes are moving. Recheck unchanged containment at640/720/4K. This is the remaining specific visual correction, not whole014 acceptance.
+
+## Prompt 203: Personal Formal Validation
+
+Reviewer-authored014 formal-verification release:
+
+Reviewer12:44: independently inspected round202 1280x640 SHA704352d5 and4K SHA2b26acea. Restored rightmost Supply instruction is readable and controls contained. Types202 zero errors/warnings and policy202 PASS independently read. Scoped visual correction accepted. Proceed now with formal014 illustrated TestStepHelper stories and exact local validation using unchanged geometry/timing/comparison guards; this releases reference generation for the locally reviewed composition, not whole014 acceptance. Preserve current source boundaries and explicitly report Android Destroyers unresolved ruling rather than guess. Current df5.6GiB free: run sequentially with bounded storage, preserve failure evidence, avoid huge CI archives. Update review packet with exact current results and representative captures. Keep015/publication held until complete local acceptance; no merges. Track PR14/15 Linux/publisher gates separately and continue the already-authorized writer-only remediation without adopting failed candidate cohorts. Log this as reviewer-authored.
+
+## Prompt 204: Historical Pixel Findings
+
+Reviewer-authored exact3 evidence checkpoint:
+
+Reviewer14:19: exact3 now has three independently confirmed desktop pixel mismatches, distinct from prior heap readiness failures: 003 compact2 overview016 3370pixels; 004 compact4corner begun023 6709pixels; 005 Exo-Alloy compact720 overview092 4449pixels. Please preserve actual/expected/diff and investigate after frozen run; review intended shared CSS effects before any targeted reference refresh. Do not weaken comparator. No need to interrupt current run.014/015 gate unchanged.
+
+## Prompt 205: Exo Title Verification
+
+Reviewer-authored compact Exo-Alloy title finding:
+
+Reviewer15:20: independent collateral review finds 0-after fixes Terraforming wrap and 1-after heading readable. But personal203-collateral-review/2-after.png still visibly splits Terraforming as Terraformin / g in the compact Exo-Alloy overview720. Please correct this remaining title wrap and verify that state before refreshing affected references. This is a new specific finding, not blanket acceptance of all eight differences. Preserve exact3 evidence and unchanged guards;014/015 hold remains.
+
+## Prompt 206: Focus Overview Duplication
+
+Reviewer-authored compact focused-Technology finding:
+
+Reviewer15:35 new visual finding: independently viewed current005 Exo-Alloy097-compact-focus-640-desktop-darwin.png. Width is restored, but compact overview remains visibly above detailed technology cards: duplicate Terraforming and level headings consume the upper half and compress the focused reader. Please inspect compact-overview visibility in shared discovered-branches + technology-focus and ensure focus presents the intended readable detailed branches without duplicate overview. Review corrected640 focus capture before accepting references.014/015 hold unchanged.
+
+## Prompt 207: Focus Verification Release
+
+Reviewer-authored scoped focus acceptance and affected-verification release:
+
+Reviewer16:54: independently inspected round206-focus-final compact-focus-640 SHA424466ccc4f0, compact-lower-640 SHA8fbfb87783a3 and compact-focus-720 SHA43672534078d. Duplicate overview is gone; heading/card clearance and lower-branch rules/navigation are readable. Scoped visual correction accepted. Proceed with affected reference updates and exact comparisons plus required checks, preserving pre206 evidence and unchanged guards. Report affected scope and results for final014 local acceptance; publication/015 remain held until that verification is reviewed. Do not repeat unrelated full checks absent new concerns.
+
+## Prompt 208: Personal Local Acceptance
+
+Reviewer-authored local acceptance, publication and next-phase release:
+
+Reviewer17:10: Phase014 LOCAL ACCEPTANCE granted. Independently read207 exact log8/8PASS4.1m, reviewed32-frame scoped audit and verified all196 current frozen hashes; only GameSurface CSS and discovery journey assertions differ from203 full208PASS. Scoped206 visual acceptance plus earlier014 real-flow reviews and applicable passing checks satisfy local gate. Finish accurate207 packet, commit/push feat/personal-technology and open PR stacked on feat/colonization (fecea48f). Then explicitly begin015 Unlock advanced research on a new branch stacked on014 while014 Linux exact and exact-head hosted gates finish. Preserve source gaps, canonical persistence, existing identities/evidence, unchanged guards and all PR dependencies. Never merge. Track outstanding older PR Linux/publisher gates separately; local acceptance is not final acceptance. Report PR URL/head/base and persistent015 review server.

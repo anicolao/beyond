@@ -11,7 +11,7 @@
     <svg viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">{#each technologySlots as slot}{#each slot.prerequisites as prerequisite}{@const from=technologySlots.find(p=>p.id===prerequisite)!}{@const x1=['I','II','III','IIII'].indexOf(from.level)*250+225}{@const x2=['I','II','III','IIII'].indexOf(slot.level)*250+25}<path d={`M${x1} ${from.row*100}H${(x1+x2)/2}V${slot.row*100}H${x2}`}/>{/each}{/each}</svg>
     {#each technologySlots as slot}
       {@const revealed=game.technologies.find(t=>t.slot===slot.id)}
-      <div class="overview-node" class:known={!!revealed} style={`--column:${['I','II','III','IIII'].indexOf(slot.level)};--row:${slot.row}`}>
+      <div class="overview-node" data-level={slot.level} class:known={!!revealed} style={`--column:${['I','II','III','IIII'].indexOf(slot.level)};--row:${slot.row}`}>
         {#if revealed}<button aria-label={`Inspect ${cardById(revealed.card).title}`} onclick={()=>inspect(revealed.card)}><CardFace card={cardById(revealed.card)} compact overview/></button><div class="research-markers" aria-label="Permanent research cubes">{#each game.players.filter(p=>p.research.includes(revealed.card)) as p}<span role="img" style={`--cube-tone:${[170,38,8,275][game.players.indexOf(p)]}`} aria-label={`${p.name} researched ${cardById(revealed.card).title}`}></span>{/each}</div>
         {:else}<span class="overview-cover" aria-label={`${slot.id}: ${slot.level==='IIII'?'Undiscovered technology':'Unrevealed Event'}, requires ${slot.required} of ${slot.prerequisites.join(', ')}`}><strong>{slot.id}</strong><span aria-hidden="true">{slot.required} / {slot.prerequisites.length} ◇</span></span>{/if}
       </div>

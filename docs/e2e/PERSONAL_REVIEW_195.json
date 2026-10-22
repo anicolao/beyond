@@ -1,0 +1,657 @@
+{
+  "phase": "014",
+  "branch": "feat/personal-technology",
+  "base": "fecea48f259f16253566c9d894dcf0986eb4efd9",
+  "status": "Exploratory Procyon slice ready for independent review; full014 not accepted; no formal baselines/publication",
+  "server": "http://127.0.0.1:5209/",
+  "backend": {
+    "auth": 9397,
+    "firestore": 8297,
+    "unchangedIdentitiesAndData": true,
+    "rulesSha256": "b10dfb7f87afb2c09e18263c01d6d7b396ccfb3955e8507ad41e59cb5498fc62",
+    "readbackProof": "/Users/anicolao/projects/games/beyond/tmp/personal195-live-rules-proof.json"
+  },
+  "rooms": [
+    {
+      "mode": "remote phone host / desktop guest; separate ordinary Auth controllers",
+      "url": "http://127.0.0.1:5209/remote/?room=1903acbd-a110-4bfb-960e-0ee9c8070d3f",
+      "code": "ZDQHF",
+      "current": "Bora Action; Ada owns personal Plasma Cannon; no controller transfer",
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal195-remote1.log"
+    },
+    {
+      "mode": "shared South / North",
+      "url": "http://127.0.0.1:5209/?table=db9dd33f-8ff1-48f2-8119-e2c8dc80644a",
+      "current": "Ada Production after paid personal Action",
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal195-shared4.log"
+    },
+    {
+      "mode": "shared South West / North East",
+      "url": "http://127.0.0.1:5209/?table=d5d0c973-0a12-426c-ac4e-d261f332eb5a",
+      "current": "Ada Production after paid personal Action",
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal195-corner2.log"
+    },
+    {
+      "mode": "shared four corner seats; one ordinary controller",
+      "url": "http://127.0.0.1:5209/?table=faca9c5a-bc9d-4bbc-adcf-c6d35d6d9c45",
+      "current": "Ada Production after actual Procyon acquisition and paid personal Plasma Action; reload retained",
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal195-four-corner5.log"
+    }
+  ],
+  "validation": {
+    "backend": {
+      "tests": 288,
+      "assertions": 3728,
+      "suites": 26,
+      "failed": 0,
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal195-backend-all2.log",
+      "budgetMs": 5000
+    },
+    "captureGuards": {
+      "passed": 51,
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal195-guards1.log"
+    },
+    "tooling": {
+      "passed": 64,
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal195-tooling1.log"
+    },
+    "types": "/Users/anicolao/projects/games/beyond/tmp/personal195-types8.log",
+    "policy": "/Users/anicolao/projects/games/beyond/tmp/personal195-policy5.log",
+    "build": "/Users/anicolao/projects/games/beyond/tmp/personal195-build3.log",
+    "formalE2E": "HELD before independent exploratory review",
+    "diagnosticViews": {
+      "remote": {
+        "guardedCaptures": 13,
+        "log": "/Users/anicolao/projects/games/beyond/tmp/personal195-remote-views8.log",
+        "formalBaselines": false
+      },
+      "cardinal2": {
+        "guardedCaptures": 12,
+        "log": "/Users/anicolao/projects/games/beyond/tmp/personal195-shared-views9.log",
+        "formalBaselines": false
+      },
+      "corner2": {
+        "guardedCaptures": 12,
+        "log": "/Users/anicolao/projects/games/beyond/tmp/personal195-corner-views6.log",
+        "formalBaselines": false
+      },
+      "corner4": {
+        "guardedCaptures": 12,
+        "log": "/Users/anicolao/projects/games/beyond/tmp/personal195-four-corner-views9.log",
+        "formalBaselines": false
+      },
+      "unjoinedObserver": {
+        "guardedCaptures": 4,
+        "log": "/Users/anicolao/projects/games/beyond/tmp/personal195-observer2.log",
+        "formalBaselines": false
+      }
+    }
+  },
+  "securityCoverage": [
+    "Every16 actual LevelII top acquisition writable with exact bonus queue; extra benefit/replay denied",
+    "Atomic root/event coupling, actual top identity, foreign controller, ownership/deck/cube/reveal forgeries denied",
+    "Paid owner Plasma cost and rival forged Action denied",
+    "Personal immediate unavailable to rival Bio-Synaptic copying; legitimate alternative writable",
+    "Personal Android Surveyors source exact cost, conservation, overpay exception and no public-slot duplicate"
+  ],
+  "limits": [
+    "WISE LevelIII settlement remains wholly blocked before payment: complete source-reviewed III immediate/ongoing effect support is unfinished; seeded acquisition model is not a live WISE flow",
+    "Personal Android Destroyers Action remains blocked pending authoritative highest-researched-level interaction; fixed immediate level3 benefit is implemented",
+    "Other printed research/copy effects retain prior supported-action boundaries; not claimed implemented",
+    "No independent014 visual acceptance, no baseline changes, no015 release or merge",
+    "Four-player ordinary proof covers Ada at SouthWest; other acquiring seat orientations/cardinal-four remain to be reviewed; do not claim every seat proven."
+  ],
+  "diagnosticHistory": [
+    "Preserved invalid-prehydration-white-393x852.png; explicitly excluded from evidence, game-surface visibility now awaited",
+    "Compact remote personal card originally hid action/resource rail; restored and refreshed remote7 captures",
+    "Earlier rotated mat document-AABB finding corrected by using existing game polygon audit; guards unchanged",
+    "Existing source-approved short System labels/topology retained; short2-player personal-state map separation corrected without graph changes",
+    "Four-player preparatory scripts correctly rejected occupied Gather/build spaces and an endpoint-equal Terraforming round trip; resumed ordinary legal moves without data injection; final four-corner5 passes",
+    "Four-corner personal pocket collided with a neighbouring mat; short view now integrates pocket with seat controls, native4K pocket is visibly separate below the board",
+    "Short rotated local audit now uses the existing game polygon mode, matching production stories; no guard predicate or budget changed",
+    "Canvas clipping initially applied too broadly and rejected a cardinal mat at640; restricted to the measured transformed many-corner overflow case; cardinal9 passes unchanged guards",
+    "An unjoined observer initially already focused Ada, so no Inspect Ada resources button existed; corrected context-aware diagnostic, public inspection/no turn controls passes"
+  ],
+  "captures": [
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-remote-views/own-card-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "a1b923bc31f624f9bd568f8a69fc3f785d8da895dca558238629f4df1a3d3db0"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-remote-views/own-card-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "dda604ac99f97a6cd0042af298f22fca16a0819618d5f508a035f282592945f9"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-remote-views/own-card-393x852.png",
+      "dimensions": [
+        393,
+        852
+      ],
+      "sha256": "62a4ed0b08cf4ef0d78caf8976f5bd4df4e9a66443ae1d5a97b57e10bdeba0b6"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-remote-views/own-rules-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "7f50ce0fed960e89e1a02cb59e6afb9d14c4d29f1ccecdeae4b459992e01a7d0"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-remote-views/own-rules-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "6fe316306de868c9f9ea171383e8296281aa14abfb294c33ac172ca1284834ae"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-remote-views/own-rules-393x852.png",
+      "dimensions": [
+        393,
+        852
+      ],
+      "sha256": "64b90d0bcaa6540e6f0467e38962d83087ffb4438aec0b0ff2b8fb795eddcfda"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-remote-views/own-table-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "c491d27f9468664d9141792cd6440386c74b1c5da64347f88a7969fd7b314ee8"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-remote-views/own-table-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f51c5312698ac0e84a01a0961157541b0fa1219cbaaec18ae11aa7e5eb3992b6"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-remote-views/own-table-393x852.png",
+      "dimensions": [
+        393,
+        852
+      ],
+      "sha256": "eb384fcfe9ae4388f0ca61f4eb883ca3f0dc14671c9f29af257f7029abd59991"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-remote-views/rival-action-blocked-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "ea7c1511b7507d1d55b35541c8796180d83d61702d955a7eef56031fb9fa26d0"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-remote-views/rival-action-blocked-393x852.png",
+      "dimensions": [
+        393,
+        852
+      ],
+      "sha256": "6c795b8e046dd4d88a1b4fb4fe8c4666a5272db73416e761568cd203e0afdbe6"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-remote-views/rival-inspects-owner-393x852.png",
+      "dimensions": [
+        393,
+        852
+      ],
+      "sha256": "6e535fc68236d988b4b85a5f3e5e6c6dd4874625e2f63695cdcbf7b9e612cd2e"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-remote-views/rival-public-card-393x852.png",
+      "dimensions": [
+        393,
+        852
+      ],
+      "sha256": "2b7af563b476d394ca650aaac0a00f0e14afcfe769b0adecec3182456c02c712"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-shared-views/personal-card-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "9c81166b4d33f34608c5d825c6f9585f5352ba687fb5badc95d86f1badc3a4ac"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-shared-views/personal-card-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "af87896fab01b1c3f1828fb3b575586fad692630139970a9221a8224e3b3cbf5"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-shared-views/personal-card-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "c5cd290da6568f0325dd68e0a94a94ec90fbeef483ff6f324a680871d962912f"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-shared-views/personal-mat-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "974cb3bdbcb762d4f95396d8ef29e97c20df23f2ccb2d988857c1eb6ea3f62f5"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-shared-views/personal-mat-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "f2377d92e01d8c1b52cb361587e0b6c4c1ee7bd1acf714ee5d9e533b5b84207e"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-shared-views/personal-mat-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "0a566d5e2b1f8de3c14f2bfae6b951e7fca138a2450a9ee088a4d5e7a356a027"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-shared-views/personal-rules-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "acfa5ab12a39284e0de9127e0dc978fa7e74e72d5d6f110193ecd5da733c17a4"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-shared-views/personal-rules-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "29d7ec578eec31cd978c98b034f830f7ab80b5087d615ed27a9cf9f8d8ab7aaa"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-shared-views/personal-rules-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "03a5091782dcf6e9d1e00fdbafb304b20f581d0abf8449e8f26cee2070dbf78e"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-shared-views/table-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "619819592d2b1961ff1316d1afdc4e915b7a951f1062d5f000a8ea0f2f18a7b3"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-shared-views/table-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "89e29f45ad217eb1b770ce5fe96398315f2f1db7c116d81af7963286c469dd66"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-shared-views/table-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "77a960c9a0762880fab31081c712c86295312950b38f4951d0a561e20d492f16"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-corner-views/personal-card-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "f1b5092e1509f5fa3ed678ec38123bd533026dcdd2eb61bff11ae1b7ae62e0e9"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-corner-views/personal-card-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "c3f3dca565e60f809f164e429f243043c84101c89d36fd09c6727ca9f25d0fff"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-corner-views/personal-card-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "c8167a890d56f8c0ead21d49d3f45c8a52bbd1fd939faf9fbb192fd471d37014"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-corner-views/personal-mat-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "021c8acc897966074a4d3541e3939f01cf65c0f7c9b2b6ee8c0cfb823bdade59"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-corner-views/personal-mat-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "36212ed047ec80024c7c6bce7edd2638bbcf2406621210db51f33a1bbfb65ba0"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-corner-views/personal-mat-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "7ad6af542e8f5c809ee63873573f355cfb845059ae26519b7d9877fc8b03f324"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-corner-views/personal-rules-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "bf4a5d867bf4006dfa8e8564a07efeb259158bb8c1a1ec1087233495cc55d6b5"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-corner-views/personal-rules-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "3d1ff0455567f65c642dd93c53f66f8cf56d50f1a204999c18fa66934c789923"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-corner-views/personal-rules-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "e1ed576666c8d7b503c978c0c71b3bf4eeb295502ce7afd4e43493e0cb205248"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-corner-views/table-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "c25e80482a1b623723d0a0ffa115e44d660cd4a684c90ec86eabbb32e79c5796"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-corner-views/table-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "ae1a9be02d7f44b4148bdeed4b08256b0c24451b53f7e83add99020627540216"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-corner-views/table-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "5f006d276d00cde141a982048eb4285cf8ea4275f78fdb3aa13a14c9b5a65c70"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-four-corner-views/personal-card-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "cad9d52a53df8184a6e704aff18b93162c28c851926cdf69b5267cf989ca5cd5"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-four-corner-views/personal-card-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "8e41b9b720930e972ac320112f486505b773428ab817209ccef95e70225e1977"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-four-corner-views/personal-card-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "8be97c62cfe905adcb1b66499589e449dc86318b66f05a58edf61ba14dbe5611"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-four-corner-views/personal-mat-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "435f43443609c446d283f8d612c35847cfa2209abcc9bb1f844bcc34aef5e5f0"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-four-corner-views/personal-mat-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "0466df0de8b5aed53b4216837a9d6febe8ba6d128766f37e51554eb41434c9ee"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-four-corner-views/personal-mat-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "2c31a431b68fa8387e58da7e82e70147b0710f11b4d8bf10814135e94532329c"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-four-corner-views/personal-rules-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "a3e78902be2a4eca2c4addd121dde8df158ae2ba296b0dc2515f9989aafba919"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-four-corner-views/personal-rules-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "042ed76339158912d35a58585f7e92ce37a4806b6977eb22c562c7fd5145abab"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-four-corner-views/personal-rules-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "b8dfc233ea8ce68c981d5a0d1f1e6c6bf4385d1a95ea4fb9ad2d1c77ae7bb138"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-four-corner-views/table-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "f79595b6aeccce7437266d3d5d83fc3fbc6fb41edcd9e219dfc1109a1654dd18"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-four-corner-views/table-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "e646c14c6e64a1a6d20036f1c7ba5d21d3c3fe43ea9617fa1641d315995c7ab0"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-four-corner-views/table-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "9962fd9bfaa134c3076257273f309bfa035c47570de5e2ef6f23ce6e59436304"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-public-observer/public-card-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "a4f9178243de320f91ebdfe81b6a22b559259f51a424ca1c4f7a9ab50b23cd50"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-public-observer/public-card-393x852.png",
+      "dimensions": [
+        393,
+        852
+      ],
+      "sha256": "5bc2511e00ee3bf12424f5e988852074fe2b1be465ae4c4beaec1ee3d6ed5676"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-public-observer/public-personal-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "893002d7cacd25c63e5b0ab02035985f3e8b48d0860c3b034d819345fdbbe67b"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-public-observer/public-personal-393x852.png",
+      "dimensions": [
+        393,
+        852
+      ],
+      "sha256": "312913ab7f44e433ec77c68608d9e478c5545749055261203d72f3b084a7a94f"
+    }
+  ],
+  "olderGates": {
+    "PR14": {
+      "head": "1a7f02100fdf20076317d3cfa6804bc486ad7ebf",
+      "local": "ACCEPTED",
+      "static": "PASS",
+      "comparison": "FAIL16/164;92missing+56pixel",
+      "nativeFirst": "FAIL159/164;2capture2s+3story120s;cohort rejected",
+      "nativeRetry": {
+        "job": 119692436215,
+        "status": "FAIL159/164;51guards;1capture2299.079938ms+4story120s",
+        "classification": "/Users/anicolao/projects/games/beyond/tmp/personal195-pr14-native-retry-classification.json",
+        "accepted": false
+      },
+      "publisher": "FAIL exact-source503; no fallback",
+      "hosted": "NOT ACCEPTED"
+    },
+    "PR15": {
+      "head": "fecea48f259f16253566c9d894dcf0986eb4efd9",
+      "local": "ACCEPTED184/184",
+      "static": "PASS119710075256",
+      "documentation": "PASS",
+      "comparisonFirst": "FAIL16/184;112missing+55pixel+003capture2086.265659ms",
+      "publisher": "FAIL exact-source503119710075666",
+      "followUp": "39744688724 native running, static running at check; documentation PASS; no accepted native cohort.",
+      "hosted": "NOT ACCEPTED",
+      "comparisonRetry": {
+        "job": 119734505233,
+        "status": "FAIL16/184;112missing+56pixel;zero capture/story timeouts",
+        "classification": "/Users/anicolao/projects/games/beyond/tmp/personal195-pr15-comparison-retry-classification.json",
+        "accepted": false
+      }
+    }
+  },
+  "merged": false,
+  "sourceHashes": {
+    "src/app.css": "9072bed7a4e838e50988463781cbd17d8dfc1e827e4b834bcd6800256741f47f",
+    "src/app.html": "b9556f41065ff3dd4be824c71bad7a09a4f84d6d326045cc27790da45c7d149b",
+    "src/lib/EntryDisc.svelte": "e34a6745e07bad71522ef88f5489ecf10b14582904b2c921d99f1165b00b38e4",
+    "src/lib/InstrumentIcon.svelte": "986a80f6d3c242c7f6fb9810da2eb2392868e1de487cf47edc134e9e54d5d3fe",
+    "src/lib/ModeInstrument.svelte": "d28db3c05114273233d422e184a698cbc85a0c326d54aabd90b621203a9717a1",
+    "src/lib/TableSurface.svelte": "a33344ae3b3b313f135e9c92c6f70710e5413586052da64b7508bca7a158357c",
+    "src/lib/backend.ts": "9a565c95d089a2e4959b0b4d57ea851517500ebbfbfc1a6619ce8c897898c22a",
+    "src/lib/cards/CardFace.svelte": "e0ea4e7b5b3ba80fbb8204b64fde5751dc0007b591a1239f9021e90bf099f040",
+    "src/lib/cards/CardSymbol.svelte": "5e853a53e4c5997ee91ab7c7e76569d7f87246fbe5788b2ebb30ea07382e5ff1",
+    "src/lib/cards/OriginalCardArt.svelte": "4569afad190589c1f1e7a2235d3b405def6e358dc3644411386fe5ed4d32ef32",
+    "src/lib/cards/README.md": "81a3e129a936298a661c50d33e420d94a74c86c26ea6b2b650d44c12e053ea93",
+    "src/lib/cards/achievement-cards.ts": "13527890e78f78c65f393b1887c64500be741eb66b816ecea9e3e9919bd0fc8d",
+    "src/lib/cards/catalog.ts": "28f1ad7d73f252d22790f70a72c06cd6c9f8e238c2c3d175a7d8739daef37e8a",
+    "src/lib/cards/definitions.ts": "362dabefbc128ad3198b37b4c88f0fbbaae4e756d67952ad671571d96ac678a6",
+    "src/lib/cards/event-cards.ts": "b5d76bc909ea593cc70267986be854dde4dcd25fdba00f88fdf8a2d3a623e2c5",
+    "src/lib/cards/inventory-audit.ts": "b233b53b2ca6c7d7247cb223160057105ff508db8f7aef2cbe233fd621ad559f",
+    "src/lib/cards/original-art.ts": "9f2bac7534dc7db9ce239f398ec9ded3d7e20ba096ad7db55e4119830fe893c8",
+    "src/lib/cards/system-cards.ts": "77850c1d01933277ad2e42f5e57394491729ac810867f6752c4e44208dd3692a",
+    "src/lib/cards/technology-cards.ts": "10f6c5da2db5e49f3881ee11914a690e5b21086604c4ba1d0f81ca2f66538b22",
+    "src/lib/cards/types.ts": "877d115162af33b79d41654688bf7d021879b513c78199cc907ff3829e809efc",
+    "src/lib/command-value.ts": "cefcae0dea308a61e860fd206884542defac46268d5cf2ec5fdddd696e048963",
+    "src/lib/gallery/fixtures.ts": "dfc8d13b0361df088e67e358da831b9dff1c471d3aaa4e005c53220ebacafa79",
+    "src/lib/game/AutomationInspection.svelte": "67cb6337892064875599b7a02e983be8244e267be481c80c44fa8cbbf3497611",
+    "src/lib/game/BasicFleetPlan.svelte": "a7e1ed3c222ba7cf3ea3b794a358eec2f2f420fbcfa2ec79239cb4707a346a8a",
+    "src/lib/game/ColonyContinuation.svelte": "9a85e6fb330c4f1ca5b8d8af8ef0eba1c4be927098b28371186987d19f65f96c",
+    "src/lib/game/ColonyPlan.svelte": "90a63343ae0ff47a61d216acc9737c9ad15ea87e529efd44212204d271a05879",
+    "src/lib/game/ColonyRegister.svelte": "62a707e85bd13459c1f95ba71da3210c315dcb788f04693c14ed2f4ce35877bf",
+    "src/lib/game/DiscoveryChoices.svelte": "5af6480512410630252e0c7635cdb6188b67579c1417c98111fbb0e2c330baf5",
+    "src/lib/game/FactionChoice.svelte": "3014258e6b0067d07ce7cad506290d3613b4130f82d7ebd248317c6c7946ed5a",
+    "src/lib/game/FactionMat.svelte": "3f7ec7083ea71e18b451a63420ed9f79e357569234e12251f7638207e1984d38",
+    "src/lib/game/FleetEffect.svelte": "42c71081f9e348614e60420c438d0eec4549a32b00d2bf334c787432c61a0e57",
+    "src/lib/game/FleetInspection.svelte": "f4639c239adde14450b86bb013cda863f64140774e8c4b76b40eaea336eca77f",
+    "src/lib/game/GameSurface.svelte": "f1833ded9b1d7888489fb9aa6c7e75594996b7bf34f7863a24c7ab711a861d83",
+    "src/lib/game/JumpPlan.svelte": "55c424ad41703e43eb75cf651382b66dea598dc609084d96b0e84d224e4f60ce",
+    "src/lib/game/LevelTwoPlan.svelte": "c286e7acdbe08c6d9b25ece4d5fa9f92e1aedb33463444212a41d7893c2392b4",
+    "src/lib/game/MapMiniature.svelte": "c21059593da3d3078aaa7bbfa918e93584431d50e32da9091e2dae1af15ddbda",
+    "src/lib/game/OutpostInspection.svelte": "b8753eefc5d15aeb1af47b3200762ddcd9bf6b4ab66ce2b6b8d2711cd1226417",
+    "src/lib/game/PersonalTechnologyTableau.svelte": "36dafea42dc22478b94d71145ee50c559de54dfddaedd735ad13562e2cb9a89b",
+    "src/lib/game/ProductionPreview.svelte": "a25518efcc7e274710868ca09218c9c27e42b26dd2ef72f22d1efc3567ac6573",
+    "src/lib/game/SOURCES.md": "37260466151b6806afb96ef010ff35a1fde4318afb8951b09895e5a9d6fce16d",
+    "src/lib/game/TechnologyActionPlan.svelte": "ffef9316804ae2da6b215094d4d687e2d647ea3df7eb1312493b5ae670ab2649",
+    "src/lib/game/TechnologyOverview.svelte": "2c5a4b4c9c49ed7590a261f54da76378307d85e694c119390934546ccd21f367",
+    "src/lib/game/TradePlan.svelte": "bc6ebb6ce4078dbcf53784b93acfc40057abc8104e2637bdd69e2dadee3dbc15",
+    "src/lib/game/TurnInstrument.svelte": "0981b524017167b7b222813378d6fe79c80e182882809d6417d2ded1fd5fd5fc",
+    "src/lib/game/achievements.ts": "ee44a3eaabe31b4444f1dd6274cdccc6e3e6c2705ba9649a3ffdb50278927b99",
+    "src/lib/game/automation-preview.ts": "713041d1f4e2711bff37ac11a866d336132156e50ef29d911d3b794db8f35001",
+    "src/lib/game/automation-scoring.ts": "1ce91516af158fd8d6848f6b4a614de5ed3f4a032462aae8339e19bc8038178f",
+    "src/lib/game/basic-fleet-action.ts": "2564b58fb0b3773ab03c48e7c96e6f2ac10e07b4899a5e6c4cecba5d03474e1f",
+    "src/lib/game/cards.ts": "cb54211c971ff19ea020ee0e457ff6069eb189b509f35c1debf92940d7528b8c",
+    "src/lib/game/colonization-preview.ts": "0d1c1f75e91b01241c20fcebe637a3851356febc296544177e78b701e8292b12",
+    "src/lib/game/colonization.ts": "75256baeed3b1edebf907d3af710777dfeacb4856334f9ab7652c1ae4b12c538",
+    "src/lib/game/continuation-kind.ts": "14271ffdf8b7b3ea7036c00617b8819d526f684834405afb7662eaacf397c5af",
+    "src/lib/game/discovery-economy.ts": "cc25dff7fc2e8298f920dcde830277058f51123b52b0b777b4338698dc3a1d85",
+    "src/lib/game/discovery-effects.ts": "4c8a315c8739acbadb6a1ee7105d5b1c3028252f8bef24311b12a0101bf8d72e",
+    "src/lib/game/discovery-events.ts": "58ddff4e0ff1c085a1ab006275f05e970cb34fd0f99ef678025a56cedd03b40d",
+    "src/lib/game/discovery-movement.ts": "6bde5159da0361784e5b7847d50607ef95772606afa51798987afbe4129eeccb",
+    "src/lib/game/discovery-queue.ts": "9900aca604e3bafc827a5a3f6b2d0d721fa23141abccce9a62581342fab68a68",
+    "src/lib/game/discovery-resolution.ts": "f2c0c7a3e297280e71e7467b9251411dbe94c64bf40c2053cf976a6370010003",
+    "src/lib/game/discovery.ts": "192d341769b2f3bb63eb2aa02b24a33906684532ce828d65e1581ab7c835e827",
+    "src/lib/game/fleet-preview.ts": "1c9315384bb55ab3cf6023ed79e926c9ec77f0814e9fff44bd7ca4c39e22ba76",
+    "src/lib/game/jump-preview.ts": "8d59c312ce2af47420e9715ea62e30b3a65de8d6fc210deb14eb5301a8a78320",
+    "src/lib/game/manifest.ts": "f5504ba5be29179303dc8569a95397304ff54f8f602539c472dc8f14567f8042",
+    "src/lib/game/outpost-inspection.ts": "6562651b7f4d9688219425dcde32f0198105765afe3027dc2efe8cb1b243ed2f",
+    "src/lib/game/personal-technologies.ts": "cf9c70126c875abe4e4136186d7bb6a5d36f7621b939a335fdc3732a2dda947c",
+    "src/lib/game/production-preview.ts": "229e1f4bb5c15051a93e320d9d32d151daa0c436fce69cceed117cf40f70d89a",
+    "src/lib/game/setup.ts": "36f4d08bb92354d2a82e8890bad33c0602a8aecb5dc88521be5134a22f5ebf04",
+    "src/lib/game/technology-actions.ts": "5231d2c49cf3cfab4bbca7668fdac6efeb10293ff7af6e39ab7db6ed0d5575d3",
+    "src/lib/game/trade-preview.ts": "474a87c4b35c4748de57cbd79645b97f1fdc82c647fa6805898c6eca3b83bf31",
+    "src/lib/game/turn.ts": "d83a879e0f1cc058747515bcaeb957ba88024e0167779c26109b7e69cee3d8fb",
+    "src/lib/remote/InviteQr.svelte": "9169b2975dbe36176b776b166e73001ec1911592a3baa52ca137833e437b3775",
+    "src/lib/remote/backend.ts": "d7aedb33526fa5966a6145b13a34d975e4b620a292d47d7640dd722211bbcb4c",
+    "src/lib/remote/model.ts": "73da7cc98d9a63d10d67d4d1a5e2f02caea332f79898805f76c25390c0d0ac4c",
+    "src/lib/table.ts": "114626df631e395149fbf88df24c3dbe5f000306b2b9dd078bfb0fd195e82ef4",
+    "src/lib/user-error.ts": "efff243d6619571fe46d02d130a56d4c470f63c89c3605b41314575ad313e2ba",
+    "src/routes/+layout.svelte": "c2107ff1e53200eb4b69bce4d240cdaf0b97bf574240b727ef47cb01f8760361",
+    "src/routes/+layout.ts": "d6767b4f453cccd5a7bcfb40bffb0e903a516bfcfb78fb4b2254e15bf10ef3a2",
+    "src/routes/+page.svelte": "d8255f14a49e21fce4763d7c9a62eeb4d5b38a1833e9a7f3ace70abfa08f5eb8",
+    "src/routes/gallery/+page.svelte": "eca5218cecf92e23a0961956723c24d1166ff6ed3c6b59272ff06d79491d8368",
+    "src/routes/remote/+page.svelte": "23b76a369e319e38b3e90fd6b0c40c14f1f03cfbf4c970f046a43620c3040402",
+    "firestore.rules": "b10dfb7f87afb2c09e18263c01d6d7b396ccfb3955e8507ad41e59cb5498fc62"
+  }
+}

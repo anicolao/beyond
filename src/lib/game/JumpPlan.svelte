@@ -3,7 +3,7 @@
  import {base} from '$app/paths';
  import OriginalCardArt from '$lib/cards/OriginalCardArt.svelte';
  import CardFace from '$lib/cards/CardFace.svelte';
- import {discoveryMap,type JumpLeg} from './discovery-movement';
+ import {discoveryMap,permittedJumpDestinations,type JumpLeg} from './discovery-movement';
  import {jumpPreview,cycleRouteShipId} from './jump-preview';
  import {fleetLocation} from './fleet-preview';
  import {cardById} from './cards';
@@ -41,7 +41,7 @@
  const preview=$derived(jumpPreview(game,position,amount,legs));
  const ship=$derived(actor.ships.find(s=>s.id===selected));
  const path=$derived(legs.find(l=>l.ship===selected)?.path??(ship?[ship.location]:[]));
- const destinations=$derived(map.edges.filter(([a,b])=>a===path.at(-1)||b===path.at(-1)).map(([a,b])=>a===path.at(-1)?b:a));
+ const destinations=$derived(path.length?permittedJumpDestinations(game,position,path.at(-1)!):[]);
  const point=(id:string)=>map.locations.find(l=>l.id===id)!;
  const xy=(n:number)=>8+n*.84;
  function attachmentPoints(a:string,b:string){

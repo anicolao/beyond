@@ -1,6 +1,7 @@
+import {ownsTechnology} from './personal-technologies';
 import {advanceColony,addColonyDisc,colonyTracks,currentSystems} from './colonization';
 import {canonicalCard} from '../cards/catalog';
-import {guilds} from './manifest';
+import {supplyCapacity,guilds} from './manifest';
 import {setupDecks,type PublicSetup} from './setup';
 import type {PlayState,TurnPlayer} from './turn';
 import {chooseFromRevealed,initialDiscovery,levelTwoBlocker,levelTwoCost,permittedTypes,revealTwo,type DiscoveryChoice} from './discovery';
@@ -10,11 +11,12 @@ import {prepend,effects,eventRecord,completeEvent} from './discovery-queue';
 import {advanceEvent,respondEvent} from './discovery-events';
 import {specialty,placeOutpost,performJump,validateJump,updateControl,resolveControlCheck,returnOutpost,type JumpLeg} from './discovery-movement';
 export type DiscoveryMove=
+ | {kind:'prepare-personal-deck'}
  | {kind:'prepare-discovery'}
  | {kind:'prepare-fleet-power';position:string}
  | {kind:'research-II';space:number;slot:string}
  | {kind:'discovery-advance';at:number}
- | {kind:'discovery-choice';at:number;option:string;target?:string;ships?:string[];track?:'food'|'ore';destination?:string;usePopulation?:boolean;legs?:JumpLeg[]};
+ | {kind:'discovery-choice';at:number;option:string;target?:string;ships?:string[];track?:'food'|'ore';destination?:string;usePopulation?:boolean;columns?:number[];legs?:JumpLeg[]};
 /** Advances only deterministic consequences. Actual player decisions stay persisted. */
 export function advanceDiscovery(initial:PublicSetup,state:PlayState,limit=1){
  const d=state.discovery!;
@@ -30,7 +32,7 @@ export function advanceDiscovery(initial:PublicSetup,state:PlayState,limit=1){
   }
   if(step.kind==='event'){if(advanceEvent(initial,state,step))continue;return;}
   if(step.kind==='jump-apply'){
-   d.queue.shift();const remaining=[...d.queue];performJump(initial,state,step.responder,step.amount,step.legs);
+   d.queue.shift();const remaining=[...d.queue];performJump(initial,state,step.responder,step.amount,step.legs,step.topology==='any');
    // Both ships and all payment move together. The hidden power index is
    // settled in its own persisted continuation before any control check.
    d.queue=[{...step,kind:'jump-power',index:0},...remaining];continue;
@@ -44,14 +46,20 @@ export function advanceDiscovery(initial:PublicSetup,state:PlayState,limit=1){
   if(step.kind==='control-check'){resolveControlCheck(initial,state,step.location,step.source);continue;}
   if(step.kind==='control-loss'){returnOutpost(initial,state,step.responder,step.location);continue;}
   if(step.kind==='gain-bonus'){if(gainBonusChoices(state.discovery!,step.responder).length>1)return;d.queue.shift();resolveSystemBonus(initial,state,step.responder,step.location);continue;}
-  if(step.kind==='control'){const track=specialty(initial,state,step.location);if(track==='either')return;d.queue.shift();placeOutpost(initial,state,step.responder,step.location,track!);queueSystemBonus(initial,state,step.responder,step.location);continue;}
+  if(step.kind==='control'){const track=specialty(initial,state,step.location);if(track==='either'||ownsTechnology({...initial,players:initial.players.map(actor=>({...actor,...state.players[actor.position]})),discovery:d},step.responder,'subatomic-fabrication'))return;d.queue.shift();placeOutpost(initial,state,step.responder,step.location,track!);queueSystemBonus(initial,state,step.responder,step.location);continue;}
   if(step.kind==='effect'){
    const e=step.effect;
+   if(e.kind==='population'&&e.amount>1){d.queue.shift();effects(state,step.responder,step.source,[{kind:'population',amount:1,ordinal:e.amount},{kind:'population',amount:e.amount-1}]);continue;}
+   if(e.kind==='manufacturing'){
+    const ore=Math.min(3,Object.values(d.outposts).filter(post=>post.owner===step.responder).length);
+    const population=Math.floor((d.colonies??[]).filter(c=>c.owner===step.responder).length/2);
+    d.queue.shift();effects(state,step.responder,step.source,[{kind:'ore',amount:ore},...(population?[{kind:'population' as const,amount:population}]:[]),{kind:'choice',id:'optional-population-ship'},{kind:'jump',amount:2}]);continue;
+   }
    if(e.kind==='return-population'){if(p.population<e.amount)throw new Error('The committed Population cube is unavailable.');for(let i=0;i<e.amount;i++){p.population--;returnSupply(p);}d.queue.shift();continue;}
    if(e.kind==='ship'&&automaticShipAvailable(d,p,step.responder,e)){if(e.cube==='population')p.population--;else take(p,e.side==='right');spawn(state,step.responder,p,e.level,e.location??'sol');d.queue.shift();updateControl(initial,state,step.source,[e.location??'sol'],step.responder);continue;}
    if(e.kind==='ore'){p.ore+=e.amount;d.queue.shift();continue;}
    if(e.kind==='population'&&p.supply.reduce((a,b)=>a+b,0)>=e.amount){for(let i=0;i<e.amount;i++){take(p,e.side==='right');p.population++;}d.queue.shift();continue;}
-   if(e.kind==='automate'&&e.track!=='either'){automate(p,e.track);d.queue.shift();continue;}
+   if(e.kind==='automate'&&e.track!=='either'&&!ownsTechnology({...initial,players:initial.players.map(actor=>({...actor,...state.players[actor.position]})),discovery:d},step.responder,'subatomic-fabrication')){automate(p,e.track);d.queue.shift();continue;}
    if(e.kind==='upgrade'&&!p.ships.some(s=>s.level<4&&(!e.location||s.location===e.location))){d.queue.shift();continue;}
    if(e.kind==='jump'&&!e.required&&!p.ships.length){d.queue.shift();continue;}
    return;
@@ -123,8 +131,33 @@ function resolveSystemBonus(initial:PublicSetup,state:PlayState,position:string,
 function respondEffect(initial:PublicSetup,state:PlayState,position:string,step:Extract<DiscoveryChoice,{kind:'effect'}>,move:Extract<DiscoveryMove,{kind:'discovery-choice'}>){
  const d=state.discovery!,p=player(initial,state,position),e=step.effect;
  const done=()=>{d.queue.shift();};
+ if(e.kind==='personal-research'){
+  if(move.option==='pass'){done();return;}
+  const known=[...initial.technologies,...d.technologies].find(t=>t.card===move.option);
+  if(!known||!['I','II'].includes(canonicalCard(known.card).technology?.level??'')||p.research.includes(known.card)||p.population<1)throw new Error('Choose an already discovered Level I or II and place one Population, without an immediate bonus.');
+  p.population--;p.research.push(known.card);done();return;
+ }
+ if(e.kind==='redistribute-supply'){
+  const count=Math.min(2,p.supply.reduce((a,b)=>a+b,0)),columns=move.columns??[];
+  if(move.option!=='redistribute'||columns.length!==count||columns.some(i=>!Number.isInteger(i)||i<0||i>4))throw new Error('Place each of the two rightmost available Supply cubes in a Supply column.');
+  for(let i=0;i<count;i++)take(p,true);
+  for(const i of columns){if(p.supply[i]>=supplyCapacity[i])throw new Error('Choose an empty Supply slot.');p.supply[i]++;}done();return;
+ }
+ if(e.kind==='choice'&&e.id==='android-armada'){
+  if(move.option!=='population'&&move.option!=='ship')throw new Error('Choose a level-2 ship or Population; either option may be repeated.');
+  done();effects(state,position,step.source,move.option==='population'?[{kind:'population',amount:1}]:[{kind:'ship',level:2}]);return;
+ }
+ if(e.kind==='choice'&&e.id==='capital-second-ship'){
+  if(move.option==='pass'){done();return;}
+  if(move.option!=='build'||p.ore<2||p.population<1)throw new Error('Need 2 Ore and 1 Population for the optional level-2 ship.');p.ore-=2;done();effects(state,position,step.source,[{kind:'ship',level:2,cube:'population'}]);return;
+ }
+ if(e.kind==='choice'&&e.id==='optional-population-ship'){
+  if(move.option==='pass'){done();return;}
+  if(move.option!=='build'||p.population<1)throw new Error('Choose whether to convert one available Population into a level-2 ship.');
+  done();effects(state,position,step.source,[{kind:'ship',level:2,cube:'population'}]);return;
+ }
  if(e.kind==='automate'){
-  if(move.option!=='food'&&move.option!=='ore'||e.track!=='either'&&e.track!==move.option)throw new Error('Choose a matching production track.');automate(p,move.option);done();return;
+  if(move.option!=='food'&&move.option!=='ore'||e.track!=='either'&&e.track!==move.option&&!ownsTechnology({...initial,players:initial.players.map(actor=>({...actor,...state.players[actor.position]})),discovery:d},position,'subatomic-fabrication'))throw new Error('Choose a matching production track.');automate(p,move.option);done();return;
  }
  if(e.kind==='population'){
   if(move.option==='pass'&&!p.supply.some(n=>n>0)){done();return;}
@@ -137,13 +170,13 @@ function respondEffect(initial:PublicSetup,state:PlayState,position:string,step:
   done();updateControl(initial,state,step.source,ships.map(id=>p.ships.find(s=>s.id===id)!.location),position);return;
  }
  if(e.kind==='ship'){
-  if(move.option==='pass'&&!p.supply.some(n=>n>0)){done();return;}
+  if(move.option==='pass'&&e.cube!=='population'&&!p.supply.some(n=>n>0)){done();return;}
   const location=e.location??move.destination;
   if(!location||(!e.location&&location!=='sol'&&!Object.entries(d.outposts).some(([id,post])=>id===location&&post.owner===position&&id.startsWith('shipyard-'))))throw new Error('Choose a permitted shipyard.');
-  if(move.option!=='build'||!convert(p,move.usePopulation,e.side==='right'))throw new Error('Choose Supply, or the explicit exhausted Supply exception.');spawn(state,position,p,e.level,location);done();return;
+  if(move.option!=='build'||(e.cube==='population'?p.population<1:!convert(p,move.usePopulation,e.side==='right')))throw new Error('Choose Supply, or the explicit exhausted Supply exception.');if(e.cube==='population')p.population--;spawn(state,position,p,e.level,location);done();return;
  }
  if(e.kind==='jump'){
-  if(move.option!=='jump')throw new Error('Commit a simultaneous jump plan, or an empty plan to pass.');const legs=move.legs??[];if(e.required&&!legs.some(leg=>leg.path.at(-1)!==leg.path[0]))throw new Error('This Action must move a ship to a different location.');validateJump(initial,state,position,e.amount,legs);done();if(legs.length)prepend(state,{kind:'jump-apply',responder:position,amount:e.amount,legs});return;
+  if(move.option!=='jump')throw new Error('Commit a simultaneous jump plan, or an empty plan to pass.');const legs=move.legs??[];if(e.required&&!legs.some(leg=>leg.path.at(-1)!==leg.path[0]))throw new Error('This Action must move a ship to a different location.');validateJump(initial,state,position,e.amount,legs,e.topology==='any');done();if(legs.length)prepend(state,{kind:'jump-apply',responder:position,amount:e.amount,legs,...(e.topology?{topology:e.topology}:{})});return;
  }
  if(e.kind==='research-I'){
   const card=initial.technologies.find(t=>t.card===move.option);
@@ -184,15 +217,15 @@ function respondEffect(initial:PublicSetup,state:PlayState,position:string,step:
 export function canAdvanceDiscovery(game:PublicSetup):boolean{
  const step=game.discovery?.queue[0];if(game.phase!=='discovery'||!step)return false;
  const p=game.players.find(p=>p.position===step.responder)!;
- if(step.kind==='colony')return step.stage!=='disc'||colonyTracks(step.card).length===1;
+ if(step.kind==='colony')return step.stage!=='disc'||colonyTracks(step.card,game,step.responder).length===1;
  if(['event-complete','resume','jump-apply','jump-power','control-check','control-loss'].includes(step.kind))return true;
  if(step.kind==='gain-bonus')return gainBonusChoices(game.discovery!,step.responder).length===1;
  if(step.kind==='type')return step.types.length===1;
  if(step.kind==='event')return !step.stage||step.event==='experimental-prototypes'&&step.stage==='roll'||step.stage==='dispatch'||step.event==='economic-boom'&&step.stage==='economy'&&step.value==='ore';
- if(step.kind==='control'){const system=game.systems.find(s=>s.slot===step.location);const section=system&&canonicalCard(system.card).sections.find(s=>s.label==='Specialty');return step.location.startsWith('shipyard-')?step.location!=='shipyard-north':!!section&&!section.secondarySymbol;}
+ if(step.kind==='control'){if(ownsTechnology(game,step.responder,'subatomic-fabrication'))return false;const system=game.systems.find(s=>s.slot===step.location);const section=system&&canonicalCard(system.card).sections.find(s=>s.label==='Specialty');return step.location.startsWith('shipyard-')?step.location!=='shipyard-north':!!section&&!section.secondarySymbol;}
  if(step.kind==='effect'){
   const e=step.effect;
-  return e.kind==='return-population'||e.kind==='ship'&&automaticShipAvailable(game.discovery!,p,step.responder,e)||e.kind==='ore'||e.kind==='population'&&p.supply.reduce((a,b)=>a+b,0)>=e.amount||e.kind==='automate'&&e.track!=='either'||e.kind==='upgrade'&&!p.ships.some(s=>s.level<4&&(!e.location||s.location===e.location))||e.kind==='jump'&&!e.required&&!p.ships.length;
+  return e.kind==='population'&&e.amount>1||e.kind==='manufacturing'||e.kind==='return-population'||e.kind==='ship'&&automaticShipAvailable(game.discovery!,p,step.responder,e)||e.kind==='ore'||e.kind==='population'&&p.supply.reduce((a,b)=>a+b,0)>=e.amount||e.kind==='automate'&&e.track!=='either'&&!ownsTechnology(game,step.responder,'subatomic-fabrication')||e.kind==='upgrade'&&!p.ships.some(s=>s.level<4&&(!e.location||s.location===e.location))||e.kind==='jump'&&!e.required&&!p.ships.length;
  }
  return false;
 }
@@ -220,4 +253,11 @@ export function prepareFleetPower(initial:PublicSetup,state:PlayState,position:s
  if(p.ships.length>3||p.ships.some(s=>!['sol','deep-space'].includes(s.location)))throw new Error('This saved fleet needs its matching game version. Use Recovery options.');
  state.discovery.powers[target]={sol:p.ships.filter(s=>s.location==='sol').reduce((n,s)=>n+s.level,0),'deep-space':p.ships.filter(s=>s.location==='deep-space').reduce((n,s)=>n+s.level,0),'*':p.ships.reduce((n,s)=>n+s.level,0)};
  return state;
+}
+
+/** One-way retained-state preparation. This freezes the full seeded III deck
+ * before WISE is payable; it never selects a supported top or reveals a card. */
+export function preparePersonalDeck(initial:PublicSetup,state:PlayState,position:string){
+ if(state.activePosition!==position||!state.discovery||state.discovery.deckIII)throw new Error('The personal Level III deck is already prepared, or another faction is acting.');
+ state.discovery.deckIII=setupDecks(state.discovery.seed,initial.count).technologies.III;return state;
 }
