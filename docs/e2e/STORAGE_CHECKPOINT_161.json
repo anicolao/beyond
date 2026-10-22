@@ -1,0 +1,9 @@
+{
+  "prompt": 161,
+  "reviewerAuthored": true,
+  "availableAtCheck": "25GiB reported by df -h on shared Data volume",
+  "permission": "No response to pending storage question; no inferred approval",
+  "actions": "Preserve evidence/user files/failed diagnostics; no deletion, new full candidate run or duplicate question",
+  "work": "Small metadata and source-policy checks only;012 independent local review still precedes formal screenshots",
+  "services": "Persistent review services and identities unchanged"
+}

@@ -1,0 +1,796 @@
+{
+  "sourceArtifact": 12374240009,
+  "notes": "Nested test.step/pw:api totals overlap and must not be added; mouseMove totals are actual recorded calls. Observations diagnose overhead, not verified fixes. Guards/references unchanged.",
+  "traces": [
+    {
+      "trace": "test-results/005-technology-discovery-d-6c115-eal-Dimensional-Rift-System-tabletop-4k/trace.zip",
+      "timings": [
+        {
+          "api": "fixture",
+          "count": 19,
+          "totalMs": 126,
+          "meanMs": 6.64
+        },
+        {
+          "api": "pw:api",
+          "count": 191,
+          "totalMs": 17892,
+          "meanMs": 93.68
+        },
+        {
+          "api": "hook",
+          "count": 3,
+          "totalMs": 138,
+          "meanMs": 46.13
+        },
+        {
+          "api": "expect",
+          "count": 106,
+          "totalMs": 1151,
+          "meanMs": 10.86
+        },
+        {
+          "api": "test.step",
+          "count": 78,
+          "totalMs": 27473,
+          "meanMs": 352.21
+        },
+        {
+          "api": "test.attach",
+          "count": 2,
+          "totalMs": 1,
+          "meanMs": 0.48
+        },
+        {
+          "api": "addInitScript",
+          "count": 2,
+          "totalMs": 1,
+          "meanMs": 0.71
+        },
+        {
+          "api": "newPage",
+          "count": 1,
+          "totalMs": 23,
+          "meanMs": 23.07
+        },
+        {
+          "api": "goto",
+          "count": 1,
+          "totalMs": 39,
+          "meanMs": 38.7
+        },
+        {
+          "api": "queryCount",
+          "count": 39,
+          "totalMs": 123,
+          "meanMs": 3.16
+        },
+        {
+          "api": "isVisible",
+          "count": 13,
+          "totalMs": 18,
+          "meanMs": 1.4
+        },
+        {
+          "api": "evaluateExpression",
+          "count": 26,
+          "totalMs": 2274,
+          "meanMs": 87.46
+        },
+        {
+          "api": "bringToFront",
+          "count": 13,
+          "totalMs": 14,
+          "meanMs": 1.09
+        },
+        {
+          "api": "mouseMove",
+          "count": 13,
+          "totalMs": 2313,
+          "meanMs": 177.95
+        },
+        {
+          "api": "waitForFunction",
+          "count": 26,
+          "totalMs": 6320,
+          "meanMs": 243.08
+        },
+        {
+          "api": "newCDPSession",
+          "count": 13,
+          "totalMs": 12,
+          "meanMs": 0.88
+        },
+        {
+          "api": "click",
+          "count": 10,
+          "totalMs": 399,
+          "meanMs": 39.87
+        },
+        {
+          "api": "fill",
+          "count": 2,
+          "totalMs": 14,
+          "meanMs": 6.93
+        },
+        {
+          "api": "getAttribute",
+          "count": 4,
+          "totalMs": 5,
+          "meanMs": 1.2
+        }
+      ],
+      "slowestCalls": [
+        {
+          "api": "test.step",
+          "ms": 2072.53,
+          "params": "{}",
+          "error": "{'name': '', 'message': 'TimeoutError: Step timeout of 2000ms exceeded.', 'stack': 'TimeoutError: Step timeout of 2000ms exceeded.\\n    at /__w/beyond/beyond/tests/e2e/helpers/test"
+        },
+        {
+          "api": "test.step",
+          "ms": 2003.27,
+          "params": "{}",
+          "error": "{'name': '', 'message': 'TimeoutError: Step timeout of 2000ms exceeded.', 'stack': 'TimeoutError: Step timeout of 2000ms exceeded.\\n    at /__w/beyond/beyond/tests/e2e/helpers/test"
+        },
+        {
+          "api": "test.step",
+          "ms": 1841.99,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1745.98,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1654.25,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1640.57,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "pw:api",
+          "ms": 1600.41,
+          "params": "{'timeout': '1998', 'polling': '20', 'pollingInterval': '20', 'expression': \"({\\n          status\\n        }) => {\\n          var _document$querySelect;\\n          const observed = (_document$querySel",
+          "error": ""
+        },
+        {
+          "api": "waitForFunction",
+          "ms": 1599.04,
+          "params": "{'expression': \"({\\n          status\\n        }) => {\\n          var _document$querySelect;\\n          const observed = (_document$querySelect = document.querySelector('[data-backend-status]')) === nu",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1598.6,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1534.79,
+          "params": "{}",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "trace": "test-results/007-production-production--1e213-yields-at-four-corner-seats-tabletop-4k/trace.zip",
+      "timings": [
+        {
+          "api": "fixture",
+          "count": 19,
+          "totalMs": 210,
+          "meanMs": 11.07
+        },
+        {
+          "api": "pw:api",
+          "count": 1955,
+          "totalMs": 116441,
+          "meanMs": 59.56
+        },
+        {
+          "api": "hook",
+          "count": 3,
+          "totalMs": 223,
+          "meanMs": 74.4
+        },
+        {
+          "api": "expect",
+          "count": 985,
+          "totalMs": 12409,
+          "meanMs": 12.6
+        },
+        {
+          "api": "test.step",
+          "count": 763,
+          "totalMs": 228633,
+          "meanMs": 299.65
+        },
+        {
+          "api": "test.attach",
+          "count": 2,
+          "totalMs": 3,
+          "meanMs": 1.67
+        },
+        {
+          "api": "addInitScript",
+          "count": 2,
+          "totalMs": 1,
+          "meanMs": 0.35
+        },
+        {
+          "api": "newPage",
+          "count": 1,
+          "totalMs": 21,
+          "meanMs": 21.36
+        },
+        {
+          "api": "goto",
+          "count": 1,
+          "totalMs": 31,
+          "meanMs": 31.31
+        },
+        {
+          "api": "queryCount",
+          "count": 492,
+          "totalMs": 1179,
+          "meanMs": 2.4
+        },
+        {
+          "api": "isVisible",
+          "count": 109,
+          "totalMs": 168,
+          "meanMs": 1.54
+        },
+        {
+          "api": "evaluateExpression",
+          "count": 304,
+          "totalMs": 2991,
+          "meanMs": 9.84
+        },
+        {
+          "api": "bringToFront",
+          "count": 109,
+          "totalMs": 115,
+          "meanMs": 1.05
+        },
+        {
+          "api": "mouseMove",
+          "count": 108,
+          "totalMs": 22395,
+          "meanMs": 207.37
+        },
+        {
+          "api": "waitForFunction",
+          "count": 217,
+          "totalMs": 8356,
+          "meanMs": 38.51
+        },
+        {
+          "api": "newCDPSession",
+          "count": 108,
+          "totalMs": 64,
+          "meanMs": 0.59
+        },
+        {
+          "api": "click",
+          "count": 95,
+          "totalMs": 4118,
+          "meanMs": 43.35
+        },
+        {
+          "api": "fill",
+          "count": 4,
+          "totalMs": 50,
+          "meanMs": 12.46
+        },
+        {
+          "api": "getAttribute",
+          "count": 93,
+          "totalMs": 167,
+          "meanMs": 1.79
+        },
+        {
+          "api": "waitForSelector",
+          "count": 86,
+          "totalMs": 393,
+          "meanMs": 4.56
+        },
+        {
+          "api": "selectOption",
+          "count": 6,
+          "totalMs": 92,
+          "meanMs": 15.25
+        },
+        {
+          "api": "innerText",
+          "count": 1,
+          "totalMs": 4,
+          "meanMs": 3.57
+        }
+      ],
+      "slowestCalls": [
+        {
+          "api": "test.step",
+          "ms": 1758.38,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1700.64,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1605.64,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1600.14,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1573.71,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1543.48,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1494.49,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1492.84,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1451.86,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1445.7,
+          "params": "{}",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "trace": "test-results/007-production-production--877e4-elds-at-four-cardinal-seats-tabletop-4k/trace.zip",
+      "timings": [
+        {
+          "api": "fixture",
+          "count": 20,
+          "totalMs": 331,
+          "meanMs": 16.53
+        },
+        {
+          "api": "pw:api",
+          "count": 1809,
+          "totalMs": 117084,
+          "meanMs": 64.72
+        },
+        {
+          "api": "hook",
+          "count": 3,
+          "totalMs": 351,
+          "meanMs": 116.87
+        },
+        {
+          "api": "expect",
+          "count": 926,
+          "totalMs": 12530,
+          "meanMs": 13.53
+        },
+        {
+          "api": "test.step",
+          "count": 784,
+          "totalMs": 228161,
+          "meanMs": 291.02
+        },
+        {
+          "api": "test.attach",
+          "count": 2,
+          "totalMs": 3,
+          "meanMs": 1.53
+        },
+        {
+          "api": "addInitScript",
+          "count": 2,
+          "totalMs": 2,
+          "meanMs": 0.82
+        },
+        {
+          "api": "newPage",
+          "count": 1,
+          "totalMs": 23,
+          "meanMs": 23.44
+        },
+        {
+          "api": "goto",
+          "count": 1,
+          "totalMs": 40,
+          "meanMs": 39.8
+        },
+        {
+          "api": "queryCount",
+          "count": 478,
+          "totalMs": 1118,
+          "meanMs": 2.34
+        },
+        {
+          "api": "isVisible",
+          "count": 112,
+          "totalMs": 171,
+          "meanMs": 1.53
+        },
+        {
+          "api": "evaluateExpression",
+          "count": 224,
+          "totalMs": 3215,
+          "meanMs": 14.35
+        },
+        {
+          "api": "bringToFront",
+          "count": 112,
+          "totalMs": 123,
+          "meanMs": 1.1
+        },
+        {
+          "api": "mouseMove",
+          "count": 112,
+          "totalMs": 21887,
+          "meanMs": 195.42
+        },
+        {
+          "api": "waitForFunction",
+          "count": 224,
+          "totalMs": 9779,
+          "meanMs": 43.66
+        },
+        {
+          "api": "newCDPSession",
+          "count": 112,
+          "totalMs": 81,
+          "meanMs": 0.72
+        },
+        {
+          "api": "click",
+          "count": 95,
+          "totalMs": 4278,
+          "meanMs": 45.04
+        },
+        {
+          "api": "fill",
+          "count": 4,
+          "totalMs": 24,
+          "meanMs": 5.96
+        },
+        {
+          "api": "getAttribute",
+          "count": 96,
+          "totalMs": 197,
+          "meanMs": 2.05
+        },
+        {
+          "api": "selectOption",
+          "count": 6,
+          "totalMs": 82,
+          "meanMs": 13.7
+        },
+        {
+          "api": "check",
+          "count": 1,
+          "totalMs": 32,
+          "meanMs": 32.13
+        },
+        {
+          "api": "innerText",
+          "count": 1,
+          "totalMs": 3,
+          "meanMs": 3.44
+        }
+      ],
+      "slowestCalls": [
+        {
+          "api": "test.step",
+          "ms": 1869.48,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1867.51,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1804.52,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1760.89,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1722.91,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1608.89,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1417.62,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1403.24,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1382.21,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1380.4,
+          "params": "{}",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "trace": "test-results/008-trading-trading-tablet-d1ab2-on-at-physical-shared-seats-tabletop-4k/trace.zip",
+      "timings": [
+        {
+          "api": "fixture",
+          "count": 19,
+          "totalMs": 249,
+          "meanMs": 13.09
+        },
+        {
+          "api": "pw:api",
+          "count": 930,
+          "totalMs": 58794,
+          "meanMs": 63.22
+        },
+        {
+          "api": "hook",
+          "count": 3,
+          "totalMs": 262,
+          "meanMs": 87.18
+        },
+        {
+          "api": "expect",
+          "count": 462,
+          "totalMs": 6994,
+          "meanMs": 15.14
+        },
+        {
+          "api": "test.step",
+          "count": 432,
+          "totalMs": 115775,
+          "meanMs": 268.0
+        },
+        {
+          "api": "test.attach",
+          "count": 2,
+          "totalMs": 1,
+          "meanMs": 0.3
+        },
+        {
+          "api": "addInitScript",
+          "count": 2,
+          "totalMs": 1,
+          "meanMs": 0.41
+        },
+        {
+          "api": "newPage",
+          "count": 1,
+          "totalMs": 29,
+          "meanMs": 29.38
+        },
+        {
+          "api": "goto",
+          "count": 1,
+          "totalMs": 37,
+          "meanMs": 37.14
+        },
+        {
+          "api": "queryCount",
+          "count": 221,
+          "totalMs": 1934,
+          "meanMs": 8.75
+        },
+        {
+          "api": "evaluateExpression",
+          "count": 162,
+          "totalMs": 1641,
+          "meanMs": 10.13
+        },
+        {
+          "api": "isVisible",
+          "count": 54,
+          "totalMs": 81,
+          "meanMs": 1.5
+        },
+        {
+          "api": "bringToFront",
+          "count": 54,
+          "totalMs": 59,
+          "meanMs": 1.1
+        },
+        {
+          "api": "mouseMove",
+          "count": 54,
+          "totalMs": 9805,
+          "meanMs": 181.58
+        },
+        {
+          "api": "waitForFunction",
+          "count": 108,
+          "totalMs": 5193,
+          "meanMs": 48.08
+        },
+        {
+          "api": "newCDPSession",
+          "count": 54,
+          "totalMs": 37,
+          "meanMs": 0.69
+        },
+        {
+          "api": "click",
+          "count": 45,
+          "totalMs": 2047,
+          "meanMs": 45.48
+        },
+        {
+          "api": "fill",
+          "count": 2,
+          "totalMs": 23,
+          "meanMs": 11.59
+        },
+        {
+          "api": "getAttribute",
+          "count": 43,
+          "totalMs": 74,
+          "meanMs": 1.71
+        },
+        {
+          "api": "selectOption",
+          "count": 2,
+          "totalMs": 36,
+          "meanMs": 18.04
+        },
+        {
+          "api": "innerText",
+          "count": 14,
+          "totalMs": 49,
+          "meanMs": 3.49
+        },
+        {
+          "api": "reload",
+          "count": 1,
+          "totalMs": 47,
+          "meanMs": 47.25
+        },
+        {
+          "api": "focus",
+          "count": 1,
+          "totalMs": 9,
+          "meanMs": 8.95
+        },
+        {
+          "api": "keyboardPress",
+          "count": 1,
+          "totalMs": 4,
+          "meanMs": 3.51
+        }
+      ],
+      "slowestCalls": [
+        {
+          "api": "test.step",
+          "ms": 2033.38,
+          "params": "{}",
+          "error": "{'name': '', 'message': 'TimeoutError: Step timeout of 2000ms exceeded.', 'stack': 'TimeoutError: Step timeout of 2000ms exceeded.\\n    at /__w/beyond/beyond/tests/e2e/helpers/test"
+        },
+        {
+          "api": "test.step",
+          "ms": 2001.62,
+          "params": "{}",
+          "error": "{'name': '', 'message': 'TimeoutError: Step timeout of 2000ms exceeded.', 'stack': 'TimeoutError: Step timeout of 2000ms exceeded.\\n    at /__w/beyond/beyond/tests/e2e/helpers/test"
+        },
+        {
+          "api": "test.step",
+          "ms": 1736.0,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1653.66,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1639.31,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1610.59,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1557.92,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1555.53,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1532.35,
+          "params": "{}",
+          "error": ""
+        },
+        {
+          "api": "test.step",
+          "ms": 1499.28,
+          "params": "{}",
+          "error": ""
+        }
+      ]
+    }
+  ]
+}

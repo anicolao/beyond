@@ -1,0 +1,15 @@
+{
+  "prompt": 159,
+  "phase": "012",
+  "branch": "feat/outpost-control",
+  "baseBranch": "feat/jump-planning",
+  "baseHead": "02a5496174a051f7f7986219696143b0617c1645",
+  "dependencyPR": "https://github.com/anicolao/beyond/pull/13",
+  "local011Gate": "132/132 exact,9141frames;219backend/3259,64tooling,51guards; types/policy/builds/diff pass",
+  "pending011": "PR13 static/docsPASS; comparison16/132FAIL56pixel/60missing; native128/132FAIL:two2s capture/two120s007stories; exact-sourcepublisher503; matching hosted acceptance pending. No failed cohort adopted.",
+  "pending010": "PR12 current65cb4a4: static/docsPASS; browser16/118 and publisher503FAIL; failed cohorts retained",
+  "reviewServices": "5206,9397,8297 unchanged; new5207 uses same canonical review backend with fresh ordinary UI identity",
+  "scope": "Tie retains incumbent; exceed later; inspect both production mats; retained empty outposts and withdrawal ties; no colonization",
+  "gate": "Local UI review before012 baseline generation; no013/merge",
+  "resourceIncident": "Postcommit optional Git auto-repack safely interrupted; commit/history retained. Local automatic maintenance disabled; push bounded to one thread/64MiB window. Only ignored inactive generated outputs reclaimed, evidence/source/deps/data preserved."
+}

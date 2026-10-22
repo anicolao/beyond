@@ -1,0 +1,9 @@
+import {test,expect} from '../helpers/fixtures';
+import {TestStepHelper} from '../helpers/test-step-helper';
+import {assertDiscoveryReady,assertDiscoveryBoard,type Photo} from '../005-technology-discovery/journey';
+import {outpostJourney} from './journey';
+for(const scenario of ['contest','bonuses','specialty','empty','offturn']as const)test(({contest:'Contest an Ore outpost and return the former owner’s disc',bonuses:'Choose the order of two gained System bonuses',specialty:'Choose the gaining owner’s multi-specialty disc',empty:'Retain an empty outpost without any owned ships',offturn:'Lose control during a rival trade while keeping permanent automation'})[scenario]+' with separate remote controllers',async({page,context,browser},info)=>{
+ info.annotations.push({type:'viewports',description:'phone,desktop'},{type:'setup',description:'Ordinary remote invite/claim/unique Basic factions/Ready/Begin; two real identities for contest or four for first-turn bonus/specialty choices. Seed fixed only at Begin (002 contest/specialty;004 bonuses); command identities disjoint. No injected game state or future deck read.'});
+ const steps=new TestStepHelper(page,info,info.title);const photo:Photo=(id,caption,actor,player,check,documentView)=>steps.step(id,caption,[{spec:caption,check},{spec:'Actual canonical effects and acknowledgement settle.',check:()=>assertDiscoveryReady(actor)},{spec:'Public topology retains physical separation.',check:()=>assertDiscoveryBoard(actor)},{spec:'The viewport fits without page scrolling.',check:async()=>expect(await actor.evaluate(()=>document.documentElement.scrollWidth<=innerWidth&&document.documentElement.scrollHeight<=innerHeight&&!scrollX&&!scrollY)).toBe(true)}],{page:actor,player,document:documentView});
+ await outpostJourney({page,context,browser,info,photo,remote:true,scenario});
+});

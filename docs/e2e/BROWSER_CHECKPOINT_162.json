@@ -1,0 +1,21 @@
+{
+  "prompt": 162,
+  "reviewerAuthored": true,
+  "pr": 12,
+  "head": "65cb4a4",
+  "job": 119189567850,
+  "static": "PASS separately confirmed160",
+  "browser": {
+    "result": "FAIL",
+    "passed": 16,
+    "failed": 102,
+    "duration": "15.0m",
+    "pixelDifferences": 55,
+    "missingReferences": 46,
+    "captureDeadlineFailures": 1,
+    "deadlineMs": 2000
+  },
+  "log": "/Users/anicolao/projects/games/beyond/tmp/jumps162-pr12-browser-65cb4a4.log",
+  "publisher": "exact-source503 remains separate",
+  "localCorrection": "Historical shared2 candidate3/4 endpoint-edge1440 clipping corrected by2px inset before published011 current132/132 exact gate. No duplicate fix or reference adoption. Current012 still exploratory local review; no formal012 references."
+}

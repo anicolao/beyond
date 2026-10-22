@@ -1,0 +1,30 @@
+{
+  "prompt": 167,
+  "reviewerAuthored": true,
+  "acceptedScope": "640px visible remaining3 allowance above tabs and complete contained map",
+  "evidence": "/Users/anicolao/projects/games/beyond/tmp/local-jump-review/round159-visible-budget/budget-and-map-1280x640.png",
+  "preCorrectionRun": {
+    "log": "/Users/anicolao/projects/games/beyond/tmp/jumps159-final-exact3.log",
+    "result": "131/132; explicitly NOT final-source validation"
+  },
+  "finalSourceEvidence": {
+    "sourceFreeze": "/Users/anicolao/projects/games/beyond/tmp/jumps159-current-map-source-freeze.json",
+    "hashCount": 70,
+    "guardedViewports": "640/720/1000/4K cardinal/corner; canonical map edges and44px controls unchanged",
+    "generation": {
+      "log": "/Users/anicolao/projects/games/beyond/tmp/jumps159-current-map-full-candidates.log",
+      "result": "132/13230.9m",
+      "generating": true
+    },
+    "comparison": {
+      "log": "/Users/anicolao/projects/games/beyond/tmp/jumps159-final-exact4.log",
+      "result": "132/13231.2m",
+      "generating": false,
+      "frames": 9141
+    },
+    "audit": "7741 prior frames byte-identical;270 scoped changed planner frames and76 added navigation frames;8011 base frames accounted for"
+  },
+  "publishedHead": "02a5496174a051f7f7986219696143b0617c1645",
+  "currentSource": "JumpPlan and011journey unchanged from published head; no new refresh needed for retrospective acceptance",
+  "remaining": "PR13 Linux and matching-head hosted acceptance remain pending; no012 formal references or013 release"
+}

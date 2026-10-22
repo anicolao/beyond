@@ -1,0 +1,86 @@
+{
+  "prompt": 159,
+  "authority": "https://firebase.google.com/docs/rules/rules-language#expression_complexity_and_compiler_limits",
+  "observations": [
+    {
+      "candidate": "scope",
+      "sourceSha256": "eb066a5090391125c318e158dff2e6bfa75e213eb647c2195a71f9c425e5b4ec",
+      "bytes": 118690,
+      "elapsedMs": 5332.979959,
+      "status": 503,
+      "serviceError": {
+        "code": 503,
+        "status": "UNAVAILABLE",
+        "message": "The service is currently unavailable.",
+        "detailTypes": []
+      },
+      "deployed": false,
+      "liveEmulatorsChanged": false,
+      "canonicalWorkingTreeChanged": false
+    },
+    {
+      "candidate": "tail",
+      "sourceSha256": "32afd9cf223468f49a96595e90731e7e5dc5ca27a26dbb517a4b27483d288227",
+      "bytes": 118697,
+      "elapsedMs": 5309.270167,
+      "status": 503,
+      "serviceError": {
+        "code": 503,
+        "status": "UNAVAILABLE",
+        "message": "The service is currently unavailable.",
+        "detailTypes": []
+      },
+      "deployed": false,
+      "liveEmulatorsChanged": false,
+      "canonicalWorkingTreeChanged": false
+    },
+    {
+      "candidate": "combined",
+      "sourceSha256": "9b9737c53e694faa7a589b76eacde1c37b70f963a260e3d8a92544afabd46718",
+      "bytes": 118850,
+      "elapsedMs": 5432.303833,
+      "status": 503,
+      "serviceError": {
+        "code": 503,
+        "status": "UNAVAILABLE",
+        "message": "The service is currently unavailable.",
+        "detailTypes": []
+      },
+      "deployed": false,
+      "liveEmulatorsChanged": false,
+      "canonicalWorkingTreeChanged": false
+    },
+    {
+      "candidate": "flat",
+      "sourceSha256": "b4971ade12148b6ecbb78bf5df0e43990cf07486e35c34c9f5cf73eaa9fc7c8d",
+      "bytes": 122163,
+      "elapsedMs": 8183.568625,
+      "status": 503,
+      "serviceError": {
+        "code": 503,
+        "status": "UNAVAILABLE",
+        "message": "The service is currently unavailable.",
+        "detailTypes": []
+      },
+      "deployed": false,
+      "liveEmulatorsChanged": false,
+      "canonicalWorkingTreeChanged": false
+    },
+    {
+      "candidate": "control",
+      "sourceSha256": "1742c465464fab747ac814e1fa2ca557844e205a7ea02df73a7d9d408af2d287",
+      "bytes": 19011,
+      "elapsedMs": 656.939541,
+      "status": 200,
+      "issues": [],
+      "deployed": false,
+      "liveEmulatorsChanged": false,
+      "canonicalWorkingTreeChanged": false
+    }
+  ],
+  "conclusion": "Four distinct equivalent-encoding candidates still503; contemporaneous frozenPR5 control200/657ms. Source-sensitive compiler failure persists; stack exhaustion remains an official documented possibility, not proven root cause. No candidate adopted or deployed.",
+  "canonicalSha256": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67",
+  "canonicalHead": "02a5496174a051f7f7986219696143b0617c1645",
+  "allReviewServicesAndIdentities": "unchanged",
+  "noFallbackDeployment": true
+}

@@ -32,7 +32,7 @@ Viewpoint: **Ada · independent host controller**.
 - [x] Public compact Technology objects retain physical separation.
 - [x] The gameplay shell stays inside the actual viewport.
 
-## 3. Configure a real two-player remote room
+## 3. Configure a real remote room
 
 Viewpoint: **Ada · independent host controller**.
 
@@ -42,7 +42,7 @@ Viewpoint: **Ada · independent host controller**.
 
 
 
-- [x] Configure a real two-player remote room
+- [x] Configure a real remote room
 - [x] The saved automatic consequences settle before the public decision is photographed.
 - [x] Public compact Technology objects retain physical separation.
 - [x] The gameplay shell stays inside the actual viewport.

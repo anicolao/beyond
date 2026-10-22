@@ -1,0 +1,89 @@
+{
+  "prompt": 185,
+  "reviewScope": "Named phone/corner diagnostic captures accepted only; no phase012/013 release inferred",
+  "acceptedSourceCaptures": {
+    "phone": {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/outposts182-texture-source-phone-1792626499579/source-0.png",
+      "sha256": "66f2b2baad77a53e85fd7743fee689a433790d941c307f061bfe8b6a7531a4eb"
+    },
+    "corner": {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/outposts182-texture-source-corner-1792626476696/source-0.png",
+      "sha256": "0310d59ebab3e00c52040db8255394ed01444d97ce3b78706a8c37ec15ce1f66"
+    }
+  },
+  "formalResultsAlreadyCompleted": {
+    "boundedTextureExact": "8/8PASS664frames2.9m, outposts182-texture-exact.log; no update-snapshots",
+    "collateralAudit": "652unchanged and12badge-only deltas, OUTPOST_TEXTURE_REVIEW_182.json; original-art provenance retained",
+    "fullFrozenSourceExact": "160/160PASS11001frames39.0m, outposts182-full-exact2.log; no update-snapshots",
+    "ordinaryPhoneCoverage": "Three/four real remote controllers; paired desktop/phone formal stories, actual actingphone393x852; attachedTeegardenSystem from ordinary Rift.18/18affected exact1456frames;398newframes, outposts183-exact.log"
+  },
+  "coverageAwaitingIndependentReview": [
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/inspect-a-real-attached-rift-system-in-4-player-remote-exploration/092-attached-exploration-phone-darwin.png",
+      "sha256": "bcd82ab0f0ba81e0be09133fc427ab5bdedd89c4b4ad923bdc5eaddaef8e34b5",
+      "width": 393,
+      "height": 852,
+      "project": "phone",
+      "id": "attached-exploration"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/inspect-a-real-attached-rift-system-in-4-player-remote-exploration/094-attached-connected-leg-phone-darwin.png",
+      "sha256": "7f7c37174596fa37834d75a03bd017debac6fefb0602aa3e3a9d2ed8b808610b",
+      "width": 393,
+      "height": 852,
+      "project": "phone",
+      "id": "attached-connected-leg"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/inspect-a-real-attached-rift-system-in-4-player-remote-exploration/096-attached-endpoint-inspection-phone-darwin.png",
+      "sha256": "a0c521ca30f9263d65dec2eabeb44649031712c6918210650d252ca916492ef0",
+      "width": 393,
+      "height": 852,
+      "project": "phone",
+      "id": "attached-endpoint-inspection"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/inspect-a-real-attached-rift-system-in-4-player-remote-exploration/103-attached-map-restored-phone-darwin.png",
+      "sha256": "bcd82ab0f0ba81e0be09133fc427ab5bdedd89c4b4ad923bdc5eaddaef8e34b5",
+      "width": 393,
+      "height": 852,
+      "project": "phone",
+      "id": "attached-map-restored"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/inspect-a-real-attached-rift-system-in-3-player-remote-exploration/079-attached-exploration-phone-darwin.png",
+      "sha256": "bd83652fdb308d2b43f6316c16c8b5c915c62bc9652dc6c0cd35a4e8f2b4cf15",
+      "width": 393,
+      "height": 852,
+      "project": "phone",
+      "id": "attached-exploration"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/inspect-a-real-attached-rift-system-in-3-player-remote-exploration/081-attached-connected-leg-phone-darwin.png",
+      "sha256": "88c406730d482e0b8ad93b150b4981b03f5df2f855f71e107c26d4040e0354ef",
+      "width": 393,
+      "height": 852,
+      "project": "phone",
+      "id": "attached-connected-leg"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/inspect-a-real-attached-rift-system-in-3-player-remote-exploration/083-attached-endpoint-inspection-phone-darwin.png",
+      "sha256": "e24e37b7c0dbad4369013059b7265730a6986cf6593ffd0f56f7c1e7492b142b",
+      "width": 393,
+      "height": 852,
+      "project": "phone",
+      "id": "attached-endpoint-inspection"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/inspect-a-real-attached-rift-system-in-3-player-remote-exploration/090-attached-map-restored-phone-darwin.png",
+      "sha256": "bd83652fdb308d2b43f6316c16c8b5c915c62bc9652dc6c0cd35a4e8f2b4cf15",
+      "width": 393,
+      "height": 852,
+      "project": "phone",
+      "id": "attached-map-restored"
+    }
+  ],
+  "originalFourFailures": "Preserved and explicitly reconciled in OUTPOST_FAILURE_RECONCILIATION_184.json; initial156/160 run remains failed. Diagnostics are not substituted for formal results.",
+  "nextGate": "Independent phase012 evidence review remains pending, including ordinary3/4player attached-phone requirement acceptance. Linux/matchinghosted remain separate;013held.",
+  "changesUnder185": "Documentation/log routing only; no reruns, reference regeneration, source changes, pushes, merges or service restarts."
+}

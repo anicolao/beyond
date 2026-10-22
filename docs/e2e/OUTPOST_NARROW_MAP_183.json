@@ -1,0 +1,92 @@
+{
+  "prompt": 183,
+  "status": "Affected current macOS formal verification complete; independent012 acceptance and013 release remain held",
+  "branch": "feat/outpost-control",
+  "head": "02a5496174a051f7f7986219696143b0617c1645 plus uncommitted012",
+  "coverage": {
+    "newStories": "Ordinary three/four-player remote Rift discovery and Exploration, paired desktop/phone, distinct normal anonymous controllers",
+    "fixedEntropyOnlyAtBegin": "55555555-5555-4555-8555-000000000003",
+    "actualSystem": "Teegarden\u2019s Star",
+    "actualParent": "Lalande 21185 / a-1",
+    "publicLocations": 10,
+    "canonicalEdges": 15,
+    "checks": [
+      "all9 printed nodes plus attachedSystem separated",
+      "actual narrow connector clears unrelated nodes by2px",
+      "Sol \u2192 Lalande21185 \u2192 Teegarden\u2019sStar costs2 unpaid jumps",
+      "full card inspection and Escape focus return",
+      "clear unpaid route without moving ships",
+      "reload/continue/Exploration and return to actual route controls",
+      "ordinary Commit no movement reachesProduction"
+    ],
+    "phoneActorDimensions": [
+      393,
+      852
+    ],
+    "limitation": "Ordinary attached replay exercises a-1, not all four attachment parents; prior structural24case geometry proof covers all4 parents at3 widths for3/4 counts."
+  },
+  "generation": {
+    "result": "4/4 PASS with unchanged reporter parity",
+    "frames": 398,
+    "log": "/Users/anicolao/projects/games/beyond/tmp/outposts183-candidates2.log"
+  },
+  "exact": {
+    "variants": 18,
+    "allGeneratingFalse": true,
+    "frames": 1456,
+    "newVariants": 4,
+    "newFrames": 398,
+    "walkthroughGroups": 9,
+    "parityAndLinksPassed": true,
+    "noSnapshotUpdate": true,
+    "phoneActorsActually393x852": true,
+    "priorFullRun": "outposts182-full-exact2:160/160,11001frames preserved; no new164-story full-run claim",
+    "duration": "4.9m"
+  },
+  "exactLog": "/Users/anicolao/projects/games/beyond/tmp/outposts183-exact.log",
+  "exactAudit": "/Users/anicolao/projects/games/beyond/tmp/outposts183-exact-story-audit.json",
+  "scopeAudit": {
+    "priorDiscoveryFramesChecked": 1058,
+    "priorDiscoveryChanges": [],
+    "unchangedFrozenProductionAnd012CodeFiles": 111,
+    "newCandidateVariants": 4,
+    "newCandidateFrames": 398,
+    "counts": {
+      "Inspect a real attached Rift System in 3-player remote Exploration / desktop": 93,
+      "Inspect a real attached Rift System in 4-player remote Exploration / phone": 106,
+      "Inspect a real attached Rift System in 3-player remote Exploration / phone": 93,
+      "Inspect a real attached Rift System in 4-player remote Exploration / desktop": 106
+    },
+    "method": "Compare original182 frame hashes; code-only source-freeze check excludes Markdown finalized after that freeze. No production changes under183. Formal generation4/4 and reporter passed; exact comparison separately pending."
+  },
+  "guardAndRulesBytesEqualParent": true,
+  "unchangedHelperFiles": 7,
+  "history": {
+    "initialGeneration": "2phones PASS / 2desktop FAIL: desktop dense Exploration overview intentionally hides commit; test corrected to use visible Route editor before committing. Preserved original logs/traces and regenerated all4 successfully; no production or CSS change.",
+    "path": "/Users/anicolao/projects/games/beyond/tmp/outposts183-candidates-evidence",
+    "diagnosticFixtureCorrections": "Standard3/4 setup reveals Teegarden\u2019sStar rather than two-player EpsilonIndi. Standalone loop reused immutable crypto override; corrected to separate processes/contexts. These are harness issues, not claimed product recovery."
+  },
+  "references": {
+    "priorDiscoveryFramesUnchanged": 1058,
+    "newActivePaths": 398,
+    "newInventory": "/Users/anicolao/projects/games/beyond/tmp/outposts183-new-reference-staging-inventory.json",
+    "supersededLocalFilesPreservedNotToStage": 2,
+    "previousFullRun": "160/160,11001frames; preserved. No new164-story single full-run claim."
+  },
+  "pending": [
+    "independent012 final review",
+    "Linux exact and matching-head hosted gates",
+    "older PR13 exact-source compiler503/native cohort failures remain separate",
+    "013 not released"
+  ],
+  "publication": "No commit, push, merge or new pipeline run under183",
+  "liveReview": "http://127.0.0.1:5207/; original services and controllers preserved",
+  "supportingChecks": {
+    "types": "0errors/0warnings",
+    "policy": "PASS",
+    "unchangedCaptureGuardTests": "51/51PASS",
+    "diffCheck": "PASS",
+    "tooling": "64PASS retained from182; tooling bytes unchanged",
+    "backend": "244PASS3464assertions retained from180; canonical rules and production code unchanged under183"
+  }
+}

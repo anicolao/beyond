@@ -1,0 +1,34 @@
+{
+  "prompt": 175,
+  "reviewerAuthored": true,
+  "finding": "Historical pale eyebrow on ivory; unsupported portrait shared mats intercepted inspection",
+  "contrast": {
+    "currentProductionStyle": "OutpostInspection.svelte .eyebrow explicit#405043 at desktop and4K; already present in local current component",
+    "computedColor": "rgb(64,80,67)",
+    "computedBackground": "linear-gradient(130deg,rgb(246,236,212),rgb(217,196,155))",
+    "ratioMinimum": 5.035588410141697,
+    "ratioMaximum": 7.3032314468436175,
+    "required": 4.5,
+    "method": "WCAG sRGB linearized relative luminance of computed foreground and gradient endpoint colors; darkest endpoint gives worst contrast",
+    "rawComputed": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/contrast175-before/computed.json",
+    "screenshot": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/contrast175-before/outpost-label-1280.png"
+  },
+  "freshModeEvidence": {
+    "remote": {
+      "phone": "393\u00d7852, actual agent host identity",
+      "desktop": "1280\u00d7720, distinct agent guest identity",
+      "directory": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/readers175",
+      "log": "/Users/anicolao/projects/games/beyond/tmp/outposts175-readers.log"
+    },
+    "shared": {
+      "north": "1280\u00d7640/native3840\u00d72160, agent-owned shared table",
+      "corner": "1280\u00d7640/native3840\u00d72160, separate agent-owned four-seat shared table",
+      "cornerDirectory": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/corner175",
+      "cornerLog": "/Users/anicolao/projects/games/beyond/tmp/outposts175-corner.log"
+    },
+    "checks": "Original screen-fit/touch/polygon predicates, full production/rules detail access, Tab/ShiftTab loop, regionEnd scroll and final note visible, Escape returns exact opener; PASS",
+    "state": "Only ordinary navigation/keyboard; no forced click/game-state injection; saved storageState resumes same agent identities, never reviewer controller"
+  },
+  "preservedFailure": "continuation-phone-shared-blocked-393 remains unsupported shared-phone failure, explicitly NOT remote proof",
+  "limits": "Current fresh rechecks are read-only; prior ordinary remote tie/exceed/disc-return/offturn automation and bonus replays remain separate history. No012full acceptance/formal baselines claimed."
+}

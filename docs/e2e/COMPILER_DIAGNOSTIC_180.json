@@ -1,0 +1,804 @@
+{
+  "balanced": {
+    "sourceSha256": "9914f66cd3bdcf6a34b6345d21c45e14b416fc7f887119267d58f7b4c499f98a",
+    "bytes": 120877,
+    "elapsedMs": 5370.072208,
+    "status": 503,
+    "serviceError": {
+      "code": 503,
+      "status": "UNAVAILABLE",
+      "message": "The service is currently unavailable.",
+      "detailTypes": []
+    },
+    "deployed": false,
+    "liveEmulatorsChanged": false,
+    "canonicalWorkingTreeChanged": false
+  },
+  "unreachableHelperRemoval": {
+    "proof": {
+      "hypothesis": "Remove only lexically unreachable function definitions; leave every allow/match condition and all reachable function bytes unchanged. Read-only Rules:test experiment, never deployment.",
+      "canonicalSha256": "d71de365641d91dee1d1479efaf663060af7765bc33af7ee63b773685df22c67",
+      "candidateSha256": "c8105d04cae619eed004b97ded8cbf288ed7e9320cb59119a1d34424dc22c139",
+      "bytes": 117847,
+      "functions": 237,
+      "reachable": 233,
+      "roots": [
+        "signedIn",
+        "owned",
+        "owned",
+        "shape",
+        "linked",
+        "owned",
+        "owned",
+        "shape",
+        "linked",
+        "signedIn",
+        "root",
+        "signedIn",
+        "root",
+        "owner",
+        "valid",
+        "signedIn",
+        "signedIn",
+        "remoteShape",
+        "link",
+        "signedIn",
+        "isRemote",
+        "link",
+        "remoteShape",
+        "signedIn",
+        "isRemote",
+        "path",
+        "path",
+        "signedIn",
+        "isRemote",
+        "path",
+        "path",
+        "signedIn",
+        "validRemoteEvent",
+        "signedIn",
+        "sameTurnRoot",
+        "validTurnProjection",
+        "signedIn",
+        "turnEvent",
+        "signedIn",
+        "signedIn"
+      ],
+      "removed": [
+        {
+          "name": "upgradeAt",
+          "bytes": 226
+        },
+        {
+          "name": "removeShipAt",
+          "bytes": 99
+        },
+        {
+          "name": "levelAt",
+          "bytes": 123
+        },
+        {
+          "name": "changedPowerAt",
+          "bytes": 236
+        }
+      ],
+      "largestCallTrees": [
+        [
+          "turnEvent",
+          {
+            "depth": 12,
+            "expandedCalls": 1453
+          }
+        ],
+        [
+          "discoveryTransition",
+          {
+            "depth": 11,
+            "expandedCalls": 1106
+          }
+        ],
+        [
+          "discoveryStep",
+          {
+            "depth": 10,
+            "expandedCalls": 886
+          }
+        ],
+        [
+          "automaticDiscoveryStep",
+          {
+            "depth": 8,
+            "expandedCalls": 365
+          }
+        ],
+        [
+          "turnTransition",
+          {
+            "depth": 8,
+            "expandedCalls": 342
+          }
+        ],
+        [
+          "extraManualEffect",
+          {
+            "depth": 9,
+            "expandedCalls": 269
+          }
+        ],
+        [
+          "noDueClaim",
+          {
+            "depth": 7,
+            "expandedCalls": 187
+          }
+        ],
+        [
+          "validTurnProjection",
+          {
+            "depth": 8,
+            "expandedCalls": 105
+          }
+        ],
+        [
+          "achievementClaimTransition",
+          {
+            "depth": 7,
+            "expandedCalls": 104
+          }
+        ],
+        [
+          "manualEvent",
+          {
+            "depth": 5,
+            "expandedCalls": 97
+          }
+        ],
+        [
+          "manualJump",
+          {
+            "depth": 8,
+            "expandedCalls": 85
+          }
+        ],
+        [
+          "plannedJump",
+          {
+            "depth": 7,
+            "expandedCalls": 82
+          }
+        ],
+        [
+          "eligibleClaim",
+          {
+            "depth": 6,
+            "expandedCalls": 82
+          }
+        ],
+        [
+          "immediateChoice",
+          {
+            "depth": 4,
+            "expandedCalls": 74
+          }
+        ],
+        [
+          "wideJumpProjection",
+          {
+            "depth": 7,
+            "expandedCalls": 73
+          }
+        ]
+      ],
+      "deployed": false,
+      "canonicalModified": false
+    },
+    "result": {
+      "sourceSha256": "c8105d04cae619eed004b97ded8cbf288ed7e9320cb59119a1d34424dc22c139",
+      "bytes": 117847,
+      "elapsedMs": 5402.285584,
+      "status": 503,
+      "serviceError": {
+        "code": 503,
+        "status": "UNAVAILABLE",
+        "message": "The service is currently unavailable.",
+        "detailTypes": []
+      },
+      "deployed": false,
+      "liveEmulatorsChanged": false,
+      "canonicalWorkingTreeChanged": false
+    }
+  },
+  "captureProbe": {
+    "path": "tmp/capture-probe180-1792615108694",
+    "current": {
+      "captureMs": 453.3946,
+      "totalMs": 638.0165,
+      "exactReferencePixels": true
+    },
+    "defaultPng": {
+      "captureMs": 596.1785,
+      "totalMs": 653.4916,
+      "exactReferencePixels": true
+    },
+    "fromSurfaceFalse": "Protocol error: Unable to capture screenshot; experiment stopped, failure preserved",
+    "adopted": false
+  },
+  "conclusion": "No proven equivalent-source repair. Full function bodies still503 even with all permissions false; first119bodies returns200/warnings, second118bodies503; each59-body half of the latter returns200. This bounds a dependency/aggregate interaction in artificial null-stub diagnostic context, not a definitive canonical root cause. All suppressive/null-stub policies are non-equivalent, fail-closed compiler diagnostics only and never deployable. Canonical rules/capture helpers/flags unchanged, no fallback or failed Linux reference adoption.",
+  "entrypointIsolation": {
+    "diagnosticOnly": true,
+    "notEquivalentProductionPolicy": true,
+    "restrictiveEntryPointSuppression": true,
+    "deployed": false,
+    "emulatorsChanged": false,
+    "canonicalChanged": false,
+    "rows": [
+      {
+        "name": "neither-gameplay-entrypoint",
+        "sha256": "360c608e527538e820be4e49b63e660d8f54c5514fd3db9959aebc0125dffcd6",
+        "bytes": 118303,
+        "elapsedMs": 6361.115708,
+        "status": 503,
+        "error": {
+          "code": 503,
+          "status": "UNAVAILABLE",
+          "message": "The service is currently unavailable."
+        }
+      },
+      {
+        "name": "projection-without-turn-event",
+        "sha256": "ded287810225bba1e47d296f0ddb5309f170cc6f18c0d6421e592786e3861c1d",
+        "bytes": 118466,
+        "elapsedMs": 5272.3507500000005,
+        "status": 503,
+        "error": {
+          "code": 503,
+          "status": "UNAVAILABLE",
+          "message": "The service is currently unavailable."
+        }
+      },
+      {
+        "name": "turn-event-without-projection",
+        "sha256": "8f23c8b35509ccaf8f313b05f8ec781cf3f6be62b27025f6f0f5fa6cb7fb6084",
+        "bytes": 118368,
+        "elapsedMs": 5202.354291999998,
+        "status": 503,
+        "error": {
+          "code": 503,
+          "status": "UNAVAILABLE",
+          "message": "The service is currently unavailable."
+        }
+      }
+    ]
+  },
+  "restrictiveFunctionHalves": {
+    "diagnosticOnly": true,
+    "everyPermissionFalse": true,
+    "notEquivalentProductionPolicies": true,
+    "deployed": false,
+    "emulatorsChanged": false,
+    "canonicalChanged": false,
+    "rows": [
+      {
+        "name": "all-bodies-no-permissions",
+        "originalBodies": 237,
+        "sha256": "f55a4992f2937e294e8b905e1ec94f56392cee480fe530bb3eb91971ac699a96",
+        "bytes": 116040,
+        "elapsedMs": 5320.268208,
+        "status": 503,
+        "error": {
+          "code": 503,
+          "status": "UNAVAILABLE",
+          "message": "The service is currently unavailable."
+        }
+      },
+      {
+        "name": "all-stubs-no-permissions",
+        "originalBodies": 0,
+        "sha256": "6447d1b8fe6c643a21a3e2dce95551f68b0443ce9ec753f475687bbcc54a23eb",
+        "bytes": 17401,
+        "elapsedMs": 409.84320899999966,
+        "status": 200,
+        "issueCount": 1062,
+        "issuesBySeverity": {
+          "WARNING": 1062
+        },
+        "exampleIssues": [
+          {
+            "severity": "WARNING",
+            "description": "Unused function: signedIn.",
+            "sourcePosition": {
+              "fileName": "firestore.rules",
+              "line": 4,
+              "column": 14,
+              "currentOffset": 102,
+              "endOffset": 109
+            }
+          },
+          {
+            "severity": "WARNING",
+            "description": "Unused function: setupSettings.",
+            "sourcePosition": {
+              "fileName": "firestore.rules",
+              "line": 5,
+              "column": 14,
+              "currentOffset": 143,
+              "endOffset": 155
+            }
+          },
+          {
+            "severity": "WARNING",
+            "description": "Unused variable: s.",
+            "sourcePosition": {
+              "fileName": "firestore.rules",
+              "line": 5,
+              "column": 28,
+              "currentOffset": 157,
+              "endOffset": 157
+            }
+          }
+        ]
+      },
+      {
+        "name": "first-half-no-permissions",
+        "originalBodies": 119,
+        "sha256": "d37f1ee17ca4b8e41210b6a11cf1cbf5fcd0b4c2391810de6a0c4e51f3b66dc9",
+        "bytes": 66973,
+        "elapsedMs": 2137.3963329999997,
+        "status": 200,
+        "issueCount": 656,
+        "issuesBySeverity": {
+          "WARNING": 656
+        },
+        "exampleIssues": [
+          {
+            "severity": "WARNING",
+            "description": "Invalid variable name: request.",
+            "sourcePosition": {
+              "fileName": "firestore.rules",
+              "line": 4,
+              "column": 34,
+              "currentOffset": 122,
+              "endOffset": 128
+            }
+          },
+          {
+            "severity": "WARNING",
+            "description": "Unused function: owned.",
+            "sourcePosition": {
+              "fileName": "firestore.rules",
+              "line": 9,
+              "column": 16,
+              "currentOffset": 860,
+              "endOffset": 864
+            }
+          },
+          {
+            "severity": "WARNING",
+            "description": "Invalid variable name: request.",
+            "sourcePosition": {
+              "fileName": "firestore.rules",
+              "line": 9,
+              "column": 68,
+              "currentOffset": 912,
+              "endOffset": 918
+            }
+          }
+        ]
+      },
+      {
+        "name": "second-half-no-permissions",
+        "originalBodies": 118,
+        "sha256": "877242bed1876666b3332c0fe1eb28fe67877c6ddd799076467f0769ccb5175a",
+        "bytes": 66468,
+        "elapsedMs": 5128.225208,
+        "status": 503,
+        "error": {
+          "code": 503,
+          "status": "UNAVAILABLE",
+          "message": "The service is currently unavailable."
+        }
+      }
+    ]
+  },
+  "restrictiveBisection": {
+    "diagnosticOnly": true,
+    "everyPermissionFalse": true,
+    "notEquivalentProductionPolicies": true,
+    "otherBodiesNullStubs": true,
+    "deployed": false,
+    "emulatorsChanged": false,
+    "canonicalChanged": false,
+    "requests": 2,
+    "rows": [
+      {
+        "name": "compiler180-bisect-1-119-177",
+        "sha256": "8bf808af9ab99b4955b58ef6ce9ac783c20612f320060318d67ab0d07394ac3d",
+        "bytes": 36921,
+        "elapsedMs": 2964.180542,
+        "indices": [
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177
+        ],
+        "functions": [
+          "regularAdjacent",
+          "connected",
+          "ownedJumpStart",
+          "ownedJumpLeg",
+          "legalJumpHop",
+          "legalJumpPath",
+          "jumpLegDelta",
+          "solarTarget",
+          "solarLegCost",
+          "solarCost",
+          "jumpedOne",
+          "jumpedPair",
+          "affordableSolarJump",
+          "plannedJumpPair",
+          "jumpSpentAt",
+          "jumpFeeAt",
+          "jumpCost",
+          "jumpLegValidAt",
+          "wideJumpBudget",
+          "wideJumpPlan",
+          "jumpShipAt",
+          "movingShips",
+          "appliedLegAt",
+          "wideJumpApplied",
+          "wideJumpChoiceProjection",
+          "wideJumpAdvanceProjection",
+          "wideJumpProjection",
+          "plannedJump",
+          "manualJump",
+          "applyJump",
+          "jumpLocations",
+          "legPowerDelta",
+          "smallSettleJumpPower",
+          "widePowerProjection",
+          "widePowerQueue",
+          "settleJumpPower",
+          "controlEntry",
+          "fleetAt",
+          "uniquePowerOwner",
+          "controlWinner",
+          "checkControl",
+          "loseControl",
+          "gainControlCard",
+          "isControlAt",
+          "gainAfterControls",
+          "addGain",
+          "takeControl",
+          "automaticControl",
+          "systemBonusQueue",
+          "ownGainAt",
+          "ownGains",
+          "gainControlBonus",
+          "manualUpgrade",
+          "bonusShip",
+          "copyKnown",
+          "copyDiscovered",
+          "immediateChoice",
+          "bonusResearchI",
+          "marchResponse"
+        ],
+        "status": 200,
+        "errorIssues": 0,
+        "warningIssues": 768
+      },
+      {
+        "name": "compiler180-bisect-2-178-236",
+        "sha256": "dd9a0f3bce41ae7a9c906088ee41238c3005b5a95a31d9f14a04f511e6092375",
+        "bytes": 46948,
+        "elapsedMs": 2204.749292,
+        "indices": [
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          198,
+          199,
+          200,
+          201,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215,
+          216,
+          217,
+          218,
+          219,
+          220,
+          221,
+          222,
+          223,
+          224,
+          225,
+          226,
+          227,
+          228,
+          229,
+          230,
+          231,
+          232,
+          233,
+          234,
+          235,
+          236
+        ],
+        "functions": [
+          "exhaustedPopulation",
+          "optionalSystemQueue",
+          "relocateSupplyToA",
+          "optionalSystemBuild",
+          "manualSystemBonus",
+          "extraManualEffect",
+          "cubeResult",
+          "advanceCube",
+          "prototypeBonus",
+          "cubeResponse",
+          "manualEvent",
+          "noOtherYard",
+          "automaticBonusShip",
+          "noUpgradeAt",
+          "noEligibleUpgrade",
+          "exhaustedFleetEffect",
+          "prototypeDispatch",
+          "automaticDiscoveryStep",
+          "discoveryStep",
+          "prepareDiscoveryTransition",
+          "claimAt",
+          "alreadyClaimed",
+          "countClaimAt",
+          "claimCount",
+          "sameTurnClaimAt",
+          "claimedThisTurn",
+          "claimAvailable",
+          "ownedTechnologyAt",
+          "allSixOwned",
+          "strongFleet",
+          "currentSystem",
+          "specialtyTrack",
+          "matchesSpecialty",
+          "ownedSpecialty",
+          "specialtyCount",
+          "eligibleClaim",
+          "noDueClaim",
+          "achievementClaimTransition",
+          "blackMarketTransition",
+          "prepareFleetPowerTransition",
+          "technologyActionLevelIs",
+          "technologyActionOre",
+          "technologyActionPopulation",
+          "technologyActionBuild",
+          "technologyActionPayment",
+          "technologyActionQueueMatches",
+          "basicFleetPayment",
+          "basicFleetTransition",
+          "technologyActionTransition",
+          "discoveryTransition",
+          "ordinaryFleetQueue",
+          "ordinaryFleetChange",
+          "unindexedHomeFleet",
+          "unpreparedFleetChange",
+          "turnTransition",
+          "continuationPlayFrame",
+          "continuationFrame",
+          "validTurnProjection",
+          "turnEvent"
+        ],
+        "status": 200,
+        "errorIssues": 0,
+        "warningIssues": 725
+      }
+    ],
+    "outcomes": [
+      {
+        "indices": [
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          198,
+          199,
+          200,
+          201,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215,
+          216,
+          217,
+          218,
+          219,
+          220,
+          221,
+          222,
+          223,
+          224,
+          225,
+          226,
+          227,
+          228,
+          229,
+          230,
+          231,
+          232,
+          233,
+          234,
+          235,
+          236
+        ],
+        "interpretation": "Neither half alone503; dependency/aggregate interaction remains, no single-body isolation"
+      }
+    ],
+    "remainingQueue": []
+  },
+  "fullRestrictiveCompilerResponses": "tmp/compiler180-halves-results.json; preserved with all warnings and source hashes. This documentation summarizes warning counts without discarding raw evidence."
+}

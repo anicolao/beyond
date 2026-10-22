@@ -1,0 +1,48 @@
+{
+  "prompt": 159,
+  "phase": "012",
+  "branch": "feat/outpost-control",
+  "base": "02a5496174a051f7f7986219696143b0617c1645",
+  "server": "http://127.0.0.1:5207/",
+  "observer": "http://127.0.0.1:5207/remote/?room=addf80dd-b8ec-4a36-83b9-36e479da292e",
+  "observerProof": {
+    "freshIdentity": true,
+    "controllerTransferred": false,
+    "actorControlsAbsent": true,
+    "inspectionAccessible": true
+  },
+  "localChecks": {
+    "targetedTests": 17,
+    "assertions": 122,
+    "types": "0 errors,0 warnings",
+    "formal012": "not generated; independent exploratory review pending"
+  },
+  "evidenceRoot": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review",
+  "evidenceDirectories": [
+    "remote012-followup",
+    "offturn012-followup",
+    "bonus-proof012",
+    "readers012-v3",
+    "readers012-v4",
+    "long012",
+    "empty012-finish",
+    "empty012-handoff",
+    "observer012"
+  ],
+  "ordinaryFlows": [
+    "remote separate identities tie then exceed; both actual production mats",
+    "loss on rivals trade turn; automation retained; gain bonus exactly once",
+    "empty retained outpost after simultaneous departure; all ships decommissioned; Finish handoff and reload",
+    "phone/desktop/north/corner640/native4K; all detail pages; keyboard scroll and Escape focus return",
+    "four24-character names; production geometry and touch guards"
+  ],
+  "limitations": [
+    "No012 formal baseline/exact/full backend gate yet",
+    "Three-way withdrawal ties and exhausted production-disc placeholders have targeted tests, not claimed ordinary UI coverage",
+    "One initial prototype diagnostic PNG overwritten by continuation; original failure log retained, initial image only in conversation output; later failures uniquely named"
+  ],
+  "pending011": "PR13 Linux exact/native and matching-head hosted gates remain separate; no failed native cohort adopted",
+  "protectedServices": "5206,5207,Auth9397,Firestore8297 retained; no reviewer identity/controller transfer",
+  "noMerge": true,
+  "phase013": "not released"
+}

@@ -1,0 +1,27 @@
+{
+  "prompt": 173,
+  "reviewerAuthored": true,
+  "phase": "011",
+  "localAcceptance": "ACCEPTED",
+  "provenance172": "Closed by independent comparison; map-tile containment explains46,632 changed pixels; original61-pixel variation remains recorded",
+  "inactiveReferences": "15 independently verified restored/preserved",
+  "pr": {
+    "url": "https://github.com/anicolao/beyond/pull/13",
+    "branch": "feat/jump-planning",
+    "base": "feat/fleet-management",
+    "head": "02a5496174a051f7f7986219696143b0617c1645",
+    "state": "OPEN",
+    "merged": false
+  },
+  "next": {
+    "phase": "012",
+    "branch": "feat/outpost-control",
+    "baseBranch": "feat/jump-planning",
+    "baseHead": "02a5496174a051f7f7986219696143b0617c1645",
+    "server": "http://127.0.0.1:5207/",
+    "status": "Local exploratory implementation and real remote/shared replay evidence prepared; independent review precedes formal baseline generation"
+  },
+  "services": "5206/5207HTTP200; original review backend/identities/evidence preserved",
+  "pending": "011Linux exact/native and matching hosted gates remain separate final obligations",
+  "noDuplicateRun": true
+}

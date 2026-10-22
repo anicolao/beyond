@@ -1,0 +1,117 @@
+{
+  "failedCohort": "PR13 native119386320287 excluded",
+  "method": "Immediate pw:api/test.trace child spans for the two failed capture steps; concurrent spans overlap and must not be added indiscriminately. Full trace/diagnostic archive SHA retained under176.",
+  "captures": [
+    {
+      "trace": "test-results/005-technology-discovery-d-6c115-eal-Dimensional-Rift-System-tabletop-4k/trace.zip",
+      "step": "test.step@350",
+      "operations": [
+        {
+          "title": "Bring to front",
+          "startFromStep": 0.802,
+          "durationMs": 3.381
+        },
+        {
+          "title": "Evaluate",
+          "startFromStep": 1.59,
+          "durationMs": 711.354
+        },
+        {
+          "title": "Wait for function",
+          "startFromStep": 2.411,
+          "durationMs": 1600.413
+        },
+        {
+          "title": "Mouse move",
+          "startFromStep": 4.884,
+          "durationMs": 708.343
+        },
+        {
+          "title": "Wait for function",
+          "startFromStep": 1604.39,
+          "durationMs": 5.588
+        },
+        {
+          "title": "Create CDP session",
+          "startFromStep": 1611.175,
+          "durationMs": 0.623
+        },
+        {
+          "title": "Send CDP command",
+          "startFromStep": 1612.484,
+          "durationMs": 383.862
+        },
+        {
+          "title": "Detach CDP session",
+          "startFromStep": 2002.429,
+          "durationMs": 24.833
+        },
+        {
+          "title": "Shared capture deadline",
+          "startFromStep": 2043.305,
+          "durationMs": 0.584
+        }
+      ]
+    },
+    {
+      "trace": "test-results/008-trading-trading-tablet-d1ab2-on-at-physical-shared-seats-tabletop-4k/trace.zip",
+      "step": "test.step@1667",
+      "operations": [
+        {
+          "title": "Bring to front",
+          "startFromStep": 0.809,
+          "durationMs": 2.97
+        },
+        {
+          "title": "Evaluate",
+          "startFromStep": 1.634,
+          "durationMs": 4.044
+        },
+        {
+          "title": "Wait for function",
+          "startFromStep": 2.536,
+          "durationMs": 3.752
+        },
+        {
+          "title": "Mouse move",
+          "startFromStep": 4.613,
+          "durationMs": 643.904
+        },
+        {
+          "title": "Wait for function",
+          "startFromStep": 650.255,
+          "durationMs": 3.883
+        },
+        {
+          "title": "Create CDP session",
+          "startFromStep": 655.456,
+          "durationMs": 0.793
+        },
+        {
+          "title": "Send CDP command",
+          "startFromStep": 656.984,
+          "durationMs": 1445.008
+        },
+        {
+          "title": "Detach CDP session",
+          "startFromStep": 2103.191,
+          "durationMs": 77.838
+        },
+        {
+          "title": "Shared capture deadline",
+          "startFromStep": 2182.086,
+          "durationMs": 0.423
+        }
+      ]
+    }
+  ],
+  "riftConsoleObservation": {
+    "initialStatus": "synced",
+    "initialConsoleMsAfterStep": 713.307,
+    "postWarmStatus": "synced",
+    "postWarmConsoleMsAfterStep": 1606.022,
+    "interpretation": "Initial check emitted no saving/offline status in this span;1600ms wait call is not evidence of a1600ms pending Firestore acknowledgement. Browser/host protocol or scheduling cause remains unproven."
+  },
+  "localProbe": "Current vs defaultPNG exact RGBA match, default slower on this Mac; fromSurface=false failed. No helper/flag/source adoption, no Linux repair claimed.",
+  "limits": "Capture2000ms,story120000ms,backend5000ms and exact/native guards unchanged. No failed archive adopted."
+}

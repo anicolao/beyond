@@ -1,0 +1,419 @@
+{
+  "scope": "New012 records aligned by semantic stepID rather than shifted PNG ordinal; fullRGBA decode for every changed shared step. No pixel tolerance, masks or reference transforms.",
+  "records": 28,
+  "priorRecords": 28,
+  "unchanged": 1805,
+  "changed": [
+    {
+      "slug": "choose-two-system-bonus-rewards-at-four-shared-cardinal-seats",
+      "project": "tabletop-4k",
+      "id": "split-build-built",
+      "unchanged": false,
+      "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-map-refresh/012-outposts/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/026-split-build-built-tabletop-4k-darwin.png",
+      "after": "tests/e2e/012-outposts/screenshots/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/026-split-build-built-tabletop-4k-darwin.png",
+      "beforeSha256": "79d65000582caa4a561938e7989515c4beec618cd5f287bff127defdda466233",
+      "afterSha256": "0c21dc9d113a4984ef1724d1c28d07e9670be2803f9ba92a50cecda0a01251a6",
+      "rgbaPixels": 290,
+      "bounds": {
+        "x0": 1796,
+        "y0": 1145,
+        "x1": 1820,
+        "y1": 1158
+      },
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "slug": "choose-two-system-bonus-rewards-at-four-shared-cardinal-seats",
+      "project": "tabletop-4k",
+      "id": "split-build-editor",
+      "unchanged": false,
+      "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-map-refresh/012-outposts/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/027-split-build-editor-tabletop-4k-darwin.png",
+      "after": "tests/e2e/012-outposts/screenshots/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/028-split-build-editor-tabletop-4k-darwin.png",
+      "beforeSha256": "79d65000582caa4a561938e7989515c4beec618cd5f287bff127defdda466233",
+      "afterSha256": "0c21dc9d113a4984ef1724d1c28d07e9670be2803f9ba92a50cecda0a01251a6",
+      "rgbaPixels": 290,
+      "bounds": {
+        "x0": 1796,
+        "y0": 1145,
+        "x1": 1820,
+        "y1": 1158
+      },
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "slug": "choose-two-system-bonus-rewards-at-four-shared-cardinal-seats",
+      "project": "tabletop-4k",
+      "id": "split-first-ship",
+      "unchanged": false,
+      "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-map-refresh/012-outposts/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/028-split-first-ship-tabletop-4k-darwin.png",
+      "after": "tests/e2e/012-outposts/screenshots/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/029-split-first-ship-tabletop-4k-darwin.png",
+      "beforeSha256": "79d65000582caa4a561938e7989515c4beec618cd5f287bff127defdda466233",
+      "afterSha256": "0c21dc9d113a4984ef1724d1c28d07e9670be2803f9ba92a50cecda0a01251a6",
+      "rgbaPixels": 290,
+      "bounds": {
+        "x0": 1796,
+        "y0": 1145,
+        "x1": 1820,
+        "y1": 1158
+      },
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "slug": "choose-two-system-bonus-rewards-at-four-shared-cardinal-seats",
+      "project": "tabletop-4k",
+      "id": "split-first-endpoint",
+      "unchanged": false,
+      "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-map-refresh/012-outposts/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/029-split-first-endpoint-tabletop-4k-darwin.png",
+      "after": "tests/e2e/012-outposts/screenshots/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/030-split-first-endpoint-tabletop-4k-darwin.png",
+      "beforeSha256": "5e576c7ae0afbdf974a43f7ddf8f6d8cc56f0e57523129826670929b9770e789",
+      "afterSha256": "c54a2e6a184c510ba3916b3cca1c12c4131541b8325ff7d54af17599cd0e29c0",
+      "rgbaPixels": 290,
+      "bounds": {
+        "x0": 1796,
+        "y0": 1145,
+        "x1": 1820,
+        "y1": 1158
+      },
+      "width": 3840,
+      "height": 2160
+    },
+    {
+      "slug": "choose-two-system-bonus-rewards-at-four-shared-cardinal-seats",
+      "project": "tabletop-4k",
+      "id": "split-second-ship",
+      "unchanged": false,
+      "before": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-map-refresh/012-outposts/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/030-split-second-ship-tabletop-4k-darwin.png",
+      "after": "tests/e2e/012-outposts/screenshots/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/031-split-second-ship-tabletop-4k-darwin.png",
+      "beforeSha256": "52007ed9e09a58cf9717065756374f9999702e112cc114052cecfc24ccc46349",
+      "afterSha256": "850ad8a024a694e699a0117810b68896ee31029c68c3738938d68c92388afba7",
+      "rgbaPixels": 290,
+      "bounds": {
+        "x0": 1796,
+        "y0": 1145,
+        "x1": 1820,
+        "y1": 1158
+      },
+      "width": 3840,
+      "height": 2160
+    }
+  ],
+  "added": [
+    {
+      "slug": "contest-an-ore-outpost-at-two-shared-cardinal-seats",
+      "project": "tabletop-4k",
+      "id": "ada-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-at-two-shared-cardinal-seats/017-ada-build-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-at-two-shared-cardinal-seats",
+      "project": "tabletop-4k",
+      "id": "bora-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-at-two-shared-cardinal-seats/029-bora-build-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-at-two-shared-cardinal-seats",
+      "project": "tabletop-4k",
+      "id": "bora-exceed-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-at-two-shared-cardinal-seats/054-bora-exceed-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "choose-a-multi-specialty-outpost-at-four-shared-cardinal-seats",
+      "project": "tabletop-4k",
+      "id": "split-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/choose-a-multi-specialty-outpost-at-four-shared-cardinal-seats/027-split-build-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers",
+      "project": "phone",
+      "id": "ada-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers/019-ada-build-map-phone-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers",
+      "project": "phone",
+      "id": "bora-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers/032-bora-build-map-phone-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers",
+      "project": "phone",
+      "id": "bora-exceed-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers/059-bora-exceed-map-phone-darwin.png"
+    },
+    {
+      "slug": "choose-the-order-of-two-gained-system-bonuses-with-separate-remote-controllers",
+      "project": "phone",
+      "id": "split-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/choose-the-order-of-two-gained-system-bonuses-with-separate-remote-controllers/034-split-build-map-phone-darwin.png"
+    },
+    {
+      "slug": "choose-two-system-bonus-rewards-at-four-shared-cardinal-seats",
+      "project": "tabletop-4k",
+      "id": "split-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/027-split-build-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "choose-a-multi-specialty-outpost-at-four-shared-cardinal-seats",
+      "project": "desktop",
+      "id": "split-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/choose-a-multi-specialty-outpost-at-four-shared-cardinal-seats/027-split-build-map-desktop-darwin.png"
+    },
+    {
+      "slug": "retain-an-empty-outpost-without-ships-at-two-shared-corner-seats",
+      "project": "desktop",
+      "id": "claim-single-map",
+      "after": "tests/e2e/012-outposts/screenshots/retain-an-empty-outpost-without-ships-at-two-shared-corner-seats/018-claim-single-map-desktop-darwin.png"
+    },
+    {
+      "slug": "retain-an-empty-outpost-without-ships-at-two-shared-corner-seats",
+      "project": "desktop",
+      "id": "empty-depart-map",
+      "after": "tests/e2e/012-outposts/screenshots/retain-an-empty-outpost-without-ships-at-two-shared-corner-seats/033-empty-depart-map-desktop-darwin.png"
+    },
+    {
+      "slug": "retain-an-empty-outpost-without-any-owned-ships-with-separate-remote-controllers",
+      "project": "phone",
+      "id": "claim-single-map",
+      "after": "tests/e2e/012-outposts/screenshots/retain-an-empty-outpost-without-any-owned-ships-with-separate-remote-controllers/020-claim-single-map-phone-darwin.png"
+    },
+    {
+      "slug": "retain-an-empty-outpost-without-any-owned-ships-with-separate-remote-controllers",
+      "project": "phone",
+      "id": "empty-depart-map",
+      "after": "tests/e2e/012-outposts/screenshots/retain-an-empty-outpost-without-any-owned-ships-with-separate-remote-controllers/037-empty-depart-map-phone-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers",
+      "project": "desktop",
+      "id": "ada-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers/019-ada-build-map-desktop-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers",
+      "project": "desktop",
+      "id": "bora-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers/032-bora-build-map-desktop-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers",
+      "project": "desktop",
+      "id": "bora-exceed-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-and-return-the-former-owner-s-disc-with-separate-remote-controllers/059-bora-exceed-map-desktop-darwin.png"
+    },
+    {
+      "slug": "choose-two-system-bonus-rewards-at-four-shared-corner-seats",
+      "project": "desktop",
+      "id": "split-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/choose-two-system-bonus-rewards-at-four-shared-corner-seats/027-split-build-map-desktop-darwin.png"
+    },
+    {
+      "slug": "return-an-outpost-during-rival-trade-and-retain-automation-at-two-shared-cardinal-seats",
+      "project": "tabletop-4k",
+      "id": "offturn-ada-map",
+      "after": "tests/e2e/012-outposts/screenshots/return-an-outpost-during-rival-trade-and-retain-automation-at-two-shared-cardinal-seats/017-offturn-ada-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "return-an-outpost-during-rival-trade-and-retain-automation-at-two-shared-cardinal-seats",
+      "project": "tabletop-4k",
+      "id": "offturn-bora-map",
+      "after": "tests/e2e/012-outposts/screenshots/return-an-outpost-during-rival-trade-and-retain-automation-at-two-shared-cardinal-seats/027-offturn-bora-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "choose-two-system-bonus-rewards-at-four-shared-corner-seats",
+      "project": "tabletop-4k",
+      "id": "split-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/choose-two-system-bonus-rewards-at-four-shared-corner-seats/027-split-build-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "retain-an-empty-outpost-without-any-owned-ships-with-separate-remote-controllers",
+      "project": "desktop",
+      "id": "claim-single-map",
+      "after": "tests/e2e/012-outposts/screenshots/retain-an-empty-outpost-without-any-owned-ships-with-separate-remote-controllers/020-claim-single-map-desktop-darwin.png"
+    },
+    {
+      "slug": "retain-an-empty-outpost-without-any-owned-ships-with-separate-remote-controllers",
+      "project": "desktop",
+      "id": "empty-depart-map",
+      "after": "tests/e2e/012-outposts/screenshots/retain-an-empty-outpost-without-any-owned-ships-with-separate-remote-controllers/037-empty-depart-map-desktop-darwin.png"
+    },
+    {
+      "slug": "retain-an-empty-outpost-without-ships-at-two-shared-cardinal-seats",
+      "project": "tabletop-4k",
+      "id": "claim-single-map",
+      "after": "tests/e2e/012-outposts/screenshots/retain-an-empty-outpost-without-ships-at-two-shared-cardinal-seats/018-claim-single-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "retain-an-empty-outpost-without-ships-at-two-shared-cardinal-seats",
+      "project": "tabletop-4k",
+      "id": "empty-depart-map",
+      "after": "tests/e2e/012-outposts/screenshots/retain-an-empty-outpost-without-ships-at-two-shared-cardinal-seats/033-empty-depart-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-at-two-shared-corner-seats",
+      "project": "tabletop-4k",
+      "id": "ada-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-at-two-shared-corner-seats/017-ada-build-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-at-two-shared-corner-seats",
+      "project": "tabletop-4k",
+      "id": "bora-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-at-two-shared-corner-seats/029-bora-build-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-at-two-shared-corner-seats",
+      "project": "tabletop-4k",
+      "id": "bora-exceed-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-at-two-shared-corner-seats/055-bora-exceed-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "lose-control-during-a-rival-trade-while-keeping-permanent-automation-with-separate-remote-controllers",
+      "project": "desktop",
+      "id": "offturn-ada-map",
+      "after": "tests/e2e/012-outposts/screenshots/lose-control-during-a-rival-trade-while-keeping-permanent-automation-with-separate-remote-controllers/019-offturn-ada-map-desktop-darwin.png"
+    },
+    {
+      "slug": "lose-control-during-a-rival-trade-while-keeping-permanent-automation-with-separate-remote-controllers",
+      "project": "desktop",
+      "id": "offturn-bora-map",
+      "after": "tests/e2e/012-outposts/screenshots/lose-control-during-a-rival-trade-while-keeping-permanent-automation-with-separate-remote-controllers/030-offturn-bora-map-desktop-darwin.png"
+    },
+    {
+      "slug": "choose-the-gaining-owner-s-multi-specialty-disc-with-separate-remote-controllers",
+      "project": "desktop",
+      "id": "split-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/choose-the-gaining-owner-s-multi-specialty-disc-with-separate-remote-controllers/034-split-build-map-desktop-darwin.png"
+    },
+    {
+      "slug": "retain-an-empty-outpost-without-ships-at-two-shared-cardinal-seats",
+      "project": "desktop",
+      "id": "claim-single-map",
+      "after": "tests/e2e/012-outposts/screenshots/retain-an-empty-outpost-without-ships-at-two-shared-cardinal-seats/018-claim-single-map-desktop-darwin.png"
+    },
+    {
+      "slug": "retain-an-empty-outpost-without-ships-at-two-shared-cardinal-seats",
+      "project": "desktop",
+      "id": "empty-depart-map",
+      "after": "tests/e2e/012-outposts/screenshots/retain-an-empty-outpost-without-ships-at-two-shared-cardinal-seats/033-empty-depart-map-desktop-darwin.png"
+    },
+    {
+      "slug": "choose-a-multi-specialty-outpost-at-four-shared-corner-seats",
+      "project": "tabletop-4k",
+      "id": "split-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/choose-a-multi-specialty-outpost-at-four-shared-corner-seats/027-split-build-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "choose-two-system-bonus-rewards-at-four-shared-cardinal-seats",
+      "project": "desktop",
+      "id": "split-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/choose-two-system-bonus-rewards-at-four-shared-cardinal-seats/027-split-build-map-desktop-darwin.png"
+    },
+    {
+      "slug": "choose-a-multi-specialty-outpost-at-four-shared-corner-seats",
+      "project": "desktop",
+      "id": "split-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/choose-a-multi-specialty-outpost-at-four-shared-corner-seats/027-split-build-map-desktop-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-at-two-shared-cardinal-seats",
+      "project": "desktop",
+      "id": "ada-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-at-two-shared-cardinal-seats/017-ada-build-map-desktop-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-at-two-shared-cardinal-seats",
+      "project": "desktop",
+      "id": "bora-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-at-two-shared-cardinal-seats/029-bora-build-map-desktop-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-at-two-shared-cardinal-seats",
+      "project": "desktop",
+      "id": "bora-exceed-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-at-two-shared-cardinal-seats/054-bora-exceed-map-desktop-darwin.png"
+    },
+    {
+      "slug": "choose-the-gaining-owner-s-multi-specialty-disc-with-separate-remote-controllers",
+      "project": "phone",
+      "id": "split-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/choose-the-gaining-owner-s-multi-specialty-disc-with-separate-remote-controllers/034-split-build-map-phone-darwin.png"
+    },
+    {
+      "slug": "choose-the-order-of-two-gained-system-bonuses-with-separate-remote-controllers",
+      "project": "desktop",
+      "id": "split-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/choose-the-order-of-two-gained-system-bonuses-with-separate-remote-controllers/034-split-build-map-desktop-darwin.png"
+    },
+    {
+      "slug": "return-an-outpost-during-rival-trade-and-retain-automation-at-two-shared-cardinal-seats",
+      "project": "desktop",
+      "id": "offturn-ada-map",
+      "after": "tests/e2e/012-outposts/screenshots/return-an-outpost-during-rival-trade-and-retain-automation-at-two-shared-cardinal-seats/017-offturn-ada-map-desktop-darwin.png"
+    },
+    {
+      "slug": "return-an-outpost-during-rival-trade-and-retain-automation-at-two-shared-cardinal-seats",
+      "project": "desktop",
+      "id": "offturn-bora-map",
+      "after": "tests/e2e/012-outposts/screenshots/return-an-outpost-during-rival-trade-and-retain-automation-at-two-shared-cardinal-seats/027-offturn-bora-map-desktop-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-at-two-shared-corner-seats",
+      "project": "desktop",
+      "id": "ada-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-at-two-shared-corner-seats/017-ada-build-map-desktop-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-at-two-shared-corner-seats",
+      "project": "desktop",
+      "id": "bora-build-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-at-two-shared-corner-seats/029-bora-build-map-desktop-darwin.png"
+    },
+    {
+      "slug": "contest-an-ore-outpost-at-two-shared-corner-seats",
+      "project": "desktop",
+      "id": "bora-exceed-map",
+      "after": "tests/e2e/012-outposts/screenshots/contest-an-ore-outpost-at-two-shared-corner-seats/055-bora-exceed-map-desktop-darwin.png"
+    },
+    {
+      "slug": "retain-an-empty-outpost-without-ships-at-two-shared-corner-seats",
+      "project": "tabletop-4k",
+      "id": "claim-single-map",
+      "after": "tests/e2e/012-outposts/screenshots/retain-an-empty-outpost-without-ships-at-two-shared-corner-seats/018-claim-single-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "retain-an-empty-outpost-without-ships-at-two-shared-corner-seats",
+      "project": "tabletop-4k",
+      "id": "empty-depart-map",
+      "after": "tests/e2e/012-outposts/screenshots/retain-an-empty-outpost-without-ships-at-two-shared-corner-seats/033-empty-depart-map-tabletop-4k-darwin.png"
+    },
+    {
+      "slug": "lose-control-during-a-rival-trade-while-keeping-permanent-automation-with-separate-remote-controllers",
+      "project": "phone",
+      "id": "offturn-ada-map",
+      "after": "tests/e2e/012-outposts/screenshots/lose-control-during-a-rival-trade-while-keeping-permanent-automation-with-separate-remote-controllers/019-offturn-ada-map-phone-darwin.png"
+    },
+    {
+      "slug": "lose-control-during-a-rival-trade-while-keeping-permanent-automation-with-separate-remote-controllers",
+      "project": "phone",
+      "id": "offturn-bora-map",
+      "after": "tests/e2e/012-outposts/screenshots/lose-control-during-a-rival-trade-while-keeping-permanent-automation-with-separate-remote-controllers/030-offturn-bora-map-phone-darwin.png"
+    }
+  ],
+  "removed": [],
+  "independentAcceptance": false,
+  "reviewer182": "Scoped badge acceptance only; no phase012acceptance/013release",
+  "acceptedNativeSha256": "0c21dc9d113a4984ef1724d1c28d07e9670be2803f9ba92a50cecda0a01251a6",
+  "acceptedNativeFile": "/Users/anicolao/projects/games/beyond/tmp/local-outpost-review/round180-thumbnail/native-3840x2160.png",
+  "generatedNativeEqualsReviewedSource": true,
+  "allChangedSharedFrames": "Only290RGBA pixels in25x14badge; adjacent titles, routes and controls unchanged. Five frames are same native cardinal bonus story before ship arrives at that System.",
+  "addedBoundary": "50real Map view checkpoints before route selection, all required viewport pairs aligned",
+  "generation": "28/28PASS6.4m,1860frames; reporterPASS; candidate generation not comparison acceptance",
+  "fullExact": "160current-source independent comparisons running, no update-snapshots",
+  "originalRecords": "/Users/anicolao/projects/games/beyond/tmp/outposts182-map-candidates-evidence",
+  "beforeReferences": "/Users/anicolao/projects/games/beyond/tmp/outposts182-before-map-refresh",
+  "contractEvidence": "tmp/outposts182-unchanged-contract.json",
+  "sourceFreeze": "tmp/outposts182-source-freeze.json"
+}
