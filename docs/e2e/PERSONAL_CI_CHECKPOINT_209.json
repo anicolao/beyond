@@ -1,0 +1,21 @@
+{
+  "phase": "014",
+  "reviewedAppHead": "821c6c1560441b2bde59e61cfa88ac95cdb1ef29",
+  "repair": "Documentation checkout keeps full commit history and every source/text file, excludes materializing E2E raster files and fetches blobs lazily. Same prompt tests/history/whitespace commands.",
+  "evidence": "advanced209-pr16-docs2-check.json, check120022680286 annotations confirm runner ENOSPC during checkout",
+  "validation": "node --test scripts/check-prompts.test.mjs13/13PASS; whitespace clean",
+  "noChanges": [
+    "Application",
+    "Firestore",
+    "Reference PNG bytes",
+    "Capture/action/story/backend/readiness limits",
+    "Exact comparisons"
+  ],
+  "remainingGates": [
+    "Docs CI repair proof",
+    "Latest static initial-denial10s startup failure; original static PASS retained",
+    "Browser/native Firestore readiness failure before journeys; failed native cohort ineligible",
+    "Exact-source Rules:test503 and matching hosted functional review"
+  ],
+  "merged": false
+}

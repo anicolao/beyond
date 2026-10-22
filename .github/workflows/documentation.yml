@@ -15,6 +15,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          # Prompt history needs every commit, not gigabytes of raster blobs.
+          # Keep all text/source files and lazily fetch a historical blob if a check needs it.
+          sparse-checkout: |
+            /*
+            !/tests/e2e/**/screenshots/**
       - name: Test prompt enforcement
         run: node --test scripts/check-prompts.test.mjs
       - name: Check PR prompt history
