@@ -1,3 +1,4 @@
+import {currentSystems} from './colonization';
 import {canonicalCard} from '../cards/catalog';
 import {explorationBoard,type Location} from './manifest';
 import type {PublicSetup} from './setup';
@@ -13,7 +14,7 @@ export function discoveryMap(game:PublicSetup){
 export function specialty(initial:PublicSetup,state:PlayState,location:string){
  const printed=explorationBoard(initial.count).locations.find(l=>l.id===location);
  if(printed?.specialty)return printed.specialty;
- const system=[...initial.systems,...state.discovery!.systems].find(s=>s.slot===location);
+ const system=currentSystems(initial,state.discovery).find(s=>s.slot===location);
  const section=system&&canonicalCard(system.card).sections.find(s=>s.label==='Specialty');
  return section?.secondarySymbol?'either':section?.symbol==='food'?'food':section?.symbol==='ore'?'ore':undefined;
 }
@@ -51,7 +52,7 @@ export function validateJump(initial:PublicSetup,state:PlayState,position:string
   if(!ship||ship.id!==leg.ship||used.has(ship.id)||!Array.isArray(leg.path)||leg.path.length<2||leg.path[0]!==ship.location)throw new Error('Choose each owned ship once, starting at its current location.');used.add(ship.id);
   for(let i=1;i<leg.path.length;i++){
    if(!map.edges.some(([a,b])=>a===leg.path[i-1]&&b===leg.path[i]||b===leg.path[i-1]&&a===leg.path[i]))throw new Error('Follow actual adjacent jump connections.');
-   const system=[...initial.systems,...d.systems].find(s=>s.slot===leg.path[i]);
+   const system=currentSystems(initial,d).find(s=>s.slot===leg.path[i]);
    if(system?.card==='luytens-star'&&p.research.filter(id=>canonicalCard(id).technology?.level==='III').length<2)throw new Error('Luyten’s Star requires two Level III technologies.');
   }
   spent+=leg.path.length-1;

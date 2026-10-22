@@ -1,0 +1,75 @@
+{
+  "reviewerInstruction": "Prompt193",
+  "head": "1a7f02100fdf20076317d3cfa6804bc486ad7ebf",
+  "job": 119594352475,
+  "result": "FAIL159/164,1.6h;51capture guardsPASS",
+  "log": "/tmp/beyond-pr14-candidate-review.log",
+  "logSha256": "611cae74b1e0b665f5cc18fc303d16d7de01c8338603f3972f6ce2d5a4efc608",
+  "acceptedCohort": false,
+  "failures": [
+    {
+      "phase": "005",
+      "mode": "two-player shared4K",
+      "step": "Bora joins physical table",
+      "kind": "capture deadline",
+      "actualMs": 2004.2947010000353,
+      "limitMs": 2000,
+      "lastScreenshotMs": 429.941,
+      "finalWaitForFunctionMs": 1508.894
+    },
+    {
+      "phase": "006",
+      "mode": "two-cardinal shared4K",
+      "step": "mandatory one-level upgrade target",
+      "kind": "120000ms story timeout; send/detach closed-page secondary",
+      "framesBeforeFailure": 94,
+      "screenshotCommandsTotalMs": 71820.686
+    },
+    {
+      "phase": "007",
+      "mode": "four-corner shared4K",
+      "step": "Browse next public Level I face",
+      "kind": "120000ms story timeout; send/detach closed-page secondary",
+      "framesBeforeFailure": 98,
+      "screenshotCommandsTotalMs": 74151.524
+    },
+    {
+      "phase": "007",
+      "mode": "four-cardinal shared4K",
+      "step": "Receive printed gather resources",
+      "kind": "120000ms story timeout; send/detach closed-page secondary",
+      "framesBeforeFailure": 101,
+      "screenshotCommandsTotalMs": 74718.228
+    },
+    {
+      "phase": "010",
+      "mode": "four-corner shared4K",
+      "step": "first seat join, after seat-0-name",
+      "kind": "2000ms step/capture deadline",
+      "actualMs": 2025.7874970000703,
+      "limitMs": 2000,
+      "lastScreenshotMs": 447.216,
+      "finalWaitForFunctionMs": 1526.108
+    }
+  ],
+  "traceEvidence": "/Users/anicolao/projects/games/beyond/tmp/colonies193-pr14-native-trace-audit.json",
+  "smallFailureArtifact": 12407613595,
+  "smallFailureArtifactBytes": 36176313,
+  "largeCandidateArchive": {
+    "id": 12408492086,
+    "bytes": 28215755932,
+    "downloaded": false,
+    "accepted": false
+  },
+  "interpretation": "Measured aggregate screenshot cost contributes to120s exhaustion; pre-screenshot waits contribute to two capture overruns. No universal/root-cause repair established. Keep all budgets/guard predicates unchanged.",
+  "queuedRun": {
+    "run": 39708605667,
+    "browser": 119692435931,
+    "candidates": 119692436215,
+    "static": 119692436259,
+    "statusAtReviewerCheckpoint": "QUEUED, not a successful retry"
+  },
+  "publisher": "FAIL exact-source503 remains separate",
+  "storage": "No staging, evidence discard, candidate adoption or duplicate test run; wait for capacity.",
+  "phase013": "LOCAL ACCEPTANCE remains; publication then new stacked014 authorized once storage resolved."
+}

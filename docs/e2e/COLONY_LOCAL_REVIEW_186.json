@@ -1,0 +1,42 @@
+{
+  "phase": "013",
+  "status": "exploratory local review; not phase acceptance or formal E2E",
+  "branch": "feat/colonization",
+  "base": "1a7f02100fdf20076317d3cfa6804bc486ad7ebf",
+  "preview": "http://127.0.0.1:5208/",
+  "backend": {
+    "suites": 24,
+    "passed": 260,
+    "failed": 0,
+    "assertions": 3570,
+    "log": "/Users/anicolao/projects/games/beyond/tmp/colonies186-backend-all5.log"
+  },
+  "policySha256": "46c45d4016ee3e64e5c03ba0204d48f9e25be6e4b394544ec914ccd38d75b175",
+  "guardsUnchanged": true,
+  "formal013BaselinesGenerated": false,
+  "phase014Released": false,
+  "cloudRulesDeployed": false,
+  "reviewAuthRestarted": false,
+  "ordinaryFlows": [
+    "shared2 Sirius settlement/retained outpost/refill/second Ore disc/reload/Fleet focus",
+    "remote2 actual393x852 host and1280x720 independent guest: Sirius settlement/reload/isolation",
+    "shared4 corner: three settled ships, rival exile, untouched third/fourth fleets, replacement/discs/reload",
+    "remote2 Wolf359: retained second-disc choice, observer disabled, mixed Ore/Food, sole-yard rightmost-Supply level2 bonus/reload"
+  ],
+  "remainingBeforeFormalRelease": [
+    "independent source/visual/functional review",
+    "remaining source-action/rare-effect and keyboard review packet as requested",
+    "no formal exact baseline claim from diagnostics"
+  ],
+  "priorFailuresPreserved": [
+    "all2 timeout interruption",
+    "security16 timeout interruption",
+    "security17 120/121",
+    "all3 two failed suites",
+    "large rival expression-limit failure",
+    "UI reactive Proxy-clone failure",
+    "initial compact corner overflow",
+    "compact pager first-selection binding defect",
+    "diagnostic harness selectors/readiness races and mistaken manual sole-yard-bonus expectation"
+  ]
+}

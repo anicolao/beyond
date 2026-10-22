@@ -1,3 +1,4 @@
+import {advanceColony,addColonyDisc,colonyTracks,currentSystems} from './colonization';
 import {canonicalCard} from '../cards/catalog';
 import {guilds} from './manifest';
 import {setupDecks,type PublicSetup} from './setup';
@@ -19,6 +20,7 @@ export function advanceDiscovery(initial:PublicSetup,state:PlayState,limit=1){
  const d=state.discovery!;
  for(let guard=0;d.queue.length&&guard<limit;guard++){
   const step=d.queue[0],p=player(initial,state,step.responder);
+  if(step.kind==='colony'){advanceColony(initial,state,step);continue;}
   if(step.kind==='event-complete'){completeEvent(state,step.event);d.queue.shift();continue;}
   if(step.kind==='resume'){d.queue.shift();state.phase=step.returnTo??'production';const card=step.card??(step.slot?d.records.find(r=>r.slot===step.slot)?.chosen:undefined);if(card)d.completed={turn:state.turn,card};continue;}
   if(step.kind==='type'){
@@ -81,7 +83,8 @@ export function respondToDiscovery(initial:PublicSetup,state:PlayState,position:
  if(move.at!==d.cursor)throw new Error('This continuation has already changed.');
  d.cursor++;
  const p=player(initial,state,position);
- if(step.kind==='candidate'){
+ if(step.kind==='colony'){if(move.option!=='food'&&move.option!=='ore')throw new Error('Choose Food or Ore for this colony.');addColonyDisc(initial,state,step,move.option);}
+ else if(step.kind==='candidate'){
   const card=chooseFromRevealed(d,step,move.option);d.queue.shift();p.reservedResearch=p.reservedResearch?.filter(s=>s!==step.slot);if(!p.reservedResearch?.length)delete p.reservedResearch;
   d.reservations=d.reservations.filter(r=>!(r.position===position&&r.slot===step.slot));p.research.push(card);effects(state,position,card,levelTwoBonuses[card]);
  }else if(step.kind==='type'){
@@ -96,7 +99,7 @@ export function respondToDiscovery(initial:PublicSetup,state:PlayState,position:
  validEconomies(initial,state);return state;
 }
 function queueSystemBonus(initial:PublicSetup,state:PlayState,position:string,location:string){
- const system=[...initial.systems,...state.discovery!.systems].find(s=>s.slot===location);if(!system)return;
+ const system=currentSystems(initial,state.discovery).find(s=>s.slot===location);if(!system)return;
  const id=system.card;
  if(!canonicalCard(id).sections.some(s=>s.label==='Gain control'))return;
  const next=state.discovery!.queue.findIndex(q=>!['control-check','control-loss','control'].includes(q.kind));
@@ -107,7 +110,7 @@ export function gainBonusChoices(d:import('./discovery').PublicDiscovery,positio
  return d.queue.slice(0,boundary<0?undefined:boundary).filter((q):q is Extract<DiscoveryChoice,{kind:'gain-bonus'}>=>q.kind==='gain-bonus'&&q.responder===position);
 }
 function resolveSystemBonus(initial:PublicSetup,state:PlayState,position:string,location:string){
- const system=[...initial.systems,...state.discovery!.systems].find(s=>s.slot===location)!;
+ const system=currentSystems(initial,state.discovery).find(s=>s.slot===location)!;
  const id=system.card;
  const fixed:Record<string,readonly BonusEffect[]>={
   'barnards-star':[{kind:'population',amount:1}],'teegardens-star':[{kind:'population',amount:1}],
@@ -181,6 +184,7 @@ function respondEffect(initial:PublicSetup,state:PlayState,position:string,step:
 export function canAdvanceDiscovery(game:PublicSetup):boolean{
  const step=game.discovery?.queue[0];if(game.phase!=='discovery'||!step)return false;
  const p=game.players.find(p=>p.position===step.responder)!;
+ if(step.kind==='colony')return step.stage!=='disc'||colonyTracks(step.card).length===1;
  if(['event-complete','resume','jump-apply','jump-power','control-check','control-loss'].includes(step.kind))return true;
  if(step.kind==='gain-bonus')return gainBonusChoices(game.discovery!,step.responder).length===1;
  if(step.kind==='type')return step.types.length===1;

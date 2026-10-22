@@ -157,6 +157,8 @@ test('integration: all outposts precede simultaneous gain bonuses, whose owner c
  const {setup,state}=pending({kind:'control',responder:'p1',location:'a-1',source:'Jump'});
  setup.systems.find(s=>s.slot==='a-1')!.card='61-cygni';
  setup.systems.find(s=>s.slot==='b-1')!.card='kruger-60';
+ // This focused public-card fixture must also set the canonical refill basis.
+ state.discovery!.systemBasis['a-1']='61-cygni';state.discovery!.systemBasis['b-1']='kruger-60';
  state.discovery!.queue.splice(1,0,{kind:'control',responder:'p1',location:'b-1',source:'Jump'});
  state.players.p1.ore=0;
  const ready=drain(setup,state);

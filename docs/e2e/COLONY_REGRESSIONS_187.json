@@ -1,0 +1,81 @@
+{
+  "reviewer": "Prompt187",
+  "originalRun": "/Users/anicolao/projects/games/beyond/tmp/colonies186-backend-all1.log",
+  "originalFailures": [
+    {
+      "test": "printed technology Action movement: four solar arrivals charge all four ships and preserve the exact paid plan",
+      "cause": "Legal four-ship jump-apply hit Firestore1000-expression limit, not a5s timeout.",
+      "correction": "Cache queueKind in the root projection and keep colony automatic dispatch after existing jump branches; retain exact paid plan, both linked documents and all four arrival charges.",
+      "testBodyByteIdenticalToAccepted012": true,
+      "targetedLog": "/Users/anicolao/projects/games/beyond/tmp/colonies187-four-solar.log",
+      "targetedPass": 1,
+      "assertions": 2
+    },
+    {
+      "test": "integration: all outposts precede simultaneous gain bonuses, whose owner chooses an order that matters",
+      "cause": "Fixture changed setup.systems only, while current canonical System identity reads the retained/refilled discovery.systemBasis. The fixture still named different public faces there.",
+      "correction": "Set the same two explicit public fixture identities in systemBasis; preserve both outposts-before-rewards assertions and owner-selected order totals4 versus3.",
+      "originalExpectationsUnchanged": true,
+      "targetedLog": "/Users/anicolao/projects/games/beyond/tmp/colonies187-bonus-order.log",
+      "targetedPass": 1,
+      "assertions": 5
+    }
+  ],
+  "alreadyPassedFullRuns": [
+    {
+      "log": "/Users/anicolao/projects/games/beyond/tmp/colonies186-backend-all4.log",
+      "tests": 259,
+      "assertions": 3567
+    },
+    {
+      "log": "/Users/anicolao/projects/games/beyond/tmp/colonies186-backend-all5.log",
+      "tests": 260,
+      "assertions": 3570
+    }
+  ],
+  "noDuplicateFullRun": true,
+  "currentPolicySha256": "46c45d4016ee3e64e5c03ba0204d48f9e25be6e4b394544ec914ccd38d75b175",
+  "limitsChanged": false,
+  "PR14": {
+    "head": "1a7f02100fdf20076317d3cfa6804bc486ad7ebf",
+    "publisherRun": 39708605167,
+    "publisher": "FAIL exact118531-byte d71de365\u2026HTTP503; frozenPR5 control200",
+    "hostedAccepted": false,
+    "otherJobs": "static SUCCESS; browser/documentation IN_PROGRESS; native generation QUEUED at latest observation",
+    "fallbackRulesDeployed": false
+  },
+  "additionalSourceChecks": {
+    "tests": 3,
+    "assertions": 18,
+    "log": "/Users/anicolao/projects/games/beyond/tmp/colonies187-source-security.log",
+    "scope": "Android overpayment, Terranova reduction, uncovered Guild; exact Ore/Population/occupancy/exile"
+  },
+  "keyboardReview": {
+    "log": "/Users/anicolao/projects/games/beyond/tmp/colonies187-keyboard-replay1.log",
+    "ordinaryUI": true,
+    "scope": [
+      "selection and disabled commit",
+      "full System inspection focus return",
+      "unpaid selection retained across resize",
+      "Escape opener focus",
+      "reload cancels unpaid plan without payment"
+    ]
+  },
+  "native4KReview": {
+    "image": "/Users/anicolao/projects/games/beyond/tmp/local-colony-review/round187-keyboard/full-physical-world-3840x2160.png",
+    "log": "/Users/anicolao/projects/games/beyond/tmp/colonies187-native-world.log",
+    "locallyVisuallyInspected": true,
+    "independentAcceptance": false,
+    "formalBaseline": false
+  },
+  "currentSourceChecks": {
+    "types": "0 errors / 0 warnings",
+    "build": "PASS",
+    "sourcePolicy": "PASS",
+    "logs": [
+      "/Users/anicolao/projects/games/beyond/tmp/colonies187-types-final.log",
+      "/Users/anicolao/projects/games/beyond/tmp/colonies187-build-final.log",
+      "/Users/anicolao/projects/games/beyond/tmp/colonies187-policy-final.log"
+    ]
+  }
+}

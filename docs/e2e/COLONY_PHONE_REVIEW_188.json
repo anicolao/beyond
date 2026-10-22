@@ -1,0 +1,107 @@
+{
+  "instruction": "Prompt188 reviewer-authored",
+  "scope": "Phone settlement density; no model/rules changes or formal baselines",
+  "preview": "http://127.0.0.1:5208/",
+  "remoteRoom": "http://127.0.0.1:5208/remote/?room=f085ff00-d311-48fd-9b3f-aa1c1e7db096",
+  "remoteIdentity": "Distinct normal Auth host and guest; retained profiles. URL does not transfer ownership.",
+  "ordinaryFlow": [
+    "Basic setup and Terraforming research",
+    "Three legal jumps to Sirius and normal control bonus",
+    "Rival Basic build/jump to Sirius",
+    "Initial zero selection; three selected exact3/3; partial2/3 with own+rival exile",
+    "Research Narrow Beam Lasers and upgrade a real Sirius ship1to2; both players produce and hand off",
+    "Three selected4/3 overpay1; rival remains for exile; no payment committed"
+  ],
+  "phoneProof": {
+    "width": 393,
+    "height": 852,
+    "allThreeShipControlsFullyInsideReader": true,
+    "shipMinimumHeight": 44,
+    "powerFullyVisible": true,
+    "inspectionEscapeExactOpener": true,
+    "keyboardEnd": {
+      "scrollTop": 104,
+      "clientHeight": 416,
+      "scrollHeight": 520,
+      "reader": {
+        "x": 18.859375,
+        "y": 202.5625,
+        "width": 355.265625,
+        "height": 415.78125,
+        "top": 202.5625,
+        "right": 374.125,
+        "bottom": 618.34375,
+        "left": 18.859375
+      },
+      "bonus": {
+        "x": 31.859375,
+        "y": 554.5,
+        "width": 329.265625,
+        "height": 44.03125,
+        "top": 554.5,
+        "right": 361.125,
+        "bottom": 598.53125,
+        "left": 31.859375
+      }
+    },
+    "guard": "Unchanged assertScreenFit, unchanged combined2000ms capture budget",
+    "log": "/Users/anicolao/projects/games/beyond/tmp/colonies188-phone-review2.log",
+    "scrollLog": "/Users/anicolao/projects/games/beyond/tmp/colonies188-scroll-review1.log",
+    "images": [
+      "/Users/anicolao/projects/games/beyond/tmp/local-colony-review/round188-remote-phone/initial-393x852.png",
+      "/Users/anicolao/projects/games/beyond/tmp/local-colony-review/round188-remote-phone/selected-exile-393x852.png",
+      "/Users/anicolao/projects/games/beyond/tmp/local-colony-review/round188-remote-phone/partial-own-and-rival-exile-393x852.png",
+      "/Users/anicolao/projects/games/beyond/tmp/local-colony-review/round188-remote-phone/overpay-and-rival-exile-393x852.png",
+      "/Users/anicolao/projects/games/beyond/tmp/local-colony-review/round188-remote-phone/keyboard-end-complete-consequences-393x852.png",
+      "/Users/anicolao/projects/games/beyond/tmp/local-colony-review/round188-remote-phone/inspection-focus-return-393x852.png"
+    ]
+  },
+  "sharedOrientation": {
+    "room": "http://127.0.0.1:5208/?table=42377d68-ce1d-4c07-8bb1-28a74c7f4d16",
+    "mode": "Ordinary four-corner shared table; own retained controller",
+    "views": 18,
+    "viewports": [
+      [
+        1280,
+        720
+      ],
+      [
+        1280,
+        640
+      ],
+      [
+        3840,
+        2160
+      ]
+    ],
+    "log": "/Users/anicolao/projects/games/beyond/tmp/colonies188-corner-capture1.log",
+    "guardAndTimingUnchanged": true
+  },
+  "checks": {
+    "types": "0 errors / 0 warnings",
+    "build": "PASS",
+    "sourcePolicy": "PASS",
+    "backendRerun": false
+  },
+  "preservedFailures": [
+    {
+      "log": "/Users/anicolao/projects/games/beyond/tmp/colonies188-density1.log",
+      "finding": "A shared desktop controller opened at phone width could not reach Plan action behind overlapping shared mats. Not remote-phone evidence; no forced click."
+    },
+    {
+      "log": "/Users/anicolao/projects/games/beyond/tmp/colonies188-phone-review1.log",
+      "finding": "Guard rejected52px inherited input minimum exceeding44px label. Scoped native checkbox min-height/padding/border now matches its44px row; guard unchanged."
+    },
+    {
+      "log": "/Users/anicolao/projects/games/beyond/tmp/colonies188-four-corner1.log",
+      "finding": "Click on Research Level I space3 timed out after Cleo handoff; dialog absent in failure image. Resume from retained canonical Cleo state with normal synced/enabled preconditions succeeded. Primary transient cause not established; not claimed universally cured."
+    }
+  ],
+  "limitations": [
+    "Independent local visual/functional acceptance pending",
+    "Diagnostic End captures in phone-review2 predate scroll completion; superseded by keyboard-end image with explicit scrollTop/end assertions",
+    "No formal013 illustrated candidates/exact run yet",
+    "PR14 Linux/hosted and strict compiler503 gates remain separate",
+    "No014 or merge"
+  ]
+}

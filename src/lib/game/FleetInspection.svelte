@@ -1,12 +1,15 @@
 <script lang="ts">
  import {tick} from 'svelte';
+ import ColonyRegister from './ColonyRegister.svelte';
  import OutpostInspection from './OutpostInspection.svelte';
  import {fleetLocation,fleetPowerPreview} from './fleet-preview';
  import type {PlayerState,PublicSetup} from './setup';
- let {game,player}:{game:PublicSetup;player:PlayerState}=$props();
+ let {game,player,inspect}:{game:PublicSetup;player:PlayerState;inspect:(id:string)=>void}=$props();
  let reader=$state<HTMLDialogElement>(undefined!),opener=$state<HTMLButtonElement>(undefined!);
- let turned=$state(false),view=$state<'ships'|'power'|'outposts'|'rules'>('ships'),shipIndex=$state(0),locationIndex=$state(0);
+ let turned=$state(false),view=$state<'ships'|'power'|'outposts'|'colonies'|'rules'>('ships'),shipIndex=$state(0),locationIndex=$state(0);
  let selected=$state(''),sideways=$state(false),angled=$state(false);
+ const colonies=$derived(game.discovery?.colonies?.filter(c=>c.owner===player.position)??[]);
+ const tabs=$derived([...(turned?['ships','power','outposts']:['ships','outposts']),...(colonies.length?['colonies']:[]),'rules']);
  const groups=$derived([...new Set(player.ships.map(s=>s.location))].map(location=>({...fleetPowerPreview(game,player.position,location,player.ships),ships:player.ships.map((s,index)=>({...s,number:index+1})).filter(s=>s.location===location)})));
  const ship=$derived(player.ships.find(s=>s.id===selected));
  const currentShip=$derived(player.ships[Math.min(shipIndex,player.ships.length-1)]);
@@ -17,13 +20,13 @@
 </script>
 <button class="fleet-opener" bind:this={opener} aria-label={`Inspect ${player.name} fleet`} aria-haspopup="dialog" onclick={open}>Fleet ↗</button>
 <div use:portal style="display:contents">
- <dialog data-e2e-layout class="fleet-reader" class:sideways class:angled class:turned class:outpost-view={view==='outposts'} bind:this={reader} aria-label="Fleet inspection" onkeydown={trap} onclose={()=>opener?.focus({preventScroll:true})}>
-  <header><div><p>PUBLIC FLEET REGISTER</p><h2>{view==='outposts'?'Outpost control':player.name+' · fleet'}</h2></div><button onclick={()=>reader.close()} aria-label="Close fleet inspection">Close ×</button></header>
-  {#if view!=='outposts'}<div class="fleet-total"><strong>{player.ships.length} ships</strong><span>{player.ships.reduce((n,s)=>n+s.level,0)} total power across all locations</span><small>Control is compared separately at each location.</small></div>{/if}
-  <nav class="fleet-tabs" aria-label="Fleet inspection views">{#each (turned?['ships','power','outposts','rules']:['ships','outposts','rules']) as tab}<button aria-pressed={view===tab} onclick={()=>view=tab as typeof view}>{tab==='ships'?'Ships':tab==='power'?'Location power':tab==='outposts'?'Outposts':'Rules'}</button>{/each}</nav>
+ <dialog data-e2e-layout class="fleet-reader" class:sideways class:angled class:turned class:outpost-view={view==='outposts'||view==='colonies'} bind:this={reader} aria-label="Fleet inspection" onkeydown={trap} onclose={()=>opener?.focus({preventScroll:true})}>
+  <header><div><p>PUBLIC FLEET REGISTER</p><h2>{view==='colonies'?'Permanent colonies':view==='outposts'?'Outpost control':player.name+' · fleet'}</h2></div><button onclick={()=>reader.close()} aria-label="Close fleet inspection">Close ×</button></header>
+  {#if view!=='outposts'&&view!=='colonies'}<div class="fleet-total"><strong>{player.ships.length} ships</strong><span>{player.ships.reduce((n,s)=>n+s.level,0)} total power across all locations</span><small>Control is compared separately at each location.</small></div>{/if}
+  <nav class="fleet-tabs" aria-label="Fleet inspection views">{#each tabs as tab}<button aria-pressed={view===tab} onclick={()=>view=tab as typeof view}>{tab==='ships'?'Ships':tab==='power'?'Location power':tab==='outposts'?'Outposts':tab==='colonies'?`Colonies · ${colonies.length}`:'Rules'}</button>{/each}</nav>
   <!-- svelte-ignore a11y_no_noninteractive_tabindex (Named bounded inventory supports keyboard scrolling.) -->
-  <div class="fleet-body" role="region" aria-label={view==='outposts'?'Outpost control and production details':'Ships and location power'} tabindex="0">
-   {#if view==='outposts'}<OutpostInspection {game} {player} compact={turned}/>{:else if view==='rules'}<p class="reference">Ship levels range from 1 to 4. Fleet power is their summed levels at a location. A tied incoming fleet does not displace an incumbent. Inspection spends nothing and moves no ships.</p>{:else if turned}
+  <div class="fleet-body" role="region" aria-label={view==='outposts'?'Outpost control and production details':view==='colonies'?'Permanent colonies and production discs':'Ships and location power'} tabindex="0">
+   {#if view==='colonies'}<ColonyRegister {game} {player} {inspect}/>{:else if view==='outposts'}<OutpostInspection {game} {player} compact={turned}/>{:else if view==='rules'}<p class="reference">Ship levels range from 1 to 4. Fleet power is their summed levels at a location. A tied incoming fleet does not displace an incumbent. Inspection spends nothing and moves no ships.</p>{:else if turned}
     {#if view==='ships'}
      {#if currentShip}<nav class="page-controls" aria-label="Fleet ship register"><button aria-label="Previous fleet ship" onclick={()=>shipIndex=(shipIndex+player.ships.length-1)%player.ships.length}>‹</button><span>Ship {shipIndex+1} / {player.ships.length}</span><button aria-label="Next fleet ship" onclick={()=>shipIndex=(shipIndex+1)%player.ships.length}>›</button></nav><article class="current-cube" aria-label="Selected ship details"><span class="cube" aria-hidden="true">{currentShip.level}</span><div><h3>Ship {shipIndex+1} · level {currentShip.level}</h3><p>{fleetLocation(game,currentShip.location)}</p><small>{currentShip.level===4?'Maximum level':'Owned resource cube'} · {currentShip.level} power here</small></div></article>{:else}<p>No ships are on the map. Their cubes remain in other parts of your economy.</p>{/if}
     {:else if view==='power'}
