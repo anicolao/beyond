@@ -17,5 +17,15 @@
     "Browser/native Firestore readiness failure before journeys; failed native cohort ineligible",
     "Exact-source Rules:test503 and matching hosted functional review"
   ],
-  "merged": false
+  "merged": false,
+  "staticCheckoutRepair80": {
+    "priorHead": "eab955e",
+    "job": "120077540069",
+    "evidence": "advanced209-pr16-static80-status.json",
+    "finding": "In progress at actions/checkout since20:48:59Z; all code/rules steps pending at22:21Z. Not a backend test execution or pass.",
+    "repair": "Same blob-filtered non-cone source checkout as successful docs; excludes only tests/e2e screenshots, leaves static/rules/tooling commands unchanged. No production source or rules change.",
+    "priorDocs": "120077541706 SUCCESS",
+    "priorBrowserNative": "120077540253/120077539829 fail Firestore readiness10s before journeys; no cohort eligible",
+    "priorPublisher": "120077542969 exact-source Rules:test503; frozen diagnostic200; no matching hosted acceptance"
+  }
 }
