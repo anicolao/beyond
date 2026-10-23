@@ -1,3 +1,6 @@
+import {levelThreeBonuses} from './personal-level-three';
+import {acquirePersonalTechnology,ownsTechnology} from './personal-technologies';
+import {levelTwoBonuses} from './discovery-effects';
 import {canonicalCard} from '../cards/catalog';
 import {colonizationPreview,colonySources,type ColonySource} from './colonization-preview';
 import {player,returnSupply} from './discovery-economy';
@@ -9,7 +12,7 @@ import type {PlayState} from './turn';
 export type ColonyDisc={track:'food'|'ore';placeholder?:boolean};
 export type Colony={owner:string;card:string;origin:string;discs:ColonyDisc[];turn:number;settledPower:number;solar?:boolean};
 export type ColonyStep={kind:'colony';responder:string;source:ColonySource;slot:string;card:string;settlers:PlayerState['ships'];power:number;actors:string[];stage:'settle'|'exile'|'acquire'|'disc'|'bonus';index:number};
-export type ColonizeMove={kind:'colonize';source:ColonySource;slot:string;ships:PlayerState['ships']};
+export type ColonizeMove={kind:'colonize';source:ColonySource;slot:string;ships:PlayerState['ships'];substitutePopulation?:boolean};
 /** Existing retained states need no migration; seeded slot identity changes only at a legal refill. */
 export function currentSystems(initial:PublicSetup,d?:Pick<DiscoveryState,'systemBasis'|'systems'>){
  return d?[...initial.systems.flatMap(system=>{const card=d.systemBasis[system.slot];return card?[{slot:system.slot,card}]:[];}),...d.systems.map(({slot,card})=>({slot,card}))]:initial.systems;
@@ -23,11 +26,12 @@ const benefits:Record<string,readonly BonusEffect[]>={
  'wolf-359':[{kind:'ship',level:2,side:'right'}],
  'ad-leonis':[], 'alpha-centauri':[],'kruger-60':[],'tau-ceti':[],'tz-arietis':[],'luytens-star':[]
 };
-export function colonyBenefitBlocker(card:string){return card in benefits?'':'This printed colony benefit is not yet available; inspect its full rules.';}
+export function colonyBenefitBlocker(card:string){return card==='procyon'||card==='wise-1541-2250'||card in benefits?'':'This printed colony benefit is not yet available; inspect its full rules.';}
 export function beginColonization(initial:PublicSetup,game:PublicSetup,state:PlayState,position:string,move:ColonizeMove){
  if(!Array.isArray(move.ships)||move.ships.some(ship=>!ship||typeof ship!=='object'||!game.players.find(p=>p.position===position)?.ships.some(s=>Object.keys(ship).length===3&&s.id===ship.id&&s.level===ship.level&&s.location===ship.location)))throw new Error('Choose each settling ship once.');
- const view=colonizationPreview(game,position,move.slot,move.ships.map(s=>s.id),move.source);if(view.reason)throw new Error(view.reason);
+ const view=colonizationPreview(game,position,move.slot,move.ships.map(s=>s.id),move.source,move.substitutePopulation);if(view.reason)throw new Error(view.reason);
  const block=colonyBenefitBlocker(view.card!.id);if(block)throw new Error(block);
+ if(view.card!.id==='wise-1541-2250'&&!state.discovery?.deckIII)throw new Error('Preparing the retained Level III deck…');
  if(!state.discovery||!game.discovery?.powerReady||state.discovery.queue.length)throw new Error('Finish preparing the public board first.');
  const p=player(initial,state,position);p.ore-=view.terms.ore;p.population-=view.terms.population;
  for(let i=0;i<view.terms.population;i++)returnSupply(p);
@@ -35,9 +39,9 @@ export function beginColonization(initial:PublicSetup,game:PublicSetup,state:Pla
  state.discovery.queue=[{kind:'colony',responder:position,source:move.source,slot:move.slot,card:view.card!.id,settlers:move.ships.map(({id,level,location})=>({id,level,location})),power:view.selectedPower,actors:initial.players.map(p=>p.position),stage:'settle',index:0},{kind:'resume',responder:position,returnTo:'production'}];
  state.phase='discovery';return state;
 }
-export function colonyTracks(card:string):('food'|'ore')[]{const specialty=canonicalCard(card).sections.find(s=>s.label==='Specialty');return specialty?.secondarySymbol?['food','ore']:specialty?.symbol==='food'?['food']:['ore'];}
+export function colonyTracks(card:string,game?:PublicSetup,position?:string):('food'|'ore')[]{if(game&&position&&ownsTechnology(game,position,'subatomic-fabrication'))return ['food','ore'];const specialty=canonicalCard(card).sections.find(s=>s.label==='Specialty');return specialty?.secondarySymbol?['food','ore']:specialty?.symbol==='food'?['food']:['ore'];}
 export function addColonyDisc(initial:PublicSetup,state:PlayState,q:ColonyStep,track:'food'|'ore'){
- if(q.stage!=='disc'||!colonyTracks(q.card).includes(track))throw new Error('Choose a matching colony production disc.');
+ if(q.stage!=='disc'||!colonyTracks(q.card,{...initial,players:initial.players.map(actor=>({...actor,...state.players[actor.position]})),discovery:state.discovery},q.responder).includes(track))throw new Error('Choose a matching colony production disc.');
  const colony=state.discovery!.colonies!.find(c=>c.card===q.card&&c.owner===q.responder);if(!colony||colony.discs.length!==1)throw new Error('This colony disc has already resolved.');
  const p=player(initial,state,q.responder),field=track==='food'?'foodDiscs':'oreDiscs',placeholder=p[field]===0;
  if(!placeholder)p[field]--;colony.discs.push({track,...(placeholder?{placeholder:true}:{})});q.stage='bonus';
@@ -66,6 +70,7 @@ export function advanceColony(initial:PublicSetup,state:PlayState,q:ColonyStep){
   else{const deck=canonicalCard(q.card).deck as 'A'|'B',other=deck==='A'?'B':'A',selected=d.systemDecks[deck].length?deck:other;d.systemBasis[q.slot]=d.systemDecks[selected].shift()??'';if(d.systemBasis[q.slot])d.revealBoundary={turn:state.turn,reason:'System reveal'};}
   q.stage='disc';return;
  }
- if(q.stage==='disc'){const tracks=colonyTracks(q.card);if(tracks.length!==1)throw new Error('The owner must choose the additional colony disc.');addColonyDisc(initial,state,q,tracks[0]);return;}
+ if(q.stage==='disc'){const tracks=colonyTracks(q.card,{...initial,players:initial.players.map(actor=>({...actor,...state.players[actor.position]})),discovery:d},q.responder);if(tracks.length!==1)throw new Error('The owner must choose the additional colony disc.');addColonyDisc(initial,state,q,tracks[0]);return;}
+ if(q.card==='procyon'||q.card==='wise-1541-2250'){const acquired=acquirePersonalTechnology(initial,state,q.responder,q.card);d.queue.shift();d.revealBoundary={turn:state.turn,reason:'Technology reveal'};effects(state,q.responder,acquired.card,(q.card==='procyon'?levelTwoBonuses:levelThreeBonuses)[acquired.card]);return;}
  d.queue.shift();const bonus=q.card==='ad-leonis'?[{kind:'ore' as const,amount:p.research.filter(id=>canonicalCard(id).technology?.level==='I').length}]:benefits[q.card];if(!bonus)throw new Error('Resolve the actual colony benefit.');effects(state,q.responder,q.card,bonus);
 }

@@ -1,3 +1,4 @@
+import * as server from 'firebase/firestore/lite';
 import {initializeBackendTestEnvironment} from '../../scripts/backend-rules-environment.mjs';
 import {beforeEach,afterEach,test,expect} from 'bun:test';
 import {assertFails,assertSucceeds,type RulesTestEnvironment} from '@firebase/rules-unit-testing';
@@ -499,4 +500,23 @@ test('jump011: a publicly revealed Luyten Rift blocks unearned entry in model an
  const db=env.authenticatedContext(f.host).firestore();expect((await getDoc(doc(db,`games/${f.id}`))).data()).toEqual(f.current);expect((await getDoc(doc(db,`games/${f.id}/events/${denied.commandId}`))).exists()).toBe(false);
  await f.command({kind:'discovery-choice',at:cursor,option:'jump',legs:[{index:0,ship:ship.id,path:['sol','a-1']}]});await f.automatic();
  expect(f.current.play!.phase).toBe('production');expect(f.current.play!.players.p1.ships[0].location).toBe('a-1');expect(f.current.play!.discovery!.outposts['rift-II-3']).toBeUndefined();
+});
+
+
+// Retained pre-015 fixture reproduces the legal two-Sol Human Experiments
+// bonus. Every tested write uses actual SDK identities and atomic Rules.
+test('retained Human Experiments upgrades two Sol ships without losing atomic ship, power or economy validation',async()=>{
+ const f=await fixture(),state=initialPlay(f.setup);state.discovery=initialDiscovery(start.seed,2,0);state.phase='discovery';
+ for(const actor of f.setup.players)state.players[actor.position]=economy(actor);
+ const p=state.players.p1,d=state.discovery;
+ p.population=0;p.ore=4;p.research=[...f.setup.technologies.map(t=>t.card),'human-experiments'];p.ships=[{id:'retained-sol-one',level:2,location:'sol'},{id:'retained-sol-two',level:1,location:'sol'},{id:'retained-deep-space',level:1,location:'deep-space'}];p.supply=[0,4,3,3,2];
+ d.deckII=d.deckII.filter(card=>card!=='human-experiments');d.technologies=[{slot:'II-4',card:'human-experiments'}];d.records=[{slot:'II-4',event:'tyler-lee',chosen:'human-experiments'}];d.events=[{id:'tyler-lee',slot:'II-4',resolved:true,choice:'professors-guild'}];d.guilds=['professors-guild'];d.queue=[{kind:'effect',responder:'p1',source:'human-experiments',effect:{kind:'upgrade',levels:1,ships:2,optional:true}},{kind:'resume',responder:'p1',slot:'II-4'}];
+ await f.integrationSnapshot(state);
+ const e=f.move({kind:'discovery-choice',at:d.cursor,option:'upgrade',ships:p.ships.slice(0,2).map(ship=>ship.id)}),after=applyRemote(f.current,e);
+ const clients=new Map<string,server.Firestore>();
+ function database(uid=f.host){if(!clients.has(uid)){const db=server.getFirestore(env.authenticatedContext(uid).firestore().app);server.connectFirestoreEmulator(db,'127.0.0.1',Number(process.env.DISCOVERY_RULES_TEST_PORT??process.env.RULES_TEST_PORT??8197),{mockUserToken:{sub:uid,user_id:uid}});clients.set(uid,db);}return clients.get(uid)!;}
+ function denied(value:RemoteRoom,uid=f.host){const db=database(uid),batch=server.writeBatch(db);batch.set(server.doc(db,`games/${f.id}`),value);batch.set(server.doc(db,`games/${f.id}/events/${e.commandId}`),e);return batch.commit();}
+ await assertFails(server.setDoc(server.doc(database(),`games/${f.id}`),after));await assertFails(server.setDoc(server.doc(database(),`games/${f.id}/events/${e.commandId}`),e));await assertFails(denied(after,f.guest));
+ for(const attack of ['ore','cube','movement','location-power','total-power','queue','ship-level']){const bad=structuredClone(after);if(attack==='ore')bad.play!.players.p1.ore++;if(attack==='cube')bad.play!.players.p1.population++;if(attack==='movement')bad.play!.players.p1.ships[0].location='deep-space';if(attack==='location-power')bad.play!.discovery!.powers.p1.sol++;if(attack==='total-power')bad.play!.discovery!.powers.p1['*']++;if(attack==='queue')bad.play!.discovery!.queue=[];if(attack==='ship-level')bad.play!.players.p1.ships[0].level=4;await assertFails(denied(bad));}
+ await f.commit(e);expect(f.current.play!.players.p1.ships.map(ship=>ship.level)).toEqual([3,2,1]);expect(f.current.play!.discovery!.powers.p1).toEqual({sol:5,'deep-space':1,'*':6});expect(f.current.play!.players.p1.population).toBe(0);expect(f.current.play!.players.p1.ore).toBe(4);expect(f.current.play!.players.p1.supply).toEqual(p.supply);await assertFails(denied(after));
 });

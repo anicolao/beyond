@@ -1,0 +1,119 @@
+{
+  "prompt": 207,
+  "authorship": "reviewer-authored",
+  "status": "PASS;014 LOCAL ACCEPTANCE granted by reviewer208; final Linux/exact-head hosted pending",
+  "priorFullRun": {
+    "variants": 208,
+    "frames": 16307,
+    "result": "PASS before206 only",
+    "sourceFreeze": "PERSONAL_SOURCE_FREEZE_203.json",
+    "preservedRecords": "/Users/anicolao/projects/games/beyond/tmp/personal206-prior-exact4-records"
+  },
+  "affectedScope": {
+    "spec": "tests/e2e/005-technology-discovery/discovery-tabletop.spec.ts",
+    "variants": 8,
+    "scenarios": [
+      "March of Progress",
+      "Experimental Prototypes / Exo-Alloy",
+      "Dimensional Rift",
+      "Covert Arms"
+    ],
+    "projects": [
+      "desktop",
+      "tabletop-4k"
+    ],
+    "actualViewportsChanged": [
+      "1280x720 focused Technology",
+      "1280x640 focused Technology"
+    ],
+    "reason": "Shared discovered-branches focus only; all four stories inspect upper/lower focus after real ordinary discovery"
+  },
+  "unchangedScopeReason": "Other focused shared setup stories have no discovered branches; remote variants do not match shared selector. Overview and native4K do not match focused compact correction.",
+  "sourceFilesChangedSinceFull208": [
+    "src/lib/game/GameSurface.svelte",
+    "tests/e2e/005-technology-discovery/journey.ts"
+  ],
+  "newAssertions": [
+    "Overview hidden while detailed focus is visible",
+    "One Terraforming inspection target",
+    "First detailed card clears Level I heading by at least6px"
+  ],
+  "preservation": {
+    "referenceBackup": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references",
+    "fullWalkthroughIndexes": "/Users/anicolao/projects/games/beyond/tmp/personal207-walkthrough-index",
+    "historicalExact3": "personal203-failed-full-exact-records3 preserved",
+    "sourceFreeze": "/Users/anicolao/projects/games/beyond/tmp/personal207-frozen-source.json"
+  },
+  "holds": [
+    "Final acceptance pending Linux/exact-head hosted",
+    "No merge"
+  ],
+  "service": "http://127.0.0.1:5209/",
+  "guards": "All existing geometry, exact-pixel, capture2s, story120s and backend5s guards unchanged",
+  "generation": {
+    "result": "8/8 PASS",
+    "frames": 658,
+    "duration": "3.4m",
+    "log": "/Users/anicolao/projects/games/beyond/tmp/personal207-focus-candidates.log",
+    "logSha256": "7a09c7dfd64122d0c1f5d9918731c0e01fcf95788d039f378c38f50e410dd36c",
+    "updateSnapshots": true
+  },
+  "referenceAudit": {
+    "report": "PERSONAL_REFERENCE_AUDIT_207.json",
+    "changed": 32,
+    "unchangedInFolder": 1426,
+    "unexpected": 0,
+    "noTransforms": true,
+    "failedLinuxCohortsAdopted": false
+  },
+  "supportingChecks": {
+    "currentTypes": "personal206-types2.log:0errors/0warnings",
+    "currentPolicy": "personal206-policy2.log:PASS",
+    "unchangedBackend": "personal203-nix-backend-all7.log:323tests/3989assertions across26suites",
+    "unchangedTooling": "personal203-nix-tooling.log:65PASS",
+    "unchangedCaptureGuards": "personal203-nix-guards.log:51PASS",
+    "sourceFreeze": 196,
+    "rulesSha256": "eb4c4e2dc1e46282fe98ccedcc035cbcd8f04cd9d6628a470e88b116ab2feef8",
+    "protectedHelpersUnchanged": 7,
+    "reasonNoUnrelatedRerun": "206 changes CSS and inline discovery assertions only; model/rules/tooling/shared guards remain frozen and prior supporting checks apply"
+  },
+  "exact": {
+    "status": "PASS",
+    "currentSourceFocusedVariants": 8,
+    "currentSourceFocusedFrames": 658,
+    "priorFullVariants": 208,
+    "combinedVariants": 208,
+    "combinedFrames": 16307,
+    "combinedGenerating": false,
+    "sourceFreezeFiles": 196,
+    "scopeClaim": "Prior pre206 full208 exact plus current207 affected8 exact; not a new full208 run",
+    "parity": "All story IDs/viewports/links complete",
+    "walkthroughIndexes": "Full pre207 index bytes restored",
+    "protectedHelpersUnchanged": [
+      "test-step-helper.ts",
+      "screen-fit.ts",
+      "exact-pixels.ts",
+      "fixtures.ts",
+      "story-reporter.ts",
+      "capture-context.ts",
+      "trade-containment.ts"
+    ],
+    "exactLogSha256": "0b8fce792fb822f234ca6cffffa0cefe195c864e0816d7c0c3f112ceed81bf5d",
+    "duration": "4.1m",
+    "log": "/Users/anicolao/projects/games/beyond/tmp/personal207-focus-exact.log",
+    "command": "PUBLIC_AUTH_EMULATOR_PORT=17997 PUBLIC_FIRESTORE_EMULATOR_PORT=17897 FIRESTORE_EMULATOR_HOST=127.0.0.1:17897 nix --offline develop /private/tmp/beyond-toolchain --command bunx playwright test discovery-tabletop.spec.ts",
+    "snapshotUpdateArgument": false
+  },
+  "referenceChain": "PERSONAL_REFERENCE_CHAIN_207.json",
+  "currentSourceFreeze": "PERSONAL_SOURCE_FREEZE_207.json",
+  "pre206EvidencePreserved": true,
+  "currentLocalReview": "014 locally accepted by reviewer208; publication authorized",
+  "reviewer208": {
+    "localAcceptance": true,
+    "basis": "Independent8/8 log,32-frame audit,196hashes, prior208 full and real014 reviews",
+    "publication": "Authorized stacked on feat/colonization fecea48f",
+    "next": "015 on new stacked branch after014 commit/push",
+    "finalAcceptance": "Pending Linux exact and exact-head hosted",
+    "merge": false
+  }
+}

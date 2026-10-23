@@ -212,3 +212,15 @@ let's check that we are making useful progress.
 ## Current status
 
 what's our currnet status
+
+## Emulator environment clarification
+
+what do you mean "blocked by offline emulators"? there should be a nix based environment that has been created that can do all that is required.
+
+## Progress and fidelity assessment
+
+give me a brief status summary of how far we've gotten - phase 8 of how many? are you satisified with the adherence to the visual design guidance from UX_DESIGN.md?
+
+## Current status
+
+what is our current status?

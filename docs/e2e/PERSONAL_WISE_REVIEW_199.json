@@ -1,0 +1,231 @@
+{
+  "prompt": 199,
+  "authorship": "reviewer-authored",
+  "branch": "feat/personal-technology",
+  "base": "fecea48f259f16253566c9d894dcf0986eb4efd9",
+  "status": "014 locally accepted by reviewer208; publication authorized; final Linux/exact-head hosted pending",
+  "server": "http://127.0.0.1:5209/",
+  "sourceReview": "docs/content/PERSONAL_TECH_SOURCE_REVIEW_014.md",
+  "coverage": {
+    "levelIIIImmediateIdentities": 16,
+    "actualTopDeckConsumed": true,
+    "supportedCardFiltering": false,
+    "noResearchCube": true,
+    "noDiscoveryEventOrCandidateDraw": true,
+    "futureDeckPubliclyExposed": false,
+    "supportedExclusiveIIIActionCards": [
+      "hyperdrive-boosters",
+      "android-armada",
+      "manufacturing-orbitals",
+      "capital-ship",
+      "mercenary-fleet"
+    ],
+    "unsupportedActions": "Advanced research, copying and combined Stealth Terraformers remain inspectable and blocked before payment.",
+    "androidDestroyersGap": "When personal level exceeds cube-bearing research, the X interaction is unresolved; both public/personal Actions block before payment. Equal-X cases remain legal. No publisher/designer ruling found for that exact threshold."
+  },
+  "ordinaryUIProofs": [
+    "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round199-wise-shared/proof.json",
+    "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round199-wise-remote/proof.json",
+    "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round199-wise-corner/proof.json",
+    "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round199-choice-transdimensional-ai-compact/proof.json",
+    "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round199-choice-android-armada-compact/proof.json",
+    "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round199-choice-android-rights-movement-compact/proof.json",
+    "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round199-rights-corner-final/proof.json",
+    "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round199-rights-corner-keyboard/proof.json"
+  ],
+  "liveRooms": {
+    "sharedCardinal": "http://127.0.0.1:5209/?table=18e29a13-8523-47a7-ac6b-013730aacbad",
+    "sharedRotated": "http://127.0.0.1:5209/?table=423d8145-b0d8-4272-b0c8-82342390f2f7",
+    "remoteHyperdrive": "http://127.0.0.1:5209/remote/?room=55c208a9-f0e2-4eaa-bdc9-7162f348c23b",
+    "remoteAI": "http://127.0.0.1:5209/remote/?room=7c7cdef0-43eb-4047-86d3-aff460c30062",
+    "remoteArmada": "http://127.0.0.1:5209/remote/?room=768c5078-f50c-4b75-bb19-2e7de3a4ef48",
+    "remoteRights": "http://127.0.0.1:5209/remote/?room=eb092522-17a9-40d1-86d6-aaa0078f6307",
+    "pendingRotatedRights": "http://127.0.0.1:5209/?table=873bee68-ca36-4711-95a3-2ad233efb431"
+  },
+  "reviewAccess": "Remote URLs support independent public inspection; no controller transfer. Create a fresh room through Play > Create remote room, join through its code with a separate identity, choose unique factions, ready and Begin for independent play.",
+  "checks": {
+    "lastFullBackend": {
+      "tests": 322,
+      "assertions": 3986,
+      "suites": 26,
+      "failed": 0,
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal199-backend-all5.log"
+    },
+    "subsequentPopulationGuard": {
+      "tests": 1,
+      "assertions": 3,
+      "failed": 0,
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal199-population-guard1.log"
+    },
+    "currentSourceFullBackend": {
+      "tests": 323,
+      "assertions": 3989,
+      "suites": 26,
+      "failed": 0,
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal203-nix-backend-all7.log",
+      "runtime": "locked offline Nix Java21.0.11/Node24.18.0/Bun1.3.13"
+    },
+    "guards": 51,
+    "tooling": 65,
+    "types": "0 errors / 0 warnings",
+    "build": "PASS",
+    "formalBaselineGeneration": true,
+    "finalUI": {
+      "types": "personal203-types-final8.log: 0 errors / 0 warnings",
+      "policy": "personal203-policy-final8.log: PASS",
+      "build": "Both static builds in personal203-final-exact4.log PASS",
+      "diffCheck": "PASS"
+    }
+  },
+  "preservedFailures": [
+    "Initial shared replay used the wrong WISE title; paid continuation retained and resumed through normal UI.",
+    "Initial diagnostic used non-document geometry mode for an ordinary scrolling dialog; successful proof uses the same document/polygon distinction as existing formal journeys.",
+    "Repeated equal queue steps initially exposed removeAll tail behavior; distinct persisted occurrence markers fix it without dropping choices.",
+    "Wide-jump and redistribution expression-limit failures were corrected with complete atomic root/event proofs; original negative assertions and budgets remain.",
+    "backend-all4 failed eight suites after isolated8697 exhausted its 2GiB heap. Heap/thread/source/log evidence preserved; only test8697 was relaunched after the run ended. Live8297/Auth9397 and reviewers were untouched.",
+    "First Rights UI replay correctly rejected two placements into one remaining A slot; ordinary retained continuation then placed into A and E. Earlier images remain preserved."
+  ],
+  "ci": {
+    "pr14Native": "119692436215 FAIL159/164; one2s capture and four120s stories. Failed cohort rejected.",
+    "pr14TimingCandidate": "write-baseline byte-length precheck avoids old-byte reads only when lengths differ; four tooling tests pass. Same-length equality, all writes, every screenshot and all deadlines retained. Linux benefit unproved; not published.",
+    "compressionExperiment": "Native RGBA identical; compressed mode1353-1361ms versus fast221-228ms on macOS. Rejected; helper/render settings unchanged.",
+    "pr15Native": "119734505522 completed FAILURE:178/184. Five120s story deadlines (007corner/cardinal;013mixed cardinal,exile corner,mixed corner) and one2s capture/step deadline (012two-cardinal trade). Closed-page/detach errors are secondary. Full log preserved in personal199-pr15-native-completed.log; failed cohort rejected.",
+    "pr15Comparison": "119734505233:16/184,112missing and56pixel failures; no capture/story timeout in that run.",
+    "publisher": "Exact-source503/matching-head hosted gates remain open. Read-only d71de365 call-graph audit finds no cycle and approximate max12calls; no semantic compiler remedy proved, no fallback/diagnostic policy deployed.",
+    "propagation": "Keep gameplay014 on its branch. Review/validate compatible writer-only repair for PR14, then carry it through PR15/014; adopt no failed references. No publication under the current014 hold.",
+    "reviewerPR15Log": {
+      "path": "/tmp/beyond-pr15-candidate-review.log",
+      "sha256": "24d0a67635fd679c6eeb308e9101b6873b45cb64311d2990930344ebc46ddb24",
+      "testsPassed": 178,
+      "testsFailed": 6,
+      "captureMs": 2024.5126050000545,
+      "storyTimeouts": 5,
+      "cohortAccepted": false
+    }
+  },
+  "remaining": [
+    "Independent source/visual review of the new WISE/choice packet. Guarded rotated Rights720/640/4K and full-card keyboard/Escape/draft-retention checks now pass.",
+    "Formal TestStepHelper/exact evidence only after independent review release; current-source backend/types/build/policy/tooling/guards pass.",
+    "Storage remains tight (~1.3GiB observed); headroom request pending, no preserved evidence deleted and no large suite/archive started.",
+    "All prior Linux/compiler/hosted final gates remain separate; no015, publication or merge."
+  ],
+  "rulesSha256": "eb4c4e2dc1e46282fe98ccedcc035cbcd8f04cd9d6628a470e88b116ab2feef8",
+  "completeReviewPacket": "docs/e2e/PERSONAL_REVIEW_PACKET_200.md",
+  "reviewerScopedAcceptance": "Reviewer200: remote WISE public inspection/scroll/Escape passed; scoped phone and rotated captures inspected. Whole014 acceptance/formal release still pending.",
+  "latestRightsInstructionReview": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round202-rights-instruction/proof.json",
+  "latestRightsInstruction": "Restored visible operational instruction; retained full-card access;640/720/4K unchanged containment and2s budget PASS, visually inspected. Supersedes prior instruction-hidden images for this surface.",
+  "historicalExploratoryChecks199": {
+    "lastFullBackend": {
+      "tests": 322,
+      "assertions": 3986,
+      "suites": 26,
+      "failed": 0,
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal199-backend-all5.log"
+    },
+    "subsequentPopulationGuard": {
+      "tests": 1,
+      "assertions": 3,
+      "failed": 0,
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal199-population-guard1.log"
+    },
+    "currentSourceFullBackend": {
+      "tests": 323,
+      "assertions": 3989,
+      "suites": 26,
+      "failed": 0,
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal199-backend-all6.log"
+    },
+    "guards": 51,
+    "tooling": 65,
+    "types": "0 errors / 0 warnings",
+    "build": "PASS",
+    "formalBaselineGeneration": false,
+    "finalUI": {
+      "types": "personal199-types17.log: 0 errors / 0 warnings",
+      "build": "personal199-build4.log: PASS",
+      "policy": "personal199-policy3.log: PASS",
+      "diffCheck": "PASS"
+    }
+  },
+  "formal203": {
+    "authorship": "Reviewer203 release, not whole014 acceptance",
+    "newVariants": 24,
+    "newFrames": 2908,
+    "newCandidateLog": "personal203-navigation-candidates6.log",
+    "previousExact3": {
+      "passed": 200,
+      "failed": 8,
+      "kind": "compact inherited pixel differences",
+      "log": "personal203-final-exact3.log",
+      "accepted": false
+    },
+    "boundedCurrentCandidates": {
+      "inheritedVariants": 8,
+      "inheritedPassed": 8,
+      "log": "personal203-collateral-candidates8.log",
+      "rightsVariants": 2,
+      "rightsPassed": 2,
+      "rightsLog": "personal203-rights-candidates9.log"
+    },
+    "inheritedReferenceAudit": "PERSONAL_REFERENCE_AUDIT_203.json",
+    "currentChecks": {
+      "types": "personal203-types-final8.log:0errors/0warnings",
+      "policy": "personal203-policy-final8.log:PASS",
+      "dualStaticBuilds": "Completed in candidate8/9"
+    },
+    "pending": [
+      "Independent whole014 local acceptance",
+      "Authorized publication",
+      "Linux exact and matching-head hosted gates"
+    ],
+    "hold": [
+      "014 publication",
+      "015",
+      "merge"
+    ],
+    "AndroidDestroyers": "Unresolved highest researched X vs higher personal level; block only competing-reading cases before payment, no guessed ruling",
+    "affectedExact": {
+      "passed": 10,
+      "failed": 0,
+      "snapshotUpdates": false,
+      "log": "personal203-collateral-exact10.log"
+    },
+    "fullExact": {
+      "passed": 208,
+      "failed": 0,
+      "minutes": 55.6,
+      "snapshotUpdates": false,
+      "log": "personal203-final-exact4.log",
+      "logSha256": "d571da2f29fb7d8daeb81e9a8f389c0b85b704dd887ffd995952d82804c9aeba"
+    },
+    "frameAudit": {
+      "comparisonModeRecords": 208,
+      "totalFrames": 16307,
+      "personalVariants": 24,
+      "personalFrames": 2908,
+      "viewportParity": "PASS",
+      "imageLinks": "PASS",
+      "frozenSourceFiles": 196,
+      "guardSourcesUnchanged": 7
+    },
+    "referenceByteAudit": {
+      "inheritedIdentical": 13322,
+      "inheritedReviewedChanges": 77,
+      "inactivePersonalRetainedExcluded": 2056,
+      "report": "PERSONAL_REFERENCE_PROVENANCE_203.json"
+    },
+    "finalVerification": "PERSONAL_FINAL_VERIFICATION_203.json"
+  },
+  "currentSourceAfter206": {
+    "status": "PASS affected8/8 exact4.1m /658frames; independent whole014 acceptance pending",
+    "prior208Pass": "Preserved pre206 full208/208 exact55.6m /16307frames; not rerun after206",
+    "currentAffected": "PERSONAL_FOCUS_VERIFICATION_207.json",
+    "referenceDelta": "32 focused upper/lower640/720 frames only;1426 other folder files byte-identical",
+    "sourceFreeze": "PERSONAL_SOURCE_FREEZE_207.json",
+    "supportingChecks": "Types0/0,policy PASS; unchanged323backend/3989,65tooling,51guards preserved",
+    "protectedHelpersUnchanged": 7,
+    "hold": "Final Linux/hosted acceptance pending; publication and stacked015 authorized by reviewer208; no merge"
+  },
+  "reviewer208LocalAcceptance": true,
+  "finalAcceptance": "Pending Linux exact and independently verified exact-head hosted"
+}

@@ -35,3 +35,20 @@ for (const service of ['Auth','Firestore']) test(`${service} readiness timeout i
  }),error=>error.message.startsWith(`${service} emulator readiness request failed`)&&error.cause===timeout);
  assert.equal(calls.length,2);assert.ok(calls.every(({options})=>options.signal instanceof AbortSignal&&!options.method&&!options.body&&!options.headers));
 });
+
+
+test('startup diagnostics distinguish response from timeout without exposing request or exception contents',async()=>{
+ const events=[],calls=[];const timeout=new DOMException('credential-private diagnostic body','TimeoutError');
+ await assert.rejects(requireEmulatorReadiness('demo-beyond',async(url,options)=>{
+  calls.push(options);if(url.includes(':8197'))throw timeout;
+  return response(200,{});
+ },{auth:9297,firestore:8197},event=>events.push(event)),error=>error.cause===timeout);
+ assert.equal(calls.length,2);
+ assert.deepEqual(events.filter(e=>e.phase==='request-start').map(e=>e.service),['Auth','Firestore']);
+ assert.deepEqual(events.find(e=>e.service==='Auth'&&e.phase==='response').status,200);
+ assert.equal(events.filter(e=>e.service==='Firestore'&&e.phase==='request-failed').length,1);
+ assert.ok(events.filter(e=>'elapsedMs'in e).every(e=>Number.isFinite(e.elapsedMs)&&e.elapsedMs>=0));
+ assert.ok(events.every(e=>Object.keys(e).every(k=>['service','phase','elapsedMs','status'].includes(k))));
+ assert.ok(!JSON.stringify(events).includes('credential-private'));
+ assert.ok(calls.every(options=>options.signal instanceof AbortSignal&&!options.method&&!options.body&&!options.headers));
+});

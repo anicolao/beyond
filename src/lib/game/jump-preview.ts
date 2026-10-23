@@ -1,5 +1,5 @@
 import {canonicalCard} from '../cards/catalog';
-import {discoveryMap,type JumpLeg} from './discovery-movement';
+import {discoveryMap,permittedJumpDestinations,type JumpLeg} from './discovery-movement';
 import {fleetPowerPreview} from './fleet-preview';
 import type {PublicSetup} from './setup';
 /** Public read-only plan. Canonical jump validation/atomic commands remain the authority. */
@@ -10,7 +10,7 @@ export function jumpPreview(game:PublicSetup,position:string,amount:number,legs:
   if(!ship||ship.id!==leg.ship||used.has(leg.ship)||leg.path.length<2||leg.path[0]!==ship.location){reason='Choose each owned ship once, starting at its current location.';break;}
   used.add(leg.ship);spent+=leg.path.length-1;
   for(let i=1;i<leg.path.length;i++){
-   if(!map.edges.some(([a,b])=>a===leg.path[i-1]&&b===leg.path[i]||b===leg.path[i-1]&&a===leg.path[i]))reason='Follow the printed connected routes.';
+   if(!permittedJumpDestinations(game,position,leg.path[i-1]).includes(leg.path[i]))reason='Follow the printed connected routes.';
    const system=[...game.systems,...(game.discovery?.systems??[])].find(s=>s.slot===leg.path[i]);
    if(system?.card==='luytens-star'&&actor.research.filter(id=>canonicalCard(id).technology?.level==='III').length<2)reason='Luyten’s Star requires two researched Level III technologies.';
   }

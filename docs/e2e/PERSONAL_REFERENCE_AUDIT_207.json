@@ -1,0 +1,657 @@
+{
+  "unchanged": 1426,
+  "changedCount": 32,
+  "changed": [
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/058-compact-focus-640-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/reveal-attach-and-recover-a-real-dimensional-rift-system/058-compact-focus-640-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/058-compact-focus-640-desktop-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 65022,
+      "bounds": {
+        "left": 191,
+        "top": 261,
+        "right": 1002,
+        "bottom": 420
+      },
+      "outsideExpectedBoardRegion": 439,
+      "beforeSha256": "c1ffefccf4a7889b2f2656d9d4da6ec00668be3ccaa65fdde3b6e432b364a97f",
+      "afterSha256": "6d8a9b5a63ef056f394685e83f7aa4f42cdbc0a6a512b03ac1978c3affc5d579",
+      "beforeBlob": "bcd78b5ef320d00d0068c57f4bccf2d2d54803f8",
+      "afterBlob": "18d7c2d15957cdfb15ebfa1e27f768de48946ded",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/054-compact-focus-720-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/reveal-attach-and-recover-a-real-dimensional-rift-system/054-compact-focus-720-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/054-compact-focus-720-desktop-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 103907,
+      "bounds": {
+        "left": 191,
+        "top": 284,
+        "right": 1078,
+        "bottom": 481
+      },
+      "outsideExpectedBoardRegion": 680,
+      "beforeSha256": "3be7c617f31c2392df3b1100ecf1a28d7954870d68dbbbbadbd24d1f6f5bbacc",
+      "afterSha256": "055009b46bff7381c5264192253f28a85eb1a09047b1ebc6a4fbcf3035f22c6a",
+      "beforeBlob": "434d65cea63e74db045f00aa16cec8dcae2b3cd7",
+      "afterBlob": "20b887383d68d3094290f7bd58fb8d3fa2dc06da",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/054-compact-focus-720-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/reveal-attach-and-recover-a-real-dimensional-rift-system/054-compact-focus-720-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/054-compact-focus-720-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 103907,
+      "bounds": {
+        "left": 191,
+        "top": 284,
+        "right": 1078,
+        "bottom": 481
+      },
+      "outsideExpectedBoardRegion": 680,
+      "beforeSha256": "3be7c617f31c2392df3b1100ecf1a28d7954870d68dbbbbadbd24d1f6f5bbacc",
+      "afterSha256": "055009b46bff7381c5264192253f28a85eb1a09047b1ebc6a4fbcf3035f22c6a",
+      "beforeBlob": "434d65cea63e74db045f00aa16cec8dcae2b3cd7",
+      "afterBlob": "20b887383d68d3094290f7bd58fb8d3fa2dc06da",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/055-compact-lower-720-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/reveal-attach-and-recover-a-real-dimensional-rift-system/055-compact-lower-720-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/055-compact-lower-720-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 87724,
+      "bounds": {
+        "left": 191,
+        "top": 284,
+        "right": 1078,
+        "bottom": 481
+      },
+      "outsideExpectedBoardRegion": 746,
+      "beforeSha256": "8a4d172cd21cdb1b99b639ac8641ccf1840bc4c50470386f78ee4204344d60e2",
+      "afterSha256": "8bb5b19c6d70498e98506a06883385d7b387d045c0e181f5ecd642bd8cb2fcad",
+      "beforeBlob": "02a5c48f67de227dca232fc68575b1e3aa61dbe2",
+      "afterBlob": "8c35986a3f08029d533d21775fdd0b0136f98444",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/059-compact-lower-640-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/reveal-attach-and-recover-a-real-dimensional-rift-system/059-compact-lower-640-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/059-compact-lower-640-desktop-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 80743,
+      "bounds": {
+        "left": 191,
+        "top": 261,
+        "right": 1078,
+        "bottom": 415
+      },
+      "outsideExpectedBoardRegion": 545,
+      "beforeSha256": "a254a19252ce89a2ece9bde519ad75d71465e706d5aa5f96e6f66a4a61ae54b7",
+      "afterSha256": "1f030929d4abe0c2bb3f22ed2f82daeea47a698fdbe55d93fb2078d1f54a2781",
+      "beforeBlob": "9237aae623d049580ae115d633aabc65e2e43ffe",
+      "afterBlob": "84144a560acc99e234706694d9c58a413e9c2345",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/055-compact-lower-720-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/reveal-attach-and-recover-a-real-dimensional-rift-system/055-compact-lower-720-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/055-compact-lower-720-desktop-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 87724,
+      "bounds": {
+        "left": 191,
+        "top": 284,
+        "right": 1078,
+        "bottom": 481
+      },
+      "outsideExpectedBoardRegion": 746,
+      "beforeSha256": "8a4d172cd21cdb1b99b639ac8641ccf1840bc4c50470386f78ee4204344d60e2",
+      "afterSha256": "8bb5b19c6d70498e98506a06883385d7b387d045c0e181f5ecd642bd8cb2fcad",
+      "beforeBlob": "02a5c48f67de227dca232fc68575b1e3aa61dbe2",
+      "afterBlob": "8c35986a3f08029d533d21775fdd0b0136f98444",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/059-compact-lower-640-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/reveal-attach-and-recover-a-real-dimensional-rift-system/059-compact-lower-640-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/059-compact-lower-640-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 80743,
+      "bounds": {
+        "left": 191,
+        "top": 261,
+        "right": 1078,
+        "bottom": 415
+      },
+      "outsideExpectedBoardRegion": 545,
+      "beforeSha256": "a254a19252ce89a2ece9bde519ad75d71465e706d5aa5f96e6f66a4a61ae54b7",
+      "afterSha256": "1f030929d4abe0c2bb3f22ed2f82daeea47a698fdbe55d93fb2078d1f54a2781",
+      "beforeBlob": "9237aae623d049580ae115d633aabc65e2e43ffe",
+      "afterBlob": "84144a560acc99e234706694d9c58a413e9c2345",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/058-compact-focus-640-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/reveal-attach-and-recover-a-real-dimensional-rift-system/058-compact-focus-640-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/reveal-attach-and-recover-a-real-dimensional-rift-system/058-compact-focus-640-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 65022,
+      "bounds": {
+        "left": 191,
+        "top": 261,
+        "right": 1002,
+        "bottom": 420
+      },
+      "outsideExpectedBoardRegion": 439,
+      "beforeSha256": "c1ffefccf4a7889b2f2656d9d4da6ec00668be3ccaa65fdde3b6e432b364a97f",
+      "afterSha256": "6d8a9b5a63ef056f394685e83f7aa4f42cdbc0a6a512b03ac1978c3affc5d579",
+      "beforeBlob": "bcd78b5ef320d00d0068c57f4bccf2d2d54803f8",
+      "afterBlob": "18d7c2d15957cdfb15ebfa1e27f768de48946ded",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/058-compact-focus-720-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/discover-and-research-a-shared-technology-with-both-physical-players/058-compact-focus-720-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/058-compact-focus-720-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 103910,
+      "bounds": {
+        "left": 191,
+        "top": 284,
+        "right": 1078,
+        "bottom": 481
+      },
+      "outsideExpectedBoardRegion": 680,
+      "beforeSha256": "0501e3417428ebb5418720667e60401b63a802e64f63e3e4179ad12f88d2d5c9",
+      "afterSha256": "4c971ee6edec296340ae9ec1488e27d977d07cee7e53211fb30c5187a5a40127",
+      "beforeBlob": "e83212c72a211371f1358b9e0058be6d8c9bfe25",
+      "afterBlob": "4078b2ae0b3d2da1d99f4a629634af4a0a3262d8",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/059-compact-lower-720-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/discover-and-research-a-shared-technology-with-both-physical-players/059-compact-lower-720-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/059-compact-lower-720-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 87726,
+      "bounds": {
+        "left": 191,
+        "top": 284,
+        "right": 1078,
+        "bottom": 481
+      },
+      "outsideExpectedBoardRegion": 746,
+      "beforeSha256": "5ff16f3afb85c9d290ddaa788f179610f4001d8f4c01a10b58fcb783e64f3bdc",
+      "afterSha256": "36990c3918144ca42148e482907ff1d79b5a0889891c4039824ef7512dde6408",
+      "beforeBlob": "8032e4b63469f3a63e8842aff540f22210461483",
+      "afterBlob": "6dfed57d22e6b11d0aae5dba3359b205d7fa405d",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/062-compact-focus-640-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/discover-and-research-a-shared-technology-with-both-physical-players/062-compact-focus-640-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/062-compact-focus-640-desktop-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 65026,
+      "bounds": {
+        "left": 191,
+        "top": 261,
+        "right": 1002,
+        "bottom": 420
+      },
+      "outsideExpectedBoardRegion": 439,
+      "beforeSha256": "68adec6eef294fd5c2cb27fd0096f2341baf55fbe63bd95d07b995515bb12ac1",
+      "afterSha256": "bb917fafb478550ce2b5db8a234857dc41466a554645d4d603f29ac01f08969c",
+      "beforeBlob": "7f5813d65591aec6ac2aee7403f95be6f35a67d1",
+      "afterBlob": "58975d192e360df684205efe212eb0e553bc9d3d",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/058-compact-focus-720-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/discover-and-research-a-shared-technology-with-both-physical-players/058-compact-focus-720-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/058-compact-focus-720-desktop-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 103910,
+      "bounds": {
+        "left": 191,
+        "top": 284,
+        "right": 1078,
+        "bottom": 481
+      },
+      "outsideExpectedBoardRegion": 680,
+      "beforeSha256": "0501e3417428ebb5418720667e60401b63a802e64f63e3e4179ad12f88d2d5c9",
+      "afterSha256": "4c971ee6edec296340ae9ec1488e27d977d07cee7e53211fb30c5187a5a40127",
+      "beforeBlob": "e83212c72a211371f1358b9e0058be6d8c9bfe25",
+      "afterBlob": "4078b2ae0b3d2da1d99f4a629634af4a0a3262d8",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/063-compact-lower-640-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/discover-and-research-a-shared-technology-with-both-physical-players/063-compact-lower-640-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/063-compact-lower-640-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 80743,
+      "bounds": {
+        "left": 191,
+        "top": 261,
+        "right": 1078,
+        "bottom": 415
+      },
+      "outsideExpectedBoardRegion": 545,
+      "beforeSha256": "a11563717e52c4a7e2fc85b2d2b145b006aea30990e3610d2b690a8560ea35ac",
+      "afterSha256": "074a906fbf6e9cbf6b3ab7a3d9fb5becd8e23e0c2eb4f831ba640472139dd92b",
+      "beforeBlob": "0d342c3d7d37c41faa61999e48d0fe2c7d22e4e5",
+      "afterBlob": "64ce1852abd62a2407f7316cc740bf3434c5ef7e",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/062-compact-focus-640-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/discover-and-research-a-shared-technology-with-both-physical-players/062-compact-focus-640-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/062-compact-focus-640-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 65026,
+      "bounds": {
+        "left": 191,
+        "top": 261,
+        "right": 1002,
+        "bottom": 420
+      },
+      "outsideExpectedBoardRegion": 439,
+      "beforeSha256": "68adec6eef294fd5c2cb27fd0096f2341baf55fbe63bd95d07b995515bb12ac1",
+      "afterSha256": "bb917fafb478550ce2b5db8a234857dc41466a554645d4d603f29ac01f08969c",
+      "beforeBlob": "7f5813d65591aec6ac2aee7403f95be6f35a67d1",
+      "afterBlob": "58975d192e360df684205efe212eb0e553bc9d3d",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/063-compact-lower-640-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/discover-and-research-a-shared-technology-with-both-physical-players/063-compact-lower-640-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/063-compact-lower-640-desktop-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 80743,
+      "bounds": {
+        "left": 191,
+        "top": 261,
+        "right": 1078,
+        "bottom": 415
+      },
+      "outsideExpectedBoardRegion": 545,
+      "beforeSha256": "a11563717e52c4a7e2fc85b2d2b145b006aea30990e3610d2b690a8560ea35ac",
+      "afterSha256": "074a906fbf6e9cbf6b3ab7a3d9fb5becd8e23e0c2eb4f831ba640472139dd92b",
+      "beforeBlob": "0d342c3d7d37c41faa61999e48d0fe2c7d22e4e5",
+      "afterBlob": "64ce1852abd62a2407f7316cc740bf3434c5ef7e",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/059-compact-lower-720-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/discover-and-research-a-shared-technology-with-both-physical-players/059-compact-lower-720-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/discover-and-research-a-shared-technology-with-both-physical-players/059-compact-lower-720-desktop-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 87726,
+      "bounds": {
+        "left": 191,
+        "top": 284,
+        "right": 1078,
+        "bottom": 481
+      },
+      "outsideExpectedBoardRegion": 746,
+      "beforeSha256": "5ff16f3afb85c9d290ddaa788f179610f4001d8f4c01a10b58fcb783e64f3bdc",
+      "afterSha256": "36990c3918144ca42148e482907ff1d79b5a0889891c4039824ef7512dde6408",
+      "beforeBlob": "8032e4b63469f3a63e8842aff540f22210461483",
+      "afterBlob": "6dfed57d22e6b11d0aae5dba3359b205d7fa405d",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/094-compact-lower-720-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/094-compact-lower-720-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/094-compact-lower-720-desktop-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 62740,
+      "bounds": {
+        "left": 306,
+        "top": 255,
+        "right": 963,
+        "bottom": 505
+      },
+      "outsideExpectedBoardRegion": 0,
+      "beforeSha256": "906cd1aacf10cf3ccf3fedb65316b84c1c622c6273f1e6ce8d4b1dc358cd65a4",
+      "afterSha256": "44c18f2e63dd6224758e19950682cb17536539ea21b6a45359868714e12874aa",
+      "beforeBlob": "1b21cf90832b72228e95c237ddecfa0e153ecb15",
+      "afterBlob": "58c4e2f89f16bde6c32e56bdb597288beb6a44c0",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/097-compact-focus-640-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/097-compact-focus-640-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/097-compact-focus-640-desktop-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 125759,
+      "bounds": {
+        "left": 345,
+        "top": 235,
+        "right": 963,
+        "bottom": 523
+      },
+      "outsideExpectedBoardRegion": 0,
+      "beforeSha256": "3b14e2104e4a02fd816fdf86802e5a04870b7d2da9ba2cafe584e82dafa51f2f",
+      "afterSha256": "424466ccc4f02dd701f2fadf477132c5c4ec7395642ade2f484d0b43cd65126f",
+      "beforeBlob": "e6526755fd26cfa6e04941ee72df5bd1bfc3e50d",
+      "afterBlob": "6807f98113f327c7414c5a15b5dec3fb8bd83a58",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/094-compact-lower-720-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/094-compact-lower-720-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/094-compact-lower-720-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 62740,
+      "bounds": {
+        "left": 306,
+        "top": 255,
+        "right": 963,
+        "bottom": 505
+      },
+      "outsideExpectedBoardRegion": 0,
+      "beforeSha256": "906cd1aacf10cf3ccf3fedb65316b84c1c622c6273f1e6ce8d4b1dc358cd65a4",
+      "afterSha256": "44c18f2e63dd6224758e19950682cb17536539ea21b6a45359868714e12874aa",
+      "beforeBlob": "1b21cf90832b72228e95c237ddecfa0e153ecb15",
+      "afterBlob": "58c4e2f89f16bde6c32e56bdb597288beb6a44c0",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/098-compact-lower-640-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/098-compact-lower-640-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/098-compact-lower-640-desktop-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 110811,
+      "bounds": {
+        "left": 345,
+        "top": 235,
+        "right": 963,
+        "bottom": 523
+      },
+      "outsideExpectedBoardRegion": 0,
+      "beforeSha256": "72b8f14ecbb15973c1bdddb70db0894723f38f0d23c59998f63ebe6ef552f151",
+      "afterSha256": "f3755d9813936e565cb1ee32f422d6b8b7722fe795c313a9c47bd144a8d3f5c8",
+      "beforeBlob": "0108d1dc0c043f5c6084432c28cace4686dd204c",
+      "afterBlob": "f2829ce9cdb53b787320a145fb4d12fd48167d2b",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/097-compact-focus-640-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/097-compact-focus-640-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/097-compact-focus-640-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 125759,
+      "bounds": {
+        "left": 345,
+        "top": 235,
+        "right": 963,
+        "bottom": 523
+      },
+      "outsideExpectedBoardRegion": 0,
+      "beforeSha256": "3b14e2104e4a02fd816fdf86802e5a04870b7d2da9ba2cafe584e82dafa51f2f",
+      "afterSha256": "424466ccc4f02dd701f2fadf477132c5c4ec7395642ade2f484d0b43cd65126f",
+      "beforeBlob": "e6526755fd26cfa6e04941ee72df5bd1bfc3e50d",
+      "afterBlob": "6807f98113f327c7414c5a15b5dec3fb8bd83a58",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/093-compact-focus-720-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/093-compact-focus-720-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/093-compact-focus-720-desktop-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 112904,
+      "bounds": {
+        "left": 306,
+        "top": 255,
+        "right": 963,
+        "bottom": 510
+      },
+      "outsideExpectedBoardRegion": 0,
+      "beforeSha256": "ce55a397db3e5b7cf17298db76929258ba8139b77aaf02733f6388ef0102de25",
+      "afterSha256": "43672534078dd13f8fb4b536e437ce89d9b3d91251c13bb7e6f27bf37639a4ad",
+      "beforeBlob": "b1bade77571f87cef607c5833f2517a5faa9b7e5",
+      "afterBlob": "ce2aa05277bf47b38b0ff91ca0d2cccf91ccd49d",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/098-compact-lower-640-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/098-compact-lower-640-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/098-compact-lower-640-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 110811,
+      "bounds": {
+        "left": 345,
+        "top": 235,
+        "right": 963,
+        "bottom": 523
+      },
+      "outsideExpectedBoardRegion": 0,
+      "beforeSha256": "72b8f14ecbb15973c1bdddb70db0894723f38f0d23c59998f63ebe6ef552f151",
+      "afterSha256": "f3755d9813936e565cb1ee32f422d6b8b7722fe795c313a9c47bd144a8d3f5c8",
+      "beforeBlob": "0108d1dc0c043f5c6084432c28cace4686dd204c",
+      "afterBlob": "f2829ce9cdb53b787320a145fb4d12fd48167d2b",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/093-compact-focus-720-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/093-compact-focus-720-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/resolve-four-corner-resource-cubes-and-the-complete-exo-alloy-queue/093-compact-focus-720-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 112904,
+      "bounds": {
+        "left": 306,
+        "top": 255,
+        "right": 963,
+        "bottom": 510
+      },
+      "outsideExpectedBoardRegion": 0,
+      "beforeSha256": "ce55a397db3e5b7cf17298db76929258ba8139b77aaf02733f6388ef0102de25",
+      "afterSha256": "43672534078dd13f8fb4b536e437ce89d9b3d91251c13bb7e6f27bf37639a4ad",
+      "beforeBlob": "b1bade77571f87cef607c5833f2517a5faa9b7e5",
+      "afterBlob": "ce2aa05277bf47b38b0ff91ca0d2cccf91ccd49d",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-lower-720-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-lower-720-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-lower-720-desktop-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 77443,
+      "bounds": {
+        "left": 191,
+        "top": 284,
+        "right": 1078,
+        "bottom": 481
+      },
+      "outsideExpectedBoardRegion": 746,
+      "beforeSha256": "c98b0592acc9c15fa67491ad5a3319e0a8d81e21e10a4ea83c4ac7e06241c8f2",
+      "afterSha256": "fb620345a853f5381b03a0fa3233de22b5c5c2725f3e219312964c27982b5ce6",
+      "beforeBlob": "884e608291da488fdc35e01dec07b03b658fb906",
+      "afterBlob": "5989d708ece3a8649bab493565c284fe1819c29a",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-compact-focus-640-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-compact-focus-640-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-compact-focus-640-desktop-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 65022,
+      "bounds": {
+        "left": 191,
+        "top": 261,
+        "right": 1002,
+        "bottom": 420
+      },
+      "outsideExpectedBoardRegion": 439,
+      "beforeSha256": "b1ee06794f3f6be11c6f5e63c95844ca93d874c36279ce7cd78a1fa0651c23e2",
+      "afterSha256": "5d6b397f4dddcf569bfe901a9aec6ad23dda619576d1911b903f42bd4b7486c7",
+      "beforeBlob": "3735a8f29f8ea5246b3665bc1b45c85fcb7f15cd",
+      "afterBlob": "a81ec33cbd618754bda137577fde6a1b5f083b44",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-lower-720-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-lower-720-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/093-compact-lower-720-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 77443,
+      "bounds": {
+        "left": 191,
+        "top": 284,
+        "right": 1078,
+        "bottom": 481
+      },
+      "outsideExpectedBoardRegion": 746,
+      "beforeSha256": "c98b0592acc9c15fa67491ad5a3319e0a8d81e21e10a4ea83c4ac7e06241c8f2",
+      "afterSha256": "fb620345a853f5381b03a0fa3233de22b5c5c2725f3e219312964c27982b5ce6",
+      "beforeBlob": "884e608291da488fdc35e01dec07b03b658fb906",
+      "afterBlob": "5989d708ece3a8649bab493565c284fe1819c29a",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-focus-720-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-focus-720-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-focus-720-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 103907,
+      "bounds": {
+        "left": 191,
+        "top": 284,
+        "right": 1078,
+        "bottom": 481
+      },
+      "outsideExpectedBoardRegion": 680,
+      "beforeSha256": "f2c4121b72e01f67c6f377a106584d323423e69377e819300d1021d0a276e986",
+      "afterSha256": "631552213ae7eca1af70bfef6b9b69d6c5d0ebbe844be27967393bdf306514ef",
+      "beforeBlob": "5eebacc29a46600111af0bc01ea09f5e4d4d29f8",
+      "afterBlob": "02eabd6e7777b89214014b6f97a0ece29b594dae",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-focus-720-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-focus-720-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/092-compact-focus-720-desktop-darwin.png",
+      "width": 1280,
+      "height": 720,
+      "changedPixels": 103907,
+      "bounds": {
+        "left": 191,
+        "top": 284,
+        "right": 1078,
+        "bottom": 481
+      },
+      "outsideExpectedBoardRegion": 680,
+      "beforeSha256": "f2c4121b72e01f67c6f377a106584d323423e69377e819300d1021d0a276e986",
+      "afterSha256": "631552213ae7eca1af70bfef6b9b69d6c5d0ebbe844be27967393bdf306514ef",
+      "beforeBlob": "5eebacc29a46600111af0bc01ea09f5e4d4d29f8",
+      "afterBlob": "02eabd6e7777b89214014b6f97a0ece29b594dae",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/097-compact-lower-640-desktop-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/097-compact-lower-640-desktop-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/097-compact-lower-640-desktop-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 80440,
+      "bounds": {
+        "left": 191,
+        "top": 261,
+        "right": 1078,
+        "bottom": 415
+      },
+      "outsideExpectedBoardRegion": 545,
+      "beforeSha256": "0992edcc59b789e1e6a11a6f020a451fde61dfc300d0d038df5af8ea6df24227",
+      "afterSha256": "96e0126d0859f804e10d119b72129029001df56084a5e67dd9bf8ea0ac2cbc1c",
+      "beforeBlob": "2d36bf4a9eadfb655ce374b3de45afdb45ed7d5d",
+      "afterBlob": "8784006cad874178b4663bd0483fcc1249874c19",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/097-compact-lower-640-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/097-compact-lower-640-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/097-compact-lower-640-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 80440,
+      "bounds": {
+        "left": 191,
+        "top": 261,
+        "right": 1078,
+        "bottom": 415
+      },
+      "outsideExpectedBoardRegion": 545,
+      "beforeSha256": "0992edcc59b789e1e6a11a6f020a451fde61dfc300d0d038df5af8ea6df24227",
+      "afterSha256": "96e0126d0859f804e10d119b72129029001df56084a5e67dd9bf8ea0ac2cbc1c",
+      "beforeBlob": "2d36bf4a9eadfb655ce374b3de45afdb45ed7d5d",
+      "afterBlob": "8784006cad874178b4663bd0483fcc1249874c19",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    },
+    {
+      "path": "tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-compact-focus-640-tabletop-4k-darwin.png",
+      "before": "/Users/anicolao/projects/games/beyond/tmp/personal207-before-focus-references/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-compact-focus-640-tabletop-4k-darwin.png",
+      "after": "/private/tmp/beyond-personal014/tests/e2e/005-technology-discovery/screenshots/offer-four-fleets-and-jump-two-distinct-ships-into-real-control-bonuses/096-compact-focus-640-tabletop-4k-darwin.png",
+      "width": 1280,
+      "height": 640,
+      "changedPixels": 65022,
+      "bounds": {
+        "left": 191,
+        "top": 261,
+        "right": 1002,
+        "bottom": 420
+      },
+      "outsideExpectedBoardRegion": 439,
+      "beforeSha256": "b1ee06794f3f6be11c6f5e63c95844ca93d874c36279ce7cd78a1fa0651c23e2",
+      "afterSha256": "5d6b397f4dddcf569bfe901a9aec6ad23dda619576d1911b903f42bd4b7486c7",
+      "beforeBlob": "3735a8f29f8ea5246b3665bc1b45c85fcb7f15cd",
+      "afterBlob": "a81ec33cbd618754bda137577fde6a1b5f083b44",
+      "cause": "Prompt206 removes duplicate shared discovered overview in focused Technology; detailed tree and connector inset move together34px for heading clearance"
+    }
+  ],
+  "allChangesInsideExpectedBoardRegion": false,
+  "transforms": false,
+  "classification": "Exactly32 expected compact upper/lower focused frames; no overview, return, dialog, native4K or other images changed",
+  "preliminaryRegionNote": "The audit template200..1080 was narrower than the actual two/cardinal focused surface179..1101. Its flagged pixels start at191 and remain within the photographed detailed board. This is a provenance-region classification, not a geometry guard or comparator change. Original per-frame counters retained.",
+  "allChangesInsideActualFocusedBoard": true,
+  "reviewedRepresentatives": [
+    "March720 detailed upper",
+    "Rift640 detailed upper",
+    "Exo640 upper/lower",
+    "four-fleet640 lower"
+  ]
+}

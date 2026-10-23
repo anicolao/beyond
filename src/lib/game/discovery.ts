@@ -1,3 +1,5 @@
+import {ownsTechnology} from './personal-technologies';
+import type {PersonalTechnology} from './personal-technologies';
 import type {Colony,ColonyStep} from './colonization';
 import type {AchievementClaim} from './achievements';
 import type {BonusEffect} from './discovery-effects';
@@ -16,8 +18,8 @@ export type DiscoveryChoice=
  | {kind:'candidate';responder:string;slot:string;cards:string[];revealed:string[];type:TechnologyType}
  | {kind:'guild';responder:string;event:string;slot:string}
  | {kind:'effect';responder:string;source:string;effect:BonusEffect}
- | {kind:'jump-apply';responder:string;amount:number;legs:import('./discovery-movement').JumpLeg[]}
- | {kind:'jump-power';responder:string;amount:number;legs:import('./discovery-movement').JumpLeg[];index:number}
+ | {kind:'jump-apply';responder:string;amount:number;topology?:'any';legs:import('./discovery-movement').JumpLeg[]}
+ | {kind:'jump-power';responder:string;amount:number;topology?:'any';legs:import('./discovery-movement').JumpLeg[];index:number}
  | {kind:'control';responder:string;location:string;source:string}
  | {kind:'control-check';responder:string;location:string;source:string}
  | {kind:'control-loss';responder:string;location:string;source:string}
@@ -25,13 +27,13 @@ export type DiscoveryChoice=
  | {kind:'event-complete';responder:string;event:string}
  | {kind:'resume';responder:string;card?:string;slot?:string;event?:string;returnTo?:'production'|'trade'};
 /** Internal canonical state. Deck order is deliberately absent from PublicDiscovery. */
-export type DiscoveryState={colonies?:Colony[];jumpControlChecks?:DiscoveryChoice[];deckII:string[];records:DiscoveryRecord[];technologies:{slot:string;card:string}[];events:RevealedEvent[];guilds:string[];queue:DiscoveryChoice[];reservations:ResearchReservation[];revealBoundary?:{turn:number;reason:'Event reveal'|'Technology reveal'|'System reveal'};seed:string;achievements:string[];claims:AchievementClaim[];basis:string[];eventDeck:string[];cursor:number;sequence:number;rollIndex:number;systems:{slot:string;card:string;parent:string}[];systemDecks:{A:string[];B:string[]};systemBasis:Record<string,string>;outposts:Record<string,{owner:string;track:'food'|'ore';placeholder?:boolean}>;industry:string[];powers:Record<string,Record<string,number>>;completed?:{turn:number;card:string}};
-export type PublicDiscovery=Omit<DiscoveryState,'deckII'|'seed'|'systemDecks'|'basis'|'eventDeck'|'achievements'|'rollIndex'|'systemBasis'|'powers'|'jumpControlChecks'>&{powerReady?:boolean;powerPositions?:string[]};
+export type DiscoveryState={personalTechnologies?:PersonalTechnology[];deckIII?:string[];colonies?:Colony[];jumpControlChecks?:DiscoveryChoice[];deckII:string[];records:DiscoveryRecord[];technologies:{slot:string;card:string}[];events:RevealedEvent[];guilds:string[];queue:DiscoveryChoice[];reservations:ResearchReservation[];revealBoundary?:{turn:number;reason:'Event reveal'|'Technology reveal'|'System reveal'};seed:string;achievements:string[];claims:AchievementClaim[];basis:string[];eventDeck:string[];cursor:number;sequence:number;rollIndex:number;systems:{slot:string;card:string;parent:string}[];systemDecks:{A:string[];B:string[]};systemBasis:Record<string,string>;outposts:Record<string,{owner:string;track:'food'|'ore';placeholder?:boolean}>;industry:string[];powers:Record<string,Record<string,number>>;completed?:{turn:number;card:string}};
+export type PublicDiscovery=Omit<DiscoveryState,'deckIII'|'deckII'|'seed'|'systemDecks'|'basis'|'eventDeck'|'achievements'|'rollIndex'|'systemBasis'|'powers'|'jumpControlChecks'>&{personalDeckReady?:boolean;powerReady?:boolean;powerPositions?:string[]};
 export function publicDiscovery(state:DiscoveryState,count?:number):PublicDiscovery{
- return JSON.parse(JSON.stringify({...((state.colonies?.length)?{colonies:state.colonies}:{}),powerReady:count!==undefined&&Object.values(state.powers??{}).filter(power=>'*' in power).length===count,powerPositions:Object.entries(state.powers??{}).filter(([,power])=>'*' in power).map(([position])=>position),records:state.records,technologies:state.technologies,events:state.events,guilds:state.guilds,queue:state.queue,reservations:state.reservations,...(state.revealBoundary?{revealBoundary:state.revealBoundary}:{}),claims:state.claims??[],cursor:state.cursor,sequence:state.sequence,systems:state.systems,outposts:state.outposts,industry:state.industry,...(state.completed?{completed:state.completed}:{})}));
+ return JSON.parse(JSON.stringify({personalDeckReady:!!state.deckIII,...((state.personalTechnologies?.length)?{personalTechnologies:state.personalTechnologies}:{}),...((state.colonies?.length)?{colonies:state.colonies}:{}),powerReady:count!==undefined&&Object.values(state.powers??{}).filter(power=>'*' in power).length===count,powerPositions:Object.entries(state.powers??{}).filter(([,power])=>'*' in power).map(([position])=>position),records:state.records,technologies:state.technologies,events:state.events,guilds:state.guilds,queue:state.queue,reservations:state.reservations,...(state.revealBoundary?{revealBoundary:state.revealBoundary}:{}),claims:state.claims??[],cursor:state.cursor,sequence:state.sequence,systems:state.systems,outposts:state.outposts,industry:state.industry,...(state.completed?{completed:state.completed}:{})}));
 }
 export function initialDiscovery(seed:string,count:PlayerCount,turn:number,achievements:readonly string[]=['transcendence','empire','technologist','warlord']):DiscoveryState{
- const decks=setupDecks(seed,count);const systemBasis=Object.fromEntries([...decks.startingA.map((card,i)=>[`a-${i+1}`,card]),...decks.systemsB.slice(0,2).map((card,i)=>[`b-${i+1}`,card])]);return {seed,achievements:[...achievements],claims:[],basis:decks.technologies.I,eventDeck:decks.events.II,cursor:0,sequence:0,rollIndex:0,systems:[],systemDecks:{A:decks.systemsA,B:decks.systemsB.slice(2)},systemBasis,outposts:{},industry:[],powers:{},deckII:decks.technologies.II,records:[],technologies:[],events:[],guilds:[],queue:[],reservations:[]};
+ const decks=setupDecks(seed,count);const systemBasis=Object.fromEntries([...decks.startingA.map((card,i)=>[`a-${i+1}`,card]),...decks.systemsB.slice(0,2).map((card,i)=>[`b-${i+1}`,card])]);return {seed,achievements:[...achievements],claims:[],basis:decks.technologies.I,eventDeck:decks.events.II,cursor:0,sequence:0,rollIndex:0,systems:[],systemDecks:{A:decks.systemsA,B:decks.systemsB.slice(2)},systemBasis,outposts:{},industry:[],powers:{},deckII:decks.technologies.II,deckIII:decks.technologies.III,records:[],technologies:[],events:[],guilds:[],queue:[],reservations:[]};
 }
 export function visibleTechnologies(game:PublicSetup,state?:PublicDiscovery){return [...game.technologies,...(state?.technologies??[])];}
 export function permittedTypes(game:PublicSetup,slotId:string,state?:PublicDiscovery):TechnologyType[]{
@@ -50,7 +52,7 @@ export function levelTwoBlocker(game:PublicSetup,space:number,slotId:string,stat
  const known=visibleTechnologies(game,state);const existing=known.find(t=>t.slot===slotId);
  if(existing&&actor.research.includes(existing.card))return 'Already researched by your faction.';
  const missing=slot.prerequisites.filter(id=>{const card=known.find(t=>t.slot===id);return !card||!actor.research.includes(card.card);});
- if(missing.length)return `Research ${missing.map(id=>{const c=known.find(t=>t.slot===id);return c?canonicalCard(c.card).title:id;}).join(' and ')} first.`;
+ if(missing.length&&!(existing&&slot.prerequisites.length===2&&missing.length===1&&ownsTechnology(game,actor.position,'transdimensional-ai')))return `Research ${missing.map(id=>{const c=known.find(t=>t.slot===id);return c?canonicalCard(c.card).title:id;}).join(' and ')} first.`;
  if(actor.population<1)return 'Need 1 available Population for permanent research.';
  const cost=levelTwoCost(game.count,space,slotId,state);
  if(actor.ore<cost)return `Need ${cost} Ore (${cost-actor.ore} more).`;

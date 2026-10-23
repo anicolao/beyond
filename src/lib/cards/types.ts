@@ -17,6 +17,7 @@ export interface CardDefinition {
 }
 // Public projection only: never pass a deck, future draw, or command to a renderer.
 export interface CardPresentation {
+  personalOwner?: string;
   researchers?: readonly string[]; researcherTones?: readonly number[]; actionOccupant?: string;
   colonyOwner?: string; colonySpecialty?: 'food'|'ore'; claimants?: readonly string[]; claimantTones?: readonly number[]; players?: 2 | 3 | 4;
 }

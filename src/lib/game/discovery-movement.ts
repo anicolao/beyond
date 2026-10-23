@@ -1,3 +1,4 @@
+import {ownsTechnology} from './personal-technologies';
 import {currentSystems} from './colonization';
 import {canonicalCard} from '../cards/catalog';
 import {explorationBoard,type Location} from './manifest';
@@ -10,6 +11,12 @@ export function discoveryMap(game:PublicSetup){
  const printed=explorationBoard(game.count),extra=game.discovery?.systems??[],map={...printed,locations:printed.locations.map(location=>{const system=game.systems.find(s=>s.slot===location.id);return system?{...location,title:canonicalCard(system.card).title}:location;})};
  const locations:Location[]=[...map.locations,...extra.map(s=>{return {id:s.slot,title:canonicalCard(s.card).title,x:game.count===2?18:50,y:game.count===2?58:70,kind:'system' as const};})];
  return {locations,edges:[...map.edges,...extra.map(s=>[s.parent,s.slot] as const)]};
+}
+export function permittedJumpDestinations(game:PublicSetup,position:string,from:string,anyLocation=false){
+ const map=discoveryMap(game);
+ const q=game.discovery?.queue[0];const immediate=!!q&&(q.kind==='effect'&&q.effect.kind==='jump'&&q.effect.topology==='any'||(q.kind==='jump-apply'||q.kind==='jump-power')&&q.topology==='any');
+ if(anyLocation||immediate||ownsTechnology(game,position,'wormhole-technology')&&!['sol','deep-space'].includes(from))return map.locations.filter(l=>l.id!==from).map(l=>l.id);
+ return map.edges.filter(([a,b])=>a===from||b===from).map(([a,b])=>a===from?b:a);
 }
 export function specialty(initial:PublicSetup,state:PlayState,location:string){
  const printed=explorationBoard(initial.count).locations.find(l=>l.id===location);
@@ -40,18 +47,18 @@ export function returnOutpost(initial:PublicSetup,state:PlayState,position:strin
  delete d.outposts[location];d.queue.shift();
 }
 export function placeOutpost(initial:PublicSetup,state:PlayState,position:string,location:string,track:'food'|'ore'){
- const kind=specialty(initial,state,location);if(!kind||(kind!=='either'&&kind!==track))throw new Error('Choose a matching production disc.');
+ const kind=specialty(initial,state,location);if(!kind||(kind!=='either'&&kind!==track&&!ownsTechnology({...initial,players:initial.players.map(actor=>({...actor,...state.players[actor.position]})),discovery:state.discovery},position,'subatomic-fabrication')))throw new Error('Choose a matching production disc.');
  const p=player(initial,state,position),key=track==='food'?'foodDiscs':'oreDiscs',placeholder=p[key]===0;
  if(!placeholder)p[key]--;state.discovery!.outposts[location]={owner:position,track,...(placeholder?{placeholder:true}:{})};
 }
-export function validateJump(initial:PublicSetup,state:PlayState,position:string,amount:number,legs:JumpLeg[]){
+export function validateJump(initial:PublicSetup,state:PlayState,position:string,amount:number,legs:JumpLeg[],anyLocation=false){
  const d=state.discovery!,p=player(initial,state,position),map=discoveryMap({...initial,discovery:d}),used=new Set<string>();let spent=0;
  if(!Array.isArray(legs)||legs.length>4)throw new Error('Choose a finite jump plan.');
  for(const leg of legs){
   const ship=Number.isInteger(leg.index)?p.ships[leg.index]:undefined;
   if(!ship||ship.id!==leg.ship||used.has(ship.id)||!Array.isArray(leg.path)||leg.path.length<2||leg.path[0]!==ship.location)throw new Error('Choose each owned ship once, starting at its current location.');used.add(ship.id);
   for(let i=1;i<leg.path.length;i++){
-   if(!map.edges.some(([a,b])=>a===leg.path[i-1]&&b===leg.path[i]||b===leg.path[i-1]&&a===leg.path[i]))throw new Error('Follow actual adjacent jump connections.');
+   if(!permittedJumpDestinations({...initial,players:initial.players.map(actor=>({...actor,...state.players[actor.position]})),discovery:d},position,leg.path[i-1],anyLocation).includes(leg.path[i]))throw new Error('Follow actual adjacent jump connections.');
    const system=currentSystems(initial,d).find(s=>s.slot===leg.path[i]);
    if(system?.card==='luytens-star'&&p.research.filter(id=>canonicalCard(id).technology?.level==='III').length<2)throw new Error('Luyten’s Star requires two Level III technologies.');
   }
@@ -63,8 +70,8 @@ export function validateJump(initial:PublicSetup,state:PlayState,position:string
  if(solar){const cost=legs.filter(leg=>leg.path.length>1&&leg.path.at(-1)===solar&&leg.path[0]!==solar).length;if(p.ore<cost)throw new Error('Need Ore for every ship ending this jump at the solar Event.');return cost;}
  return 0;
 }
-export function performJump(initial:PublicSetup,state:PlayState,position:string,amount:number,legs:JumpLeg[]){
- const p=player(initial,state,position),cost=validateJump(initial,state,position,amount,legs);
+export function performJump(initial:PublicSetup,state:PlayState,position:string,amount:number,legs:JumpLeg[],anyLocation=false){
+ const p=player(initial,state,position),cost=validateJump(initial,state,position,amount,legs,anyLocation);
  for(const leg of legs)p.ships[leg.index].location=leg.path.at(-1)!;
  p.ore-=cost;
  updateControl(initial,state,'Jump',legs.flatMap(leg=>[leg.path[0],leg.path.at(-1)!]),position);

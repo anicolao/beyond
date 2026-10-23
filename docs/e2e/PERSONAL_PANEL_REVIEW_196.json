@@ -1,0 +1,543 @@
+{
+  "prompt": 196,
+  "authorship": "reviewer-authored",
+  "branch": "feat/personal-technology",
+  "base": "fecea48f259f16253566c9d894dcf0986eb4efd9",
+  "status": "Revised exploratory visuals ready for independent review; not accepted; no formal baselines/publication",
+  "preview": "http://127.0.0.1:5209/",
+  "publicRemote": "http://127.0.0.1:5209/remote/?room=1903acbd-a110-4bfb-960e-0ee9c8070d3f",
+  "reportedImage": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round195-shared-two/personal-table-1280.png",
+  "changes": [
+    "Reserve outside board rail for personal panel beside two-seat cardinal mat; complete frame clears bottom watermark and viewport",
+    "Increase cardinal card face from52to110CSSpx, corner2face to80CSSpx; original reusable CardFace dimensions/rules unchanged",
+    "Readable owner, level/VP/no-cube, exclusive printed-Action identity and full-card affordance",
+    "Short personal table keeps north seat control and title/tools inside viewport; reviewed full topology remains inspectable through bounded overview/focus",
+    "Retain four-corner pocket sizes/placement and existing controls; ownership already readable there"
+  ],
+  "geometryProof": "/Users/anicolao/projects/games/beyond/tmp/personal196-panel-geometry.json",
+  "geometry": [
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "document": [
+        1280,
+        720
+      ],
+      "panel": {
+        "x": 1006,
+        "y": 484.984375,
+        "width": 260,
+        "height": 196,
+        "top": 484.984375,
+        "right": 1266,
+        "bottom": 680.984375,
+        "left": 1006
+      },
+      "cardLocalWidth": 110,
+      "cardLocalHeight": 176,
+      "controls": [
+        {
+          "label": "Inspect Ada personal Plasma Cannon",
+          "box": {
+            "x": 1016,
+            "y": 494.984375,
+            "width": 240,
+            "height": 176,
+            "top": 494.984375,
+            "right": 1256,
+            "bottom": 670.984375,
+            "left": 1016
+          }
+        },
+        {
+          "label": "Inspect Ada faction mat",
+          "box": {
+            "x": 388,
+            "y": 672.984375,
+            "width": 161.265625,
+            "height": 44,
+            "top": 672.984375,
+            "right": 549.265625,
+            "bottom": 716.984375,
+            "left": 388
+          }
+        },
+        {
+          "label": "Choose production",
+          "box": {
+            "x": 730.734375,
+            "y": 672.984375,
+            "width": 161.265625,
+            "height": 44,
+            "top": 672.984375,
+            "right": 892,
+            "bottom": 716.984375,
+            "left": 730.734375
+          }
+        },
+        {
+          "label": "Inspect Bora faction mat",
+          "box": {
+            "x": 559.375,
+            "y": 3,
+            "width": 161.265625,
+            "height": 44,
+            "top": 3,
+            "right": 720.640625,
+            "bottom": 47,
+            "left": 559.375
+          }
+        }
+      ]
+    },
+    {
+      "viewport": [
+        1280,
+        640
+      ],
+      "document": [
+        1280,
+        640
+      ],
+      "panel": {
+        "x": 1006,
+        "y": 400,
+        "width": 260,
+        "height": 196,
+        "top": 400,
+        "right": 1266,
+        "bottom": 596,
+        "left": 1006
+      },
+      "cardLocalWidth": 110,
+      "cardLocalHeight": 176,
+      "controls": [
+        {
+          "label": "Inspect Ada personal Plasma Cannon",
+          "box": {
+            "x": 1016,
+            "y": 410,
+            "width": 240,
+            "height": 176,
+            "top": 410,
+            "right": 1256,
+            "bottom": 586,
+            "left": 1016
+          }
+        },
+        {
+          "label": "Inspect Ada faction mat",
+          "box": {
+            "x": 388,
+            "y": 588,
+            "width": 161.265625,
+            "height": 44,
+            "top": 588,
+            "right": 549.265625,
+            "bottom": 632,
+            "left": 388
+          }
+        },
+        {
+          "label": "Choose production",
+          "box": {
+            "x": 730.734375,
+            "y": 588,
+            "width": 161.265625,
+            "height": 44,
+            "top": 588,
+            "right": 892,
+            "bottom": 632,
+            "left": 730.734375
+          }
+        },
+        {
+          "label": "Inspect Bora faction mat",
+          "box": {
+            "x": 559.375,
+            "y": 12.609375,
+            "width": 161.265625,
+            "height": 44,
+            "top": 12.609375,
+            "right": 720.640625,
+            "bottom": 56.609375,
+            "left": 559.375
+          }
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "types": "/Users/anicolao/projects/games/beyond/tmp/personal196-types1.log",
+    "build": "/Users/anicolao/projects/games/beyond/tmp/personal196-build1.log",
+    "sourcePolicy": "/Users/anicolao/projects/games/beyond/tmp/personal196-policy1.log",
+    "diffCheck": "PASS",
+    "backend": "Prior195288/3728 across26suites; reducer/rules/tests unchanged in196; not rerun",
+    "captureGuards": "Prior19551PASS; helper predicates/deadlines unchanged",
+    "formalE2E": "HELD; no TestStepHelper baseline generation or acceptance claimed"
+  },
+  "diagnostics": {
+    "shared": {
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal196-shared-views3.log",
+      "guardedCaptures": 12
+    },
+    "corner": {
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal196-corner-views2.log",
+      "guardedCaptures": 12
+    },
+    "remote": {
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal196-remote-views1.log",
+      "guardedCaptures": 13
+    },
+    "four-corner": {
+      "log": "/Users/anicolao/projects/games/beyond/tmp/personal196-four-root-views1.log",
+      "guardedCaptures": 3
+    }
+  },
+  "captures": [
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-shared-views/personal-card-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "4a1aa7b7cdaaade569c9016c00c19c47645029852b1b5fd664d4e15fee5c06cf"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-shared-views/personal-card-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "870292403cada9f2fe1b1f9beb087afc5825e6157f526f08c8877a3cbc1fc736"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-shared-views/personal-card-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "e4ddf17dd0af1d18f5d7e6b2ca6ac625c6d8e5f14616c395b042c946d0c32c0a"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-shared-views/personal-mat-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "4c7da2e6dbcca2912c9150e631656deba6f2357f99d0d1a84bb5e3ea34ff1f39"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-shared-views/personal-mat-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "4dd548fb930d3cb36007f57f197f8580da23c5378ed9c883d8d5aab9a724dd3d"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-shared-views/personal-mat-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "d5f4223dcf822dc53ce61e1cfae09a329b904f52d7bc7da24f2a35d3d5174c35"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-shared-views/personal-rules-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "afb5e4c75dd9ef5a152c71fed5f131667d7d1076b910f72b74b3721c63a10cf3"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-shared-views/personal-rules-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "18b091c2507a84fe8439a77f0bf0d8b76158bdd1a928dc207a676041592d8834"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-shared-views/personal-rules-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "dad8af75dd8c235c0ed615a089a5d11c9ccb27660cec4403ed0bcfcd7bdda3d5"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-shared-views/table-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "18dcf4a83304dbd9ff787a4ba82862d7f8b8358934236c8cbf748aaf1a130393"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-shared-views/table-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "de405711eed0145edeb2e385bc5877230a0e902fd8b9840ff2b8a18272f46fb4"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-shared-views/table-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "8fd4fd83777f11b91b15885a1e90d44f4962ec2fb78286869efc515c1977a74c"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-corner-views/personal-card-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "a719f22a5ed4ab90a7d54dd825006497c574fb6c1376fa303754fe1c113c2ad5"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-corner-views/personal-card-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "e3d59ccea3d53b860a5c66428e27aa16089315d164e2c2d0f1739ac4d5a36680"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-corner-views/personal-card-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "e527f5ede1dce6e980943e0cb0b197fa704ee227881455c739e6cb39c3304eef"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-corner-views/personal-mat-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "5ddbe3af7d1f0c922af3e125df9f1e2b86babc1a6d02509411992e1198342cf7"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-corner-views/personal-mat-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "65e52982a9d0f34058a9b1b69c978308544897dedffd9dd2a1cfbf30b722ab60"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-corner-views/personal-mat-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "0c4f34a290adad22b476538e43ec8c9af1cf74144a6c2966514f5fc5ca01806e"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-corner-views/personal-rules-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "6aea65a326cb5ced457803ffb2b05f4f408dbf690d3742cad850dc570741154d"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-corner-views/personal-rules-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "aa416152ddf0cecf8ab7469279badb6d821439d65b04c6d32694e955dcced6b7"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-corner-views/personal-rules-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "1634a85200f5456d5c09bcd31814ce9627aa790f44ce3cb20baf2f39eb38a36b"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-corner-views/table-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "9b80d24e4387f97b3bf4ab593242ca3a375715392ecf82194f283dbdc8257cd1"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-corner-views/table-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "1f646552ff909daec3d173f61ef3dfbef1746c991f04fe29c4e53b5f89c788bf"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-corner-views/table-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "a4064212c8cd73d4f805a204f6552978f2a0e39cf31786664b4ae7410f554731"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-remote-views/own-card-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "4af197a4afff3ab74b1abb7cbe0c061b7ea42ad539f7950c564706ee82fc9a75"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-remote-views/own-card-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "a097c87e1fb0ecc4beb7eae1718f91c968d3ccab0603a8a0e295643ac1bc2483"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-remote-views/own-card-393x852.png",
+      "dimensions": [
+        393,
+        852
+      ],
+      "sha256": "9c77cbcbebfddb8f928f326611941104deabc761ca3c9187e8792cc672c36f61"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-remote-views/own-rules-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "3428804400a4fbd43200e294fed4a6db93396ac34cbab0dc870c05bd721beaa8"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-remote-views/own-rules-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "f7bcfea4275e9d9b5d9d86dfb247a6f74bdaa999631eabab6cbf6e4b36e9366b"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-remote-views/own-rules-393x852.png",
+      "dimensions": [
+        393,
+        852
+      ],
+      "sha256": "0d76b914e7b9f31dd1e2eaed443774f2ed36ef6c2e4ff9ad078b765b9e4d4824"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-remote-views/own-table-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "f85bf544ac63bc68465c1d57b964fc3377cad09da21b7f829c81074c92d4d2cd"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-remote-views/own-table-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "3fd1d25d5b207c23daf1f2e622094634beb787a4d71f302572e0785150a9a8b0"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-remote-views/own-table-393x852.png",
+      "dimensions": [
+        393,
+        852
+      ],
+      "sha256": "f0a747b37a4868d1117346a1da9068511d0de7418a34bdca8203a8554adcd8c2"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-remote-views/rival-action-blocked-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "ea7c1511b7507d1d55b35541c8796180d83d61702d955a7eef56031fb9fa26d0"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-remote-views/rival-action-blocked-393x852.png",
+      "dimensions": [
+        393,
+        852
+      ],
+      "sha256": "6c795b8e046dd4d88a1b4fb4fe8c4666a5272db73416e761568cd203e0afdbe6"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-remote-views/rival-inspects-owner-393x852.png",
+      "dimensions": [
+        393,
+        852
+      ],
+      "sha256": "c212666db3293d925e74f7ff3a536bfa464a31ae2a6ef59d00b8e246e1338838"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-remote-views/rival-public-card-393x852.png",
+      "dimensions": [
+        393,
+        852
+      ],
+      "sha256": "659403728f235b109feb3acf6ed98a5eedec0c0df58bddf9d5c0a39bef5a053b"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-four-corner-views/table-1280x640.png",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "sha256": "1484fa0a04a91f78d99acd9aa18baa479a2c5ffa18ed0b7366787b85dc2620ed"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-four-corner-views/table-1280x720.png",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "e646c14c6e64a1a6d20036f1c7ba5d21d3c3fe43ea9617fa1641d315995c7ab0"
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round196-four-corner-views/table-3840x2160.png",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "sha256": "251f20e5f4a37a4b70c9d75478b84724ea67bb23a142399c933cada5aad8fe50"
+    }
+  ],
+  "failureHistory": [
+    "corner-views1: enlarged rotated pocket correctly failed viewport containment; preserved failure.png/log, repositioned before corner-views2 pass",
+    "panel-geometry1: resize audit ran before short-board height binding reached its existing y75 responsive position; preserved failure log; geometry2 waits that semantic layout state before the same guard, matching successful view helper",
+    "Earlier195 invalid/rejected captures remain historical and are not promoted"
+  ],
+  "remainingScope": [
+    "WISE LevelIII settlement remains wholly blocked before payment: complete source-reviewed III immediate/ongoing effect support is unfinished; seeded acquisition model is not a live WISE flow",
+    "Personal Android Destroyers Action remains blocked pending authoritative highest-researched-level interaction; fixed immediate level3 benefit is implemented",
+    "Other printed research/copy effects retain prior supported-action boundaries; not claimed implemented",
+    "No independent014 visual acceptance, no baseline changes, no015 release or merge",
+    "Four-player ordinary proof covers Ada at SouthWest; other acquiring seat orientations/cardinal-four remain to be reviewed; do not claim every seat proven."
+  ],
+  "olderCIGates": "Separate PERSONAL_REVIEW_195.json ledger retains failed012/013 native/comparison cohorts and exact-source publisher503; no fallback or reference adoption",
+  "merged": false,
+  "sourceChangesSince195": [
+    "src/lib/game/GameSurface.svelte",
+    "src/lib/game/PersonalTechnologyTableau.svelte"
+  ],
+  "sourceHashes": {
+    "src/lib/game/GameSurface.svelte": "022c0f397f632568a0b0121ab7b668486d187a5771d2e0b180cfd078abc2666d",
+    "src/lib/game/PersonalTechnologyTableau.svelte": "cbfd9e4af0fe3c2dc2995b62485e3e827a6a3080d33fe2d06b85dc876370a0f4"
+  }
+}

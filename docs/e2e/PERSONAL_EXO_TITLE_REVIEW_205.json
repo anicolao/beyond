@@ -1,0 +1,45 @@
+{
+  "prompt": 205,
+  "authorship": "reviewer-authored",
+  "finding": "Correct: historical collateral 2-after.png still wraps Terraformin / g. It is preserved exact3 actual, not the current corrected reference.",
+  "historical": {
+    "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round205-exo-title/historical-exact3-wrapped-1280x720.png",
+    "sha256": "5345adf02aa557e8e970513461267c8072507db43e5f07ae6f1b4fb4a4e625b8",
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  "current": {
+    "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round205-exo-title/current-reviewed-reference-1280x720.png",
+    "sha256": "cdb1e462955700e7fc593170179b922e43f2283ba74e20fe208fac2e22d060b7",
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  "currentState": {
+    "width": 1280,
+    "height": 720,
+    "scenario": "Complete four-corner Exo-Alloy queue, compact Technology overview720",
+    "visualInspection": "Terraforming appears on one line inside its ivory card; title size remains14px",
+    "sourceCorrection": "Compact LevelI overview face inset2px, header horizontal inset0; no title shrink or rule clipping",
+    "source": "src/lib/game/GameSurface.svelte:509",
+    "priorSequence": "Correction and visual inspection preceded candidate8 refresh; affected exact10/10 and fresh full exact4 208/208 subsequently passed",
+    "record": "test-results/005-technology-discovery-d-96095-he-complete-Exo-Alloy-queue-desktop/story.json",
+    "step": "compact-overview-720",
+    "exactLog": "personal203-final-exact4.log",
+    "sourceFreezeMatches196Files": true
+  },
+  "artifactKind": "Byte-identical APFS copies of historical failure and reviewed candidate reference; current reference was verified by fresh exact4 RGBA comparison. No new capture/regeneration/transform for205.",
+  "preservedOriginal": {
+    "path": "/Users/anicolao/projects/games/beyond/tmp/personal203-collateral-review/2-after.png",
+    "sha256": "5345adf02aa557e8e970513461267c8072507db43e5f07ae6f1b4fb4a4e625b8",
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  "hold": "No blanket acceptance inferred; independent014 acceptance/publication/015/merge still held",
+  "guardsChanged": false
+}

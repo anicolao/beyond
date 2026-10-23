@@ -1,0 +1,269 @@
+{
+  "url": "http://127.0.0.1:5209/?table=78232000-7878-4787-8878-0000001f6ee1",
+  "derivedFrom": "http://127.0.0.1:5209/?table=78232000-7878-4787-8878-0000001f6ee1",
+  "ordinaryReplayProof": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round206-focus/proof.json",
+  "newGameMoves": 0,
+  "sourceOrRuleInjection": false,
+  "formalBaselineGeneration": false,
+  "captures": [
+    {
+      "id": "compact-focus-720",
+      "caption": "Detailed focus hides overview and clears the Level I heading",
+      "player": "Shared controller; original ordinary four-player Exo-Alloy table",
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round206-focus-final/compact-focus-720-43672534078d.png",
+      "sha256": "43672534078dd13f8fb4b536e437ce89d9b3d91251c13bb7e6f27bf37639a4ad",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "captureMs": 59.843583000000024,
+      "focus": true,
+      "classes": "game-surface svelte-jpcb9b discovered-branches shared diagonal many-seats corner-only technology-focus",
+      "overviewDisplay": "none",
+      "overviewRect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "detailRect": {
+        "x": 306.390625,
+        "y": 255,
+        "width": 667.21875,
+        "height": 256,
+        "top": 255,
+        "right": 973.609375,
+        "bottom": 511,
+        "left": 306.390625
+      },
+      "visibleColumnHeadings": [
+        "IFour discoveries",
+        "II15 cards \u00b7 face down",
+        "III16 cards \u00b7 face down",
+        "IIII10 cards \u00b7 face down"
+      ],
+      "visibleTerraformingTitles": 1
+    },
+    {
+      "id": "compact-lower-720",
+      "caption": "Lower detailed topology retains bounded scrolling without overview",
+      "player": "Shared controller",
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round206-focus-final/compact-lower-720-e073d8c5804b.png",
+      "sha256": "e073d8c5804b38a8c4f49ade0ca0b8c166f7ebe15bd7c22ec2c5d5673c202960",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "captureMs": 41.86808300000007,
+      "focus": true,
+      "classes": "game-surface svelte-jpcb9b discovered-branches shared diagonal many-seats corner-only technology-focus",
+      "overviewDisplay": "none",
+      "overviewRect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "detailRect": {
+        "x": 306.390625,
+        "y": 255,
+        "width": 667.21875,
+        "height": 256,
+        "top": 255,
+        "right": 973.609375,
+        "bottom": 511,
+        "left": 306.390625
+      },
+      "visibleColumnHeadings": [
+        "IFour discoveries",
+        "II15 cards \u00b7 face down",
+        "III16 cards \u00b7 face down",
+        "IIII10 cards \u00b7 face down"
+      ],
+      "visibleTerraformingTitles": 1
+    },
+    {
+      "id": "compact-return-720",
+      "caption": "Returning restores only the overview and both boards",
+      "player": "Shared controller",
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round206-focus-final/compact-return-720-cdb1e4629557.png",
+      "sha256": "cdb1e462955700e7fc593170179b922e43f2283ba74e20fe208fac2e22d060b7",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "captureMs": 42.75045799999998,
+      "focus": false,
+      "classes": "game-surface svelte-jpcb9b discovered-branches shared diagonal many-seats corner-only",
+      "overviewDisplay": "block",
+      "overviewRect": {
+        "x": 306.390625,
+        "y": 255,
+        "width": 398.90625,
+        "height": 309,
+        "top": 255,
+        "right": 705.296875,
+        "bottom": 564,
+        "left": 306.390625
+      },
+      "detailRect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "visibleColumnHeadings": [],
+      "visibleTerraformingTitles": 1
+    },
+    {
+      "id": "compact-focus-640",
+      "caption": "Detailed focus hides overview and clears the Level I heading",
+      "player": "Shared controller; original ordinary four-player Exo-Alloy table",
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round206-focus-final/compact-focus-640-424466ccc4f0.png",
+      "sha256": "424466ccc4f02dd701f2fadf477132c5c4ec7395642ade2f484d0b43cd65126f",
+      "viewport": {
+        "width": 1280,
+        "height": 640
+      },
+      "captureMs": 34.04200000000003,
+      "focus": true,
+      "classes": "game-surface svelte-jpcb9b discovered-branches shared diagonal many-seats corner-only technology-focus",
+      "overviewDisplay": "none",
+      "overviewRect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "detailRect": {
+        "x": 344.796875,
+        "y": 235,
+        "width": 628.8125,
+        "height": 288.8125,
+        "top": 235,
+        "right": 973.609375,
+        "bottom": 523.8125,
+        "left": 344.796875
+      },
+      "visibleColumnHeadings": [
+        "IFour discoveries",
+        "II15 cards \u00b7 face down",
+        "III16 cards \u00b7 face down",
+        "IIII10 cards \u00b7 face down"
+      ],
+      "visibleTerraformingTitles": 1
+    },
+    {
+      "id": "compact-lower-640",
+      "caption": "Lower detailed topology retains bounded scrolling without overview",
+      "player": "Shared controller",
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round206-focus-final/compact-lower-640-8fbfb87783a3.png",
+      "sha256": "8fbfb87783a310761ea25a6644b8998996322a5ddd74873a78618778d91bec69",
+      "viewport": {
+        "width": 1280,
+        "height": 640
+      },
+      "captureMs": 33.23162500000001,
+      "focus": true,
+      "classes": "game-surface svelte-jpcb9b discovered-branches shared diagonal many-seats corner-only technology-focus",
+      "overviewDisplay": "none",
+      "overviewRect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "detailRect": {
+        "x": 344.796875,
+        "y": 235,
+        "width": 628.8125,
+        "height": 288.8125,
+        "top": 235,
+        "right": 973.609375,
+        "bottom": 523.8125,
+        "left": 344.796875
+      },
+      "visibleColumnHeadings": [
+        "IFour discoveries",
+        "II15 cards \u00b7 face down",
+        "III16 cards \u00b7 face down",
+        "IIII10 cards \u00b7 face down"
+      ],
+      "visibleTerraformingTitles": 1
+    },
+    {
+      "id": "compact-return-640",
+      "caption": "Returning restores only the overview and both boards",
+      "player": "Shared controller",
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round206-focus-final/compact-return-640-5935b9bda38e.png",
+      "sha256": "5935b9bda38e9401ad0c578a324661d977977b87211df0c4b5904a606fba4f75",
+      "viewport": {
+        "width": 1280,
+        "height": 640
+      },
+      "captureMs": 42.97570899999994,
+      "focus": false,
+      "classes": "game-surface svelte-jpcb9b discovered-branches shared diagonal many-seats corner-only",
+      "overviewDisplay": "block",
+      "overviewRect": {
+        "x": 344.796875,
+        "y": 235,
+        "width": 395.828125,
+        "height": 341.8125,
+        "top": 235,
+        "right": 740.625,
+        "bottom": 576.8125,
+        "left": 344.796875
+      },
+      "detailRect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "visibleColumnHeadings": [],
+      "visibleTerraformingTitles": 1
+    }
+  ],
+  "result": "FOCUS/LOWER/RETURN/INSPECT/ESCAPE720+640 PASS; no duplicate overview and first card clears its Level I heading",
+  "prompt": 206,
+  "authorship": "reviewer-authored",
+  "sourceChanges": [
+    "src/lib/game/GameSurface.svelte",
+    "tests/e2e/005-technology-discovery/journey.ts"
+  ],
+  "checks": {
+    "types": "personal206-types2.log:0errors/0warnings",
+    "policy": "personal206-policy2.log:PASS",
+    "sevenProtectedHelpers": "unchanged from accepted013",
+    "priorFull208": "Pre206 source only; current affected/full exact not yet run",
+    "referenceGeneration": false
+  },
+  "visualReview": "640 upper/lower and720 upper inspected: one detailed board, level labels separated above first card; no duplicate mini overview",
+  "remaining": "Scoped visual acceptance207 received; affected8/8 exact and32-frame provenance PASS. Independent whole014 local acceptance/publication/015/merge remain held.",
+  "formalFollowup": "PERSONAL_FOCUS_VERIFICATION_207.json"
+}

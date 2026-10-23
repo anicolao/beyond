@@ -1,0 +1,103 @@
+{
+  "prompt": 198,
+  "authorship": "reviewer-authored",
+  "status": "Short-table correction ready for independent local review; not phase014 acceptance",
+  "branch": "feat/personal-technology",
+  "base": "fecea48f259f16253566c9d894dcf0986eb4efd9",
+  "url": "http://127.0.0.1:5209/?table=faca9c5a-bc9d-4bbc-adcf-c6d35d6d9c45",
+  "manifest": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round198-stable-shared/manifest-2026-10-22T10-34-28.151Z.json",
+  "manifestSha256": "7feb5cc8e2cc5a7df07eebae6c75ebf965cf671d69a22f78a7b1369db431b79d",
+  "captures": [
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round198-stable-shared/public-identities-1280x640-72ecaf548b19b4d1988c2a66573bb0164dfbdfd3eaca7a3660b7cf0b53656a11.png",
+      "sha256": "72ecaf548b19b4d1988c2a66573bb0164dfbdfd3eaca7a3660b7cf0b53656a11",
+      "viewport": [
+        1280,
+        640
+      ],
+      "elapsedMs": 180.81279099999995
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round198-stable-shared/public-identities-1280x720-8fb03248d10e69286483e02a8ed58ac8525589948da20b6fe32e8f92d0f7ef41.png",
+      "sha256": "8fb03248d10e69286483e02a8ed58ac8525589948da20b6fe32e8f92d0f7ef41",
+      "viewport": [
+        1280,
+        720
+      ],
+      "elapsedMs": 191.3242499999999
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round198-stable-shared/public-identities-1440x720-494d198e2ff27882cd3801b83629e8ba0ee4bc43332faae2c0ad12d9ab4204fd.png",
+      "sha256": "494d198e2ff27882cd3801b83629e8ba0ee4bc43332faae2c0ad12d9ab4204fd",
+      "viewport": [
+        1440,
+        720
+      ],
+      "elapsedMs": 212.26204199999995
+    },
+    {
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round198-stable-shared/public-identities-3840x2160-251f20e5f4a37a4b70c9d75478b84724ea67bb23a142399c933cada5aad8fe50.png",
+      "sha256": "251f20e5f4a37a4b70c9d75478b84724ea67bb23a142399c933cada5aad8fe50",
+      "viewport": [
+        3840,
+        2160
+      ],
+      "elapsedMs": 1474.0034579999997
+    }
+  ],
+  "visualInspection": "Opened all four actual final native PNGs. Turn identity and four starting card titles clear mats; Terraforming is unbroken at unchanged14px starting-title font; personal panel contained. This is implementation inspection, independent reviewer acceptance still pending.",
+  "checks": [
+    "Exact room, synced backend, Ada Production and owned Plasma Cannon asserted before/after capture",
+    "Per-word DOM Range rects remain unbroken; five elementFromPoint samples per word reject covering shared mats",
+    "Existing polygon/touch/viewport geometry guards and2000ms capture deadline retained",
+    "Types0errors0warnings; build and source policy pass"
+  ],
+  "sourceHashes": {
+    "src/lib/game/GameSurface.svelte": "c3be09e5c38f7809e677165d9adadea0d2d8a74bbebae17e2fad06da18aebf44",
+    "src/lib/game/TechnologyOverview.svelte": "fbd8a4c58f15d9bba361568c8fb5a047dd1ebc2306f7664b991946f95ab6b803",
+    "src/lib/game/PersonalTechnologyTableau.svelte": "cbfd9e4af0fe3c2dc2995b62485e3e827a6a3080d33fe2d06b85dc876370a0f4",
+    "tests/e2e/helpers/test-step-helper.ts": "f4b8b0ff4b1a7a8806af24c4668f72e71304980a58a18ce31ed42e440a884e4f",
+    "tests/e2e/helpers/screen-fit.ts": "a653831c59375ba60fe5ac6965066ea6f0bd30f873001d1580bd6991d8425f86"
+  },
+  "preservedFailures": [
+    "personal198-title-clearance1.log:720px Ada heading still occluded; corrected before final capture",
+    "personal198-stable-shared1.log:1440px personal pocket out of viewport; responsive offset corrected before final capture"
+  ],
+  "ci": {
+    "pr14": {
+      "job": 119692436215,
+      "passed": 159,
+      "failed": 5,
+      "primaryCategories": {
+        "capture2000ms": 1,
+        "story120000ms": 4
+      },
+      "traceAudit": "/Users/anicolao/projects/games/beyond/tmp/personal198-pr14-trace-audit.json",
+      "traceAuditSha256": "b982668b4aed3814359abba36eb06b161b0c34f760589c1bb31e7dfeb38a788c",
+      "failedCohortAccepted": false,
+      "largeArchiveDownloaded": false,
+      "measuredAttribution": "004 final capture photograph35.12ms, readiness/geometry/photograph/detach about70ms; post-detach untraced2229.852ms includes synchronous writeBaseline and scheduler/runtime time. No precise IO/scheduler split or repair proven. Four4K traces contain70.5\u201374.6s aggregate screenshot commands; secondary closed-page/detach errors follow story deadline."
+    },
+    "pr15": {
+      "comparisonJob": 119734505233,
+      "passed": 16,
+      "failed": 168,
+      "missingReferences": 112,
+      "pixelMismatches": 56,
+      "captureOrStoryTimeouts": 0,
+      "nativeJob": 119734505522,
+      "nativeStatus": "in_progress at latest metadata check; not final acceptance",
+      "staticJob": 119734505665,
+      "staticStatus": "success",
+      "hosted": "Exact-source publisher503 remains separate; no matching-head hosted acceptance"
+    }
+  },
+  "remaining": [
+    "Independent014 exploratory acceptance and source limitations from PERSONAL_TECH_SOURCE_REVIEW_014.md",
+    "No formal014 evidence generation/publication/015 release",
+    "Older012/013 Linux exact and exact-source publication gates remain open"
+  ],
+  "formalBaseline": false,
+  "gameMoves": false,
+  "identityOrDataReset": false
+}

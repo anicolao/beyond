@@ -1,0 +1,87 @@
+{
+  "prompt": 197,
+  "authorship": "reviewer-authored",
+  "status": "Stable phone diagnostic evidence ready for independent review; not acceptance; no baselines/publication",
+  "server": "http://127.0.0.1:5209/",
+  "room": "http://127.0.0.1:5209/remote/?room=1903acbd-a110-4bfb-960e-0ee9c8070d3f",
+  "branch": "feat/personal-technology",
+  "base": "fecea48f259f16253566c9d894dcf0986eb4efd9",
+  "reportedImagePreservation": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round197-preserved/reported-images.json",
+  "historicalPhoneEvidence": "Reused195/196phone-table paths are retired for final phone acceptance; records/bytes remain preserved. New hash-named files are never overwritten.",
+  "discrepancy": "At implementation inspection both reported195 and current196 paths contained tables; this does not reconstruct the earlier reviewer observation. No cache/timing explanation is asserted.",
+  "manifest": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round197-stable-phone/manifest-2026-10-22T10-15-57.338Z.json",
+  "manifestSha256": "741754376837bf86bff89f7e976e70a43c64278e26a1ae40853c12a14c0592ca",
+  "captures": [
+    {
+      "label": "retained-owner-phone",
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round197-stable-phone/retained-owner-phone-f0a747b37a4868d1117346a1da9068511d0de7418a34bdca8203a8554adcd8c2.png",
+      "sha256": "f0a747b37a4868d1117346a1da9068511d0de7418a34bdca8203a8554adcd8c2",
+      "dimensions": [
+        393,
+        852
+      ],
+      "elapsedMs": 91.62291700000003,
+      "room": "1903acbd-a110-4bfb-960e-0ee9c8070d3f",
+      "preAndPostState": "remote-started/synced;BoraAction;identity/owner/card asserted",
+      "pageErrors": 0,
+      "formalBaseline": false
+    },
+    {
+      "label": "retained-owner-full-rules-phone",
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round197-stable-phone/retained-owner-full-rules-phone-0d76b914e7b9f31dd1e2eaed443774f2ed36ef6c2e4ff9ad078b765b9e4d4824.png",
+      "sha256": "0d76b914e7b9f31dd1e2eaed443774f2ed36ef6c2e4ff9ad078b765b9e4d4824",
+      "dimensions": [
+        393,
+        852
+      ],
+      "elapsedMs": 72.01658299999997,
+      "room": "1903acbd-a110-4bfb-960e-0ee9c8070d3f",
+      "preAndPostState": "remote-started/synced;BoraAction;identity/owner/card asserted",
+      "pageErrors": 0,
+      "formalBaseline": false
+    },
+    {
+      "label": "retained-owner-after-reload-phone",
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round197-stable-phone/retained-owner-after-reload-phone-f0a747b37a4868d1117346a1da9068511d0de7418a34bdca8203a8554adcd8c2.png",
+      "sha256": "f0a747b37a4868d1117346a1da9068511d0de7418a34bdca8203a8554adcd8c2",
+      "dimensions": [
+        393,
+        852
+      ],
+      "elapsedMs": 92.18704100000002,
+      "room": "1903acbd-a110-4bfb-960e-0ee9c8070d3f",
+      "preAndPostState": "remote-started/synced;BoraAction;identity/owner/card asserted",
+      "pageErrors": 0,
+      "formalBaseline": false
+    },
+    {
+      "label": "separate-controller-blocked-phone",
+      "path": "/Users/anicolao/projects/games/beyond/tmp/local-personal-review/round197-stable-phone/separate-controller-blocked-phone-d59b721f073a6276799043ba68ea1fb92219f9a2d62cfc9668a776500378eabf.png",
+      "sha256": "d59b721f073a6276799043ba68ea1fb92219f9a2d62cfc9668a776500378eabf",
+      "dimensions": [
+        393,
+        852
+      ],
+      "elapsedMs": 66.70345800000018,
+      "room": "1903acbd-a110-4bfb-960e-0ee9c8070d3f",
+      "preAndPostState": "remote-started/synced;BoraAction;identity/owner/card asserted",
+      "pageErrors": 0,
+      "formalBaseline": false
+    }
+  ],
+  "checks": [
+    "Exact room query and remote-started/synced attributes asserted before and after every capture",
+    "Known current Bora Action phase; create-room/Connecting state and alerts absent",
+    "Host Your faction Ada plus public owner Ada and actual semantic Technology:Plasma Cannon asserted before table capture",
+    "Full-card owner/title/cost/action/Close/Previous/Next asserted before and after inspection capture; Escape restores exact opener",
+    "Separate ordinary guest controller remains Bora Your faction; observed Ada Public faction before returning to own mat; personal Action disabled with exact ownership reason",
+    "Host reload preserves correct owner/card/controller; pre/postreload PNG hashes equal",
+    "Native393x852PNG dimensions/hashes verified; four captures, three distinct PNG hashes; no pixel transforms",
+    "Original2000msper-capture/readiness/geometry budget unchanged;all four pass",
+    "Actual three distinct PNGs visually inspected before sealing; new files read-only, exclusive creation flag wx",
+    "All production source hashes equal reviewed195+revised196 source; no product/helper/rules/browser identity/data changes in197"
+  ],
+  "remaining014": "WISE and personal Android Destroyers source/effect limitations, formal evidence and independent acceptance remain open; no015",
+  "olderGates": "012/013 final Linux/exact-source publisher/matching-hosted gates remain separate; see195/196 ledger",
+  "merged": false
+}

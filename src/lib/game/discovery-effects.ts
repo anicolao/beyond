@@ -1,15 +1,18 @@
 /** Structured printed immediate effects; never execute Action boxes as bonuses. */
 export type BonusEffect=
  | {kind:'ore';amount:number}
- | {kind:'population';amount:number;side?:'left'|'right'}
+ | {kind:'population';amount:number;ordinal?:number;side?:'left'|'right'}
  | {kind:'automate';track:'food'|'ore'|'either'}
- | {kind:'upgrade';levels:number;ships:number;optional?:boolean;location?:string}
+ | {kind:'upgrade';levels:number;ships:number;ordinal?:number;optional?:boolean;location?:string}
  | {kind:'ship';level:1|2|3|4;side?:'left'|'right';location?:string;cube?:'population'}
- | {kind:'jump';amount:number;required?:boolean}
+ | {kind:'jump';amount:number;required?:boolean;topology?:'any'}
  | {kind:'return-population';amount:number}
  | {kind:'research-I';cost:number;fromSupply?:boolean}
  | {kind:'system-bonus';id:string;location:string}
- | {kind:'choice';id:'exo-alloy'|'bio-synaptic'};
+ | {kind:'choice';id:'exo-alloy'|'bio-synaptic'|'android-armada'|'optional-population-ship'|'capital-second-ship';ordinal?:number}
+ | {kind:'personal-research'}
+ | {kind:'redistribute-supply'}
+ | {kind:'manufacturing'};
 export const levelTwoBonuses:Record<string,readonly BonusEffect[]>={
  'hypercomputing':[{kind:'automate',track:'ore'}],
  'human-experiments':[{kind:'upgrade',levels:1,ships:2,optional:true}],
