@@ -2,14 +2,15 @@ import {readFile} from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
 /** Serialize initial database compilation with exact-source readback/upload.
  * Skip compilation only after proving identical installed source bytes. All startup requests share10s; test/hook5s budgets are unchanged. */
-export async function prepareRulesTest({host=process.env.FIRESTORE_EMULATOR_HOST??'127.0.0.1:8197',request=fetch,rules}={}){
+export async function prepareRulesTest({host=process.env.FIRESTORE_EMULATOR_HOST??'127.0.0.1:8197',request=fetch,rules,report=()=>{}}={}){
  if(!/^(127\.0\.0\.1|localhost):\d+$/.test(host))throw new Error('Rules readiness requires a local isolated emulator.');
  const port=Number(host.split(':')[1]);if(!Number.isInteger(port)||port<1024||port>65535)throw new Error('Invalid isolated emulator port.');
- const source=rules??await readFile('firestore.rules','utf8'),deadline=performance.now()+10_000;
+ const source=rules??await readFile('firestore.rules','utf8'),started=performance.now(),deadline=started+10_000;
  function remaining(){const value=Math.floor(deadline-performance.now());if(value<=0)throw new Error('Rules readiness exceeded its shared10s startup deadline.');return value;}
  async function send(url,options,phase){
-  try{const response=await request(url,{...options,signal:AbortSignal.timeout(remaining())});remaining();return response;}
-  catch(error){throw new Error(`Rules readiness ${phase} failed within the shared10s startup deadline.`,{cause:error});}
+  report({phase,state:'request-start',elapsedMs:performance.now()-started});
+  try{const response=await request(url,{...options,signal:AbortSignal.timeout(remaining())});remaining();report({phase,state:'response',elapsedMs:performance.now()-started,status:response.status});return response;}
+  catch(error){report({phase,state:'request-failed',elapsedMs:performance.now()-started});throw new Error(`Rules readiness ${phase} failed within the shared10s startup deadline.`,{cause:error});}
  }
  async function denial(phase){
   const response=await send(`http://${host}/v1/projects/demo-beyond/databases/(default)/documents/invites/_connection`,{},phase);
@@ -34,4 +35,4 @@ export async function prepareRulesTest({host=process.env.FIRESTORE_EMULATOR_HOST
  }
  await denial('current-source denial');
 }
-if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){await prepareRulesTest();console.log('Serialized exact source compiler and unauthenticated-get denial ready; backend test budgets unchanged.');}
+if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){await prepareRulesTest({report:event=>console.info('beyond-rules-readiness',JSON.stringify(event))});console.log('Serialized exact source compiler and unauthenticated-get denial ready; backend test budgets unchanged.');}

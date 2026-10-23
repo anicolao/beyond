@@ -556,8 +556,7 @@ service cloud.firestore {
         return a=={'id':b.id,'location':b.location,'level':b.level+effect.levels>4?4:b.level+effect.levels}
           && b.level<4 && (!('location' in effect) || effect.location==b.location);
       }
-      function upgradedShips(b,a,m,effect) {
-        let removed=b.ships.removeAll(a.ships);let added=a.ships.removeAll(b.ships);
+      function upgradedShips(b,a,m,effect,removed,added) {
         return a.diff(b).affectedKeys().hasOnly(['ships']) && a.ships.size()==b.ships.size()
           && m.ships.size()==removed.size() && m.ships.toSet().size()==m.ships.size() && m.ships.size()<=effect.ships
           && removed.size()==added.size() && b.ships.removeAll(removed)==a.ships.removeAll(added)
@@ -697,7 +696,7 @@ service cloud.firestore {
         let old=b.play.discovery;let q=old.queue.size()>0?old.queue[0]:{};let m=e.move;let queueKind=q.get('kind','');
         return m.kind=='discovery-choice'&&queueKind=='effect'&&q.get('effect',{}).get('kind','')=='jump'&&q.effect.amount>2&&m.get('legs',[]).size()>0
           ?wideJumpChoiceProjection(b,a,e,old,q)
-          :queueKind=='colony'?colonyFrame(b,a,e,q):m.kind=='discovery-choice'&&q.get('effect',{}).get('kind','')=='redistribute-supply'?continuationFrame(b,a,e)&&personalSupplyChoice(old,a.play.discovery,q,m,b.play.players[e.position],a.play.players[e.position],false):continuationFrame(b,a,e)&&(!(m.kind=='discovery-advance'&&queueKind in ['jump-apply','jump-power']&&q.amount>2)||wideJumpAdvanceProjection(b,a,e,old,q));
+          :queueKind=='effect'&&q.effect.kind=='upgrade'&&q.effect.ships==2&&m.kind=='discovery-choice'?continuationFrame(b,a,e)&&pairedUpgradePlayer(b,a,e,old,q):queueKind=='colony'?colonyFrame(b,a,e,q):m.kind=='discovery-choice'&&q.get('effect',{}).get('kind','')=='redistribute-supply'?continuationFrame(b,a,e)&&personalSupplyChoice(old,a.play.discovery,q,m,b.play.players[e.position],a.play.players[e.position],false):continuationFrame(b,a,e)&&(!(m.kind=='discovery-advance'&&queueKind in ['jump-apply','jump-power']&&q.amount>2)||wideJumpAdvanceProjection(b,a,e,old,q));
       }
       function plannedJump(root,old,q,m,b,a) {
         let legs=m.legs;let first=legs[0];
@@ -808,7 +807,7 @@ service cloud.firestore {
         let removed=b.ships.removeAll(a.ships);let added=a.ships.removeAll(b.ships);
         let locations=removed.size()==0?[]:removed.size()==1?[removed[0].location]:[removed[0].location,removed[1].location];
         return q.effect.kind=='upgrade' && m.option=='upgrade' && d.diff(old).affectedKeys().hasOnly(['cursor','queue','powers'])
-          && d.queue==checksFor(root,old,locations,q).concat(rest(old.queue)) && upgradedShips(b,a,m,q.effect)
+          && d.queue==checksFor(root,old,locations,q).concat(rest(old.queue)) && upgradedShips(b,a,m,q.effect,removed,added)
           && (removed.size()==0?d.powers==old.powers:upgradePower(old,d,q.responder,removed,added));
       }
       function bonusShip(old,d,q,m,b,a,s) {
@@ -926,9 +925,17 @@ service cloud.firestore {
           &&a.diff(b).affectedKeys().hasOnly(['automation',field])&&a.automation==b.automation+1&&a[field]==(b[field]>0?b[field]-1:0)
           &&d.diff(old).affectedKeys().hasOnly(['cursor','queue'])&&d.queue==rest(old.queue);
       }
+      function pairedUpgradePlayer(root,next,e,old,q) {
+        let b=root.play.players[e.position];let a=next.play.players[e.position];let d=next.play.discovery;let removed=b.ships.removeAll(a.ships);let added=a.ships.removeAll(b.ships);
+        return upgradedShips(b,a,e.move,q.effect,removed,added) && (removed.size()==0?d.powers==old.powers:upgradePower(old,d,e.position,removed,added));
+      }
+      function pairedUpgradeQueue(root,old,d,q,m,b,a) {
+        let removed=b.ships.removeAll(a.ships);let locations=removed.size()==0?[]:removed.size()==1?[removed[0].location]:[removed[0].location,removed[1].location];
+        return m.option=='upgrade' && d.diff(old).affectedKeys().hasOnly(['cursor','queue','powers']) && d.queue==checksFor(root,old,locations,q).concat(rest(old.queue));
+      }
       function extraManualEffect(root,old,d,q,m,b,a) {
         let kind=q.get('effect',{}).get('kind','');
-        return q.kind=='effect' && (kind=='automate'?manualAutomation(old,d,q,m,b,a):kind=='jump' ? manualJump(root,old,d,q,m,b,a) : kind=='upgrade' ? manualUpgrade(root,old,d,q,m,b,a) : kind=='ship' ? bonusShip(old,d,q,m,b,a,root.play) : kind=='personal-research'?personalKnownResearch(old,d,q,m,b,a):kind=='redistribute-supply'?personalSupplyChoice(old,d,q,m,b,a,true):kind=='choice' ? (q.effect.id=='capital-second-ship'?capitalSecondShipChoice(old,d,q,m,b,a):q.effect.id in ['android-armada','optional-population-ship']?personalBonusChoice(old,d,q,m,b,a):immediateChoice(old,d,q,m,b,a)) : kind=='research-I' ? bonusResearchI(old,d,q,m,b,a) : kind=='population' ? exhaustedPopulation(old,d,q,m,b,a) : kind=='system-bonus' ? manualSystemBonus(root,old,d,q,m,b,a) : false);
+        return q.kind=='effect' && (kind=='automate'?manualAutomation(old,d,q,m,b,a):kind=='jump' ? manualJump(root,old,d,q,m,b,a) : kind=='upgrade' ? (q.effect.ships==2?pairedUpgradeQueue(root,old,d,q,m,b,a):manualUpgrade(root,old,d,q,m,b,a)) : kind=='ship' ? bonusShip(old,d,q,m,b,a,root.play) : kind=='personal-research'?personalKnownResearch(old,d,q,m,b,a):kind=='redistribute-supply'?personalSupplyChoice(old,d,q,m,b,a,true):kind=='choice' ? (q.effect.id=='capital-second-ship'?capitalSecondShipChoice(old,d,q,m,b,a):q.effect.id in ['android-armada','optional-population-ship']?personalBonusChoice(old,d,q,m,b,a):immediateChoice(old,d,q,m,b,a)) : kind=='research-I' ? bonusResearchI(old,d,q,m,b,a) : kind=='population' ? exhaustedPopulation(old,d,q,m,b,a) : kind=='system-bonus' ? manualSystemBonus(root,old,d,q,m,b,a) : false);
       }
 
       function cubeResult(q,face,rolls) { return {'kind':'event','event':q.event,'responder':q.responder,'slot':q.slot,'stage':'result','value':q.value,'face':face,'rolls':rolls}; }

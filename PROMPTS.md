@@ -1255,3 +1255,73 @@ Reviewer17:10: Phase014 LOCAL ACCEPTANCE granted. Independently read207 exact lo
 Reviewer-authored continuation and source checkpoint:
 
 Reviewer18:04 continuation: PR16 verified and attached at821c6c1 based on feat/colonization. Continue already-authorized015 implementation on feat/advanced-research through canonical command/Firestore validation, source-reviewed Events/guilds and real planner/UI flows at5210. Iterate locally and present desktop/phone/shared evidence before references or016. Preserve014 commit and separate outstanding Linux/hosted gates; current PR16 docs running, verify/publisher queued or pending. No need to wait for CI or another prompt; never merge. Supervisor independently inspected the pinned AI crop and its wording supports the documented required-count interpretation, with full integration review still pending.
+
+## Prompt 210: Publisher Failure
+
+Reviewer18:10 new PR16 gate failure: publisher39826918172 failed at exact821c6c1. Independently preserved /tmp/beyond-pr16-publish-failure.log: current canonical rules150996bytes SHAeb4c4e2dc1e46282fe98ccedcc035cbcd8f04cd9d6628a470e88b116ab2feef8 returns503; frozen deployedPR5 18480bytes returns200. Record separate014 hosted blocker and investigate canonical compiler failure using prior diagnostics while continuing015; no blind retry, fallback deployment or weakened validation. Any actual fix needs source/tests, review and propagation through dependent branches. Linux gates remain pending.
+
+## Prompt 211: Reviewer checkout
+
+Reviewer-authored instruction:
+
+Reviewer18:15 additional distinct PR16 failure: docs39826920067 job119992526442 failed during actions/checkout, before prompt/whitespace checks. gh log unavailable; check-run annotations explicitly report System.IO.IOException No space left on device in runner diagnostic log. Investigate bounded/sparse documentation checkout that preserves required prompt-history/whitespace coverage; do not treat as content failure or blindly retry. Keep separate from publisher503; review/test and propagate infrastructure fix through015 as needed. Existing18:10 feedback remains queued; no duplicate requested.
+
+## Prompt 212: Reviewer readiness
+
+Reviewer-authored instruction:
+
+Reviewer18:50 new PR16 CI result: run39826918143 completed failure; static-and-rules119992519364 PASS, browser119992519936 failed before journeys at Firestore readiness existing10s timeout. Preserved /tmp/beyond-pr16-browser-failure.log. Capture guards passed; no screenshot mismatch result exists for this run. Diagnose emulator startup/readiness with preserved logs and unchanged limits; track separately from docs disk/publisher503 and queued39826929662. Continue015 expression-cost correction with security assertions intact. No duplicate of prior queued feedback; this is new browser failure evidence.
+
+## Prompt 213: Reviewer recurrence
+
+Reviewer-authored instruction:
+
+Reviewer19:30 new rerun result: PR16 docs39826920067 attempt2 job120022680286 also failed. Independently checked annotations: same No space left on device in Worker_20261022-191709-utc.log. The unchanged-head rerun did not resolve disk exhaustion. Preserve both failures; apply and review bounded checkout/storage mitigation preserving prompt-history and whitespace checks before any further docs rerun. Existing18:15 diagnosis still queued; this updates it with confirmed recurrence.
+
+## Prompt 214: Reviewer readiness
+
+Reviewer-authored instruction:
+
+Reviewer20:00 new final CI evidence: PR16 second verify39826929662 failed all three jobs at unchanged821c6c1. browser120019527200 and candidate120019527611 both Firestore readiness10s timeout before journeys; static/rules120019527657 initial-denial readiness10s timeout before backend tests. Preserved /tmp/beyond-pr16-verify-second-failure.log. Earlier static pass remains scoped to first run, not current deterministic validation. Investigate common readiness root cause with unchanged deadlines, no blind retries or reference adoption. Track alongside prior queued blockers;015 scope/016 hold unchanged.
+
+## Prompt 215: Reviewer continuation
+
+Reviewer-authored instruction:
+
+Reviewer continuation: workspace routing discovery timed out. Resume the existing task and pending reviewer inputs on the same model. Preserve the failing backend83 evidence; distinguish disposable emulator heap pressure from concrete permission/expression-limit failures. Keep live review services unchanged and phase016 held until phase015 independent acceptance.
+
+## Prompt 216: Reviewer readback
+
+Reviewer-authored instruction:
+
+Reviewer23:32 fresh readback: supervisor GET8297 securityRules now returns194723bytes SHA0e10a032d5e2452f790ce68b260ce802889018a758fd174f45e18e7254a8f9a3, matching intended canonical015 source. Installation is now observed; this does not erase timeout or accept startup/full checks. Continue local5210 functional preparation without another PUT; provide reviewable flow and screenshots.016 remains held.
+
+## Prompt 217: Reviewer selection
+
+Reviewer-authored instruction:
+
+Reviewer23:37 independently inspected round210-real-planner97 selected1280/393 images. Phone selected III-5 is outside visible list while Pay & reveal III-5 remains active; sticky payment panel also overlays resource/footer content (desktop footer partly occluded too). Preserve selection across resize/inspector return AND scroll selected target into view; reserve layout space for payment panel so selected prerequisites and own costs/resources can be reviewed without overlap. Keep full card inspection accessible. No visual acceptance yet; need phone selected-target/payment together and desktop footer after fix, then committed flow and shared/4K review. No baselines yet.
+
+## Prompt 218: Reviewer cache
+
+Reviewer-authored instruction:
+
+Reviewer00:57: new colonyCounts/colonyCountCursor persistence needs explicit adversarial and compatibility coverage before acceptance: reject forged counts, skipped/replayed cursor steps, wrong colony owner and unrelated-field changes; prove missing-cache retained roots catch up, newly appended colonies invalidate readiness until counted, and older clients preserve cache fields without falsely reporting readiness. Keep canonical games/event atomicity and identity checks. This is a new review requirement for cache152, not a duplicate of queued UI feedback.
+
+## Prompt 219: Reviewer upgrade
+
+Reviewer-authored instruction:
+
+Reviewer01:53: independently inspected shared169 failure log and screenshot. Human Experiments selected two distinct ships (2 to 3 and 1 to 2), but Commit ship upgrade returned move not accepted; production was never reached. Treat this as an actual retained ordinary-flow blocker, not just the subsequent production locator timeout. Preserve the failing room/evidence, diagnose the rejected atomic write, add focused regression for this two-target retained discovery state, and prove successful commit plus reload before continuing shared III/IIII acceptance. No guard weakening or skipping the effect.
+
+## Prompt 220: Reviewer titles
+
+Reviewer-authored instruction:
+
+Reviewer02:43: independently viewed round211-giga208/IV-board-1280.png after successful IV reload. Compact technology tiles visibly cut off names: Human Experiments, Metahuman Chambers (text spills below its tile), and Giga-Corporations. This is inside-tile text clipping, separate from intentional board scrolling; geometry pass is insufficient. Fix title composition with readable complete names or a deliberate accessible short label plus full-name inspection, preserve topology/markers and guards, and recheck populated desktop/phone/4K overview. No phase acceptance yet.
+
+## Prompt 221: Reviewer publication
+
+Reviewer-authored instruction:
+
+Reviewer03:08: reviewed parent-upgrade-backport.patch and READINESS_INVESTIGATION_212. Scoped parent fix is suitable to publish after normal required local checks: retain exact ship/power/economy checks on linked root plus queue/frame checks on immutable event, legacy regression and failure evidence. Composed backend evidence is 323 passing plus corrected omitted-static art test; do not call original full run green. Proceed with reviewed014-only fix on PR16 and propagate into015 preserving its multiUpgrade superset and legacy test. Diagnostics may accompany as diagnostics, not claimed readiness repair. Keep new-head CI/hosted and015 visual/title/compatibility gates open; no merge or016 advancement.

@@ -34,6 +34,11 @@ jobs:
       - run: nix develop --command bun run test:policy
       - run: nix develop --command bun run test:tooling
       - run: nix develop --command bun run test:rules
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: static-rules-readiness-evidence
+          path: firestore-debug.log
 
   browser-comparison:
     runs-on: ubuntu-24.04-arm
@@ -74,6 +79,7 @@ jobs:
           path: |
             playwright-report/
             test-results/
+            firestore-debug.log
 
   generate-candidates:
     if: github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'generate-baselines')
@@ -115,6 +121,7 @@ jobs:
           path: |
             playwright-report/
             test-results/
+            firestore-debug.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:
